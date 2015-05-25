@@ -17,3 +17,6 @@ vhx:style-lists
 vhx:style-typography
 vhx:style-media
 vhx:style-tables
+vhx:style-loaders
+vhx:style-modals
+vhx:style-svg
