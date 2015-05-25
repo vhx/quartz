@@ -1,0 +1,129 @@
+@import "include";
+
+/*.....................................
+  Admin Multi Select
+......................................*/
+[data-chosen] {
+  opacity: 0;
+}
+
+.form select[disabled] + .chosen-container {
+    opacity: 0.4;
+    &:hover {
+      color: $grey-mid-dark;
+      border: 1px solid $grey-default;
+      border-bottom: 3px solid $grey-mid;
+      cursor: default !important;
+    }
+}
+
+.form .chosen-container {
+  border: 1px solid $grey-default;
+  background-color: #fff;
+  outline: none;
+  margin-bottom: 0;
+  width: 100% !important;
+  @include border-radius(3px);
+  @extend %icon-plus-thin-gray;
+  background-size: 15px 15px;
+  background-position: calc(100% - 10px)  50%;
+
+  font-size: rem-calc(14);
+  color: $grey-mid-dark;
+  li.search-field input[type="text"] {
+    padding: 0;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+  &[disabled] {
+    &:hover {
+      color: $grey-mid-dark;
+      border: 1px solid $grey-default;
+      border-bottom: 3px solid $grey-mid;
+      cursor: default !important;
+    }
+  }
+
+  &.chosen-with-drop {
+    background: none;
+  }
+  &.chosen-container-multi,
+  &.chosen-container-active {
+    .chosen-choices {
+      border: none !important;
+      box-shadow: none !important;
+      min-height: rem-calc($field-height) !important;
+      width: 90% !important;
+      padding: rem-calc(6 7) !important;
+
+      color: $ac-default-dark !important;
+      font-size: rem-calc(14) !important;
+      background: transparent !important;
+
+      &:hover {
+        cursor: pointer;
+      }
+      li.search-choice {
+        border: none;
+        color: $ac-default-mid;
+        .search-choice-close {
+          @extend %icon-remove-gray;
+          background-size: 12px;
+          background-position: 50% 50%;
+        }
+      }
+      li.search-field input[type="text"] {
+        height: rem-calc(28);
+        width: 100% !important;
+        margin: 0;
+        color: $ac-default-light !important;
+      }
+    }
+  }
+  .chosen-drop {
+    @include border-radius(0px 0 3px 3px);
+    border-color: $grey-default;
+    @include box-shadow(none);
+  }
+  .chosen-results li.highlighted {
+    background-image: none;
+    background: $ac-default-mid !important;
+  }
+}
+
+
+select {
+  & + .select-decor,
+  &:focus + .select-decor {
+    @include transition(background-color 300ms cubic-bezier(0.19, 1, 0.22, 1));
+    display: block;
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    height: 39px;
+    width: 15px;
+    background-color: #EFF2F3;
+    border-bottom: 1px solid #D7DDE0;
+    @include border-radius(0 0 3px 0px);
+  }
+  &:hover + .select-decor {
+    background-color: #d7dde0;
+  }
+  &[disabled],
+  &.is-disabled,
+  &.disabled {
+    & + .select-decor,
+    &:hover + .select-decor {
+      opacity: .5;
+      background-color: #EFF2F3;
+      color: #375667;
+      border-bottom: 1px solid #D7DDE0;
+    }
+  }
+}
+
+.select-container {
+  position: relative;
+  display: inline-block;
+}
