@@ -1,0 +1,80 @@
+@import "../config/mixins";
+
+/*.....................................
+  BLOCK BUTTONS
+......................................*/
+
+/* button block base
+......................................*/
+.btn-block {
+  transition: all .2s ease;
+  @include display-flex;
+  @include align-items-center;
+  @include justify-content-center;
+
+  display: block;
+  height: 70px;
+  padding-top: 27px;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #8d9da6;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: $brandon-font;
+
+  &.btn--border {
+    border-left: 1px solid #d1d1d1;
+    border-right: 1px solid #d1d1d1;
+    & + .btn-block {
+      border-left: 1px solid transparent;
+    }
+  }
+
+  &.is-active,
+  &:hover,
+  &.is-hover {
+    cursor: pointer;
+    box-shadow: inset 0px -4px 0px #8d9da6;
+  }
+  span {
+    &:first-child {
+      margin-top: -7px;
+    }
+    display: block;
+  }
+}
+
+/* button block teal
+......................................*/
+.btn-block-teal {
+  @extend .btn-block;
+  @include button-block-colors(
+    #8d9da6,  // text color
+    #375768,  // text color hover
+    #21b8af   //  bottom border-color
+  )
+}
+
+/* button block gray
+......................................*/
+.btn-block-gray {
+  @extend .btn-block;
+  @include button-block-colors(
+    #8d9da6, // text color
+    #375667, // text color hover
+    #8d9da6  // bottom border-color
+  );
+}
+
+/* button block navy
+......................................*/
+.btn-block-navy {
+  @extend .btn-block;
+  @include button-block-colors(
+    #375667, // text color
+    #375667, // text color hover
+    #375667  // bottom border-color
+  );
+}

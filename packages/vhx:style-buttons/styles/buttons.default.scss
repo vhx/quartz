@@ -1,0 +1,563 @@
+@import "../config/mixins";
+
+/*.....................................
+  BUTTONS
+......................................*/
+
+/* reset
+......................................*/
+input[type="submit"], button {
+  border-radius: 5px;
+  margin: 0;
+}
+
+select {
+  width: auto;
+  margin: 0;
+}
+
+/* base
+......................................*/
+.btn {
+  transition: border 300ms cubic-bezier(0.19, 1, 0.22, 1), color 300ms cubic-bezier(0.19, 1, 0.22, 1), opacity 300ms cubic-bezier(0.19, 1, 0.22, 1), background-color 300ms cubic-bezier(0.19, 1, 0.22, 1);
+
+  background-color: transparent;
+  border: 1px solid transparent;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+
+  // fonts
+  text-align: center;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: transparent;
+
+  line-height: 38px;
+  height: 40px;
+  padding: 0 20px;
+
+  // borders
+  outline: none;
+  border-radius: 5px;
+
+  // states
+  &:link,
+  &:visited {
+    text-decoration: none;
+    border: 1px solid transparent;
+  }
+}
+
+/* button gray shorthand
+......................................*/
+.btn-gray {
+  @extend .btn;
+  @include button-colors(
+    #eff2f3,  // background
+    #d7dde0,  // background hover
+    #375667,  // color
+    #375667,  // color hover
+    #d7dde0,  // border color
+    #d7dde0,   // border hover,
+    375667   // loader
+  );
+}
+
+/* button dark shorthand
+......................................*/
+.btn-slate {
+  @extend .btn;
+  @include button-colors(
+    #7a878e,  // background
+    #5d6c75,  // background hover
+    #ffffff,  // color
+    #ffffff,  // color hover
+    #5d6c75,  // border color
+    #5d6c75,   // border color hover
+    375667   // loader
+  );
+}
+
+/* button teal shorthand
+......................................*/
+.btn-teal {
+  @extend .btn;
+  @include button-colors(
+    #22b9b0,  // background
+    #149a97,  // background hover
+    #ffffff,  // color
+    #ffffff,  // color hover
+    #149a97,  // border color
+    #149a97,   // border color hover
+    ffffff  // loader
+  );
+}
+
+/* button red shorthand
+......................................*/
+.btn-red {
+  @extend .btn;
+  @include button-colors(
+    #d3104a,  // background
+    #ba1045,  // background hover
+    #ffffff,  // color
+    #ffffff,  // color hover
+    #ba1045,  // border color
+    #ba1045,   // border hover
+    fff  // loader
+  );
+}
+
+/* button purple shorthand
+......................................*/
+.btn-purple {
+  @extend .btn;
+  @include button-colors(
+    #8e7190,  // background
+    #8b3880,  // background hover
+    #ffffff,  // color
+    #ffffff,  // color hover
+    #8e7190,  // border color
+    #8b3880,   // border hover
+    #ffffff  // loader
+  );
+}
+
+/* button black shorthand
+......................................*/
+.btn-black {
+  @extend .btn;
+  @include button-colors(
+    rgba(255, 255, 255, .5),    // background
+    rgba(255, 255, 255, 1),     // background
+    rgba(255, 255, 255, 1),     // color
+    rgba(255, 255, 255, 1),     // color hover
+    rgba(255, 255, 255, .5),    // border color
+    rgba(255, 255, 255, 1),     // border color hover
+    rgba(255, 255, 255, 1)      // loader
+  );
+}
+
+/* button white shorthand
+......................................*/
+.btn-white {
+  @extend .btn;
+  @include button-colors(
+    #ffffff,  // background
+    #eff2f3,  // background hover
+    #375667,  // color
+    #375667,  // color hover
+    #d7dde0,  // border color
+    #d7dde0,  // border color hover
+    #375667   // loader
+  );
+}
+
+/* button facebook shorthand
+......................................*/
+.btn-facebook {
+  @extend .btn;
+  @include button-colors(
+    #3b5899,  // background
+    #2f4a70,  // background hover
+    #ffffff,  // color
+    #ffffff,  // color hover
+    #3b5899,  // border color
+    #2f4a70,   // border color hover
+    #ffffff  // loader
+  );
+}
+
+/* button twitter  shorthand
+......................................*/
+.btn-twitter {
+  @extend .btn;
+  @include button-colors(
+    #1ca3dc,  // background
+    #1d95b4,  // background hover
+    #ffffff,  // color
+    #ffffff,  // color hover
+    #1ca3dc,  // border color
+    #1d95b4,   // border color hover
+    #ffffff  // loader
+  );
+}
+
+/* button transparent shorthand
+......................................*/
+.btn-transparent {
+  @extend .btn;
+  @include button-colors(
+    rgba(255, 255, 255, .5),  // background
+    rgba(255, 255, 255, .7),  // background hover
+    #ffffff,  // color
+    #ffffff,  // color hover
+    rgba(255, 255, 255, 0),  // border color
+    rgba(255, 255, 255, 0),   // border color hover
+    #ffffff  // loader
+  );
+}
+
+/* button tumblr shorthand
+......................................*/
+.btn-tumblr {
+  @extend .btn;
+  @include button-colors(
+    #37465d,  // background
+    #27323f,  // background hover
+    #ffffff,  // color
+    #ffffff,  // color hover
+    #37465d,  // border color
+    #27323f,   // border color hover
+    #ffffff  // loader
+  );
+}
+
+/* button paypal shorthand
+......................................*/
+.btn-paypal {
+  @extend .btn;
+  @include button-colors(
+    #0c8dc4,  // background
+    #0a709c,  // background hover
+    #ffffff,  // color
+    #ffffff,  // color hover
+    #0c8dc4,  // border color
+    #0a709c,   // border color hover
+    #ffffff  // loader
+  );
+}
+
+/* button roku shorthand
+......................................*/
+.btn-roku {
+  @extend .btn;
+  @include button-colors(
+    #2c164a,  // background
+    #1c0d32,  // background hover
+    #ffffff,  // color
+    #ffffff,  // color hover
+    #2c164a,  // border color
+    #1c0d32,   // border color hover
+    #ffffff  // loader
+  );
+}
+
+/* button search shorthand
+......................................*/
+.btn-search {
+  @extend .btn;
+  @extend .btn--small;
+  @extend .icon--center;
+  @extend %icon-search-mono;
+}
+
+
+/*.....................................
+  BUTTON ICONS
+......................................*/
+
+/* sizes
+......................................*/
+.icon--xsmall {
+  background-size: nth($icon-size,$icon-xsmall) nth($icon-size, $icon-xsmall);
+}
+.icon--small {
+  background-size: nth($icon-size, $icon-small) nth($icon-size, $icon-small);
+}
+.icon--medium {
+  background-size: nth($icon-size, $icon-medium) nth($icon-size, $icon-medium);
+}
+.icon--large {
+  background-size: nth($icon-size, $icon-large) nth($icon-size, $icon-large);
+}
+
+/* position
+......................................*/
+.icon--center {
+  @include button-icon-position("center", "");
+
+  &.btn--small {
+    width: 30px;
+    padding: 0 10px !important;
+  }
+  &.btn--medium {
+    width: 40px;
+    padding: 0 20px !important;
+  }
+  &.btn--large {
+    width: 60px;
+    padding: 0 30px !important;
+  }
+}
+.icon--left {
+  @include button-icon-position("left", $icon-medium);
+
+  &.btn--small {
+    @include button-icon-position("left", $icon-small);
+  }
+  &.btn--medium {
+    @include button-icon-position("left", $icon-medium);
+  }
+  &.btn--large {
+    @include button-icon-position("left", $icon-large);
+  }
+}
+.icon--right {
+  @include button-icon-position("right", $icon-medium);
+
+  &.btn--small {
+    @include button-icon-position("right", $icon-small);
+  }
+  &.btn--medium {
+    @include button-icon-position("right", $icon-medium);
+  }
+  &.btn--large {
+    @include button-icon-position("right", $icon-large);
+  }
+}
+
+.btn-dropdown {
+  @extend .btn;
+  background-size: 10px 10px;
+  background-position: right 15px center;
+  padding-right: 35px;
+  text-align: left;
+  position: relative;
+
+  &.btn--small {
+    background-size: 8px 8px;
+    &.icon--center {
+      width: 30px;
+    }
+  }
+
+  &.btn-dropdown--action {
+    padding-right: 60px;
+  }
+  &.btn-dropdown--action:before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    right: 39px;
+    width: 1px;
+    height: 100%;
+    background: #fff;
+  }
+  &.icon--center {
+    width: 40px;
+    &.btn-dropdown--action:before {
+      display: none;
+      content: '';
+    }
+  }
+}
+
+/* button dropdowns
+......................................*/
+.btn-dropdown-gray {
+  @extend .btn-dropdown;
+  @extend .btn-gray;
+  @extend %icon-chevron-down-mono;
+
+  &.btn-dropdown--action:before {
+    background: #d7dde0;
+  }
+  &:hover {
+    @extend %icon-chevron-down-mono;
+    &.btn-dropdown--action:before {
+      background: #c2c7ca;
+    }
+  }
+}
+
+.btn-dropdown-white {
+  @extend .btn-dropdown;
+  @extend .btn-white;
+  @extend %icon-chevron-down-mono;
+
+  &.btn-dropdown--action:before {
+    background: #d7dde0;
+  }
+  &:hover {
+    @extend %icon-chevron-down-mono;
+    &.btn-dropdown--action:before {
+      background: #c2c7ca;
+    }
+  }
+}
+
+.btn-dropdown-teal {
+  @extend .btn-dropdown;
+  @extend .btn-teal;
+  @extend %icon-chevron-down-inverse;
+
+  &.btn-dropdown--action:before {
+    background: #149a97;
+  }
+  &:hover {
+    @extend %icon-chevron-down-inverse;
+    &.btn-dropdown--action:before {
+      background: #117c7a;
+    }
+  }
+}
+
+/* button sizes
+......................................*/
+.btn--fill {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.btn--half {
+  box-sizing: border-box;
+  width: 48%;
+  margin-left: .5% !important;
+  margin-right: .5% !important;
+}
+
+.btn--small {
+  line-height: 28px;
+  height: 30px;
+  padding: 0 10px;
+  font-size: 12px;
+  background-size: 13px 13px;
+}
+
+.btn--medium {
+  line-height: 38px;
+  height: 40px;
+  padding: 0 20px;
+  font-size: 14px;
+  background-size: 15px 15px;
+}
+
+.btn--large {
+  line-height: 58px;
+  height: 60px;
+  padding: 0 30px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  background-size: 23px 23px;
+}
+
+/* button fonts
+......................................*/
+.btn--brandon {
+  text-transform: uppercase;
+  font-family: $brandon-font;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-size: 14px;
+  line-height: 40px;
+
+  &.btn--small {
+    font-size: 12px;
+    line-height: 30px;
+    background-position: 10px 7px;
+  }
+  &.btn--medium {
+    font-size: 14px;
+    line-height: 40px;
+  }
+  &.btn--large {
+    font-size: 20px;
+    line-height: 60px;
+  }
+}
+
+
+/* button media queries
+......................................*/
+@media #{$small-only} {
+  .small-only-btn--fill {
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .small-only-btn--half {
+    box-sizing: border-box;
+    width: 48%;
+    margin-left: .5% !important;
+    margin-right: .5% !important;
+  }
+}
+
+
+
+/* buttons group
+......................................*/
+.btn-group {
+  &:after {
+    content: ' ';
+    clear: both;
+    height: 0;
+    font-size: 0;
+    visibility: hidden;
+    display: block;
+  }
+  .btn-gray,
+  .btn-teal {
+    display: block;
+    float: left;
+    border-radius: 0;
+    &.is-selected {
+      box-shadow: inset 0px 0px 7px 0px rgba(170,170,170,0.4);
+    }
+  }
+  .btn-gray:after,
+  .btn-teal:after {
+    width: 1px;
+    height: 100%;
+    transition: background .2s ease;
+    display: block;
+    content: ".";
+    text-indent: -99999px;
+    position: absolute;
+    top: 0;
+    right: -2px;
+    z-index: 1000;
+  }
+  .btn-gray:hover:after,
+  .btn-teal:hover:after {
+    background: transparent !important;
+  }
+  .btn-gray:nth-child(odd),
+  .btn-teal:nth-child(odd) {
+    border-right: 1px solid #d7dde0 !important;
+    border-left: 1px solid #d7dde0 !important;
+    &:hover,
+    &:focus {
+      border-right: 1px solid #d7dde0 !important;
+      border-left: 1px solid #d7dde0 !important;
+      z-index: 10000;
+    }
+  }
+  .btn-gray:nth-child(even),
+  .btn-teal:nth-child(even) {
+    border-left: 1px solid transparent !important;
+    border-right: 1px solid transparent !important;
+    &:hover,
+    &:focus {
+      border-left: 1px solid #d7dde0 !important;
+      border-right: 1px solid #d7dde0 !important;
+      z-index: 10000;
+    }
+  }
+  .btn-gray:first-child,
+  .btn-teal:first-child {
+    border-left: 1px solid #d7dde0 !important;
+    border-radius: 5px 0 0 5px;
+  }
+  .btn-gray:last-child,
+  .btn-teal:last-child {
+    border-right: 1px solid #d7dde0 !important;
+    border-radius: 0 5px 5px 0;
+    &:after {
+      display: none;
+    }
+  }
+}
