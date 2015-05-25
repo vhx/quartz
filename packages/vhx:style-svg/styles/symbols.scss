@@ -1,0 +1,129 @@
+@import "../config/include";
+
+/*.....................................
+  Specialty icons / symbols (non square)
+......................................*/
+  .icon-vhx,
+  .icon-vhx-alt,
+  .icon-vhx-dark,
+  .icon-vhx-gray,
+  .icon-vhx-inverse,
+  .icon-vhx-light {
+    &.medium {
+      width: 65px;
+    }
+    &.large {
+      width: 70px;
+    }
+
+    &.has-icon {
+      &.tiny {
+        background-size: 22.5px 9px;
+        width: 22.5px;
+        height: 9px;
+        line-height: 9px;
+      }
+      &.small {
+        background-size: 33.3px 15px;
+        width: 33.3px;
+        height: 15px;
+        line-height: 15px;
+      }
+      &.smedium {
+        background-size: 62px 25px;
+        width: 62px;
+        height: 25px;
+        line-height: 25px;
+      }
+      &.medium {
+        background-size: 87.5px 35px;
+        width: 87.5px;
+        height: 35px;
+        line-height: 35px;
+      }
+      &.large {
+        background-size: 112.5px 45px;
+        width: 112.5px;
+        height: 45px;
+        line-height: 45px;
+      }
+      &.xlarge {
+        background-size: 150px  60px;
+        width: 150px;
+        height: 60px;
+        line-height: 60px;
+      }
+    }
+  }
+
+$diameter-large: 95px;
+$diameter-small: 70px;
+
+.fancy-play-icon {
+  transition: all .2s ease-out;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  z-index: 2;
+
+  &:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    margin-top: -15px;
+    margin-left: -14px;
+    z-index: 4;
+    top: 50%;
+    left: 50%;
+
+    //TODO @extend %icon-play-inverse;
+    background-size: 35px;
+    background-position: 50%;
+  }
+  &:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    border-radius: 50%;
+    border: 3px solid rgba(#fff, .25);
+  }
+  &.small {
+    &:after {
+      width: $diameter-small;
+      height: $diameter-small;
+      margin-top: -$diameter-small/2;
+      margin-left: -$diameter-small/2;
+    }
+  }
+  &.large {
+    &:after {
+      width: $diameter-large;
+      height: $diameter-large;
+      margin-top: -$diameter-large/2;
+      margin-left: -$diameter-large/2;
+    }
+  }
+  &:hover,
+  &.is-hover {
+    background-color: rgba(0, 19, 44, .8);
+  }
+  &.alt-fancy-play-icon {
+    background-color: transparent;
+    &:after {
+      background-color: rgba(0, 0, 0, .5);
+      border: none;
+    }
+    &:hover {
+      background-color: rgba(0, 0, 0, .5);
+    }
+  }
+}

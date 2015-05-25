@@ -1,0 +1,367 @@
+@import "../config/include";
+
+/*.....................................
+  VHX Icons
+......................................*/
+
+// use with <i> elements
+.icon {
+  display: inline-block;
+  background-position: 50% 50%;
+  background-size: contain;
+  width: $icon-default;
+  height: $icon-default;
+  text-indent: -9999px;
+  &.tiny {
+    width: $icon-tiny;
+    height: $icon-tiny;
+  }
+  &.default {
+    width: $icon-default;
+    height: $icon-default;
+  }
+  &.small {
+    width: $icon-small;
+    height: $icon-small;
+  }
+  &.line,
+  &.icon-line {
+    width: $icon-line;
+    height: $icon-line;
+  }
+  // http://english.stackexchange.com/questions/163605/what-would-you-call-size-that-fits-between-small-and-medium
+  // implemented initially for masthead icons
+  &.smedium {
+    width: $icon-smedium;
+    height: $icon-smedium;
+  }
+  &.medium {
+    width: $icon-medium;
+    height: $icon-medium;
+  }
+  &.large {
+    width: $icon-large;
+    height: $icon-large;
+  }
+  &.xlarge {
+    width: $icon-xlarge;
+    height: $icon-xlarge;
+  }
+  // color inline-SVG html icons
+  &.mono {
+    fill: #375667;
+  }
+  &.gray {
+    fill: #9baab2;
+  }
+  &.inverse {
+    fill: #ffffff;
+  }
+  &.alt {
+    fill: #22b8af;
+  }
+  &.light {
+    fill: #BFBFBF;
+  }
+  &.dark {
+    fill: #111111;
+  }
+  &.is-transparent {
+    opacity: .5;
+  }
+  &.radius {
+    border-radius: 5px;
+  }
+}
+
+// use with button-like things (not <i> elements)
+.has-icon {
+  background-position: center left;
+  // padding left is the default padding-left, + width of small icons
+  padding-left: $icon-default + 5px;
+  background-size: $icon-default $icon-default;
+  height: $icon-default;
+  line-height: $icon-default;
+
+  &.icon-right {
+    background-position: center right;
+    padding-left: 0;
+    padding-right: $icon-default + 5px;
+    background-position: center right;
+  }
+
+  &.icon-only {
+    background-position: center center;
+    // keep text present, so we don't fuss with weird heights across browsers
+    // hide the text of button, fix its width, don't let lengthy titles
+    // break lines and affect height
+    color: transparent !important;
+    white-space: nowrap;
+    padding-left: 2rem;
+    // standard LR padding, + width of small icon
+    width: 22px;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    line-height: 23px;
+    height: auto;
+
+    &.line,
+    &.icon-line {
+      background-size: $icon-line $icon-line;
+      line-height: 40px;
+      max-height: 40px;
+    }
+  }
+}
+
+// <a href="#" class="has-icon icon-name">Link Title</a>
+// currently used in /watch header, using .medium size
+// by default .has-icon is .small (15px)
+.has-icon {
+  &.tiny,
+  &.icon-tiny {
+    display: inline-block;
+    background-size: $icon-tiny $icon-tiny;
+    padding-left: $icon-tiny + 5px;
+    height: $icon-tiny;
+    line-height: $icon-tiny;
+    &.icon-right {
+      padding-left: 0;
+      padding-right: $icon-tiny + 5px;
+    }
+  }
+  &.small,
+  &.icon-small {
+    display: inline-block;
+    background-size: $icon-small $icon-small;
+    padding-left: $icon-small + 5px;
+    height: $icon-small;
+    line-height: $icon-small;
+    font-size: 100%;
+    &.icon-right {
+      padding-left: 0;
+      padding-right: $icon-small + 5px;
+    }
+  }
+  &.default,
+  &.icon-default {
+    display: inline-block;
+    background-size: $icon-default $icon-default;
+    padding-left: $icon-default + 10px;
+    height: $icon-default;
+    line-height: $icon-default;
+    font-size: 100%;
+    &.icon-right {
+      padding-left: 0;
+      padding-right: $icon-default + 10px;
+    }
+  }
+  &.smedium,
+  &.icon-smedium {
+    display: inline-block;
+    background-size: $icon-smedium $icon-smedium;
+    padding-left: $icon-smedium + 10px;
+    height: $icon-smedium;
+    line-height: $icon-smedium;
+    &.icon-right {
+      padding-left: 0;
+      padding-right: $icon-smedium + 10px;
+    }
+  }
+  &.medium,
+  &.icon-medium {
+    display: inline-block;
+    background-size: $icon-medium $icon-medium;
+    padding-left: $icon-medium + 10px;
+    height: $icon-medium;
+    line-height: $icon-medium;
+    &.icon-right {
+      padding-left: 0;
+      padding-right: $icon-medium + 10px;
+    }
+  }
+  &.large,
+  &.icon-large {
+    display: inline-block;
+    background-size: $icon-large $icon-large;
+    padding-left: $icon-large + 10px;
+    height: $icon-large;
+    line-height: $icon-large;
+    &.icon-right {
+      padding-left: 0;
+      padding-right: $icon-large + 10px;
+    }
+  }
+  &.xlarge,
+  &.icon-xlarge {
+    display: inline-block;
+    background-size: $icon-xlarge $icon-xlarge;
+    padding-left: $icon-xlarge + 15px;
+    height: $icon-xlarge;
+    line-height: $icon-xlarge;
+    &.icon-right {
+      padding-left: 0;
+      padding-right: $icon-xlarge + 15px;
+    }
+  }
+}
+
+a.has-icon {
+  &:link,
+  &:visited {
+    i {
+      opacity: .5;
+      transition: opacity 200ms ease;
+    }
+  }
+  &:hover,
+  &:active {
+    i {
+      opacity: 1;
+    }
+  }
+}
+
+.has-icon-only {
+  background-position: center center;
+  background-size: contain;
+  color: transparent !important;
+  white-space: nowrap;
+  line-height: 40px;
+  display: inline-block;
+
+  &.tiny {
+    height: $icon-tiny;
+    width: $icon-tiny;
+  }
+  &.small {
+    height: $icon-small;
+    width: $icon-small;
+  }
+  &.smedium {
+    height: $icon-smedium;
+    width: $icon-smedium;
+  }
+  &.medium {
+    height: $icon-medium;
+    width: $icon-medium;
+  }
+  &.large {
+    height: $icon-large;
+    width: $icon-large;
+  }
+}
+
+.icon-dot {
+  &.tiny {
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+  }
+  &.small {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+  }
+  &.medium {
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+  }
+  &.large {
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+  }
+  &.xlarge {
+    width: 55px;
+    height: 55px;
+    border-radius: 55px;
+  }
+
+  &.primary {
+    background: $ac-pri-mid;
+  }
+  &.secondary {
+    background: #432865;
+  }
+  &.tertiary {
+    background: #8b3880;
+  }
+  &.success {
+    background: $ac-succ-mid;
+  }
+  &.error,
+  &.red {
+    background: $ac-error-mid;
+  }
+  &.gray {
+    background: $grey-mid;
+  }
+}
+
+.icon-contain {
+  display: inline-block;
+  position: relative;
+  &.is-transparent {
+    opacity: .5;
+  }
+
+  &[class*="radius"] {
+    .icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -11.5px;
+      margin-top: -11.5px;
+      &.small {
+        margin-left: -7.5px;
+        margin-top: -7.5px;
+      }
+      &.medium {
+        margin-left: -17.5px;
+        margin-top: -17.5px;
+      }
+      &.large {
+        margin-left: -22.5px;
+        margin-top: -22.5px;
+      }
+    }
+    &.small {
+      padding: 5px;
+      width: 40px;
+      height: 40px;
+      border-radius: 20px;
+    }
+    &.medium {
+      padding: 10px;
+      border-radius: 35px;
+    }
+    &.large {
+      padding: 15px;
+      border-radius: 45px;
+    }
+  }
+  &.radius-alt {
+    border: 2px solid #22b8af;
+  }
+  &.radius-gray {
+    border: 2px solid $grey-mid;
+  }
+  &.radius-mono {
+    border: 2px solid #375667;
+  }
+  &.radius-inverse {
+    border: 2px solid #ffffff;
+  }
+  &.radius-light {
+    border: 2px solid #BFBFBF;
+  }
+  &.radius-dark {
+    border: 2px solid #111111;
+  }
+}
+.inverse-icon-bg {
+  height: 23px;
+  width: 23px;
+}
