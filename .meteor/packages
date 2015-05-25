@@ -7,5 +7,13 @@
 meteor-platform
 autopublish
 insecure
-matthew:foundation5-sass
-vhx:foundation
+fourseven:scss
+vhx:style-foundation
+vhx:style-core
+vhx:style-buttons
+vhx:style-backgrounds
+vhx:style-forms
+vhx:style-lists
+vhx:style-typography
+vhx:style-media
+vhx:style-tables

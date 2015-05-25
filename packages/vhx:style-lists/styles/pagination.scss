@@ -7,7 +7,7 @@
 .pagination {
   display: inline-block;
   text-align: center;
-  margin: rem-calc(20 0);
+  margin: 20 0px;
 
   .previous_page, .next_page {
     font-weight: bold;
@@ -20,7 +20,7 @@
   .current {
     display: inline-block;
     background: $grey-mid;
-    padding: rem-calc(5 10);
+    padding: 5 10px;
     border-radius: 5px;
     color: #fff;
     font-style: normal;
@@ -28,7 +28,7 @@
 
   i {
     position: relative;
-    top: rem-calc(3);
+    top: 3px;
   }
 
   a {

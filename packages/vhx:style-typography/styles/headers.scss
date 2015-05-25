@@ -12,13 +12,13 @@
   transition: color 200ms ease, opacity 200ms ease;
   .line,
   &.line {
-    line-height: rem-calc(45);
-    min-height: rem-calc(45);
+    line-height: 45px;
+    min-height: 45px;
   }
   .line-large,
   &.line-large {
-    line-height: rem-calc(65);
-    min-height: rem-calc(65);
+    line-height: 65px;
+    min-height: 65px;
   }
 
   /* Top
@@ -28,9 +28,9 @@
   &.top:visited & a,
   &.top a:link,
   &.top a:visited {
-    font-size: rem-calc(48);
+    font-size: 48px;
     color: $ac-default-dark;
-    letter-spacing: rem-calc(2);
+    letter-spacing: 2px;
     &.strong,
     strong {
       font-weight: 600;
@@ -40,7 +40,7 @@
     }
     &.small,
     small {
-      font-size: rem-calc(28) !important;
+      font-size: 28px !important;
     }
   }
   &.top:hover & a,
@@ -57,7 +57,7 @@
   &.primary:visited & a,
   &.primary a:link,
   &.primary a:visited {
-    font-size: rem-calc(24);
+    font-size: 24px;
     color: $ac-default-dark;
     &.is-active {
       color: $ac-default-mid;
@@ -86,7 +86,7 @@
   &.secondary a:link,
   &.secondary a:visited {
     font-weight: bold;
-    font-size: rem-calc(16);
+    font-size: 16px;
     color: $ac-default-light;
 
     strong,
@@ -111,7 +111,7 @@
   &.tertiary a:link,
   &.tertiary a:visited {
     font-weight: bold;
-    font-size: rem-calc(14);
+    font-size: 14px;
     color: $ac-default-light;
 
     &.alt {
@@ -147,7 +147,7 @@
   &.quarternary:visited & a,
   &.quarternary a:link,
   &.quarternary a:visited {
-    font-size: rem-calc(14);
+    font-size: 14px;
     font-weight: 500;
     letter-spacing: 1px;
 
@@ -168,8 +168,8 @@
   &.alt,
   &.alt a:link,
   &.alt a:visited {
-    line-height: rem-calc(36);
-    font-size: rem-calc(35);
+    line-height: 36px;
+    font-size: 35px;
     font-family: $font-alt;
     color: $ac-default-dark;
     font-style: normal;

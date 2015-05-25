@@ -6,11 +6,11 @@
 .form .checkbox {
   position: relative;
   display: inline-block;
-  min-height: rem-calc($field-height);
+  min-height: $field-height;
   width: 100%;
 
   color: $ac-default-dark;
-  font-size: rem-calc(14);
+  font-size: 14;
   background: transparent;
 
   &:after {
@@ -36,12 +36,12 @@
       opacity: 1;
     }
     display: block;
-    min-height: rem-calc($field-height);
-    margin: rem-calc(0);
+    min-height: $field-height;
+    margin: 0;
     float: left;
     box-sizing: border-box;
 
-    line-height: rem-calc($field-height);
+    line-height: $field-height;
 
     &:after {
       content: "";
@@ -52,7 +52,7 @@
     &.wide {
       width: 100%;
       .checkbox--contain {
-        min-height: rem-calc($field-height);
+        min-height: $field-height;
       }
     }
 
@@ -70,9 +70,9 @@
     // unchecked
     .checkbox--icon {
       display: inline-block;
-      width: rem-calc($field-height);
-      height: rem-calc($field-height);
-      margin-right: rem-calc(10);
+      width: $field-height;
+      height: $field-height;
+      margin-right: 10;
       float: left;
       background-color: #fff;
       background-position: 50% 50%;
@@ -86,8 +86,8 @@
 
       .checkbox-animate {
         transition: all 300ms ease;
-        width: rem-calc($field-height - 10);
-        height: rem-calc($field-height - 10);
+        width: $field-height - 10;
+        height: $field-height - 10;
         top: 4px;
         right: 4px;
         display: block;
@@ -98,7 +98,7 @@
     .checkbox--label {
       display: block;
       float: left;
-      min-height: rem-calc($field-height);
+      min-height: $field-height;
     }
 
     &.check-right {
@@ -149,47 +149,47 @@
 }
 
 .form .checkbox.small {
-    min-height: rem-calc($field-height/3);
+    min-height: $field-height/3;
 
     label {
-      min-height: rem-calc($field-height/3);
-      line-height: rem-calc($field-height/3);
+      min-height: $field-height/3;
+      line-height: $field-height/3;
 
     .checkbox--icon {
-      width: rem-calc($field-height/3);
-      height: rem-calc($field-height/3);
+      width: $field-height/3;
+      height: $field-height/3;
       .checkbox-animate {
-        width: rem-calc($field-height/3 - 3);
-        height: rem-calc($field-height/3 - 3);
+        width: $field-height/3 - 3;
+        height: $field-height/3 - 3;
         top: 1px;
         right: 1px;
       }
     }
     .checkbox--label,
     .checkbox--contain {
-      min-height: rem-calc($field-height/3);
+      min-height: $field-height/3;
     }
   }
 }
 .form .checkbox.medium {
-    min-height: rem-calc($field-height/2);
+    min-height: $field-height/2;
     label {
-      min-height: rem-calc($field-height/2);
-      line-height: rem-calc($field-height/2);
+      min-height: $field-height/2;
+      line-height: $field-height/2;
 
     .checkbox--icon {
-      width: rem-calc($field-height/2);
-      height: rem-calc($field-height/2);
+      width: $field-height/2;
+      height: $field-height/2;
       .checkbox-animate {
-        width: rem-calc($field-height/2 - 5);
-        height: rem-calc($field-height/2 - 5);
+        width: $field-height/2 - 5;
+        height: $field-height/2 - 5;
         top: 2px;
         right: 2px;
       }
     }
     .checkbox--label,
     .checkbox--contain {
-      min-height: rem-calc($field-height/2);
+      min-height: $field-height/2;
     }
   }
 }
@@ -216,8 +216,8 @@
     .checkbox--circle {
       transition: all 200ms ease;
       display: inline-block;
-      width: rem-calc(24);
-      height: rem-calc(24);
+      width: 24;
+      height: 24;
       position: absolute;
       top: 0;
 
@@ -337,8 +337,8 @@
   &.small {
     label {
       border-radius: 15px;
-      width: rem-calc(52.5);
-      padding: rem-calc(7);
+      width: 52.5;
+      padding: 7;
 
       .checkbox--contain {
         border-radius: 15px;
@@ -346,8 +346,8 @@
       .checkbox--circle {
         left: 0px;
         top: -2px;
-        width: rem-calc(18);
-        height: rem-calc(18);
+        width: 18;
+        height: 18;
 
         .circle-top {
           height: 9px;
@@ -374,8 +374,8 @@
     &.invert input[type="checkbox"]:checked + label,
     input[type="checkbox"]:not(:checked) + label {
       .checkbox--icon {
-        height: rem-calc(15);
-        width: rem-calc(15);
+        height: 15;
+        width: 15;
         top: 0px;
         right: 0px;
         left: auto;
@@ -390,8 +390,8 @@
     input[type="checkbox"]:checked + label,
     &.invert input[type="checkbox"]:not(:checked) + label {
       .checkbox--icon {
-        height: rem-calc(18);
-        width: rem-calc(18);
+        height: 18;
+        width: 18;
         top: -2px;
         left: -1px;
         right: auto;

@@ -8,9 +8,16 @@ Package.onUse(function(api) {
   api.versionsFrom('1.0.2');
 
   api.use([
-    'vhx:style-core',
-    'fourseven:scss'
+    'iron:router@=1.0.6',
+    'fourseven:scss',
+    'vhx:style-core'
   ]);
+
+  api.use([
+    'templating',
+    'minimongo',
+    'spacebars'
+  ], 'client');
 
   api.addFiles([
     'config/_include.scss',

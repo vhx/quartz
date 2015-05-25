@@ -5,7 +5,7 @@
 ......................................*/
 body, ul, ol, dl, li, p, div, section, nav, table, h1, h2, h3, h4, h5, h6 {
   font-family: $font-default;
-  font-size: rem-calc(14);
+  font-size: 14px;
   line-height: 1.45;
   -webkit-font-smoothing: antialiased;
   -webkit-backface-visibility: hidden;
@@ -22,14 +22,14 @@ body {
     color: $ac-default-dark;
   }
   .tracking-small {
-    letter-spacing: rem-calc(1);
+    letter-spacing: 1px;
   }
   .tracking-medium {
-    letter-spacing: rem-calc(2);
+    letter-spacing: 2px;
   }
   .small,
   .text-small {
-    font-size: rem-calc(12);
+    font-size: 12px;
   }
   .text-medium {
     font-size: 115%;
@@ -53,13 +53,13 @@ p {
   }
   .line,
   &.line {
-    line-height: rem-calc(40);
-    min-height: rem-calc(40);
+    line-height: 40px;
+    min-height: 40px;
   }
   .line-large,
   &.line-large {
-    line-height: rem-calc(65);
-    min-height: rem-calc(65);
+    line-height: 65px;
+    min-height: 65px;
   }
   .alert,
   &.alert {
@@ -67,8 +67,8 @@ p {
   }
   .top,
   &.top {
-    font-size: rem-calc(16);
-    line-height: rem-calc(21);
+    font-size: 16px;
+    line-height: 21px;
   }
   .success,
   &.success {
@@ -86,11 +86,11 @@ p {
   &.primary {
     font-family: $font-default;
     color: $ac-default-light;
-    font-size: rem-calc(14);
+    font-size: 14px;
   }
   .secondary,
   &.secondary {
-    font-size: rem-calc(12);
+    font-size: 12px;
   }
   .dark,
   &.dark {
@@ -98,7 +98,7 @@ p {
   }
   .small,
   &.small {
-    font-size: rem-calc(12);
+    font-size: 12px;
   }
   &.inverse {
     font-weight: 500;

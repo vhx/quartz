@@ -28,7 +28,7 @@
   background-size: 15px 15px;
   background-position: calc(100% - 10px)  50%;
 
-  font-size: rem-calc(14);
+  font-size: 14px;
   color: $grey-mid-dark;
   li.search-field input[type="text"] {
     padding: 0;
@@ -53,12 +53,12 @@
     .chosen-choices {
       border: none !important;
       box-shadow: none !important;
-      min-height: rem-calc($field-height) !important;
+      min-height: $field-height !important;
       width: 90% !important;
-      padding: rem-calc(6 7) !important;
+      padding: 6px 7px !important;
 
       color: $ac-default-dark !important;
-      font-size: rem-calc(14) !important;
+      font-size: 14px !important;
       background: transparent !important;
 
       &:hover {
@@ -74,7 +74,7 @@
         }
       }
       li.search-field input[type="text"] {
-        height: rem-calc(28);
+        height: 28px;
         width: 100% !important;
         margin: 0;
         color: $ac-default-light !important;

@@ -6,7 +6,7 @@
 .form {
   .row,
   .row.row {
-    margin-bottom: rem-calc(25);
+    margin-bottom: 25px;
   }
   fieldset {
     border: none;
@@ -34,8 +34,8 @@
   label {
     display: block;
     color: $ac-default-dark;
-    font-size: rem-calc(14);
-    margin-bottom: rem-calc(5);
+    font-size: 14px;
+    margin-bottom: 5px;
   }
 
 
@@ -47,12 +47,12 @@
   input[type="password"],
   input[type="number"],
   textarea {
-    height: rem-calc($field-height);
+    height: $field-height;
     width: 100%;
-    padding: rem-calc(6 15);
+    padding: 6px 15px;
 
     color: $ac-default-dark;
-    font-size: rem-calc(14);
+    font-size: 14px;
     background-color: #fff;
     border: 1px solid #d1d9dc;
     margin-bottom: 0;
@@ -128,18 +128,18 @@
     }
 
     &.small {
-      padding: rem-calc(6 10);
-      width: rem-calc(45);
+      padding: 6px 10px;
+      width: 45px;
     }
     &.medium {
-      padding: rem-calc(6 10);
-      width: rem-calc(75);
+      padding: 6px 10px;
+      width: 75px;
     }
     &.large {
-      width: rem-calc(175);
+      width: 175px;
     }
     &.xlarge {
-      width: rem-calc(200);
+      width: 200px;
     }
     // over-write height set above, generally for <textarea>
     &.height-auto {
@@ -162,22 +162,22 @@
   }
 
   textarea {
-    padding: rem-calc(10 15);
+    padding: 10px 15px;
     &.small {
       width: 100%;
-      min-height: rem-calc($field-height);
+      min-height: $field-height;
     }
     &.medium {
       width: 100%;
-      min-height: rem-calc($field-height * 1.5);
+      min-height: $field-height * 1.5;
     }
     &.large {
       width: 100%;
-      min-height: rem-calc($field-height * 2);
+      min-height: $field-height * 2;
     }
     &.xlarge {
       width: 100%;
-      min-height: rem-calc($field-height * 3.5);
+      min-height: $field-height * 3.5;
     }
   }
 }
@@ -186,8 +186,8 @@
   position: relative;
   .input-label {
     position: absolute;
-    top: rem-calc(11);
-    left: rem-calc(15);
+    top: 11px;
+    left: 15px;
     color: $ac-default-light;
   }
 }

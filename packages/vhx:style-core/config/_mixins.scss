@@ -292,17 +292,17 @@ $arrow-classes: 'background-black', 'background-white', 'background-gray', 'is-a
 /* helper function for margin and padding
 ......................................*/
 @function set_spacer_size($name) {
-  $size: rem-calc(25);
+  $size: 25px;
   @if $name == 'small' {
-    $size: rem-calc(5);
+    $size: 5px;
   } @else if $name == 'smedium' {
-    $size: rem-calc(10);
+    $size: 10px;
   } @else if $name == 'medium' {
-    $size: rem-calc(15);
+    $size: 15px;
   } @else if $name == 'large' {
-    $size: rem-calc(35);
+    $size: 35px;
   } @else if $name == 'xlarge' {
-    $size: rem-calc(65);
+    $size: 65px;
   }
 
   @return $size;
@@ -332,16 +332,16 @@ $arrow-classes: 'background-black', 'background-white', 'background-gray', 'is-a
 }
 
 @function set_frame_size($name) {
-  $size: rem-calc(75);
+  $size: 75px;
 
   @if $name == 'small' {
-    $size: rem-calc(75);
+    $size: 75px;
   } @else if $name == 'medium' {
-    $size: rem-calc(125);
+    $size: 125px;
   } @else if $name == 'large' {
-    $size: rem-calc(325);
+    $size: 325px;
   } @else if $name == 'xlarge' {
-    $size: rem-calc(525);
+    $size: 525px;
   }
 
   @return $size;

@@ -14,35 +14,35 @@
   padding-bottom: 56.25%;
 
   &.small {
-    height: rem-calc(40);
-    width: rem-calc(71.111111111);
+    height: 40px;
+    width: 71.111111111px;
     padding-bottom: 0;
   }
   &.medium {
-    height: rem-calc(80);
-    width: rem-calc(142.222222222);
+    height: 80px;
+    width: 142.222222222px;
     padding-bottom: 0;
   }
   &.large {
-    height: rem-calc(150);
-    width: rem-calc(266.666666667);
+    height: 150px;
+    width: 266.666666667px;
     padding-bottom: 0;
   }
   &.xlarge {
-    height: rem-calc(250);
-    width: rem-calc(444.444444444);
+    height: 250px;
+    width: 444.444444444px;
     padding-bottom: 0;
   }
   &.square {
     border: none;
-    width: rem-calc(48);
-    height: rem-calc(48);
+    width: 48px;
+    height: 48px;
     border-radius: 0px;
 
     &.upload-placeholder {
       @extend %icon-plus-alt;
       background-position: 50% 50%;
-      background-size: rem-calc(20 20);
+      background-size: 20px 20px;
     }
     .upload-remove {
       transition: opacity 100ms ease-out, bottom 200ms ease, background 200ms ease;
@@ -129,7 +129,7 @@
     left: 0;
     width: 100%;
 
-    padding: rem-calc(10);
+    padding: 10px;
     background-color: rgba(0,0,0,.3);
     color: #ffffff;
     white-space: nowrap;

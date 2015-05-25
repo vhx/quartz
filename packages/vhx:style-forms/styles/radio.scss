@@ -11,7 +11,7 @@
   margin-left: 0;
 
   color: $ac-default-dark;
-  font-size: rem-calc(14);
+  font-size: 14px;
   background: transparent;
 
   @include user-select(none);
@@ -25,25 +25,25 @@
   li {
     @extend %cf;
     display: inline-block;
-    margin-right: rem-calc(10);
+    margin-right: 10px;
   }
 
     /* label unchecked
   ...................................*/
   label {
     display: block;
-    height: rem-calc(20);
-    line-height: rem-calc(20);
-    margin: rem-calc(0);
+    height: 20px;
+    line-height: 20px;
+    margin: 0px;
     float: left;
     box-sizing: border-box;
 
     .radio--icon {
       position: relative;
       display: inline-block;
-      width: rem-calc(20);
-      height: rem-calc(20);
-      margin-right: rem-calc(5);
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
       float: left;
 
       border: 1px solid $ac-default-dark;
@@ -93,7 +93,7 @@
     .radio--label {
       display: block;
       float: left;
-      height: rem-calc(20);
+      height: 20px;
     }
   }
 
@@ -115,8 +115,8 @@
     height: auto;
     li {
       display: block;
-      margin-right: rem-calc(0);
-      margin-bottom: rem-calc(10);
+      margin-right: 0px;
+      margin-bottom: 10px;
     }
   }
 

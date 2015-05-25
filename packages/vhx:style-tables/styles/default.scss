@@ -8,7 +8,7 @@
   box-sizing: border-box;
   width: 100%;
   table-layout: fixed;
-  font-size: rem-calc(14);
+  font-size: 14px;
   border: none;
   color: #8d9da6;
   margin-bottom: 0;
@@ -18,12 +18,12 @@
   }
 
   &.double-line .clickable .clickable-trigger:link {
-    min-height: rem-calc(80);
+    min-height: 80px;
   }
 
   &.double-line {
     td {
-      min-height: rem-calc(80);
+      min-height: 80px;
     }
   }
 
@@ -48,7 +48,7 @@
       border-bottom: 1px solid #d6dcdf;
     }
     th {
-      padding: rem-calc(15 15 15 20);
+      padding: 15px 15px 15px 20px;
       border: none;
       background: url(image-path('admin/table-tick.png')) no-repeat 0 100%;
       &:first-child {
@@ -64,11 +64,11 @@
 
   th, td {
     box-sizing: border-box;
-    padding: rem-calc(20 15);
+    padding: 20px 15px;
     color: $ac-default-light;
-    line-height: rem-calc(20);
+    line-height: 20px;
     span, strong, a {
-      // line-height: rem-calc(20);
+      // line-height: 20px;
     }
     strong {
       color: $ac-default-dark;
@@ -76,7 +76,7 @@
     vertical-align: top;
 
     &.fill-row {
-      padding: rem-calc(20 15 0 15);
+      padding: 20px 15px 0px 15px;
     }
   }
 
@@ -122,8 +122,8 @@
       .clickable-trigger:link,
       .clickable-trigger:visited {
         vertical-align: middle;
-        padding: rem-calc(20) 0;
-        min-height: rem-calc(60);
+        padding: 20px 0;
+        min-height: 60px;
         color: $ac-default-light;
         text-decoration: none;
         strong {
@@ -145,7 +145,7 @@
   }
 
   td {
-    height: rem-calc(60);
+    height: 60px;
     strong {
       color: #375667;
       font-weight: normal;
@@ -263,9 +263,9 @@
       float: none;
       margin-bottom: 5px;
       height: auto;
-      padding: rem-calc(5 10);
+      padding: 5px 10px;
       &:first-child {
-        padding-top: rem-calc(10);
+        padding-top: 10px;
       }
     }
     &.double-line td {
@@ -273,7 +273,7 @@
     }
     tr.clickable .clickable-trigger:link,
     tr.clickable .clickable-trigger:visited {
-      padding: rem-calc(5 0 10 0);
+      padding: 5px 0px 10px 0px;
       min-height: 0px;
     }
   }
@@ -282,7 +282,7 @@
   td {
     &.small-truncate {
       .label {
-        width: rem-calc(75px);
+        width: 75px;
       }
     }
   }
