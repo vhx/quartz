@@ -1,4 +1,4 @@
-@import "include";
+@import "../config/include";
 
 /*.....................................
   Admin Radio
@@ -36,7 +36,7 @@
     line-height: rem-calc(20);
     margin: rem-calc(0);
     float: left;
-    @include box-sizing(border-box);
+    box-sizing: border-box;
 
     .radio--icon {
       position: relative;
@@ -48,14 +48,14 @@
 
       border: 1px solid $ac-default-dark;
 
-      @include box-shadow(none);
-      @include box-sizing(border-box);
-      @include border-radius(20px);
-      @include transition(box-shadow .2s ease, color .2s ease);
+      box-shadow: none;
+      box-sizing: border-box;
+      border-radius: 20px;
+      transition: box-shadow .2s ease, color .2s ease;
 
       .circle-top {
         opacity: 0;
-        @include transition(opacity .2s ease);
+        transition: opacity .2s ease;
         display: block;
         height: 5px;
         overflow: hidden;
@@ -67,12 +67,12 @@
           width: 10px;
           height: 10px;
           background: $ac-default-mid;
-          @include border-radius(10px);
+          border-radius: 10px;
         }
       }
       .circle-bottom {
         opacity: 0;
-        @include transition(opacity .2s ease);
+        transition: opacity .2s ease;
         display: block;
         height: 5px;
         overflow: hidden;
@@ -86,7 +86,7 @@
           width: 10px;
           height: 10px;
           background: $ac-default-dark;
-          @include border-radius(10px);
+          border-radius: 10px;
         }
       }
     }
@@ -103,7 +103,7 @@
     .radio--icon {
       .circle-top, .circle-bottom {
         opacity: 1;
-        @include transition(opacity .2s ease);
+        transition: opacity .2s ease;
       }
     }
   }

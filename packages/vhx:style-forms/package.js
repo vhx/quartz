@@ -1,6 +1,6 @@
 Package.describe({
-  name: 'vhx:style-buttons',
-  summary: 'VHX Button Styles',
+  name: 'vhx:style-forms',
+  summary: 'VHX Form Styles',
   version: '0.1.0'
 });
 

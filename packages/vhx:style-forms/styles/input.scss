@@ -1,4 +1,4 @@
-@import "include";
+@import "../config/include";
 
 /*.....................................
   Admin Input
@@ -57,10 +57,10 @@
     border: 1px solid #d1d9dc;
     margin-bottom: 0;
 
-    @include box-shadow(none);
-    @include box-sizing(border-box);
-    @include border-radius(3px);
-    @include transition(border .2s ease);
+    box-shadow: none;
+    box-sizing: border-box;
+    border-radius: 3px;
+    transition: border .2s ease;
 
     @include placeholder {
       color: rgba(55, 86, 103, .5) !important;
@@ -102,7 +102,7 @@
 
       border: 1px solid #9aaab4;
 
-      @include box-shadow(none);
+      box-shadow: none;
 
       @include placeholder {
         color: transparent !important;
@@ -121,7 +121,7 @@
         }
 
         @include placeholder {
-          @include transition(all .2s ease);
+          transition: all .2s ease;
           color: $ac-error-light !important;
         }
       }
