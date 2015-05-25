@@ -1,0 +1,48 @@
+@import "../config/include";
+
+/*.....................................
+  Tags
+......................................*/
+.tag {
+  display: inline-block;
+  color: $ac-default-light;
+  background-color: $grey-light;
+  padding: rem-calc(0 10);
+  font-size: rem-calc(14);
+  line-height: rem-calc(21);
+  border-radius: 3px;
+
+  &:link,
+  &:visited {
+    color: $ac-default-light;
+  }
+  &:hover,
+  &:active {
+    color: $ac-default-dark;
+    background-color: $grey-mid;
+  }
+  &.is-selected {
+    background-color: $ac-pri-mid;
+    color: #ffffff;
+  }
+  &.tag-removable-small {
+    padding-left: 10px;
+    padding-right: 30px;
+    background-size: 15px;
+    background-position: right 10px center;
+  }
+}
+
+.tag-list {
+  list-style: none;
+  text-indent: 0;
+  margin-left: 0;
+  font-size: rem-calc(14);
+  li {
+    @extend %cf;
+    margin: rem-calc(5 0);
+    span {
+      float: right;
+    }
+  }
+}

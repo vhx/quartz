@@ -1,0 +1,52 @@
+@import "../config/include";
+
+/*.....................................
+  Pagination
+......................................*/
+
+.pagination {
+  display: inline-block;
+  text-align: center;
+  margin: rem-calc(20 0);
+
+  .previous_page, .next_page {
+    font-weight: bold;
+  }
+
+  .disabled {
+    display: none;
+  }
+
+  .current {
+    display: inline-block;
+    background: $grey-mid;
+    padding: rem-calc(5 10);
+    border-radius: 5px;
+    color: #fff;
+    font-style: normal;
+  }
+
+  i {
+    position: relative;
+    top: rem-calc(3);
+  }
+
+  a {
+    display: inline-block;
+    padding: 0 5px;
+  }
+
+  a:link,
+  a:visited {
+    color: $ac-default-dark;
+  }
+
+  a:hover,
+  a:active {
+    font-weight: bold;
+  }
+
+  .gap {
+    color: $ac-default-dark;
+  }
+}
