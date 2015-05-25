@@ -1,0 +1,22 @@
+@import "../config/mixins";
+
+/*.....................................
+  Foundation Form Extensions
+......................................*/
+form {
+
+  /* fields and rows
+  ...................................*/
+  .field {
+    margin: 0;
+  }
+  input.error {
+    margin-bottom: rem-calc(16px);
+  }
+
+  &[data-vhx-custom-forms] {
+    input[type="checkbox"] {
+      display: none;
+    }
+  }
+}
