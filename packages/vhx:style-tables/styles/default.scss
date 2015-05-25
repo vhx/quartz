@@ -1,0 +1,292 @@
+@import "../config/include";
+
+/*.....................................
+  Tables
+......................................*/
+
+.table {
+  box-sizing: border-box;
+  width: 100%;
+  table-layout: fixed;
+  font-size: rem-calc(14);
+  border: none;
+  color: #8d9da6;
+  margin-bottom: 0;
+
+  &.border-top {
+    border-top: 1px solid #d6dcdf;
+  }
+
+  &.double-line .clickable .clickable-trigger:link {
+    min-height: rem-calc(80);
+  }
+
+  &.double-line {
+    td {
+      min-height: rem-calc(80);
+    }
+  }
+
+  /* table head
+  ..................................*/
+  thead, th {
+    box-sizing: border-box;
+    font-family: $font-primary;
+    font-weight: bold;
+    color: #8d9da6;
+    strong {
+      font-weight: bold;
+    }
+  }
+  thead {
+    border: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    background: transparent;
+
+    tr {
+      border-bottom: 1px solid #d6dcdf;
+    }
+    th {
+      padding: rem-calc(15 15 15 20);
+      border: none;
+      background: url(image-path('admin/table-tick.png')) no-repeat 0 100%;
+      &:first-child {
+        background: none;
+      }
+    }
+
+    &.no-tick {
+      background: none;
+    }
+  }
+
+
+  th, td {
+    box-sizing: border-box;
+    padding: rem-calc(20 15);
+    color: $ac-default-light;
+    line-height: rem-calc(20);
+    span, strong, a {
+      // line-height: rem-calc(20);
+    }
+    strong {
+      color: $ac-default-dark;
+    }
+    vertical-align: top;
+
+    &.fill-row {
+      padding: rem-calc(20 15 0 15);
+    }
+  }
+
+  /* table body
+  ..................................*/
+  tbody {
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+  tr {
+    box-sizing: border-box;
+    transition: background 200ms ease-out;
+    background: #fff;
+    border-bottom: 1px solid $grey-light;
+
+    &.is-disabled {
+      color: #f8f9fb !important;
+      background: #f1f3f4 !important;
+      a, strong, td {
+        color: #7f9bac !important;
+      }
+    }
+    &.sticky {
+      background: lighten($ac-pri-hover, 30) !important;
+    }
+    &.selected {
+      background: $ac-pri-hover !important;
+    }
+    &.clickable {
+      cursor: pointer;
+      &.is-active {
+        td {
+          height: auto;
+          padding-top: 0;
+          padding-bottom: 0;
+        }
+      }
+      &.is-hovered,
+      &:hover {
+        background: $ac-pri-hover !important;
+      }
+      .clickable-trigger:link,
+      .clickable-trigger:visited {
+        vertical-align: middle;
+        padding: rem-calc(20) 0;
+        min-height: rem-calc(60);
+        color: $ac-default-light;
+        text-decoration: none;
+        strong {
+          color: #375667;
+        }
+      }
+      .clickable-trigger:hover,
+      .clickable-trigger:active {
+        color: $ac-default-light;
+        text-decoration: none;
+        strong {
+          color: #375667;
+        }
+      }
+    }
+    &:nth-child(even) {
+      background: transparent;
+    }
+  }
+
+  td {
+    height: rem-calc(60);
+    strong {
+      color: #375667;
+      font-weight: normal;
+    }
+  }
+
+  /* row head
+  ..................................*/
+  .row-head {
+    background: #f8f9fb !important;
+
+    td, td .label {
+      position: relative;
+      font-family: $font-primary;
+      font-weight: 500;
+      color: #375667;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    td {
+      height: auto;
+    }
+    .arrow {
+      display: block;
+      position: absolute;
+      bottom: 0px;
+      left: 30px;
+      background: #f8f9fb;
+
+      &:after,
+      &:before {
+        top: 100%;
+        left: 50%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+      }
+
+      &:after {
+        border-color: rgba(248, 249, 251, 0);
+        border-top-color: #f8f9fb;
+        border-width: 10px;
+        margin-left: -10px;
+      }
+      &:before {
+        border-color: rgba(223, 223, 223, 0);
+        border-top-color: #dfdfdf;
+        border-width: 11px;
+        margin-left: -11px;
+      }
+    }
+  }
+
+  /* table striped
+  ..................................*/
+  &.striped {
+    tbody tr {
+      border: none;
+    }
+    tbody tr:nth-child(odd) {
+      background: #f8f9fb;
+    }
+  }
+
+  &.mini {
+    td {
+      padding: 5px 10px;
+      height: auto;
+    }
+  }
+
+  &.compact {
+    width: auto;
+
+    td {
+      padding: 5px;
+      height: auto;
+    }
+    td.date {
+      white-space: nowrap;
+    }
+  }
+
+  &.text-inverse {
+    td {
+      color: $ac-default-dark;
+
+      .light { color: #8d9da6; }
+    }
+  }
+
+}
+.firefox .table {
+  .row-head {
+    .arrow {
+      bottom: 1px;
+    }
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  // styling the tablesaw
+  .table.tablesaw-stack {
+    .tablesaw-cell-label {
+      display: block;
+      text-transform: uppercase;
+      font-size: 11px;
+    }
+    td {
+      position: relative;
+      display: block;
+      float: none;
+      margin-bottom: 5px;
+      height: auto;
+      padding: rem-calc(5 10);
+      &:first-child {
+        padding-top: rem-calc(10);
+      }
+    }
+    &.double-line td {
+      min-height: 0px;
+    }
+    tr.clickable .clickable-trigger:link,
+    tr.clickable .clickable-trigger:visited {
+      padding: rem-calc(5 0 10 0);
+      min-height: 0px;
+    }
+  }
+
+
+  td {
+    &.small-truncate {
+      .label {
+        width: rem-calc(75px);
+      }
+    }
+  }
+  .clickable-trigger .dropdown.icon-only{
+    width: 100%;
+  }
+}
