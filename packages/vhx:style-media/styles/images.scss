@@ -1,0 +1,155 @@
+@import "../config/include";
+
+/*.....................................
+  Admin Images & Embeds
+......................................*/
+.img,
+.embed,
+.responsive-video-container {
+  position: relative;
+  display: block;
+  vertical-align: middle;
+  height: 0;
+  width: 100%;
+  padding-bottom: 56.25%;
+
+  &.small {
+    height: rem-calc(40);
+    width: rem-calc(71.111111111);
+    padding-bottom: 0;
+  }
+  &.medium {
+    height: rem-calc(80);
+    width: rem-calc(142.222222222);
+    padding-bottom: 0;
+  }
+  &.large {
+    height: rem-calc(150);
+    width: rem-calc(266.666666667);
+    padding-bottom: 0;
+  }
+  &.xlarge {
+    height: rem-calc(250);
+    width: rem-calc(444.444444444);
+    padding-bottom: 0;
+  }
+  &.square {
+    border: none;
+    width: rem-calc(48);
+    height: rem-calc(48);
+    border-radius: 0px;
+
+    &.upload-placeholder {
+      @extend %icon-plus-alt;
+      background-position: 50% 50%;
+      background-size: rem-calc(20 20);
+    }
+    .upload-remove {
+      transition: opacity 100ms ease-out, bottom 200ms ease, background 200ms ease;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      opacity: 0;
+      margin-left: -10px;
+      background: rgba(255,255,255,.4);
+      width: 20px;
+      height: 20px;
+      background: #fff;
+      z-index: 1000;
+      border-radius: 20px;
+      border: 1px solid #ccc;
+      i {
+        background-size: 10px 10px;
+        width: 100%;
+        height: 100%;
+      }
+      &:hover {
+        background: #dddddd;
+      }
+    }
+    &:hover {
+      .upload-remove {
+        bottom: -10px;
+        opacity: 1;
+        i {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .img-content,
+  .embed-content,
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+  }
+}
+.js-img-array {
+  ul, li {
+    overflow: initial;
+  }
+}
+.img {
+  background: #f1f3f4;
+  border: 1px solid #d1d9dc;
+
+  text-align: center;
+  background-position: 50% 50%;
+  border-radius: 3px;
+  background-size: cover;
+
+  &.placeholder {
+    .button,
+    .btn-gray,
+    .btn-teal,
+    .button-percentage {
+      position: absolute;
+      left: 5%;
+      bottom: 8%;
+      display: block;
+      .btn-gray,
+      .btn-teal,
+      .button {
+        position: static;
+        left: auto;
+        bottom: auto;
+      }
+    }
+  }
+
+  .caption {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    padding: rem-calc(10);
+    background-color: rgba(0,0,0,.3);
+    color: #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+}
+
+@media only screen and (max-width: 40em) {
+  .img, .embed {
+    &.medium, &.large, &.xlarge {
+      width: 100%;
+    }
+    &.cell {
+      width: auto;
+    }
+  }
+
+}
