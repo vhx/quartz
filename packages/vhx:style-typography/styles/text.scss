@@ -1,0 +1,123 @@
+@import "../config/include";
+
+/*.....................................
+  TEXT
+......................................*/
+body, ul, ol, dl, li, p, div, section, nav, table, h1, h2, h3, h4, h5, h6 {
+  font-family: $font-default;
+  font-size: rem-calc(14);
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+  -webkit-backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body.text-dark {
+  color: $ac-default-dark;
+}
+
+body {
+  strong {
+    font-weight: 500;
+    color: $ac-default-dark;
+  }
+  .tracking-small {
+    letter-spacing: rem-calc(1);
+  }
+  .tracking-medium {
+    letter-spacing: rem-calc(2);
+  }
+  .small,
+  .text-small {
+    font-size: rem-calc(12);
+  }
+  .text-medium {
+    font-size: 115%;
+    line-height: 1.5;
+    p {
+      font-size: 115%;
+    }
+  }
+  .text-large {
+    font-size: 150%;
+  }
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+.text {
+  .text-strong {
+    color: $ac-default-dark;
+  }
+  .line,
+  &.line {
+    line-height: rem-calc(40);
+    min-height: rem-calc(40);
+  }
+  .line-large,
+  &.line-large {
+    line-height: rem-calc(65);
+    min-height: rem-calc(65);
+  }
+  .alert,
+  &.alert {
+    color: $ac-error-mid;
+  }
+  .top,
+  &.top {
+    font-size: rem-calc(16);
+    line-height: rem-calc(21);
+  }
+  .success,
+  &.success {
+    color: $ac-succ-mid;
+  }
+  .pending,
+  &.pending {
+    color: #ffbc2b;
+  }
+  .holding,
+  &.holding {
+    color: #f47a37;
+  }
+  .primary,
+  &.primary {
+    font-family: $font-default;
+    color: $ac-default-light;
+    font-size: rem-calc(14);
+  }
+  .secondary,
+  &.secondary {
+    font-size: rem-calc(12);
+  }
+  .dark,
+  &.dark {
+    color: #3A5969;
+  }
+  .small,
+  &.small {
+    font-size: rem-calc(12);
+  }
+  &.inverse {
+    font-weight: 500;
+    color: $ac-inverse-mid;
+    strong {
+      font-weight: 500;
+      color: #fff;
+    }
+  }
+  &.transparent,
+  &.text-transparent {
+    opacity: .6;
+  }
+  .highlight,
+  &.highlight {
+    color: $ac-pri-mid;
+  }
+}
+
+.text-transparent {
+  opacity: .6;
+}

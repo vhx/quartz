@@ -1,0 +1,251 @@
+@import "../config/include";
+
+/*.....................................
+  Headers
+......................................*/
+.head {
+  font-family: $font-primary;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 1.3;
+  transition: color 200ms ease, opacity 200ms ease;
+  .line,
+  &.line {
+    line-height: rem-calc(45);
+    min-height: rem-calc(45);
+  }
+  .line-large,
+  &.line-large {
+    line-height: rem-calc(65);
+    min-height: rem-calc(65);
+  }
+
+  /* Top
+  ......................................*/
+  &.top,
+  &.top:link & a,
+  &.top:visited & a,
+  &.top a:link,
+  &.top a:visited {
+    font-size: rem-calc(48);
+    color: $ac-default-dark;
+    letter-spacing: rem-calc(2);
+    &.strong,
+    strong {
+      font-weight: 600;
+    }
+    &.is-active {
+      color: $ac-default-mid;
+    }
+    &.small,
+    small {
+      font-size: rem-calc(28) !important;
+    }
+  }
+  &.top:hover & a,
+  &.top:active & a,
+  &.top a:hover,
+  &.top a:active {
+    color: $ac-default-mid;
+  }
+
+  /* Primary
+  ......................................*/
+  &.primary,
+  &.primary:link & a,
+  &.primary:visited & a,
+  &.primary a:link,
+  &.primary a:visited {
+    font-size: rem-calc(24);
+    color: $ac-default-dark;
+    &.is-active {
+      color: $ac-default-mid;
+    }
+    small {
+      font-size: 80% !important;
+      font-weight: 400;
+    }
+    strong,
+    &.strong {
+      font-weight: bold;
+    }
+  }
+  &.primary:hover & a,
+  &.primary:active & a,
+  &.primary a:hover,
+  &.primary a:active {
+    color: $ac-default-mid;
+  }
+
+  /* Secondary
+  ......................................*/
+  &.secondary,
+  &.secondary:link & a,
+  &.secondary:visited & a,
+  &.secondary a:link,
+  &.secondary a:visited {
+    font-weight: bold;
+    font-size: rem-calc(16);
+    color: $ac-default-light;
+
+    strong,
+    &.strong,
+    &.is-active {
+      color: $ac-default-dark;
+      font-weight: bold;
+    }
+  }
+  &.secondary:hover & a,
+  &.secondary:active & a,
+  &.secondary a:hover,
+  &.secondary a:active {
+    color: $ac-default-dark;
+  }
+
+  /* Tertiary
+  ......................................*/
+  &.tertiary,
+  &.tertiary:link & a,
+  &.tertiary:visited & a,
+  &.tertiary a:link,
+  &.tertiary a:visited {
+    font-weight: bold;
+    font-size: rem-calc(14);
+    color: $ac-default-light;
+
+    &.alt {
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
+    strong,
+    &.strong,
+    &.is-active {
+      color: $ac-default-dark;
+      font-weight: bold;
+    }
+    &.is-link {
+      color: $ac-pri-mid;
+      &:hover,
+      &:active {
+        color: $ac-pri-dark;
+      }
+    }
+  }
+  &.tertiary:hover & a,
+  &.tertiary:active & a,
+  &.tertiary a:hover,
+  &.tertiary a:active {
+    color: $ac-default-dark;
+  }
+
+
+  /* Quarternary
+  ......................................*/
+  &.quarternary,
+  &.quarternary:link & a,
+  &.quarternary:visited & a,
+  &.quarternary a:link,
+  &.quarternary a:visited {
+    font-size: rem-calc(14);
+    font-weight: 500;
+    letter-spacing: 1px;
+
+    strong,
+    &.strong,
+    &.is-active {
+      font-weight: bold;
+    }
+    &.is-link {
+      color: $ac-pri-mid;
+      &:hover,
+      &:active {
+        color: $ac-pri-dark;
+      }
+    }
+  }
+
+  &.alt,
+  &.alt a:link,
+  &.alt a:visited {
+    line-height: rem-calc(36);
+    font-size: rem-calc(35);
+    font-family: $font-alt;
+    color: $ac-default-dark;
+    font-style: normal;
+    font-weight: 400;
+  }
+  &.alt:hover & a,
+  &.alt:active & a,
+  &.alt a:hover,
+  &.alt a:active {
+    color: $ac-default-mid;
+  }
+
+  &.inverse,
+  &.inverse a:link,
+  &.inverse a:visited, {
+    color: #fff;
+    strong,
+    &.strong {
+      color: #fff;
+    }
+  }
+  &.inverse:hover & a,
+  &.inverse:active & a,
+  &.inverse a:hover,
+  &.inverse a:active {
+    color: #fff;
+  }
+
+  &.dark,
+  &.dark:link & a,
+  &.dark:visited & a,
+  &.dark a:link,
+  &.dark a:visited, {
+    font-weight: 500;
+    color: #000000;
+    strong,
+    &.strong {
+      font-weight: 700;
+      color: #000000;
+    }
+  }
+  &.dark:hover & a,
+  &.dark:active & a,
+  &.dark a:hover,
+  &.dark a:active {
+    color: #000000;
+  }
+
+  &.transparent,
+  &.head-transparent {
+    opacity: .6;
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &.link-primary,
+  .link-primary {
+    &:link,
+    &:visited {
+      color: $ac-pri-mid !important;
+    }
+    &:hover,
+    &.is-hover,
+    &:active,
+    &.is-active {
+      color: $ac-pri-dark !important;
+    }
+  }
+}
+
+strong.secondary.head {
+  color: $ac-default-dark;
+  font-weight: bold;
+}
+strong.inverse.head {
+  font-weight: 500;
+  color: $ac-inverse-light;
+}

@@ -1,0 +1,180 @@
+@import "../config/include";
+
+/*.....................................
+  LINKS
+......................................*/
+
+/* default
+......................................*/
+a {
+  transition: color 200ms ease;
+  &:link,
+  &:visited {
+    color: $ac-pri-mid;
+  }
+  &:hover,
+  &.is-hover,
+  &:active,
+  &.is-active {
+    color: $ac-pri-dark;
+    text-decoration: none;
+  }
+}
+
+.link-primary {
+  &:link,
+  &:visited {
+    color: $ac-pri-mid;
+    strong {
+      color: $ac-pri-mid;
+    }
+  }
+  &:hover,
+  &.is-hover,
+  &:active,
+  &.is-active {
+    color: $ac-pri-dark;
+    text-decoration: none;
+    strong {
+      color: $ac-pri-dark;
+      text-decoration: none;
+    }
+  }
+}
+
+/* ignore default link,
+   shown as standard default text
+......................................*/
+a.ignore {
+  &:link,
+  &:visited {
+    color: $ac-default-light;
+    strong {
+      font-weight: 400;
+      color: $ac-default-dark;
+    }
+  }
+  &:hover,
+  &.is-hover,
+  &:active,
+  &.is-active {
+    color: $ac-default-dark;
+    text-decoration: none;
+    strong {
+      font-weight: 400;
+      color: $ac-default-light;
+    }
+  }
+}
+a {
+  &:link,
+  &:visited {
+    .ignore {
+      color: $ac-default-light;
+    }
+  }
+  &:hover,
+  &.is-hover,
+  &:active,
+  &.is-active {
+    .ignore {
+      color: $ac-default-dark;
+      text-decoration: none;
+    }
+  }
+}
+.text-white {
+  a.ignore {
+    &:link,
+    &:visited {
+      color: rgba(255, 255, 255, .6);
+    }
+    &:hover,
+    &.is-hover,
+    &:active,
+    &.is-active {
+      color: rgba(255, 255, 255, 1);
+      text-decoration: none;
+    }
+  }
+}
+
+/* inactive class for no pointer-events
+......................................*/
+a.inactive {
+  pointer-events: none;
+  color: $ac-default-light;
+}
+
+/* links as an inverse for
+   dark backgrounds
+......................................*/
+a.inverse {
+  &:link,
+  &:visited {
+    color: #fff;
+  }
+  &:hover,
+  &.is-hover,
+  &:active,
+  &.is-active {
+    color: rgba(255,255,255,.6);
+    text-decoration: none;
+  }
+}
+
+/* utility for svg icon hover states
+......................................*/
+a.has-icon-link,
+a.has-link-icon {
+  &:link,
+  &:visited {
+    i, .has-icon {
+      transition: opacity 200ms ease-out;
+      opacity: .5;
+    }
+    &.disabled,
+    &.is-disabled {
+      i, .has-icon {
+        opacity: .4;
+      }
+    }
+  }
+  &:hover,
+  &.is-hover,
+  &:active,
+  &.is-active {
+    i, .has-icon {
+      transition: opacity 200ms ease-out;
+      opacity: 1;
+    }
+    &.disabled,
+    &.is-disabled {
+      i, .has-icon {
+        opacity: .4;
+      }
+    }
+  }
+  &.is-active {
+    i, .has-icon {
+      opacity: 1 !important;
+    }
+  }
+  i, .has-icon {
+    &.is-active,
+    &.is-hover {
+      cursor: pointer;
+      transition: opacity 200ms ease-out;
+      opacity: 1;
+    }
+  }
+  &.disabled,
+  &.is-disabled {
+    &.is-active,
+    &.is-hover {
+      cursor: pointer;
+      transition: opacity 200ms ease-out;
+      opacity: 1;
+    }
+  }
+}
