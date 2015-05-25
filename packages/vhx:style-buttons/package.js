@@ -13,9 +13,11 @@ Package.onUse(function(api) {
   ]);
 
   api.addFiles([
-    'config/_mixins.scss',
-    'styles/buttons.block.scss',
-    'styles/buttons.default.scss'
+    'config/_include.scss',
+    'styles/block.scss',
+    'styles/default.scss',
+    'docs/code.html',
+    'docs/guide.html'
   ], 'client');
 
   api.export([]);
