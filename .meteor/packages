@@ -20,3 +20,4 @@ vhx:style-tables
 vhx:style-loaders
 vhx:style-modals
 vhx:style-svg
+iron:router
