@@ -1,5 +1,5 @@
 <head>
-  <title>quartz</title>
+  <title>VHX Quartz</title>
   <script>
     (function() {
       var config = { kitId: 'mee1sll', scriptTimeout: 3000 };
@@ -8,20 +8,14 @@
   </script>
 </head>
 
-<body>
+<body></body>
+
+<template name="app_layout">
   <h1 class="head top text-center padding-large">VHX Quartz</h1>
 
+  {{> menu}}
+
   <section>
-  {{> code__style_typography }}
-  {{> code__style_buttons }}
-  {{> code__style_lists }}
-  {{> code__style_media }}
-  {{> code__style_tables }}
-  {{> code__style_forms }}
-  {{> code__style_loaders }}
-  {{> code__style_backgrounds }}
-  {{> code__style_modals }}
-  {{> code__style_icons }}
-  {{> code__style_symbols }}
+    {{> yield}}
   </section>
-</body>
+</template>
