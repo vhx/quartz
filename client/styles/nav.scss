@@ -1,0 +1,41 @@
+.nav-primary {
+  background: #f7f7f7;
+  border-right: 1px solid #d8d8d8;
+  top: 0;
+  left: 0;
+  position: fixed;
+  overflow-y: auto;
+  width: 225px;
+  height: 100%;
+
+  .head.primary {
+    color: #22b9b0;
+  }
+  h2,
+  a {
+    text-indent: 30px;
+  }
+  a {
+    display: block;
+    line-height: 40px;
+    border-top: 1px solid #ededed;
+
+    &:link,
+    &:visited {
+      color: #969696;
+    }
+
+    &:hover {
+      background: #ededed;
+    }
+    &.is-active {
+      background: #22b9b0;
+      color: #fff;
+    }
+  }
+  li:last-child {
+    a {
+      border-bottom: 1px solid #ededed;
+    }
+  }
+}
