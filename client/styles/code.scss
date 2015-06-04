@@ -1,0 +1,130 @@
+.code-bar {
+  background: #2d2d2d;
+  border-left: 1px solid #000;
+  top: 0;
+  right: 0;
+  position: absolute;
+  width: 40%;
+  padding: 20px;
+  height: 100%;
+}
+
+/*
+  codepen.io Embed Theme
+  Author: Justin Perry <http://github.com/ourmaninamsterdam>
+  Original theme - https://github.com/chriskempson/tomorrow-theme
+*/
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #2d2d2d;
+  color: #fff;
+  font-size: 12px !important;
+  overflow-wrap: break-word !important;
+  font-family: Menlo, Monaco, 'Andale Mono', 'Lucida Console', 'Courier New', monospace;
+  -webkit-text-size-adjust: none;
+  font-weight: bold;
+}
+
+.hljs-comment,
+.hljs-title {
+  color: #777;
+}
+
+.hljs-vhx {
+  .hljs-variable,
+  .hljs-attribute,
+  .hljs-tag,
+  .hljs-regexp,
+  .hljs-name,
+  .ruby .constant,
+  .xml .tag .title,
+  .xml .pi,
+  .xml .doctype,
+  .html .doctype {
+    color: #ab875d;
+  }
+
+  .css .value {
+    color: #cd6a51;
+  }
+
+  .css .value .function,
+  .css .value .string {
+    color: #a67f59;
+  }
+
+  .css .value .number {
+    color: #9b869c;
+  }
+
+  .css .id,
+  .css .class,
+  .css-pseudo,
+  .css .selector,
+  .css .tag {
+    color: #dfc48c;
+  }
+
+  .hljs-number,
+  .hljs-preprocessor,
+  .hljs-built_in,
+  .hljs-literal,
+  .hljs-params,
+  .hljs-constant {
+    color: #ab875d;
+  }
+
+  .ruby .class .title,
+  .css .rules .attribute {
+    color: #9b869b;
+  }
+
+  .hljs-string,
+  .hljs-value,
+  .hljs-inheritance,
+  .hljs-header,
+  .ruby .symbol,
+  .xml .cdata {
+    //color: #8f9c6c;
+    color: #edb46b;
+  }
+
+  .css .hexcolor {
+    color: #cd6a51;
+  }
+
+  .function,
+  .python .decorator,
+  .python .title,
+  .ruby .function .title,
+  .ruby .title .keyword,
+  .perl .sub,
+  .javascript .title,
+  .coffeescript .title {
+    color: #fff;
+  }
+
+  .hljs-keyword,
+  .javascript .function {
+    color: #8f9c6c;
+  }
+  .hljs-tag {
+    color: #d3d0c8;
+    font-weight: bold;
+  }
+  .hljs-title {
+    color: #f2777a;
+    font-weight: bold;
+  }
+  .hljs-attribute {
+    color: #ed9157;
+    font-weight: bold;
+  }
+  .hljs-value {
+    color: #99cc99;
+    font-weight: bold;
+  }
+}
