@@ -1,6 +1,9 @@
 <template name="code__style_buttons">
-  <section id="code--style-buttons">
+  <section id="code--style-buttons" class="padding-medium">
   {{#markdown}}
+
+    --BUTTONS--
+
     <!-- Button Colors -->
     <button class="btn-[color]">Color</button>
 
@@ -10,9 +13,11 @@
     <button class="btn-white">White</button>
     <button class="btn-red">Red</button>
 
+
     <!-- Other Colors -->
     <button class="btn-purple">Purple</button>
     <button class="btn-black">Black</button>
+
 
     <!-- Brand Colors -->
     <button class="btn-twitter">Twitter</button>
@@ -21,18 +26,39 @@
     <button class="btn-paypal">Paypal</button>
     <button class="btn-roku">Roku</button>
 
+
     <!-- Button Sizes -->
     <button class="btn--[size]">Size Modifier</button>
 
     <button class="btn-gray btn--small">Small</button>
     <button class="btn-gray btn--medium">Medium</button>
     <button class="btn-gray btn--large">Large</button>
+    <button class="btn-gray btn--fill">Large</button>
+
+
+    <!-- Typography -->
+    <button class="btn-gray">Helvetica</button>
+    <button class="btn-gray btn--brandon">Brandon</button>
+
+
+    <!-- Icons -->
+    <button class="btn-gray icon-[name]-[color] icon--[position]">Icon</button>
+    <button class="btn-gray icon-product-mono icon--left">Icon</button>
+    <button class="btn-gray icon-product-mono icon--center">Icon</button>
+    <button class="btn-gray icon-product-mono icon--right">Icon</button>
+    <button class="btn-gray icon-product-mono icon--left icon--right">Icon</button>
+
+
+    <!-- Processing States -->
+    <button class="btn-gray is-processing">Button</button>
+
 
     <!-- Dropdown Colors -->
     <button class="btn-dropdown-[color]">Gray</button>
 
     <button class="btn-dropdown-gray">Gray</button>
     <button class="btn-dropdown-teal">Teal</button>
+    <button class="btn-dropdown-white">White</button>
   {{/markdown}}
   </section>
 </template>

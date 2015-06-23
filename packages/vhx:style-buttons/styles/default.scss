@@ -130,11 +130,11 @@ select {
 .btn-black {
   @extend .btn;
   @include button-colors(
-    rgba(255, 255, 255, .5),    // background
-    rgba(255, 255, 255, 1),     // background
-    rgba(255, 255, 255, 1),     // color
+    rgba(0, 0, 0, .5),    // background
+    rgba(0, 0, 0, 1),     // background hover
+    rgba(255, 255, 255, .8),     // color
     rgba(255, 255, 255, 1),     // color hover
-    rgba(255, 255, 255, .5),    // border color
+    rgba(255, 255, 255, .4),    // border color
     rgba(255, 255, 255, 1),     // border color hover
     rgba(255, 255, 255, 1)      // loader
   );
@@ -448,7 +448,7 @@ select {
 ......................................*/
 .btn--brandon {
   text-transform: uppercase;
-  font-family: $brandon-font;
+  font-family: $font-brandon;
   font-weight: 600;
   font-size: 14px;
   letter-spacing: 1px;
