@@ -12,9 +12,9 @@ $avatar-grey: #999999;
 @mixin user-avatar($size, $border) {
   width: $size;
   height: $size - $border;
-  border-bottom: $border solid $blue;
+  border-bottom: $border solid $gray-6;
   position: relative;
-  background: lighten($blue, 30);
+  background: lighten($gray-6, 30);
 
   .avatar-img {
     background-size: cover;
@@ -29,7 +29,7 @@ $avatar-grey: #999999;
   .user-short-name {
     width: $size;
     font-family: 'vinyl';
-    color: $blue;
+    color: $gray-6;
     font-size: 38px;
     line-height: $size;
     text-align:center;

@@ -8,24 +8,24 @@
   line-height: 31px;
   font-size: 12px;
   text-align: center;
-  color: $ac-pri-mid;
-  background-color: $ac-default-dark-transparent;
+  color: $teal-2;
+  background-color: $gray-6;
   border-radius: 50%;
   transition: background 200ms ease, border-color 200ms ease;
 
   // colors
   &.badge-white {
     background: #ffffff;
-    color: $ac-pri-mid;
+    color: $teal-2;
   }
   &.badge-teal {
-    background: $ac-pri-mid;
+    background: $teal-2;
     color: #fff;
   }
 
   // additions
   &.border {
-    border: 1px solid $ac-pri-mid;
+    border: 1px solid $teal-2;
   }
 
   // sizes
@@ -107,8 +107,8 @@ a.badge {
   }
   &:hover,
   &:active {
-    border-color: $ac-pri-dark;
-    background-color: $ac-default-dark;
+    border-color: $teal-3;
+    background-color: $gray-6;
   }
 }
 
@@ -116,7 +116,7 @@ a.badge {
 .btn-teal {
   .badge {
     &.badge-white {
-      color: $ac-pri-mid;
+      color: $teal-2;
     }
   }
 }
