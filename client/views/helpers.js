@@ -9,7 +9,8 @@ Template.style_elements.helpers({
     return [
       { guide: 'guide__style_buttons', code:'code__style_buttons' },
       { guide: 'guide__style_loaders', code:'code__style_loaders' },
-      { guide: 'guide__style_checkbox', code:'code__style_checkbox' }
+      { guide: 'guide__style_checkbox', code:'code__style_checkbox' },
+      { guide: 'guide__style_radio', code:'code__style_radio' }
     ]
   }
 });
