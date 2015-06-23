@@ -10,13 +10,13 @@ a {
   transition: color 200ms ease;
   &:link,
   &:visited {
-    color: $ac-pri-mid;
+    color: $teal-2;
   }
   &:hover,
   &.is-hover,
   &:active,
   &.is-active {
-    color: $ac-pri-dark;
+    color: $teal-3;
     text-decoration: none;
   }
 }
@@ -24,19 +24,19 @@ a {
 .link-primary {
   &:link,
   &:visited {
-    color: $ac-pri-mid;
+    color: $teal-2;
     strong {
-      color: $ac-pri-mid;
+      color: $teal-2;
     }
   }
   &:hover,
   &.is-hover,
   &:active,
   &.is-active {
-    color: $ac-pri-dark;
+    color: $teal-3;
     text-decoration: none;
     strong {
-      color: $ac-pri-dark;
+      color: $teal-3;
       text-decoration: none;
     }
   }
@@ -48,21 +48,21 @@ a {
 a.ignore {
   &:link,
   &:visited {
-    color: $ac-default-light;
+    color: $gray-2;
     strong {
       font-weight: 400;
-      color: $ac-default-dark;
+      color: $gray-6;
     }
   }
   &:hover,
   &.is-hover,
   &:active,
   &.is-active {
-    color: $ac-default-dark;
+    color: $gray-6;
     text-decoration: none;
     strong {
       font-weight: 400;
-      color: $ac-default-light;
+      color: $gray-2;
     }
   }
 }
@@ -70,7 +70,7 @@ a {
   &:link,
   &:visited {
     .ignore {
-      color: $ac-default-light;
+      color: $gray-2;
     }
   }
   &:hover,
@@ -78,7 +78,7 @@ a {
   &:active,
   &.is-active {
     .ignore {
-      color: $ac-default-dark;
+      color: $gray-6;
       text-decoration: none;
     }
   }
@@ -103,7 +103,7 @@ a {
 ......................................*/
 a.inactive {
   pointer-events: none;
-  color: $ac-default-light;
+  color: $gray-2;
 }
 
 /* links as an inverse for

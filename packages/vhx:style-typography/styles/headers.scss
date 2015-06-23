@@ -4,7 +4,7 @@
   Headers
 ......................................*/
 .head {
-  font-family: $font-primary;
+  font-family: $font-brandon;
   font-weight: normal;
   text-transform: uppercase;
   margin: 0;
@@ -29,14 +29,14 @@
   &.top a:link,
   &.top a:visited {
     font-size: 48px;
-    color: $ac-default-dark;
+    color: $gray-6;
     letter-spacing: 2px;
     &.strong,
     strong {
       font-weight: 600;
     }
     &.is-active {
-      color: $ac-default-mid;
+      color: $gray-3;
     }
     &.small,
     small {
@@ -47,7 +47,7 @@
   &.top:active & a,
   &.top a:hover,
   &.top a:active {
-    color: $ac-default-mid;
+    color: $gray-3;
   }
 
   /* Primary
@@ -58,9 +58,9 @@
   &.primary a:link,
   &.primary a:visited {
     font-size: 24px;
-    color: $ac-default-dark;
+    color: $gray-6;
     &.is-active {
-      color: $ac-default-mid;
+      color: $gray-3;
     }
     small {
       font-size: 80% !important;
@@ -75,7 +75,7 @@
   &.primary:active & a,
   &.primary a:hover,
   &.primary a:active {
-    color: $ac-default-mid;
+    color: $gray-3;
   }
 
   /* Secondary
@@ -87,12 +87,12 @@
   &.secondary a:visited {
     font-weight: bold;
     font-size: 16px;
-    color: $ac-default-light;
+    color: $gray-2;
 
     strong,
     &.strong,
     &.is-active {
-      color: $ac-default-dark;
+      color: $gray-6;
       font-weight: bold;
     }
   }
@@ -100,7 +100,7 @@
   &.secondary:active & a,
   &.secondary a:hover,
   &.secondary a:active {
-    color: $ac-default-dark;
+    color: $gray-6;
   }
 
   /* Tertiary
@@ -112,7 +112,7 @@
   &.tertiary a:visited {
     font-weight: bold;
     font-size: 14px;
-    color: $ac-default-light;
+    color: $gray-3;
 
     &.alt {
       font-weight: 500;
@@ -121,14 +121,14 @@
     strong,
     &.strong,
     &.is-active {
-      color: $ac-default-dark;
+      color: $gray-6;
       font-weight: bold;
     }
     &.is-link {
-      color: $ac-pri-mid;
+      color: $teal-2;
       &:hover,
       &:active {
-        color: $ac-pri-dark;
+        color: $teal-3;
       }
     }
   }
@@ -136,7 +136,7 @@
   &.tertiary:active & a,
   &.tertiary a:hover,
   &.tertiary a:active {
-    color: $ac-default-dark;
+    color: $gray-6;
   }
 
 
@@ -157,10 +157,10 @@
       font-weight: bold;
     }
     &.is-link {
-      color: $ac-pri-mid;
+      color: $teal-2;
       &:hover,
       &:active {
-        color: $ac-pri-dark;
+        color: $teal-3;
       }
     }
   }
@@ -170,8 +170,8 @@
   &.alt a:visited {
     line-height: 36px;
     font-size: 35px;
-    font-family: $font-alt;
-    color: $ac-default-dark;
+    font-family: $font-gothic;
+    color: $gray-6;
     font-style: normal;
     font-weight: 400;
   }
@@ -179,7 +179,7 @@
   &.alt:active & a,
   &.alt a:hover,
   &.alt a:active {
-    color: $ac-default-mid;
+    color: $gray-3;
   }
 
   &.inverse,
@@ -230,22 +230,22 @@
   .link-primary {
     &:link,
     &:visited {
-      color: $ac-pri-mid !important;
+      color: $teal-2 !important;
     }
     &:hover,
     &.is-hover,
     &:active,
     &.is-active {
-      color: $ac-pri-dark !important;
+      color: $teal-3 !important;
     }
   }
 }
 
 strong.secondary.head {
-  color: $ac-default-dark;
+  color: $gray-6;
   font-weight: bold;
 }
 strong.inverse.head {
   font-weight: 500;
-  color: $ac-inverse-light;
+  color: $white;
 }
