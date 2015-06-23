@@ -280,7 +280,7 @@ a.has-icon {
   }
 
   &.primary {
-    background: $ac-pri-mid;
+    background: $teal-2;
   }
   &.secondary {
     background: #432865;
@@ -289,14 +289,14 @@ a.has-icon {
     background: #8b3880;
   }
   &.success {
-    background: $ac-succ-mid;
+    background: $vhx-green-2;
   }
   &.error,
   &.red {
-    background: $ac-error-mid;
+    background: $red-2;
   }
   &.gray {
-    background: $grey-mid;
+    background: $gray-3;
   }
 }
 
@@ -346,7 +346,7 @@ a.has-icon {
     border: 2px solid #22b8af;
   }
   &.radius-gray {
-    border: 2px solid $grey-mid;
+    border: 2px solid $gray-3;
   }
   &.radius-mono {
     border: 2px solid #375667;

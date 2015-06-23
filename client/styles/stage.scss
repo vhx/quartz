@@ -1,6 +1,14 @@
 .stage {
   width: 100%;
+  background: #2d2d2d;
   box-sizing: border-box;
   padding-left: 225px;
-  padding-right: 40%;
+  .guide-bar {
+    background: #ffffff;
+    position: relative;
+    padding: 35px 65px;
+  }
+  .code-bar {
+    padding: 35px;
+  }
 }

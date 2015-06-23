@@ -56,7 +56,9 @@ ui@1.0.6
 underscore@1.0.3
 url@1.0.4
 vhx:style-backgrounds@0.1.0
+vhx:style-borders@0.1.0
 vhx:style-buttons@0.1.0
+vhx:style-checkbox@0.1.0
 vhx:style-core@0.1.0
 vhx:style-forms@0.1.0
 vhx:style-foundation@0.1.0

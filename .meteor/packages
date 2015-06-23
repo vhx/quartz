@@ -23,3 +23,5 @@ vhx:style-svg
 iron:router
 simple:highlight.js
 markdown
+vhx:style-borders
+vhx:style-checkbox

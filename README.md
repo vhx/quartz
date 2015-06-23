@@ -1,6 +1,6 @@
 # Quartz
 
-The *new* VHX asset build system.
+The *new* VHX Styleguide and asset build system.
 
 
 ## Getting Started

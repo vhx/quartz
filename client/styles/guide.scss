@@ -1,0 +1,25 @@
+.bg-grid-light {
+  background-image: url('bg.grid-light.png');
+  background-repeat: repeat;
+}
+.bg-grid-dark {
+  background-image: url('bg.grid-dark.png');
+  background-repeat: repeat;
+}
+.square {
+  text-align: center;
+
+  .square-tag {
+    margin-top: 30px;
+    padding: 5px;
+    border-radius: 3px;
+    display: inline-block;
+    background-color: #ffffff !important;
+  }
+  display: inline-block;
+
+  &.square--medium {
+    width: 100px;
+    height: 100px;
+  }
+}
