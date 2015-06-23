@@ -5,8 +5,8 @@
 ......................................*/
 .tag {
   display: inline-block;
-  color: $ac-default-light;
-  background-color: $grey-light;
+  color: $gray-2;
+  background-color: $gray-1;
   padding: 0 10px;
   font-size: 14px;
   line-height: 21px;
@@ -14,15 +14,15 @@
 
   &:link,
   &:visited {
-    color: $ac-default-light;
+    color: $gray-2;
   }
   &:hover,
   &:active {
-    color: $ac-default-dark;
-    background-color: $grey-mid;
+    color: $gray-6;
+    background-color: $gray-3;
   }
   &.is-selected {
-    background-color: $ac-pri-mid;
+    background-color: $teal-2;
     color: #ffffff;
   }
   &.tag-removable-small {

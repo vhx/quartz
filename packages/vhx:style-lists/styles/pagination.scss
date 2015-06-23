@@ -19,7 +19,7 @@
 
   .current {
     display: inline-block;
-    background: $grey-mid;
+    background: $gray-3;
     padding: 5 10px;
     border-radius: 5px;
     color: #fff;
@@ -38,7 +38,7 @@
 
   a:link,
   a:visited {
-    color: $ac-default-dark;
+    color: $gray-6;
   }
 
   a:hover,
@@ -47,6 +47,6 @@
   }
 
   .gap {
-    color: $ac-default-dark;
+    color: $gray-6;
   }
 }
