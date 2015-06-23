@@ -22,6 +22,7 @@ Package.onUse(function(api) {
   api.addFiles([
     'config/_include.scss',
     'styles/backgrounds.scss',
+
     'docs/code.html',
     'docs/guide.html'
   ], 'client');
