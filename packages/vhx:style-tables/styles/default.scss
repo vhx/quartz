@@ -31,7 +31,7 @@
   ..................................*/
   thead, th {
     box-sizing: border-box;
-    font-family: $font-primary;
+    font-family: $font-brandon;
     font-weight: bold;
     color: #8d9da6;
     strong {
@@ -65,13 +65,13 @@
   th, td {
     box-sizing: border-box;
     padding: 20px 15px;
-    color: $ac-default-light;
+    color: $gray-2;
     line-height: 20px;
     span, strong, a {
       // line-height: 20px;
     }
     strong {
-      color: $ac-default-dark;
+      color: $gray-6;
     }
     vertical-align: top;
 
@@ -91,7 +91,7 @@
     box-sizing: border-box;
     transition: background 200ms ease-out;
     background: #fff;
-    border-bottom: 1px solid $grey-light;
+    border-bottom: 1px solid $gray-1;
 
     &.is-disabled {
       color: #f8f9fb !important;
@@ -101,10 +101,10 @@
       }
     }
     &.sticky {
-      background: lighten($ac-pri-hover, 30) !important;
+      background: lighten($teal-3, 30) !important;
     }
     &.selected {
-      background: $ac-pri-hover !important;
+      background: $teal-3 !important;
     }
     &.clickable {
       cursor: pointer;
@@ -117,14 +117,14 @@
       }
       &.is-hovered,
       &:hover {
-        background: $ac-pri-hover !important;
+        background: $teal-3 !important;
       }
       .clickable-trigger:link,
       .clickable-trigger:visited {
         vertical-align: middle;
         padding: 20px 0;
         min-height: 60px;
-        color: $ac-default-light;
+        color: $gray-2;
         text-decoration: none;
         strong {
           color: #375667;
@@ -132,7 +132,7 @@
       }
       .clickable-trigger:hover,
       .clickable-trigger:active {
-        color: $ac-default-light;
+        color: $gray-2;
         text-decoration: none;
         strong {
           color: #375667;
@@ -159,7 +159,7 @@
 
     td, td .label {
       position: relative;
-      font-family: $font-primary;
+      font-family: $font-brandon;
       font-weight: 500;
       color: #375667;
       text-transform: uppercase;
@@ -234,7 +234,7 @@
 
   &.text-inverse {
     td {
-      color: $ac-default-dark;
+      color: $gray-6;
 
       .light { color: #8d9da6; }
     }
