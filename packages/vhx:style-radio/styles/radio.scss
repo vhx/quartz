@@ -1,0 +1,130 @@
+@import "../config/include";
+
+/*.....................................
+  Admin Radio
+......................................*/
+.form .radio-gray,
+.form .radio-teal {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  list-style: none;
+  margin-left: 0;
+
+  color: $gray-6;
+  font-size: 14px;
+  background: transparent;
+
+  @include user-select(none);
+
+  /* radio
+  ...................................*/
+  input[type="radio"] {
+    display: none;
+  }
+
+  li {
+    @extend %cf;
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+    /* label unchecked
+  ...................................*/
+  label {
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    margin: 0px;
+    float: left;
+    box-sizing: border-box;
+
+    .radio--icon {
+      position: relative;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
+      float: left;
+
+      border: 1px solid $gray-6;
+
+      box-shadow: none;
+      box-sizing: border-box;
+      border-radius: 20px;
+      transition: box-shadow .2s ease, color .2s ease;
+
+      .circle-top {
+        opacity: 0;
+        transition: opacity .2s ease;
+        display: block;
+        height: 5px;
+        overflow: hidden;
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        span {
+          display: block;
+          width: 10px;
+          height: 10px;
+          background: $gray-5;
+          border-radius: 10px;
+        }
+      }
+      .circle-bottom {
+        opacity: 0;
+        transition: opacity .2s ease;
+        display: block;
+        height: 5px;
+        overflow: hidden;
+        position: absolute;
+        bottom: 4px;
+        left: 4px;
+        span {
+          position: relative;
+          top: -5px;
+          display: block;
+          width: 10px;
+          height: 10px;
+          background: $gray-6;
+          border-radius: 10px;
+        }
+      }
+    }
+    .radio--label {
+      display: block;
+      float: left;
+      height: 20px;
+    }
+  }
+
+  /* label checked
+  ...................................*/
+  input[type="radio"]:checked + label {
+    .radio--icon {
+      .circle-top, .circle-bottom {
+        opacity: 1;
+        transition: opacity .2s ease;
+      }
+    }
+  }
+
+  /* stacked radio
+  ...................................*/
+  &.radio--stacked {
+    display: block;
+    height: auto;
+    li {
+      display: block;
+      margin-right: 0px;
+      margin-bottom: 10px;
+    }
+  }
+
+  /* color styles
+  ...................................*/
+  &.radio-teal {
+    .circle-top span { background: $teal-2 !important; }
+    .circle-bottom span { background: $teal-3 !important; }
+  }
+}
