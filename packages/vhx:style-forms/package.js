@@ -21,7 +21,6 @@ Package.onUse(function(api) {
 
   api.addFiles([
     'config/_include.scss',
-    'styles/checkbox.scss',
     'styles/input.scss',
     'styles/radio.scss',
     'styles/select.scss',

@@ -33,7 +33,7 @@
   ...................................*/
   label {
     display: block;
-    color: $ac-default-dark;
+    color: $gray-6;
     font-size: 14px;
     margin-bottom: 5px;
   }
@@ -51,7 +51,7 @@
     width: 100%;
     padding: 6px 15px;
 
-    color: $ac-default-dark;
+    color: $gray-6;
     font-size: 14px;
     background-color: #fff;
     border: 1px solid #d1d9dc;
@@ -80,9 +80,9 @@
     /* has error
     ...................................*/
     &.is-error {
-      color: $ac-error-mid;
+      color: $red-2;
 
-      border: 1px solid $ac-error-mid;
+      border: 1px solid $red-2;
 
       &.is-selected {
         border: 2px solid #cf124c;
@@ -90,7 +90,7 @@
       }
 
       @include placeholder {
-        color: $ac-error-light !important;
+        color: $red-1 !important;
       }
     }
 
@@ -98,7 +98,7 @@
     ...................................*/
     &:focus {
       outline: none;
-      color: $ac-default-dark;
+      color: $gray-6;
 
       border: 1px solid #9aaab4;
 
@@ -111,9 +111,9 @@
       /* on focus + has error
       ...................................*/
       &.is-error {
-        color: $ac-error-dark;
+        color: $red-2;
 
-        border: 1px solid $ac-error-dark;
+        border: 1px solid $red-2;
 
         &.is-selected {
           border: 2px solid #cf124c;
@@ -122,7 +122,7 @@
 
         @include placeholder {
           transition: all .2s ease;
-          color: $ac-error-light !important;
+          color: $red-1 !important;
         }
       }
     }
@@ -188,6 +188,6 @@
     position: absolute;
     top: 11px;
     left: 15px;
-    color: $ac-default-light;
+    color: $gray-2;
   }
 }

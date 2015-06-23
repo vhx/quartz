@@ -10,7 +10,7 @@
   list-style: none;
   margin-left: 0;
 
-  color: $ac-default-dark;
+  color: $gray-6;
   font-size: 14px;
   background: transparent;
 
@@ -46,7 +46,7 @@
       margin-right: 5px;
       float: left;
 
-      border: 1px solid $ac-default-dark;
+      border: 1px solid $gray-6;
 
       box-shadow: none;
       box-sizing: border-box;
@@ -66,7 +66,7 @@
           display: block;
           width: 10px;
           height: 10px;
-          background: $ac-default-mid;
+          background: $gray-3;
           border-radius: 10px;
         }
       }
@@ -85,7 +85,7 @@
           display: block;
           width: 10px;
           height: 10px;
-          background: $ac-default-dark;
+          background: $gray-6;
           border-radius: 10px;
         }
       }
@@ -123,19 +123,7 @@
   /* color styles
   ...................................*/
   &.primary {
-    .circle-top span { background: $ac-pri-mid !important; }
-    .circle-bottom span { background: $ac-pri-dark !important; }
-  }
-  &.secondary {
-    .circle-top span { background: $ac-sec-mid !important; }
-    .circle-bottom span { background: $ac-sec-dark !important; }
-  }
-  &.success {
-    .circle-top span { background: $ac-succ-mid !important; }
-    .circle-bottom span { background: $ac-succ-dark !important; }
-  }
-  &.alert {
-    .circle-top span { background: $ac-error-mid !important; }
-    .circle-bottom span { background: $ac-error-dark !important; }
+    .circle-top span { background: $teal-2 !important; }
+    .circle-bottom span { background: $teal-3 !important; }
   }
 }
