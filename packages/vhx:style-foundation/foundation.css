@@ -41,15 +41,6 @@ img {
   -ms-interpolation-mode: bicubic;
 }
 
-#map_canvas img,
-#map_canvas embed,
-#map_canvas object,
-.map_canvas img,
-.map_canvas embed,
-.map_canvas object {
-  max-width: none !important;
-}
-
 .left {
   float: left !important;
 }
@@ -64,15 +55,6 @@ img {
 }
 .clearfix:after {
   clear: both;
-}
-
-.hide {
-  display: none;
-}
-
-.antialiased {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 img {
@@ -2790,105 +2772,6 @@ select {
     float: right;
   }
 }
-.accordion {
-  margin-bottom: 0;
-}
-.accordion:before, .accordion:after {
-  content: " ";
-  display: table;
-}
-.accordion:after {
-  clear: both;
-}
-.accordion .accordion-navigation, .accordion dd {
-  display: block;
-  margin-bottom: 0 !important;
-}
-.accordion .accordion-navigation.active > a, .accordion dd.active > a {
-  background: #e8e8e8;
-}
-.accordion .accordion-navigation > a, .accordion dd > a {
-  background: #efefef;
-  color: #222222;
-  padding: 1rem;
-  display: block;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  font-size: 1rem;
-}
-.accordion .accordion-navigation > a:hover, .accordion dd > a:hover {
-  background: #e3e3e3;
-}
-.accordion .accordion-navigation > .content, .accordion dd > .content {
-  display: none;
-  padding: 0.46875rem;
-}
-.accordion .accordion-navigation > .content.active, .accordion dd > .content.active {
-  display: block;
-  background: white;
-}
-
-.alert-box {
-  border-style: solid;
-  border-width: 1px;
-  display: block;
-  font-weight: normal;
-  margin-bottom: 1.25rem;
-  position: relative;
-  padding: 0.875rem 1.5rem 0.875rem 0.875rem;
-  font-size: 0.8125rem;
-  transition: opacity 300ms ease-out;
-  background-color: #008cba;
-  border-color: #0078a0;
-  color: white;
-}
-.alert-box .close {
-  font-size: 1.375rem;
-  padding: 9px 6px 4px;
-  line-height: 0;
-  position: absolute;
-  top: 50%;
-  margin-top: -0.6875rem;
-  right: 0.25rem;
-  color: #333333;
-  opacity: 0.3;
-}
-.alert-box .close:hover, .alert-box .close:focus {
-  opacity: 0.5;
-}
-.alert-box.radius {
-  border-radius: 3px;
-}
-.alert-box.round {
-  border-radius: 1000px;
-}
-.alert-box.success {
-  background-color: #43ac6a;
-  border-color: #3a945b;
-  color: white;
-}
-.alert-box.alert {
-  background-color: #f04124;
-  border-color: #de2d0f;
-  color: white;
-}
-.alert-box.secondary {
-  background-color: #e7e7e7;
-  border-color: #c7c7c7;
-  color: #4f4f4f;
-}
-.alert-box.warning {
-  background-color: #f08a24;
-  border-color: #de770f;
-  color: white;
-}
-.alert-box.info {
-  background-color: #a0d3e8;
-  border-color: #74bfdd;
-  color: #4f4f4f;
-}
-.alert-box.alert-close {
-  opacity: 0;
-}
 
 [class*="block-grid-"] {
   display: block;
@@ -3459,7 +3342,7 @@ button::-moz-focus-inner {
     display: inline-block;
   }
 }
-
+/*
 .dropdown.button, button.dropdown {
   position: relative;
   padding-right: 3.5625rem;
@@ -3517,7 +3400,7 @@ button::-moz-focus-inner {
 }
 .dropdown.button.secondary:after, button.dropdown.secondary:after {
   border-color: #333333 transparent transparent transparent;
-}
+}*/
 
 .flex-video {
   position: relative;
@@ -3578,7 +3461,7 @@ form .row textarea.columns {
 }
 
 /* Label Styles */
-label {
+/*label {
   font-size: 0.875rem;
   color: #4d4d4d;
   cursor: pointer;
@@ -3586,7 +3469,6 @@ label {
   font-weight: normal;
   line-height: 1.5;
   margin-bottom: 0;
-  /* Styles for required inputs */
 }
 label.right {
   float: none !important;
@@ -3599,7 +3481,7 @@ label.inline {
 label small {
   text-transform: capitalize;
   color: #676767;
-}
+}*/
 
 select::-ms-expand {
   display: none;
@@ -3913,20 +3795,6 @@ label.error {
   display: block;
 }
 
-.keystroke,
-kbd {
-  background-color: #ededed;
-  border-color: #dddddd;
-  color: #222222;
-  border-style: solid;
-  border-width: 1px;
-  margin: 0;
-  font-family: "Consolas", "Menlo", "Courier", monospace;
-  font-size: inherit;
-  padding: 0.125rem 0.25rem 0;
-  border-radius: 3px;
-}
-
 .label {
   font-weight: normal;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
@@ -4046,47 +3914,6 @@ ul.pagination li {
 .pagination-centered ul.pagination li {
   float: none;
   display: inline-block;
-}
-
-/* Progress Bar */
-.progress {
-  background-color: #f6f6f6;
-  height: 1.5625rem;
-  border: 1px solid white;
-  padding: 0.125rem;
-  margin-bottom: 0.625rem;
-}
-.progress .meter {
-  background: #008cba;
-  height: 100%;
-  display: block;
-}
-.progress.secondary .meter {
-  background: #e7e7e7;
-  height: 100%;
-  display: block;
-}
-.progress.success .meter {
-  background: #43ac6a;
-  height: 100%;
-  display: block;
-}
-.progress.alert .meter {
-  background: #f04124;
-  height: 100%;
-  display: block;
-}
-.progress.radius {
-  border-radius: 3px;
-}
-.progress.radius .meter {
-  border-radius: 2px;
-}
-.progress.round {
-  border-radius: 1000px;
-}
-.progress.round .meter {
-  border-radius: 999px;
 }
 
 .reveal-modal-bg {
@@ -4638,14 +4465,6 @@ h6 {
   font-size: 1rem;
 }
 
-.subheader {
-  line-height: 1.4;
-  color: #6f6f6f;
-  font-weight: normal;
-  margin-top: 0.2rem;
-  margin-bottom: 0.5rem;
-}
-
 hr {
   border: solid #dddddd;
   border-width: 1px 0 0;
@@ -4756,30 +4575,6 @@ abbr[title] {
   border-bottom: 1px dotted #dddddd;
 }
 
-/* Blockquotes */
-blockquote {
-  margin: 0 0 1.25rem;
-  padding: 0.5625rem 1.25rem 0 1.1875rem;
-  border-left: 1px solid #dddddd;
-}
-blockquote cite {
-  display: block;
-  font-size: 0.8125rem;
-  color: #555555;
-}
-blockquote cite:before {
-  content: "\2014 \0020";
-}
-blockquote cite a,
-blockquote cite a:visited {
-  color: #555555;
-}
-
-blockquote,
-blockquote p {
-  line-height: 1.6;
-  color: #6f6f6f;
-}
 
 @media only screen and (min-width: 40.063em) {
 
@@ -4923,7 +4718,7 @@ blockquote p {
   }
 }
 
-
+/*
 .tooltip {
   display: none;
   position: absolute;
@@ -4973,8 +4768,8 @@ blockquote p {
   color: #777777;
   font-weight: normal;
 }
-
-@media only screen and (min-width: 40.063em) {
+*/
+/*@media only screen and (min-width: 40.063em) {
 
   .tooltip > .nub {
     border-color: transparent transparent #333333 transparent;
@@ -5006,8 +4801,8 @@ blockquote p {
     top: 50%;
     margin-top: -5px;
   }
-}
-
+}*/
+/*
 .fixed {
   width: 100%;
   left: 0;
@@ -5029,7 +4824,7 @@ blockquote p {
 .fixed.expanded:not(.top-bar) .top-bar-section {
   z-index: 98;
   margin-top: 45px;
-}
+}*/
 
 .left-small {
   width: 2.8125rem;
