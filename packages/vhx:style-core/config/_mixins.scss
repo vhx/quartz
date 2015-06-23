@@ -1,6 +1,6 @@
 @import "variables";
 
-$arrow-colors: #000000, #ffffff, $grey-light, $ac-error-dark, $ac-error-dark, $ac-pri-mid;
+$arrow-colors: #000000, #ffffff, $gray-1, $red-2, $red-2, $teal-2;
 $arrow-classes: 'background-black', 'background-white', 'background-gray', 'is-alert', 'is-error', 'is-success';
 
 @mixin arrow-colors($position) {
@@ -134,20 +134,6 @@ $arrow-classes: 'background-black', 'background-white', 'background-gray', 'is-a
   padding: 0;
   position: absolute;
   width: 1px;
-}
-
-/* Pixel to REM mixin - provides fallback pixel value
-   enter the property you want to set, and the desired
-   pixel value (without 'px')
-*/
-// ex: @include rem(margin-right, 16);
-/* output:
-    margin-right: 16px;
-    margin-right: 1rem;
-    */
-@mixin rem($prop, $px_val) {
-  #{$prop}: #{$px_val}px;
-  #{$prop}: #{$px_val / 16}rem;
 }
 
 @mixin arrow($color, $color-rgb, $border-color, $border-color-rgb, $border-width, $width, $side) {
@@ -348,7 +334,7 @@ $arrow-classes: 'background-black', 'background-white', 'background-gray', 'is-a
 }
 
 
-$arrow-colors: #000000, #ffffff, $grey-light, $ac-error-dark, $ac-error-dark, $ac-pri-mid;
+$arrow-colors: #000000, #ffffff, $gray-1, $red-2, $red-2, $teal-2;
 $arrow-classes: 'background-black', 'background-white', 'background-gray', 'is-alert', 'is-error', 'is-success';
 
 @mixin arrow-colors($position) {

@@ -8,12 +8,19 @@ Package.onUse(function(api) {
   api.versionsFrom('1.0.2');
 
   api.use([
-    'vhx:style-foundation',
+    'iron:router@=1.0.6',
     'fourseven:scss'
   ]);
 
+  api.use([
+    'templating',
+    'minimongo',
+    'spacebars'
+  ], 'client');
+
   api.addFiles([
     'scss.json',
+
     'config/_variables.scss',
     'config/_mixins.scss',
     'styles/forms.scss',
@@ -22,7 +29,14 @@ Package.onUse(function(api) {
     'styles/lists.scss',
     'styles/headers.scss',
     'styles/media.scss',
-    'styles/util.scss'
+    'styles/util.scss',
+    'styles/spacing.scss',
+
+    'docs/grid.code.html',
+    'docs/grid.guide.html',
+    'docs/spacing.code.html',
+    'docs/spacing.guide.html'
+
   ], 'client');
 
   api.export([]);

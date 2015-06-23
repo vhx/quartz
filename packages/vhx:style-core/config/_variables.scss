@@ -1,144 +1,93 @@
-/* sass variables, fonts, mixins, or functions */
+/* .....................................
+  Colors - Grays
+..................................... */
+$white: #ffffff;
+$white-transparent: rgba(255, 255, 255, .7);
 
-/* OFFICIAL VHX COLOR PALLETTE http://cl.ly/image/3P1x3p1s2d3c */
-$experimental-support-for-svg: true;
+$black: #000000;
+$black-transparent: rgba(0, 0, 0, .7);
 
-$break_full: 977px;
-$featured_height: 574px;
-$tablet_max: 991px;
-$tablet_min: 768px;
-$phone_max: 767px;
-$phone_min: 480px;
-$inner_page_width: 450px;
-$left_col_width: 380px;
-$right_col_width: 360px;
-
-/* admin variables */
-$basic-grey: #999;
-$orange:#DC7865;
-
-$dark-red: #721439;
-$light-red: #d1184d;
-$med-red: #b81647;
-$red:$light-red; // deprecate
-
-$light-purple: #8a3b7f;
-$dark-purple: #432a64;
-$med-purple: #773778;
-$purple:$light-purple; // deprecate
-$dpurple:$dark-purple; // deprecate
-
-$light-blue: #30909d;
-$med-blue: #287f94;
-$dark-blue: #144f79;
-$dblue:$dark-blue; // deprecate
-$blue:$light-blue; // deprecate
-
-$light-green: #9eba41;
-$dark-green: #226657;
-$med-green: #7ea445;
-
-$light-white: #f7f7f7;
-$med-white: #e6e6e6;
-$dark-white: #d1d1d1;
-
-$dgreen:#1E6657; // deprecate
-$green-dark:#1E6657; // deprecate
-$green:#919E5C; // deprecate
-$lgreen:#9DBB36; // deprecate
-
-$bg-grey: $med-white;
-$light-grey:#999999;
-$med-grey:#808080;
-$dark-grey:#404040;
-$border-grey: #cdcdcd;
-$yellow-bg: rgb(244,242,202);
-
-$vhx-blue: #22b9b0;
-$vhx-purple: #8b3880;
-$vhx-green: #9dbb36;
-$vhx-red: #d3104a;
-
-$vhx-light-grey: #ecf1f3;
-$vhx-grey: #afbbc2;
-
-// colors
-$lt-sea-green: #21b8b0;
-$black-currant: #1c0d32;
-$debian-red: #d3104b;
-
-//$default-font: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$default-font: Helvetica, Arial, sans-serif;
-$brandon-font: 'brandon-grotesque-n1', 'brandon-grotesque', 'Brandon Grotesque', sans-serif;
-$brandon3-font: 'brandon-grotesque-n3', 'brandon-grotesque', 'Brandon Grotesque', sans-serif;
-$number-font: 'vinyl', sans-serif;
+$gray-1: #F0F2F4;
+$gray-2: #D7DDE1;
+$gray-3: #AFBCC3;
+$gray-4: #869AA5;
+$gray-5: #5E7887;
+$gray-6: #375667;
 
 /* .....................................
-  Global Colors
+  Colors - Teals
 ..................................... */
-$grey-default: #cccccc;
-$grey-light: #f1f3f4;
-$grey-light-mid: #adbdc6;
-$grey-mid: #9baab2;
-$grey-mid-dark: #969ea2;
-$grey-dark: #808080;
-$grey-deep: #404040;
-$grey-text: #375667;
+$teal-1: #F2FBFB;
+$teal-2: #22B9B0;
+$teal-3: #149A97;
 
 /* .....................................
-  Admin Colors
+  Colors - Red
 ..................................... */
-$ac-default-light: #8d9da6; // rgba(55, 86, 103, .5); //#d1d9dc;
-$ac-default-mid: rgba(55, 86, 103, .8);
-$ac-default-dark: rgba(55, 86, 103, 1); //#9aaab4;
-$ac-default-dark-transparent: rgba(0, 20, 41, 0.9);
-
-$ac-pri-hover: rgba(34, 185, 175, .1);
-$ac-pri-light: #33ffcc;
-$ac-pri-mid: #22b9b0;
-$ac-pri-dark: #149a97; //#1b958e;
-
-$ac-sec-light: #8a3b7f;
-$ac-sec-mid: #773778;
-$ac-sec-dark: #432a64;
-
-$ac-error-light: rgba(211, 16, 74, .5);
-$ac-error-mid: rgba(211, 16, 74, .7);
-$ac-error-dark: rgba(211, 16, 74, 1);
-
-$ac-succ-light: #9eba41;
-$ac-succ-mid: #7ea445;
-$ac-succ-dark: #226657;
-
-$ac-inverse-dark: rgba(255,255,255, .5);
-$ac-inverse-mid: rgba(255,255,255, .8);
-$ac-inverse-light: rgba(255,255,255, 1);
+$red-1: #D3104A;
+$red-2: #D3104A;
+$red-3: #D3104A;
 
 /* .....................................
-  Admin Forms
+  Colors - Navy
 ..................................... */
-$field-height: 40;
+$navy-1: #00142B;
+$navy-2: #00142B;
+$navy-3: #00142B;
+$navy-transparent: rgba(0, 20, 43, .5);
 
 /* .....................................
-  Admin Fonts
+  Colors - Brand Palette
 ..................................... */
-$font-default: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-$font-primary: "brandon-grotesque-n1", "brandon-grotesque", sans-serif;
-$font-alt: "alternate-gothic-no-3-d-n4","alternate-gothic-no-3-d",sans-serif;
+$vhx-orange-1: #AE4B4D;
+$vhx-orange-2: #D06B5E;
+$vhx-orange-3: #DC7865;
 
+$vhx-debian-1: #731139;
+$vhx-debian-2: #BA0F45;
+$vhx-debian-3: #D3104B;
+
+$vhx-purple-1: #432865;
+$vhx-purple-2: #783479;
+$vhx-purple-3: #8B3880;
+
+$vhx-currant-1: #45065A;
+$vhx-currant-2: #2E064A;
+$vhx-currant-3: #1C0D32;
+
+$vhx-blue-1: #0F4E7B;
+$vhx-blue-2: #227F95;
+$vhx-blue-3: #2A909E;
+
+$vhx-teal-1: #017782;
+$vhx-teal-2: #149A97;
+$vhx-teal-3: #21B8B0;
+
+$vhx-green-1: #1E6657;
+$vhx-green-2: #7DA53E;
+$vhx-green-3: #9DBB36;
+
+$vhx-yellow-1: #D1955F;
+$vhx-yellow-2: #FFB567;
+$vhx-yellow-3: #FFC77C;
+
+/* .....................................
+  Fonts
+..................................... */
+$font-default: "Helvetica", "Arial", sans-serif;
+$font-brandon: 'brandon-grotesque-n1', 'brandon-grotesque', 'Brandon Grotesque', sans-serif;
+$font-gothic: "alternate-gothic-no-3-d-n4","alternate-gothic-no-3-d",sans-serif;
+
+/* .....................................
+  Sets
+..................................... */
 $sizes: 'default', 'small', 'smedium', 'medium', 'large', 'xlarge';
 $spacing_types: 'margin', 'padding';
 $positions: 'top', 'left', 'bottom', 'right';
 
-// Foundation by ZURB
-// foundation.zurb.com
-// Licensed under MIT Open Source
-
-//
-// FOUNDATION SETTINGS
-//
-
-// Media Query Ranges
+/* .....................................
+  Media Query Ranges
+..................................... */
 $small-range: (0em, 40em);
 $smedium-range: (40.063em, 54em);
 $medium-range: (40.063em, 64em);
