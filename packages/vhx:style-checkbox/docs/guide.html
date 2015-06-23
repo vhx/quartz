@@ -3,45 +3,68 @@
     <h3 class="head secondary border-bottom padding-bottom-medium"><strong>Checkbox</strong></h3>
 
     <!-- Standard -->
-    <div class="margin-vertical-large padding-bottom-medium border-bottom border-light">
+    <div class="margin-vertical-large padding-bottom-medium border-bottom border--gray-1">
       <h4 class="margin-bottom-medium"><strong>Standard</strong></h4>
 
       <form class="form">
         <fieldset class="checkbox small">
           <input type="checkbox" name="" id="name-a" value="" checked>
-          <label for="name-a">
+          <label for="name-a" class="ready">
             <span class="checkbox--contain">
-              <span class="checkbox--icon"></span>
-              <span class="checkbox--circle">
-                <i class="circle-top"><span></span></i>
-                <i class="circle-bottom"><span></span></i>
-              </span>
-              <span class="checkbox--label">Checkbox</span>
+              <span class="checkbox--icon"><span class="checkbox-animate"></span></span>
+              <span class="checkbox--label"></span>
             </span>
           </label>
         </fieldset>
 
         <fieldset class="checkbox medium">
-          <input type="checkbox" id="name-b">
-          <label for="name-b">Checkbox</label>
+          <input type="checkbox" name="" id="name-b" value="" checked>
+          <label for="name-b" class="ready">
+            <span class="checkbox--contain">
+              <span class="checkbox--icon"><span class="checkbox-animate"></span></span>
+              <span class="checkbox--label"></span>
+            </span>
+          </label>
         </fieldset>
 
         <fieldset class="checkbox large">
-          <input type="checkbox" id="name-c">
-          <label for="name-c">Checkbox</label>
-        </fieldset>
-
-        <fieldset class="checkbox alt small">
-          <input type="checkbox" id="name-d">
-          <label for="name-d">Checkbox</label>
-        </fieldset>
-
-        <fieldset class="checkbox alt">
-          <input type="checkbox" id="name-e">
-          <label for="name-e">Checkbox</label>
+          <input type="checkbox" name="" id="name-c" value="" checked>
+          <label for="name-c" class="ready">
+            <span class="checkbox--contain">
+              <span class="checkbox--icon"><span class="checkbox-animate"></span></span>
+              <span class="checkbox--label"></span>
+            </span>
+          </label>
         </fieldset>
       </form>
 
+    </div>
+
+    <div class="margin-vertical-large padding-bottom-medium border-bottom border--gray-1">
+      <h4 class="margin-bottom-medium"><strong>Alternate</strong></h4>
+
+      <form class="form">
+      <fieldset class="checkbox small alt">
+          <input type="checkbox" name="" id="name-d" value="" checked>
+          <label for="name-d" class="ready">
+            <span class="checkbox--contain">
+              <span class="checkbox--icon"></span>
+              <span class="checkbox--circle"><i class="circle-top"><span></span></i><i class="circle-bottom"><span></span></i></span>
+              <span class="checkbox--label">Label</span>
+            </span>
+          </label>
+        </fieldset>
+        <fieldset class="checkbox medium alt">
+          <input type="checkbox" name="" id="name-e" value="" checked>
+          <label for="name-e" class="ready">
+            <span class="checkbox--contain">
+              <span class="checkbox--icon"></span>
+              <span class="checkbox--circle"><i class="circle-top"><span></span></i><i class="circle-bottom"><span></span></i></span>
+              <span class="checkbox--label">Label</span>
+            </span>
+          </label>
+        </fieldset>
+      </form>
     </div>
   </section>
 </template>

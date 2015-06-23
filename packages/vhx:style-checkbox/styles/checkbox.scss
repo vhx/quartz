@@ -97,6 +97,7 @@
     }
     .checkbox--label {
       display: block;
+      margin-left: 5px;
       float: left;
       min-height: $field-height;
     }
@@ -216,8 +217,8 @@
     .checkbox--circle {
       transition: all 200ms ease;
       display: inline-block;
-      width: 24;
-      height: 24;
+      width: 24px;
+      height: 24px;
       position: absolute;
       top: 0;
 
@@ -337,8 +338,8 @@
   &.small {
     label {
       border-radius: 15px;
-      width: 52.5;
-      padding: 7;
+      width: 52.5px;
+      padding: 7px;
 
       .checkbox--contain {
         border-radius: 15px;
@@ -346,8 +347,8 @@
       .checkbox--circle {
         left: 0px;
         top: -2px;
-        width: 18;
-        height: 18;
+        width: 18px;
+        height: 18px;
 
         .circle-top {
           height: 9px;
@@ -374,8 +375,8 @@
     &.invert input[type="checkbox"]:checked + label,
     input[type="checkbox"]:not(:checked) + label {
       .checkbox--icon {
-        height: 15;
-        width: 15;
+        height: 15px;
+        width: 15px;
         top: 0px;
         right: 0px;
         left: auto;
@@ -390,8 +391,8 @@
     input[type="checkbox"]:checked + label,
     &.invert input[type="checkbox"]:not(:checked) + label {
       .checkbox--icon {
-        height: 18;
-        width: 18;
+        height: 18px;
+        width: 18px;
         top: -2px;
         left: -1px;
         right: auto;
