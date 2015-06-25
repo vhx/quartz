@@ -1,123 +1,113 @@
 @import "../config/include";
 
-/*.....................................
-  TEXT
-......................................*/
-body, ul, ol, dl, li, p, div, section, nav, table, h1, h2, h3, h4, h5, h6 {
-  font-family: $font-default;
-  font-size: 14px;
-  line-height: 1.45;
-  -webkit-font-smoothing: antialiased;
-  -webkit-backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-}
 
-body.text-dark {
-  color: $gray-6;
-}
 
-body {
-  strong {
-    font-weight: 500;
-    color: $gray-6;
-  }
-  .tracking-small {
-    letter-spacing: 1px;
-  }
-  .tracking-medium {
-    letter-spacing: 2px;
-  }
-  .small,
-  .text-small {
-    font-size: 12px;
-  }
-  .text-medium {
-    font-size: 115%;
-    line-height: 1.5;
-    p {
-      font-size: 115%;
-    }
-  }
-  .text-large {
-    font-size: 150%;
-  }
-}
+// body.text-dark {
+//   color: $gray-6;
+// }
 
-p {
-  margin-bottom: 1em;
-}
+// body {
+//   strong {
+//     font-weight: 500;
+//     color: $gray-6;
+//   }
+//   .tracking-small {
+//     letter-spacing: 1px;
+//   }
+//   .tracking-medium {
+//     letter-spacing: 2px;
+//   }
+//   .small,
+//   .text-small {
+//     font-size: 12px;
+//   }
+//   .text-medium {
+//     font-size: 115%;
+//     line-height: 1.5;
+//     p {
+//       font-size: 115%;
+//     }
+//   }
+//   .text-large {
+//     font-size: 150%;
+//   }
+// }
 
-.text {
-  .text-strong {
-    color: $gray-6;
-  }
-  .line,
-  &.line {
-    line-height: 40px;
-    min-height: 40px;
-  }
-  .line-large,
-  &.line-large {
-    line-height: 65px;
-    min-height: 65px;
-  }
-  .alert,
-  &.alert {
-    color: $red-2;
-  }
-  .top,
-  &.top {
-    font-size: 16px;
-    line-height: 21px;
-  }
-  .success,
-  &.success {
-    color: $vhx-green-2;
-  }
-  .pending,
-  &.pending {
-    color: #ffbc2b;
-  }
-  .holding,
-  &.holding {
-    color: #f47a37;
-  }
-  .primary,
-  &.primary {
-    font-family: $font-default;
-    color: $gray-2;
-    font-size: 14px;
-  }
-  .secondary,
-  &.secondary {
-    font-size: 12px;
-  }
-  .dark,
-  &.dark {
-    color: #3A5969;
-  }
-  .small,
-  &.small {
-    font-size: 12px;
-  }
-  &.inverse {
-    font-weight: 500;
-    color: $white-transparent;
-    strong {
-      font-weight: 500;
-      color: #fff;
-    }
-  }
-  &.transparent,
-  &.text-transparent {
-    opacity: .6;
-  }
-  .highlight,
-  &.highlight {
-    color: $teal-2;
-  }
-}
+// p {
+//   margin-bottom: 1em;
+// }
 
-.text-transparent {
-  opacity: .6;
-}
+// .text {
+//   .text-strong {
+//     color: $gray-6;
+//   }
+//   .line,
+//   &.line {
+//     line-height: 40px;
+//     min-height: 40px;
+//   }
+//   .line-large,
+//   &.line-large {
+//     line-height: 65px;
+//     min-height: 65px;
+//   }
+//   .alert,
+//   &.alert {
+//     color: $red-2;
+//   }
+//   .top,
+//   &.top {
+//     font-size: 16px;
+//     line-height: 21px;
+//   }
+//   .success,
+//   &.success {
+//     color: $vhx-green-2;
+//   }
+//   .pending,
+//   &.pending {
+//     color: #ffbc2b;
+//   }
+//   .holding,
+//   &.holding {
+//     color: #f47a37;
+//   }
+//   .primary,
+//   &.primary {
+//     font-family: $font-default;
+//     color: $gray-2;
+//     font-size: 14px;
+//   }
+//   .secondary,
+//   &.secondary {
+//     font-size: 12px;
+//   }
+//   .dark,
+//   &.dark {
+//     color: #3A5969;
+//   }
+//   .small,
+//   &.small {
+//     font-size: 12px;
+//   }
+//   &.inverse {
+//     font-weight: 500;
+//     color: $white-transparent;
+//     strong {
+//       font-weight: 500;
+//       color: #fff;
+//     }
+//   }
+//   &.transparent,
+//   &.text-transparent {
+//     opacity: .6;
+//   }
+//   .highlight,
+//   &.highlight {
+//     color: $teal-2;
+//   }
+// }
+
+// .text-transparent {
+//   opacity: .6;
+// }
