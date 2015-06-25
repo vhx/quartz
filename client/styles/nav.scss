@@ -1,6 +1,8 @@
+@import "../../packages/vhx:style-core/config/mixins";
+
 .nav-primary {
-  background: #f7f7f7;
-  border-right: 1px solid #d8d8d8;
+  background: $gray-1;
+  border-right: 1px solid $gray-2;
   top: 0;
   left: 0;
   position: fixed;
@@ -9,7 +11,7 @@
   height: 100%;
 
   .head.primary {
-    color: #22b9b0;
+    color: $gray-4;
   }
   h2,
   a {
@@ -18,24 +20,24 @@
   a {
     display: block;
     line-height: 40px;
-    border-top: 1px solid #ededed;
+    border-top: 1px solid $gray-2;
 
     &:link,
     &:visited {
-      color: #969696;
+      color: $gray-4;
     }
 
     &:hover {
-      background: #ededed;
+      background: $gray-2;
     }
     &.is-active {
-      background: #22b9b0;
+      background: $teal-2;
       color: #fff;
     }
   }
   li:last-child {
     a {
-      border-bottom: 1px solid #ededed;
+      border-bottom: 1px solid $gray-2;
     }
   }
 }
