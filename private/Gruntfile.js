@@ -28,11 +28,21 @@ module.exports = function(grunt) {
         }
       }
     },
+    svgmin: {
+      dist: {
+        files: [{
+          expand: true,
+          cwd: 'svg-icons-renamed',
+          src: ['*.svg'],
+          dest: 'svg-icons-minified'
+        }]
+      }
+    },
     grunticon: {
       multiColor: {
         files: [{
           expand: true,
-          cwd: 'svg-icons-source',
+          cwd: 'svg-icons-minified',
           src: ['*.svg', '*.png'],
           dest: 'svg-icons-output'
         }],
@@ -64,10 +74,11 @@ module.exports = function(grunt) {
   });
 
   grunt.loadNpmTasks('grunt-file-regex-rename');
+  grunt.loadNpmTasks('grunt-svgmin');
   grunt.loadNpmTasks('grunt-grunticon');
   grunt.loadNpmTasks('grunt-contrib-sass');
 
-  grunt.registerTask('rename-icons', ['fileregexrename:multiColorIcons']);
+  grunt.registerTask('prep-icons', ['fileregexrename:multiColorIcons', 'svgmin']);
   grunt.registerTask('generate-icons', ['grunticon:multiColor']);
   grunt.registerTask('build', ['sass']);
 }

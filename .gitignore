@@ -7,3 +7,4 @@ npm-debug.log
 private/svg-icons-output
 private/png-icons-source
 private/svg-icons-renamed
+private/svg-icons-minified
