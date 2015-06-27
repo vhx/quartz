@@ -4,3 +4,5 @@ private/node_modules/
 .env
 .env.local
 npm-debug.log
+private/svg-icons-output
+private/png-icons-source
