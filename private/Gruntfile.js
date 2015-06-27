@@ -12,6 +12,22 @@ module.exports = function(grunt) {
         }]
       }
     },
+    fileregexrename: {
+      multiColorIcons: {
+        files: {
+          'svg-icons-renamed/*.svg' : 'svg-icons-source/*.svg'
+        },
+        options: {
+          replacements: [{
+            pattern: /icon-set-multi-colored-cs6_/ig,
+            replacement: ''
+          }, {
+            pattern: /\.svg/ig,
+            replacement: '.colors-mono-gray-inverse-alt-dark-light.svg'
+          }]
+        }
+      }
+    },
     grunticon: {
       multiColor: {
         files: [{
@@ -47,9 +63,11 @@ module.exports = function(grunt) {
 // +    }
   });
 
+  grunt.loadNpmTasks('grunt-file-regex-rename');
   grunt.loadNpmTasks('grunt-grunticon');
   grunt.loadNpmTasks('grunt-contrib-sass');
 
+  grunt.registerTask('rename-icons', ['fileregexrename:multiColorIcons']);
   grunt.registerTask('generate-icons', ['grunticon:multiColor']);
   grunt.registerTask('build', ['sass']);
 }
