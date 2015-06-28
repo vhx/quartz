@@ -78,7 +78,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-grunticon');
   grunt.loadNpmTasks('grunt-contrib-sass');
 
-  grunt.registerTask('prep-icons', ['fileregexrename:multiColorIcons', 'svgmin']);
-  grunt.registerTask('generate-icons', ['grunticon:multiColor']);
+  grunt.registerTask('build-icons', ['fileregexrename:multiColorIcons', 'svgmin', 'grunticon:multiColor']);
   grunt.registerTask('build', ['sass']);
 }
