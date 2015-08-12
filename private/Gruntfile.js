@@ -12,6 +12,7 @@ module.exports = function(grunt) {
         }]
       }
     },
+    clean: ['svg-icons-renamed/', 'svg-icons-minified/', 'svg-icons-output/'],
     fileregexrename: {
       multiColorIcons: {
         files: {
@@ -77,7 +78,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-svgmin');
   grunt.loadNpmTasks('grunt-grunticon');
   grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-clean');
 
-  grunt.registerTask('build-icons', ['fileregexrename:multiColorIcons', 'svgmin', 'grunticon:multiColor']);
+  grunt.registerTask('build-icons', ['clean', 'fileregexrename:multiColorIcons', 'svgmin', 'grunticon:multiColor']);
   grunt.registerTask('build', ['sass']);
 }
