@@ -24,7 +24,7 @@ module.exports = function(grunt) {
             replacement: ''
           }, {
             pattern: /\.svg/ig,
-            replacement: '.colors-mono-gray-inverse-alt-dark-light.svg'
+            replacement: '.colors-mono-gray-inverse-alt-light.svg'
           }]
         }
       }
@@ -60,8 +60,7 @@ module.exports = function(grunt) {
             gray: '#9baab2',
             inverse: '#ffffff',
             alt: '#22b8af',
-            light: '#BFBFBF',
-            dark: '#111111'
+            light: '#BFBFBF'
           }
         }
       }
