@@ -1,10 +1,11 @@
 {
   "name": "VHX Styles",
-  "version": "0.0.2",
-  "homepage": "https://github.com/vhx/quartz",
+  "version": "0.0.3",
+  "homepage": "https://github.com/vhx/quartz#bower-file",
   "authors": [
     "david@vhx.tv"
   ],
+  "main": "distro/complete/vhx.css",
   "description": "VHX Styleguide",
   "main": "vhx.css",
   "keywords": [
