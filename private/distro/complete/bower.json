@@ -1,0 +1,36 @@
+{
+  "name": "VHX Styles",
+  "version": "0.0.1",
+  "homepage": "https://github.com/vhx/quartz",
+  "authors": [
+    "david@vhx.tv"
+  ],
+  "description": "VHX Styleguide",
+  "main": "vhx.css",
+  "keywords": [
+    "vhx",
+    "styleguide",
+    "svod",
+    "stylish"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "../node_modules",
+    "../png-icons-source",
+    "../svg-icons-minified",
+    "../svg-icons-output",
+    "../svg-icons-renamed",
+    "../styles",
+    "../../.meteor",
+    "../../.client",
+    "../../lib",
+    "../../packages",
+    "../../public",
+    "../../README.md"
+  ]
+}
