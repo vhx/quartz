@@ -33,6 +33,8 @@
     "../../../lib",
     "../../../packages",
     "../../../public",
-    "../../../README.md"
+    "../../../README.md",
+    "/*",
+    "!distro/complete"
   ]
 }
