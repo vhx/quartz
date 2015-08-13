@@ -1,20 +1,9 @@
 {
   "name": "VHX Styles",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "homepage": "https://github.com/vhx/quartz#bower-file",
-  "authors": [
-    "david@vhx.tv"
-  ],
-  "main": "distro/complete/vhx.css",
   "description": "VHX Styleguide",
-  "main": "vhx.css",
-  "keywords": [
-    "vhx",
-    "styleguide",
-    "svod",
-    "stylish"
-  ],
-  "license": "MIT",
+  "main": "distro/complete/vhx.css",
   "ignore": [
     "**/.*",
     "node_modules",
