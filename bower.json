@@ -1,6 +1,16 @@
 {
-  "name": "vhx",
-  "version": "0.0.5",
+  "name": "Quartz",
+  "version": "0.0.7",
+  "homepage": "https://github.com/vhx/quartz",
+  "authors": [
+    "davegonzalez <gonzalez.dalex@gmail.com>"
+  ],
+  "description": "VHX",
+  "main": "private/distro/vhx.css",
+  "keywords": [
+    "vhx"
+  ],
+  "license": "MIT",
   "ignore": [
     ".meteor",
     "client",
