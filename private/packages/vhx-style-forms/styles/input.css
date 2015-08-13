@@ -1,0 +1,369 @@
+/* .....................................
+  Colors - Grays
+..................................... */
+/* .....................................
+  Colors - Teals
+..................................... */
+/* .....................................
+  Colors - Red
+..................................... */
+/* .....................................
+  Colors - Navy
+..................................... */
+/* .....................................
+  Colors - Brand Palette
+..................................... */
+/* .....................................
+  Fonts
+..................................... */
+/* .....................................
+  Sets
+..................................... */
+/* .....................................
+  Media Query Ranges
+..................................... */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/* .....................................
+  Mixins for CSS3 Properties
+..................................... */
+/* helper function for margin and padding
+......................................*/
+/*
+  collection of prefixed flexbox properties
+  until we're using Compass 1.0+
+  ..........................................*/
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+/*.....................................
+  Admin Input
+......................................*/
+.form {
+  /* labels
+  ...................................*/
+  /* input fields
+  ...................................*/
+  /* inner button
+  ...................................*/ }
+  .form .row,
+  .form .row.row {
+    margin-bottom: 25px; }
+  .form fieldset {
+    border: none;
+    margin: 0;
+    padding: 0; }
+    .form fieldset.inline label, .form fieldset.inline .inner-button, .form fieldset.inline input {
+      display: inline-block; }
+  .form fieldset.is-disabled,
+  .form .is-disabled {
+    opacity: 0.4; }
+    .form fieldset.is-disabled label,
+    .form .is-disabled label {
+      cursor: default; }
+  .form label {
+    display: block;
+    color: #375667;
+    font-size: 14px;
+    margin-bottom: 5px; }
+  .form input[type="text"],
+  .form input[type="email"],
+  .form input[type="tel"],
+  .form input[type="password"],
+  .form input[type="number"],
+  .form textarea {
+    height: 40;
+    width: 100%;
+    padding: 6px 15px;
+    color: #375667;
+    font-size: 14px;
+    background-color: #fff;
+    border: 1px solid #d1d9dc;
+    margin-bottom: 0;
+    box-shadow: none;
+    box-sizing: border-box;
+    border-radius: 3px;
+    transition: border .2s ease;
+    /* has error
+    ...................................*/
+    /* + on focus
+    ...................................*/ }
+    .form input[type="text"]::-webkit-input-placeholder,
+    .form input[type="email"]::-webkit-input-placeholder,
+    .form input[type="tel"]::-webkit-input-placeholder,
+    .form input[type="password"]::-webkit-input-placeholder,
+    .form input[type="number"]::-webkit-input-placeholder,
+    .form textarea::-webkit-input-placeholder {
+      color: rgba(55, 86, 103, 0.5) !important;
+      font-weight: normal; }
+    .form input[type="text"]:-moz-placeholder,
+    .form input[type="email"]:-moz-placeholder,
+    .form input[type="tel"]:-moz-placeholder,
+    .form input[type="password"]:-moz-placeholder,
+    .form input[type="number"]:-moz-placeholder,
+    .form textarea:-moz-placeholder {
+      color: rgba(55, 86, 103, 0.5) !important;
+      font-weight: normal;
+      opacity: 1; }
+    .form input[type="text"]::-moz-placeholder,
+    .form input[type="email"]::-moz-placeholder,
+    .form input[type="tel"]::-moz-placeholder,
+    .form input[type="password"]::-moz-placeholder,
+    .form input[type="number"]::-moz-placeholder,
+    .form textarea::-moz-placeholder {
+      color: rgba(55, 86, 103, 0.5) !important;
+      font-weight: normal;
+      opacity: 1; }
+    .form input[type="text"]:-ms-input-placeholder,
+    .form input[type="email"]:-ms-input-placeholder,
+    .form input[type="tel"]:-ms-input-placeholder,
+    .form input[type="password"]:-ms-input-placeholder,
+    .form input[type="number"]:-ms-input-placeholder,
+    .form textarea:-ms-input-placeholder {
+      color: rgba(55, 86, 103, 0.5) !important;
+      font-weight: normal; }
+    .form input[type="text"][disabled],
+    .form input[type="email"][disabled],
+    .form input[type="tel"][disabled],
+    .form input[type="password"][disabled],
+    .form input[type="number"][disabled],
+    .form textarea[disabled] {
+      opacity: 0.4; }
+    .form input[type="text"].is-transparent,
+    .form input[type="email"].is-transparent,
+    .form input[type="tel"].is-transparent,
+    .form input[type="password"].is-transparent,
+    .form input[type="number"].is-transparent,
+    .form textarea.is-transparent {
+      border: 1px solid transparent;
+      color: #fff !important;
+      background-color: rgba(255, 255, 255, 0.1); }
+    .form input[type="text"].is-error,
+    .form input[type="email"].is-error,
+    .form input[type="tel"].is-error,
+    .form input[type="password"].is-error,
+    .form input[type="number"].is-error,
+    .form textarea.is-error {
+      color: #d3104a;
+      border: 1px solid #d3104a; }
+      .form input[type="text"].is-error.is-selected,
+      .form input[type="email"].is-error.is-selected,
+      .form input[type="tel"].is-error.is-selected,
+      .form input[type="password"].is-error.is-selected,
+      .form input[type="number"].is-error.is-selected,
+      .form textarea.is-error.is-selected {
+        border: 2px solid #cf124c;
+        background-color: #641728; }
+      .form input[type="text"].is-error::-webkit-input-placeholder,
+      .form input[type="email"].is-error::-webkit-input-placeholder,
+      .form input[type="tel"].is-error::-webkit-input-placeholder,
+      .form input[type="password"].is-error::-webkit-input-placeholder,
+      .form input[type="number"].is-error::-webkit-input-placeholder,
+      .form textarea.is-error::-webkit-input-placeholder {
+        color: #d3104a !important; }
+      .form input[type="text"].is-error:-moz-placeholder,
+      .form input[type="email"].is-error:-moz-placeholder,
+      .form input[type="tel"].is-error:-moz-placeholder,
+      .form input[type="password"].is-error:-moz-placeholder,
+      .form input[type="number"].is-error:-moz-placeholder,
+      .form textarea.is-error:-moz-placeholder {
+        color: #d3104a !important;
+        opacity: 1; }
+      .form input[type="text"].is-error::-moz-placeholder,
+      .form input[type="email"].is-error::-moz-placeholder,
+      .form input[type="tel"].is-error::-moz-placeholder,
+      .form input[type="password"].is-error::-moz-placeholder,
+      .form input[type="number"].is-error::-moz-placeholder,
+      .form textarea.is-error::-moz-placeholder {
+        color: #d3104a !important;
+        opacity: 1; }
+      .form input[type="text"].is-error:-ms-input-placeholder,
+      .form input[type="email"].is-error:-ms-input-placeholder,
+      .form input[type="tel"].is-error:-ms-input-placeholder,
+      .form input[type="password"].is-error:-ms-input-placeholder,
+      .form input[type="number"].is-error:-ms-input-placeholder,
+      .form textarea.is-error:-ms-input-placeholder {
+        color: #d3104a !important; }
+    .form input[type="text"]:focus,
+    .form input[type="email"]:focus,
+    .form input[type="tel"]:focus,
+    .form input[type="password"]:focus,
+    .form input[type="number"]:focus,
+    .form textarea:focus {
+      outline: none;
+      color: #375667;
+      border: 1px solid #9aaab4;
+      box-shadow: none;
+      /* on focus + has error
+      ...................................*/ }
+      .form input[type="text"]:focus::-webkit-input-placeholder,
+      .form input[type="email"]:focus::-webkit-input-placeholder,
+      .form input[type="tel"]:focus::-webkit-input-placeholder,
+      .form input[type="password"]:focus::-webkit-input-placeholder,
+      .form input[type="number"]:focus::-webkit-input-placeholder,
+      .form textarea:focus::-webkit-input-placeholder {
+        color: transparent !important; }
+      .form input[type="text"]:focus:-moz-placeholder,
+      .form input[type="email"]:focus:-moz-placeholder,
+      .form input[type="tel"]:focus:-moz-placeholder,
+      .form input[type="password"]:focus:-moz-placeholder,
+      .form input[type="number"]:focus:-moz-placeholder,
+      .form textarea:focus:-moz-placeholder {
+        color: transparent !important;
+        opacity: 1; }
+      .form input[type="text"]:focus::-moz-placeholder,
+      .form input[type="email"]:focus::-moz-placeholder,
+      .form input[type="tel"]:focus::-moz-placeholder,
+      .form input[type="password"]:focus::-moz-placeholder,
+      .form input[type="number"]:focus::-moz-placeholder,
+      .form textarea:focus::-moz-placeholder {
+        color: transparent !important;
+        opacity: 1; }
+      .form input[type="text"]:focus:-ms-input-placeholder,
+      .form input[type="email"]:focus:-ms-input-placeholder,
+      .form input[type="tel"]:focus:-ms-input-placeholder,
+      .form input[type="password"]:focus:-ms-input-placeholder,
+      .form input[type="number"]:focus:-ms-input-placeholder,
+      .form textarea:focus:-ms-input-placeholder {
+        color: transparent !important; }
+      .form input[type="text"]:focus.is-error,
+      .form input[type="email"]:focus.is-error,
+      .form input[type="tel"]:focus.is-error,
+      .form input[type="password"]:focus.is-error,
+      .form input[type="number"]:focus.is-error,
+      .form textarea:focus.is-error {
+        color: #d3104a;
+        border: 1px solid #d3104a; }
+        .form input[type="text"]:focus.is-error.is-selected,
+        .form input[type="email"]:focus.is-error.is-selected,
+        .form input[type="tel"]:focus.is-error.is-selected,
+        .form input[type="password"]:focus.is-error.is-selected,
+        .form input[type="number"]:focus.is-error.is-selected,
+        .form textarea:focus.is-error.is-selected {
+          border: 2px solid #cf124c;
+          background-color: #641728; }
+        .form input[type="text"]:focus.is-error::-webkit-input-placeholder,
+        .form input[type="email"]:focus.is-error::-webkit-input-placeholder,
+        .form input[type="tel"]:focus.is-error::-webkit-input-placeholder,
+        .form input[type="password"]:focus.is-error::-webkit-input-placeholder,
+        .form input[type="number"]:focus.is-error::-webkit-input-placeholder,
+        .form textarea:focus.is-error::-webkit-input-placeholder {
+          transition: all .2s ease;
+          color: #d3104a !important; }
+        .form input[type="text"]:focus.is-error:-moz-placeholder,
+        .form input[type="email"]:focus.is-error:-moz-placeholder,
+        .form input[type="tel"]:focus.is-error:-moz-placeholder,
+        .form input[type="password"]:focus.is-error:-moz-placeholder,
+        .form input[type="number"]:focus.is-error:-moz-placeholder,
+        .form textarea:focus.is-error:-moz-placeholder {
+          transition: all .2s ease;
+          color: #d3104a !important;
+          opacity: 1; }
+        .form input[type="text"]:focus.is-error::-moz-placeholder,
+        .form input[type="email"]:focus.is-error::-moz-placeholder,
+        .form input[type="tel"]:focus.is-error::-moz-placeholder,
+        .form input[type="password"]:focus.is-error::-moz-placeholder,
+        .form input[type="number"]:focus.is-error::-moz-placeholder,
+        .form textarea:focus.is-error::-moz-placeholder {
+          transition: all .2s ease;
+          color: #d3104a !important;
+          opacity: 1; }
+        .form input[type="text"]:focus.is-error:-ms-input-placeholder,
+        .form input[type="email"]:focus.is-error:-ms-input-placeholder,
+        .form input[type="tel"]:focus.is-error:-ms-input-placeholder,
+        .form input[type="password"]:focus.is-error:-ms-input-placeholder,
+        .form input[type="number"]:focus.is-error:-ms-input-placeholder,
+        .form textarea:focus.is-error:-ms-input-placeholder {
+          transition: all .2s ease;
+          color: #d3104a !important; }
+    .form input[type="text"].small,
+    .form input[type="email"].small,
+    .form input[type="tel"].small,
+    .form input[type="password"].small,
+    .form input[type="number"].small,
+    .form textarea.small {
+      padding: 6px 10px;
+      width: 45px; }
+    .form input[type="text"].medium,
+    .form input[type="email"].medium,
+    .form input[type="tel"].medium,
+    .form input[type="password"].medium,
+    .form input[type="number"].medium,
+    .form textarea.medium {
+      padding: 6px 10px;
+      width: 75px; }
+    .form input[type="text"].large,
+    .form input[type="email"].large,
+    .form input[type="tel"].large,
+    .form input[type="password"].large,
+    .form input[type="number"].large,
+    .form textarea.large {
+      width: 175px; }
+    .form input[type="text"].xlarge,
+    .form input[type="email"].xlarge,
+    .form input[type="tel"].xlarge,
+    .form input[type="password"].xlarge,
+    .form input[type="number"].xlarge,
+    .form textarea.xlarge {
+      width: 200px; }
+    .form input[type="text"].height-auto,
+    .form input[type="email"].height-auto,
+    .form input[type="tel"].height-auto,
+    .form input[type="password"].height-auto,
+    .form input[type="number"].height-auto,
+    .form textarea.height-auto {
+      height: auto !important; }
+  .form .inner-button {
+    position: relative; }
+    .form .inner-button .button,
+    .form .inner-button .btn-gray,
+    .form .inner-button .btn-search,
+    .form .inner-button .btn {
+      position: absolute;
+      top: 5px;
+      right: 5px; }
+  .form textarea {
+    padding: 10px 15px; }
+    .form textarea.small {
+      width: 100%;
+      min-height: 40; }
+    .form textarea.medium {
+      width: 100%;
+      min-height: 60; }
+    .form textarea.large {
+      width: 100%;
+      min-height: 80; }
+    .form textarea.xlarge {
+      width: 100%;
+      min-height: 140; }
+
+.input {
+  position: relative; }
+  .input .input-label {
+    position: absolute;
+    top: 11px;
+    left: 15px;
+    color: #d7dde1; }

@@ -1,0 +1,211 @@
+/* .....................................
+  Colors - Grays
+..................................... */
+/* .....................................
+  Colors - Teals
+..................................... */
+/* .....................................
+  Colors - Red
+..................................... */
+/* .....................................
+  Colors - Navy
+..................................... */
+/* .....................................
+  Colors - Brand Palette
+..................................... */
+/* .....................................
+  Fonts
+..................................... */
+/* .....................................
+  Sets
+..................................... */
+/* .....................................
+  Media Query Ranges
+..................................... */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/* .....................................
+  Mixins for CSS3 Properties
+..................................... */
+/* helper function for margin and padding
+......................................*/
+/*
+  collection of prefixed flexbox properties
+  until we're using Compass 1.0+
+  ..........................................*/
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+/*.....................................
+  Admin Images & Embeds
+......................................*/
+.img,
+.embed,
+.responsive-video-container {
+  position: relative;
+  display: block;
+  vertical-align: middle;
+  height: 0;
+  width: 100%;
+  padding-bottom: 56.25%; }
+  .img.small,
+  .embed.small,
+  .responsive-video-container.small {
+    height: 40px;
+    width: 71.111111111px;
+    padding-bottom: 0; }
+  .img.medium,
+  .embed.medium,
+  .responsive-video-container.medium {
+    height: 80px;
+    width: 142.222222222px;
+    padding-bottom: 0; }
+  .img.large,
+  .embed.large,
+  .responsive-video-container.large {
+    height: 150px;
+    width: 266.666666667px;
+    padding-bottom: 0; }
+  .img.xlarge,
+  .embed.xlarge,
+  .responsive-video-container.xlarge {
+    height: 250px;
+    width: 444.444444444px;
+    padding-bottom: 0; }
+  .img.square,
+  .embed.square,
+  .responsive-video-container.square {
+    border: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 0px; }
+    .img.square.upload-placeholder,
+    .embed.square.upload-placeholder,
+    .responsive-video-container.square.upload-placeholder {
+      background-position: 50% 50%;
+      background-size: 20px 20px; }
+    .img.square .upload-remove,
+    .embed.square .upload-remove,
+    .responsive-video-container.square .upload-remove {
+      transition: opacity 100ms ease-out, bottom 200ms ease, background 200ms ease;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      opacity: 0;
+      margin-left: -10px;
+      background: rgba(255, 255, 255, 0.4);
+      width: 20px;
+      height: 20px;
+      background: #fff;
+      z-index: 1000;
+      border-radius: 20px;
+      border: 1px solid #ccc; }
+      .img.square .upload-remove i,
+      .embed.square .upload-remove i,
+      .responsive-video-container.square .upload-remove i {
+        background-size: 10px 10px;
+        width: 100%;
+        height: 100%; }
+      .img.square .upload-remove:hover,
+      .embed.square .upload-remove:hover,
+      .responsive-video-container.square .upload-remove:hover {
+        background: #dddddd; }
+    .img.square:hover .upload-remove,
+    .embed.square:hover .upload-remove,
+    .responsive-video-container.square:hover .upload-remove {
+      bottom: -10px;
+      opacity: 1; }
+      .img.square:hover .upload-remove i,
+      .embed.square:hover .upload-remove i,
+      .responsive-video-container.square:hover .upload-remove i {
+        color: #fff; }
+  .img .img-content,
+  .img .embed-content,
+  .img iframe,
+  .embed .img-content,
+  .embed .embed-content,
+  .embed iframe,
+  .responsive-video-container .img-content,
+  .responsive-video-container .embed-content,
+  .responsive-video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover; }
+
+.js-img-array ul, .js-img-array li {
+  overflow: initial; }
+
+.img {
+  background: #f1f3f4;
+  border: 1px solid #d1d9dc;
+  text-align: center;
+  background-position: 50% 50%;
+  border-radius: 3px;
+  background-size: cover; }
+  .img.placeholder .button,
+  .img.placeholder .btn-gray,
+  .img.placeholder .btn-teal,
+  .img.placeholder .button-percentage {
+    position: absolute;
+    left: 5%;
+    bottom: 8%;
+    display: block; }
+    .img.placeholder .button .btn-gray,
+    .img.placeholder .button .btn-teal,
+    .img.placeholder .button .button,
+    .img.placeholder .btn-gray .btn-gray,
+    .img.placeholder .btn-gray .btn-teal,
+    .img.placeholder .btn-gray .button,
+    .img.placeholder .btn-teal .btn-gray,
+    .img.placeholder .btn-teal .btn-teal,
+    .img.placeholder .btn-teal .button,
+    .img.placeholder .button-percentage .btn-gray,
+    .img.placeholder .button-percentage .btn-teal,
+    .img.placeholder .button-percentage .button {
+      position: static;
+      left: auto;
+      bottom: auto; }
+  .img .caption {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+
+@media only screen and (max-width: 40em) {
+  .img.medium, .img.large, .img.xlarge, .embed.medium, .embed.large, .embed.xlarge {
+    width: 100%; }
+  .img.cell, .embed.cell {
+    width: auto; } }

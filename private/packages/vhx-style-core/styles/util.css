@@ -1,0 +1,372 @@
+/* .....................................
+  Colors - Grays
+..................................... */
+/* .....................................
+  Colors - Teals
+..................................... */
+/* .....................................
+  Colors - Red
+..................................... */
+/* .....................................
+  Colors - Navy
+..................................... */
+/* .....................................
+  Colors - Brand Palette
+..................................... */
+/* .....................................
+  Fonts
+..................................... */
+/* .....................................
+  Sets
+..................................... */
+/* .....................................
+  Media Query Ranges
+..................................... */
+.group:before,
+.group:after {
+  content: " ";
+  display: table; }
+
+.group:after {
+  clear: both; }
+
+.image-replacement {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden; }
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/* .....................................
+  Mixins for CSS3 Properties
+..................................... */
+/* helper function for margin and padding
+......................................*/
+/*
+  collection of prefixed flexbox properties
+  until we're using Compass 1.0+
+  ..........................................*/
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+/* alignment
+......................................*/
+.text-top {
+  vertical-align: top !important; }
+
+.text-middle {
+  vertical-align: middle !important; }
+
+.text-bottom {
+  vertical-align: bottom !important; }
+
+/* display
+......................................*/
+.is-block,
+.block {
+  display: block !important; }
+
+.is-inline,
+.inline {
+  display: inline-block !important; }
+
+.is-hidden {
+  display: none !important; }
+
+.word-break {
+  word-break: break-word; }
+
+/* widths
+......................................*/
+@media only screen and (min-width: 64.063em) {
+  .width-only.large-1 {
+    width: 6.25%; } }
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .width-only.medium-1 {
+    width: 6.25%; } }
+@media only screen and (max-width: 40em) {
+  .width-only.small-1 {
+    width: 6.25%; } }
+
+@media only screen and (min-width: 64.063em) {
+  .width-only.large-2 {
+    width: 12.5%; } }
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .width-only.medium-2 {
+    width: 12.5%; } }
+@media only screen and (max-width: 40em) {
+  .width-only.small-2 {
+    width: 12.5%; } }
+
+@media only screen and (min-width: 64.063em) {
+  .width-only.large-3 {
+    width: 18.75%; } }
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .width-only.medium-3 {
+    width: 18.75%; } }
+@media only screen and (max-width: 40em) {
+  .width-only.small-3 {
+    width: 18.75%; } }
+
+@media only screen and (min-width: 64.063em) {
+  .width-only.large-4 {
+    width: 25%; } }
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .width-only.medium-4 {
+    width: 25%; } }
+@media only screen and (max-width: 40em) {
+  .width-only.small-4 {
+    width: 25%; } }
+
+@media only screen and (min-width: 64.063em) {
+  .width-only.large-5 {
+    width: 31.25%; } }
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .width-only.medium-5 {
+    width: 31.25%; } }
+@media only screen and (max-width: 40em) {
+  .width-only.small-5 {
+    width: 31.25%; } }
+
+@media only screen and (min-width: 64.063em) {
+  .width-only.large-6 {
+    width: 37.5%; } }
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .width-only.medium-6 {
+    width: 37.5%; } }
+@media only screen and (max-width: 40em) {
+  .width-only.small-6 {
+    width: 37.5%; } }
+
+@media only screen and (min-width: 64.063em) {
+  .width-only.large-7 {
+    width: 43.75%; } }
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .width-only.medium-7 {
+    width: 43.75%; } }
+@media only screen and (max-width: 40em) {
+  .width-only.small-7 {
+    width: 43.75%; } }
+
+@media only screen and (min-width: 64.063em) {
+  .width-only.large-8 {
+    width: 50%; } }
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .width-only.medium-8 {
+    width: 50%; } }
+@media only screen and (max-width: 40em) {
+  .width-only.small-8 {
+    width: 50%; } }
+
+@media only screen and (min-width: 64.063em) {
+  .width-only.large-9 {
+    width: 56.25%; } }
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .width-only.medium-9 {
+    width: 56.25%; } }
+@media only screen and (max-width: 40em) {
+  .width-only.small-9 {
+    width: 56.25%; } }
+
+@media only screen and (min-width: 64.063em) {
+  .width-only.large-10 {
+    width: 62.5%; } }
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .width-only.medium-10 {
+    width: 62.5%; } }
+@media only screen and (max-width: 40em) {
+  .width-only.small-10 {
+    width: 62.5%; } }
+
+@media only screen and (min-width: 64.063em) {
+  .width-only.large-11 {
+    width: 68.75%; } }
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .width-only.medium-11 {
+    width: 68.75%; } }
+@media only screen and (max-width: 40em) {
+  .width-only.small-11 {
+    width: 68.75%; } }
+
+@media only screen and (min-width: 64.063em) {
+  .width-only.large-12 {
+    width: 75%; } }
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .width-only.medium-12 {
+    width: 75%; } }
+@media only screen and (max-width: 40em) {
+  .width-only.small-12 {
+    width: 75%; } }
+
+@media only screen and (min-width: 64.063em) {
+  .width-only.large-13 {
+    width: 81.25%; } }
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .width-only.medium-13 {
+    width: 81.25%; } }
+@media only screen and (max-width: 40em) {
+  .width-only.small-13 {
+    width: 81.25%; } }
+
+@media only screen and (min-width: 64.063em) {
+  .width-only.large-14 {
+    width: 87.5%; } }
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .width-only.medium-14 {
+    width: 87.5%; } }
+@media only screen and (max-width: 40em) {
+  .width-only.small-14 {
+    width: 87.5%; } }
+
+@media only screen and (min-width: 64.063em) {
+  .width-only.large-15 {
+    width: 93.75%; } }
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .width-only.medium-15 {
+    width: 93.75%; } }
+@media only screen and (max-width: 40em) {
+  .width-only.small-15 {
+    width: 93.75%; } }
+
+@media only screen and (min-width: 64.063em) {
+  .width-only.large-16 {
+    width: 100%; } }
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .width-only.medium-16 {
+    width: 100%; } }
+@media only screen and (max-width: 40em) {
+  .width-only.small-16 {
+    width: 100%; } }
+
+/* scrollable content
+......................................*/
+.frame {
+  transform: translate3d(0, 0, 0); }
+  .frame.default {
+    height: auto;
+    max-height: 75px;
+    width: 100%;
+    overflow-y: auto; }
+    @media only screen and (max-width: upper-bound(0em, 40em)) {
+      .frame.default {
+        height: auto; } }
+  .frame.small {
+    height: auto;
+    max-height: 75px;
+    width: 100%;
+    overflow-y: auto; }
+    @media only screen and (max-width: upper-bound(0em, 40em)) {
+      .frame.small {
+        height: auto; } }
+  .frame.smedium {
+    height: auto;
+    max-height: 75px;
+    width: 100%;
+    overflow-y: auto; }
+    @media only screen and (max-width: upper-bound(0em, 40em)) {
+      .frame.smedium {
+        height: auto; } }
+  .frame.medium {
+    height: auto;
+    max-height: 125px;
+    width: 100%;
+    overflow-y: auto; }
+    @media only screen and (max-width: upper-bound(0em, 40em)) {
+      .frame.medium {
+        height: auto; } }
+  .frame.large {
+    height: auto;
+    max-height: 325px;
+    width: 100%;
+    overflow-y: auto; }
+    @media only screen and (max-width: upper-bound(0em, 40em)) {
+      .frame.large {
+        height: auto; } }
+  .frame.xlarge {
+    height: auto;
+    max-height: 525px;
+    width: 100%;
+    overflow-y: auto; }
+    @media only screen and (max-width: upper-bound(0em, 40em)) {
+      .frame.xlarge {
+        height: auto; } }
+
+.cell {
+  display: table-cell !important; }
+
+.fill-height {
+  height: 100%; }
+
+.fill-width {
+  width: 100%;
+  max-width: 100%; }
+
+.truncate {
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block; }
+  .truncate.xlarge {
+    max-width: 90%; }
+  .truncate.large {
+    max-width: 75%; }
+  .truncate.medium {
+    max-width: 60%; }
+  .truncate.small {
+    max-width: 40%; }
+
+.uppercase,
+.upper {
+  text-transform: uppercase; }
+
+hr.column {
+  position: relative;
+  border: none;
+  margin: 0;
+  clear: none;
+  display: block;
+  min-width: 1px;
+  border-width: 0;
+  min-height: 1px; }
+  hr.column:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 1px;
+    background: #ccc; }
+
+.force_z_top {
+  z-index: 2147483647 !important; }
+
+.vertical-center {
+  transform: translateY(-50%);
+  position: relative;
+  top: 50%; }

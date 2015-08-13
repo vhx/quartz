@@ -1,25 +1,26 @@
 module.exports = function(grunt) {
 
   grunt.initConfig({
+    // concat: {
+    //   dist: {
+    //     src: ['../packages/**/styles/*.scss'],
+    //     dest: '../public/styles.scss'
+    //   }
+    // },
     sass: {
       dist: {
         files: [{
           expand: true,
-          cwd: '../packages',
-          src: '*/*.scss',
-          dest: 'build',
+          cwd: '../public',
+          src: '../packages/**/styles/*.scss',
+          dest: '../private/build',
           ext: '.css'
         }]
       }
     }
-// +    concat: {
-// +      dist: {
-// +        src: [],
-// +        dest: '../crystal/vendor/assets/stylesheets/vhx.quartz.1.0.css'
-// +      }
-// +    }
   });
 
+  grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-sass');
 
   grunt.registerTask('build', ['sass']);
