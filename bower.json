@@ -1,6 +1,6 @@
 {
   "name": "Quartz",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "homepage": "https://github.com/vhx/quartz",
   "authors": [
     "davegonzalez <gonzalez.dalex@gmail.com>"
@@ -22,6 +22,6 @@
     "private/svg-icons-minified",
     "private/svg-icons-output",
     "private/svg-icons-renamed",
-    "private/styles",
+    "private/styles"
   ]
 }
