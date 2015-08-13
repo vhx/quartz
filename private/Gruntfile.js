@@ -1,5 +1,4 @@
 module.exports = function(grunt) {
-
   grunt.initConfig({
     sass_globbing: {
       your_target: {
@@ -11,7 +10,7 @@ module.exports = function(grunt) {
     sass: {
       dist: {
         files: {
-          'distro/complete/vhx.css': 'styles/vhx.css'
+          'distro/complete/vhx.css': 'styles/complete/vhx.css'
         }
       }
     }
