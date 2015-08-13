@@ -1,6 +1,6 @@
 {
   "name": "vhx",
-  "version": "0.0.4",
+  "version": "0.0.2",
   "ignore": [
     "../../node_modules",
     "../../png-icons-source",
