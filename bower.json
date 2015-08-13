@@ -17,7 +17,7 @@
     "lib",
     "public",
     "README.md",
-    "packages"
+    "packages",
     "private/node_modules",
     "private/png-icons-source",
     "private/svg-icons-minified",
