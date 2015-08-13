@@ -1,15 +1,7 @@
 {
-  "name": "VHX Styles",
+  "name": "vhx",
   "version": "0.0.4",
-  "homepage": "https://github.com/vhx/quartz#bower-file",
-  "description": "VHX Styleguide",
-  "main": "distro/complete/vhx.css",
   "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests",
     "../../node_modules",
     "../../png-icons-source",
     "../../svg-icons-minified",

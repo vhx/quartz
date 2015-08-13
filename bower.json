@@ -1,0 +1,17 @@
+{
+  "name": "vhx",
+  "version": "0.0.5",
+  "ignore": [
+    ".meteor",
+    "client",
+    "lib",
+    "public",
+    "README.md",
+    "private/node_modules",
+    "private/png-icons-source",
+    "private/svg-icons-minified",
+    "private/svg-icons-output",
+    "private/svg-icons-renamed",
+    "private/styles",
+  ]
+}
