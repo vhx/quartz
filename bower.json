@@ -6,7 +6,7 @@
     "davegonzalez <gonzalez.dalex@gmail.com>"
   ],
   "description": "VHX",
-  "main": "private/distro/vhx.css",
+  "main": "distro/complete/vhx.css",
   "keywords": [
     "vhx"
   ],
@@ -18,13 +18,6 @@
     "public",
     "README.md",
     "packages",
-    "private/node_modules",
-    "private/png-icons-source",
-    "private/svg-icons-minified",
-    "private/svg-icons-output",
-    "private/svg-icons-renamed",
-    "private/styles",
-    "private/Gruntfile.js",
-    "private/package.json"
+    "private"
   ]
 }

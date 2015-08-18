@@ -10,7 +10,7 @@ module.exports = function(grunt) {
     sass: {
       dist: {
         files: {
-          'distro/complete/vhx.css': 'styles/complete/vhx.css'
+          '../distro/complete/vhx.css': 'styles/complete/vhx.css'
         }
       }
     }
