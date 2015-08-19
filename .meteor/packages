@@ -19,10 +19,10 @@ vhx:style-media
 vhx:style-tables
 vhx:style-loaders
 vhx:style-modals
-vhx:style-svg
 iron:router
 simple:highlight.js
 markdown
 vhx:style-borders
 vhx:style-checkbox
 vhx:style-radio
+vhx:style-icons
