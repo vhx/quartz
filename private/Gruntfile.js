@@ -45,7 +45,7 @@ module.exports = function(grunt) {
           expand: true,
           cwd: 'svg-icons-minified',
           src: ['*.svg', '*.png'],
-          dest: 'svg-icons-output'
+          dest: '../packages/vhx:style-icons/styles'
         }],
         options: {
           datasvgcss: 'icons.svg.css.scss',

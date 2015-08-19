@@ -4,7 +4,16 @@ private/node_modules/
 .env
 .env.local
 npm-debug.log
-private/svg-icons-output
-private/png-icons-source
 private/svg-icons-renamed
 private/svg-icons-minified
+
+# ignore most Grunticon generated stuff, which we can't disable
+# TODO: more granular workflow
+packages/vhx:style-icons/styles/grunticon.loader.js
+packages/vhx:style-icons/styles/icons.fallback.css.scss
+packages/vhx:style-icons/styles/icons.png.css.scss
+packages/vhx:style-icons/styles/preview.html
+packages/vhx:style-icons/png-icons-source/
+
+# Temporarily, to avoid running `grunt build-icons` frequently - it crashed meteor server everytime
+# private/svg-icons-output
