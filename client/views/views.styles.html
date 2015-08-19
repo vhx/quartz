@@ -47,3 +47,20 @@ style examples
 <template name="style_reading">
 style reading
 </template>
+
+<template name="style_icons">
+  {{#each styleIcons}}
+  <div class="row fill-width margin-reset">
+    <div class="column small-8 padding-reset">
+      <section class="guide-bar">
+      {{> UI.dynamic template=guide}}
+      </section>
+    </div>
+    <div class="column small-8 padding-reset">
+      <section class="code-bar">
+      {{> UI.dynamic template=code}}
+      </section>
+    </div>
+  </div>
+  {{/each}}
+</template>

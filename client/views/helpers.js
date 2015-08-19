@@ -25,3 +25,12 @@ Template.style_utilities.helpers({
     ]
   }
 })
+
+
+Template.style_icons.helpers({
+  styleIcons: function() {
+    return [
+      { guide: 'guide__style_icons', code:'code__style_icons' },
+    ]
+  }
+})
