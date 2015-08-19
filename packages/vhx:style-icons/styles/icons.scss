@@ -1,0 +1,84 @@
+@import "../config/include";
+
+/*.....................................
+  Stand-alone icons using <i>
+......................................*/
+.icon {
+  // @include transition(all .2s ease-out);
+  display: inline-block;
+  background-position: 50% 50%;
+  background-size: contain;
+  width: $icon-default;
+  height: $icon-default;
+  text-indent: -9999px;
+  &.tiny {
+    width: $icon-tiny;
+    height: $icon-tiny;
+  }
+  &.default {
+    width: $icon-default;
+    height: $icon-default;
+  }
+  &.small {
+    width: $icon-small;
+    height: $icon-small;
+  }
+  &.line,
+  &.icon-line {
+    width: $icon-line;
+    height: $icon-line;
+  }
+  // http://english.stackexchange.com/questions/163605/what-would-you-call-size-that-fits-between-small-and-medium
+  // implemented initially for masthead icons
+  &.smedium {
+    width: $icon-smedium;
+    height: $icon-smedium;
+  }
+  &.medium {
+    width: $icon-medium;
+    height: $icon-medium;
+  }
+  &.large {
+    width: $icon-large;
+    height: $icon-large;
+  }
+  &.xlarge {
+    width: $icon-xlarge;
+    height: $icon-xlarge;
+  }
+  // color inline-SVG html icons
+  &.mono {
+    fill: #375667;
+  }
+  &.gray {
+    fill: #9baab2;
+  }
+  &.inverse {
+    fill: #ffffff;
+  }
+  &.alt {
+    fill: #22b8af;
+  }
+  &.light {
+    fill: #BFBFBF;
+  }
+  &.dark {
+    fill: #111111;
+  }
+  &.is-transparent {
+    opacity: .5;
+  }
+  &.radius {
+    border-radius: 5px;
+  }
+}
+
+.input {
+  position: relative;
+  .input-label {
+    position: absolute;
+    top: 11px;
+    left: 15px;
+    color: $gray-2;
+  }
+}
