@@ -12,7 +12,7 @@ module.exports = function(grunt) {
         }]
       }
     },
-    clean: ['svg-icons-renamed/', 'svg-icons-minified/', 'svg-icons-output/'],
+    clean: ['svg-icons-renamed/', 'svg-icons-minified/'],
     fileregexrename: {
       multiColorIcons: {
         files: {
@@ -48,9 +48,9 @@ module.exports = function(grunt) {
           dest: '../packages/vhx:style-icons/styles'
         }],
         options: {
-          datasvgcss: 'icons.svg.css.scss',
-          datapngcss: 'icons.png.css.scss',
-          urlpngcss: 'icons.fallback.css.scss',
+          datasvgcss: 'icons.svg.scss',
+          datapngcss: 'icons.png.scss',
+          urlpngcss: 'icons.fallback.scss',
           cssprefix: '.icon-',
           pngfolder: '../png-icons-source',
           // TODO: this is path to output to output PNGs

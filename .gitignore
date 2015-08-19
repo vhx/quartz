@@ -10,8 +10,8 @@ private/svg-icons-minified
 # ignore most Grunticon generated stuff, which we can't disable
 # TODO: more granular workflow
 packages/vhx:style-icons/styles/grunticon.loader.js
-packages/vhx:style-icons/styles/icons.fallback.css.scss
-packages/vhx:style-icons/styles/icons.png.css.scss
+packages/vhx:style-icons/styles/icons.fallback.scss
+packages/vhx:style-icons/styles/icons.png.scss
 packages/vhx:style-icons/styles/preview.html
 packages/vhx:style-icons/png-icons-source/
 
