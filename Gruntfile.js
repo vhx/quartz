@@ -64,6 +64,17 @@ module.exports = function(grunt) {
           }
         }
       }
+    },
+    folder_list: {
+      options: {
+        files: true,
+        folders: true
+      },
+      files: {
+        src: ['private/svg-icons-renamed/*.svg'],
+        dest: 'app/packages/vhx:style-icons/docs/icon-list.json',
+        cwd: 'app/'
+      }
     }
 // +    concat: {
 // +      dist: {
@@ -78,7 +89,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-grunticon');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-folder-list');
 
   grunt.registerTask('build-icons', ['clean', 'fileregexrename:multiColorIcons', 'svgmin', 'grunticon:multiColor']);
   grunt.registerTask('build', ['sass']);
+  grunt.registerTask('files', ['folder_list']);
 }
