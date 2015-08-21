@@ -24,4 +24,10 @@
     width: 100px;
     height: 100px;
   }
+  // currently --large exists just for colors
+  // but, it's free to be changed down the road
+  &.square--large {
+    width: 120px;
+    height: 120px;
+  }
 }
