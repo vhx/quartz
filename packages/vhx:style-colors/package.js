@@ -21,6 +21,7 @@ Package.onUse(function(api) {
   api.addFiles([
     'config/_include.scss',
     'config/_variables.scss',
+    'styles/colors.scss',
 
     'docs/code.html',
     'docs/guide.html'
