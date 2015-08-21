@@ -56,11 +56,11 @@ select {
   @extend .btn;
   @include button-colors(
     #eff2f3,  // background
-    #d7dde0,  // background hover
-    #375667,  // color
-    #375667,  // color hover
-    #d7dde0,  // border color
-    #d7dde0,   // border hover,
+    $gray-2,  // background hover
+    $gray-6,  // color
+    $gray-6,  // color hover
+    $gray-2,  // border color
+    $gray-2,   // border hover,
     375667   // loader
   );
 }
@@ -72,8 +72,8 @@ select {
   @include button-colors(
     #7a878e,  // background
     #5d6c75,  // background hover
-    #ffffff,  // color
-    #ffffff,  // color hover
+    $white,  // color
+    $white,  // color hover
     #5d6c75,  // border color
     #5d6c75,   // border color hover
     375667   // loader
@@ -85,13 +85,13 @@ select {
 .btn-teal {
   @extend .btn;
   @include button-colors(
-    #22b9b0,  // background
-    #149a97,  // background hover
-    #ffffff,  // color
-    #ffffff,  // color hover
-    #149a97,  // border color
-    #149a97,   // border color hover
-    ffffff  // loader
+    $teal-2,  // background
+    $teal-3,  // background hover
+    $white,  // color
+    $white,  // color hover
+    $teal-3,  // border color
+    $teal-3,   // border color hover
+    $white  // loader
   );
 }
 
@@ -100,13 +100,13 @@ select {
 .btn-red {
   @extend .btn;
   @include button-colors(
-    #d3104a,  // background
-    #ba1045,  // background hover
-    #ffffff,  // color
-    #ffffff,  // color hover
-    #ba1045,  // border color
-    #ba1045,   // border hover
-    fff  // loader
+    $red-2,  // background
+    $red-3,  // background hover
+    $white,  // color
+    $white,  // color hover
+    $red-3,  // border color
+    $red-3,   // border hover
+    $white  // loader
   );
 }
 
@@ -116,12 +116,12 @@ select {
   @extend .btn;
   @include button-colors(
     #8e7190,  // background
-    #8b3880,  // background hover
-    #ffffff,  // color
-    #ffffff,  // color hover
+    $vhx-purple-3,  // background hover
+    $white,  // color
+    $white,  // color hover
     #8e7190,  // border color
-    #8b3880,   // border hover
-    #ffffff  // loader
+    $vhx-purple-3,   // border hover
+    $white  // loader
   );
 }
 
@@ -145,13 +145,13 @@ select {
 .btn-white {
   @extend .btn;
   @include button-colors(
-    #ffffff,  // background
+    $white,  // background
     #eff2f3,  // background hover
-    #375667,  // color
-    #375667,  // color hover
-    #d7dde0,  // border color
-    #d7dde0,  // border color hover
-    #375667   // loader
+    $gray-6,  // color
+    $gray-6,  // color hover
+    $gray-2,  // border color
+    $gray-2,  // border color hover
+    $gray-6   // loader
   );
 }
 
@@ -162,11 +162,11 @@ select {
   @include button-colors(
     #3b5899,  // background
     #2f4a70,  // background hover
-    #ffffff,  // color
-    #ffffff,  // color hover
+    $white,  // color
+    $white,  // color hover
     #3b5899,  // border color
     #2f4a70,   // border color hover
-    #ffffff  // loader
+    $white  // loader
   );
 }
 
@@ -177,11 +177,11 @@ select {
   @include button-colors(
     #1ca3dc,  // background
     #1d95b4,  // background hover
-    #ffffff,  // color
-    #ffffff,  // color hover
+    $white,  // color
+    $white,  // color hover
     #1ca3dc,  // border color
     #1d95b4,   // border color hover
-    #ffffff  // loader
+    $white  // loader
   );
 }
 
@@ -192,11 +192,11 @@ select {
   @include button-colors(
     rgba(255, 255, 255, .5),  // background
     rgba(255, 255, 255, .7),  // background hover
-    #ffffff,  // color
-    #ffffff,  // color hover
+    $white,  // color
+    $white,  // color hover
     rgba(255, 255, 255, 0),  // border color
     rgba(255, 255, 255, 0),   // border color hover
-    #ffffff  // loader
+    $white  // loader
   );
 }
 
@@ -207,11 +207,11 @@ select {
   @include button-colors(
     #37465d,  // background
     #27323f,  // background hover
-    #ffffff,  // color
-    #ffffff,  // color hover
+    $white,  // color
+    $white,  // color hover
     #37465d,  // border color
     #27323f,   // border color hover
-    #ffffff  // loader
+    $white  // loader
   );
 }
 
@@ -222,11 +222,11 @@ select {
   @include button-colors(
     #0c8dc4,  // background
     #0a709c,  // background hover
-    #ffffff,  // color
-    #ffffff,  // color hover
+    $white,  // color
+    $white,  // color hover
     #0c8dc4,  // border color
     #0a709c,   // border color hover
-    #ffffff  // loader
+    $white  // loader
   );
 }
 
@@ -237,11 +237,11 @@ select {
   @include button-colors(
     #2c164a,  // background
     #1c0d32,  // background hover
-    #ffffff,  // color
-    #ffffff,  // color hover
+    $white,  // color
+    $white,  // color hover
     #2c164a,  // border color
     #1c0d32,   // border color hover
-    #ffffff  // loader
+    $white  // loader
   );
 }
 
@@ -363,7 +363,7 @@ select {
   @extend %icon-chevron-down-mono;
 
   &.btn-dropdown--action:before {
-    background: #d7dde0;
+    background: $gray-2;
   }
   &:hover {
     @extend %icon-chevron-down-mono;
@@ -379,7 +379,7 @@ select {
   @extend %icon-chevron-down-mono;
 
   &.btn-dropdown--action:before {
-    background: #d7dde0;
+    background: $gray-2;
   }
   &:hover {
     @extend %icon-chevron-down-mono;
@@ -395,7 +395,7 @@ select {
   @extend %icon-chevron-down-inverse;
 
   &.btn-dropdown--action:before {
-    background: #149a97;
+    background: $teal-3;
   }
   &:hover {
     @extend %icon-chevron-down-inverse;
@@ -527,12 +527,12 @@ select {
   }
   .btn-gray:nth-child(odd),
   .btn-teal:nth-child(odd) {
-    border-right: 1px solid #d7dde0 !important;
-    border-left: 1px solid #d7dde0 !important;
+    border-right: 1px solid $gray-2 !important;
+    border-left: 1px solid $gray-2 !important;
     &:hover,
     &:focus {
-      border-right: 1px solid #d7dde0 !important;
-      border-left: 1px solid #d7dde0 !important;
+      border-right: 1px solid $gray-2 !important;
+      border-left: 1px solid $gray-2 !important;
       z-index: 10000;
     }
   }
@@ -542,19 +542,19 @@ select {
     border-right: 1px solid transparent !important;
     &:hover,
     &:focus {
-      border-left: 1px solid #d7dde0 !important;
-      border-right: 1px solid #d7dde0 !important;
+      border-left: 1px solid $gray-2 !important;
+      border-right: 1px solid $gray-2 !important;
       z-index: 10000;
     }
   }
   .btn-gray:first-child,
   .btn-teal:first-child {
-    border-left: 1px solid #d7dde0 !important;
+    border-left: 1px solid $gray-2 !important;
     border-radius: 5px 0 0 5px;
   }
   .btn-gray:last-child,
   .btn-teal:last-child {
-    border-right: 1px solid #d7dde0 !important;
+    border-right: 1px solid $gray-2 !important;
     border-radius: 0 5px 5px 0;
     &:after {
       display: none;
