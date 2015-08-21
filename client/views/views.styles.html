@@ -10,6 +10,23 @@ style css
 style examples
 </template>
 
+<template name="style_colors">
+  {{#each styleColors}}
+  <div class="row fill-width margin-reset">
+    <div class="column small-8 padding-reset">
+      <section class="guide-bar">
+      {{> UI.dynamic template=guide}}
+      </section>
+    </div>
+    <div class="column small-8 padding-reset">
+      <section class="code-bar">
+      {{> UI.dynamic template=code}}
+      </section>
+    </div>
+  </div>
+  {{/each}}
+</template>
+
 <template name="style_elements">
   {{#each styleElements}}
   <div class="row fill-width margin-reset">

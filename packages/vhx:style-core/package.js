@@ -9,7 +9,8 @@ Package.onUse(function(api) {
 
   api.use([
     'iron:router@=1.0.6',
-    'fourseven:scss'
+    'fourseven:scss',
+    'vhx:style-colors'
   ]);
 
   api.use([

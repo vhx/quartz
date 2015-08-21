@@ -4,6 +4,14 @@ Template.registerHelper('isActiveRoute', function (route_name) {
   }
 });
 
+Template.style_colors.helpers({
+  styleColors: function() {
+    return [
+      { guide: 'guide__style_colors', code:'code__style_colors' }
+    ]
+  }
+});
+
 Template.style_elements.helpers({
   styleElements: function() {
     return [

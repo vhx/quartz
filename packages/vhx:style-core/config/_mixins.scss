@@ -1,4 +1,5 @@
 @import "variables";
+@import "../../vhx:style-colors/config/variables";
 
 $arrow-colors: #000000, #ffffff, $gray-1, $red-1, $teal-2;
 $arrow-classes: 'background-black', 'background-white', 'background-gray', 'is-alert', 'is-error', 'is-success';
