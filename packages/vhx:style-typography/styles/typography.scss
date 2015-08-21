@@ -17,56 +17,66 @@ strong {
 
 /* header sizes
 ......................................*/
-.head-1 {
-  font-size: 30px;
-  letter-spacing: 2px;
-  font-weight: 700;
-  color: $gray-6;
+.head {
+  color: $gray-7;
+  font-weight: 600;
   text-transform: uppercase;
   font-family: $font-brandon;
+  strong {
+    font-weight: 600;
+  }
+}
+
+.head-1 {
+  @extend .head;
+  font-size: 40px;
+  letter-spacing: 2px;
+  line-height: 40px;
 }
 
 .head-2 {
-  font-size: 22px;
-  letter-spacing: 1.5px;
-  font-weight: 700;
-  color: $gray-6;
-  text-transform: uppercase;
-  font-family: $font-brandon;
+  @extend .head;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: 3px;
 }
 
 .head-3 {
-  font-size: 16px;
-  font-weight: 600;
-  letter-spacing: 1.5px;
-  color: $gray-6;
-  text-transform: uppercase;
-  font-family: $font-brandon;
+  @extend .head;
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 1px;
 }
 
 .head-4 {
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 1.5px;
-  color: $gray-6;
-  text-transform: uppercase;
-  font-family: $font-brandon;
+  @extend .head;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 1px;
 }
+
+.head-5 {
+  @extend .head;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 1px;
+}
+
 
 /* header navy
 ......................................*/
 .head--navy {
-  color: $gray-6;
+  color: $gray-7;
 }
 a.head--navy {
   &:link,
   &:hover {
-    color: $gray-6;
+    color: $gray-7;
     text-decoration: none;
   }
   &:visited,
   &:active {
-    color: $gray-4;
+    color: $gray-5;
     text-decoration: none;
   }
 }
