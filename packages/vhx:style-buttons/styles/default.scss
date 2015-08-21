@@ -161,7 +161,7 @@ select {
   @extend .btn;
   @include button-colors(
     $facebook-color,  // background
-    #2f4a70,  // background hover
+    darken($facebook-color, 10%),  // background hover
     $white,  // color
     $white,  // color hover
     #3b5899,  // border color
@@ -176,7 +176,7 @@ select {
   @extend .btn;
   @include button-colors(
     $twitter-color,  // background
-    #1d95b4,  // background hover
+    darken($twitter-color, 10%),  // background hover
     $white,  // color
     $white,  // color hover
     #1ca3dc,  // border color
@@ -206,7 +206,7 @@ select {
   @extend .btn;
   @include button-colors(
     $tumblr-color,  // background
-    #27323f,  // background hover
+    darken($tumblr-color, 10%),  // background hover
     $white,  // color
     $white,  // color hover
     #37465d,  // border color
@@ -221,7 +221,7 @@ select {
   @extend .btn;
   @include button-colors(
     $paypal-color,  // background
-    #0a709c,  // background hover
+    darken($paypal-color, 10%),  // background hover
     $white,  // color
     $white,  // color hover
     #0c8dc4,  // border color
@@ -236,7 +236,7 @@ select {
   @extend .btn;
   @include button-colors(
     $roku-color,  // background
-    #1c0d32,  // background hover
+    darken($roku-color, 10%),  // background hover
     $white,  // color
     $white,  // color hover
     #2c164a,  // border color
