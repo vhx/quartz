@@ -55,7 +55,7 @@ select {
 .btn-gray {
   @extend .btn;
   @include button-colors(
-    #eff2f3,  // background
+    $gray-1,  // background
     $gray-2,  // background hover
     $gray-6,  // color
     $gray-6,  // color hover
@@ -70,13 +70,13 @@ select {
 .btn-slate {
   @extend .btn;
   @include button-colors(
-    #7a878e,  // background
-    #5d6c75,  // background hover
+    $gray-5,  // background
+    $gray-6,  // background hover
     $white,  // color
     $white,  // color hover
-    #5d6c75,  // border color
-    #5d6c75,   // border color hover
-    375667   // loader
+    $gray-6,  // border color
+    $gray-6,   // border color hover
+    $gray-7   // loader
   );
 }
 
@@ -115,11 +115,11 @@ select {
 .btn-purple {
   @extend .btn;
   @include button-colors(
-    #8e7190,  // background
+    $vhx-purple-1,  // background
     $vhx-purple-3,  // background hover
     $white,  // color
     $white,  // color hover
-    #8e7190,  // border color
+    $vhx-purple-1,  // border color
     $vhx-purple-3,   // border hover
     $white  // loader
   );
@@ -130,13 +130,13 @@ select {
 .btn-black {
   @extend .btn;
   @include button-colors(
-    rgba(0, 0, 0, .5),    // background
-    rgba(0, 0, 0, 1),     // background hover
-    rgba(255, 255, 255, .8),     // color
-    rgba(255, 255, 255, 1),     // color hover
-    rgba(255, 255, 255, .4),    // border color
-    rgba(255, 255, 255, 1),     // border color hover
-    rgba(255, 255, 255, 1)      // loader
+    transparentize($black, .5),    // background
+    transparentize($black, 0),     // background hover
+    transparentize($white, .2),    // color
+    transparentize($white, 0),     // color hover
+    transparentize($white, .6),    // border color
+    transparentize($white, 0),     // border color hover
+    transparentize($white, 0)      // loader
   );
 }
 
@@ -146,7 +146,7 @@ select {
   @extend .btn;
   @include button-colors(
     $white,  // background
-    #eff2f3,  // background hover
+    $gray-2,  // background hover
     $gray-6,  // color
     $gray-6,  // color hover
     $gray-2,  // border color
@@ -164,8 +164,8 @@ select {
     darken($facebook-color, 10%),  // background hover
     $white,  // color
     $white,  // color hover
-    #3b5899,  // border color
-    #2f4a70,   // border color hover
+    darken($facebook-color, 10%),  // border color
+    darken($facebook-color, 10%),   // border color hover
     $white  // loader
   );
 }
@@ -179,8 +179,8 @@ select {
     darken($twitter-color, 10%),  // background hover
     $white,  // color
     $white,  // color hover
-    #1ca3dc,  // border color
-    #1d95b4,   // border color hover
+    darken($twitter-color, 10%),  // border color
+    darken($twitter-color, 10%),   // border color hover
     $white  // loader
   );
 }
@@ -190,12 +190,12 @@ select {
 .btn-transparent {
   @extend .btn;
   @include button-colors(
-    rgba(255, 255, 255, .5),  // background
-    rgba(255, 255, 255, .7),  // background hover
+    transparentize($white, .5),  // background
+    transparentize($white, .3),  // background hover
     $white,  // color
     $white,  // color hover
-    rgba(255, 255, 255, 0),  // border color
-    rgba(255, 255, 255, 0),   // border color hover
+    transparentize($white, 1),  // border color
+    transparentize($white, 1),   // border color hover
     $white  // loader
   );
 }
@@ -209,8 +209,8 @@ select {
     darken($tumblr-color, 10%),  // background hover
     $white,  // color
     $white,  // color hover
-    #37465d,  // border color
-    #27323f,   // border color hover
+    darken($tumblr-color, 10%),  // border color
+    darken($tumblr-color, 10%),   // border color hover
     $white  // loader
   );
 }
@@ -224,8 +224,8 @@ select {
     darken($paypal-color, 10%),  // background hover
     $white,  // color
     $white,  // color hover
-    #0c8dc4,  // border color
-    #0a709c,   // border color hover
+    darken($paypal-color, 10%),  // border color
+    darken($paypal-color, 10%),   // border color hover
     $white  // loader
   );
 }
@@ -239,8 +239,8 @@ select {
     darken($roku-color, 10%),  // background hover
     $white,  // color
     $white,  // color hover
-    #2c164a,  // border color
-    #1c0d32,   // border color hover
+    darken($roku-color, 10%),  // border color
+    darken($roku-color, 10%),   // border color hover
     $white  // loader
   );
 }
@@ -344,7 +344,7 @@ select {
     right: 39px;
     width: 1px;
     height: 100%;
-    background: #fff;
+    background: $white;
   }
   &.icon--center {
     width: 40px;
@@ -368,7 +368,7 @@ select {
   &:hover {
     @extend %icon-chevron-down-mono;
     &.btn-dropdown--action:before {
-      background: #c2c7ca;
+      background: $gray-4;
     }
   }
 }
@@ -384,7 +384,7 @@ select {
   &:hover {
     @extend %icon-chevron-down-mono;
     &.btn-dropdown--action:before {
-      background: #c2c7ca;
+      background: $gray-4;
     }
   }
 }
@@ -395,12 +395,12 @@ select {
   @extend %icon-chevron-down-inverse;
 
   &.btn-dropdown--action:before {
-    background: $teal-3;
+    background: $teal-2;
   }
   &:hover {
     @extend %icon-chevron-down-inverse;
     &.btn-dropdown--action:before {
-      background: #117c7a;
+      background: $teal-3;
     }
   }
 }
