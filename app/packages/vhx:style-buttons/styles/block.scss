@@ -19,14 +19,14 @@
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
-  color: #8d9da6;
+  color: $gray-5;
   text-align: center;
   text-transform: uppercase;
   font-family: $font-brandon;
 
   &.btn--border {
-    border-left: 1px solid #d1d1d1;
-    border-right: 1px solid #d1d1d1;
+    border-left: 1px solid $gray-3;
+    border-right: 1px solid $gray-3;
     & + .btn-block {
       border-left: 1px solid transparent;
     }
@@ -36,7 +36,7 @@
   &:hover,
   &.is-hover {
     cursor: pointer;
-    box-shadow: inset 0px -4px 0px #8d9da6;
+    box-shadow: inset 0px -4px 0px $gray-5;
   }
   span {
     &:first-child {
@@ -51,9 +51,9 @@
 .btn-block-teal {
   @extend .btn-block;
   @include button-block-colors(
-    #8d9da6,  // text color
-    #375768,  // text color hover
-    #21b8af   // bottom border-color
+    $gray-5,  // text color
+    $gray-7,  // text color hover
+    $teal-2 // bottom border-color
   )
 }
 
@@ -62,9 +62,9 @@
 .btn-block-gray {
   @extend .btn-block;
   @include button-block-colors(
-    #8d9da6, // text color
+    $gray-5, // text color
     $gray-6, // text color hover
-    #8d9da6  // bottom border-color
+    $gray-5  // bottom border-color
   );
 }
 
