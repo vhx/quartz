@@ -100,12 +100,12 @@ select {
 .btn-red {
   @extend .btn;
   @include button-colors(
-    $red-1,  // background
-    darken($red-1, 10%),  // background hover
+    $red,  // background
+    darken($red, 10%),  // background hover
     $white,  // color
     $white,  // color hover
-    darken($red-1, 10%),  // border color
-    darken($red-1, 10%),   // border hover
+    darken($red, 10%),  // border color
+    darken($red, 10%),   // border hover
     $white  // loader
   );
 }
