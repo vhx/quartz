@@ -66,7 +66,7 @@ a {
 .text--navy {
   color: $gray-8;
   &.text--transparent {
-    // transparentize($gray-6, .5);
+    color: transparentize($gray-6, .5);
   }
 }
 a.text--navy {
@@ -80,12 +80,18 @@ a.text--navy {
     color: $gray-6;
     text-decoration: none;
   }
+  &.is-disabled {
+  &:link, &:visited,
+  &:hover, &:active {
+      color: $gray-8;
+    }
+  }
 }
 
 .text--gray {
   color: $gray-6;
   &.text--transparent {
-    // transparentize($gray-6, .5);
+    color: transparentize($gray-6, .5);
   }
 }
 a.text--gray {
@@ -99,12 +105,18 @@ a.text--gray {
     color: $gray-8;
     text-decoration: none;
   }
+  &.is-disabled {
+    &:link, &:visited,
+    &:hover, &:active {
+      color: $gray-8;
+    }
+  }
 }
 
 .text--light-gray {
   color: $gray-2;
   &.text--transparent {
-    // transparentize($gray-2, .5);
+    color: transparentize($gray-2, .5);
   }
 }
 a.text--light-gray {
@@ -118,12 +130,18 @@ a.text--light-gray {
     color: $gray-4;
     text-decoration: none;
   }
+  &.is-disabled {
+    &:link, &:visited,
+    &:hover, &:active {
+      color: $gray-4;
+    }
+  }
 }
 
 .text--teal {
   color: $teal-2;
   &.text--transparent {
-    // transparentize($teal-2, .5);
+    color: transparentize($teal-2, .5);
   }
 }
 a.text--teal {
@@ -137,12 +155,18 @@ a.text--teal {
     color: $teal-3;
     text-decoration: none;
   }
+  &.is-disabled {
+    &:link, &:visited,
+    &:hover, &:active {
+      color: $teal-3;
+    }
+  }
 }
 
 .text--white {
   color: $white;
   &.text--transparent {
-    // transparentize($white, .5);
+    color: transparentize($white, .5);
   }
 }
 a.text--white {
@@ -153,8 +177,14 @@ a.text--white {
   }
   &:hover,
   &:active {
-    // transparentize($white, .5);
+    color: transparentize($white, .5);
     text-decoration: none;
+  }
+  &.is-disabled {
+    &:link, &:visited,
+    &:hover, &:active {
+      color: $white;
+    }
   }
 }
 
@@ -170,5 +200,5 @@ a.text--white {
   font-style: italic;
 }
 .text--transparent {
-  // transparentize($gray-6, .5);
+  color: transparentize($gray-6, .5);
 }
