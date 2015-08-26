@@ -80,9 +80,9 @@
     /* has error
     ...................................*/
     &.is-error {
-      color: $red-1;
+      color: $red;
 
-      border: 1px solid $red-2;
+      border: 1px solid $red;
 
       &.is-selected {
         border: 2px solid #cf124c;
@@ -90,7 +90,7 @@
       }
 
       @include placeholder {
-        color: $red-1 !important;
+        color: $red !important;
       }
     }
 
@@ -111,9 +111,9 @@
       /* on focus + has error
       ...................................*/
       &.is-error {
-        color: $red-2;
+        color: $red;
 
-        border: 1px solid $red-2;
+        border: 1px solid $red;
 
         &.is-selected {
           border: 2px solid #cf124c;
@@ -122,7 +122,7 @@
 
         @include placeholder {
           transition: all .2s ease;
-          color: $red-1 !important;
+          color: $red !important;
         }
       }
     }

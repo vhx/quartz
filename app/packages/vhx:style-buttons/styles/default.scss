@@ -91,7 +91,7 @@ select {
     $white,  // color hover
     $teal-3,  // border color
     $teal-3,   // border color hover
-    $white  // loader
+    ffffff  // loader
   );
 }
 
@@ -106,7 +106,7 @@ select {
     $white,  // color hover
     darken($red, 10%),  // border color
     darken($red, 10%),   // border hover
-    $white  // loader
+    ffffff  // loader
   );
 }
 
@@ -121,7 +121,7 @@ select {
     $white,  // color hover
     $vhx-purple-1,  // border color
     $vhx-purple-3,   // border hover
-    $white  // loader
+    ffffff // loader
   );
 }
 

@@ -14,7 +14,6 @@ vhx:style-buttons
 vhx:style-backgrounds
 vhx:style-forms
 vhx:style-lists
-vhx:style-typography
 vhx:style-media
 vhx:style-tables
 vhx:style-loaders
@@ -26,3 +25,5 @@ vhx:style-borders
 vhx:style-checkbox
 vhx:style-radio
 vhx:style-icons
+vhx:style-headers
+vhx:style-text

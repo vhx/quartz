@@ -15,7 +15,8 @@ Template.style_colors.helpers({
 Template.style_elements.helpers({
   styleElements: function() {
     return [
-      { guide: 'guide__style_typography', code:'code__style_typography' },
+      { guide: 'guide__style_headers', code:'code__style_headers' },
+      { guide: 'guide__style_text', code:'code__style_text' },
       { guide: 'guide__style_buttons', code:'code__style_buttons' },
       { guide: 'guide__style_loaders', code:'code__style_loaders' },
       { guide: 'guide__style_checkbox', code:'code__style_checkbox' },

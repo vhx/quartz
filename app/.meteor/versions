@@ -63,6 +63,7 @@ vhx:style-colors@0.1.0
 vhx:style-core@0.1.0
 vhx:style-forms@0.1.0
 vhx:style-foundation@0.1.0
+vhx:style-headers@0.1.0
 vhx:style-icons@0.1.0
 vhx:style-lists@0.1.0
 vhx:style-loaders@0.1.0
@@ -70,6 +71,6 @@ vhx:style-media@0.1.0
 vhx:style-modals@0.1.0
 vhx:style-radio@0.1.0
 vhx:style-tables@0.1.0
-vhx:style-typography@0.1.0
+vhx:style-text@0.1.0
 webapp@1.2.0
 webapp-hashing@1.0.3
