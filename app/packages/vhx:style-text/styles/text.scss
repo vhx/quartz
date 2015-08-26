@@ -1,0 +1,174 @@
+@import "../config/include";
+
+/*.....................................
+  TEXT
+......................................*/
+
+/* reset
+......................................*/
+body, ul, ol, dl, li, p, div, section, nav, table, h1, h2, h3, h4, h5, h6 {
+  font-family: $font-helvetica;
+  color: $gray-6;
+  font-size: 14px;
+  line-height: 22px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+strong {
+  font-weight: normal;
+}
+
+/* links
+......................................*/
+a {
+  transition: color 200ms ease;
+
+  &:link,
+  &:visited {
+    color: $teal-2;
+    text-decoration: none;
+  }
+  &:hover,
+  &:active {
+    color: $teal-3;
+    text-decoration: none;
+  }
+  &.is-disabled {
+    &:link, &:visited,
+    &:hover, &:active {
+      cursor: default;
+      opacity: .5;
+      color: $teal-2;
+    }
+  }
+}
+
+/* sizes
+......................................*/
+.text-1 {
+  font-size: 16px;
+  line-height: 24px;
+  color: $gray-6;
+}
+.text-2 {
+  font-size: 14px;
+  line-height: 22px;
+  color: $gray-6;
+}
+.text-3 {
+  font-size: 13px;
+  line-height: 18px;
+  color: $gray-6;
+}
+
+/* colors
+......................................*/
+.text--navy {
+  color: $gray-8;
+  &.text--transparent {
+    // transparentize($gray-6, .5);
+  }
+}
+a.text--navy {
+  &:link,
+  &:visited {
+    color: $gray-8;
+    text-decoration: none;
+  }
+  &:hover,
+  &:active {
+    color: $gray-6;
+    text-decoration: none;
+  }
+}
+
+.text--gray {
+  color: $gray-6;
+  &.text--transparent {
+    // transparentize($gray-6, .5);
+  }
+}
+a.text--gray {
+  &:link,
+  &:visited {
+    color: $gray-6;
+    text-decoration: none;
+  }
+  &:hover,
+  &:active {
+    color: $gray-8;
+    text-decoration: none;
+  }
+}
+
+.text--light-gray {
+  color: $gray-2;
+  &.text--transparent {
+    // transparentize($gray-2, .5);
+  }
+}
+a.text--light-gray {
+  &:link,
+  &:visited {
+    color: $gray-2;
+    text-decoration: none;
+  }
+  &:hover,
+  &:active {
+    color: $gray-4;
+    text-decoration: none;
+  }
+}
+
+.text--teal {
+  color: $teal-2;
+  &.text--transparent {
+    // transparentize($teal-2, .5);
+  }
+}
+a.text--teal {
+  &:link,
+  &:visited {
+    color: $teal-2;
+    text-decoration: none;
+  }
+  &:hover,
+  &:active {
+    color: $teal-3;
+    text-decoration: none;
+  }
+}
+
+.text--white {
+  color: $white;
+  &.text--transparent {
+    // transparentize($white, .5);
+  }
+}
+a.text--white {
+  &:link,
+  &:visited {
+    color: $white;
+    text-decoration: none;
+  }
+  &:hover,
+  &:active {
+    // transparentize($white, .5);
+    text-decoration: none;
+  }
+}
+
+/* modifiers
+......................................*/
+.text--bold {
+  font-weight: 600;
+  strong {
+    font-weight: 600;
+  }
+}
+.text--italic {
+  font-style: italic;
+}
+.text--transparent {
+  // transparentize($gray-6, .5);
+}
