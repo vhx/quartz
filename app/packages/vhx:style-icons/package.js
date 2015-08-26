@@ -26,7 +26,8 @@ Package.onUse(function(api) {
     'styles/icons.svg.scss',
 
     'docs/code.html',
-    'docs/guide.html'
+    'docs/guide.html',
+    'docs/guide.helpers.js'
   ], 'client');
 
   api.export([]);

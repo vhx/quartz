@@ -18,5 +18,29 @@
       <i class="icon large icon-activity-alt"></i>
     </div>
 
+    <div class="small-block-grid-5 text-center">
+      {{#each icons}}
+      <li>
+        <i class="icon large icon-{{.}}"></i>
+        <p class="text-3">.icon-{{.}}</p>
+      </li>
+      <li>
+        <i class="icon large icon-{{.}}-alt"></i>
+        <p class="text-3">.icon-{{.}}-alt</p>
+      </li>
+      <li>
+        <i class="icon large icon-{{.}}-gray"></i>
+        <p class="text-3">.icon-{{.}}-gray</p>
+      </li>
+      <li>
+        <i class="icon bg-black large icon-{{.}}-inverse"></i>
+        <p class="text-3">.icon-{{.}}-inverse</p>
+      </li>
+      <li>
+        <i class="icon large icon-{{.}}-mono"></i>
+        <p class="text-3">.icon-{{.}}-mono</p>
+      </li>
+      {{/each}}
+    </div>
   </section>
 </template>
