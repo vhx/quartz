@@ -24,9 +24,20 @@ StyleCSS = RouteController.extend({
 });
 
 
-// css conventions
+// colors
 StyleColors = RouteController.extend({
   template: 'style_colors',
+  layoutTemplate: 'app_layout',
+  waitOn: function () {},
+  data: function() {},
+  action: function () {
+    this.render();
+  }
+});
+
+// typography
+StyleTypography = RouteController.extend({
+  template: 'style_typography',
   layoutTemplate: 'app_layout',
   waitOn: function () {},
   data: function() {},

@@ -7,7 +7,9 @@ Template.registerHelper('isActiveRoute', function (route_name) {
 Template.style_colors.helpers({
   styleColors: function() {
     return [
-      { guide: 'guide__style_colors', code:'code__style_colors' }
+      { guide: 'guide__style_colors', code:'code__style_colors' },
+      { guide: 'guide__style_brand_colors', code:'code__style_brand_colors' },
+      { guide: 'guide__style_external_colors', code:'code__style_external_colors' }
     ]
   }
 });
@@ -15,12 +17,19 @@ Template.style_colors.helpers({
 Template.style_elements.helpers({
   styleElements: function() {
     return [
-      { guide: 'guide__style_headers', code:'code__style_headers' },
-      { guide: 'guide__style_text', code:'code__style_text' },
       { guide: 'guide__style_buttons', code:'code__style_buttons' },
       { guide: 'guide__style_loaders', code:'code__style_loaders' },
       { guide: 'guide__style_checkbox', code:'code__style_checkbox' },
       { guide: 'guide__style_radio', code:'code__style_radio' }
+    ]
+  }
+});
+
+Template.style_typography.helpers({
+  styleTypography: function() {
+    return [
+      { guide: 'guide__style_headers', code:'code__style_headers' },
+      { guide: 'guide__style_text', code:'code__style_text' }
     ]
   }
 });

@@ -1,26 +1,29 @@
 <template name="menu">
   <nav class="nav-primary">
-    <h1 class="head-4 head--teal text-center"><i class="icon-vhx-mono icon large margin-right-small">VHX</i> Guides</h1>
+    <h1 class="head-4 head--teal text-left"><a class="is-block" href="/"><i class="icon-vhx-mono icon icon--xlarge margin-right-small">VHX</i> Quartz</a></h1>
 
     <h2 class="head-5 head--gray margin-top-large padding-bottom-medium">Styleguide</h2>
     <ul class="no-bullet">
-      <li><a href="{{pathFor 'style_markup'}}" class="{{isActiveRoute 'style_markup'}}">HTML Conventions</a></li>
-      <li><a href="{{pathFor 'style_css'}}" class="{{isActiveRoute 'style_css'}}">CSS Conventions</a></li>
-      <li><a href="{{pathFor 'style_colors'}}" class="{{isActiveRoute 'styles_colors'}}">Colors</a></li>
-      <li><a href="{{pathFor 'style_elements'}}" class="{{isActiveRoute 'style_elements'}}">Style Elements</a></li>
-      <li><a href="{{pathFor 'style_utilties'}}" class="{{isActiveRoute 'style_utilties'}}">Style Utilities</a></li>
-      <li><a href="{{pathFor 'style_examples'}}" class="{{isActiveRoute 'style_examples'}}">Examples</a></li>
-      <li><a href="{{pathFor 'style_reading'}}" class="{{isActiveRoute 'style_reading'}}">Reading</a></li>
+      {{!-- <li><a href="{{pathFor 'style_markup'}}" class="{{isActiveRoute 'style_markup'}}">HTML Conventions</a></li> --}}
+      {{!-- <li><a href="{{pathFor 'style_css'}}" class="{{isActiveRoute 'style_css'}}">CSS Conventions</a></li> --}}
+      <li><a href="{{pathFor 'style_colors'}}" class="{{isActiveRoute 'style_colors'}}">Colors</a></li>
+      <li><a href="{{pathFor 'style_typography'}}" class="{{isActiveRoute 'style_typography'}}">Typography</a></li>
+      <li><a href="{{pathFor 'style_elements'}}" class="{{isActiveRoute 'style_elements'}}">Elements</a></li>
+      <li><a href="{{pathFor 'style_utilties'}}" class="{{isActiveRoute 'style_utilties'}}">Utilities</a></li>
+      {{!-- <li><a href="{{pathFor 'style_examples'}}" class="{{isActiveRoute 'style_examples'}}">Examples</a></li> --}}
+      {{!-- <li><a href="{{pathFor 'style_reading'}}" class="{{isActiveRoute 'style_reading'}}">Reading</a></li> --}}
       <li><a href="{{pathFor 'style_icons'}}" class="{{isActiveRoute 'style_icons'}}">Icons</a></li>
     </ul>
 
-    <h2 class="head-5 head--gray margin-top-xlarge padding-bottom-medium">Javascript</h2>
-    <ul class="no-bullet">
-      <li><a href="{{pathFor 'js_conventions'}}" class="{{isActiveRoute 'js_conventions'}}">JS Conventions</a></li>
-      <li><a href="{{pathFor 'js_components'}}" class="{{isActiveRoute 'js_components'}}">Components</a></li>
-      <li><a href="{{pathFor 'js_unit_testing'}}" class="{{isActiveRoute 'js_unit_testing'}}">Unit Testing</a></li>
-      <li><a href="{{pathFor 'js_buy'}}" class="{{isActiveRoute 'js_buy'}}">Buy Page</a></li>
-      <li><a href="{{pathFor 'js_reading'}}" class="{{isActiveRoute 'js_reading'}}">Reading</a></li>
-    </ul>
+    <div class="is-hidden">
+      <h2 class="head-5 head--gray margin-top-xlarge padding-bottom-medium">Javascript</h2>
+      <ul class="no-bullet">
+        <li><a href="{{pathFor 'js_conventions'}}" class="{{isActiveRoute 'js_conventions'}}">JS Conventions</a></li>
+        <li><a href="{{pathFor 'js_components'}}" class="{{isActiveRoute 'js_components'}}">Components</a></li>
+        <li><a href="{{pathFor 'js_unit_testing'}}" class="{{isActiveRoute 'js_unit_testing'}}">Unit Testing</a></li>
+        <li><a href="{{pathFor 'js_buy'}}" class="{{isActiveRoute 'js_buy'}}">Buy Page</a></li>
+        <li><a href="{{pathFor 'js_reading'}}" class="{{isActiveRoute 'js_reading'}}">Reading</a></li>
+      </ul>
+    </div>
   </nav>
 </template>

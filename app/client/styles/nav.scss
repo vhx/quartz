@@ -9,12 +9,14 @@
   overflow-y: auto;
   width: 225px;
   height: 100%;
+  z-index: 1;
 
-  .head.primary {
-    color: $gray-4;
-  }
-  h1 {
+  .head--teal {
+    text-indent: 30px;
     vertical-align: bottom;
+    a {
+      vertical-align: bottom;
+    }
     i {
       position: relative;
       top: 13px;
@@ -22,13 +24,12 @@
   }
 
   .head-5,
-  a {
+  .no-bullet a {
     text-indent: 30px;
   }
-  a {
+  .no-bullet a {
     display: block;
     line-height: 40px;
-    border-top: 1px solid $gray-2;
 
     &:link,
     &:visited {
@@ -36,16 +37,11 @@
     }
 
     &:hover {
-      background: $gray-2;
+      background: $gray-3;
     }
     &.is-active {
       background: $teal-2;
       color: #fff;
-    }
-  }
-  li:last-child {
-    a {
-      border-bottom: 1px solid $gray-2;
     }
   }
 }
