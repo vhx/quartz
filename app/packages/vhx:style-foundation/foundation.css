@@ -3545,9 +3545,7 @@ fieldset legend {
 }
 
 .inline-list {
-  margin: 0 auto 1.0625rem auto;
-  margin-left: -1.375rem;
-  margin-right: 0;
+  margin: 0;
   padding: 0;
   list-style: none;
   overflow: hidden;
