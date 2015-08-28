@@ -55,13 +55,13 @@ select {
 .btn-gray {
   @extend .btn;
   @include button-colors(
-    $gray-1,  // background
-    $gray-2,  // background hover
-    $gray-6,  // color
-    $gray-6,  // color hover
-    $gray-2,  // border color
-    $gray-2,   // border hover,
-    375667   // loader
+    $gray-2,  // background
+    $gray-3,  // background hover
+    $gray-8,  // color
+    $gray-8,  // color hover
+    $gray-3,  // border color
+    $gray-3,   // border hover,
+    233741   // loader
   );
 }
 
@@ -115,13 +115,28 @@ select {
 .btn-purple {
   @extend .btn;
   @include button-colors(
-    $vhx-purple-1,  // background
-    $vhx-purple-3,  // background hover
+    $vhx-purple,  // background
+    darken($vhx-purple, 10%),  // background hover
     $white,  // color
     $white,  // color hover
-    $vhx-purple-1,  // border color
-    $vhx-purple-3,   // border hover
+    $vhx-purple,  // border color
+    darken($vhx-purple, 10%),   // border hover
     ffffff // loader
+  );
+}
+
+/* button green shorthand
+......................................*/
+.btn-green {
+  @extend .btn;
+  @include button-colors (
+    #9DBB36,  // background
+    #7da53e,  // background hover
+    #FFFFFF,  // color
+    #FFFFFF,  // color hover
+    #9DBB36,  // border color
+    #9DBB36,  // border color hover
+    #9DBB36   // loader
   );
 }
 
@@ -160,12 +175,12 @@ select {
 .btn-facebook {
   @extend .btn;
   @include button-colors(
-    $facebook-color,  // background
-    darken($facebook-color, 10%),  // background hover
+    $facebook-blue,  // background
+    darken($facebook-blue, 10%),  // background hover
     $white,  // color
     $white,  // color hover
-    darken($facebook-color, 10%),  // border color
-    darken($facebook-color, 10%),   // border color hover
+    darken($facebook-blue, 10%),  // border color
+    darken($facebook-blue, 10%),   // border color hover
     $white  // loader
   );
 }
@@ -175,12 +190,12 @@ select {
 .btn-twitter {
   @extend .btn;
   @include button-colors(
-    $twitter-color,  // background
-    darken($twitter-color, 10%),  // background hover
+    $twitter-blue,  // background
+    darken($twitter-blue, 10%),  // background hover
     $white,  // color
     $white,  // color hover
-    darken($twitter-color, 10%),  // border color
-    darken($twitter-color, 10%),   // border color hover
+    darken($twitter-blue, 10%),  // border color
+    darken($twitter-blue, 10%),   // border color hover
     $white  // loader
   );
 }
@@ -205,12 +220,12 @@ select {
 .btn-tumblr {
   @extend .btn;
   @include button-colors(
-    $tumblr-color,  // background
-    darken($tumblr-color, 10%),  // background hover
+    $tumblr-blue,  // background
+    darken($tumblr-blue, 10%),  // background hover
     $white,  // color
     $white,  // color hover
-    darken($tumblr-color, 10%),  // border color
-    darken($tumblr-color, 10%),   // border color hover
+    darken($tumblr-blue, 10%),  // border color
+    darken($tumblr-blue, 10%),   // border color hover
     $white  // loader
   );
 }
@@ -220,12 +235,12 @@ select {
 .btn-paypal {
   @extend .btn;
   @include button-colors(
-    $paypal-color,  // background
-    darken($paypal-color, 10%),  // background hover
+    $paypal-blue,  // background
+    darken($paypal-blue, 10%),  // background hover
     $white,  // color
     $white,  // color hover
-    darken($paypal-color, 10%),  // border color
-    darken($paypal-color, 10%),   // border color hover
+    darken($paypal-blue, 10%),  // border color
+    darken($paypal-blue, 10%),   // border color hover
     $white  // loader
   );
 }
@@ -235,12 +250,12 @@ select {
 .btn-roku {
   @extend .btn;
   @include button-colors(
-    $roku-color,  // background
-    darken($roku-color, 10%),  // background hover
+    $roku-purple,  // background
+    darken($roku-purple, 10%),  // background hover
     $white,  // color
     $white,  // color hover
-    darken($roku-color, 10%),  // border color
-    darken($roku-color, 10%),   // border color hover
+    darken($roku-purple, 10%),  // border color
+    darken($roku-purple, 10%),   // border color hover
     $white  // loader
   );
 }
@@ -319,6 +334,14 @@ select {
   }
 }
 
+.icon--left {
+  .icon--right {
+    background-position: right 2px center;
+    padding-right: 20px;
+    background-size: 15px 15px;
+  }
+}
+
 .btn-dropdown {
   @extend .btn;
   background-size: 10px 10px;
@@ -360,7 +383,8 @@ select {
 .btn-dropdown-gray {
   @extend .btn-dropdown;
   @extend .btn-gray;
-  @extend %icon-chevron-down-mono;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Cpath%20fill%3D%22%23375667%22%20d%3D%22M4.38%203.68l11.387%2011.383-4.242%204.243L.14%207.925z%22%3E%3C%2Fpath%3E%3Cpath%20fill%3D%22%23375667%22%20d%3D%22M22.853%207.933L11.47%2019.318l-4.244-4.243L18.61%203.69z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
 
   &.btn-dropdown--action:before {
     background: $gray-2;

@@ -25,7 +25,8 @@ Package.onUse(function(api) {
     'styles/block.scss',
     'styles/default.scss',
     'docs/code.html',
-    'docs/guide.html'
+    'docs/guide.html',
+    'docs/guide.button-icons.html'
   ], 'client');
 
   api.export([]);
