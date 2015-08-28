@@ -19,6 +19,12 @@ Router.route('/styleguide/colors', {
   controller: 'StyleColors'
 });
 
+// typography
+Router.route('/styleguide/typography', {
+  name: 'style_typography',
+  controller: 'StyleTypography'
+});
+
 // elements
 Router.route('/styleguide/elements', {
   name: 'style_elements',
