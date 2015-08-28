@@ -1,185 +1,95 @@
 <template name="guide__style_colors">
   <section id="guide--style-colors">
-    <h3 class="head-4 head--navy border-bottom padding-bottom-medium margin-bottom-large"><strong>Colors</strong></h3>
-    <p>Visual reference for Sass variables, with variable names in the middle.</p>
+    <h3 class="head-3 head--navy">UI Colors</h3>
 
-    <!-- Subtitle -->
-    <div class="margin-vertical-large padding-bottom-medium border-bottom border-light">
-      <h4 class="margin-bottom-medium text-navy"><strong>Base Colors</strong></h4>
-      <p>Black and white, for consistency.</p>
-      <span class="square square--large margin-right-medium margin-bottom-medium white">
-        <span class="square-tag text-gray text--small"><strong>$white</strong></span>
-      </span>
-      <div class="bg-grid-dark is-inline margin-right-medium margin-bottom-medium">
-        <span class="square square--large white-transparent">
-          <span class="square-tag text-gray text--small"><strong>$white-transparent</strong></span>
-        </span>
-      </div>
-      <span class="square square--large margin-right-medium margin-bottom-medium black">
-        <span class="square-tag text-gray text--small"><strong>$black</strong></span>
-      </span>
-      <div class="bg-grid-dark is-inline margin-right-medium margin-bottom-medium">
-        <span class="square square--large black-transparent">
-          <span class="square-tag text-gray text--small"><strong>$black-transparent</strong></span>
-        </span>
-      </div>
+    <!-- Intro -->
+    <div class="margin-vertical-large">
+      <p class="margin-bottom-medium text-2">These colors are used within the admin for all UI elements. You can reference them in your CSS as SASS variables (shown below and to the right). They are the building blocks for the VHX product and <em class="text--italic">your key to the secret of the multiverse.</em></p>
     </div>
 
-    <div class="margin-vertical-large padding-bottom-medium border-bottom border--gray-1">
-      <h4 class="margin-bottom-medium text-navy"><strong>Brand Colors</strong></h4>
-      <p>These colors are used within the VHX marketing pages and in general are used very sparingly. If you ever need a bright color from the rainbow, YOU ARE HERE.</p>
-      <span class="square square--large margin-right-medium margin-bottom-medium gray-1">
-        <span class="square-tag text-gray text--small"><strong>$gray-1</strong></span>
-      </span>
-      <span class="square square--large margin-right-medium margin-bottom-medium gray-2">
-        <span class="square-tag text-gray text--small"><strong>$gray-2</strong></span>
-      </span>
-      <span class="square square--large margin-right-medium margin-bottom-medium gray-3">
-        <span class="square-tag text-gray text--small"><strong>$gray-3</strong></span>
-      </span>
-      <span class="square square--large margin-right-medium margin-bottom-medium gray-4">
-        <span class="square-tag text-gray text--small"><strong>$gray-4</strong></span>
-      </span>
-      <span class="square square--large margin-right-medium margin-bottom-medium gray-5">
-        <span class="square-tag text-gray text--small"><strong>$gray-5</strong></span>
-      </span>
-      <span class="square square--large margin-right-medium margin-bottom-medium gray-6">
-        <span class="square-tag text-gray text--small"><strong>$gray-6</strong></span>
-      </span>
-      <span class="square square--large margin-right-medium margin-bottom-medium gray-7">
-        <span class="square-tag text-gray text--small"><strong>$gray-7</strong></span>
-      </span>
-      <span class="square square--large margin-right-medium margin-bottom-medium gray-8">
-        <span class="square-tag text-gray text--small"><strong>$gray-8</strong></span>
-      </span>
+    <!-- Black and White -->
+    <div class="margin-vertical-large">
+      <h4 class="margin-bottom-medium padding-bottom-small border-bottom border--gray-light text--bold text--gray">Black and White</h4>
 
-      <span class="square square--large margin-right-medium margin-bottom-medium teal-1">
-        <span class="square-tag text-gray text--small"><strong>$teal-1</strong></span>
-      </span>
-      <span class="square square--large margin-right-medium margin-bottom-medium teal-2">
-        <span class="square-tag text-gray text--small"><strong>$teal-2</strong></span>
-      </span>
-      <span class="square square--large margin-right-medium margin-bottom-medium teal-3">
-        <span class="square-tag text-gray text--small"><strong>$teal-3</strong></span>
-      </span>
+      {{#each core_bw_colors}}
+        <div class="is-inline margin-right-medium margin-bottom-medium {{css}}">
+          <span class="square square--large {{name}} {{sub_css}}">
+            <span class="square-tag tag text-3">${{name}}</span>
+          </span>
+        </div>
+      {{/each}}
+    </div>
 
-      <span class="square square--large margin-right-medium margin-bottom-medium red">
-        <span class="square-tag text-gray text--small"><strong>$red</strong></span>
-      </span>
+    <!-- Grays -->
+    <div class="margin-vertical-large">
+      <h4 class="margin-bottom-medium padding-bottom-small border-bottom border--gray-light text--bold text--gray">Grays</h4>
 
-      <span class="square square--large margin-right-medium margin-bottom-medium navy">
-        <span class="square-tag text-gray text--small"><strong>$navy</strong></span>
-      </span>
+      {{#each core_gray_colors}}
+        <div class="is-inline margin-right-medium margin-bottom-medium {{css}}">
+          <span class="square square--large {{name}} {{sub_css}}">
+            <span class="square-tag tag text-3">${{name}}</span>
+          </span>
+        </div>
+      {{/each}}
+    </div>
 
-      <div class="bg-grid-dark is-inline margin-right-medium margin-bottom-medium">
-        <span class="square square--large navy-transparent">
-          <span class="square-tag text-gray text--small"><strong>$navy-transparent</strong></span>
-        </span>
+    <!-- Others -->
+    <div class="margin-vertical-large">
+      <h4 class="margin-bottom-medium padding-bottom-small border-bottom border--gray-light text--bold text--gray">Other</h4>
+
+      {{#each core_other_colors}}
+        <div class="is-inline margin-right-medium margin-bottom-medium {{css}}">
+          <span class="square square--large {{name}} {{sub_css}}">
+            <span class="square-tag tag text-3">${{name}}</span>
+          </span>
+        </div>
+      {{/each}}
+    </div>
+  </section>
+</template>
+
+<template name="guide__style_brand_colors">
+  <section id="guide--style-brand-colors">
+    <h3 class="head-3 head--navy">Brand Colors</h3>
+
+    <!-- Intro -->
+    <div class="margin-vertical-large">
+      <div class="text-contain text-2">
+        <p>These colors are used within the VHX marketing pages and in general are used very sparingly. If you ever need a bright color from the rainbow, YOU ARE HERE.</p>
+        <p>When you need a lighter or darker version of a brand color (say for a new button) use the SASS darken, lighten, and transparentize methods (show to the right).</p>
       </div>
     </div>
 
-    <div class="margin-vertical-large padding-bottom-medium border-bottom border--gray-1">
-      <h4 class="margin-bottom-medium text-navy"><strong>Admin Colors</strong></h4>
-      <p>These colors are used within the admin for all UI elements. They are the building blocks for the VHX product and your key to the secret of the multiverse.</p>
-      <span class="square square--large margin-right-medium margin-bottom-medium vhx-orange-1">
-        <span class="square-tag text-gray text--small"><strong>$vhx-orange-1</strong></span>
-      </span>
-      <span class="square square--large margin-right-medium margin-bottom-medium vhx-orange-2">
-        <span class="square-tag text-gray text--small"><strong>$vhx-orange-2</strong></span>
-      </span>
-      <span class="square square--large margin-right-medium margin-bottom-medium vhx-orange-3">
-        <span class="square-tag text-gray text--small"><strong>$vhx-orange-3</strong></span>
-      </span>
+    <!-- VHX Brand Palette -->
+    <div class="margin-vertical-large">
+      <h4 class="margin-bottom-medium padding-bottom-small border-bottom border--gray-light text--bold text--gray">VHX Brand Palette (Marketing Purposes)</h4>
 
-      <span class="square square--large margin-right-medium margin-bottom-medium vhx-debian-1">
-        <span class="square-tag text-gray text--small"><strong>$vhx-debian-1</strong></span>
-      </span>
-      <span class="square square--large margin-right-medium margin-bottom-medium vhx-debian-2">
-        <span class="square-tag text-gray text--small"><strong>$vhx-debian-2</strong></span>
-      </span>
-      <span class="square square--large margin-right-medium margin-bottom-medium vhx-debian-3">
-        <span class="square-tag text-gray text--small"><strong>$vhx-debian-3</strong></span>
-      </span>
-
-      <span class="square square--large margin-right-medium margin-bottom-medium vhx-purple-1">
-        <span class="square-tag text-gray text--small"><strong>$vhx-purple-1</strong></span>
-      </span>
-      <span class="square square--large margin-right-medium margin-bottom-medium vhx-purple-2">
-        <span class="square-tag text-gray text--small"><strong>$vhx-purple-2</strong></span>
-      </span>
-      <span class="square square--large margin-right-medium margin-bottom-medium vhx-purple-3">
-        <span class="square-tag text-gray text--small"><strong>$vhx-purple-3</strong></span>
-      </span>
-
-      <span class="square square--large margin-right-medium margin-bottom-medium vhx-currant-1">
-        <span class="square-tag text-gray text--small"><strong>$vhx-currant-1</strong></span>
-      </span>
-      <span class="square square--large margin-right-medium margin-bottom-medium vhx-currant-2">
-        <span class="square-tag text-gray text--small"><strong>$vhx-currant-2</strong></span>
-      </span>
-      <span class="square square--large margin-right-medium margin-bottom-medium vhx-currant-3">
-        <span class="square-tag text-gray text--small"><strong>$vhx-currant-3</strong></span>
-      </span>
-
-      <span class="square square--large margin-right-medium margin-bottom-medium vhx-blue-1">
-        <span class="square-tag text-gray text--small"><strong>$vhx-blue-1</strong></span>
-      </span>
-      <span class="square square--large margin-right-medium margin-bottom-medium vhx-blue-2">
-        <span class="square-tag text-gray text--small"><strong>$vhx-blue-2</strong></span>
-      </span>
-      <span class="square square--large margin-right-medium margin-bottom-medium vhx-blue-3">
-        <span class="square-tag text-gray text--small"><strong>$vhx-blue-3</strong></span>
-      </span>
-
-      <span class="square square--large margin-right-medium margin-bottom-medium vhx-teal-1">
-        <span class="square-tag text-gray text--small"><strong>$vhx-teal-1</strong></span>
-      </span>
-      <span class="square square--large margin-right-medium margin-bottom-medium vhx-teal-2">
-        <span class="square-tag text-gray text--small"><strong>$vhx-teal-2</strong></span>
-      </span>
-      <span class="square square--large margin-right-medium margin-bottom-medium vhx-teal-3">
-        <span class="square-tag text-gray text--small"><strong>$vhx-teal-3</strong></span>
-      </span>
-
-      <span class="square square--large margin-right-medium margin-bottom-medium vhx-green-1">
-        <span class="square-tag text-gray text--small"><strong>$vhx-green-1</strong></span>
-      </span>
-      <span class="square square--large margin-right-medium margin-bottom-medium vhx-green-2">
-        <span class="square-tag text-gray text--small"><strong>$vhx-green-2</strong></span>
-      </span>
-      <span class="square square--large margin-right-medium margin-bottom-medium vhx-green-3">
-        <span class="square-tag text-gray text--small"><strong>$vhx-green-3</strong></span>
-      </span>
-
-      <span class="square square--large margin-right-medium margin-bottom-medium vhx-yellow-1">
-        <span class="square-tag text-gray text--small"><strong>$vhx-yellow-1</strong></span>
-      </span>
-      <span class="square square--large margin-right-medium margin-bottom-medium vhx-yellow-2">
-        <span class="square-tag text-gray text--small"><strong>$vhx-yellow-2</strong></span>
-      </span>
-      <span class="square square--large margin-right-medium margin-bottom-medium vhx-yellow-3">
-        <span class="square-tag text-gray text--small"><strong>$vhx-yellow-3</strong></span>
-      </span>
+      {{#each brand_colors}}
+        <div class="is-inline margin-right-medium margin-bottom-medium {{css}}">
+          <span class="square square--large vhx-{{name}}">
+            <span class="square-tag tag text-3">$vhx-{{name}}</span>
+          </span>
+        </div>
+      {{/each}}
     </div>
+  </section>
+</template>
 
-    <div class="margin-vertical-large padding-bottom-medium border-bottom border--gray-1">
-      <h4 class="margin-bottom-medium text-navy"><strong>External Colors</strong></h4>
-      <span class="square square--large margin-right-medium margin-bottom-medium facebook-color">
-        <span class="square-tag text-gray text--small"><strong>$facebook-color</strong></span>
-      </span>
-      <span class="square square--large margin-right-medium margin-bottom-medium twitter-color">
-        <span class="square-tag text-gray text--small"><strong>$twitter-color</strong></span>
-      </span>
-      <span class="square square--large margin-right-medium margin-bottom-medium tumblr-color">
-        <span class="square-tag text-gray text--small"><strong>$tumblr-color</strong></span>
-      </span>
-      <span class="square square--large margin-right-medium margin-bottom-medium paypal-color">
-        <span class="square-tag text-gray text--small"><strong>$paypal-color</strong></span>
-      </span>
-      <span class="square square--large margin-right-medium margin-bottom-medium roku-color">
-        <span class="square-tag text-gray text--small"><strong>$roku-color</strong></span>
-      </span>
+<template name="guide__style_external_colors">
+  <section id="guide--style-external-colors">
+  <h3 class="head-3 head--navy">External Brand Colors</h3>
+
+    <!-- External Brands -->
+    <div class="margin-vertical-large">
+      <h4 class="margin-bottom-medium padding-bottom-small border-bottom border--gray-light text--bold text--gray">External Brand Colors</h4>
+
+      {{#each external_colors}}
+        <div class="is-inline margin-right-medium margin-bottom-medium {{css}}">
+          <span class="square square--large {{name}}">
+            <span class="square-tag tag text-3">${{name}}</span>
+          </span>
+        </div>
+      {{/each}}
     </div>
-
   </section>
 </template>

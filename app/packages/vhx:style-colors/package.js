@@ -24,7 +24,8 @@ Package.onUse(function(api) {
     'styles/colors.scss',
 
     'docs/code.html',
-    'docs/guide.html'
+    'docs/guide.html',
+    'docs/guide.helper.js'
   ], 'client');
 
   api.export([]);

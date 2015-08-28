@@ -2,10 +2,85 @@
   <section id="code--style-colors" class="padding-medium">
   {{#markdown}}
 
-    --NAME--
+    --CORE COLORS--
 
-    <!-- Subtitle -->
-    <div class="code"></div>
+    <!-- SASS Variables -->
+    $[name]-[modifier]
+
+    <!-- Black and White -->
+    $white
+    $white-transparent
+    $black
+    $black-transparent
+
+    <!-- Grays (light to dark) -->
+    $gray-1
+    $gray-2
+    $gray-3
+    $gray-4
+    $gray-5
+    $gray-6
+    $gray-7
+    $gray-8
+
+    <!-- Other Colors -->
+    $teal-1
+    $teal-2
+    $teal-3
+    $red
+    $navy
+    $navy-transparent
+
+  {{/markdown}}
+  </section>
+</template>
+
+<template name="code__style_brand_colors">
+  <section id="code--style-brand-colors" class="padding-medium">
+  {{#markdown}}
+
+    --BRAND COLORS--
+
+    <!-- SASS Variables -->
+    $vhx-[name]
+
+    $vhx-orange
+    $vhx-debian
+    $vhx-purple
+    $vhx-currant
+    $vhx-blue
+    $vhx-teal
+    $vhx-green
+    $vhx-yellow
+
+    <!-- SASS Methods-->
+    darken($vhx-orange, 10%)
+    lighten($vhx-orange, 10%)
+    transparentize($vhx-orange, .5)
+
+  {{/markdown}}
+  </section>
+</template>
+
+<template name="code__style_external_colors">
+  <section id="code--style-external-colors" class="padding-medium">
+  {{#markdown}}
+
+    --EXTERNAL BRAND COLORS--
+
+    <!-- SASS Variables -->
+    $[brand]-[color]
+
+    $facebook-blue
+    $twitter-blue
+    $tumblr-blue
+    $paypal-blue
+    $roku-purple
+
+    <!-- SASS Methods-->
+    darken($facebook-blue, 10%)
+    lighten($facebook-blue, 10%)
+    transparentize($facebook-blue, .5)
 
   {{/markdown}}
   </section>
