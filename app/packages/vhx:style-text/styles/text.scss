@@ -166,7 +166,7 @@ a.text--teal {
 .text--white {
   color: $white;
   &.text--transparent {
-    color: transparentize($white, .5);
+    color: transparentize($white, .3);
   }
 }
 a.text--white {
@@ -177,7 +177,7 @@ a.text--white {
   }
   &:hover,
   &:active {
-    color: transparentize($white, .5);
+    color: transparentize($white, .3);
     text-decoration: none;
   }
   &.is-disabled {
@@ -201,4 +201,22 @@ a.text--white {
 }
 .text--transparent {
   color: transparentize($gray-6, .5);
+}
+
+.text-contain {
+  &.text-1 {
+    p {
+      margin-bottom: 24px;
+    }
+  }
+  &.text-2 {
+    p {
+      margin-bottom: 22px;
+    }
+  }
+  &.text-3 {
+    p {
+      margin-bottom: 18px;
+    }
+  }
 }
