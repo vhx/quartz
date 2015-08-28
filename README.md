@@ -1,5 +1,5 @@
 # Quartz
-![quartz](https://github.com/vhx/quartz/blob/master/app/public/bg.stage-banner.jpg)
+![quartz](https://github.com/vhx/quartz/blob/master/app/public/quartz.screenshot.jpg)
 
 Style guide &amp; elements + asset build pipeline for VHX.<br>
 http://vhx.tv
