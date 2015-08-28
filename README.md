@@ -1,6 +1,7 @@
 # Quartz
+![quartz](https://github.com/vhx/quartz/blob/master/app/public/bg.stage-banner.jpg)
 
-Style guide &amp; elements + asset build pipeline for VHX.
+Style guide &amp; elements + asset build pipeline for VHX.<br>
 http://vhx.tv
 
 
