@@ -6,7 +6,7 @@ Style guide &amp; elements + asset build pipeline for [VHX](http://vhx.tv).<br>
 ## Getting Started
 
 1. Create quartz.dev pow config: `echo 3001 > ~/.pow/quartz`
-2. In quartz repo direction, goto the app folder `cd app/`
+2. In Quartz repo directory, go to the app folder `cd app/`
 3. Install Meteor: `curl https://install.meteor.com/ | sh`
 4. Install Meteor dependencies and run: `meteor run --port 3001`
-5. Goto: http://quartz.dev
+5. Go to: http://quartz.dev
