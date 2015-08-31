@@ -4,8 +4,6 @@
 // markup conventions
 StyleMarkup = RouteController.extend({
   template: 'style_markup',
-  layoutTemplate: 'app_layout',
-  waitOn: function () {},
   data: function() {},
   action: function () {
     this.render();
@@ -15,8 +13,6 @@ StyleMarkup = RouteController.extend({
 // css conventions
 StyleCSS = RouteController.extend({
   template: 'style_css',
-  layoutTemplate: 'app_layout',
-  waitOn: function () {},
   data: function() {},
   action: function () {
     this.render();
@@ -27,8 +23,6 @@ StyleCSS = RouteController.extend({
 // colors
 StyleColors = RouteController.extend({
   template: 'style_colors',
-  layoutTemplate: 'app_layout',
-  waitOn: function () {},
   data: function() {},
   action: function () {
     this.render();
@@ -38,8 +32,6 @@ StyleColors = RouteController.extend({
 // typography
 StyleTypography = RouteController.extend({
   template: 'style_typography',
-  layoutTemplate: 'app_layout',
-  waitOn: function () {},
   data: function() {},
   action: function () {
     this.render();
@@ -49,8 +41,6 @@ StyleTypography = RouteController.extend({
 // style elements
 StyleElements = RouteController.extend({
   template: 'style_elements',
-  layoutTemplate: 'app_layout',
-  waitOn: function () {},
   data: function() {},
   action: function () {
     this.render();
@@ -60,8 +50,6 @@ StyleElements = RouteController.extend({
 // style utilties
 StyleUtilities = RouteController.extend({
   template: 'style_utilities',
-  layoutTemplate: 'app_layout',
-  waitOn: function () {},
   data: function() {},
   action: function () {
     this.render();
@@ -71,8 +59,6 @@ StyleUtilities = RouteController.extend({
 // style modules
 StyleExamples = RouteController.extend({
   template: 'style_examples',
-  layoutTemplate: 'app_layout',
-  waitOn: function () {},
   data: function() {},
   action: function () {
     this.render();
@@ -82,8 +68,6 @@ StyleExamples = RouteController.extend({
 // style reading
 StyleReading = RouteController.extend({
   template: 'style_reading',
-  layoutTemplate: 'app_layout',
-  waitOn: function () {},
   data: function() {},
   action: function () {
     this.render();
@@ -93,8 +77,6 @@ StyleReading = RouteController.extend({
 // style icons
 StyleIcons = RouteController.extend({
   template: 'style_icons',
-  layoutTemplate: 'app_layout',
-  waitOn: function () {},
   data: function() {},
   action: function () {
     this.render();

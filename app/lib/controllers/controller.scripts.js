@@ -4,8 +4,6 @@
 // js conventions
 JSConventions = RouteController.extend({
   template: 'js_conventions',
-  layoutTemplate: 'app_layout',
-  waitOn: function () {},
   data: function() {},
   action: function () {
     this.render();
@@ -15,8 +13,6 @@ JSConventions = RouteController.extend({
 // js components
 JSComponents = RouteController.extend({
   template: 'js_components',
-  layoutTemplate: 'app_layout',
-  waitOn: function () {},
   data: function() {},
   action: function () {
     this.render();
@@ -26,8 +22,6 @@ JSComponents = RouteController.extend({
 // js components show
 JSComponentsShow = RouteController.extend({
   template: 'js_components_show',
-  layoutTemplate: 'app_layout',
-  waitOn: function () {},
   data: function() {},
   action: function () {
     this.render();
@@ -37,8 +31,6 @@ JSComponentsShow = RouteController.extend({
 // js unit testing
 JSUnitTesting = RouteController.extend({
   template: 'js_unit_testing',
-  layoutTemplate: 'app_layout',
-  waitOn: function () {},
   data: function() {},
   action: function () {
     this.render();
@@ -48,8 +40,6 @@ JSUnitTesting = RouteController.extend({
 // js buy
 JSBuy = RouteController.extend({
   template: 'js_buy',
-  layoutTemplate: 'app_layout',
-  waitOn: function () {},
   data: function() {},
   action: function () {
     this.render();
@@ -59,8 +49,6 @@ JSBuy = RouteController.extend({
 // js reading
 JSReading = RouteController.extend({
   template: 'js_reading',
-  layoutTemplate: 'app_layout',
-  waitOn: function () {},
   data: function() {},
   action: function () {
     this.render();
