@@ -1,15 +1,25 @@
 module.exports = function(grunt) {
 
   grunt.initConfig({
+    sass_globbing: {
+      target : {
+        files : {
+          'app/packages/vhx.scss': ['app/packages/**/styles/*.scss', '!app/packages/**/styles/guide.scss']
+        }
+      }
+    },
     sass: {
       dist: {
-        files: [{
-          expand: true,
-          cwd: 'app/packages',
-          src: '*/*.scss',
-          dest: 'build',
-          ext: '.css'
-        }]
+        files : {
+          'app/private/distro/vhx.css' : 'app/packages/vhx.scss'
+        }
+      }
+    },
+    cssmin: {
+      target : {
+        files : {
+          'app/private/distro/vhx.min.css' : 'app/private/distro/vhx.css'
+        }
       }
     },
     clean: ['app/private/svg-icons-renamed/', 'app/private/svg-icons-minified/'],
@@ -87,11 +97,13 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-file-regex-rename');
   grunt.loadNpmTasks('grunt-svgmin');
   grunt.loadNpmTasks('grunt-grunticon');
+  grunt.loadNpmTasks('grunt-sass-globbing');
   grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-folder-list');
 
   grunt.registerTask('build-icons', ['clean', 'fileregexrename:multiColorIcons', 'svgmin', 'grunticon:multiColor']);
-  grunt.registerTask('build', ['sass']);
+  grunt.registerTask('build', ['sass_globbing', 'sass', 'cssmin']);
   grunt.registerTask('files', ['folder_list']);
 }

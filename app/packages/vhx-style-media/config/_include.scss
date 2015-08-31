@@ -1,0 +1,39 @@
+@import "../../vhx-style-core/config/mixins";
+
+$avatar-blue: #144f79;
+$avatar-purple: #8a3b7f;
+$avatar-pink: #d1184d;
+$avatar-orange: #da7868;
+$avatar-green: #9eba41;
+$avatar-forest: #226657;
+$avatar-light-blue: #30909d;
+$avatar-grey: #999999;
+
+@mixin user-avatar($size, $border) {
+  width: $size;
+  height: $size - $border;
+  border-bottom: $border solid $gray-6;
+  position: relative;
+  background: lighten($gray-6, 30);
+
+  .avatar-img {
+    background-size: cover;
+    background-position: center center;
+    width: $size;
+    height: $size - $border;
+    position: absolute;
+    top: 0;
+    z-index:2;
+  }
+
+  .user-short-name {
+    width: $size;
+    font-family: 'vinyl';
+    color: $gray-6;
+    font-size: 38px;
+    line-height: $size;
+    text-align:center;
+    position: absolute;
+    top: 0;
+  }
+}
