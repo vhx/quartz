@@ -10,8 +10,8 @@ app/packages/vhx:style-icons/docs/icon-list.json
 
 # ignore most Grunticon generated stuff, which we can't disable
 # TODO: more granular workflow
-app/packages/vhx:style-icons/styles/grunticon.loader.js
-app/packages/vhx:style-icons/styles/icons.fallback.scss
-app/packages/vhx:style-icons/styles/png-icons-source/
-app/packages/vhx:style-icons/styles/icons.png.scss
-app/packages/vhx:style-icons/styles/preview.html
+app/packages/vhx-style-icons/styles/grunticon.loader.js
+app/packages/vhx-style-icons/styles/icons.fallback.scss
+app/packages/vhx-style-icons/styles/png-icons-source/
+app/packages/vhx-style-icons/styles/icons.png.scss
+app/packages/vhx-style-icons/styles/preview.html
