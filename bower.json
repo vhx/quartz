@@ -1,0 +1,38 @@
+{
+  "name": "Quartz",
+  "version": "0.1",
+  "homepage": "https://github.com/vhx/quartz",
+  "authors": [
+    "Courtney Burton <courtney@vhx.tv>",
+    "Scott Robertson <scott@vhx.tv>",
+    "Chad Pugh <chad@vhx.tv>",
+    "Steven Bone <sbone@vhx.tv>",
+    "Casey Pugh <casey@vhx.tv>",
+    "David Gonzalez <david@vhx.tv>"
+  ],
+  "description": "Quartz - The VHX Styleguide",
+  "main": "app/private/distro",
+  "keywords": [
+    "vhx",
+    "quartz",
+    "styleguide",
+    "css",
+    "sass"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "app/.meteor",
+    "app/client",
+    "app/lib",
+    "app/packages",
+    "app/private/svg-icons-minified",
+    "app/private/svg-icons-renamed",
+    "app/private/svg-icons-source",
+    "app/public",
+    "node_modules",
+    ".gitignore",
+    "Gruntfile.js",
+    "package.json",
+    "README.md"
+  ]
+}
