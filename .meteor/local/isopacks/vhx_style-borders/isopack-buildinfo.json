@@ -1,0 +1,68 @@
+{
+  "builtBy": "meteor/16",
+  "unibuildDependencies": {
+    "os.json": {
+      "files": {
+        "/Users/scottusrobus/dev/vhx-quartz/packages/vhx:style-borders/package.js": "a19ac78800f831273fb519a416d13c6c7c4d16a9",
+        "/Users/scottusrobus/dev/vhx-quartz/packages/vhx:style-core/package.js": "0530a339f745c4dcec0faf277d655e125a94262e"
+      },
+      "directories": []
+    },
+    "web.browser.json": {
+      "files": {
+        "/Users/scottusrobus/dev/vhx-quartz/packages/vhx:style-borders/package.js": "a19ac78800f831273fb519a416d13c6c7c4d16a9",
+        "/Users/scottusrobus/dev/vhx-quartz/packages/vhx:style-core/package.js": "0530a339f745c4dcec0faf277d655e125a94262e",
+        "/Users/scottusrobus/dev/vhx-quartz/packages/vhx:style-borders/config/_include.scss": "93d17f35c5a37c46a37baf82f20a7ab8602d62a6",
+        "/Users/scottusrobus/dev/vhx-quartz/packages/vhx:style-borders/styles/borders.scss": "d8c3d8690887c1aac778d3415ca2563a87c36d78",
+        "/Users/scottusrobus/dev/vhx-quartz/packages/vhx:style-borders/docs/code.html": "90f32dfeef32e6c3db545ad897a21d8ab1e3b246",
+        "/Users/scottusrobus/dev/vhx-quartz/packages/vhx:style-borders/docs/guide.html": "a0e24eb523ecda4564452ad5b6bc71755ec94f7d"
+      },
+      "directories": []
+    }
+  },
+  "pluginDependencies": {
+    "files": {
+      "/Users/scottusrobus/dev/vhx-quartz/packages/vhx:style-borders/package.js": "a19ac78800f831273fb519a416d13c6c7c4d16a9"
+    },
+    "directories": []
+  },
+  "pluginProviderPackageMap": {
+    "vhx:style-borders": {
+      "kind": "local",
+      "sourceRoot": "/Users/scottusrobus/dev/vhx-quartz/packages/vhx:style-borders"
+    },
+    "meteor": {
+      "kind": "versioned",
+      "version": "1.1.6"
+    },
+    "iron:router": {
+      "kind": "versioned",
+      "version": "1.0.6"
+    },
+    "fourseven:scss": {
+      "kind": "versioned",
+      "version": "1.0.0"
+    },
+    "vhx:style-core": {
+      "kind": "local",
+      "sourceRoot": "/Users/scottusrobus/dev/vhx-quartz/packages/vhx:style-core"
+    },
+    "iron:core": {
+      "kind": "versioned",
+      "version": "1.0.7"
+    },
+    "templating": {
+      "kind": "versioned",
+      "version": "1.1.1"
+    },
+    "minimongo": {
+      "kind": "versioned",
+      "version": "1.0.8"
+    },
+    "spacebars": {
+      "kind": "versioned",
+      "version": "1.0.6"
+    }
+  },
+  "includeCordovaUnibuild": false
+}

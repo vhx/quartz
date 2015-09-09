@@ -1,0 +1,48 @@
+{
+  "format": "unipackage-unibuild-pre1",
+  "packageVariables": [],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "iron:router",
+      "constraint": "=1.0.6"
+    },
+    {
+      "package": "fourseven:scss"
+    },
+    {
+      "package": "vhx:style-core"
+    },
+    {
+      "package": "templating",
+      "constraint": "1.0.10"
+    },
+    {
+      "package": "minimongo",
+      "constraint": "1.0.6"
+    },
+    {
+      "package": "spacebars",
+      "constraint": "1.0.4"
+    }
+  ],
+  "resources": [
+    {
+      "type": "css",
+      "file": "web.browser/packages/vhx_style-checkbox/styles/checkbox.scss.css",
+      "length": 14281,
+      "offset": 0,
+      "servePath": "/packages/vhx_style-checkbox/styles/checkbox.scss.css"
+    },
+    {
+      "type": "prelink",
+      "file": "web.browser/packages/vhx_style-checkbox.js",
+      "length": 6690,
+      "offset": 0,
+      "servePath": "/packages/vhx_style-checkbox.js",
+      "sourceMap": "web.browser/packages/vhx_style-checkbox.js.map"
+    }
+  ]
+}

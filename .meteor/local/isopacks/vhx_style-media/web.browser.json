@@ -1,0 +1,62 @@
+{
+  "format": "unipackage-unibuild-pre1",
+  "packageVariables": [],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "iron:router",
+      "constraint": "=1.0.6"
+    },
+    {
+      "package": "fourseven:scss"
+    },
+    {
+      "package": "vhx:style-core"
+    },
+    {
+      "package": "templating",
+      "constraint": "1.0.10"
+    },
+    {
+      "package": "minimongo",
+      "constraint": "1.0.6"
+    },
+    {
+      "package": "spacebars",
+      "constraint": "1.0.4"
+    }
+  ],
+  "resources": [
+    {
+      "type": "css",
+      "file": "web.browser/packages/vhx_style-media/styles/avatars.scss.css",
+      "length": 5637,
+      "offset": 0,
+      "servePath": "/packages/vhx_style-media/styles/avatars.scss.css"
+    },
+    {
+      "type": "css",
+      "file": "web.browser/packages/vhx_style-media/styles/badges.scss.css",
+      "length": 5160,
+      "offset": 0,
+      "servePath": "/packages/vhx_style-media/styles/badges.scss.css"
+    },
+    {
+      "type": "css",
+      "file": "web.browser/packages/vhx_style-media/styles/images.scss.css",
+      "length": 5739,
+      "offset": 0,
+      "servePath": "/packages/vhx_style-media/styles/images.scss.css"
+    },
+    {
+      "type": "prelink",
+      "file": "web.browser/packages/vhx_style-media.js",
+      "length": 2730,
+      "offset": 0,
+      "servePath": "/packages/vhx_style-media.js",
+      "sourceMap": "web.browser/packages/vhx_style-media.js.map"
+    }
+  ]
+}

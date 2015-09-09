@@ -1,0 +1,149 @@
+/* .....................................
+  Fonts
+..................................... */
+/* .....................................
+  Sets
+..................................... */
+/* .....................................
+  Media Query Ranges
+..................................... */
+/* .....................................
+  Colors - Grays
+..................................... */
+/* .....................................
+  Colors - Teals
+..................................... */
+/* .....................................
+  Colors - Red
+..................................... */
+/* .....................................
+  Colors - Navy
+..................................... */
+/* .....................................
+  Colors - Brand Palette
+..................................... */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/* .....................................
+  Mixins for CSS3 Properties
+..................................... */
+/* helper function for margin and padding
+......................................*/
+/*
+  collection of prefixed flexbox properties
+  until we're using Compass 1.0+
+  ..........................................*/
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+/*.....................................
+  BUTTON MIXINS
+......................................*/
+/* sizes
+......................................*/
+/*.....................................
+  HEADERS
+......................................*/
+/* sizes
+......................................*/
+.head, .head-1, .head-2, .head-3, .head-4, .head-5 {
+  color: #233741;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: 'brandon-grotesque-n1', 'brandon-grotesque', 'Brandon Grotesque', sans-serif; }
+  .head strong, .head-1 strong, .head-2 strong, .head-3 strong, .head-4 strong, .head-5 strong {
+    font-weight: 600; }
+
+.head-1 {
+  font-size: 40px;
+  letter-spacing: 2px;
+  line-height: 40px; }
+
+.head-2 {
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: 3px; }
+
+.head-3 {
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 1px; }
+
+.head-4 {
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 1px; }
+
+.head-5 {
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 1px; }
+
+/* header navy
+......................................*/
+.head--navy {
+  color: #233741; }
+
+a.head--navy:link, a.head--navy:visited, a.head-1:link, a.head-1:visited, a.head-2:link, a.head-2:visited, a.head-3:link, a.head-3:visited, a.head-4:link, a.head-4:visited, a.head-5:link, a.head-5:visited {
+  color: #233741;
+  text-decoration: none; }
+a.head--navy:visited, a.head--navy:hover, a.head-1:visited, a.head-1:hover, a.head-2:visited, a.head-2:hover, a.head-3:visited, a.head-3:hover, a.head-4:visited, a.head-4:hover, a.head-5:visited, a.head-5:hover {
+  color: #5E7887;
+  text-decoration: none; }
+
+/* header gray
+......................................*/
+.head--gray {
+  color: #869AA5; }
+
+a.head--gray:link, a.head--gray:visited {
+  color: #869AA5;
+  text-decoration: none; }
+a.head--gray:hover, a.head--gray:active {
+  color: #5E7887;
+  text-decoration: none; }
+
+/* header teal
+......................................*/
+.head--teal {
+  color: #22B9B0; }
+
+a.head--teal:link, a.head--teal:visited {
+  color: #22B9B0;
+  text-decoration: none; }
+a.head--teal:hover, a.head--teal:active {
+  color: #149A97;
+  text-decoration: none; }
+
+/* header white
+......................................*/
+.head--white {
+  color: #ffffff; }
+
+a.head--white:link, a.head--white:visited {
+  color: #ffffff; }
+a.head--white:hover, a.head--white:active {
+  color: rgba(255, 255, 255, 0.7); }

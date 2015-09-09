@@ -1,0 +1,151 @@
+/* .....................................
+  Fonts
+..................................... */
+/* .....................................
+  Sets
+..................................... */
+/* .....................................
+  Media Query Ranges
+..................................... */
+/* .....................................
+  Colors - Grays
+..................................... */
+/* .....................................
+  Colors - Teals
+..................................... */
+/* .....................................
+  Colors - Red
+..................................... */
+/* .....................................
+  Colors - Navy
+..................................... */
+/* .....................................
+  Colors - Brand Palette
+..................................... */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/* .....................................
+  Mixins for CSS3 Properties
+..................................... */
+/* helper function for margin and padding
+......................................*/
+/*
+  collection of prefixed flexbox properties
+  until we're using Compass 1.0+
+  ..........................................*/
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+/*.....................................
+  Admin Modals
+......................................*/
+.reveal-modal {
+  padding: rem-calc(35 35 65 35);
+  z-index: 2147483642;
+  position: fixed;
+  border: none !important; }
+  @media only screen and (min-width:lower-bound(40.063em, 64em)) {
+    .reveal-modal .padding-left-large-medium-up {
+      padding-left: 25px; } }
+  .reveal-modal .overflow-hidden {
+    overflow: hidden; }
+  .reveal-modal[data-tour-modal] {
+    width: rem-calc(350) !important; }
+  .reveal-modal .bar {
+    background: #fff;
+    border-bottom: 1px solid #D7DDE1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; }
+    .reveal-modal .bar .media {
+      min-height: rem-cacl(36); }
+  .reveal-modal .content {
+    padding-top: rem-calc(65); }
+  .reveal-modal .actions {
+    background: #fff;
+    border-top: 1px solid rgba(55, 86, 103, 0.2);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%; }
+    .reveal-modal .actions .media {
+      height: rem-calc(40); }
+
+.reveal-modal-bg {
+  z-index: 2147483638;
+  opacity: 0 !important;
+  display: block !important;
+  transition: opacity 400ms ease; }
+  .reveal-modal-bg.open {
+    opacity: 1 !important; }
+  .reveal-modal-bg.is-hidden {
+    display: none !important; }
+
+.reveal-modal .close-tour-modal {
+  position: absolute;
+  top: rem-calc(15);
+  right: rem-calc(15); }
+  .reveal-modal .close-tour-modal .icon-remove-gray {
+    display: block; }
+.reveal-modal .icon-remove-gray {
+  display: none; }
+.reveal-modal .icon-remove-inverse {
+  display: block; }
+@media only screen and (max-width: 40em) {
+  .reveal-modal {
+    top: 0;
+    left: 0;
+    position: fixed;
+    border: 10px solid rgba(0, 20, 41, 0.9); }
+    .reveal-modal .close-x, .reveal-modal .close-reveal-modal {
+      right: rem-calc(10);
+      top: rem-calc(10); }
+      .reveal-modal .close-x .icon-remove-gray, .reveal-modal .close-reveal-modal .icon-remove-gray {
+        display: block; }
+      .reveal-modal .close-x .icon-remove-inverse, .reveal-modal .close-reveal-modal .icon-remove-inverse {
+        display: none; } }
+
+.no-buttons {
+  padding: rem-calc(35 35 35 35); }
+
+.reveal-modal.animate-pre-open {
+  opacity: 0 !important;
+  display: block !important;
+  visibility: visible !important;
+  transform: scale(0.7);
+  transition: all 400ms cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+.reveal-modal.animate-pre-close, .reveal-modal.animate-open {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  transform: scale(1); }
+.reveal-modal.animate-close {
+  opacity: 0 !important;
+  display: block !important;
+  visibility: visible !important;
+  transform: scale(0.7);
+  transition: all 400ms cubic-bezier(0.175, 0.885, 0.32, 1.275); }

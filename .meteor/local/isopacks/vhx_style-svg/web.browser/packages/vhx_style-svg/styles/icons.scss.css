@@ -1,0 +1,313 @@
+/* .....................................
+  Fonts
+..................................... */
+/* .....................................
+  Sets
+..................................... */
+/* .....................................
+  Media Query Ranges
+..................................... */
+/* .....................................
+  Colors - Grays
+..................................... */
+/* .....................................
+  Colors - Teals
+..................................... */
+/* .....................................
+  Colors - Red
+..................................... */
+/* .....................................
+  Colors - Navy
+..................................... */
+/* .....................................
+  Colors - Brand Palette
+..................................... */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/* .....................................
+  Mixins for CSS3 Properties
+..................................... */
+/* helper function for margin and padding
+......................................*/
+/*
+  collection of prefixed flexbox properties
+  until we're using Compass 1.0+
+  ..........................................*/
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+/*.....................................
+  VHX Icons
+......................................*/
+.icon {
+  display: inline-block;
+  background-position: 50% 50%;
+  background-size: contain;
+  width: 23px;
+  height: 23px;
+  text-indent: -9999px; }
+  .icon.tiny {
+    width: 9px;
+    height: 9px; }
+  .icon.default {
+    width: 23px;
+    height: 23px; }
+  .icon.small {
+    width: 15px;
+    height: 15px; }
+  .icon.line, .icon.icon-line {
+    width: 18px;
+    height: 18px; }
+  .icon.smedium {
+    width: 31px;
+    height: 31px; }
+  .icon.medium {
+    width: 35px;
+    height: 35px; }
+  .icon.large {
+    width: 45px;
+    height: 45px; }
+  .icon.xlarge {
+    width: 60px;
+    height: 60px; }
+  .icon.mono {
+    fill: #375667; }
+  .icon.gray {
+    fill: #9baab2; }
+  .icon.inverse {
+    fill: #ffffff; }
+  .icon.alt {
+    fill: #22b8af; }
+  .icon.light {
+    fill: #BFBFBF; }
+  .icon.dark {
+    fill: #111111; }
+  .icon.is-transparent {
+    opacity: 0.5; }
+  .icon.radius {
+    border-radius: 5px; }
+
+.has-icon {
+  background-position: center left;
+  padding-left: 28px;
+  background-size: 23px 23px;
+  height: 23px;
+  line-height: 23px; }
+  .has-icon.icon-right {
+    background-position: center right;
+    padding-left: 0;
+    padding-right: 28px;
+    background-position: center right; }
+  .has-icon.icon-only {
+    background-position: center center;
+    color: transparent !important;
+    white-space: nowrap;
+    padding-left: 2rem;
+    width: 22px;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    line-height: 23px;
+    height: auto; }
+    .has-icon.icon-only.line, .has-icon.icon-only.icon-line {
+      background-size: 18px 18px;
+      line-height: 40px;
+      max-height: 40px; }
+
+.has-icon.tiny, .has-icon.icon-tiny {
+  display: inline-block;
+  background-size: 9px 9px;
+  padding-left: 14px;
+  height: 9px;
+  line-height: 9px; }
+  .has-icon.tiny.icon-right, .has-icon.icon-tiny.icon-right {
+    padding-left: 0;
+    padding-right: 14px; }
+.has-icon.small, .has-icon.icon-small {
+  display: inline-block;
+  background-size: 15px 15px;
+  padding-left: 20px;
+  height: 15px;
+  line-height: 15px;
+  font-size: 100%; }
+  .has-icon.small.icon-right, .has-icon.icon-small.icon-right {
+    padding-left: 0;
+    padding-right: 20px; }
+.has-icon.default, .has-icon.icon-default {
+  display: inline-block;
+  background-size: 23px 23px;
+  padding-left: 33px;
+  height: 23px;
+  line-height: 23px;
+  font-size: 100%; }
+  .has-icon.default.icon-right, .has-icon.icon-default.icon-right {
+    padding-left: 0;
+    padding-right: 33px; }
+.has-icon.smedium, .has-icon.icon-smedium {
+  display: inline-block;
+  background-size: 31px 31px;
+  padding-left: 41px;
+  height: 31px;
+  line-height: 31px; }
+  .has-icon.smedium.icon-right, .has-icon.icon-smedium.icon-right {
+    padding-left: 0;
+    padding-right: 41px; }
+.has-icon.medium, .has-icon.icon-medium {
+  display: inline-block;
+  background-size: 35px 35px;
+  padding-left: 45px;
+  height: 35px;
+  line-height: 35px; }
+  .has-icon.medium.icon-right, .has-icon.icon-medium.icon-right {
+    padding-left: 0;
+    padding-right: 45px; }
+.has-icon.large, .has-icon.icon-large {
+  display: inline-block;
+  background-size: 45px 45px;
+  padding-left: 55px;
+  height: 45px;
+  line-height: 45px; }
+  .has-icon.large.icon-right, .has-icon.icon-large.icon-right {
+    padding-left: 0;
+    padding-right: 55px; }
+.has-icon.xlarge, .has-icon.icon-xlarge {
+  display: inline-block;
+  background-size: 60px 60px;
+  padding-left: 75px;
+  height: 60px;
+  line-height: 60px; }
+  .has-icon.xlarge.icon-right, .has-icon.icon-xlarge.icon-right {
+    padding-left: 0;
+    padding-right: 75px; }
+
+a.has-icon:link i, a.has-icon:visited i {
+  opacity: 0.5;
+  transition: opacity 200ms ease; }
+a.has-icon:hover i, a.has-icon:active i {
+  opacity: 1; }
+
+.has-icon-only {
+  background-position: center center;
+  background-size: contain;
+  color: transparent !important;
+  white-space: nowrap;
+  line-height: 40px;
+  display: inline-block; }
+  .has-icon-only.tiny {
+    height: 9px;
+    width: 9px; }
+  .has-icon-only.small {
+    height: 15px;
+    width: 15px; }
+  .has-icon-only.smedium {
+    height: 31px;
+    width: 31px; }
+  .has-icon-only.medium {
+    height: 35px;
+    width: 35px; }
+  .has-icon-only.large {
+    height: 45px;
+    width: 45px; }
+
+.icon-dot.tiny {
+  width: 5px;
+  height: 5px;
+  border-radius: 5px; }
+.icon-dot.small {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px; }
+.icon-dot.medium {
+  width: 25px;
+  height: 25px;
+  border-radius: 25px; }
+.icon-dot.large {
+  width: 35px;
+  height: 35px;
+  border-radius: 35px; }
+.icon-dot.xlarge {
+  width: 55px;
+  height: 55px;
+  border-radius: 55px; }
+.icon-dot.primary {
+  background: #22B9B0; }
+.icon-dot.secondary {
+  background: #432865; }
+.icon-dot.tertiary {
+  background: #8b3880; }
+.icon-dot.success {
+  background: #7DA53E; }
+.icon-dot.error, .icon-dot.red {
+  background: #D3104A; }
+.icon-dot.gray {
+  background: #AFBCC3; }
+
+.icon-contain {
+  display: inline-block;
+  position: relative; }
+  .icon-contain.is-transparent {
+    opacity: 0.5; }
+  .icon-contain[class*="radius"] .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -11.5px;
+    margin-top: -11.5px; }
+    .icon-contain[class*="radius"] .icon.small {
+      margin-left: -7.5px;
+      margin-top: -7.5px; }
+    .icon-contain[class*="radius"] .icon.medium {
+      margin-left: -17.5px;
+      margin-top: -17.5px; }
+    .icon-contain[class*="radius"] .icon.large {
+      margin-left: -22.5px;
+      margin-top: -22.5px; }
+  .icon-contain[class*="radius"].small {
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px; }
+  .icon-contain[class*="radius"].medium {
+    padding: 10px;
+    border-radius: 35px; }
+  .icon-contain[class*="radius"].large {
+    padding: 15px;
+    border-radius: 45px; }
+  .icon-contain.radius-alt {
+    border: 2px solid #22b8af; }
+  .icon-contain.radius-gray {
+    border: 2px solid #AFBCC3; }
+  .icon-contain.radius-mono {
+    border: 2px solid #375667; }
+  .icon-contain.radius-inverse {
+    border: 2px solid #ffffff; }
+  .icon-contain.radius-light {
+    border: 2px solid #BFBFBF; }
+  .icon-contain.radius-dark {
+    border: 2px solid #111111; }
+
+.inverse-icon-bg {
+  height: 23px;
+  width: 23px; }

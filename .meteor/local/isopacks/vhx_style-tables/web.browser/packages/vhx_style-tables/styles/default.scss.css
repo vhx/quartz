@@ -1,0 +1,252 @@
+/* .....................................
+  Fonts
+..................................... */
+/* .....................................
+  Sets
+..................................... */
+/* .....................................
+  Media Query Ranges
+..................................... */
+/* .....................................
+  Colors - Grays
+..................................... */
+/* .....................................
+  Colors - Teals
+..................................... */
+/* .....................................
+  Colors - Red
+..................................... */
+/* .....................................
+  Colors - Navy
+..................................... */
+/* .....................................
+  Colors - Brand Palette
+..................................... */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/* .....................................
+  Mixins for CSS3 Properties
+..................................... */
+/* helper function for margin and padding
+......................................*/
+/*
+  collection of prefixed flexbox properties
+  until we're using Compass 1.0+
+  ..........................................*/
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+/*.....................................
+  BUTTON MIXINS
+......................................*/
+/* sizes
+......................................*/
+/*.....................................
+  Tables
+......................................*/
+.table {
+  box-sizing: border-box;
+  width: 100%;
+  table-layout: fixed;
+  font-size: 14px;
+  border: none;
+  color: #8d9da6;
+  margin-bottom: 0;
+  /* table head
+  ..................................*/
+  /* table body
+  ..................................*/
+  /* row head
+  ..................................*/
+  /* table striped
+  ..................................*/ }
+  .table.border-top {
+    border-top: 1px solid #d6dcdf; }
+  .table.double-line .clickable .clickable-trigger:link {
+    min-height: 80px; }
+  .table.double-line td {
+    min-height: 80px; }
+  .table thead, .table th {
+    box-sizing: border-box;
+    font-family: 'brandon-grotesque-n1', 'brandon-grotesque', 'Brandon Grotesque', sans-serif;
+    font-weight: bold;
+    color: #8d9da6; }
+    .table thead strong, .table th strong {
+      font-weight: bold; }
+  .table thead {
+    border: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    background: transparent; }
+    .table thead tr {
+      border-bottom: 1px solid #d6dcdf; }
+    .table thead th {
+      padding: 15px 15px 15px 20px;
+      border: none;
+      background: url(image-path('admin/table-tick.png')) no-repeat 0 100%; }
+      .table thead th:first-child {
+        background: none; }
+    .table thead.no-tick {
+      background: none; }
+  .table th, .table td {
+    box-sizing: border-box;
+    padding: 20px 15px;
+    color: #D7DDE1;
+    line-height: 20px;
+    vertical-align: top; }
+    .table th strong, .table td strong {
+      color: #375667; }
+    .table th.fill-row, .table td.fill-row {
+      padding: 20px 15px 0px 15px; }
+  .table tbody {
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif; }
+  .table tr {
+    box-sizing: border-box;
+    transition: background 200ms ease-out;
+    background: #fff;
+    border-bottom: 1px solid #F0F2F4; }
+    .table tr.is-disabled {
+      color: #f8f9fb !important;
+      background: #f1f3f4 !important; }
+      .table tr.is-disabled a, .table tr.is-disabled strong, .table tr.is-disabled td {
+        color: #7f9bac !important; }
+    .table tr.sticky {
+      background: #5deae7 !important; }
+    .table tr.selected {
+      background: #149A97 !important; }
+    .table tr.clickable {
+      cursor: pointer; }
+      .table tr.clickable.is-active td {
+        height: auto;
+        padding-top: 0;
+        padding-bottom: 0; }
+      .table tr.clickable.is-hovered, .table tr.clickable:hover {
+        background: #149A97 !important; }
+      .table tr.clickable .clickable-trigger:link, .table tr.clickable .clickable-trigger:visited {
+        vertical-align: middle;
+        padding: 20px 0;
+        min-height: 60px;
+        color: #D7DDE1;
+        text-decoration: none; }
+        .table tr.clickable .clickable-trigger:link strong, .table tr.clickable .clickable-trigger:visited strong {
+          color: #375667; }
+      .table tr.clickable .clickable-trigger:hover, .table tr.clickable .clickable-trigger:active {
+        color: #D7DDE1;
+        text-decoration: none; }
+        .table tr.clickable .clickable-trigger:hover strong, .table tr.clickable .clickable-trigger:active strong {
+          color: #375667; }
+    .table tr:nth-child(even) {
+      background: transparent; }
+  .table td {
+    height: 60px; }
+    .table td strong {
+      color: #375667;
+      font-weight: normal; }
+  .table .row-head {
+    background: #f8f9fb !important; }
+    .table .row-head td, .table .row-head td .label {
+      position: relative;
+      font-family: 'brandon-grotesque-n1', 'brandon-grotesque', 'Brandon Grotesque', sans-serif;
+      font-weight: 500;
+      color: #375667;
+      text-transform: uppercase;
+      letter-spacing: 1px; }
+    .table .row-head td {
+      height: auto; }
+    .table .row-head .arrow {
+      display: block;
+      position: absolute;
+      bottom: 0px;
+      left: 30px;
+      background: #f8f9fb; }
+      .table .row-head .arrow:after, .table .row-head .arrow:before {
+        top: 100%;
+        left: 50%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none; }
+      .table .row-head .arrow:after {
+        border-color: rgba(248, 249, 251, 0);
+        border-top-color: #f8f9fb;
+        border-width: 10px;
+        margin-left: -10px; }
+      .table .row-head .arrow:before {
+        border-color: rgba(223, 223, 223, 0);
+        border-top-color: #dfdfdf;
+        border-width: 11px;
+        margin-left: -11px; }
+  .table.striped tbody tr {
+    border: none; }
+  .table.striped tbody tr:nth-child(odd) {
+    background: #f8f9fb; }
+  .table.mini td {
+    padding: 5px 10px;
+    height: auto; }
+  .table.compact {
+    width: auto; }
+    .table.compact td {
+      padding: 5px;
+      height: auto; }
+    .table.compact td.date {
+      white-space: nowrap; }
+  .table.text-inverse td {
+    color: #375667; }
+    .table.text-inverse td .light {
+      color: #8d9da6; }
+
+.firefox .table .row-head .arrow {
+  bottom: 1px; }
+
+@media only screen and (max-width: 40em) {
+  .table.tablesaw-stack .tablesaw-cell-label {
+    display: block;
+    text-transform: uppercase;
+    font-size: 11px; }
+  .table.tablesaw-stack td {
+    position: relative;
+    display: block;
+    float: none;
+    margin-bottom: 5px;
+    height: auto;
+    padding: 5px 10px; }
+    .table.tablesaw-stack td:first-child {
+      padding-top: 10px; }
+  .table.tablesaw-stack.double-line td {
+    min-height: 0px; }
+  .table.tablesaw-stack tr.clickable .clickable-trigger:link, .table.tablesaw-stack tr.clickable .clickable-trigger:visited {
+    padding: 5px 0px 10px 0px;
+    min-height: 0px; }
+
+  td.small-truncate .label {
+    width: 75px; }
+
+  .clickable-trigger .dropdown.icon-only {
+    width: 100%; }
+ }

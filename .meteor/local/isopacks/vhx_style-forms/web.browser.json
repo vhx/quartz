@@ -1,0 +1,62 @@
+{
+  "format": "unipackage-unibuild-pre1",
+  "packageVariables": [],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "iron:router",
+      "constraint": "=1.0.6"
+    },
+    {
+      "package": "fourseven:scss"
+    },
+    {
+      "package": "vhx:style-core"
+    },
+    {
+      "package": "templating",
+      "constraint": "1.0.10"
+    },
+    {
+      "package": "minimongo",
+      "constraint": "1.0.6"
+    },
+    {
+      "package": "spacebars",
+      "constraint": "1.0.4"
+    }
+  ],
+  "resources": [
+    {
+      "type": "css",
+      "file": "web.browser/packages/vhx_style-forms/styles/input.scss.css",
+      "length": 13536,
+      "offset": 0,
+      "servePath": "/packages/vhx_style-forms/styles/input.scss.css"
+    },
+    {
+      "type": "css",
+      "file": "web.browser/packages/vhx_style-forms/styles/radio.scss.css",
+      "length": 4636,
+      "offset": 0,
+      "servePath": "/packages/vhx_style-forms/styles/radio.scss.css"
+    },
+    {
+      "type": "css",
+      "file": "web.browser/packages/vhx_style-forms/styles/select.scss.css",
+      "length": 5045,
+      "offset": 0,
+      "servePath": "/packages/vhx_style-forms/styles/select.scss.css"
+    },
+    {
+      "type": "prelink",
+      "file": "web.browser/packages/vhx_style-forms.js",
+      "length": 2730,
+      "offset": 0,
+      "servePath": "/packages/vhx_style-forms.js",
+      "sourceMap": "web.browser/packages/vhx_style-forms.js.map"
+    }
+  ]
+}

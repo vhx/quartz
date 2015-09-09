@@ -11,9 +11,9 @@
   height: $icon-small;
   text-indent: -9999px;
 
-  &.icon--tiny {
-    width: $icon-tiny;
-    height: $icon-tiny;
+  &.icon--xsmall {
+    width: $icon-xsmall;
+    height: $icon-xsmall;
   }
   &.icon--small {
     width: $icon-small;
@@ -37,36 +37,68 @@
   }
 }
 
-/*.....................................
-  Icons with text
+/* sizes
 ......................................*/
-.text-1 {
-  &.icon--tiny {
-
+.icon--xsmall {
+  background-size: $icon-xsmall $icon-xsmall;
+  background-position: 0 center;
+  padding-left: 18px;
+  &.text-1 {
+    line-height: 24px;
   }
-  &.icon--small {
-
+  &.text-2 {
+    line-height: 22px;
   }
-  &.icon--medium {
-
+  &.text-3 {
+    line-height: 18px;
   }
-  &.icon--large {
-
+  &.head-1 {
+    line-height: 40px;
   }
-  &.icon--xlarge {
-
+  &.head-2 {
+    line-height: 30px;
   }
-  &.icon--xxlarge {
+  &.head-3 {
+    line-height: 22px;
+  }
+  &.head-4 {
+    line-height: 16px;
+  }
 
+}
+.icon--small {
+  background-size: $icon-small $icon-small;
+  background-position: 0 center;
+  padding-left: 26px;
+  line-height: $icon-small !important;
+  &.text-1 {
+    line-height: 24px !important;
+  }
+  &.head-1 {
+    line-height: 40px !important;
+  }
+  &.head-2 {
+    line-height: 30px !important;
   }
 }
-
-.text-2 {}
-.text-3 {}
-
-.head-1 {}
-.head-2 {}
-.head-3 {}
-.head-4 {}
-.head-5 {}
-
+.icon--medium {
+  background-size: $icon-medium $icon-medium;
+  background-position: 0 center;
+  padding-left: 35px;
+  line-height: $icon-medium !important;
+  &.head-1 {
+    line-height: 40px !important;
+  }
+}
+.icon--large {
+  background-size: $icon-large $icon-large;
+  background-position: 0 center;
+  padding-left: 40px;
+  line-height: $icon-large !important;
+}
+.icon--xlarge {
+  background-size: $icon-xlarge $icon-xlarge;
+  background-position: 0 center;
+  padding-left: 48px;
+  line-height: $icon-xlarge !important;
+}

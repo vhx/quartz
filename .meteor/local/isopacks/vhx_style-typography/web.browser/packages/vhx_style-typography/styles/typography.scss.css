@@ -1,0 +1,173 @@
+/* .....................................
+  Fonts
+..................................... */
+/* .....................................
+  Sets
+..................................... */
+/* .....................................
+  Media Query Ranges
+..................................... */
+/* .....................................
+  Colors - Grays
+..................................... */
+/* .....................................
+  Colors - Teals
+..................................... */
+/* .....................................
+  Colors - Red
+..................................... */
+/* .....................................
+  Colors - Navy
+..................................... */
+/* .....................................
+  Colors - Brand Palette
+..................................... */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/* .....................................
+  Mixins for CSS3 Properties
+..................................... */
+/* helper function for margin and padding
+......................................*/
+/*
+  collection of prefixed flexbox properties
+  until we're using Compass 1.0+
+  ..........................................*/
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+/*.....................................
+  BUTTON MIXINS
+......................................*/
+/* sizes
+......................................*/
+/*.....................................
+  TYPOGRAPHY
+......................................*/
+body, ul, ol, dl, li, p, div, section, nav, table, h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica", "Arial", sans-serif;
+  color: #869AA5;
+  font-size: 14px;
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+strong {
+  font-weight: normal; }
+
+/* text gray
+......................................*/
+.text-gray {
+  color: #869AA5;
+  font-size: 14px;
+  font-family: "Helvetica", "Arial", sans-serif; }
+  .text-gray strong {
+    font-weight: 600; }
+  .text-gray .link-ignore:link, .text-gray .link-ignore:visited {
+    color: #869AA5;
+    text-decoration: none; }
+  .text-gray .link-ignore:hover, .text-gray .link-ignore:active {
+    color: #375667;
+    text-decoration: none; }
+
+.text-gray--strong {
+  font-weight: 600; }
+
+/* text navy
+......................................*/
+.text-navy {
+  color: #375667;
+  font-size: 14px;
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-weight: 600; }
+  .text-navy strong {
+    font-weight: 600; }
+  .text-navy .link-ignore:link, .text-navy .link-ignore:visited {
+    color: #375667;
+    text-decoration: none; }
+  .text-navy .link-ignore:hover, .text-navy .link-ignore:active {
+    color: #869AA5;
+    text-decoration: none; }
+
+.text-navy--strong {
+  font-weight: 600; }
+
+/* text white
+......................................*/
+.text-white {
+  color: #ffffff;
+  font-size: 14px;
+  font-family: "Helvetica", "Arial", sans-serif; }
+  .text-white strong {
+    font-weight: 600; }
+  .text-white .link-ignore:link, .text-white .link-ignore:visited {
+    color: #ffffff;
+    text-decoration: none; }
+  .text-white .link-ignore:hover, .text-white .link-ignore:active {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none; }
+
+.text-white--strong {
+  font-weight: 600; }
+
+.text-white--transparent {
+  color: rgba(255, 255, 255, 0.7); }
+
+/* text teal
+......................................*/
+.text-teal {
+  color: #22B9B0;
+  font-size: 14px;
+  font-family: "Helvetica", "Arial", sans-serif; }
+  .text-teal strong {
+    font-weight: 600; }
+
+.text-teal--strong {
+  font-weight: 600; }
+
+/* sizes
+......................................*/
+.text--small {
+  font-size: 12px; }
+
+.text--medium {
+  font-size: 16px; }
+
+.text--large {
+  font-size: 18px; }
+
+/* links
+......................................*/
+a {
+  font-size: 14px;
+  font-family: "Helvetica", "Arial", sans-serif;
+  transition: color 200ms ease; }
+  a:link, a:visited {
+    color: #22B9B0;
+    text-decoration: none; }
+  a:hover, a:active {
+    color: #149A97;
+    text-decoration: none; }

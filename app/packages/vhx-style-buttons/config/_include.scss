@@ -4,28 +4,13 @@
   BUTTON MIXINS
 ......................................*/
 
-/* sizes
+/* button colors
 ......................................*/
-
-$icon-xsmall: 1;
-$icon-small: 2;
-$icon-medium: 3;
-$icon-large: 4;
-
-// xsmall small medium large
-$icon-size: 13px 15px 18px 30px;
-
-$icon-padding-right:      0px 26px 40px 63px;
-$icon-padding-left:       0px 27px 40px 63px;
-$icon-bg-vert-pos:        0px 7px 12px 18px;
-$icon-bg-horz-left-pos:   0px 10px 19px 29px;
-$icon-bg-horz-right-pos:  0px 8px 18px 30px;
-
 @mixin button-colors($background, $background-hover, $color, $color-hover, $border-color, $border-color-hover, $loader) {
   background-color: $background;
   color: $color;
   border: 1px solid $border-color;
-  background-size: nth($icon-size, $icon-small) nth($icon-size, $icon-small);
+  background-size: 15px 15px;
 
   // states
   &:link,
@@ -91,26 +76,6 @@ $icon-bg-horz-right-pos:  0px 8px 18px 30px;
     &.btn--large {
       background-size: 45px 45px;
     }
-  }
-}
-
-@mixin button-icon-position($position, $size-index) {
-  @if $position == "center" {
-    background-position: center center !important;
-    color: transparent !important;
-    padding: 0 20px !important;
-    width: 40px;
-    text-indent: -9999px;
-  }
-
-  @if $position == "left" {
-    background-position: nth($icon-bg-horz-left-pos, $size-index) nth($icon-bg-vert-pos, $size-index);
-    padding-left: nth($icon-padding-left, $size-index);
-  }
-
-  @if $position == "right" {
-    background-position: right nth($icon-bg-horz-right-pos, $size-index) center;
-    padding-right: nth($icon-padding-right, $size-index);
   }
 }
 

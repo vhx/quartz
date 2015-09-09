@@ -1,0 +1,48 @@
+{
+  "format": "unipackage-unibuild-pre1",
+  "packageVariables": [],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "iron:router",
+      "constraint": "=1.0.6"
+    },
+    {
+      "package": "fourseven:scss"
+    },
+    {
+      "package": "vhx:style-core"
+    },
+    {
+      "package": "templating",
+      "constraint": "1.0.10"
+    },
+    {
+      "package": "minimongo",
+      "constraint": "1.0.6"
+    },
+    {
+      "package": "spacebars",
+      "constraint": "1.0.4"
+    }
+  ],
+  "resources": [
+    {
+      "type": "css",
+      "file": "web.browser/packages/vhx_style-radio/styles/radio.scss.css",
+      "length": 5569,
+      "offset": 0,
+      "servePath": "/packages/vhx_style-radio/styles/radio.scss.css"
+    },
+    {
+      "type": "prelink",
+      "file": "web.browser/packages/vhx_style-radio.js",
+      "length": 7161,
+      "offset": 0,
+      "servePath": "/packages/vhx_style-radio.js",
+      "sourceMap": "web.browser/packages/vhx_style-radio.js.map"
+    }
+  ]
+}

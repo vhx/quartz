@@ -1,0 +1,69 @@
+{
+  "builtBy": "meteor/16",
+  "unibuildDependencies": {
+    "os.json": {
+      "files": {
+        "/Users/scottusrobus/dev/vhx-quartz/packages/vhx:style-svg/package.js": "174eb636bd71ac9255b3e9317b9845d7d764b483",
+        "/Users/scottusrobus/dev/vhx-quartz/packages/vhx:style-core/package.js": "0530a339f745c4dcec0faf277d655e125a94262e"
+      },
+      "directories": []
+    },
+    "web.browser.json": {
+      "files": {
+        "/Users/scottusrobus/dev/vhx-quartz/packages/vhx:style-svg/package.js": "174eb636bd71ac9255b3e9317b9845d7d764b483",
+        "/Users/scottusrobus/dev/vhx-quartz/packages/vhx:style-core/package.js": "0530a339f745c4dcec0faf277d655e125a94262e",
+        "/Users/scottusrobus/dev/vhx-quartz/packages/vhx:style-svg/config/_include.scss": "a6ce09317ee34c5f2f969486c65d2d876109a843",
+        "/Users/scottusrobus/dev/vhx-quartz/packages/vhx:style-svg/styles/icons.scss": "66e1f35cd9aecd1e1278905b190aeddf3c473ddf",
+        "/Users/scottusrobus/dev/vhx-quartz/packages/vhx:style-svg/styles/symbols.scss": "d3019b1c3b0b644212465f552e89f00bf8979720",
+        "/Users/scottusrobus/dev/vhx-quartz/packages/vhx:style-svg/docs/code.html": "308da798e087c03c3c1929d69306954ee2c39e14",
+        "/Users/scottusrobus/dev/vhx-quartz/packages/vhx:style-svg/docs/guide.html": "af60c4dbbcb1c732b869de6b8c53ac7bcf57440b"
+      },
+      "directories": []
+    }
+  },
+  "pluginDependencies": {
+    "files": {
+      "/Users/scottusrobus/dev/vhx-quartz/packages/vhx:style-svg/package.js": "174eb636bd71ac9255b3e9317b9845d7d764b483"
+    },
+    "directories": []
+  },
+  "pluginProviderPackageMap": {
+    "vhx:style-svg": {
+      "kind": "local",
+      "sourceRoot": "/Users/scottusrobus/dev/vhx-quartz/packages/vhx:style-svg"
+    },
+    "meteor": {
+      "kind": "versioned",
+      "version": "1.1.6"
+    },
+    "iron:router": {
+      "kind": "versioned",
+      "version": "1.0.6"
+    },
+    "fourseven:scss": {
+      "kind": "versioned",
+      "version": "1.0.0"
+    },
+    "vhx:style-core": {
+      "kind": "local",
+      "sourceRoot": "/Users/scottusrobus/dev/vhx-quartz/packages/vhx:style-core"
+    },
+    "iron:core": {
+      "kind": "versioned",
+      "version": "1.0.7"
+    },
+    "templating": {
+      "kind": "versioned",
+      "version": "1.1.1"
+    },
+    "minimongo": {
+      "kind": "versioned",
+      "version": "1.0.8"
+    },
+    "spacebars": {
+      "kind": "versioned",
+      "version": "1.0.6"
+    }
+  },
+  "includeCordovaUnibuild": false
+}

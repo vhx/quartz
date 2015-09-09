@@ -1,0 +1,38 @@
+{
+  "format": "unipackage-unibuild-pre1",
+  "packageVariables": [],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "fourseven:scss"
+    }
+  ],
+  "resources": [
+    {
+      "type": "asset",
+      "file": "os/packages/vhx_style-foundation/normalize.css",
+      "length": 7760,
+      "offset": 0,
+      "servePath": "/packages/vhx_style-foundation/normalize.css",
+      "path": "normalize.css"
+    },
+    {
+      "type": "asset",
+      "file": "os/packages/vhx_style-foundation/foundation.css",
+      "length": 97505,
+      "offset": 0,
+      "servePath": "/packages/vhx_style-foundation/foundation.css",
+      "path": "foundation.css"
+    },
+    {
+      "type": "prelink",
+      "file": "os/packages/vhx_style-foundation.js",
+      "length": 0,
+      "offset": 0,
+      "servePath": "/packages/vhx_style-foundation.js",
+      "sourceMap": "os/packages/vhx_style-foundation.js.map"
+    }
+  ]
+}

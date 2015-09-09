@@ -1,0 +1,68 @@
+{
+  "builtBy": "meteor/16",
+  "unibuildDependencies": {
+    "os.json": {
+      "files": {
+        "/Users/scottusrobus/dev/vhx-quartz/packages/vhx:style-tables/package.js": "e4b0198cc7dcc0bb966b783dde6602abb476eb97",
+        "/Users/scottusrobus/dev/vhx-quartz/packages/vhx:style-core/package.js": "0530a339f745c4dcec0faf277d655e125a94262e"
+      },
+      "directories": []
+    },
+    "web.browser.json": {
+      "files": {
+        "/Users/scottusrobus/dev/vhx-quartz/packages/vhx:style-tables/package.js": "e4b0198cc7dcc0bb966b783dde6602abb476eb97",
+        "/Users/scottusrobus/dev/vhx-quartz/packages/vhx:style-core/package.js": "0530a339f745c4dcec0faf277d655e125a94262e",
+        "/Users/scottusrobus/dev/vhx-quartz/packages/vhx:style-tables/config/_include.scss": "cab587788bfa3d073436752463cee206b9b20ead",
+        "/Users/scottusrobus/dev/vhx-quartz/packages/vhx:style-tables/styles/default.scss": "69f7f23a157c07c07dbe137d56c097dc9a830075",
+        "/Users/scottusrobus/dev/vhx-quartz/packages/vhx:style-tables/docs/code.html": "81559f766f7f2130d312ae31810fa77d49f13356",
+        "/Users/scottusrobus/dev/vhx-quartz/packages/vhx:style-tables/docs/guide.html": "b23e7c8c81d9ee136c7e7e323ebaa17e92846b1e"
+      },
+      "directories": []
+    }
+  },
+  "pluginDependencies": {
+    "files": {
+      "/Users/scottusrobus/dev/vhx-quartz/packages/vhx:style-tables/package.js": "e4b0198cc7dcc0bb966b783dde6602abb476eb97"
+    },
+    "directories": []
+  },
+  "pluginProviderPackageMap": {
+    "vhx:style-tables": {
+      "kind": "local",
+      "sourceRoot": "/Users/scottusrobus/dev/vhx-quartz/packages/vhx:style-tables"
+    },
+    "meteor": {
+      "kind": "versioned",
+      "version": "1.1.6"
+    },
+    "iron:router": {
+      "kind": "versioned",
+      "version": "1.0.6"
+    },
+    "fourseven:scss": {
+      "kind": "versioned",
+      "version": "1.0.0"
+    },
+    "vhx:style-core": {
+      "kind": "local",
+      "sourceRoot": "/Users/scottusrobus/dev/vhx-quartz/packages/vhx:style-core"
+    },
+    "iron:core": {
+      "kind": "versioned",
+      "version": "1.0.7"
+    },
+    "templating": {
+      "kind": "versioned",
+      "version": "1.1.1"
+    },
+    "minimongo": {
+      "kind": "versioned",
+      "version": "1.0.8"
+    },
+    "spacebars": {
+      "kind": "versioned",
+      "version": "1.0.6"
+    }
+  },
+  "includeCordovaUnibuild": false
+}

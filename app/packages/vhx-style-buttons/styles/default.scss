@@ -48,6 +48,21 @@ select {
     text-decoration: none;
     border: 1px solid transparent;
   }
+
+  &.icon--left {
+    background-position: left 21px center;
+    padding-left: 43px;
+
+    .icon--right {
+      background-position: right 0px center;
+      padding-right: 21px;
+      background-size: 15px 15px;
+    }
+  }
+  &.icon--right {
+    background-position: right 21px center;
+    padding-right: 43px;
+  }
 }
 
 /* button gray shorthand
@@ -269,30 +284,18 @@ select {
   @extend %icon-search-mono;
 }
 
-
 /*.....................................
   BUTTON ICONS
 ......................................*/
 
-/* sizes
-......................................*/
-.icon--xsmall {
-  background-size: nth($icon-size,$icon-xsmall) nth($icon-size, $icon-xsmall);
-}
-.icon--small {
-  background-size: nth($icon-size, $icon-small) nth($icon-size, $icon-small);
-}
-.icon--medium {
-  background-size: nth($icon-size, $icon-medium) nth($icon-size, $icon-medium);
-}
-.icon--large {
-  background-size: nth($icon-size, $icon-large) nth($icon-size, $icon-large);
-}
-
 /* position
 ......................................*/
 .icon--center {
-  @include button-icon-position("center", "");
+  background-position: center center !important;
+  color: transparent !important;
+  padding: 0 20px !important;
+  width: 40px;
+  text-indent: -9999px;
 
   &.btn--small {
     width: 30px;
@@ -307,38 +310,34 @@ select {
     padding: 0 30px !important;
   }
 }
-.icon--left {
-  @include button-icon-position("left", $icon-medium);
 
+.icon--left {
   &.btn--small {
-    @include button-icon-position("left", $icon-small);
-  }
-  &.btn--medium {
-    @include button-icon-position("left", $icon-medium);
+    background-position: left 10px center;
+    padding-left: 27px;
+    .icon--right {
+      background-size: 13px 13px;
+      padding-right: 16px;
+    }
   }
   &.btn--large {
-    @include button-icon-position("left", $icon-large);
+    background-position: left 30px center;
+    padding-left: 62px;
+    .icon--right {
+      background-size: 23px 23px;
+      padding-right: 28px;
+    }
   }
 }
+
 .icon--right {
-  @include button-icon-position("right", $icon-medium);
-
   &.btn--small {
-    @include button-icon-position("right", $icon-small);
-  }
-  &.btn--medium {
-    @include button-icon-position("right", $icon-medium);
+    background-position: right 10px center;
+    padding-right: 27px;
   }
   &.btn--large {
-    @include button-icon-position("right", $icon-large);
-  }
-}
-
-.icon--left {
-  .icon--right {
-    background-position: right 2px center;
-    padding-right: 20px;
-    background-size: 15px 15px;
+    background-position: right 30px center;
+    padding-right: 62px;
   }
 }
 

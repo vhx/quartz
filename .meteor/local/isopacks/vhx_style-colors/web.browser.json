@@ -1,0 +1,45 @@
+{
+  "format": "unipackage-unibuild-pre1",
+  "packageVariables": [],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "iron:router",
+      "constraint": "=1.0.6"
+    },
+    {
+      "package": "fourseven:scss"
+    },
+    {
+      "package": "templating",
+      "constraint": "1.0.10"
+    },
+    {
+      "package": "minimongo",
+      "constraint": "1.0.6"
+    },
+    {
+      "package": "spacebars",
+      "constraint": "1.0.4"
+    }
+  ],
+  "resources": [
+    {
+      "type": "css",
+      "file": "web.browser/packages/vhx_style-colors/styles/colors.scss.css",
+      "length": 3094,
+      "offset": 0,
+      "servePath": "/packages/vhx_style-colors/styles/colors.scss.css"
+    },
+    {
+      "type": "prelink",
+      "file": "web.browser/packages/vhx_style-colors.js",
+      "length": 12646,
+      "offset": 0,
+      "servePath": "/packages/vhx_style-colors.js",
+      "sourceMap": "web.browser/packages/vhx_style-colors.js.map"
+    }
+  ]
+}

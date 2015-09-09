@@ -1,0 +1,20 @@
+{
+  "name": "vhx:style-core",
+  "summary": "VHX Core Styles",
+  "version": "0.1.0",
+  "isTest": false,
+  "plugins": [],
+  "unibuilds": [
+    {
+      "kind": "main",
+      "arch": "os",
+      "path": "os.json"
+    },
+    {
+      "kind": "main",
+      "arch": "web.browser",
+      "path": "web.browser.json"
+    }
+  ],
+  "format": "unipackage-pre2"
+}

@@ -1,0 +1,29 @@
+{
+  "format": "unipackage-unibuild-pre1",
+  "packageVariables": [],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "iron:router",
+      "constraint": "=1.0.6"
+    },
+    {
+      "package": "fourseven:scss"
+    },
+    {
+      "package": "vhx:style-core"
+    }
+  ],
+  "resources": [
+    {
+      "type": "prelink",
+      "file": "os/packages/vhx_style-forms.js",
+      "length": 0,
+      "offset": 0,
+      "servePath": "/packages/vhx_style-forms.js",
+      "sourceMap": "os/packages/vhx_style-forms.js.map"
+    }
+  ]
+}

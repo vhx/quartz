@@ -1,0 +1,105 @@
+{
+  "format": "unipackage-unibuild-pre1",
+  "packageVariables": [],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "iron:router",
+      "constraint": "=1.0.6"
+    },
+    {
+      "package": "fourseven:scss"
+    },
+    {
+      "package": "vhx:style-colors"
+    },
+    {
+      "package": "templating",
+      "constraint": "1.0.10"
+    },
+    {
+      "package": "minimongo",
+      "constraint": "1.0.6"
+    },
+    {
+      "package": "spacebars",
+      "constraint": "1.0.4"
+    }
+  ],
+  "resources": [
+    {
+      "type": "asset",
+      "file": "web.browser/packages/vhx_style-core/scss.json",
+      "length": 32,
+      "offset": 0,
+      "servePath": "/packages/vhx_style-core/scss.json",
+      "path": "scss.json"
+    },
+    {
+      "type": "css",
+      "file": "web.browser/packages/vhx_style-core/styles/forms.scss.css",
+      "length": 1962,
+      "offset": 0,
+      "servePath": "/packages/vhx_style-core/styles/forms.scss.css"
+    },
+    {
+      "type": "css",
+      "file": "web.browser/packages/vhx_style-core/styles/grid.scss.css",
+      "length": 3319,
+      "offset": 0,
+      "servePath": "/packages/vhx_style-core/styles/grid.scss.css"
+    },
+    {
+      "type": "css",
+      "file": "web.browser/packages/vhx_style-core/styles/arrows.scss.css",
+      "length": 15028,
+      "offset": 0,
+      "servePath": "/packages/vhx_style-core/styles/arrows.scss.css"
+    },
+    {
+      "type": "css",
+      "file": "web.browser/packages/vhx_style-core/styles/lists.scss.css",
+      "length": 2129,
+      "offset": 0,
+      "servePath": "/packages/vhx_style-core/styles/lists.scss.css"
+    },
+    {
+      "type": "css",
+      "file": "web.browser/packages/vhx_style-core/styles/headers.scss.css",
+      "length": 1686,
+      "offset": 0,
+      "servePath": "/packages/vhx_style-core/styles/headers.scss.css"
+    },
+    {
+      "type": "css",
+      "file": "web.browser/packages/vhx_style-core/styles/media.scss.css",
+      "length": 2242,
+      "offset": 0,
+      "servePath": "/packages/vhx_style-core/styles/media.scss.css"
+    },
+    {
+      "type": "css",
+      "file": "web.browser/packages/vhx_style-core/styles/util.scss.css",
+      "length": 9525,
+      "offset": 0,
+      "servePath": "/packages/vhx_style-core/styles/util.scss.css"
+    },
+    {
+      "type": "css",
+      "file": "web.browser/packages/vhx_style-core/styles/spacing.scss.css",
+      "length": 9331,
+      "offset": 0,
+      "servePath": "/packages/vhx_style-core/styles/spacing.scss.css"
+    },
+    {
+      "type": "prelink",
+      "file": "web.browser/packages/vhx_style-core.js",
+      "length": 16702,
+      "offset": 0,
+      "servePath": "/packages/vhx_style-core.js",
+      "sourceMap": "web.browser/packages/vhx_style-core.js.map"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "builtBy": "meteor/16",
+  "unibuildDependencies": {
+    "os.json": {
+      "files": {
+        "/Users/scottusrobus/dev/vhx-quartz/packages/vhx:style-colors/package.js": "b4785f4ee8e9b7577e6abb8d20db250db00e8116"
+      },
+      "directories": []
+    },
+    "web.browser.json": {
+      "files": {
+        "/Users/scottusrobus/dev/vhx-quartz/packages/vhx:style-colors/package.js": "b4785f4ee8e9b7577e6abb8d20db250db00e8116",
+        "/Users/scottusrobus/dev/vhx-quartz/packages/vhx:style-colors/config/_include.scss": "adc83b19e793491b1c6ea0fd8b46cd9f32e592fc",
+        "/Users/scottusrobus/dev/vhx-quartz/packages/vhx:style-colors/config/_variables.scss": "e899e57bf7dcb858aa856914dd2cb6457d0a4ff4",
+        "/Users/scottusrobus/dev/vhx-quartz/packages/vhx:style-colors/styles/colors.scss": "882e596021851333d808a0fb2c61cadd97f1e863",
+        "/Users/scottusrobus/dev/vhx-quartz/packages/vhx:style-colors/docs/code.html": "bfc9de36a9dd5f461e1b6147a1ff739e56736abf",
+        "/Users/scottusrobus/dev/vhx-quartz/packages/vhx:style-colors/docs/guide.html": "9256c551dbd718209527512968db5b63ad2525e6"
+      },
+      "directories": []
+    }
+  },
+  "pluginDependencies": {
+    "files": {
+      "/Users/scottusrobus/dev/vhx-quartz/packages/vhx:style-colors/package.js": "b4785f4ee8e9b7577e6abb8d20db250db00e8116"
+    },
+    "directories": []
+  },
+  "pluginProviderPackageMap": {
+    "vhx:style-colors": {
+      "kind": "local",
+      "sourceRoot": "/Users/scottusrobus/dev/vhx-quartz/packages/vhx:style-colors"
+    },
+    "meteor": {
+      "kind": "versioned",
+      "version": "1.1.6"
+    },
+    "iron:router": {
+      "kind": "versioned",
+      "version": "1.0.6"
+    },
+    "fourseven:scss": {
+      "kind": "versioned",
+      "version": "1.0.0"
+    },
+    "iron:core": {
+      "kind": "versioned",
+      "version": "1.0.7"
+    },
+    "templating": {
+      "kind": "versioned",
+      "version": "1.1.1"
+    },
+    "minimongo": {
+      "kind": "versioned",
+      "version": "1.0.8"
+    },
+    "spacebars": {
+      "kind": "versioned",
+      "version": "1.0.6"
+    }
+  },
+  "includeCordovaUnibuild": false
+}
