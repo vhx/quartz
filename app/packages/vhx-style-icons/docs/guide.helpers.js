@@ -1,4 +1,4 @@
-Template.guide__style_icons.helpers({
+Template.guide__style_icons_names.helpers({
   icons: function() {
     return [
       { name: 'activity' },

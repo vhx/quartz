@@ -1,6 +1,6 @@
 <template name="guide__style_icons">
   <section id="guide--style-icons">
-    <h3 class="head-3 head--navy">Icons</h3>
+    <h3 class="head-3 head--navy">Icon Styles</h3>
 
     <!-- Sizes -->
     <div class="margin-vertical-medium">
@@ -66,21 +66,6 @@
       </ul>
     </div>
 
-    <!-- Names -->
-    <div class="margin-vertical-medium">
-      <h4 class="margin-bottom-medium padding-vertical-medium border-bottom border--gray-light text--bold text--gray">Names</h4>
-
-      <ul class="margin-top-large small-block-grid-5 text-center">
-        {{#each icons}}
-            <li>
-              <h4 class="text-2 text--gray padding-bottom-small">{{name}}</h4>
-              <span class="is-inline {{css}}"><i class="icon icon--xlarge icon-{{name}}"></i></span>
-            </li>
-        {{/each}}
-      </ul>
-
-    </div>
-
     <!-- Buttons -->
     <div class="margin-vertical-large">
       <h4 class="margin-bottom-medium padding-vertical-medium border-bottom border--gray-light text--bold text--gray">Buttons</h4>
@@ -92,7 +77,7 @@
     <div class="margin-vertical-large">
       <h4 class="margin-bottom-medium padding-vertical-medium border-bottom border--gray-light text--bold text--gray">Text</h4>
 
-      <ul class="no-bullet text-left">
+      <ul class="no-bullet text-left margin-vertical-large">
         <li class="margin-bottom-medium">
           <p class="text-3 icon--left icon--xsmall icon-product margin-bottom-medium">Text w/ Icon</p>
           <p class="text-2 icon--left icon--small icon-product margin-bottom-medium">Text w/ Icon</p>
@@ -108,7 +93,7 @@
     <div class="margin-vertical-large">
       <h4 class="margin-bottom-medium padding-vertical-medium border-bottom border--gray-light text--bold text--gray">Headers</h4>
 
-      <ul class="no-bullet text-left">
+      <ul class="no-bullet text-left margin-vertical-large">
         <li class="margin-bottom-medium">
           <h1 class="head-5 icon--left icon--xsmall icon-product margin-bottom-medium">Header w/ Icon</h1>
           <h1 class="head-4 icon--left icon--small icon-product margin-bottom-medium">Header w/ Icon</h1>
@@ -118,6 +103,55 @@
         </li>
 
       </ul>
+    </div>
+
+    <!-- Circle -->
+    <div class="margin-vertical-medium">
+      <h4 class="margin-bottom-medium padding-bottom-medium border-bottom border--gray-light text--bold text--gray">Circles</h4>
+
+      <ul class="margin-top-large small-block-grid-5 text-center">
+        <li class="margin-bottom-medium">
+          <h4 class="text--gray margin-bottom-small text--small">xsmall</h4>
+          <i class="icon-circle icon--xsmall icon-upload"></i>
+        </li>
+        <li class="margin-bottom-medium">
+          <h4 class="text--gray margin-bottom-small text--small">small</h4>
+          <i class="icon-circle icon--small icon-upload"></i>
+        </li>
+        <li class="margin-bottom-medium">
+          <h4 class="text--gray margin-bottom-small text--small">medium</h4>
+          <i class="icon-circle icon--medium icon-upload"></i>
+        </li>
+        <li class="margin-bottom-medium">
+          <h4 class="text--gray margin-bottom-small text--small">large</h4>
+          <i class="icon-circle icon--large icon-upload"></i>
+        </li>
+        <li class="margin-bottom-medium">
+          <h4 class="text--gray margin-bottom-small text--small">xlarge</h4>
+          <i class="icon-circle icon--xlarge icon-upload"></i>
+        </li>
+      </ul>
+    </div>
+  </section>
+</template>
+
+<template name="guide__style_icons_names">
+  <section id="guide--style-icons-names">
+    <h3 class="head-3 head--navy">Icon Names</h3>
+
+    <!-- Names -->
+    <div class="margin-vertical-medium">
+      <h4 class="margin-bottom-medium padding-vertical-medium border-bottom border--gray-light text--bold text--gray">Names</h4>
+
+      <ul class="margin-top-large small-block-grid-5 text-center">
+        {{#each icons}}
+            <li>
+              <h4 class="text-2 text--gray padding-bottom-small">{{name}}</h4>
+              <span class="is-inline {{css}}"><i class="icon icon--xlarge icon-{{name}}"></i></span>
+            </li>
+        {{/each}}
+      </ul>
+
     </div>
   </section>
 </template>

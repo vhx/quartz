@@ -3,6 +3,52 @@
 /*.....................................
   Stand-alone icons using <i>
 ......................................*/
+.icon-circle {
+  border-radius: 50%;
+  border: 1px solid $gray-3;
+  background-color: $white;
+  box-sizing: content-box;
+  display: inline-block;
+  background-position: 50% 50% !important;
+
+  &.icon--xsmall {
+    padding: 5px;
+    background-size: $icon-xsmall $icon-xsmall;
+    width: $icon-xsmall;
+    height: $icon-xsmall;
+  }
+  &.icon--small {
+    padding: 10px;
+    background-size: $icon-small $icon-small;
+    width: $icon-small;
+    height: $icon-small;
+  }
+  &.icon--medium {
+    padding: 15px;
+    background-size: $icon-medium $icon-medium;
+    width: $icon-medium;
+    height: $icon-medium;
+  }
+  &.icon--large {
+    padding: 20px;
+    background-size: $icon-large $icon-large;
+    width: $icon-large;
+    height: $icon-large;
+  }
+  &.icon--xlarge {
+    padding: 25px;
+    background-size: $icon-xlarge $icon-xlarge;
+    width: $icon-xlarge;
+    height: $icon-xlarge;
+  }
+  &.icon--xxlarge {
+    padding: 35px;
+    background-size: $icon-xxlarge $icon-xxlarge;
+    width: $icon-xxlarge;
+    height: $icon-xxlarge;
+  }
+}
+
 .icon {
   display: inline-block;
   background-position: 50% 50%;

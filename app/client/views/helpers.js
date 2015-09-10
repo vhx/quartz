@@ -50,6 +50,7 @@ Template.style_icons.helpers({
   styleIcons: function() {
     return [
       { guide: 'guide__style_icons', code:'code__style_icons' },
+      { guide: 'guide__style_icons_names', code:'code__style_icons_names' },
     ]
   }
 })
