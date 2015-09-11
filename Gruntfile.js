@@ -11,14 +11,14 @@ module.exports = function(grunt) {
     sass: {
       dist: {
         files : {
-          'app/private/distro/vhx.css' : 'app/packages/vhx.scss'
+          'app/private/quartz-rails/vendor/assets/stylesheets/vhx.css' : 'app/packages/vhx.scss'
         }
       }
     },
     cssmin: {
       target : {
         files : {
-          'app/private/distro/vhx.min.css' : 'app/private/distro/vhx.css'
+          'app/private/quartz-rails/vendor/assets/stylesheets/vhx.min.css' : 'app/private/quartz-rails/vendor/assets/stylesheets/vhx.css'
         }
       }
     },

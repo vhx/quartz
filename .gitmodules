@@ -1,0 +1,3 @@
+[submodule "app/private/quartz-rails"]
+	path = app/private/quartz-rails
+	url = https://github.com/vhx/quartz-rails.git
