@@ -113,13 +113,13 @@ a.text--gray {
   }
 }
 
-.text--light-gray {
+.text--gray-light {
   color: $gray-2;
   &.text--transparent {
     color: transparentize($gray-2, .5);
   }
 }
-a.text--light-gray {
+a.text--gray-light {
   &:link,
   &:visited {
     color: $gray-2;
@@ -198,6 +198,9 @@ a.text--white {
 }
 .text--italic {
   font-style: italic;
+  em {
+    font-style: italic;
+  }
 }
 .text--transparent {
   color: transparentize($gray-6, .5);
