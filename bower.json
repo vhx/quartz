@@ -1,6 +1,6 @@
 {
-  "name": "Quartz",
-  "version": "0.1.1",
+  "name": "VHX Quartz",
+  "version": "0.2.2",
   "homepage": "https://github.com/vhx/quartz",
   "authors": [
     "Courtney Burton <courtney@vhx.tv>",
@@ -10,7 +10,7 @@
     "Casey Pugh <casey@vhx.tv>",
     "David Gonzalez <david@vhx.tv>"
   ],
-  "description": "Quartz - The VHX Styleguide",
+  "description": "Style guide & elements from the Design and Frontend Team at VHX.",
   "main": "app/private/distro",
   "keywords": [
     "vhx",
@@ -31,6 +31,7 @@
     "app/public",
     "node_modules",
     ".gitignore",
+    ".gitmodules",
     "Gruntfile.js",
     "package.json",
     "README.md"
