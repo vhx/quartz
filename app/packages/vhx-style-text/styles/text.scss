@@ -188,6 +188,31 @@ a.text--white {
   }
 }
 
+.text--yellow {
+  color: $vhx-yellow;
+  &.text--transparent {
+    color: transparentize($vhx-yellow, .3);
+  }
+}
+a.text--yellow {
+  &:link,
+  &:visited {
+    color: $vhx-yellow;
+    text-decoration: none;
+  }
+  &:hover,
+  &:active {
+    color: transparentize($vhx-yellow, .3);
+    text-decoration: none;
+  }
+  &.is-disabled {
+    &:link, &:visited,
+    &:hover, &:active {
+      color: $vhx-yellow;
+    }
+  }
+}
+
 /* modifiers
 ......................................*/
 .text--bold {
