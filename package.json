@@ -15,5 +15,8 @@
     "grunt-sass": "^1.0.0",
     "grunt-sass-globbing": "^1.4.0",
     "grunt-svgmin": "^2.0.1"
+  },
+  "scripts": {
+    "start": "cd ./app; meteor run --port 3001"
   }
 }
