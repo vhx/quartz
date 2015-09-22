@@ -22,7 +22,7 @@ Style guide &amp; elements + asset build pipeline for [VHX](http://vhx.tv).<br>
 
 ## Building the Ruby gem
 
-*Note:* You'll need permissions to push changes to the quartz-rails rubygem repo. Create an account at [https://rubygems.org/](https://rubygems.org/) and then let [David](david@vhx.tv) know.
+*Note:* You'll need permissions to push changes to the quartz-rails rubygem repo. Create an account at [https://rubygems.org/](https://rubygems.org/) and then let <david@vhx.tv> know.
 
 1. cd to the root of the `Quartz` app
 2. Run `grunt build` to generate the new css/scss files
