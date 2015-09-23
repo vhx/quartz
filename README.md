@@ -9,7 +9,7 @@ Style guide &amp; elements + asset build pipeline for [VHX](http://vhx.tv).<br>
 2. In Quartz repo directory, go to the app folder `cd app/`
 3. Install Meteor: `curl https://install.meteor.com/ | sh`
 4. Install Meteor dependencies with `meteor install`
-5. Run: `meteor run --port 3001`
+5. Run: `npm start`
 6. Go to: http://quartz.dev
 
 ## Initialize the Quartz-Rails submodule
