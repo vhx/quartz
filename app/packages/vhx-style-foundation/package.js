@@ -12,8 +12,8 @@ Package.onUse(function(api) {
   ]);
 
   api.addFiles([
-    'normalize.css',
-    'foundation.css'
+    'styles/normalize.css',
+    'styles/foundation.css'
   ]);
 
   api.export([]);
