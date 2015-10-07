@@ -4,7 +4,7 @@ module.exports = function(grunt) {
     sass_globbing: {
       target : {
         files : {
-          'app/packages/vhx.scss': ['app/packages/**/styles/*.scss', '!app/packages/**/styles/guide.scss']
+          'app/packages/vhx.scss': ['app/packages/**/styles/*.scss', '!app/packages/**/styles/guide.scss', '!app/packages/_vhx-style-template']
         }
       }
     },
