@@ -5,38 +5,23 @@ Style guide &amp; elements + asset build pipeline for [VHX](http://vhx.tv).<br>
 
 ## Getting Started
 
-1. Create quartz.dev pow config: `echo 3001 > ~/.pow/quartz`
-2. In Quartz repo directory, go to the app folder `cd app/`
-3. Install Meteor: `curl https://install.meteor.com/ | sh`
-4. Install Meteor dependencies with `meteor install`
-5. Run: `npm start`
-6. Go to: http://quartz.dev
+*Note:* Currently for VHX internal use.
 
-## Initialize the Quartz-Rails submodule
+**Initial Setup**
+1. After cloning the repo run `./setup`
+2. Done. Easy.
 
-1. cd into `app/private/quartz-rails`
-2. Run `git submodule update --init`
-3. Checkout to `master`
+**Starting the server**
+1. Run `npm start`
+2. Go to: http://quartz.dev
 
-*NOTE:* You'll now have a repo within a repo. Pushing from the root of `Quartz` will not affect `Quartz-Rails`, and vice versa. If you'd like to push changes made to `Quartz-Rails`, you'll have to cd into the folder and push from it.
+## Build and Release
 
-## Building the Ruby gem
+*Note:* Currently for VHX internal use. You will need permissions to push changes
+the quartz repo (VHX team members) and the quartz-rails rubygem repo. Create an
+account at [https://rubygems.org/](https://rubygems.org/) and then let
+<david@vhx.tv> know.
 
-*Note:* You'll need permissions to push changes to the quartz-rails rubygem repo. Create an account at [https://rubygems.org/](https://rubygems.org/) and then let <david@vhx.tv> know.
-
-1. cd to the root of the `Quartz` app
-2. Run `grunt build` to generate the new css/scss files
-3. Bump the `quartz-rails` version in `app/private/quartz-rails/lib/vhx/quartz/version`
-4. cd into `app/private/quartz-rails`
-5. Run `rake build`
-6. Run `rake release`
-
-## Building the Bower package
-
-1. Bump the version number in `bower.json`
-2. Stage and commit your changes
-3. Tag the commit with `git tag -a VERSION_NUMBER -m "Release version x.x.x"`
-4. Push to both github and bower with `git push origin master --tags`
-
-## TODO
-- Automate the two above things
+1. Bump the version in the `VERSION` file. Use standard practice for [semantic versioning](http://semver.org/) (i.e. MAJOR.MINOR.PATCH).
+2. Run `./build-and-release`
+3. Done. Released.
