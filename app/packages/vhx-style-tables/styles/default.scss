@@ -204,7 +204,7 @@
 
   /* table striped
   ..................................*/
-  &.striped {
+  &.table--striped {
     tbody tr {
       border: none;
     }
@@ -229,6 +229,14 @@
     }
     td.date {
       white-space: nowrap;
+    }
+  }
+
+  &.table--small {
+    th,
+    td {
+      padding: 12px 15px;
+      height: auto;
     }
   }
 
