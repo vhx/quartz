@@ -1,0 +1,5 @@
+echo 3001 > ~/.pow/quartz
+cd app/
+curl https://install.meteor.com/ | sh
+meteor install
+npm install
