@@ -7,10 +7,13 @@ sed -i.bak "1,/[0-9]\.[0-9]\.[0-9]/s/[0-9]\.[0-9]\.[0-9]/$version/" package.json
 rm app/private/quartz-rails/lib/vhx/quartz/version.rb.bak
 rm bower.json.bak
 rm package.json.bak
+cd app/private/quartz-rails
+rake build
+git commit -am "bump version to $version"
+git push origin master
+rake release
+cd ../../../
 git commit -am "bump version to $version"
 git push origin master
 git tag -a $version -m "Release version $version"
 git push origin master --tags
-cd app/private/quartz-rails
-rake build
-rake release
