@@ -17,6 +17,6 @@
     "grunt-svgmin": "^2.0.1"
   },
   "scripts": {
-    "start": "cd ./app; meteor run --port 3001"
+    "start": "cd ./app; npm install; meteor run --port 3001"
   }
 }
