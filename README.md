@@ -9,14 +9,14 @@ Style guide &amp; elements + asset build pipeline for [VHX](http://vhx.tv).<br>
 
 **Initial Setup**
 
-1. Clone the repo
-2. Run `./setup`
-2. Done.
+**1)** Clone the repo  
+**2)** Run `./setup`  
+**3)** Done.
 
 **Starting the server**
 
-1. Run `npm start`
-2. Go to: http://quartz.dev
+**1)** Run `npm start`  
+**2)** Go to: http://quartz.dev
 
 ## Build and Release
 
@@ -25,11 +25,14 @@ to the quartz repo (VHX team members) and the quartz-rails rubygem repo. Create 
 account at [https://rubygems.org/](https://rubygems.org/) and then let
 <david@vhx.tv> know.
 
-The build and release script will release both the `vhx-quartz` gem and `vhx-quartz` bower packages for use across VHX applications as needed.
 
-1. Bump the version in `VERSION`. Use standard practice for [semantic versioning](http://semver.org/)
-2. Run `./build-and-release`
-3. Done.
+**Release Steps**
+
+The build and release script will release both the `vhx-quartz` gem and `vhx-quartz` bower packages for use across VHX applications.
+
+**1)** Bump the version in `VERSION`. Use standard practice for [semantic versioning](http://semver.org/)  
+**2)** Run `./build-and-release`  
+**3)** Done.  
 
 ## Using in your Application
 
