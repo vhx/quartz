@@ -1,5 +1,0 @@
-grunt build
-
-sed 's/[0-9]{1}\.[0-9]{1}\.[0-9]{1,}/2.2.4/' app/private/quartz-rails/lib/vhx/quartz/version.rb
-sed 's/[0-9]{1}\.[0-9]{1}\.[0-9]{1,}/2.2.4/' bower.json
-cd app/private/quartz-rails
