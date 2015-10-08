@@ -15,5 +15,5 @@ rake release
 cd ../../../
 git commit -am "bump version to $version"
 git push origin master
-git tag -a $version -m "Release version $version"
+git tag -a v$version -m "Release version $version"
 git push origin master --tags
