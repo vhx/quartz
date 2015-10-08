@@ -3,3 +3,7 @@ cd app/
 curl https://install.meteor.com/ | sh
 meteor install
 npm install
+app/private/quartz-rails
+git submodule update --init
+git checkout master
+cd ../../../
