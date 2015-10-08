@@ -87,8 +87,6 @@
 ......................................*/
 .icon--xsmall {
   background-size: $icon-xsmall $icon-xsmall;
-  background-position: 0 center;
-  padding-left: 18px;
   &.text-1 {
     line-height: 24px;
   }
@@ -110,12 +108,15 @@
   &.head-4 {
     line-height: 16px;
   }
-
+  &.icon--left {
+    padding-left: 18px;
+  }
+  &.icon--right {
+    padding-right: 18px;
+  }
 }
 .icon--small {
   background-size: $icon-small $icon-small;
-  background-position: 0 center;
-  padding-left: 26px;
   line-height: $icon-small !important;
   &.text-1 {
     line-height: 24px !important;
@@ -126,25 +127,58 @@
   &.head-2 {
     line-height: 30px !important;
   }
+  &.icon--left {
+    padding-left: 26px;
+  }
+  &.icon--right {
+    padding-right: 26px;
+  }
 }
 .icon--medium {
   background-size: $icon-medium $icon-medium;
-  background-position: 0 center;
-  padding-left: 35px;
   line-height: $icon-medium !important;
   &.head-1 {
     line-height: 40px !important;
   }
+  &.icon--left {
+    padding-left: 35px;
+  }
+  &.icon--right {
+    padding-right: 35px;
+  }
 }
 .icon--large {
   background-size: $icon-large $icon-large;
-  background-position: 0 center;
-  padding-left: 40px;
   line-height: $icon-large !important;
+  &.icon--left {
+    padding-left: 40px;
+  }
+  &.icon--right {
+    padding-right: 40px;
+  }
 }
 .icon--xlarge {
   background-size: $icon-xlarge $icon-xlarge;
-  background-position: 0 center;
-  padding-left: 48px;
   line-height: $icon-xlarge !important;
+  &.icon--left {
+    padding-left: 48px;
+  }
+  &.icon--right {
+    padding-right: 48px;
+  }
+}
+
+
+.icon--xsmall,
+.icon--small,
+.icon--medium,
+.icon--large,
+.icon--xlarge {
+  &.icon--left {
+    background-position: 0 center;
+  }
+  &.icon--right {
+    display: inline-block;
+    background-position: 100% center;
+  }
 }
