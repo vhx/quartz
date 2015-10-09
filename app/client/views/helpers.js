@@ -43,8 +43,7 @@ Template.style_utilities.helpers({
       { guide: 'guide__style_borders', code:'code__style_borders' }
     ]
   }
-})
-
+});
 
 Template.style_icons.helpers({
   styleIcons: function() {
@@ -53,4 +52,12 @@ Template.style_icons.helpers({
       { guide: 'guide__style_icons_names', code:'code__style_icons_names' },
     ]
   }
-})
+});
+
+Template.style_tables.helpers({
+  styleTables: function() {
+    return [
+      { guide: 'guide__style_tables', code:'code__style_tables' },
+    ]
+  }
+});
