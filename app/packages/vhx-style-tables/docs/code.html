@@ -1,7 +1,8 @@
 <template name="code__style_tables">
   <section id="code--style-tables" class="padding-medium">
   {{#markdown}}
-    <table class="table">
+    <!-- Standard -->
+    <table class="table margin-bottom-large">
       <thead>
         <th class="text-right" width="80">ID</th>
         <th>Email</th>
@@ -30,6 +31,7 @@
       </tbody>
     </table>
 
+    <!-- Striped -->
     <table class="table table--striped">
       <thead>
         <th class="text-right" width="80">ID</th>
@@ -57,6 +59,37 @@
           <td class="text-right">$823.98</td>
         </tr>
       </tbody>
-    </table>  {{/markdown}}
+    </table>
+
+    <!-- Striped & Small -->
+    <table class="table table--striped table--small">
+      <thead>
+        <th class="text-right" width="80">ID</th>
+        <th>Title</th>
+        <th class="text-right">Length</th>
+        <th class="text-right">Budget</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="text-right">321</td>
+          <td>Cookin' with Chade</td>
+          <td class="text-right">23:12</td>
+          <td class="text-right">$12.23</td>
+        </tr>
+        <tr>
+          <td class="text-right">41</td>
+          <td>Candy Fans</td>
+          <td class="text-right">1:12:01</td>
+          <td class="text-right">$1.54</td>
+        </tr>
+        <tr>
+          <td class="text-right">8923</td>
+          <td>Hats for Warmth and Fashion</td>
+          <td class="text-right">54:52</td>
+          <td class="text-right">$823.98</td>
+        </tr>
+      </tbody>
+    </table>
+  {{/markdown}}
   </section>
 </template>
