@@ -11,17 +11,17 @@ module.exports = function(grunt) {
     sass: {
       dist: {
         files : {
-          'app/private/quartz-rails/vendor/assets/stylesheets/vhx-quartz.scss' : 'app/packages/vhx.scss'
+          'app/private/quartz-rails/vendor/assets/stylesheets/vhx-quartz.css' : 'app/packages/vhx.scss'
         }
       }
     },
-    // cssmin: {
-    //   target : {
-    //     files : {
-    //       'app/private/quartz-rails/vendor/assets/stylesheets/vhx-quartz.min.css' : 'app/private/quartz-rails/vendor/assets/stylesheets/vhx-quartz.css'
-    //     }
-    //   }
-    // },
+    cssmin: {
+      target : {
+        files : {
+          'app/private/quartz-rails/vendor/assets/stylesheets/vhx-quartz.min.css' : 'app/private/quartz-rails/vendor/assets/stylesheets/vhx-quartz.css'
+        }
+      }
+    },
     clean: ['app/private/svg-icons-renamed/', 'app/private/svg-icons-minified/'],
     fileregexrename: {
       multiColorIcons: {
@@ -116,6 +116,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-folder-list');
 
   grunt.registerTask('build-icons', ['clean', 'fileregexrename:multiColorIcons', 'svgmin', 'grunticon:multiColor']);
-  grunt.registerTask('build', ['sass_globbing', 'copy:iconExtends', 'sass']);
+  grunt.registerTask('build', ['sass_globbing', 'cssmin', 'copy:iconExtends', 'sass']);
   grunt.registerTask('files', ['folder_list']);
 }

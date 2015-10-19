@@ -9,11 +9,13 @@ rm bower.json.bak
 rm package.json.bak
 cd app/private/quartz-rails
 rake build
-git commit -am "bump version to $version"
+git add .
+git commit -m "bump version to $version"
 git push origin master
 rake release
 cd ../../../
-git commit -am "bump version to $version"
+git add .
+git commit -m "bump version to $version"
 git push origin master
 git tag -a v$version -m "Release version $version"
 git push origin master --tags
