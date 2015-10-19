@@ -185,6 +185,20 @@ select {
   );
 }
 
+/* button white shorthand
+......................................*/
+.btn-yellow {
+  @extend .btn;
+  @include button-colors(
+    $vhx-yellow,  // background
+    darken($vhx-yellow, 10%),  // background hover
+    $white,  // color
+    $white,  // color hover
+    darken($vhx-yellow, 10%),  // border color
+    darken($vhx-yellow, 10%),  // border color hover
+    $white   // loader
+  );
+}
 /* button facebook shorthand
 ......................................*/
 .btn-facebook {
