@@ -260,16 +260,18 @@ $arrow-classes: 'background-black', 'background-white', 'background-gray', 'is-a
 ......................................*/
 @function set_spacer_size($name) {
   $size: 25px;
-  @if $name == 'small' {
+  @if $name == 'xsmall' {
     $size: 5px;
-  } @else if $name == 'smedium' {
+  } @else if $name == 'small' {
     $size: 10px;
   } @else if $name == 'medium' {
-    $size: 15px;
+    $size: 20px;
   } @else if $name == 'large' {
-    $size: 35px;
+    $size: 40px;
   } @else if $name == 'xlarge' {
-    $size: 65px;
+    $size: 80px;
+  } @else if $name == 'xxlarge' {
+    $size: 160px;
   }
 
   @return $size;
