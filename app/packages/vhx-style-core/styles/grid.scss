@@ -44,23 +44,20 @@ html {
 ......................................*/
 .content-container {
   padding: 0px 0 75 0;
-
-  .standard-width-container {
-    padding: 0px 20;
-    position: relative;
-    margin: 0 auto;
-  }
-  .full-width-container {
-    position: relative;
-    width: 100%;
-  }
-
+}
+.standard-width-container {
+  padding: 0px 20;
+  position: relative;
+  margin: 0 auto;
   @media #{$medium-up} {
-    .standard-width-container {
-      padding: 0px 35;
-    }
+    padding: 0px 35;
   }
 }
+.full-width-container {
+  position: relative;
+  width: 100%;
+}
+
 
 %media-shared {
   @include cf();
