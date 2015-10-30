@@ -82,3 +82,12 @@ StyleIcons = RouteController.extend({
     this.render();
   }
 });
+
+// style tables
+StyleTables = RouteController.extend({
+  template: 'style_tables',
+  data: function() {},
+  action: function () {
+    this.render();
+  }
+});

@@ -49,8 +49,14 @@ Router.route('/styleguide/reading', {
   controller: 'StyleReading'
 });
 
-// reading
+// icons
 Router.route('/styleguide/icons', {
   name: 'style_icons',
   controller: 'StyleIcons'
+});
+
+// tables
+Router.route('/styleguide/tables', {
+  name: 'style_tables',
+  controller: 'StyleTables'
 });
