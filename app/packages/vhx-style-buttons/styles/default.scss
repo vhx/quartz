@@ -184,20 +184,7 @@ select {
     $gray-6   // loader
   );
 }
-/* button purple shorthand
-......................................*/
-.btn-purple {
-  @extend .btn;
-  @include button-colors(
-    $vhx-purple-1,  // background
-    darken($vhx-purple-1, 10%),  // background hover
-    $white,  // color
-    $white,  // color hover
-    darken($vhx-purple-1, 10%),  // border color
-    darken($vhx-purple-1, 10%),  // border color hover
-    $white   // loader
-  );
-}
+
 /* button yellow shorthand
 ......................................*/
 .btn-yellow {
