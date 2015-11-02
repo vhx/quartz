@@ -43,10 +43,10 @@ html {
 /* containers
 ......................................*/
 .content-container {
-  padding: 0px 0 75 0;
+  padding: 0px 0 75px 0;
 }
 .standard-width-container {
-  padding: 0px 20;
+  padding: 0px 20px;
   position: relative;
   margin: 0 auto;
   @media #{$medium-up} {
