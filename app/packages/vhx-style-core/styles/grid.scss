@@ -19,13 +19,13 @@ html {
 .centered {
   text-align: center;
 }
-.contain {
-  position: relative;
-  // padding: 25px;
-}
+
+.contain,
+.relative,
 .position {
   position: relative;
 }
+
 .contain-300 {
   position: relative;
   width: 300px  !important;
