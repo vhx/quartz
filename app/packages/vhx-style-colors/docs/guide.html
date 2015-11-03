@@ -48,6 +48,44 @@
   </section>
 </template>
 
+<template name="guide__style_tools_colors">
+  <section id="guide--style-tools-colors">
+    <h3 class="head-3 head--navy">Tools</h3>
+
+    <!-- Darken -->
+    <div class="margin-vertical-large">
+      <h4 class="margin-bottom-medium padding-bottom-small border-bottom border--gray-light text--bold text--gray">Darken Color (ruby)</h4>
+      <p class="margin-bottom-medium text-2">For alternating a text color when the outputted background color is too light (i.e. unknown site theme colors), we can user our Darken Text helper.</p>
+
+      <p><em>Example: As shown a white site color button does not work with the default white text.
+      Using our helper method we determine the button background's lightness and output black text if it's too light.</em></p>
+
+      <button class="btn-white inline margin-top-medium" style="color: #fff">White Text</button>
+      <button class="btn-white inline margin-left-medium" style="color: #000">Black Text</button>
+    </div>
+
+    <!-- Lighten/Darken Text -->
+    <div class="margin-vertical-large">
+      <h4 class="margin-bottom-medium padding-bottom-small border-bottom border--gray-light text--bold text--gray">Lighten/Darken Text</h4>
+      <p class="margin-bottom-medium text-2">For lightening or darkening a color (Ruby or SASS)</p>
+
+      <div class="bg-teal-dark inline padding-medium margin-right-small text--white">Darken Teal</div>
+      <div class="bg-teal-2 inline padding-medium margin-right-small text--white">Regular Teal</div>
+      <div class="bg-teal-light inline padding-medium margin-right-small text--white">Lighten Teal</div>
+    </div>
+
+    <!-- Transparentize -->
+    <div class="margin-vertical-large">
+      <h4 class="margin-bottom-medium padding-bottom-small border-bottom border--gray-light text--bold text--gray">Transparency</h4>
+      <p class="margin-bottom-medium text-2">For tranparentizing a color (SASS)</p>
+
+      <div class="bg-teal-2 inline padding-medium margin-right-small text--white" style="opacity: .50">50% Teal</div>
+      <div class="bg-teal-2 inline padding-medium margin-right-small text--white">Regular Teal</div>
+    </div>
+
+  </section>
+</template>
+
 <template name="guide__style_brand_colors">
   <section id="guide--style-brand-colors">
     <h3 class="head-3 head--navy">Brand Colors</h3>

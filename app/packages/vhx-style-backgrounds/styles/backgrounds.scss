@@ -14,6 +14,15 @@
 .bg-teal-2 {
   background-color: $teal-2;
 }
+.bg-teal-dark {
+  background-color: darken($teal-2, 10%);
+}
+.bg-teal-light {
+  background-color: lighten($teal-2, 10%);
+}
+.bg-teal-transparent {
+  background-color: transparentize($teal-2, .5);
+}
 
 /* Black & White
 ......................................*/

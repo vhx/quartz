@@ -35,6 +35,26 @@
   </section>
 </template>
 
+<template name="code__style_tools_colors">
+  <section id="code--style-tools-colors" class="padding-medium">
+  {{#markdown}}
+
+    --TOOLS--
+
+    <!-- Ruby Methods-->
+    darken_text?(hex) ? '#000' : '#fff'
+    darken_color(hex_color, .5)
+    lighten_color(hex_color, .5)
+
+    <!-- SASS Methods-->
+    darken($teal-2, 10%)
+    lighten($teal-2, 10%)
+    transparentize($teal-2, .5)
+
+  {{/markdown}}
+  </section>
+</template>
+
 <template name="code__style_brand_colors">
   <section id="code--style-brand-colors" class="padding-medium">
   {{#markdown}}
@@ -76,11 +96,6 @@
     $tumblr-blue
     $paypal-blue
     $roku-purple
-
-    <!-- SASS Methods-->
-    darken($facebook-blue, 10%)
-    lighten($facebook-blue, 10%)
-    transparentize($facebook-blue, .5)
 
   {{/markdown}}
   </section>
