@@ -4,6 +4,22 @@
 $arrow-colors: #000000, #ffffff, $gray-1, $red, $teal-2;
 $arrow-classes: 'background-black', 'background-white', 'background-gray', 'is-alert', 'is-error', 'is-success';
 
+// RANGES
+// We use these functions to define ranges for various things, like media queries.
+@function lower-bound($range) {
+  @if length($range) <= 0 {
+    @return 0;
+  }
+  @return nth($range, 1);
+}
+
+@function upper-bound($range) {
+  @if length($range) < 2 {
+    @return 999999999999;
+  }
+  @return nth($range, 2);
+}
+
 @mixin arrow-colors($position) {
   $primary-pos: bottom;
   $secondary-pos: top;
