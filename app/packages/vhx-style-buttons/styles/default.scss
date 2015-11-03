@@ -91,7 +91,7 @@ select {
     $white,  // color hover
     $gray-6,  // border color
     $gray-6,   // border color hover
-    $gray-7   // loader
+    375667   // loader
   );
 }
 
@@ -136,7 +136,7 @@ select {
     $white,  // color hover
     $vhx-purple,  // border color
     darken($vhx-purple, 10%),   // border hover
-    ffffff // loader
+    ffffff  // loader
   );
 }
 
@@ -144,14 +144,14 @@ select {
 ......................................*/
 .btn-green {
   @extend .btn;
-  @include button-colors (
-    #9DBB36,  // background
-    #7da53e,  // background hover
-    #FFFFFF,  // color
-    #FFFFFF,  // color hover
-    #9DBB36,  // border color
-    #9DBB36,  // border color hover
-    #9DBB36   // loader
+  @include button-colors(
+    $vhx-green,  // background
+    darken($vhx-green, 10%),  // background hover
+    $white,  // color
+    $white,  // color hover
+    $vhx-green,  // border color
+    darken($vhx-green, 10%),  // border color hover
+    ffffff   // loader
   );
 }
 
@@ -181,7 +181,7 @@ select {
     $gray-6,  // color hover
     $gray-3,  // border color
     $gray-3,  // border color hover
-    $gray-6   // loader
+    5E7887   // loader
   );
 }
 
@@ -196,7 +196,7 @@ select {
     $white,  // color hover
     darken($vhx-yellow, 10%),  // border color
     darken($vhx-yellow, 10%),  // border color hover
-    $white   // loader
+    ffffff   // loader
   );
 }
 /* button facebook shorthand
@@ -210,7 +210,7 @@ select {
     $white,  // color hover
     darken($facebook-blue, 10%),  // border color
     darken($facebook-blue, 10%),   // border color hover
-    $white  // loader
+    ffffff  // loader
   );
 }
 
@@ -225,7 +225,7 @@ select {
     $white,  // color hover
     darken($twitter-blue, 10%),  // border color
     darken($twitter-blue, 10%),   // border color hover
-    $white  // loader
+    ffffff  // loader
   );
 }
 
@@ -240,7 +240,7 @@ select {
     $white,  // color hover
     transparentize($white, 1),  // border color
     transparentize($white, 1),   // border color hover
-    $white  // loader
+    ffffff  // loader
   );
 }
 
@@ -255,7 +255,7 @@ select {
     $white,  // color hover
     darken($tumblr-blue, 10%),  // border color
     darken($tumblr-blue, 10%),   // border color hover
-    $white  // loader
+    ffffff  // loader
   );
 }
 
@@ -270,7 +270,7 @@ select {
     $white,  // color hover
     darken($paypal-blue, 10%),  // border color
     darken($paypal-blue, 10%),   // border color hover
-    $white  // loader
+    ffffff  // loader
   );
 }
 
@@ -285,7 +285,7 @@ select {
     $white,  // color hover
     darken($roku-purple, 10%),  // border color
     darken($roku-purple, 10%),   // border color hover
-    $white  // loader
+    ffffff  // loader
   );
 }
 
@@ -522,7 +522,6 @@ select {
     margin-right: .5% !important;
   }
 }
-
 
 
 /* buttons group

@@ -12,7 +12,7 @@
       <h4 class="margin-bottom-medium padding-bottom-small border-bottom border--gray-light text--bold text--gray">Black and White</h4>
 
       {{#each core_bw_colors}}
-        <div class="is-inline margin-right-medium margin-bottom-medium {{css}}">
+        <div class="inline margin-right-medium margin-bottom-medium {{css}}">
           <span class="square square--large {{name}} {{sub_css}}">
             <span class="square-tag tag text-3">${{name}}</span>
           </span>
@@ -25,7 +25,7 @@
       <h4 class="margin-bottom-medium padding-bottom-small border-bottom border--gray-light text--bold text--gray">Grays</h4>
 
       {{#each core_gray_colors}}
-        <div class="is-inline margin-right-medium margin-bottom-medium {{css}}">
+        <div class="inline margin-right-medium margin-bottom-medium {{css}}">
           <span class="square square--large {{name}} {{sub_css}}">
             <span class="square-tag tag text-3">${{name}}</span>
           </span>
@@ -38,7 +38,7 @@
       <h4 class="margin-bottom-medium padding-bottom-small border-bottom border--gray-light text--bold text--gray">Other</h4>
 
       {{#each core_other_colors}}
-        <div class="is-inline margin-right-medium margin-bottom-medium {{css}}">
+        <div class="inline margin-right-medium margin-bottom-medium {{css}}">
           <span class="square square--large {{name}} {{sub_css}}">
             <span class="square-tag tag text-3">${{name}}</span>
           </span>
@@ -57,8 +57,8 @@
       <h4 class="margin-bottom-medium padding-bottom-small border-bottom border--gray-light text--bold text--gray">Darken Color (ruby)</h4>
       <p class="margin-bottom-medium text-2">For alternating a text color when the outputted background color is too light (i.e. unknown site theme colors), we can user our Darken Text helper.</p>
 
-      <p><em>Example: As shown a white site color button does not work with the default white text.
-      Using our helper method we determine the button background's lightness and output black text if it's too light.</em></p>
+      <p><em>Example:</em> As shown a white site color button does not work with the default white text.
+      Using our helper method we determine the button background's lightness and output black text if it's too light.</p>
 
       <button class="btn-white inline margin-top-medium" style="color: #fff">White Text</button>
       <button class="btn-white inline margin-left-medium" style="color: #000">Black Text</button>
@@ -69,9 +69,9 @@
       <h4 class="margin-bottom-medium padding-bottom-small border-bottom border--gray-light text--bold text--gray">Lighten/Darken Text</h4>
       <p class="margin-bottom-medium text-2">For lightening or darkening a color (Ruby or SASS)</p>
 
-      <div class="bg-teal-dark inline padding-medium margin-right-small text--white">Darken Teal</div>
+      <div class="inline padding-medium margin-right-small text--white" style="background: #1a8e87;">Darken Teal</div>
       <div class="bg-teal-2 inline padding-medium margin-right-small text--white">Regular Teal</div>
-      <div class="bg-teal-light inline padding-medium margin-right-small text--white">Lighten Teal</div>
+      <div class="inline padding-medium margin-right-small text--white" style="background: #34dad0;">Lighten Teal</div>
     </div>
 
     <!-- Transparentize -->
@@ -103,7 +103,7 @@
       <h4 class="margin-bottom-medium padding-bottom-small border-bottom border--gray-light text--bold text--gray">VHX Brand Palette (Marketing Purposes)</h4>
 
       {{#each brand_colors}}
-        <div class="is-inline margin-right-medium margin-bottom-medium {{css}}">
+        <div class="inline margin-right-medium margin-bottom-medium {{css}}">
           <span class="square square--large vhx-{{name}}">
             <span class="square-tag tag text-3">$vhx-{{name}}</span>
           </span>
@@ -125,7 +125,7 @@
       </div>
 
       {{#each external_colors}}
-        <div class="is-inline margin-right-medium margin-bottom-medium {{css}}">
+        <div class="inline margin-right-medium margin-bottom-medium {{css}}">
           <span class="square square--large {{name}}">
             <span class="square-tag tag text-3">${{name}}</span>
           </span>

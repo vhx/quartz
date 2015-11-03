@@ -14,11 +14,9 @@
 
 /* display
 ......................................*/
-.is-block,
 .block {
   display: block !important;
 }
-.is-inline,
 .inline, {
   display: inline-block !important;
 }
@@ -29,29 +27,6 @@
   word-break: break-word;
 }
 
-
-/* widths
-......................................*/
-@for $i from 1 through 16 {
-  .width-only {
-    @media only screen and (min-width:  64.063em) {
-      &.large-#{$i} {
-        width: $i/16 * 100%;
-      }
-    }
-    @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-      &.medium-#{$i} {
-        width: $i/16 * 100%;
-      }
-    }
-
-    @media only screen and (max-width: 40em) {
-      &.small-#{$i} {
-        width: $i/16 * 100%;
-      }
-    }
-  }
-}
 
 /* scrollable content
 ......................................*/
@@ -70,10 +45,6 @@
       }
     }
   }
-}
-
-.cell {
-  display: table-cell !important;
 }
 
 .fill-height {
@@ -104,13 +75,6 @@
     max-width: 40%;
   }
 }
-.group {
-  @include cf();
-}
-.uppercase,
-.upper {
-  text-transform: uppercase;
-}
 
 hr.column {
   position: relative;
@@ -135,14 +99,6 @@ hr.column {
   }
 }
 
-.force_z_top {
+.force-z-top {
   z-index: 2147483647 !important;
-}
-
-// center an element in a parent that has explicitly set height
-// http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/
-.vertical-center {
-  transform: translateY(-50%);
-  position: relative;
-  top: 50%;
 }

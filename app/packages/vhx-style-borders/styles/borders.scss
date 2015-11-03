@@ -85,9 +85,11 @@
   }
 }
 
-.box-shadow {
+.box-shadow,
+.shadow {
   box-shadow: 0 0 5px 0 $gray-2;
 }
-.box-radius {
+.box-radius,
+.radius {
   border-radius: 5px;
 }

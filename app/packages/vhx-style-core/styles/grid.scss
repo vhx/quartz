@@ -7,30 +7,9 @@ html {
   min-height: 100%;
   height: 100%;
 }
-.full-width {
-  .row,
-  &.row {
-    max-width: 100%;
-  }
-}
 
-// deprecate this
-.centered-content,
-.centered {
-  text-align: center;
-}
-
-.contain,
-.relative,
-.position {
+.relative {
   position: relative;
-}
-
-.contain-300 {
-  position: relative;
-  width: 300px  !important;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .pull {
@@ -42,9 +21,6 @@ html {
 
 /* containers
 ......................................*/
-.content-container {
-  padding: 0px 0 75px 0;
-}
 .standard-width-container {
   padding: 0px 20px;
   position: relative;

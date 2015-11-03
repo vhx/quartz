@@ -230,6 +230,9 @@ a.text--yellow {
 .text--transparent {
   color: transparentize($gray-6, .5);
 }
+.text---uppercase {
+  text-transform: uppercase;
+}
 
 .text-contain {
   &.text-1 {
