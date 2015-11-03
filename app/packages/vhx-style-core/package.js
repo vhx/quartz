@@ -28,7 +28,6 @@ Package.onUse(function(api) {
     'styles/grid.scss',
     'styles/arrows.scss',
     'styles/lists.scss',
-    'styles/headers.scss',
     'styles/media.scss',
     'styles/util.scss',
     'styles/spacing.scss',
