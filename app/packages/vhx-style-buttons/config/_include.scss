@@ -23,8 +23,7 @@
   &:hover,
   &.is-hover,
   &:focus:hover,
-  &:focus.is-hover,
-  &.is-selected {
+  &:focus.is-hover {
     color: $color-hover;
     cursor: pointer;
     background-color: $background-hover;
@@ -38,6 +37,13 @@
     color: $color-hover;
     background-color: $background;
     border: 1px solid $border-color;
+  }
+
+  &.is-selected {
+    color: $color-hover;
+    cursor: pointer;
+    background-color: $background-hover;
+    border: 1px solid $border-color-hover;
   }
 
   &[disabled],
