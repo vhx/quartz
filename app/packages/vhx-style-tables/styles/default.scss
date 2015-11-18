@@ -248,6 +248,25 @@
     }
   }
 
+  /* table striped
+  ..................................*/
+  &.table--block {
+    thead,
+    th,
+    tr,
+    td {
+      display: block;
+    }
+    th,
+    td {
+      float: left;
+    }
+    thead,
+    tr {
+      width: 100%;
+    }
+
+  }
 }
 .firefox .table {
   .row-head {
