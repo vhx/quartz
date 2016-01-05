@@ -8,10 +8,10 @@
 ......................................*/
 .head {
   color: $gray-7;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
   font-family: $font-brandon;
-  strong {
+  .text--bold {
     font-weight: 600;
   }
 }
@@ -40,6 +40,7 @@
 
 .head-4 {
   @extend .head;
+  font-weight: 600;
   font-size: 16px;
   line-height: 16px;
   letter-spacing: 1px;
@@ -47,6 +48,7 @@
 
 .head-5 {
   @extend .head;
+  font-weight: 600;
   font-size: 14px;
   line-height: 14px;
   letter-spacing: 1px;
