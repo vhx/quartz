@@ -1,0 +1,186 @@
+/*.....................................
+  Admin Dropdown
+......................................*/
+.dropdown {
+  &.is-force-top {
+    overflow: hidden;
+  }
+  &.forced-top {
+    position: absolute;
+    z-index: 2147483639;
+    .dropdown-list {
+      top: 0;
+      left: 0;
+      display: block;
+    }
+  }
+  position: relative;
+
+  &.is-open {
+    display: block;
+    .dropdown-list {
+      text-align: left;
+      display: block;
+      right: 0;
+      left: auto;
+    }
+  }
+  select {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+  }
+  &.dropdown--icon-only {
+    .dropdown-list {
+      top: 30px;
+    }
+  }
+  .dropdown-list {
+    display: none;
+    background: #fff;
+    z-index: 999999998;
+    border: 1px solid $ac-default-light;
+    min-width: 100%;
+    max-width: 500px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50px;
+    right: auto;
+    left: -999999px;
+    &.scrolling {
+      ul {
+        overflow-y:  scroll;
+      }
+    }
+    ul {
+      margin: 0;
+      list-style: none;
+      padding: rem-calc(10 15);
+      max-height: rem-calc(350);
+    }
+    li {
+      padding: 7px 0;
+    }
+    a {
+      white-space: nowrap;
+    }
+    a.has-wrap {
+      white-space: normal;
+      word-break: break-word;
+    }
+    a:link,
+    a:visited {
+      &.link-primary {
+        color: $ac-pri-mid;
+      }
+      color: $ac-default-light;
+    }
+    a:link,
+    a:visited {
+      &.link-primary {
+        .has-icon {
+          color: $ac-pri-mid;
+        }
+      }
+      .has-icon {
+        color: $ac-default-dark;
+      }
+    }
+    a.is-hover,
+    a:hover,
+    a:active,
+    a.is-active {
+      &.link-primary {
+        color: $ac-pri-dark;
+      }
+      color: $ac-default-dark;
+    }
+
+    &:after, &:before {
+      bottom: 100%;
+      right: 22px;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+    }
+
+    &:after {
+      border-color: rgba(255, 255, 255, 0);
+      border-bottom-color: #ffffff;
+      border-width: 5px;
+      margin-right: -9px;
+    }
+    &:before {
+      border-color: rgba(154, 170, 178, 0);
+      border-bottom-color: #9aaab2;
+      border-width: 6px;
+      margin-right: -10px;
+    }
+  }
+  &.small .dropdown-list { width: rem-calc(100); }
+  &.smedium .dropdown-list { width: rem-calc(175); }
+  &.medium .dropdown-list { width: rem-calc(200); }
+  &.xmedium .dropdown-list { width: rem-calc(275); }
+  &.large .dropdown-list { width: rem-calc(350); }
+  &.xlarge .dropdown-list { width: rem-calc(500); }
+}
+.datepicker {
+  min-width: rem-calc(275);
+  @extend %cf;
+  .dropdown {
+    float: right;
+    width: 50%;
+  }
+  .label.text-stacked {
+    float: right;
+    margin-right: rem-calc(10);
+    position: relative;
+    top: rem-calc(4);
+  }
+}
+
+
+/*.....................................
+  Admin Dropdown Alt
+......................................*/
+.dropdown {
+  position: relative;
+  @extend %cf;
+  &.is-open {
+    display: block;
+    .dropdown-list-alt {
+      display: block;
+      right: auto;
+      left: 15px;
+    }
+  }
+  .dropdown-list-alt {
+    display: none;
+    background: #fff;
+    z-index: 999999998;
+    border: 1px solid #ccc;
+    min-width: 175px;
+    max-width: rem-calc(500);
+    position: absolute;
+    top: rem-calc(50px);
+    right: auto;
+    left: -999999px;
+    &.radius {
+      border-radius: 5px;
+    }
+    ul {
+      margin: 0;
+      list-style: none;
+      padding: rem-calc(10 15);
+      max-height: rem-calc(350);
+    }
+    li {
+      padding: 7px 0;
+    }
+  }
+}
