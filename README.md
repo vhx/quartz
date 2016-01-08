@@ -15,7 +15,7 @@ Style guide &amp; elements + asset build pipeline for [VHX](http://vhx.tv).<br>
 
 **Starting the server**
 
-**1)** Run `npm start`  
+**1)** Run `./server`  
 **2)** Go to: http://quartz.dev
 
 ## Build and Release
@@ -55,7 +55,7 @@ gem install vhx-quartz
 ```
 
 **3)** Then include in your layout or SASS files
-  
+
 *a. In your Layout*
 
   Add the following to your `config.rb` file
@@ -63,26 +63,26 @@ gem install vhx-quartz
 sprockets.import_asset 'vhx-quartz.css'
 ```
 
-Then include in your layout directly 
+Then include in your layout directly
 ```html
 <%= stylesheet_link_tag  'vhx-quartz' %>
 ```
 
 *b. Or in your SASS files*
 
-At the top of your file, either via the asset pipeline 
+At the top of your file, either via the asset pipeline
 ```sass
 //= require vhx-quartz
 ```
 
-Or via a SASS import 
+Or via a SASS import
 ```sass
 @import "vhx-quartz"
 ```
 
 ### Via the Bower Package
 
-**1)**  Install Bower via npm if you don't already have it installed 
+**1)**  Install Bower via npm if you don't already have it installed
 ```shell
 npm install -g bower
 ```
