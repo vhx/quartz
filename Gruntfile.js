@@ -118,4 +118,4 @@ module.exports = function(grunt) {
   grunt.registerTask('build-icons', ['clean', 'fileregexrename:multiColorIcons', 'svgmin', 'grunticon:multiColor']);
   grunt.registerTask('build', ['sass_globbing', 'cssmin', 'copy:iconExtends', 'sass']);
   grunt.registerTask('files', ['folder_list']);
-}
+};

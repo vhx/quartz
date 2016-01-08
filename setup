@@ -5,4 +5,4 @@ npm install
 cd private/quartz-rails
 git submodule update --init
 git checkout master
-cd ../../../
+cd ../../
