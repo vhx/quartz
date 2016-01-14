@@ -2,127 +2,209 @@
   <section id="guide--style-tables">
     <h3 class="head-3 head--navy text--bold">Tables</h3>
 
+    <!-- Intro -->
+    <div class="margin-vertical-large">
+      <p class="margin-bottom-medium text-2">Tables cells/column can make use our alignment classes (<code>text-right</code>, <code>text-left</code>, <code>text-center</code>) as well as our grid system column sizing (e.g. <code>small-8</code>, <code>medium-4</code> etc).</p>
+    </div>
+
+    <!-- Standard -->
     <h4 class="margin-bottom-medium padding-bottom-small border-bottom border--gray-light text--bold text--gray margin-top-large">Standard</h4>
-    <table class="table margin-bottom-large">
+    <table class="table table--ticks margin-bottom-large">
       <thead>
-        <th class="text-right" width="80">ID</th>
-        <th class="text-left">Email</th>
-        <th class="text-right">Net Worth</th>
-        <th width="120">Species</th>
+        <tr>
+          <th class="text-right small-2">ID</th>
+          <th class="text-left small-5">Email</th>
+          <th class="text-right small-5">Net Worth</th>
+          <th class="text-left small-4">Species</th>
+        </tr>
       </thead>
       <tbody>
         <tr>
           <td class="text-right">324</td>
-          <td>sbone@vhx.tv</td>
+          <td>human@vhx.tv</td>
           <td class="text-right">$1.99</td>
           <td>Human</td>
         </tr>
         <tr>
-          <td class="text-right">94</td>
-          <td>chad@vhx.tv</td>
-          <td class="text-right">$49.21</td>
+          <td class="text-right">41</td>
+          <td>cat@vhx.tv</td>
+          <td class="text-right">$0.29</td>
+          <td>Cat</td>
+        </tr>
+        <tr>
+          <td class="text-right">8</td>
+          <td>dog@vhx.tv</td>
+          <td class="text-right">$121.89</td>
           <td>Dog</td>
         </tr>
+      </tbody>
+    </table>
+
+    <!-- Standard w/ Clickable Rows -->
+    <h4 class="margin-bottom-medium padding-bottom-small border-bottom border--gray-light text--bold text--gray margin-top-large">Standard with Clickable Rows</h4>
+    <table class="table table--ticks margin-bottom-large">
+      <thead>
         <tr>
-          <td class="text-right">8814</td>
-          <td>kathleen@vhx.tv</td>
-          <td class="text-right">$523.12</td>
+          <th class="text-right small-2">ID</th>
+          <th class="text-left small-5">Email</th>
+          <th class="text-right small-5">Net Worth</th>
+          <th class="text-left small-4">Species</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="is-clickable">
+          <td class="text-right">324</td>
+          <td>human@vhx.tv</td>
+          <td class="text-right">$1.99</td>
           <td>Human</td>
         </tr>
+        <tr class="is-clickable">
+          <td class="text-right">41</td>
+          <td>cat@vhx.tv</td>
+          <td class="text-right">$0.29</td>
+          <td>Cat</td>
+        </tr>
+        <tr class="is-clickable">
+          <td class="text-right">8</td>
+          <td>dog@vhx.tv</td>
+          <td class="text-right">$121.89</td>
+          <td>Dog</td>
+        </tr>
       </tbody>
     </table>
 
+    <!-- Striped -->
     <h4 class="margin-bottom-medium padding-bottom-small border-bottom border--gray-light text--bold text--gray margin-top-large">Striped</h4>
-    <table class="table table--striped margin-bottom-large">
+    <table class="table table--ticks table--striped margin-bottom-large">
       <thead>
-        <th class="text-right" width="80">ID</th>
-        <th class="text-left">Title</th>
-        <th class="text-right" width="120">Length</th>
-        <th class="text-right" width="120">Budget</th>
+        <tr>
+          <th class="text-right small-2">ID</th>
+          <th class="text-left small-5">Email</th>
+          <th class="text-right small-5">Net Worth</th>
+          <th class="text-left small-4">Species</th>
+        </tr>
       </thead>
       <tbody>
         <tr>
-          <td class="text-right">321</td>
-          <td>Cookin' with Chade</td>
-          <td class="text-right">23:12</td>
-          <td class="text-right">$12.23</td>
+          <td class="text-right">324</td>
+          <td>human@vhx.tv</td>
+          <td class="text-right">$1.99</td>
+          <td>Human</td>
         </tr>
         <tr>
           <td class="text-right">41</td>
-          <td>Candy Fans</td>
-          <td class="text-right">1:12:01</td>
-          <td class="text-right">$1.54</td>
+          <td>cat@vhx.tv</td>
+          <td class="text-right">$0.29</td>
+          <td>Cat</td>
         </tr>
-        <tr>
-          <td class="text-right">8923</td>
-          <td>Hats for Warmth and Fashion</td>
-          <td class="text-right">54:52</td>
-          <td class="text-right">$823.98</td>
+        <tr class="is-clickable">
+          <td class="text-right">8</td>
+          <td>dog@vhx.tv</td>
+          <td class="text-right">$121.89</td>
+          <td>Dog</td>
         </tr>
       </tbody>
     </table>
 
-    <h4 class="margin-bottom-medium padding-bottom-small border-bottom border--gray-light text--bold text--gray margin-top-large">Striped & Small</h4>
-    <table class="table table--striped table--small">
+    <!-- Striped with Brandon Font Headers -->
+    <h4 class="margin-bottom-medium padding-bottom-small border-bottom border--gray-light text--bold text--gray margin-top-large">Striped w/ Brandon Font Headers</h4>
+    <table class="table table--ticks table--striped margin-bottom-large">
       <thead>
-        <th class="text-right" width="80">ID</th>
-        <th class="text-left">Title</th>
-        <th class="text-right" width="120">Length</th>
-        <th class="text-right" width="120">Budget</th>
+        <tr>
+          <th class="head-5 text--gray text-right small-2">ID</th>
+          <th class="head-5 text--gray text-left small-5">Email</th>
+          <th class="head-5 text--gray text-right small-5">Net Worth</th>
+          <th class="head-5 text--gray text-left small-4">Species</th>
+        </tr>
       </thead>
       <tbody>
         <tr>
-          <td class="text-right">321</td>
-          <td>Cookin' with Chade</td>
-          <td class="text-right">23:12</td>
-          <td class="text-right">$12.23</td>
+          <td class="text-right">324</td>
+          <td>human@vhx.tv</td>
+          <td class="text-right">$1.99</td>
+          <td>Human</td>
         </tr>
         <tr>
           <td class="text-right">41</td>
-          <td>Candy Fans</td>
-          <td class="text-right">1:12:01</td>
-          <td class="text-right">$1.54</td>
+          <td>cat@vhx.tv</td>
+          <td class="text-right">$0.29</td>
+          <td>Cat</td>
         </tr>
         <tr>
-          <td class="text-right">8923</td>
-          <td>Hats for Warmth and Fashion</td>
-          <td class="text-right">54:52</td>
-          <td class="text-right">$823.98</td>
+          <td class="text-right">8</td>
+          <td>dog@vhx.tv</td>
+          <td class="text-right">$121.89</td>
+          <td>Dog</td>
         </tr>
       </tbody>
     </table>
 
+    <!-- Small/Striped and Truncated -->
+    <h4 class="margin-bottom-medium padding-bottom-small border-bottom border--gray-light text--bold text--gray margin-top-large">Striped, Small, &amp; Truncated</h4>
+    <table class="table table--striped table--ticks table--small table--truncate">
+      <thead>
+        <tr>
+          <th class="text-right small-2">ID</th>
+          <th class="text-left small-5">Email</th>
+          <th class="text-right small-5">Net Worth</th>
+          <th class="text-left small-4">Species</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="is-clickable">
+          <td class="text-right">324</td>
+          <td>human@vhx.tv</td>
+          <td class="text-right">$1.99</td>
+          <td>Human</td>
+        </tr>
+        <tr class="is-clickable">
+          <td class="text-right">41</td>
+          <td>cat@vhx.tv</td>
+          <td class="text-right">$0.29</td>
+          <td>Cat</td>
+        </tr>
+        <tr class="is-clickable">
+          <td class="text-right">8</td>
+          <td>dog@vhx.tv</td>
+          <td class="text-right">$121.89</td>
+          <td>Dog</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Block -->
     <h4 class="margin-bottom-medium padding-bottom-small border-bottom border--gray-light text--bold text--gray margin-top-large">Block</h4>
-    <table class="table table--block margin-bottom-large">
+    <p class="text-2">Block table allow for more style flexibilty, as all typical table style attributes are turned off. Floated positioning is used instead. Not that column class sizes are required on all <code>td</code> elements for consistency.</p>
+
+    <table class="table table--ticks table--block margin-bottom-large">
       <thead>
-        <th class="text-right small-1-5">ID</th>
-        <th class="text-left small-2-5">Email</th>
-        <th class="text-right small-1-5">Net Worth</th>
-        <th class="text-left small-1-5">Species</th>
+        <tr>
+          <th class="text-right small-2">ID</th>
+          <th class="text-left small-5">Email</th>
+          <th class="text-right small-5">Net Worth</th>
+          <th class="text-left small-4">Species</th>
+        </tr>
       </thead>
       <tbody>
-        <tr>
-          <td class="text-right small-1-5">324</td>
-          <td class="small-2-5">sbone@vhx.tv</td>
-          <td class="text-right small-1-5">$1.99</td>
-          <td class="small-1-5">Human</td>
+        <tr class="is-clickable">
+          <td class="text-right small-2">324</td>
+          <td class="small-5">human@vhx.tv</td>
+          <td class="text-right small-5">$1.99</td>
+          <td class="small-4">Human</td>
         </tr>
-        <tr>
-          <td class="text-right small-1-5">41</td>
-          <td class="small-2-5">eric@google.com</td>
-          <td class="text-right small-1-5">$0.29</td>
-          <td class="small-1-5">Human</td>
+        <tr class="is-clickable">
+          <td class="text-right small-2">41</td>
+          <td class="small-5">cat@vhx.tv</td>
+          <td class="text-right small-5">$0.29</td>
+          <td class="small-4">Cat</td>
         </tr>
-        <tr>
-          <td class="text-right small-1-5">8</td>
-          <td class="small-2-5">dog@cats.com</td>
-          <td class="text-right small-1-5">$121.89</td>
-          <td class="small-1-5">Dog</td>
+        <tr class="is-clickable">
+          <td class="text-right small-2">8</td>
+          <td class="small-5">dog@vhx.tv</td>
+          <td class="text-right small-5">$121.89</td>
+          <td class="small-4">Dog</td>
         </tr>
       </tbody>
     </table>
-
-
-
   </section>
 </template>

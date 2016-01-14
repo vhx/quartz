@@ -8,56 +8,67 @@
   box-sizing: border-box;
   width: 100%;
   table-layout: fixed;
-  font-size: 14px;
   border: none;
-  color: #8d9da6;
   margin-bottom: 0;
 
   &.border-top {
-    border-top: 1px solid #d6dcdf;
+    border-bottom: 1px solid $gray-3;
   }
 
-  &.double-line .clickable .clickable-trigger:link {
-    min-height: 80px;
+  &.table--auto {
+    width: auto;
   }
 
-  &.double-line {
-    td {
-      min-height: 80px;
+  /* table truncate
+  ..................................*/
+  &.table--truncate {
+    td, th {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
   }
 
   /* table head
   ..................................*/
+  &.table--ticks {
+    th {
+      position: relative;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    th:before {
+      content: " ";
+      height: 10px;
+      width: 1px;
+      background: $gray-3;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+    th:last-child:before {
+      display: none;
+    }
+  }
+
   thead, th {
     box-sizing: border-box;
-    font-family: $font-brandon;
-    font-weight: bold;
-    color: #8d9da6;
-    strong {
-      font-weight: bold;
-    }
   }
   thead {
     border: none;
-    font-weight: 500;
-    text-transform: uppercase;
+    font-weight: bold;
     background: transparent;
 
     tr {
-      border-bottom: 1px solid #d6dcdf;
+      border-bottom: 1px solid $gray-3;
     }
     th {
       padding: 15px 15px 15px 20px;
       border: none;
-      // TODO TABLE TICK without an image
       &:first-child {
         background: none;
       }
-    }
-
-    &.no-tick {
-      background: none;
     }
   }
 
@@ -65,78 +76,36 @@
   th, td {
     box-sizing: border-box;
     padding: 20px 15px;
-    color: $gray-6;
-    line-height: 20px;
-    span, strong, a {
-      // line-height: 20px;
-    }
-    strong {
-      color: $gray-6;
-    }
     vertical-align: top;
-
-    &.fill-row {
-      padding: 20px 15px 0px 15px;
-    }
   }
 
   /* table body
   ..................................*/
   tbody {
     box-sizing: border-box;
-    font-family: Helvetica, Arial, sans-serif;
   }
 
   tr {
     box-sizing: border-box;
     transition: background 200ms ease-out;
-    background: #fff;
-    border-bottom: 1px solid $gray-1;
+    background: $white;
+    border-bottom: 1px solid $gray-3;
 
     &.is-disabled {
-      color: #f8f9fb !important;
-      background: #f1f3f4 !important;
-      a, strong, td {
-        color: #7f9bac !important;
-      }
+      background: $gray-7;
     }
-    &.sticky {
-      background: lighten($teal-3, 30) !important;
+    &.is-sticky {
+      background-color: $teal-1;
     }
-    &.selected {
-      background: $teal-3 !important;
+    &.is-selected {
+      background-color: $teal-3;
     }
-    &.clickable {
+    &.is-clickable {
       cursor: pointer;
-      &.is-active {
-        td {
-          height: auto;
-          padding-top: 0;
-          padding-bottom: 0;
-        }
-      }
       &.is-hovered,
-      &:hover {
-        background: $teal-3 !important;
-      }
-      .clickable-trigger:link,
-      .clickable-trigger:visited {
-        vertical-align: middle;
-        padding: 20px 0;
-        min-height: 60px;
-        color: $gray-2;
-        text-decoration: none;
-        strong {
-          color: #375667;
-        }
-      }
-      .clickable-trigger:hover,
-      .clickable-trigger:active {
-        color: $gray-2;
-        text-decoration: none;
-        strong {
-          color: #375667;
-        }
+      &:hover,
+      &:active {
+        background-color: $teal-1 !important;
       }
     }
     &:nth-child(even) {
@@ -144,36 +113,17 @@
     }
   }
 
-  td {
-    height: 60px;
-    strong {
-      color: #375667;
-      font-weight: normal;
-    }
-  }
-
   /* row head
   ..................................*/
-  .row-head {
-    background: #f8f9fb !important;
+  .table-row-head {
+    background-color: $gray-3;
 
-    td, td .label {
-      position: relative;
-      font-family: $font-brandon;
-      font-weight: 500;
-      color: #375667;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-    td {
-      height: auto;
-    }
     .arrow {
       display: block;
       position: absolute;
       bottom: 0px;
       left: 30px;
-      background: #f8f9fb;
+      background: $gray-3;
 
       &:after,
       &:before {
@@ -213,42 +163,17 @@
     }
   }
 
-  &.mini {
-    td {
-      padding: 5px 10px;
-      height: auto;
-    }
-  }
-
-  &.compact {
-    width: auto;
-
-    td {
-      padding: 5px;
-      height: auto;
-    }
-    td.date {
-      white-space: nowrap;
-    }
-  }
-
+  /* table small
+  ..................................*/
   &.table--small {
     th,
     td {
-      padding: 12px 15px;
+      padding: 10px;
       height: auto;
     }
   }
 
-  &.text-inverse {
-    td {
-      color: $gray-6;
-
-      .light { color: #8d9da6; }
-    }
-  }
-
-  /* table striped
+  /* table block
   ..................................*/
   &.table--block {
     thead,
@@ -264,56 +189,13 @@
     thead,
     tr {
       width: 100%;
-    }
-
-  }
-}
-.firefox .table {
-  .row-head {
-    .arrow {
-      bottom: 1px;
-    }
-  }
-}
-
-@media only screen and (max-width: 40em) {
-  // styling the tablesaw
-  .table.tablesaw-stack {
-    .tablesaw-cell-label {
-      display: block;
-      text-transform: uppercase;
-      font-size: 11px;
-    }
-    td {
-      position: relative;
-      display: block;
-      float: none;
-      margin-bottom: 5px;
-      height: auto;
-      padding: 5px 10px;
-      &:first-child {
-        padding-top: 10px;
+      &:before, &:after {
+        content: " ";
+        display: table;
+      }
+      &:after {
+        clear: both;
       }
     }
-    &.double-line td {
-      min-height: 0px;
-    }
-    tr.clickable .clickable-trigger:link,
-    tr.clickable .clickable-trigger:visited {
-      padding: 5px 0px 10px 0px;
-      min-height: 0px;
-    }
-  }
-
-
-  td {
-    &.small-truncate {
-      .label {
-        width: 75px;
-      }
-    }
-  }
-  .clickable-trigger .dropdown.icon-only{
-    width: 100%;
   }
 }
