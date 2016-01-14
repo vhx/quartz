@@ -84,6 +84,12 @@ module.exports = function(grunt) {
               return content.replace(/^\.icon/gm,'%icon');
             }
           }
+      },
+      css: {
+        cwd: 'app/private/quartz-rails/vendor/assets/stylesheets/',
+        src: '**/*',
+        dest: 'app/private/distro/',
+        expand: true
       }
     },
     folder_list: {
@@ -97,12 +103,6 @@ module.exports = function(grunt) {
         cwd: 'app/'
       }
     }
-// +    concat: {
-// +      dist: {
-// +        src: [],
-// +        dest: '../crystal/vendor/assets/stylesheets/vhx.quartz.1.0.css'
-// +      }
-// +    }
   });
 
   grunt.loadNpmTasks('grunt-file-regex-rename');
@@ -116,6 +116,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-folder-list');
 
   grunt.registerTask('build-icons', ['clean', 'fileregexrename:multiColorIcons', 'svgmin', 'grunticon:multiColor']);
-  grunt.registerTask('build', ['sass_globbing', 'cssmin', 'copy:iconExtends', 'sass']);
+  grunt.registerTask('build', ['sass_globbing', 'cssmin', 'copy:css', 'copy:iconExtends', 'sass']);
   grunt.registerTask('files', ['folder_list']);
 };
