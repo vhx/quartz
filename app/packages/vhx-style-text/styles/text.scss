@@ -6,9 +6,11 @@
 
 /* reset
 ......................................*/
+body {
+  color: $gray-6;
+}
 body, ul, ol, dl, li, p, div, section, nav, table, h1, h2, h3, h4, h5, h6 {
   font-family: $font-helvetica;
-  color: $gray-6;
   font-size: 14px;
   line-height: 22px;
   -webkit-font-smoothing: antialiased;
