@@ -117,8 +117,12 @@
   ..................................*/
   .table-row-head {
     background-color: $gray-3;
-
-    .arrow {
+    border-bottom: 1px solid $gray-3 !important;
+    td {
+      height: auto;
+      position: relative;
+    }
+    .table-row-arrow {
       display: block;
       position: absolute;
       bottom: 0px;
@@ -145,7 +149,7 @@
       }
       &:before {
         border-color: rgba(223, 223, 223, 0);
-        border-top-color: #dfdfdf;
+        border-top-color: $gray-3;
         border-width: 11px;
         margin-left: -11px;
       }
