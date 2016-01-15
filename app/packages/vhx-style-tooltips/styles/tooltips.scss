@@ -1,0 +1,219 @@
+/* imports
+...................................*/
+@import "../config/include";
+
+/*.....................................
+  TOOLTIPS
+......................................*/
+
+.tooltip {
+  padding: 15px;
+  position: relative;
+  opacity: 0;
+  border-radius: 5px;
+  border: 1px solid $navy;
+  background: $navy-transparent;
+
+  &.is-active {
+    opacity: 1;
+  }
+
+  &:after, &:before {
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+  &:after {
+    border-color: $navy;
+    border-width: 10px;
+  }
+  &:before {
+    border-color: $navy;
+    border-width: 11px;
+  }
+  &.tooltip--fixed {
+    opacity: 1;
+    position: relative;
+    border: none;
+    left: auto;
+    top: auto;
+    max-width: 100%;
+
+    &.is-active {
+      display: block;
+    }
+  }
+
+  /* arrows
+  ......................................*/
+
+  // bottom centered
+  &.bottom-center {
+    &:after, &:before {
+      top: 100%;
+      left: 50%;
+    }
+  }
+
+  &.bottom-left {
+    &:after, &:before {
+      top: 100%;
+      left: 10%;
+    }
+  }
+
+  &.bottom-right {
+    &:after, &:before {
+      top: 100%;
+      right: 10%;
+    }
+  }
+
+  &.bottom-right,
+  &.bottom-left,
+  &.bottom-center {
+    &:after {
+      border-top-color: $navy;
+      margin-left: -10px;
+    }
+    &:before {
+      border-top-color: $navy;
+      margin-left: -11px;
+    }
+  }
+
+  // right centered
+  &.right-center {
+    &:after, &:before {
+      right: 100%;
+      top: 50%;
+    }
+  }
+
+  // right top
+  &.right-top {
+    &:after, &:before {
+      right: 100%;
+      top: 10%;
+    }
+  }
+
+  // right bottom
+  &.right-bottom {
+    &:after, &:before {
+      right: 100%;
+      bottom: 10%;
+    }
+  }
+  // right centered
+  &.right-center,
+  &.right-top,
+  &.right-bottom {
+    &:after {
+      border-right-color: $navy;
+      margin-top: -10px;
+    }
+    &:before {
+      border-right-color: $navy;
+      margin-top: -11px;
+    }
+  }
+
+  // left centered
+  &.left {
+    &:after, &:before {
+      left: 100%;
+      top: 50%;
+    }
+  }
+
+  // left top
+  &.left-top {
+    &:after, &:before {
+      left: 100%;
+      top: 10%;
+    }
+  }
+
+  // left bottom
+  &.left-bottom {
+    &:after, &:before {
+      left: 100%;
+      bottom: 10%;
+    }
+  }
+
+  &.left-bottom,
+  &.left-top,
+  &.left {
+    &:after {
+      border-left-color: $navy;
+      margin-top: -10px;
+    }
+    &:before {
+      border-left-color: $navy;
+      margin-top: -11px;
+    }
+  }
+
+
+  // top centered
+  &.top {
+    &:after, &:before {
+      bottom: 100%;
+      left: 50%;
+    }
+  }
+
+  // top left
+  &.top-left {
+    &:after, &:before {
+      bottom: 100%;
+      left: 10%;
+    }
+  }
+
+  // top right
+  &.top-right {
+    &:after, &:before {
+      bottom: 100%;
+      right: 10%;
+    }
+  }
+
+  &.top-right,
+  &.top-left,
+  &.top {
+    &:after {
+      border-bottom-color: $navy;
+      margin-left: -10px;
+    }
+    &:before {
+      border-bottom-color: $navy;
+      margin-left: -11px;
+    }
+  }
+}
+
+/* tooltip sizes
+......................................*/
+.tooltip {
+ &.xlarge {
+    max-width: 400px;
+  }
+  &.large {
+    max-width: 300px;
+  }
+  &.medium {
+    max-width: 200px;
+  }
+  &.small {
+    max-width: 100px;
+  }
+  &.wide {
+    width: 100%;
+  }
+}
