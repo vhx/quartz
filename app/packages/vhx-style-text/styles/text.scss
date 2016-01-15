@@ -16,9 +16,9 @@ body, ul, ol, dl, li, p, div, section, nav, table, h1, h2, h3, h4, h5, h6 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-strong {
-  font-weight: normal;
-}
+// strong {
+//   font-weight: normal;
+// }
 
 /* links
 ......................................*/
@@ -66,51 +66,57 @@ a {
 /* colors
 ......................................*/
 .text--navy {
-  color: $gray-8;
+  color: $gray-7;
   &.text--transparent {
-    color: transparentize($gray-6, .5);
+    color: transparentize($gray-7, .5);
   }
 }
 a.text--navy {
   &:link,
   &:visited {
-    color: $gray-8;
+    color: $gray-7;
     text-decoration: none;
   }
   &:hover,
   &:active {
-    color: $gray-6;
+    color: $gray-5;
     text-decoration: none;
+    &.is-hover-text--navy {
+      color: $gray-7;
+    }
   }
   &.is-disabled {
   &:link, &:visited,
   &:hover, &:active {
-      color: $gray-8;
+      color: $gray-7;
     }
   }
 }
 
 .text--gray {
-  color: $gray-6;
+  color: $gray-5;
   &.text--transparent {
-    color: transparentize($gray-6, .5);
+    color: transparentize($gray-5, .5);
   }
 }
 a.text--gray {
   &:link,
   &:visited {
-    color: $gray-6;
+    color: $gray-5;
     text-decoration: none;
   }
   &:hover,
   &:active {
-    color: $gray-8;
+    color: $gray-7;
     text-decoration: none;
+    &.is-hover-text--navy {
+      color: $gray-5;
+    }
   }
   &.is-disabled {
     &:link, &:visited,
     &:hover, &:active {
-      color: $gray-8;
+      color: $gray-5;
     }
   }
 }
@@ -131,6 +137,9 @@ a.text--gray-light {
   &:active {
     color: $gray-4;
     text-decoration: none;
+    &.is-hover-text--gray-light {
+      color: $gray-2;
+    }
   }
   &.is-disabled {
     &:link, &:visited,
@@ -156,6 +165,9 @@ a.text--teal {
   &:active {
     color: $teal-3;
     text-decoration: none;
+    &.is-hover-text--teal {
+      color: $gray-2;
+    }
   }
   &.is-disabled {
     &:link, &:visited,
@@ -181,6 +193,9 @@ a.text--white {
   &:active {
     color: transparentize($white, .3);
     text-decoration: none;
+    &.is-hover-text--white {
+      color: $white;
+    }
   }
   &.is-disabled {
     &:link, &:visited,
@@ -206,6 +221,9 @@ a.text--yellow {
   &:active {
     color: transparentize($vhx-yellow, .3);
     text-decoration: none;
+    &.is-hover-text--yellow {
+      color: $vhx-yellow;
+    }
   }
   &.is-disabled {
     &:link, &:visited,
