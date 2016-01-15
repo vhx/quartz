@@ -4,7 +4,14 @@ module.exports = function(grunt) {
     sass_globbing: {
       target : {
         files : {
-          'app/packages/vhx.scss': ['app/packages/**/styles/*.scss', '!app/packages/**/styles/guide.scss', '!app/packages/_vhx-style-template/**/*.scss']
+          'app/packages/vhx.scss': [
+            'app/packages/**/styles/*.scss',
+            '!app/packages/vhx-style-icons/styles/icons.extends.scss',
+            '!app/packages/vhx-style-icons/styles/icons.fallback.scss',
+            '!app/packages/**/styles/guide.scss',
+            '!app/packages/vhx-style-icons/styles/icons.png.scss',
+            '!app/packages/_vhx-style-template/**/*.scss'
+          ]
         }
       }
     },
@@ -34,7 +41,7 @@ module.exports = function(grunt) {
             replacement: ''
           }, {
             pattern: /\.svg/ig,
-            replacement: '.colors-mono-gray-inverse-alt-light.svg'
+            replacement: '.colors-navy-gray-white-teal.svg'
           }]
         }
       }
@@ -66,11 +73,10 @@ module.exports = function(grunt) {
           // TODO: this is path to output to output PNGs
           pngpath: 'png-icons-output',
           colors: {
-            mono: '#375667',
+            navy: '#375667',
             gray: '#9baab2',
-            inverse: '#ffffff',
-            alt: '#22b8af',
-            light: '#BFBFBF'
+            white: '#ffffff',
+            teal: '#22b8af'
           }
         }
       }
