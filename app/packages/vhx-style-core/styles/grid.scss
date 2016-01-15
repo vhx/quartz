@@ -25,6 +25,7 @@ html {
   padding: 0px 20px;
   position: relative;
   margin: 0 auto;
+  max-width: 1320px;
   @media #{$medium-up} {
     padding: 0px 35px;
   }
