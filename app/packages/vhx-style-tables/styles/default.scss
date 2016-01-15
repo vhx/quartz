@@ -116,7 +116,7 @@
   /* row head
   ..................................*/
   .table-row-head {
-    background-color: $gray-3;
+    background-color: $gray-1;
     border-bottom: 1px solid $gray-3 !important;
     td {
       height: auto;
@@ -142,13 +142,13 @@
       }
 
       &:after {
-        border-color: rgba(248, 249, 251, 0);
-        border-top-color: #f8f9fb;
+        border-color: rgba(255, 255, 255, 0);
+        border-top-color: $gray-1;
         border-width: 10px;
         margin-left: -10px;
       }
       &:before {
-        border-color: rgba(223, 223, 223, 0);
+        border-color: rgba(255, 255, 255, 0);
         border-top-color: $gray-3;
         border-width: 11px;
         margin-left: -11px;
