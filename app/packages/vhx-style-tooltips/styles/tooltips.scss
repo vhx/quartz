@@ -8,11 +8,12 @@
 
 .tooltip {
   padding: 15px;
+  display: none;
   position: relative;
   opacity: 0;
   border-radius: 5px;
   border: 1px solid $navy;
-  background: $navy-transparent;
+  background: $navy;
 
   &.is-active {
     opacity: 1;
@@ -27,15 +28,16 @@
     pointer-events: none;
   }
   &:after {
-    border-color: $navy;
+    border-color: rgba(255, 255, 255, 0);
     border-width: 10px;
   }
   &:before {
-    border-color: $navy;
+    border-color: rgba(255, 255, 255, 0);
     border-width: 11px;
   }
   &.tooltip--fixed {
     opacity: 1;
+    display: block;
     position: relative;
     border: none;
     left: auto;
@@ -51,30 +53,30 @@
   ......................................*/
 
   // bottom centered
-  &.bottom-center {
+  &.arrow--bottom-center {
     &:after, &:before {
       top: 100%;
       left: 50%;
     }
   }
 
-  &.bottom-left {
+  &.arrow--bottom-left {
     &:after, &:before {
       top: 100%;
       left: 10%;
     }
   }
 
-  &.bottom-right {
+  &.arrow--bottom-right {
     &:after, &:before {
       top: 100%;
       right: 10%;
     }
   }
 
-  &.bottom-right,
-  &.bottom-left,
-  &.bottom-center {
+  &.arrow--bottom-right,
+  &.arrow--bottom-left,
+  &.arrow--bottom-center {
     &:after {
       border-top-color: $navy;
       margin-left: -10px;
@@ -86,7 +88,7 @@
   }
 
   // right centered
-  &.right-center {
+  &.arrow--right-center {
     &:after, &:before {
       right: 100%;
       top: 50%;
@@ -94,7 +96,7 @@
   }
 
   // right top
-  &.right-top {
+  &.arrow--right-top {
     &:after, &:before {
       right: 100%;
       top: 10%;
@@ -102,16 +104,16 @@
   }
 
   // right bottom
-  &.right-bottom {
+  &.arrow--right-bottom {
     &:after, &:before {
       right: 100%;
       bottom: 10%;
     }
   }
   // right centered
-  &.right-center,
-  &.right-top,
-  &.right-bottom {
+  &.arrow--right-center,
+  &.arrow--right-top,
+  &.arrow--right-bottom {
     &:after {
       border-right-color: $navy;
       margin-top: -10px;
@@ -123,7 +125,7 @@
   }
 
   // left centered
-  &.left {
+  &.arrow--left {
     &:after, &:before {
       left: 100%;
       top: 50%;
@@ -131,7 +133,7 @@
   }
 
   // left top
-  &.left-top {
+  &.arrow--left-top {
     &:after, &:before {
       left: 100%;
       top: 10%;
@@ -139,16 +141,16 @@
   }
 
   // left bottom
-  &.left-bottom {
+  &.arrow--left-bottom {
     &:after, &:before {
       left: 100%;
       bottom: 10%;
     }
   }
 
-  &.left-bottom,
-  &.left-top,
-  &.left {
+  &.arrow--left-bottom,
+  &.arrow--left-top,
+  &.arrow--left {
     &:after {
       border-left-color: $navy;
       margin-top: -10px;
@@ -161,7 +163,7 @@
 
 
   // top centered
-  &.top {
+  &.arrow--top-center {
     &:after, &:before {
       bottom: 100%;
       left: 50%;
@@ -169,7 +171,7 @@
   }
 
   // top left
-  &.top-left {
+  &.arrow--top-left {
     &:after, &:before {
       bottom: 100%;
       left: 10%;
@@ -177,16 +179,16 @@
   }
 
   // top right
-  &.top-right {
+  &.arrow--top-right {
     &:after, &:before {
       bottom: 100%;
       right: 10%;
     }
   }
 
-  &.top-right,
-  &.top-left,
-  &.top {
+  &.arrow--top-right,
+  &.arrow--top-left,
+  &.arrow--top-center {
     &:after {
       border-bottom-color: $navy;
       margin-left: -10px;
@@ -201,19 +203,19 @@
 /* tooltip sizes
 ......................................*/
 .tooltip {
- &.xlarge {
+ &.tooltip--xlarge {
+    max-width: 500px;
+  }
+  &.tooltip--large {
     max-width: 400px;
   }
-  &.large {
+  &.tooltip--medium {
     max-width: 300px;
   }
-  &.medium {
+  &.tooltip--small {
     max-width: 200px;
   }
-  &.small {
-    max-width: 100px;
-  }
-  &.wide {
+  &.tooltip--fill {
     width: 100%;
   }
 }

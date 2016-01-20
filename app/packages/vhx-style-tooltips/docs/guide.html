@@ -1,10 +1,22 @@
-<template name="guide__style_name">
-  <section id="guide--style-name">
-    <h3 class="head-4 head--navy border-bottom padding-bottom-medium"><strong>Name</strong></h3>
+<template name="guide__style_tooltips">
+  <section id="guide--style-tooltips">
+    <h3 class="head-4 head--navy border-bottom padding-bottom-medium"><strong>Tooltips</strong></h3>
 
     <!-- Subtitle -->
     <div class="margin-vertical-large padding-bottom-medium border-bottom border-light">
-      <h4 class="margin-bottom-medium text-navy"><strong>Subtitle</strong></h4>
+
+      <!-- Standard Tooltip -->
+      <h4 class="margin-bottom-medium text-navy"><strong>Standard</strong></h4>
+      <p><a href="#">Hover here</a> for the tooltip.</p>
+      <div class="tooltip tooltip--small arrow--top-center">
+        <p class="text--gray">This is a tooltip. Here is some information.</p>
+      </div>
+
+      <!-- Fixed Tooltip -->
+      <h4 class="margin-bottom-medium text-navy"><strong>Fixed</strong></h4>
+      <div class="tooltip tooltip--fixed arrow--top-left">
+        <p class="text--gray">This is a tooltip. Here is some information.</p>
+      </div>
     </div>
 
   </section>
