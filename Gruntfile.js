@@ -8,6 +8,7 @@ module.exports = function(grunt) {
             'app/packages/**/styles/*.scss',
             '!app/packages/vhx-style-icons/styles/icons.extends.scss',
             '!app/packages/vhx-style-icons/styles/icons.fallback.scss',
+            '!app/packages/vhx-style-icons/styles/icons.svg.scss',
             '!app/packages/**/styles/guide.scss',
             '!app/packages/vhx-style-icons/styles/icons.png.scss',
             '!app/packages/_vhx-style-template/**/*.scss'
