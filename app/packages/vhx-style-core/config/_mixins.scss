@@ -242,25 +242,25 @@ $arrow-classes: 'background-black', 'background-white', 'background-gray', 'is-a
   @return $size;
 }
 
-@mixin spacer($type, $name, $style) {
+@mixin spacer($type, $name, $style, $media) {
   @if $type == 'vertical' {
-    .#{$style}-vertical-#{$name} {
-      #{$style}-top: set-spacer-size($name) !important;
-      #{$style}-bottom: set-spacer-size($name) !important;
+    .#{$media}#{$style}-vertical-#{$name} {
+      #{$style}-top: set-spacer-size($name);
+      #{$style}-bottom: set-spacer-size($name);
     }
   }
   @else if $type == 'horizontal' {
-    .#{$style}-horizontal-#{$name} {
-      #{$style}-left: set-spacer-size($name) !important;
-      #{$style}-right: set-spacer-size($name) !important;
+    .#{$media}#{$style}-horizontal-#{$name} {
+      #{$style}-left: set-spacer-size($name);
+      #{$style}-right: set-spacer-size($name);
     }
   }
   @else {
     @if $type != '' {
       $type: '-' + $type;
     }
-    .#{$style}#{$type}-#{$name} {
-      #{$style}#{$type}: set-spacer-size($name) !important;
+    .#{$media}#{$style}#{$type}-#{$name} {
+      #{$style}#{$type}: set-spacer-size($name);
     }
   }
 }
