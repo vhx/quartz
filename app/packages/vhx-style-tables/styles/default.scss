@@ -72,7 +72,6 @@
     }
   }
 
-
   th, td {
     box-sizing: border-box;
     padding: 20px 15px;
@@ -188,6 +187,31 @@
     }
     th,
     td {
+      float: left;
+    }
+    thead,
+    tr {
+      width: 100%;
+      &:before, &:after {
+        content: " ";
+        display: table;
+      }
+      &:after {
+        clear: both;
+      }
+    }
+  }
+
+  @media #{$small-only} {
+    thead,
+    th,
+    tr,
+    td {
+      display: block;
+    }
+    th,
+    td {
+      width: 100%;
       float: left;
     }
     thead,
