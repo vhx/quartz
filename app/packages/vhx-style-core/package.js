@@ -24,7 +24,6 @@ Package.onUse(function(api) {
 
     'config/_variables.scss',
     'config/_mixins.scss',
-    'styles/forms.scss',
     'styles/grid.scss',
     'styles/arrows.scss',
     'styles/lists.scss',

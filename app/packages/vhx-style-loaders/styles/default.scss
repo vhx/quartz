@@ -22,13 +22,13 @@
   position: relative;
 
   &.loader-slate {
-    @include loader_cover("7a878e");
+    @include loader_cover_color("7a878e");
   }
   &.loader-white {
-    @include loader_cover("ffffff");
+    @include loader_cover_color("ffffff");
   }
   &.loader-teal {
-    @include loader_cover("22b9b0");
+    @include loader_cover_color("22b9b0");
   }
   &:after {
     content: initial !important;
