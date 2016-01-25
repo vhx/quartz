@@ -5,11 +5,12 @@ module.exports = function(grunt) {
       target : {
         files : {
           'app/packages/vhx.scss': [
-            'app/packages/**/styles/*.scss',
-            '!app/packages/vhx-style-icons/styles/icons.svg.scss',
-            '!app/packages/vhx-style-colors/styles/colors.scss',
-            '!app/packages/**/styles/guide.scss',
-            '!app/packages/_vhx-style-template/**/*.scss'
+          'app/packages/**/styles/*.scss',
+          '!app/packages/vhx-style-icons/styles/icons.svg.scss',
+          '!app/packages/vhx-style-icons/styles/icons.extends.scss',
+          '!app/packages/vhx-style-colors/styles/colors.scss',
+          '!app/packages/**/styles/guide.scss',
+          '!app/packages/_vhx-style-template/**/*.scss'
           ]
         }
       }
@@ -35,7 +36,14 @@ module.exports = function(grunt) {
       },
     },
     clean: {
-      svg: ['app/private/svg-css/all/*.css', 'app/private/svg-css/sets/*.css']
+      svg: ['app/private/svg-css/all/*.css', 'app/private/svg-css/sets/*.css'],
+      pre_svg: {
+        src: ['app/private/distro/*.css', 'app/private/quartz-rails/vendor/assets/stylesheets/*.css'],
+        filter: function(filepath) {
+          var regex = /(vhx-quartz.icon)(.+)(.css)/g;
+          return regex.test(filepath);
+        }
+      }
     },
     copy: {
       css: {
@@ -89,7 +97,7 @@ module.exports = function(grunt) {
     var SVG = require('./app/private/scripts/svg.task')(done);
   });
 
-  grunt.registerTask('build-icons', ['grunt-svg-css', 'copy:svg', 'concat:svg', 'clean:svg']);
-  grunt.registerTask('build', ['sass_globbing', 'cssmin', 'copy:css', 'copy:iconExtends', 'sass']);
+  grunt.registerTask('build-icons', ['clean:pre_svg', 'grunt-svg-css', 'copy:svg', 'concat:svg', 'clean:svg']);
+  grunt.registerTask('build', ['sass_globbing', 'cssmin', 'copy:css', 'sass']);
   grunt.registerTask('files', ['folder_list']);
 };
