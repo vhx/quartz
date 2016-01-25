@@ -166,7 +166,7 @@ select {
     transparentize($white, 0),     // color hover
     transparentize($white, .6),    // border color
     transparentize($white, 0),     // border color hover
-    transparentize($white, 0)      // loader
+    ffffff      // loader
   );
 }
 
@@ -295,7 +295,7 @@ select {
   @extend .btn;
   @extend .btn--small;
   @extend .icon--center;
-  @extend %icon-search-mono;
+  @extend %icon-search-navy;
 }
 
 /*.....................................
@@ -403,7 +403,7 @@ select {
     background: $gray-2;
   }
   &:hover {
-    @extend %icon-chevron-down-mono;
+    @extend %icon-chevron-down-navy;
     &.btn-dropdown--action:before {
       background: $gray-4;
     }
@@ -413,13 +413,13 @@ select {
 .btn-dropdown-white {
   @extend .btn-dropdown;
   @extend .btn-white;
-  @extend %icon-chevron-down-mono;
+  @extend %icon-chevron-down-navy;
 
   &.btn-dropdown--action:before {
     background: $gray-2;
   }
   &:hover {
-    @extend %icon-chevron-down-mono;
+    @extend %icon-chevron-down-navy;
     &.btn-dropdown--action:before {
       background: $gray-4;
     }
@@ -429,13 +429,13 @@ select {
 .btn-dropdown-teal {
   @extend .btn-dropdown;
   @extend .btn-teal;
-  @extend %icon-chevron-down-inverse;
+  @extend %icon-chevron-down-white;
 
   &.btn-dropdown--action:before {
     background: $teal-2;
   }
   &:hover {
-    @extend %icon-chevron-down-inverse;
+    @extend %icon-chevron-down-white;
     &.btn-dropdown--action:before {
       background: $teal-3;
     }

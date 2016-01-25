@@ -6,29 +6,8 @@
 ......................................*/
 
 $icon-xsmall: 15px;
-$icon-small: 23px;
-$icon-medium: 31px;
-$icon-large: 35px;
-$icon-xlarge: 45px;
+$icon-small: 25px;
+$icon-medium: 35px;
+$icon-large: 45px;
+$icon-xlarge: 55px;
 $icon-xxlarge: 65px;
-
-@mixin icon_sizes($size) {
-  &.icon--xsmall {
-
-  }
-  &.icon--small {
-
-  }
-  &.icon--medium {
-
-  }
-  &.icon--large {
-
-  }
-  &.icon--xlarge {
-
-  }
-  &.icon--xxlarge {
-
-  }
-}

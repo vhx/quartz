@@ -25,6 +25,7 @@ html {
   padding: 0px 20px;
   position: relative;
   margin: 0 auto;
+  max-width: 1320px;
   @media #{$medium-up} {
     padding: 0px 35px;
   }
@@ -73,14 +74,8 @@ html {
 }
 
 .flex-vertical-middle {
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
   flex-direction: column;
-  -webkit-flex-direction: column;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
   justify-content: center;
   align-items: center;
 }

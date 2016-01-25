@@ -3,52 +3,6 @@
 /*.....................................
   Stand-alone icons using <i>
 ......................................*/
-.icon-circle {
-  border-radius: 50%;
-  border: 1px solid $gray-3;
-  background-color: $white;
-  box-sizing: content-box;
-  display: inline-block;
-  background-position: 50% 50% !important;
-
-  &.icon--xsmall {
-    padding: 5px;
-    background-size: $icon-xsmall $icon-xsmall;
-    width: $icon-xsmall;
-    height: $icon-xsmall;
-  }
-  &.icon--small {
-    padding: 10px;
-    background-size: $icon-small $icon-small;
-    width: $icon-small;
-    height: $icon-small;
-  }
-  &.icon--medium {
-    padding: 15px;
-    background-size: $icon-medium $icon-medium;
-    width: $icon-medium;
-    height: $icon-medium;
-  }
-  &.icon--large {
-    padding: 20px;
-    background-size: $icon-large $icon-large;
-    width: $icon-large;
-    height: $icon-large;
-  }
-  &.icon--xlarge {
-    padding: 25px;
-    background-size: $icon-xlarge $icon-xlarge;
-    width: $icon-xlarge;
-    height: $icon-xlarge;
-  }
-  &.icon--xxlarge {
-    padding: 35px;
-    background-size: $icon-xxlarge $icon-xxlarge;
-    width: $icon-xxlarge;
-    height: $icon-xxlarge;
-  }
-}
-
 .icon {
   display: inline-block;
   background-position: 50% 50%;
@@ -109,10 +63,10 @@
     line-height: 16px;
   }
   &.icon--left {
-    padding-left: 18px;
+    padding-left: 25px;
   }
   &.icon--right {
-    padding-right: 18px;
+    padding-right: 25px;
   }
 }
 .icon--small {
@@ -128,10 +82,10 @@
     line-height: 30px !important;
   }
   &.icon--left {
-    padding-left: 26px;
+    padding-left: 30px;
   }
   &.icon--right {
-    padding-right: 26px;
+    padding-right: 30px;
   }
 }
 .icon--medium {
@@ -141,30 +95,30 @@
     line-height: 40px !important;
   }
   &.icon--left {
-    padding-left: 35px;
-  }
-  &.icon--right {
-    padding-right: 35px;
-  }
-}
-.icon--large {
-  background-size: $icon-large $icon-large;
-  line-height: $icon-large !important;
-  &.icon--left {
     padding-left: 40px;
   }
   &.icon--right {
     padding-right: 40px;
   }
 }
+.icon--large {
+  background-size: $icon-large $icon-large;
+  line-height: $icon-large !important;
+  &.icon--left {
+    padding-left: 45px;
+  }
+  &.icon--right {
+    padding-right: 45px;
+  }
+}
 .icon--xlarge {
   background-size: $icon-xlarge $icon-xlarge;
   line-height: $icon-xlarge !important;
   &.icon--left {
-    padding-left: 48px;
+    padding-left: 54px;
   }
   &.icon--right {
-    padding-right: 48px;
+    padding-right: 54px;
   }
 }
 
@@ -180,5 +134,54 @@
   &.icon--right {
     display: inline-block;
     background-position: 100% center;
+  }
+}
+
+/*.....................................
+  Icon Circle
+......................................*/
+.icon-circle {
+  border-radius: 50%;
+  border: 1px solid $gray-3;
+  background-color: $white;
+  box-sizing: content-box;
+  display: inline-block;
+  background-position: 50% 50% !important;
+
+  &.icon--xsmall {
+    padding: 5px;
+    background-size: $icon-xsmall $icon-xsmall;
+    width: $icon-xsmall;
+    height: $icon-xsmall;
+  }
+  &.icon--small {
+    padding: 10px;
+    background-size: $icon-small $icon-small;
+    width: $icon-small;
+    height: $icon-small;
+  }
+  &.icon--medium {
+    padding: 15px;
+    background-size: $icon-medium $icon-medium;
+    width: $icon-medium;
+    height: $icon-medium;
+  }
+  &.icon--large {
+    padding: 20px;
+    background-size: $icon-large $icon-large;
+    width: $icon-large;
+    height: $icon-large;
+  }
+  &.icon--xlarge {
+    padding: 25px;
+    background-size: $icon-xlarge $icon-xlarge;
+    width: $icon-xlarge;
+    height: $icon-xlarge;
+  }
+  &.icon--xxlarge {
+    padding: 35px;
+    background-size: $icon-xxlarge $icon-xxlarge;
+    width: $icon-xxlarge;
+    height: $icon-xxlarge;
   }
 }

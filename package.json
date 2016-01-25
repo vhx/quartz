@@ -1,10 +1,13 @@
 {
   "name": "vhx-quartz",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "homepage": "https://github.com/vhx/quartz",
   "devDependencies": {
+    "async": "^1.5.2",
+    "fs": "0.0.2",
     "grunt": "^0.4.5",
     "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-concat": "^0.5.1",
     "grunt-contrib-copy": "^0.8.1",
     "grunt-contrib-cssmin": "^0.13.0",
     "grunt-contrib-jshint": "~0.10.0",
@@ -13,8 +16,13 @@
     "grunt-file-regex-rename": "^0.1.0",
     "grunt-folder-list": "^1.1.0",
     "grunt-grunticon": "^2.2.1",
+    "grunt-remove": "^0.1.0",
     "grunt-sass": "^1.0.0",
     "grunt-sass-globbing": "^1.4.0",
-    "grunt-svgmin": "^2.0.1"
+    "grunt-svgmin": "^2.0.1",
+    "junk": "^1.0.2",
+    "mustache": "^2.2.1",
+    "path": "^0.12.7",
+    "underscore": "^1.8.3"
   }
 }

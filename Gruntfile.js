@@ -4,7 +4,14 @@ module.exports = function(grunt) {
     sass_globbing: {
       target : {
         files : {
-          'app/packages/vhx.scss': ['app/packages/**/styles/*.scss', '!app/packages/**/styles/guide.scss', '!app/packages/_vhx-style-template/**/*.scss']
+          'app/packages/vhx.scss': [
+          'app/packages/**/styles/*.scss',
+          '!app/packages/vhx-style-icons/styles/icons.svg.scss',
+          '!app/packages/vhx-style-icons/styles/icons.extends.scss',
+          '!app/packages/vhx-style-colors/styles/colors.scss',
+          '!app/packages/**/styles/guide.scss',
+          '!app/packages/_vhx-style-template/**/*.scss'
+          ]
         }
       }
     },
@@ -22,68 +29,44 @@ module.exports = function(grunt) {
         }
       }
     },
-    clean: ['app/private/svg-icons-renamed/', 'app/private/svg-icons-minified/'],
-    fileregexrename: {
-      multiColorIcons: {
-        files: {
-          'app/private/svg-icons-renamed/*.svg' : 'app/private/svg-icons-source/*.svg'
-        },
-        options: {
-          replacements: [{
-            pattern: /icon-set-multi-colored-cs6_/ig,
-            replacement: ''
-          }, {
-            pattern: /\.svg/ig,
-            replacement: '.colors-mono-gray-inverse-alt-light.svg'
-          }]
-        }
-      }
+    concat: {
+      svg: {
+        src: 'app/private/svg-css/all/*.css',
+        dest: 'app/packages/vhx-style-icons/styles/icons.svg.scss'
+      },
     },
-    svgmin: {
-      dist: {
-        files: [{
-          expand: true,
-          cwd: 'app/private/svg-icons-renamed',
-          src: ['*.svg'],
-          dest: 'app/private/svg-icons-minified'
-        }]
-      }
-    },
-    grunticon: {
-      multiColor: {
-        files: [{
-          expand: true,
-          cwd: 'app/private/svg-icons-minified',
-          src: ['*.svg', '*.png'],
-          dest: 'app/packages/vhx-style-icons/styles'
-        }],
-        options: {
-          datasvgcss: 'icons.svg.scss',
-          datapngcss: 'icons.png.scss',
-          urlpngcss: 'icons.fallback.scss',
-          cssprefix: '.icon-',
-          pngfolder: 'png-icons-source',
-          // TODO: this is path to output to output PNGs
-          pngpath: 'png-icons-output',
-          colors: {
-            mono: '#375667',
-            gray: '#9baab2',
-            inverse: '#ffffff',
-            alt: '#22b8af',
-            light: '#BFBFBF'
-          }
+    clean: {
+      svg: ['app/private/svg-css/all/*.css', 'app/private/svg-css/sets/*.css'],
+      pre_svg: {
+        src: ['app/private/distro/*.css', 'app/private/quartz-rails/vendor/assets/stylesheets/*.css'],
+        filter: function(filepath) {
+          var regex = /(vhx-quartz.icon)(.+)(.css)/g;
+          return regex.test(filepath);
         }
       }
     },
     copy: {
-      iconExtends: {
-        src: 'app/packages/vhx-style-icons/styles/icons.svg.scss',
-        dest: 'app/packages/vhx-style-icons/styles/icons.extends.scss',
-          options: {
-            process: function(content, srcpath) {
-              return content.replace(/^\.icon/gm,'%icon');
-            }
+      css: {
+        cwd: 'app/private/quartz-rails/vendor/assets/stylesheets/',
+        src: '**/*',
+        dest: 'app/private/distro/',
+        expand: true
+      },
+      svg: {
+        files: [
+          {
+            src: 'app/private/svg-css/**/*.css',
+            dest: 'app/private/distro/',
+            flatten: true,
+            expand: true
+          },
+          {
+            src: 'app/private/svg-css/**/*.css',
+            dest: 'app/private/quartz-rails/vendor/assets/stylesheets/',
+            flatten: true,
+            expand: true
           }
+        ]
       }
     },
     folder_list: {
@@ -92,17 +75,11 @@ module.exports = function(grunt) {
         folders: true
       },
       files: {
-        src: ['private/svg-icons-renamed/*.svg'],
+        src: ['private/svg/all/*.svg'],
         dest: 'app/packages/vhx-style-icons/docs/icon-list.json',
         cwd: 'app/'
       }
     }
-// +    concat: {
-// +      dist: {
-// +        src: [],
-// +        dest: '../crystal/vendor/assets/stylesheets/vhx.quartz.1.0.css'
-// +      }
-// +    }
   });
 
   grunt.loadNpmTasks('grunt-file-regex-rename');
@@ -113,9 +90,14 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-folder-list');
+  grunt.registerTask('grunt-svg-css', function() {
+    var done = this.async();
+    var SVG = require('./app/private/scripts/svg.task')(done);
+  });
 
-  grunt.registerTask('build-icons', ['clean', 'fileregexrename:multiColorIcons', 'svgmin', 'grunticon:multiColor']);
-  grunt.registerTask('build', ['sass_globbing', 'cssmin', 'copy:iconExtends', 'sass']);
+  grunt.registerTask('build-icons', ['clean:pre_svg', 'grunt-svg-css', 'copy:svg', 'concat:svg', 'clean:svg']);
+  grunt.registerTask('build', ['sass_globbing', 'cssmin', 'copy:css', 'sass']);
   grunt.registerTask('files', ['folder_list']);
 };

@@ -5,18 +5,11 @@
 ......................................*/
 .tag {
   display: inline-block;
-  // color: $gray-2;
-  // background-color: $gray-1;
-  // padding: 0 10px;
-  // font-size: 14px;
-  // line-height: 21px;
-  // border-radius: 3px;
-
-    background-color: $gray-1;
-    border: 1px solid $gray-3;
-    padding: 0px 7px;
-    border-radius: 5px;
-    font-size: 12px;
+  background-color: $gray-1;
+  border: 1px solid $gray-3;
+  padding: 0px 7px;
+  border-radius: 5px;
+  font-size: 12px;
 
 
   &:link,
@@ -30,7 +23,7 @@
   }
   &.is-selected {
     background-color: $teal-2;
-    color: #ffffff;
+    color: $white;
   }
   &.tag-removable-small {
     padding-left: 10px;
