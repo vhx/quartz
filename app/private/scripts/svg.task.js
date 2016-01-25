@@ -8,6 +8,8 @@ SVG = function(gruntDone) {
       options   = {},
       count     = 0;
       self      = this;
+      icons_list = [];
+
 var files_count = 0;
   options = {
     sets: ['all', 'ui', 'social', 'payment', 'directional', 'apps'],
@@ -40,6 +42,21 @@ var files_count = 0;
   };
 
   options.colors = getColorOptions(options.colors);
+
+  /* ...............................
+    Create Doc List
+  .................................*/
+  self.createDocList = function(callback) {
+    var template = 'Template.guide__style_icons_names.helpers({ icons: function() {return ' + JSON.stringify(self.icons_list) + ';}});';
+
+    fs.writeFile('app/packages/vhx-style-icons/docs/guide.helpers.js', template, function(err) {
+      if (err) {
+        return console.log(err);
+      }
+
+      callback();
+    });
+  };
 
   /* ...............................
     Create and Export the CSS
@@ -95,6 +112,9 @@ var files_count = 0;
         if (err) {
           return console.log(err);
         }
+        if (set === 'all') {
+          self.icons_list.push({ name: name });
+        }
 
         _.each(options.colors, function(color_set, color_set_name) {
           _.each(color_set, function(hex, color) {
@@ -132,7 +152,9 @@ var files_count = 0;
         count++;
         console.log('Created icons-' + set + ' set');
         if (count >= options.sets.length) {
-          gruntDone();
+          self.createDocList(function() {
+            gruntDone();
+          });
         }
       }
     });
