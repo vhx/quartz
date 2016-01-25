@@ -65,9 +65,9 @@ var files_count = 0;
       var filename;
 
       if (all) {
-        filename = 'all/quartz.icon-' + icon + '.css';
+        filename = 'all/vhx-quartz.icon-' + icon + '.css';
       } else {
-        filename_prefix = filename_prefix + 'sets/quartz.icons-' + set;
+        filename_prefix = filename_prefix + 'sets/vhx-quartz.icons-' + set;
         filename = (color.set === 'all') ?  '.css' :  '-' + color.set + '.css';
       }
 
