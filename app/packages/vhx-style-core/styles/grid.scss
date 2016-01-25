@@ -74,14 +74,8 @@ html {
 }
 
 .flex-vertical-middle {
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
   flex-direction: column;
-  -webkit-flex-direction: column;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
   justify-content: center;
   align-items: center;
 }

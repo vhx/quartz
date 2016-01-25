@@ -17,7 +17,7 @@
 .block {
   display: block !important;
 }
-.inline, {
+.inline {
   display: inline-block !important;
 }
 .is-hidden {
@@ -34,15 +34,11 @@
   transform: translate3d(0, 0, 0);
 
   @each $size in $sizes {
-    &.#{$size} {
+    &.frame--#{$size} {
       height: auto;
-      max-height: set-frame-size($size);
+      max-height: set_frame_size($size);
       width: 100%;
       overflow-y: auto;
-      @media #{$small-only} {
-        // for stackin'
-        height: auto;
-      }
     }
   }
 }
@@ -62,16 +58,16 @@
   text-overflow: ellipsis;
   display: inline-block;
 
-  &.xlarge {
+  &.truncate--xlarge {
     max-width: 90%;
   }
-  &.large {
+  &.truncate--large {
     max-width: 75%;
   }
-  &.medium {
+  &.truncate--medium {
     max-width: 60%;
   }
-  &.small {
+  &.truncate--small {
     max-width: 40%;
   }
 }
@@ -99,6 +95,6 @@ hr.column {
   }
 }
 
-.force-z-top {
+.z-top {
   z-index: 2147483647 !important;
 }

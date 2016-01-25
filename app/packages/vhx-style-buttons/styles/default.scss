@@ -166,7 +166,7 @@ select {
     transparentize($white, 0),     // color hover
     transparentize($white, .6),    // border color
     transparentize($white, 0),     // border color hover
-    transparentize($white, 0)      // loader
+    ffffff      // loader
   );
 }
 

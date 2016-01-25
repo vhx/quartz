@@ -13,8 +13,7 @@
   color: $gray-6;
   font-size: 14px;
   background: transparent;
-
-  @include user-select(none);
+  user-select: none;
 
   /* radio
   ...................................*/

@@ -157,42 +157,6 @@ $arrow-classes: 'background-black', 'background-white', 'background-gray', 'is-a
   }
 }
 
-/* .....................................
-  Mixins for CSS3 Properties
-..................................... */
-// make writing animations a bit easier!
-@mixin keyframes($animation_name) {
-  @-webkit-keyframes $animation_name {
-    @content;
-  }
-  @-moz-keyframes $animation_name {
-    @content;
-  }
-  @-o-keyframes $animation_name {
-    @content;
-  }
-  @keyframes $animation_name {
-    @content;
-  }
-}
-
-@mixin animation($animate...) {
-  $max: length($animate);
-  $animations: '';
-
-  @for $i from 1 through $max {
-    $animations: #{$animations + nth($animate, $i)};
-
-    @if $i < $max {
-      $animations: #{$animations + ", "};
-    }
-  }
-  -webkit-animation: $animations;
-  -moz-animation:    $animations;
-  -o-animation:      $animations;
-  animation:         $animations;
-}
-
 // easier form input placeholder styling
 // usage:
 // .input-class {
@@ -241,6 +205,21 @@ $arrow-classes: 'background-black', 'background-white', 'background-gray', 'is-a
 
   @return $size;
 }
+@function set_frame_size($name) {
+  $size: 75px;
+
+  @if $name == 'small' {
+    $size: 75px;
+  } @else if $name == 'medium' {
+    $size: 125px;
+  } @else if $name == 'large' {
+    $size: 325px;
+  } @else if $name == 'xlarge' {
+    $size: 525px;
+  }
+
+  @return $size;
+}
 
 @mixin spacer($type, $name, $style, $media) {
   @if $type == 'vertical' {
@@ -263,69 +242,4 @@ $arrow-classes: 'background-black', 'background-white', 'background-gray', 'is-a
       #{$style}#{$type}: set-spacer-size($name);
     }
   }
-}
-
-@function set_frame_size($name) {
-  $size: 75px;
-
-  @if $name == 'small' {
-    $size: 75px;
-  } @else if $name == 'medium' {
-    $size: 125px;
-  } @else if $name == 'large' {
-    $size: 325px;
-  } @else if $name == 'xlarge' {
-    $size: 525px;
-  }
-
-  @return $size;
-}
-
-// $base_color is a #hex or rgba() value
-// $opacity is a decimal
-@mixin rgba-color($base_color, $opacity) {
-  color: $base_color;
-  color: transparentize($base_color, $opacity);
-}
-
-/*
-  collection of prefixed flexbox properties
-  until we're using Compass 1.0+
-  ..........................................*/
-
-@mixin display-flex {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-@mixin align-items-center {
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-@mixin justify-content-flex-end {
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-}
-
-@mixin justify-content-center {
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-@mixin spinner-size($size) {
-  width: $size;
-  margin-left: -#{$size/2};
-  margin-top: -#{$size/2};
-}
-
-@mixin user-select ($value: none) {
-  -webkit-user-select: $value;
-     -moz-user-select: $value;
-      -ms-user-select: $value;
-          user-select: $value;
 }

@@ -12,14 +12,15 @@
   color: $gray-6;
   font-size: 14px;
   background: transparent;
-
+  user-select: none;
+  
   &:after {
     content: "";
     display: table;
     clear: both;
   }
 
-  @include user-select(none);
+
 
   /* checkbox
   ...................................*/
@@ -198,13 +199,13 @@
 .form .checkbox.alt {
   label {
    border-radius: 20px;
-    background: #fff;
+    background: $white;
     width: 70px;
     padding: 7px;
 
     .checkbox--contain {
       display: block;
-      background: #fff;
+      background: $white;
       position: relative;
       padding: 0;
       border-radius: 20px;

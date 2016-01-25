@@ -7,6 +7,7 @@ module.exports = function(grunt) {
           'app/packages/vhx.scss': [
             'app/packages/**/styles/*.scss',
             '!app/packages/vhx-style-icons/styles/icons.svg.scss',
+            '!app/packages/vhx-style-colors/styles/colors.scss',
             '!app/packages/**/styles/guide.scss',
             '!app/packages/_vhx-style-template/**/*.scss'
           ]
