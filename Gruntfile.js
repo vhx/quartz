@@ -75,7 +75,7 @@ module.exports = function(grunt) {
         folders: true
       },
       files: {
-        src: ['private/svg-icons-renamed/*.svg'],
+        src: ['private/svg/all/*.svg'],
         dest: 'app/packages/vhx-style-icons/docs/icon-list.json',
         cwd: 'app/'
       }
