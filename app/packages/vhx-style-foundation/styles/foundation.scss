@@ -1779,28 +1779,9 @@ textarea[readonly], fieldset[disabled]
 textarea {
   cursor: default;
 }
-input[type="text"].radius,
-input[type="password"].radius,
-input[type="date"].radius,
-input[type="datetime"].radius,
-input[type="datetime-local"].radius,
-input[type="month"].radius,
-input[type="week"].radius,
-input[type="email"].radius,
-input[type="number"].radius,
-input[type="search"].radius,
-input[type="tel"].radius,
-input[type="time"].radius,
-input[type="url"].radius,
-input[type="color"].radius,
-textarea.radius {
-  border-radius: 3px;
-}
-
 
 input[type="submit"] {
   -webkit-appearance: none;
-  -webkit-border-radius: 0px;
 }
 
 /* Respect enforced amount of rows for textarea */
