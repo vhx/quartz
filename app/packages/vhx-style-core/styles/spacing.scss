@@ -40,8 +40,8 @@
     @include spacer(bottom, $size, $spacing_type, '');
     @include spacer(right, $size, $spacing_type, '');
     @include spacer(left, $size, $spacing_type, '');
-    @include spacer('vertical', $size, $spacing_type, '');
-    @include spacer('horizontal', $size, $spacing_type, '');
+    @include spacer('vert', $size, $spacing_type, '');
+    @include spacer('horz', $size, $spacing_type, '');
   }
 }
 
@@ -53,8 +53,8 @@
       @include spacer(bottom, $size, $spacing_type, 'small-only-');
       @include spacer(right, $size, $spacing_type, 'small-only-');
       @include spacer(left, $size, $spacing_type, 'small-only-');
-      @include spacer('vertical', $size, $spacing_type, 'small-only-');
-      @include spacer('horizontal', $size, $spacing_type, 'small-only-');
+      @include spacer('vert', $size, $spacing_type, 'small-only-');
+      @include spacer('horz', $size, $spacing_type, 'small-only-');
     }
   }
 }

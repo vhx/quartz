@@ -222,14 +222,14 @@ $arrow-classes: 'background-black', 'background-white', 'background-gray', 'is-a
 }
 
 @mixin spacer($type, $name, $style, $media) {
-  @if $type == 'vertical' {
-    .#{$media}#{$style}-vertical-#{$name} {
+  @if $type == 'vert' {
+    .#{$media}#{$style}-vert-#{$name} {
       #{$style}-top: set-spacer-size($name);
       #{$style}-bottom: set-spacer-size($name);
     }
   }
-  @else if $type == 'horizontal' {
-    .#{$media}#{$style}-horizontal-#{$name} {
+  @else if $type == 'horz' {
+    .#{$media}#{$style}-horz-#{$name} {
       #{$style}-left: set-spacer-size($name);
       #{$style}-right: set-spacer-size($name);
     }
