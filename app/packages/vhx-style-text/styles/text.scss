@@ -106,7 +106,7 @@ a.text--gray {
   &:active {
     color: $gray-7;
     text-decoration: none;
-    &.is-hover-text--navy {
+    &.is-hover-text--gray {
       color: $gray-5;
     }
   }
@@ -247,8 +247,11 @@ a.text--yellow {
 .text--transparent {
   color: transparentize($gray-6, .5);
 }
-.text---uppercase {
+.text--uppercase {
   text-transform: uppercase;
+}
+.text--break {
+  word-break: break-all;
 }
 
 .text-contain {
