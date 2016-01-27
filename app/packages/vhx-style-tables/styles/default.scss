@@ -121,6 +121,9 @@
       height: auto;
       position: relative;
     }
+    &:nth-child(even) {
+      background-color: $gray-1;
+    }
     .table-row-arrow {
       display: block;
       position: absolute;
