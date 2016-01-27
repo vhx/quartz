@@ -6059,14 +6059,12 @@ th {
 .head-4 {
   font-weight: 600;
   font-size: 16px;
-  line-height: 16px;
-  letter-spacing: 1px; }
+  line-height: 16px; }
 
 .head-5 {
   font-weight: 600;
   font-size: 14px;
-  line-height: 14px;
-  letter-spacing: 1px; }
+  line-height: 14px; }
 
 /* header navy
 ......................................*/
@@ -7429,6 +7427,8 @@ a.head--white:hover, a.head--white:active {
     .table .table-row-head td {
       height: auto;
       position: relative; }
+    .table .table-row-head:nth-child(even) {
+      background-color: #F7F8F9; }
     .table .table-row-head .table-row-arrow {
       display: block;
       position: absolute;
@@ -7608,7 +7608,7 @@ a.text--gray:link, a.text--gray:visited {
 a.text--gray:hover, a.text--gray:active {
   color: #375667;
   text-decoration: none; }
-  a.text--gray:hover.is-hover-text--navy, a.text--gray:active.is-hover-text--navy {
+  a.text--gray:hover.is-hover-text--gray, a.text--gray:active.is-hover-text--gray {
     color: #869AA5; }
 a.text--gray.is-disabled:link, a.text--gray.is-disabled:visited, a.text--gray.is-disabled:hover, a.text--gray.is-disabled:active {
   color: #869AA5; }
@@ -7692,8 +7692,11 @@ a.text--yellow.is-disabled:link, a.text--yellow.is-disabled:visited, a.text--yel
 .text--transparent {
   color: rgba(94, 120, 135, 0.5); }
 
-.text---uppercase {
+.text--uppercase {
   text-transform: uppercase; }
+
+.text--break {
+  word-break: break-all; }
 
 .text-contain.text-1 p {
   margin-bottom: 24px; }
@@ -7786,34 +7789,34 @@ a.text--yellow.is-disabled:link, a.text--yellow.is-disabled:visited, a.text--yel
   .tooltip.arrow--bottom-right:before, .tooltip.arrow--bottom-left:before, .tooltip.arrow--bottom-center:before {
     border-top-color: #00142B;
     margin-left: -11px; }
-  .tooltip.arrow--right-center:after, .tooltip.arrow--right-center:before {
+  .tooltip.arrow--left-center:after, .tooltip.arrow--left-center:before {
     right: 100%;
-    top: 50%; }
-  .tooltip.arrow--right-top:after, .tooltip.arrow--right-top:before {
-    right: 100%;
-    top: 10%; }
-  .tooltip.arrow--right-bottom:after, .tooltip.arrow--right-bottom:before {
-    right: 100%;
-    bottom: 10%; }
-  .tooltip.arrow--right-center:after, .tooltip.arrow--right-top:after, .tooltip.arrow--right-bottom:after {
-    border-right-color: #00142B;
-    margin-top: -10px; }
-  .tooltip.arrow--right-center:before, .tooltip.arrow--right-top:before, .tooltip.arrow--right-bottom:before {
-    border-right-color: #00142B;
-    margin-top: -11px; }
-  .tooltip.arrow--left:after, .tooltip.arrow--left:before {
-    left: 100%;
     top: 50%; }
   .tooltip.arrow--left-top:after, .tooltip.arrow--left-top:before {
-    left: 100%;
+    right: 100%;
     top: 10%; }
   .tooltip.arrow--left-bottom:after, .tooltip.arrow--left-bottom:before {
+    right: 100%;
+    bottom: 10%; }
+  .tooltip.arrow--left-center:after, .tooltip.arrow--left-top:after, .tooltip.arrow--left-bottom:after {
+    border-right-color: #00142B;
+    margin-top: -10px; }
+  .tooltip.arrow--left-center:before, .tooltip.arrow--left-top:before, .tooltip.arrow--left-bottom:before {
+    border-right-color: #00142B;
+    margin-top: -11px; }
+  .tooltip.arrow--right-center:after, .tooltip.arrow--right-center:before {
+    left: 100%;
+    top: 50%; }
+  .tooltip.arrow--right-top:after, .tooltip.arrow--right-top:before {
+    left: 100%;
+    top: 10%; }
+  .tooltip.arrow--right-bottom:after, .tooltip.arrow--right-bottom:before {
     left: 100%;
     bottom: 10%; }
-  .tooltip.arrow--left-bottom:after, .tooltip.arrow--left-top:after, .tooltip.arrow--left:after {
+  .tooltip.arrow--right-bottom:after, .tooltip.arrow--right-top:after, .tooltip.arrow--right-center:after {
     border-left-color: #00142B;
     margin-top: -10px; }
-  .tooltip.arrow--left-bottom:before, .tooltip.arrow--left-top:before, .tooltip.arrow--left:before {
+  .tooltip.arrow--right-bottom:before, .tooltip.arrow--right-top:before, .tooltip.arrow--right-center:before {
     border-left-color: #00142B;
     margin-top: -11px; }
   .tooltip.arrow--top-center:after, .tooltip.arrow--top-center:before {
