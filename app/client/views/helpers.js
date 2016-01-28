@@ -11,7 +11,7 @@ Template.style_colors.helpers({
       { guide: 'guide__style_tools_colors', code:'code__style_tools_colors' },
       { guide: 'guide__style_brand_colors', code:'code__style_brand_colors' },
       { guide: 'guide__style_external_colors', code:'code__style_external_colors' }
-    ]
+    ];
   }
 });
 
@@ -32,7 +32,7 @@ Template.style_typography.helpers({
     return [
       { guide: 'guide__style_headers', code:'code__style_headers' },
       { guide: 'guide__style_text', code:'code__style_text' }
-    ]
+    ];
   }
 });
 
@@ -43,7 +43,7 @@ Template.style_utilities.helpers({
       { guide: 'guide__style_spacing', code:'code__style_spacing' },
       { guide: 'guide__style_backgrounds', code:'code__style_backgrounds' },
       { guide: 'guide__style_borders', code:'code__style_borders' }
-    ]
+    ];
   }
 });
 
@@ -52,7 +52,7 @@ Template.style_icons.helpers({
     return [
       { guide: 'guide__style_icons', code:'code__style_icons' },
       { guide: 'guide__style_icons_names', code:'code__style_icons_names' },
-    ]
+    ];
   }
 });
 
@@ -60,6 +60,18 @@ Template.style_tables.helpers({
   styleTables: function() {
     return [
       { guide: 'guide__style_tables', code:'code__style_tables' },
-    ]
+    ];
+  }
+});
+
+Template.js_mithril_conventions.helpers({
+  jsMithril: function() {
+    return [
+      { guide: 'guide__js_mithril_intro', code:'code__js_mithril_intro' },
+      { guide: 'guide__js_mithril_namespace', code:'code__js_mithril_namespace' },
+      { guide: 'guide__js_mithril_folders', code:'code__js_mithril_folders' },
+      { guide: 'guide__js_mithril_components_org', code:'code__js_mithril_components_org' },
+      { guide: 'guide__js_mithril_ui', code:'code__js_mithril_ui' }
+    ];
   }
 });

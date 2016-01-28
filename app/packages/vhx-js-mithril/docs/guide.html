@@ -1,0 +1,49 @@
+<template name="guide__js_mithril_intro">
+  <section id="guide--js-mithril-intro">
+    <h3 class="head-3 head--navy text--bold">Mithril Conventions</h3>
+
+    <!-- Intro -->
+    <div class="margin-vert-large">
+      <p class="margin-bottom-medium text-2">Mithril is our frontend framework of choice. It is a tiny (only 7kb gzipped) framework with no dependencies. It has a small focused API, virtual DOM diffing (like React) and apparently is faster. It was created by <a href="https://github.com/lhorie">Leo Horie</a>. For more info see <a href="http://mithril.js.org">http://mithril.js.org</a>.</p>
+      <p class="margin-bottom-medium text-2">Mithril is designed such that you can use as little or as much of the framework as you need. It allows a lot of flexiblity in how you organize your application. In this light, we've established some conventions for how to setup Mithril projects. Read below for details.</p>
+    </div>
+  </section>
+</template>
+
+
+<template name="guide__js_mithril_folders">
+  <section id="guide--js-mithril-folders">
+    <!-- Folder Organization -->
+    <div class="margin-vert-large">
+      <h4 class="margin-bottom-medium padding-bottom-small border-bottom border--gray-light text--bold text--gray">Component Organization</h4>
+      <p class="margin-bottom-medium text-2">In order to organize our Mithril application files in a consistent manner, setup your folder structure for your application as shown, with whatever unique components are applicable to your application. Arbirtary components (<code>sidebar</code> and <code>table</code>) and layouts (<code>index</code> and <code>edit</code>) are shown as examples.</p>
+      <p class="margin-bottom-medium text-2">When setting up your application, be sure to include your app scripts in the order shown to ensure proper initialization.</p>
+    </div>
+  </section>
+</template>
+
+<template name="guide__js_mithril_namespace">
+  <section id="guide--js-mithril-namespace">
+    <!-- Namespace -->
+    <div class="margin-vert-large">
+      <h4 class="margin-bottom-medium padding-bottom-small border-bottom border--gray-light text--bold text--gray">Namespace / scope.js</h4>
+      <p class="margin-bottom-medium text-2">To both avoid polluting the global namespace and for providing an organized way to keep our Mithril code in one place we use the <code>vhxm</code> namespace. Within the <code>vhxm</code> object are all components, layouts, models, and utils can live.</p>
+      <p class="margin-bottom-medium text-2">The <code>vhxm</code> object should be setup in a <code>scope.js</code> file. Here you can establish a broad overview/map by definining the broad stroke components of your application.</p>
+    </div>
+  </section>
+</template>
+
+<template name="guide__js_mithril_components_org">
+  <section id="guide--js-mithril-components-org">
+    <!-- Components Organization -->
+    <div class="margin-vert-large">
+      <h4 class="margin-bottom-medium padding-bottom-small border-bottom border--gray-light text--bold text--gray">Component Organization</h4>
+      <p class="margin-bottom-medium text-2">In order to organize our components, we seperate their parts into different files, all nested in our <code>vhxm</code> object. See the next section for definitions of what each of the parts of a component are (controller, state, constants, and ui).</p>
+
+    </div>
+  </section>
+</template>
+
+<!-- <p class="margin-bottom-medium text-2">Layouts are simply components that we are nesting in our <code>vhxm.layouts</code> object. They aren't any different than other layouts, but we name it that just for organizational purposes.</p>
+<p class="margin-bottom-medium text-2">In Mithril, a component is an object that has at the very least a view method that returns a Mithril Virtual DOM tree (via <code>m()</code>). Components are the building blocks of a Mithril application.</p>
+<p class="margin-bottom-medium text-2">Components can also have an optional controller function. This function is run once when a component is rendered. It can be used to provide helper methods, event handler methods, and model calls for the component.</p> -->

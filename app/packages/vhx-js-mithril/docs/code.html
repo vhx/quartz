@@ -1,0 +1,147 @@
+<template name="code__js_mithril_intro">
+  <section id="code--js_mithril_intro" class="padding-medium">
+  {{#markdown}}
+  {{/markdown}}
+  </section>
+</template>
+
+<template name="code__js_mithril_namespace">
+  <section id="code--js_mithril_namespace" class="padding-medium">
+  {{#markdown}}
+
+    --scope.js--
+
+    var vhxm = {
+      models: {},
+      layouts: {}
+      components: {
+        sidebar: {},
+        table: {},
+        header: {}
+      },
+      utils: (typeof(VHX.Utils) !== 'undefined') ? VHX.Utils : null
+    }
+
+  {{/markdown}}
+  </section>
+</template>
+
+<template name="code__js_mithril_folders">
+  <section id="code--js-mithril-folders" class="padding-medium">
+    {{#markdown}}
+    --Folder Structure--
+    {{/markdown}}
+
+    {{#markdown}}
+    |—application
+      scope.js
+      models.js
+      routes.js
+      |-layouts
+        layout.index.js
+        layout.edit.js
+      |-components
+        |-sidebar
+          sidebar.ui.js
+          sidebar.state.js
+          sidebar.controller.js
+          sidebar.constants.js
+        |-table
+          table.ui.js
+          table.state.js
+          table.controller.js
+          table.constants.js
+
+    {{/markdown}}
+
+    {{#markdown}}
+
+    --File order--
+    {{/markdown}}
+
+    {{#markdown}}
+    scope.js
+    components/
+    layouts/
+    models.js
+    routes.js
+
+    {{/markdown}}
+  </section>
+</template>
+
+<template name="code__js_mithril_components_org">
+  <section id="code--js-mithril-components-org" class="padding-medium">
+  {{#markdown}}
+
+    --sidebar.state.js--
+
+    vhxm.components.sidebar.state = {}
+
+    --sidebar.controller.js--
+
+    vhxm.components.sidebar.controller = function() {}
+
+    --sidebar.constants.js--
+
+    vhxm.components.sidebar.constants = {}
+
+    --sidebar.ui.js--
+
+    vhxm.components.sidebar.ui = {}
+
+  {{/markdown}}
+  </section>
+</template>
+
+<template name="code__js_mithril_components">
+  <section id="code--js_mithril-components" class="padding-medium">
+  {{#markdown}}
+
+    --Layotus/Components--
+
+    vhxm.components.sidebar = {
+      // sidebar container component
+      container: {
+        controller: function() {},
+        view: function() {
+          return m('div');
+        }
+      }
+    }
+
+
+    vhxm.components.sidebar = {
+      // sidebar parent component
+      container: {
+        controller: function() {},
+        view: function() {
+          return m('div');
+        }
+      },
+      // sidebar sub-component
+      sub_component: function() {
+
+      }
+    }
+
+    vhxm.components.sidebar = {
+      // sidebar container component
+      container: {
+        controller: function() {
+          var self = this;
+
+          this.handleEvent = function() {
+            // handle event (arbitrary example)
+            vhxm.model.collections.saveDoc();
+          }
+        },
+        view: function(ctrl) {
+          return m('a', { onclick: ctrl.handleEvent }, 'Save');
+        }
+      }
+    }
+
+  {{/markdown}}
+  </section>
+</template>

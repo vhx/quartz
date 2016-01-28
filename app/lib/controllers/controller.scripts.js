@@ -10,6 +10,15 @@ JSConventions = RouteController.extend({
   }
 });
 
+// js conventions
+JSMithrilConventions = RouteController.extend({
+  template: 'js_mithril_conventions',
+  data: function() {},
+  action: function () {
+    this.render();
+  }
+});
+
 // js components
 JSComponents = RouteController.extend({
   template: 'js_components',
