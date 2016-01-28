@@ -601,34 +601,34 @@ select {
 ......................................*/
 .btn-gray, .btn-dropdown-gray {
   background-color: #F0F2F4;
-  color: #233741;
+  color: #375667;
   border: 1px solid #D7DDE1;
   background-size: 15px 15px; }
   .btn-gray:link, .btn-dropdown-gray:link, .btn-gray:visited, .btn-dropdown-gray:visited {
-    color: #233741;
+    color: #375667;
     border: 1px solid #D7DDE1; }
   .btn-gray:hover, .btn-dropdown-gray:hover, .btn-gray.is-hover, .is-hover.btn-dropdown-gray, .btn-gray:focus:hover, .btn-dropdown-gray:focus:hover, .btn-gray:focus.is-hover, .btn-dropdown-gray:focus.is-hover {
-    color: #233741;
+    color: #375667;
     cursor: pointer;
     background-color: #D7DDE1;
     border: 1px solid #D7DDE1; }
   .btn-gray:active, .btn-dropdown-gray:active, .btn-gray.is-active, .is-active.btn-dropdown-gray, .btn-gray:focus, .btn-dropdown-gray:focus, .btn-gray.is-focus, .is-focus.btn-dropdown-gray {
-    color: #233741;
+    color: #375667;
     background-color: #F0F2F4;
     border: 1px solid #D7DDE1; }
   .btn-gray.is-selected, .is-selected.btn-dropdown-gray {
-    color: #233741;
+    color: #375667;
     cursor: pointer;
     background-color: #D7DDE1;
     border: 1px solid #D7DDE1; }
   .btn-gray[disabled], [disabled].btn-dropdown-gray, .btn-gray.is-disabled, .is-disabled.btn-dropdown-gray {
     opacity: .5;
     background-color: #F0F2F4;
-    color: #233741;
+    color: #375667;
     border: 1px solid #D7DDE1; }
     .btn-gray[disabled]:visited, [disabled].btn-dropdown-gray:visited, .btn-gray[disabled]:hover, [disabled].btn-dropdown-gray:hover, .btn-gray[disabled].is-hover, [disabled].is-hover.btn-dropdown-gray, .btn-gray[disabled]:active, [disabled].btn-dropdown-gray:active, .btn-gray[disabled].is-active, [disabled].is-active.btn-dropdown-gray, .btn-gray.is-disabled:visited, .is-disabled.btn-dropdown-gray:visited, .btn-gray.is-disabled:hover, .is-disabled.btn-dropdown-gray:hover, .btn-gray.is-disabled.is-hover, .is-disabled.is-hover.btn-dropdown-gray, .btn-gray.is-disabled:active, .is-disabled.btn-dropdown-gray:active, .btn-gray.is-disabled.is-active, .is-disabled.is-active.btn-dropdown-gray {
       background-color: #F0F2F4;
-      color: #233741;
+      color: #375667;
       border: 1px solid #D7DDE1; }
   .btn-gray.is-processing, .is-processing.btn-dropdown-gray, .btn-gray.processing, .processing.btn-dropdown-gray, .btn-gray.is-loading, .is-loading.btn-dropdown-gray, .btn-gray.loading, .loading.btn-dropdown-gray {
     background-position: center center !important;
@@ -3173,15 +3173,8 @@ hr.column {
   ...................................*/
   /* inner button
   ...................................*/ }
-  .form .row,
-  .form .row.row {
-    margin-bottom: 25px; }
-  .form fieldset {
-    border: none;
-    margin: 0;
-    padding: 0; }
-    .form fieldset.inline label, .form fieldset.inline .inner-button, .form fieldset.inline input {
-      display: inline-block; }
+  .form fieldset.inline label, .form fieldset.inline .inner-button, .form fieldset.inline input {
+    display: inline-block; }
   .form fieldset.is-disabled,
   .form .is-disabled {
     opacity: 0.4; }
@@ -6439,7 +6432,7 @@ a.head--white:hover, a.head--white:active {
 .pagination {
   display: inline-block;
   text-align: center;
-  margin: 20 0px; }
+  margin: 20px 0px; }
   .pagination .previous_page, .pagination .next_page {
     font-weight: bold; }
   .pagination .disabled {
@@ -6447,7 +6440,7 @@ a.head--white:hover, a.head--white:active {
   .pagination .current {
     display: inline-block;
     background: #D7DDE1;
-    padding: 5 10px;
+    padding: 5px 10px;
     border-radius: 5px;
     color: #fff;
     font-style: normal; }
@@ -6506,7 +6499,7 @@ a.head--white:hover, a.head--white:active {
   border-radius: 5px;
   font-size: 12px; }
   .tag:link, .tag:visited {
-    color: #F0F2F4; }
+    color: #5E7887; }
   .tag:hover, .tag:active {
     color: #5E7887;
     background-color: #D7DDE1; }
