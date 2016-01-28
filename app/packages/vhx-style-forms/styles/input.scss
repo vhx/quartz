@@ -4,15 +4,7 @@
   Admin Input
 ......................................*/
 .form {
-  .row,
-  .row.row {
-    margin-bottom: 25px;
-  }
   fieldset {
-    border: none;
-    margin: 0;
-    padding: 0;
-
     &.inline {
       label, .inner-button, input {
         display: inline-block;
