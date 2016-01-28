@@ -6518,7 +6518,7 @@ a.head--white:hover, a.head--white:active {
   margin-left: 0;
   font-size: 14px; }
   .tag-list li {
-    margin: 5 0px; }
+    margin: 5px 0px; }
     .tag-list li:after {
       clear: both; }
     .tag-list li:before, .tag-list li:after {
@@ -7483,7 +7483,10 @@ a.head--white:hover, a.head--white:active {
     .table th,
     .table td {
       width: 100%;
-      float: left; }
+      float: left;
+      padding: 10px 15px; }
+    .table .table-row-head td {
+      padding: 20px 15px; }
     .table thead,
     .table tr {
       width: 100%; }
@@ -7495,6 +7498,11 @@ a.head--white:hover, a.head--white:active {
       .table thead:after,
       .table tr:after {
         clear: both; } }
+
+/* browser tweak
+..................................*/
+.firefox .table .table-row-head .table-row-arrow {
+  bottom: 1px; }
 
 /* .....................................
   Fonts

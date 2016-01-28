@@ -1,6 +1,6 @@
 {
   "name": "vhx-quartz",
-  "version": "0.7.4",
+  "version": "0.7.5",
   "homepage": "https://github.com/vhx/quartz",
   "devDependencies": {
     "async": "^1.5.2",
