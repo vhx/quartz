@@ -11,7 +11,7 @@ Template.style_colors.helpers({
       { guide: 'guide__style_tools_colors', code:'code__style_tools_colors' },
       { guide: 'guide__style_brand_colors', code:'code__style_brand_colors' },
       { guide: 'guide__style_external_colors', code:'code__style_external_colors' }
-    ]
+    ];
   }
 });
 
