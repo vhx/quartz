@@ -216,6 +216,10 @@
     td {
       width: 100%;
       float: left;
+      padding: 10px 15px;
+    }
+    .table-row-head td {
+      padding: 20px 15px;
     }
     thead,
     tr {
@@ -230,3 +234,7 @@
     }
   }
 }
+
+/* browser tweak
+..................................*/
+.firefox .table .table-row-head .table-row-arrow { bottom: 1px; }
