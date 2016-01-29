@@ -1,28 +1,6 @@
 <template name="code__js_mithril_intro">
-  <section id="code--js_mithril_intro" class="padding-medium">
-  {{#markdown}}
-  {{/markdown}}
-  </section>
-</template>
-
-<template name="code__js_mithril_namespace">
-  <section id="code--js_mithril_namespace" class="padding-medium">
-  {{#markdown}}
-
-    --scope.js--
-
-    var vhxm = {
-      models: {},
-      layouts: {}
-      components: {
-        sidebar: {},
-        table: {},
-        header: {}
-      },
-      utils: (typeof(VHX.Utils) !== 'undefined') ? VHX.Utils : null
-    }
-
-  {{/markdown}}
+  <section id="code--js_mithril_intro" class="padding-medium text--white">
+    <span class="logo-mithril">○</span>
   </section>
 </template>
 
@@ -34,26 +12,30 @@
 
     {{#markdown}}
     |—application
-      scope.js
-      models.js
-      routes.js
+      # scope.js
+      # models.js
+      # routes.js
       |-layouts
-        layout.index.js
-        layout.edit.js
+        # layout.index.js
+        # layout.edit.js
       |-components
         |-sidebar
-          sidebar.ui.js
-          sidebar.state.js
-          sidebar.controller.js
-          sidebar.constants.js
+          # sidebar.ui.js
+          # sidebar.state.js
+          # sidebar.controller.js
+          # sidebar.constants.js
         |-table
-          table.ui.js
-          table.state.js
-          table.controller.js
-          table.constants.js
+          # table.ui.js
+          # table.state.js
+          # table.controller.js
+          # table.constants.js
 
     {{/markdown}}
+  </section>
+</template>
 
+<template name="code__js_mithril_order">
+  <section id="code--js-mithril-order" class="padding-medium">
     {{#markdown}}
 
     --File order--
@@ -70,25 +52,55 @@
   </section>
 </template>
 
-<template name="code__js_mithril_components_org">
-  <section id="code--js-mithril-components-org" class="padding-medium">
+<template name="code__js_mithril_namespace">
+  <section id="code--js_mithril_namespace" class="padding-medium">
+  {{#markdown}}
+    --scope.js--
+  {{/markdown}}
+
   {{#markdown}}
 
-    --sidebar.state.js--
+    var vhxm = {
+      models: {},
+      layouts: {
+        index: {},
+        edit: {}
+      },
+      components: {
+        sidebar: {},
+        table: {},
+        header: {}
+      }
+    }
 
-    vhxm.components.sidebar.state = {}
+  {{/markdown}}
+  </section>
+</template>
 
-    --sidebar.controller.js--
+<template name="code__js_mithril_layouts">
+  <section id="code--js_mithril-layouts" class="padding-medium">
+  {{#markdown}}
+    --Layouts--
+  {{/markdown}}
 
-    vhxm.components.sidebar.controller = function() {}
+  {{#markdown}}
 
-    --sidebar.constants.js--
+    // an empty layout with an empty div
+    vhxm.layouts.index = {
+      view: function() {
+        return m("div");
+      }
+    };
 
-    vhxm.components.sidebar.constants = {}
-
-    --sidebar.ui.js--
-
-    vhxm.components.sidebar.ui = {}
+    // a layout that includes child components
+    vhxm.layouts.index = {
+      view: function() {
+        return m("div", [
+          m.component(vhxm.components.table.container),
+          m.component(vhxm.components.sidebar.container)
+        ]);
+      }
+    };
 
   {{/markdown}}
   </section>
@@ -96,52 +108,65 @@
 
 <template name="code__js_mithril_components">
   <section id="code--js_mithril-components" class="padding-medium">
-  {{#markdown}}
+    {{#markdown}}
+    --sidebar.state.js--
+    {{/markdown}}
 
-    --Layotus/Components--
-
-    vhxm.components.sidebar = {
-      // sidebar container component
-      container: {
-        controller: function() {},
-        view: function() {
-          return m('div');
-        }
-      }
+    {{#markdown}}
+    vhxm.components.sidebar.state = {
+      isOpen: m.prop(false),
+      isSaving: m.prop(false)
     }
+    {{/markdown}}
 
+    {{#markdown}}
+    --sidebar.constants.js--
+    {{/markdown}}
 
-    vhxm.components.sidebar = {
+    {{#markdown}}
+    vhxm.components.sidebar.constants = {
+      label: 'Title'
+    }
+    {{/markdown}}
+
+    {{#markdown}}
+    --sidebar.controller.js--
+    {{/markdown}}
+
+    {{#markdown}}
+    vhxm.components.sidebar.controller = function() {
+      var self = this;
+
+      this.handleEvent = function() {
+        // handle event (arbitrary example)
+        vhxm.model.collections.saveDoc();
+      }
+    };
+    {{/markdown}}
+
+    {{#markdown}}
+    --sidebar.ui.js--
+    {{/markdown}}
+
+    {{#markdown}}
+    vhxm.components.sidebar.ui = {
       // sidebar parent component
       container: {
-        controller: function() {},
-        view: function() {
-          return m('div');
+        controller: vhxm.components.sidebar.controller,
+        view: function(ctrl) {
+          return m('div', [
+            m.component(vhxm.components.sidebar.ui.sub_component),
+            m('a', { onclick: ctrl.handleEvent }, 'Save');
+          ]);
         }
       },
       // sidebar sub-component
-      sub_component: function() {
-
-      }
-    }
-
-    vhxm.components.sidebar = {
-      // sidebar container component
-      container: {
-        controller: function() {
-          var self = this;
-
-          this.handleEvent = function() {
-            // handle event (arbitrary example)
-            vhxm.model.collections.saveDoc();
-          }
-        },
-        view: function(ctrl) {
-          return m('a', { onclick: ctrl.handleEvent }, 'Save');
+      sub_component: {
+        view: function() {
+          return m('input', { name: 'title' }, vhxm.components.sidebar.constants.label);
         }
       }
     }
-
   {{/markdown}}
   </section>
 </template>

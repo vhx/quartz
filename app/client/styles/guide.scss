@@ -31,3 +31,27 @@
     height: 120px;
   }
 }
+
+.logo-mithril {
+  font-size: 175px;
+  float: left;
+  line-height: 1.3em;
+  padding: 0;
+  text-decoration: none;
+  font-family: Arial;
+  font-style: normal;
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  margin-left: -50px;
+  &:before {
+    content: "\25CB";
+    position: absolute;
+    margin: -0.17em 0 0 -0.10em;
+  }
+  &:after {
+    content: "\25CB";
+    position: absolute;
+    margin: -0.17em 0 0 -0.5em;
+  }
+}
