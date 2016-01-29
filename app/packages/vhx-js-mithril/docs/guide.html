@@ -36,8 +36,8 @@
     <!-- Namespace -->
     <div class="margin-vert-large">
       <h4 class="margin-bottom-medium padding-bottom-small border-bottom border--gray-light text--bold text--gray">3. Namespace ( <code class="text--yellow">scope.js</code> )</h4>
-      <p class="margin-bottom-medium text-2">To both avoid polluting the global namespace and for providing an organized way to keep our Mithril code in one place we use the <code class="text--yellow">vhxm</code> namespace. Within the <code class="text--yellow">vhxm</code> object all components, layouts, and models live.</p>
-      <p class="margin-bottom-medium text-2">The <code class="text--yellow">vhxm</code> object should be setup in a <code class="text--yellow">scope.js</code> file. Here you can establish a broad overview/map by definining the broad stroke components of your application.</p>
+      <p class="margin-bottom-medium text-2">To both avoid polluting the global namespace and for providing an organized way to keep our Mithril code in one place we use the <code class="text--yellow">vhxm</code> namespace. All components, layouts, and models live within the <code class="text--yellow">vhxm</code> object.</p>
+      <p class="margin-bottom-medium text-2">The <code class="text--yellow">vhxm</code> object should be setup in a <code class="text--yellow">scope.js</code> file. Here you establish a broad overview/map by defining the high-level components of your application.</p>
     </div>
   </section>
 </template>
@@ -56,10 +56,10 @@
 
 <template name="guide__js_mithril_components">
   <section id="guide--js-mithril-components">
-    <!-- Layouts -->
+    <!-- Components -->
     <div class="margin-vert-large">
       <h4 class="margin-bottom-medium padding-bottom-small border-bottom border--gray-light text--bold text--gray">5. Components</h4>
-      <p class="margin-bottom-medium text-2">We divide up each of a components parts into different files to keep our files as lean as possible. This parts are:</p>
+      <p class="margin-bottom-medium text-2">We divide up each of a component's parts into different files to keep our files as lean as possible. These parts are:</p>
       <ul>
         <li class="margin-bottom-medium">
           <h4 class="text--navy">state</h4>
@@ -79,7 +79,7 @@
         <li class="margin-bottom-medium">
           <h4 class="text--navy">ui</h4>
           <code class="text--italic margin-bottom-small">component_name.ui.js</code>
-          <p>The view layer of the component, found in a component's  view method. It must return either a virtual DOM element (<code class="text--yellow">m()</code>) or another component (<code class="text--yellow">m.component()</code>).</p>
+          <p>The view layer of the component, found in a component's view method. It must return either a virtual DOM element (<code class="text--yellow">m()</code>) or another component (<code class="text--yellow">m.component()</code>).</p>
         </li>
       </ul>
     </div>
