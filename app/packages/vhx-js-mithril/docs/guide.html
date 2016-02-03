@@ -74,7 +74,7 @@
         <li class="margin-bottom-medium">
           <h4 class="text--navy">controller</h4>
           <code class="text--italic margin-bottom-small">component_name.controller.js</code>
-          <p>A component can also have an optional controller function. This function is run once when a component is rendered. It can be used to provide helper methods, event handler methods, and model calls for the component</p>
+          <p>A component can also have an optional controller function. This function is run once when a component is rendered. It can be used to provide helper methods, event handler methods, and model calls for the component.</p>
         </li>
         <li class="margin-bottom-medium">
           <h4 class="text--navy">ui</h4>
@@ -86,33 +86,37 @@
   </section>
 </template>
 
-<template name="guide__js_mithril_views">
-  <section id="guide--js-mithril-views">
-    <!-- Views -->
-    <div class="margin-vert-large">
-      <h4 class="margin-bottom-medium padding-bottom-small border-bottom border--gray-light text--bold text--gray">6. Views</h4>
-      <p class="margin-bottom-medium text-2">Text.</p>
-    </div>
-  </section>
-</template>
-
 <template name="guide__js_mithril_models">
   <section id="guide--js-mithril-models">
-    <!-- Views -->
+    <!-- Models -->
     <div class="margin-vert-large">
-      <h4 class="margin-bottom-medium padding-bottom-small border-bottom border--gray-light text--bold text--gray">7. Models</h4>
-      <p class="margin-bottom-medium text-2">Text.</p>
+      <h4 class="margin-bottom-medium padding-bottom-small border-bottom border--gray-light text--bold text--gray">6. Models</h4>
+      <p class="margin-bottom-medium text-2">Our models are our source of truth. It is the canonical data we get from the backend (typically our Public or Internal API). Our models contains both our data objects as well as methods that can be called from our controllers for listing, retrieving, updating, creating, or deleting data.</p>
+      <p class="margin-bottom-medium text-2">We utilized Mithril's <code class="text--yellow">m.prop()</code> method to create all our model properties. This method creates a reactive getter/setting property. We set a property by calling the method by assigning a value. We get a property's value by calling its method without a value (see example to the right).</p>
+      <p class="margin-bottom-medium text-2">To setup or models we put everything under our <code class="text--yellow">vhxm.models</code> namespace. We can define our model so that it correlates to our data model, ensuring we also have methods for working with our model objects. See below for making api/ajax requests.</p>
     </div>
   </section>
 </template>
-
 
 <template name="guide__js_mithril_requests">
   <section id="guide--js-mithril-requests">
-    <!-- Views -->
+    <!-- Requests -->
     <div class="margin-vert-large">
-      <h4 class="margin-bottom-medium padding-bottom-small border-bottom border--gray-light text--bold text--gray">7. Requests / API Integration</h4>
-      <p class="margin-bottom-medium text-2">Text.</p>
+      <h4 class="margin-bottom-medium padding-bottom-small border-bottom border--gray-light text--bold text--gray">7. Requests</h4>
+      <p class="margin-bottom-medium text-2">To integrate your models with an actual backend endpoint, you cause use Mithril's <code class="text--yellow">request</code> method. Any headers that need to be set (e.g. for authorization, content type, etc) can be done by using the requests <code class="text--yellow">config</code> property as shown to the right.</p>
+      <p class="margin-bottom-medium text-2">We handle the response using Mithril's chained <code class="text--yellow">then</code> method, which has two callbacks. The first function for a successful response, and the second when there is an error.</p>
+      <p class="margin-bottom-medium text-2">Upon receiving the response, we then iterate over each property ensuring each model property is reactive using a helper method (<code class="text--yellow">)vhxm.models.populate</code>.</p>
+      <p class="margin-bottom-medium text-2">For convenience, when working with the VHX Public API, you can use our <code class="text--yellow">VHX.Request</code> class for making API calls.</p>
+    </div>
+  </section>
+</template>
+
+<template name="guide__js_mithril_api">
+  <section id="guide--js-mithril-api">
+    <!-- Api Integration -->
+    <div class="margin-vert-large">
+      <h4 class="margin-bottom-medium padding-bottom-small border-bottom border--gray-light text--bold text--gray">8. API Integration</h4>
+      <p class="margin-bottom-medium text-2">For convenience, when working with the VHX Public API, you can also use our <code class="text--yellow">VHX.Request</code> class for making API calls. This class was built using the built-in Mithril's methods listed above. Authorization, error handling, populating the model, and caching are all handled for you automatically.</p>
     </div>
   </section>
 </template>

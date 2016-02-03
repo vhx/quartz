@@ -73,9 +73,9 @@ Template.js_mithril_conventions.helpers({
       { guide: 'guide__js_mithril_namespace', code:'code__js_mithril_namespace' },
       { guide: 'guide__js_mithril_layouts', code:'code__js_mithril_layouts' },
       { guide: 'guide__js_mithril_components', code:'code__js_mithril_components' },
-      { guide: 'guide__js_mithril_views', code:'code__js_mithril_views' },
       { guide: 'guide__js_mithril_models', code:'code__js_mithril_models' },
-      { guide: 'guide__js_mithril_requests', code:'code__js_mithril_requests' }
+      { guide: 'guide__js_mithril_requests', code:'code__js_mithril_requests' },
+      { guide: 'guide__js_mithril_api', code:'code__js_mithril_api' }
     ];
   }
 });
