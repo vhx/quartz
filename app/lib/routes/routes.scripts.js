@@ -7,6 +7,12 @@ Router.route('/javascript/conventions', {
   controller: 'JSConventions'
 });
 
+// js mithril conventions
+Router.route('/javascript/mithril-conventions', {
+  name: 'js_mithril_conventions' ,
+  controller: 'JSMithrilConventions'
+});
+
 // js components index
 Router.route('/javascript/components', {
   name: 'js_components',

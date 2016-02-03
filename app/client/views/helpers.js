@@ -32,7 +32,7 @@ Template.style_typography.helpers({
     return [
       { guide: 'guide__style_headers', code:'code__style_headers' },
       { guide: 'guide__style_text', code:'code__style_text' }
-    ]
+    ];
   }
 });
 
@@ -43,7 +43,7 @@ Template.style_utilities.helpers({
       { guide: 'guide__style_spacing', code:'code__style_spacing' },
       { guide: 'guide__style_backgrounds', code:'code__style_backgrounds' },
       { guide: 'guide__style_borders', code:'code__style_borders' }
-    ]
+    ];
   }
 });
 
@@ -52,7 +52,7 @@ Template.style_icons.helpers({
     return [
       { guide: 'guide__style_icons', code:'code__style_icons' },
       { guide: 'guide__style_icons_names', code:'code__style_icons_names' },
-    ]
+    ];
   }
 });
 
@@ -60,6 +60,22 @@ Template.style_tables.helpers({
   styleTables: function() {
     return [
       { guide: 'guide__style_tables', code:'code__style_tables' },
-    ]
+    ];
+  }
+});
+
+Template.js_mithril_conventions.helpers({
+  jsMithril: function() {
+    return [
+      { guide: 'guide__js_mithril_intro', code:'code__js_mithril_intro' },
+      { guide: 'guide__js_mithril_folders', code:'code__js_mithril_folders' },
+      { guide: 'guide__js_mithril_order', code:'code__js_mithril_order' },
+      { guide: 'guide__js_mithril_namespace', code:'code__js_mithril_namespace' },
+      { guide: 'guide__js_mithril_layouts', code:'code__js_mithril_layouts' },
+      { guide: 'guide__js_mithril_components', code:'code__js_mithril_components' },
+      { guide: 'guide__js_mithril_models', code:'code__js_mithril_models' },
+      { guide: 'guide__js_mithril_requests', code:'code__js_mithril_requests' },
+      { guide: 'guide__js_mithril_api', code:'code__js_mithril_api' }
+    ];
   }
 });

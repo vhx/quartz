@@ -1,0 +1,262 @@
+<template name="code__js_mithril_intro">
+  <section id="code--js_mithril_intro" class="padding-medium text--white">
+    <span class="logo-mithril">○</span>
+  </section>
+</template>
+
+<template name="code__js_mithril_folders">
+  <section id="code--js-mithril-folders" class="padding-medium">
+    {{#markdown}}
+    --Folder Structure--
+    {{/markdown}}
+
+    {{#markdown}}
+    |—application
+      # scope.js
+      # models.js
+      # routes.js
+      |-layouts
+        # layout.index.js
+        # layout.edit.js
+      |-components
+        |-sidebar
+          # sidebar.ui.js
+          # sidebar.state.js
+          # sidebar.controller.js
+          # sidebar.constants.js
+        |-table
+          # table.ui.js
+          # table.state.js
+          # table.controller.js
+          # table.constants.js
+
+    {{/markdown}}
+  </section>
+</template>
+
+<template name="code__js_mithril_order">
+  <section id="code--js-mithril-order" class="padding-medium">
+    {{#markdown}}
+
+    --File order--
+    {{/markdown}}
+
+    {{#markdown}}
+    scope.js
+    components/
+    layouts/
+    models.js
+    routes.js
+
+    {{/markdown}}
+  </section>
+</template>
+
+<template name="code__js_mithril_namespace">
+  <section id="code--js_mithril_namespace" class="padding-medium">
+<pre>
+<code class="hljs js">
+<span class="hljs-comment">--scope.js--</span>
+
+<span class="hljs-title">var</span> vhxm = {
+  models: {},
+  layouts: {
+    index: {},
+    edit: {}
+  },
+  components: {
+    sidebar: {},
+    table: {},
+    header: {}
+  }
+}
+</code>
+</pre>
+  </section>
+</template>
+
+<template name="code__js_mithril_layouts">
+  <section id="code--js_mithril-layouts" class="padding-medium">
+<pre>
+<code class="hljs js">
+<span class="hljs-comment">--Layouts--</span>
+
+<span class="hljs-comment">// an empty layout with an empty div</span>
+vhxm.layouts.index = {
+  <span class="hljs-value">view</span>: <span class="hljs-title">function</span>() {
+    <span class="hljs-title">return</span> m(<span class="hljs-string">'div'</span>);
+  }
+};
+
+<span class="hljs-comment">// a layout that includes child components</span>
+vhxm.layouts.index = {
+  <span class="hljs-value">view</span>: <span class="hljs-title">function</span>() {
+    <span class="hljs-title">return</span> m(<span class="hljs-string">'div'</span>, [
+      m.<span class="hljs-value">component</span>(vhxm.components.table.container),
+      m.<span class="hljs-value">component</span>(vhxm.components.sidebar.container)
+    ]);
+  }
+};
+</code>
+</pre>
+  </section>
+</template>
+
+<template name="code__js_mithril_components">
+  <section id="code--js_mithril-components" class="padding-medium">
+<pre>
+<code class="hljs js">
+<span class="hljs-comment">--sidebar.state.js--</span>
+
+vhxm.components.sidebar.state = {
+  isOpen: m.<span class="hljs-value">prop</span>(<span class="hljs-attribute">false</span>),
+  isSaving: m.<span class="hljs-value">prop</span>(<span class="hljs-attribute">false</span>)
+}
+
+<span class="hljs-comment">--sidebar.constants.js--</span>
+
+vhxm.components.sidebar.constants = {
+  label: <span class="hljs-string">'Title'</span>
+}
+
+<span class="hljs-comment">--sidebar.controller.js--</span>
+
+
+vhxm.components.sidebar.<span class="hljs-value">controller</span> = <span class="hljs-title">function</span>() {
+  <span class="hljs-title">var</span> self = this;
+
+  this.helpers = {
+    <span class="hljs-value">handleEvent</span>: <span class="hljs-title">function</span>() {
+      <span class="hljs-comment">// handle event (arbitrary example)</span>
+      vhxm.models.collections.<span class="hljs-value">saveDoc</span>();
+    }
+  }
+};
+
+<span class="hljs-comment">--sidebar.ui.js--</span>
+
+
+vhxm.components.sidebar.ui = {
+  <span class="hljs-comment">// sidebar parent component</span>
+  container: {
+    <span class="hljs-value">controller</span>: vhxm.components.sidebar.controller,
+    <span class="hljs-value">view</span>: <span class="hljs-title">function</span>(ctrl) {
+      <span class="hljs-title">return</span> m(<span class="hljs-string">'div'</span>, [
+        m.component(vhxm.components.sidebar.ui.sub_component, { helpers: ctrl.helpers }),
+        m(<span class="hljs-string">'a'</span>, { <span class="hljs-value">onclick</span>: ctrl.handleEvent }, <span class="hljs-string">'Save'</span>);
+      ]);
+    }
+  },
+  <span class="hljs-comment">// sidebar sub-component</span>
+  sub_component: {
+    <span class="hljs-value">view</span>: <span class="hljs-title">function</span>(ctrl, c) {
+      <span class="hljs-comment">// c.helpers is available in any subcomponent</span>
+      <span class="hljs-title">return</span> m(<span class="hljs-string">'input'</span>, { name: <span class="hljs-string">'title'</span> }, vhxm.components.sidebar.constants.label);
+    }
+  }
+}
+</code>
+</pre>
+  </section>
+</template>
+
+<template name="code__js_mithril_models">
+  <section id="code--js_mithril-models" class="padding-medium">
+<pre>
+<code class="hljs js">
+<span class="hljs-comment">--getting/setter--</span>
+
+<span class="hljs-comment">// set to some default value on creation</span>
+<span class="hljs-title">var</span> example = m.<span class="hljs-value">prop</span>(<span class="hljs-string">'default_value'</span>);
+
+<span class="hljs-comment">// now you can get</span>
+example();
+
+<span class="hljs-comment">// or set</span>
+example(<span class="hljs-string">'new_value'</span>);
+
+
+<span class="hljs-comment">--simple example model--</span>
+
+vhxm.models.collections = {
+  list: m.<span class="hljs-value">prop</span>(<span class="hljs-attribute">null</span>),
+  doc: m.<span class="hljs-value">prop</span>(<span class="hljs-attribute">null</span>),
+  docItems: m.<span class="hljs-value">prop</span>(<span class="hljs-attribute">null</span>)
+}
+
+vhxm.models.<span class="hljs-value">listCollections</span> = <span class="hljs-title">function</span>() {
+  <span class="hljs-comment">// retrieve listing from api/backend
+  // and populate vhxm.models.collections.list()</span>
+}
+vhxm.models.<span class="hljs-value">retrieveCollection</span> = <span class="hljs-title">function</span>() {
+  <span class="hljs-comment">// retrieve doc from api/backend
+  // and populate vhxm.models.collections.doc()</span>
+}
+vhxm.models.<span class="hljs-value">retrieveItems</span> = <span class="hljs-title">function</span>() {
+  <span class="hljs-comment">// retrieve doc items from api/backend
+  // and populate vhxm.models.collections.docItems()</span>
+}
+</code>
+</pre>
+  </section>
+</template>
+
+<template name="code__js_mithril_requests">
+  <section id="code--js_mithril-requests" class="padding-medium">
+<pre>
+<code class="hljs js">
+<span class="hljs-comment">--requests--</span>
+
+<span class="hljs-comment">// config for setting headers</span>
+vhxm.models.<span class="hljs-value">config</span> = <span class="hljs-title">function</span>(request) {
+  request.<span class="hljs-value">setRequestHeader</span>(<span class="hljs-string">'Authorization'</span>, <span class="hljs-string">'Bearer '</span> + TOKEN);
+};
+
+<span class="hljs-comment">// handle errors</span>
+vhxm.models.<span class="hljs-value">handleError</span> = <span class="hljs-title">function</span>(error) {};
+
+<span class="hljs-comment">// populate model on successful response</span>
+vhxm.models.<span class="hljs-value">populate</span> = <span class="hljs-title">function</span>(data, model) {
+  $.<span class="hljs-value">each</span>(data, <span class="hljs-title">function</span>(key, item) {
+    data[key] = m.<span class="hljs-value">prop</span>(item);
+  });
+
+  model(data);
+});
+
+<span class="hljs-comment">// using the above in a model method</span>
+vhxm.models.<span class="hljs-value">listCollections</span> = <span class="hljs-title">function</span>() {
+  m.<span class="hljs-value">request</span>({
+    method: <span class="hljs-string">'GET'</span>,
+    url: <span class="hljs-string">'http://apia.vhx.tv/collections'</span>,
+    config: vhxm.models.config
+  }).<span class="hljs-value">then</span>(<span class="hljs-title">function</span>(data) {
+    vhxm.models.<span class="hljs-value">populate</span>(data, vhxm.models.collections().list);
+  }, vhxm.models.<span class="hljs-value">handleError</span>);
+};
+</code>
+</pre>
+  </section>
+</template>
+
+<template name="code__js_mithril_api">
+  <section id="code--js_mithril-api" class="padding-medium">
+<pre>
+<code class="hljs js">
+<span class="hljs-comment">--api integration--</span>
+
+vhxm.models.collections = {
+  list: m.<span class="hljs-value">prop</span>(<span class="hljs-attribute">null</span>)
+};
+
+m.<span class="hljs-value">initApi</span>(<span class="hljs-string">'collections'</span>);
+
+vhxm.models.<span class="hljs-value">listCollections</span> = <span class="hljs-title">function</span>() {
+  app.api.<span class="hljs-value">list</span>({}, vhxm.models.collections.list, <span class="hljs-title">function</span>() {
+    <span class="hljs-comment">// callback</span>
+  });
+}
+</code>
+</pre>
+  </section>
+</template>
