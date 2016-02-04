@@ -91,9 +91,9 @@
     <!-- Models -->
     <div class="margin-vert-large">
       <h4 class="margin-bottom-medium padding-bottom-small border-bottom border--gray-light text--bold text--gray">6. Models</h4>
-      <p class="margin-bottom-medium text-2">Our models are our source of truth. It is the canonical data we get from the backend (typically our Public or Internal API). Our models contains both our data objects as well as methods that can be called from our controllers for listing, retrieving, updating, creating, or deleting data.</p>
-      <p class="margin-bottom-medium text-2">We utilized Mithril's <code class="text--yellow">m.prop()</code> method to create all our model properties. This method creates a reactive getter/setting property. We set a property by calling the method by assigning a value. We get a property's value by calling its method without a value (see example to the right).</p>
-      <p class="margin-bottom-medium text-2">To setup or models we put everything under our <code class="text--yellow">vhxm.models</code> namespace. We can define our model so that it correlates to our data model, ensuring we also have methods for working with our model objects. See below for making api/ajax requests.</p>
+      <p class="margin-bottom-medium text-2">Our models are our source of truth. It is the canonical data we get from the backend (typically our Public or Internal API). Our models contain both our data objects as well as methods that can be called from our controllers for listing, retrieving, updating, creating, or deleting data.</p>
+      <p class="margin-bottom-medium text-2">We utilize Mithril's <code class="text--yellow">m.prop()</code> method to create all our model properties. This method creates a reactive getter/setter property. We set a property by calling the method and passing a value. We get a property's value by calling its method without a value (see example to the right).</p>
+      <p class="margin-bottom-medium text-2">To setup our models we put everything under our <code class="text--yellow">vhxm.models</code> namespace. We define our model so it correlates with our data model, ensuring we also have methods for working with our model objects. See below for making api/ajax requests.</p>
     </div>
   </section>
 </template>
@@ -103,9 +103,9 @@
     <!-- Requests -->
     <div class="margin-vert-large">
       <h4 class="margin-bottom-medium padding-bottom-small border-bottom border--gray-light text--bold text--gray">7. Requests</h4>
-      <p class="margin-bottom-medium text-2">To integrate your models with an actual backend endpoint, you cause use Mithril's <code class="text--yellow">request</code> method. Any headers that need to be set (e.g. for authorization, content type, etc) can be done by using the requests <code class="text--yellow">config</code> property as shown to the right.</p>
-      <p class="margin-bottom-medium text-2">We handle the response using Mithril's chained <code class="text--yellow">then</code> method, which has two callbacks. The first function for a successful response, and the second when there is an error.</p>
-      <p class="margin-bottom-medium text-2">Upon receiving the response, we then iterate over each property ensuring each model property is reactive using a helper method (<code class="text--yellow">)vhxm.models.populate</code>.</p>
+      <p class="margin-bottom-medium text-2">To integrate your models with a backend endpoint, you can use Mithril's <code class="text--yellow">request</code> method. Any headers that need to be set (e.g. for authorization, content type, etc) can be done by using the request's <code class="text--yellow">config</code> property as shown to the right.</p>
+      <p class="margin-bottom-medium text-2">We handle the response using Mithril's chained <code class="text--yellow">then</code> method, which has two callbacks. The first is a function for a successful response, and the second is for an error.</p>
+      <p class="margin-bottom-medium text-2">Upon receiving the response, we iterate over each property ensuring each model property is reactive using a helper method (<code class="text--yellow">)vhxm.models.populate</code>.</p>
       <p class="margin-bottom-medium text-2">For convenience, when working with the VHX Public API, you can use our <code class="text--yellow">VHX.Request</code> class for making API calls.</p>
     </div>
   </section>
@@ -116,7 +116,7 @@
     <!-- Api Integration -->
     <div class="margin-vert-large">
       <h4 class="margin-bottom-medium padding-bottom-small border-bottom border--gray-light text--bold text--gray">8. API Integration</h4>
-      <p class="margin-bottom-medium text-2">For convenience, when working with the VHX Public API, you can also use our <code class="text--yellow">VHX.Request</code> class for making API calls. This class was built using the built-in Mithril's methods listed above. Authorization, error handling, populating the model, and caching are all handled for you automatically.</p>
+      <p class="margin-bottom-medium text-2">For convenience, when working with the VHX Public API, you can also use our <code class="text--yellow">VHX.Request</code> class for making API calls. This class was built using Mithril's built-in methods listed above. Authorization, error handling, populating the model, and caching are all handled for you automatically.</p>
     </div>
   </section>
 </template>
