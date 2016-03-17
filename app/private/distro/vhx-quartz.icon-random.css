@@ -1,21 +1,21 @@
-.icon-random-white {
-  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-singletons%3C%2Ftitle%3E%3Cpath%20d%3D%22M5.69%2C15.21v-6H8L4%2C4.55-0.08%2C9.16H2.26v7a2.32%2C2.32%2C0%2C0%2C0%2C2.32%2C2.32H15l-3-3.24H5.69Z%22%20fill%3D%22%23ffffff%22%2F%3E%3Cpath%20d%3D%22M20.74%2C13.84v-7a2.32%2C2.32%2C0%2C0%2C0-2.32-2.32H8l3%2C3.24h6.32v6H15L19%2C18.45l4.05-4.61H20.74Z%22%20fill%3D%22%23ffffff%22%2F%3E%3C%2Fsvg%3E');
-  background-repeat: no-repeat;
-}
-.icon-random-black {
-  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-singletons%3C%2Ftitle%3E%3Cpath%20d%3D%22M5.69%2C15.21v-6H8L4%2C4.55-0.08%2C9.16H2.26v7a2.32%2C2.32%2C0%2C0%2C0%2C2.32%2C2.32H15l-3-3.24H5.69Z%22%20fill%3D%22%23000000%22%2F%3E%3Cpath%20d%3D%22M20.74%2C13.84v-7a2.32%2C2.32%2C0%2C0%2C0-2.32-2.32H8l3%2C3.24h6.32v6H15L19%2C18.45l4.05-4.61H20.74Z%22%20fill%3D%22%23000000%22%2F%3E%3C%2Fsvg%3E');
-  background-repeat: no-repeat;
-}
 .icon-random-navy {
   background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-singletons%3C%2Ftitle%3E%3Cpath%20d%3D%22M5.69%2C15.21v-6H8L4%2C4.55-0.08%2C9.16H2.26v7a2.32%2C2.32%2C0%2C0%2C0%2C2.32%2C2.32H15l-3-3.24H5.69Z%22%20fill%3D%22%23375667%22%2F%3E%3Cpath%20d%3D%22M20.74%2C13.84v-7a2.32%2C2.32%2C0%2C0%2C0-2.32-2.32H8l3%2C3.24h6.32v6H15L19%2C18.45l4.05-4.61H20.74Z%22%20fill%3D%22%23375667%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+}
+.icon-random-gray {
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-singletons%3C%2Ftitle%3E%3Cpath%20d%3D%22M5.69%2C15.21v-6H8L4%2C4.55-0.08%2C9.16H2.26v7a2.32%2C2.32%2C0%2C0%2C0%2C2.32%2C2.32H15l-3-3.24H5.69Z%22%20fill%3D%22%239baab2%22%2F%3E%3Cpath%20d%3D%22M20.74%2C13.84v-7a2.32%2C2.32%2C0%2C0%2C0-2.32-2.32H8l3%2C3.24h6.32v6H15L19%2C18.45l4.05-4.61H20.74Z%22%20fill%3D%22%239baab2%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+}
+.icon-random-white {
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-singletons%3C%2Ftitle%3E%3Cpath%20d%3D%22M5.69%2C15.21v-6H8L4%2C4.55-0.08%2C9.16H2.26v7a2.32%2C2.32%2C0%2C0%2C0%2C2.32%2C2.32H15l-3-3.24H5.69Z%22%20fill%3D%22%23ffffff%22%2F%3E%3Cpath%20d%3D%22M20.74%2C13.84v-7a2.32%2C2.32%2C0%2C0%2C0-2.32-2.32H8l3%2C3.24h6.32v6H15L19%2C18.45l4.05-4.61H20.74Z%22%20fill%3D%22%23ffffff%22%2F%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
 }
 .icon-random-teal {
   background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-singletons%3C%2Ftitle%3E%3Cpath%20d%3D%22M5.69%2C15.21v-6H8L4%2C4.55-0.08%2C9.16H2.26v7a2.32%2C2.32%2C0%2C0%2C0%2C2.32%2C2.32H15l-3-3.24H5.69Z%22%20fill%3D%22%2322b8af%22%2F%3E%3Cpath%20d%3D%22M20.74%2C13.84v-7a2.32%2C2.32%2C0%2C0%2C0-2.32-2.32H8l3%2C3.24h6.32v6H15L19%2C18.45l4.05-4.61H20.74Z%22%20fill%3D%22%2322b8af%22%2F%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
 }
-.icon-random-gray {
-  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-singletons%3C%2Ftitle%3E%3Cpath%20d%3D%22M5.69%2C15.21v-6H8L4%2C4.55-0.08%2C9.16H2.26v7a2.32%2C2.32%2C0%2C0%2C0%2C2.32%2C2.32H15l-3-3.24H5.69Z%22%20fill%3D%22%239baab2%22%2F%3E%3Cpath%20d%3D%22M20.74%2C13.84v-7a2.32%2C2.32%2C0%2C0%2C0-2.32-2.32H8l3%2C3.24h6.32v6H15L19%2C18.45l4.05-4.61H20.74Z%22%20fill%3D%22%239baab2%22%2F%3E%3C%2Fsvg%3E');
+.icon-random-black {
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-singletons%3C%2Ftitle%3E%3Cpath%20d%3D%22M5.69%2C15.21v-6H8L4%2C4.55-0.08%2C9.16H2.26v7a2.32%2C2.32%2C0%2C0%2C0%2C2.32%2C2.32H15l-3-3.24H5.69Z%22%20fill%3D%22%23000000%22%2F%3E%3Cpath%20d%3D%22M20.74%2C13.84v-7a2.32%2C2.32%2C0%2C0%2C0-2.32-2.32H8l3%2C3.24h6.32v6H15L19%2C18.45l4.05-4.61H20.74Z%22%20fill%3D%22%23000000%22%2F%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
 }
 .icon-random {

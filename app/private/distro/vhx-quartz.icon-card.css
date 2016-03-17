@@ -2,20 +2,20 @@
   background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-payment-set%20copy%3C%2Ftitle%3E%3Cpath%20d%3D%22M22.85%2C5.27a0.64%2C0.64%2C0%2C0%2C0-.64-0.64H0.79a0.64%2C0.64%2C0%2C0%2C0-.64.64V8h22.7V5.27Z%22%20fill%3D%22%23375667%22%2F%3E%3Cpath%20d%3D%22M0.15%2C11.13v6.6a0.64%2C0.64%2C0%2C0%2C0%2C.64.64H22.21a0.64%2C0.64%2C0%2C0%2C0%2C.64-0.64v-6.6H0.15Zm5.66%2C4.78H2.75V14.76H5.81v1.15Zm5.53%2C0H6.89V14.76h4.45v1.15Z%22%20fill%3D%22%23375667%22%2F%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
 }
-.icon-card-gray {
-  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-payment-set%20copy%3C%2Ftitle%3E%3Cpath%20d%3D%22M22.85%2C5.27a0.64%2C0.64%2C0%2C0%2C0-.64-0.64H0.79a0.64%2C0.64%2C0%2C0%2C0-.64.64V8h22.7V5.27Z%22%20fill%3D%22%239baab2%22%2F%3E%3Cpath%20d%3D%22M0.15%2C11.13v6.6a0.64%2C0.64%2C0%2C0%2C0%2C.64.64H22.21a0.64%2C0.64%2C0%2C0%2C0%2C.64-0.64v-6.6H0.15Zm5.66%2C4.78H2.75V14.76H5.81v1.15Zm5.53%2C0H6.89V14.76h4.45v1.15Z%22%20fill%3D%22%239baab2%22%2F%3E%3C%2Fsvg%3E');
-  background-repeat: no-repeat;
-}
 .icon-card-white {
   background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-payment-set%20copy%3C%2Ftitle%3E%3Cpath%20d%3D%22M22.85%2C5.27a0.64%2C0.64%2C0%2C0%2C0-.64-0.64H0.79a0.64%2C0.64%2C0%2C0%2C0-.64.64V8h22.7V5.27Z%22%20fill%3D%22%23ffffff%22%2F%3E%3Cpath%20d%3D%22M0.15%2C11.13v6.6a0.64%2C0.64%2C0%2C0%2C0%2C.64.64H22.21a0.64%2C0.64%2C0%2C0%2C0%2C.64-0.64v-6.6H0.15Zm5.66%2C4.78H2.75V14.76H5.81v1.15Zm5.53%2C0H6.89V14.76h4.45v1.15Z%22%20fill%3D%22%23ffffff%22%2F%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
 }
-.icon-card-teal {
-  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-payment-set%20copy%3C%2Ftitle%3E%3Cpath%20d%3D%22M22.85%2C5.27a0.64%2C0.64%2C0%2C0%2C0-.64-0.64H0.79a0.64%2C0.64%2C0%2C0%2C0-.64.64V8h22.7V5.27Z%22%20fill%3D%22%2322b8af%22%2F%3E%3Cpath%20d%3D%22M0.15%2C11.13v6.6a0.64%2C0.64%2C0%2C0%2C0%2C.64.64H22.21a0.64%2C0.64%2C0%2C0%2C0%2C.64-0.64v-6.6H0.15Zm5.66%2C4.78H2.75V14.76H5.81v1.15Zm5.53%2C0H6.89V14.76h4.45v1.15Z%22%20fill%3D%22%2322b8af%22%2F%3E%3C%2Fsvg%3E');
+.icon-card-gray {
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-payment-set%20copy%3C%2Ftitle%3E%3Cpath%20d%3D%22M22.85%2C5.27a0.64%2C0.64%2C0%2C0%2C0-.64-0.64H0.79a0.64%2C0.64%2C0%2C0%2C0-.64.64V8h22.7V5.27Z%22%20fill%3D%22%239baab2%22%2F%3E%3Cpath%20d%3D%22M0.15%2C11.13v6.6a0.64%2C0.64%2C0%2C0%2C0%2C.64.64H22.21a0.64%2C0.64%2C0%2C0%2C0%2C.64-0.64v-6.6H0.15Zm5.66%2C4.78H2.75V14.76H5.81v1.15Zm5.53%2C0H6.89V14.76h4.45v1.15Z%22%20fill%3D%22%239baab2%22%2F%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
 }
 .icon-card-black {
   background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-payment-set%20copy%3C%2Ftitle%3E%3Cpath%20d%3D%22M22.85%2C5.27a0.64%2C0.64%2C0%2C0%2C0-.64-0.64H0.79a0.64%2C0.64%2C0%2C0%2C0-.64.64V8h22.7V5.27Z%22%20fill%3D%22%23000000%22%2F%3E%3Cpath%20d%3D%22M0.15%2C11.13v6.6a0.64%2C0.64%2C0%2C0%2C0%2C.64.64H22.21a0.64%2C0.64%2C0%2C0%2C0%2C.64-0.64v-6.6H0.15Zm5.66%2C4.78H2.75V14.76H5.81v1.15Zm5.53%2C0H6.89V14.76h4.45v1.15Z%22%20fill%3D%22%23000000%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+}
+.icon-card-teal {
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-payment-set%20copy%3C%2Ftitle%3E%3Cpath%20d%3D%22M22.85%2C5.27a0.64%2C0.64%2C0%2C0%2C0-.64-0.64H0.79a0.64%2C0.64%2C0%2C0%2C0-.64.64V8h22.7V5.27Z%22%20fill%3D%22%2322b8af%22%2F%3E%3Cpath%20d%3D%22M0.15%2C11.13v6.6a0.64%2C0.64%2C0%2C0%2C0%2C.64.64H22.21a0.64%2C0.64%2C0%2C0%2C0%2C.64-0.64v-6.6H0.15Zm5.66%2C4.78H2.75V14.76H5.81v1.15Zm5.53%2C0H6.89V14.76h4.45v1.15Z%22%20fill%3D%22%2322b8af%22%2F%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
 }
 .icon-card {
