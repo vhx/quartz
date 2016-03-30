@@ -229,6 +229,61 @@ a.text--yellow {
     }
   }
 }
+.text--green {
+  color: $vhx-green;
+  &.text--transparent {
+    color: transparentize($vhx-green, .5);
+  }
+}
+a.text--green {
+  &:link,
+  &:visited {
+    color: $vhx-green;
+    text-decoration: none;
+  }
+  &:hover,
+  &:active {
+    color: $vhx-green;
+    text-decoration: none;
+    &.is-hover-text--green {
+      color: $vhx-green;
+    }
+  }
+  &.is-disabled {
+  &:link, &:visited,
+  &:hover, &:active {
+      color: $vhx-green;
+    }
+  }
+}
+
+.text--red {
+  color: $red;
+  &.text--transparent {
+    color: transparentize($red, .5);
+  }
+}
+a.text--red {
+  &:link,
+  &:visited {
+    color: $red;
+    text-decoration: none;
+  }
+  &:hover,
+  &:active {
+    color: $red;
+    text-decoration: none;
+    &.is-hover-text--red {
+      color: $red;
+    }
+  }
+  &.is-disabled {
+  &:link, &:visited,
+  &:hover, &:active {
+      color: $red;
+    }
+  }
+}
 
 /* modifiers
 ......................................*/
