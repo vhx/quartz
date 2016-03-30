@@ -26,23 +26,13 @@
 .word-break {
   word-break: break-word;
 }
+.radius {
+  border-radius: 3px;
+}
 
 
 /* scrollable content
 ......................................*/
-.frame {
-  transform: translate3d(0, 0, 0);
-
-  @each $size in $sizes {
-    &.frame--#{$size} {
-      height: auto;
-      max-height: set_frame_size($size);
-      width: 100%;
-      overflow-y: auto;
-    }
-  }
-}
-
 .fill-height {
   height: 100%;
 }
