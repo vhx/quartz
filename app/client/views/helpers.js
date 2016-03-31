@@ -40,6 +40,7 @@ Template.style_utilities.helpers({
   styleUtilities: function() {
     return [
       { guide: 'guide__style_grid', code:'code__style_grid' },
+      { guide: 'guide__style_display', code:'code__style_display' },
       { guide: 'guide__style_spacing', code:'code__style_spacing' },
       { guide: 'guide__style_backgrounds', code:'code__style_backgrounds' },
       { guide: 'guide__style_borders', code:'code__style_borders' }
