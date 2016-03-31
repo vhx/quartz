@@ -11,6 +11,10 @@
   height: $icon-small;
   text-indent: -9999px;
 
+  &.icon--xxsmall {
+    width: $icon-xxsmall;
+    height: $icon-xxsmall;
+  }
   &.icon--xsmall {
     width: $icon-xsmall;
     height: $icon-xsmall;
@@ -39,6 +43,43 @@
 
 /* sizes
 ......................................*/
+.icon--left {
+  padding-left: 30px;
+}
+.icon--right {
+  padding-right: 30px;
+}
+
+.icon--xxsmall {
+  background-size: $icon-xxsmall $icon-xxsmall;
+  &.text-1 {
+    line-height: 24px;
+  }
+  &.text-2 {
+    line-height: 22px;
+  }
+  &.text-3 {
+    line-height: 18px;
+  }
+  &.head-1 {
+    line-height: 40px;
+  }
+  &.head-2 {
+    line-height: 30px;
+  }
+  &.head-3 {
+    line-height: 22px;
+  }
+  &.head-4 {
+    line-height: 16px;
+  }
+  &.icon--left {
+    padding-left: 15px;
+  }
+  &.icon--right {
+    padding-right: 15px;
+  }
+}
 .icon--xsmall {
   background-size: $icon-xsmall $icon-xsmall;
   &.text-1 {
@@ -122,7 +163,7 @@
   }
 }
 
-
+.icon--xxsmall,
 .icon--xsmall,
 .icon--small,
 .icon--medium,
@@ -148,6 +189,12 @@
   display: inline-block;
   background-position: 50% 50% !important;
 
+  &.icon--xxsmall {
+    padding: 3px;
+    background-size: $icon-xxsmall $icon-xxsmall;
+    width: $icon-xxsmall;
+    height: $icon-xxsmall;
+  }
   &.icon--xsmall {
     padding: 5px;
     background-size: $icon-xsmall $icon-xsmall;
@@ -184,4 +231,48 @@
     width: $icon-xxlarge;
     height: $icon-xxlarge;
   }
+}
+
+/*.....................................
+  Icon Dot
+......................................*/
+.icon-dot {
+  border-radius: 50%;
+  background-color: $teal-2;
+  box-sizing: content-box;
+  display: inline-block;
+  background-position: 50% 50% !important;
+  width: $icon-xxsmall;
+  height: $icon-xxsmall;
+  
+  &.icon--small {
+    width: $icon-xxsmall;
+    height: $icon-xxsmall;
+  }
+  &.icon--medium {
+    width: $icon-xsmall;
+    height: $icon-xsmall;
+  }
+  &.icon--large {
+    width: $icon-small;
+    height: $icon-small;
+  }
+}
+.icon-dot--teal {
+  background-color: $teal-2;
+}
+.icon-dot--navy {
+  background-color: $navy;
+}
+.icon-dot--green {
+  background-color: $vhx-green;
+}
+.icon-dot--gray {
+  background-color: $gray-3;
+}
+.icon-dot--red {
+  background-color: $red;
+}
+.icon-dot--yellow {
+  background-color: $vhx-yellow;
 }

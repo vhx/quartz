@@ -31,6 +31,8 @@ Package.onUse(function(api) {
     'styles/util.scss',
     'styles/spacing.scss',
 
+    'docs/display.code.html',
+    'docs/display.guide.html',
     'docs/grid.code.html',
     'docs/grid.guide.html',
     'docs/spacing.code.html',

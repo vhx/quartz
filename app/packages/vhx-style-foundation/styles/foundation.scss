@@ -1827,6 +1827,12 @@ input[type="file"] {
 .inline-list > li > * {
   display: block;
 }
+.inline-list {
+  &.inline > li {
+    margin-left: 0px;
+    display: inline-block;
+  }
+}
 
 @media print {
 

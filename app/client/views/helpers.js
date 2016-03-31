@@ -20,6 +20,7 @@ Template.style_elements.helpers({
     return [
       { guide: 'guide__style_buttons', code:'code__style_buttons' },
       { guide: 'guide__style_loaders', code:'code__style_loaders' },
+      { guide: 'guide__style_charts', code:'code__style_charts' },
       { guide: 'guide__style_checkbox', code:'code__style_checkbox' },
       { guide: 'guide__style_radio', code:'code__style_radio' },
       { guide: 'guide__style_tooltips', code:'code__style_tooltips' }
@@ -40,6 +41,7 @@ Template.style_utilities.helpers({
   styleUtilities: function() {
     return [
       { guide: 'guide__style_grid', code:'code__style_grid' },
+      { guide: 'guide__style_display', code:'code__style_display' },
       { guide: 'guide__style_spacing', code:'code__style_spacing' },
       { guide: 'guide__style_backgrounds', code:'code__style_backgrounds' },
       { guide: 'guide__style_borders', code:'code__style_borders' }
