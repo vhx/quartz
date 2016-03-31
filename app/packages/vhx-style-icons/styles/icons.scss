@@ -232,3 +232,47 @@
     height: $icon-xxlarge;
   }
 }
+
+/*.....................................
+  Icon Dot
+......................................*/
+.icon-dot {
+  border-radius: 50%;
+  background-color: $teal-2;
+  box-sizing: content-box;
+  display: inline-block;
+  background-position: 50% 50% !important;
+  width: $icon-xxsmall;
+  height: $icon-xxsmall;
+  
+  &.icon--small {
+    width: $icon-xxsmall;
+    height: $icon-xxsmall;
+  }
+  &.icon--medium {
+    width: $icon-xsmall;
+    height: $icon-xsmall;
+  }
+  &.icon--large {
+    width: $icon-small;
+    height: $icon-small;
+  }
+}
+.icon-dot--teal {
+  background-color: $teal-2;
+}
+.icon-dot--navy {
+  background-color: $navy;
+}
+.icon-dot--green {
+  background-color: $vhx-green;
+}
+.icon-dot--gray {
+  background-color: $gray-3;
+}
+.icon-dot--red {
+  background-color: $red;
+}
+.icon-dot--yellow {
+  background-color: $vhx-yellow;
+}
