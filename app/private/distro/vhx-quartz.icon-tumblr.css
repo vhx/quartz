@@ -1,13 +1,5 @@
-.icon-tumblr-gray {
-  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-social-set%20copy%3C%2Ftitle%3E%3Cpath%20d%3D%22M18.58%2C21.85a11.16%2C11.16%2C0%2C0%2C1-7.68%2C1A5%2C5%2C0%2C0%2C1%2C7%2C17.55V9.39H4.42V6.1C7.28%2C5.16%2C8.74%2C2.74%2C9.1-.14h3.27V5.74h5.45V9.39H12.36v6c0%2C1.18-.18%2C2.81%2C1%2C3.51%2C1.63%2C1%2C3.76.29%2C5.22-.69v3.67Z%22%20fill%3D%22%239baab2%22%2F%3E%3C%2Fsvg%3E');
-  background-repeat: no-repeat;
-}
 .icon-tumblr-navy {
   background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-social-set%20copy%3C%2Ftitle%3E%3Cpath%20d%3D%22M18.58%2C21.85a11.16%2C11.16%2C0%2C0%2C1-7.68%2C1A5%2C5%2C0%2C0%2C1%2C7%2C17.55V9.39H4.42V6.1C7.28%2C5.16%2C8.74%2C2.74%2C9.1-.14h3.27V5.74h5.45V9.39H12.36v6c0%2C1.18-.18%2C2.81%2C1%2C3.51%2C1.63%2C1%2C3.76.29%2C5.22-.69v3.67Z%22%20fill%3D%22%23375667%22%2F%3E%3C%2Fsvg%3E');
-  background-repeat: no-repeat;
-}
-.icon-tumblr-black {
-  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-social-set%20copy%3C%2Ftitle%3E%3Cpath%20d%3D%22M18.58%2C21.85a11.16%2C11.16%2C0%2C0%2C1-7.68%2C1A5%2C5%2C0%2C0%2C1%2C7%2C17.55V9.39H4.42V6.1C7.28%2C5.16%2C8.74%2C2.74%2C9.1-.14h3.27V5.74h5.45V9.39H12.36v6c0%2C1.18-.18%2C2.81%2C1%2C3.51%2C1.63%2C1%2C3.76.29%2C5.22-.69v3.67Z%22%20fill%3D%22%23000000%22%2F%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
 }
 .icon-tumblr-teal {
@@ -16,6 +8,14 @@
 }
 .icon-tumblr-white {
   background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-social-set%20copy%3C%2Ftitle%3E%3Cpath%20d%3D%22M18.58%2C21.85a11.16%2C11.16%2C0%2C0%2C1-7.68%2C1A5%2C5%2C0%2C0%2C1%2C7%2C17.55V9.39H4.42V6.1C7.28%2C5.16%2C8.74%2C2.74%2C9.1-.14h3.27V5.74h5.45V9.39H12.36v6c0%2C1.18-.18%2C2.81%2C1%2C3.51%2C1.63%2C1%2C3.76.29%2C5.22-.69v3.67Z%22%20fill%3D%22%23ffffff%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+}
+.icon-tumblr-gray {
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-social-set%20copy%3C%2Ftitle%3E%3Cpath%20d%3D%22M18.58%2C21.85a11.16%2C11.16%2C0%2C0%2C1-7.68%2C1A5%2C5%2C0%2C0%2C1%2C7%2C17.55V9.39H4.42V6.1C7.28%2C5.16%2C8.74%2C2.74%2C9.1-.14h3.27V5.74h5.45V9.39H12.36v6c0%2C1.18-.18%2C2.81%2C1%2C3.51%2C1.63%2C1%2C3.76.29%2C5.22-.69v3.67Z%22%20fill%3D%22%239baab2%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+}
+.icon-tumblr-black {
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-social-set%20copy%3C%2Ftitle%3E%3Cpath%20d%3D%22M18.58%2C21.85a11.16%2C11.16%2C0%2C0%2C1-7.68%2C1A5%2C5%2C0%2C0%2C1%2C7%2C17.55V9.39H4.42V6.1C7.28%2C5.16%2C8.74%2C2.74%2C9.1-.14h3.27V5.74h5.45V9.39H12.36v6c0%2C1.18-.18%2C2.81%2C1%2C3.51%2C1.63%2C1%2C3.76.29%2C5.22-.69v3.67Z%22%20fill%3D%22%23000000%22%2F%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
 }
 .icon-tumblr {
