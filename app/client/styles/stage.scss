@@ -34,3 +34,9 @@ html {
     padding: 35px;
   }
 }
+
+#code--style-brand-colors {
+  .hljs-constant { color: #ffffff; }
+  .hljs-prompt { color: #ffffff; }
+  .hljs-variable { color: #ffffff; }
+}
