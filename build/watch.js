@@ -28,6 +28,15 @@ catw('app/client/**/*.js', function() {
   });
 });
 
+sass.render({
+    file: 'quartz-css/vhx-style-icons/styles/icons.svg.scss'
+}, function(err, output) {
+  fs.writeFile('app/public/quartz-icons.css', output.css, function(err) {
+  if (err) { process.stdout.write(chalk.red(err)); }
+    process.stdout.write(chalk.green('Icons Updated \n'));
+  });
+});
+
 catw('client/styles/**/*.scss', function() {
   let src = 'app/client/styles/_manifest.scss';
   sass.render({
@@ -39,6 +48,8 @@ catw('client/styles/**/*.scss', function() {
     });
   });
 });
+
+
 
 catw('quartz-css/**/*.scss', function() {
   let src = 'quartz-css/vhx.scss';
