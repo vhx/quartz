@@ -1,6 +1,4 @@
 echo 3001 > ~/.pow/quartz
-cd app/
-curl https://install.meteor.com/ | sh
 npm install
 cd private/quartz-rails
 git submodule update --init
