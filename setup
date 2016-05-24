@@ -1,5 +1,6 @@
 echo 3001 > ~/.pow/quartz
 npm install
-git submodule add https://github.com/vhx/quartz-rails
+cd quartz-rails
+git submodule update --init
 git checkout master
 cd ../
