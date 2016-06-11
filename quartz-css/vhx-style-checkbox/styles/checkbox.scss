@@ -13,7 +13,7 @@
   font-size: 14px;
   background: transparent;
   user-select: none;
-  
+
   &:after {
     content: "";
     display: table;
@@ -31,11 +31,6 @@
   /* label unchecked
   ...................................*/
   label {
-    opacity: 0;
-    transition: opacity 100ms ease-in;
-    &.ready {
-      opacity: 1;
-    }
     display: block;
     min-height: $field-height;
     margin: 0;
