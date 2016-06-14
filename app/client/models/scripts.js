@@ -1,6 +1,6 @@
 Q.models.data.scripts = m.prop(null);
 
-Q.models.getScripts = function() {
+Q.models.getScriptDocs = function() {
   Q.models.data.scripts({
     mithril: [
       { guide: 'guide__js_mithril_intro', code:'code__js_mithril_intro' },

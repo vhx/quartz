@@ -1,16 +1,25 @@
 'use strict';
 
-window.Q = {
-  data: {},
-  models: {
-    data: {},
-  },
-  components: {
-    shared: {},
-  },
-  layouts: {
-    standard: {
-      ui: {}
-    }
-  }
-};
+// window.Q = {
+//   models: {
+//     data: {},
+//   },
+//   components: {
+//     shared: {
+//       guide: {
+//         intro: { ui: {} },
+//         block: { ui: {} },
+//       }
+//     },
+//     guide: {
+//       styleguide: {
+//         ui: {}
+//       }
+//     }
+//   },
+//   layouts: {
+//     standard: {
+//       ui: {}
+//     }
+//   }
+// };

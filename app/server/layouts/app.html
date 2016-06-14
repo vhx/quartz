@@ -20,8 +20,36 @@
       {{> home}}
     {{else}}
       <section class="stage" id="quartz"></section>
+      <script src="/vendor.js"></script>
+      <script>
+      window.Q = {
+        models: {
+          data: {},
+        },
+        components: {
+          shared: {
+            guide: {
+              intro: { ui: {} },
+              block: { ui: {} },
+              color: { ui: {} }
+            }
+          },
+          guide: {
+            styleguide: {
+              ui: {}
+            }
+          }
+        },
+        layouts: {
+          standard: {
+            ui: {}
+          }
+        }
+      };
+      </script>
+      <script>var CODE = {{{ code }}}</script>
+      <script>{{{ views }}}</script>
+      <script src="/app.js"></script>
     {{/if}}
-
-    <script src="/app.js"></script>
   </body>
 </html>
