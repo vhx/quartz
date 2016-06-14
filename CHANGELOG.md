@@ -1,4 +1,10 @@
 ### 0.7.6
+**2016-05-25**
+
+* Remove Meteor / Rewrite for NodeJS
+* Move distro and quartz-rails sub module to top level
+
+### 0.7.6
 **2016-03-31**
 
 * Add clapboard icon
