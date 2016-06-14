@@ -1638,16 +1638,12 @@ select {
   .form .checkbox input[type="checkbox"] {
     display: none; }
   .form .checkbox label {
-    opacity: 0;
-    transition: opacity 100ms ease-in;
     display: block;
     min-height: 40px;
     margin: 0;
     float: left;
     box-sizing: border-box;
     line-height: 40px; }
-    .form .checkbox label.ready {
-      opacity: 1; }
     .form .checkbox label:after {
       content: "";
       display: table;
