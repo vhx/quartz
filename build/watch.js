@@ -7,8 +7,8 @@ const babel       = require('babel-core');
 const sass        = require('node-sass');
 const concat      = require('concat-files');
 const manifests   = {
-  scripts: require(__dirname + '/../app/client/_manifest.js')
-  // vendor: require('./manifests/vendor.js')
+  scripts: require(__dirname + '/_app.js'),
+  vendor: require(__dirname + '/_vendor.js')
 };
 
 catw('app/client/**/*.js', function() {
@@ -26,6 +26,15 @@ catw('app/client/**/*.js', function() {
       }
     });
   });
+});
+
+concat(manifests.vendor, 'app/public/vendor.js', function(err) {
+  if (err) {
+    process.stdout.write(chalk.red(err));
+  }
+  else {
+    process.stdout.write(chalk.yellow('Vendor JS Updated \n'));
+  }
 });
 
 sass.render({
