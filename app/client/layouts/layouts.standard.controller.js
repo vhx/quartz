@@ -4,6 +4,12 @@ Q.layouts.standard.controller = function(opts) {
   let self = this;
 
   self.init = function() {
+    if (m.route.param('style')) {
+      // Q.models.getStyleDoc(m.route.param('style'));
+    }
+    // if (m.route.param('js')) {
+    //   Q.models.getScriptDoc(m.route.param('js'));
+    // }
     // $(window).on('resize', function() {
     //   $('.row.fill-width').each(function() {
     //     var arr = [],
@@ -20,4 +26,8 @@ Q.layouts.standard.controller = function(opts) {
     //
     // $(window).trigger('resize');
   };
+
+  if (opts.init) {
+    self.init();
+  }
 };

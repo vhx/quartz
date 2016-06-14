@@ -8,16 +8,28 @@ Q.layouts.standard.ui.container = {
   },
   view: function() {
     return m('div.row.fill-width.margin-reset', [
-      m('div.column.small-8.padding-reset', [
-        m('section.guide-bar', [
-          // {{> UI.dynamic template=guide}}
-        ])
-      ]),
-      m('div.column.small-8.padding-reset', [
-        m('section.code-bar', [
-        // {{> UI.dynamic template=code}}
-        ])
-      ])
+      Q.components.guide[m.route.param('type')].ui[m.route.param('guide')].items.map(function(item) {
+        return m('div.row', [
+          m('div.column.small-8.padding-reset', [
+            m('section.guide-bar', [
+              m.component(item.guide)
+            ])
+          ]),
+          m('div.column.small-8.padding-reset', [
+            m('section.code-bar', [
+              m('pre.padding-medium', [
+                m('code.html', {
+                  config: function(el) {
+                     hljs.highlightBlock(el);
+                  }
+                }, [
+                  JSON.parse(item.code)
+                ])
+              ])
+            ])
+          ])
+        ]);
+      })
     ]);
   }
 };
