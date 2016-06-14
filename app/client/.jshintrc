@@ -55,6 +55,7 @@
   "globals": {},
   "predef" :[
     "Q",
+    "DATA",
     "m",
     "_"
   ]
