@@ -113,7 +113,7 @@ Q.layouts.standard.ui.container = {
     });
   },
   view: function view() {
-    return m('div.row.fill-width.margin-reset', [Q.components.guide[m.route.param('type')].ui[m.route.param('guide')].items.map(function (item) {
+    return m('div.fill-width.margin-reset', [Q.components.guide[m.route.param('type')].ui[m.route.param('guide')].items.map(function (item) {
       return m('div.row', [m('div.column.small-8.padding-reset', [m('section.guide-bar', [m.component(item.guide)])]), m('div.column.small-8.padding-reset', [m('section.code-bar', [m('pre.padding-medium', [m('code.html', {
         config: function config(el) {
           hljs.highlightBlock(el);

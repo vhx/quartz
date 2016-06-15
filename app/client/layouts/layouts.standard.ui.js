@@ -7,7 +7,7 @@ Q.layouts.standard.ui.container = {
     });
   },
   view: function() {
-    return m('div.row.fill-width.margin-reset', [
+    return m('div.fill-width.margin-reset', [
       Q.components.guide[m.route.param('type')].ui[m.route.param('guide')].items.map(function(item) {
         return m('div.row', [
           m('div.column.small-8.padding-reset', [
