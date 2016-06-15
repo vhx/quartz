@@ -1,4 +1,4 @@
-Q.components.guide.styleguide.ui.text = {};
+Q.components.guide.styleguide.ui.loaders = {};
 
 Q.components.guide.styleguide.ui.loaders.container = {
   view: function(ctrl) {
