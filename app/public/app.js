@@ -145,21 +145,21 @@ Q.components.shared.guide.color.ui.container = {
 };Q.components.guide.styleguide.ui.elements = {
   items: [{
     guide: m.component(Q.components.guide.styleguide.ui.checkbox.container),
-    code: CODE['colors-brands']
+    code: Q.components.code['colors-brands']
   }, {
     guide: m.component(Q.components.guide.styleguide.ui.radio.container),
-    code: CODE['colors-brands']
+    code: Q.components.code['colors-brands']
   }, {
     guide: m.component(Q.components.guide.styleguide.ui.loaders.container),
-    code: CODE['colors-brands']
+    code: Q.components.code['colors-brands']
   }, {
     guide: m.component(Q.components.guide.styleguide.ui.buttons.container),
-    code: CODE['colors-brands']
+    code: Q.components.code['colors-brands']
   }]
 };Q.components.guide.styleguide.ui.typography = {
   items: [{
     guide: m.component(Q.components.guide.styleguide.ui.text.container),
-    code: CODE['colors-brands']
+    code: Q.components.code['colors-brands']
   }]
 };'use strict';
 
