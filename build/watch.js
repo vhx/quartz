@@ -23,9 +23,6 @@ catw('app/client/**/*.js', function() {
       if (err) {
         process.stdout.write(chalk.red(err));
       }
-      else {
-        process.stdout.write(chalk.yellow('App JS Updated \n'));
-      }
     });
   });
 });
@@ -34,9 +31,6 @@ concat(manifests.vendor, 'app/public/vendor.js', function(err) {
   if (err) {
     process.stdout.write(chalk.red(err));
   }
-  else {
-    process.stdout.write(chalk.yellow('Vendor JS Updated \n'));
-  }
 });
 
 sass.render({
@@ -44,7 +38,6 @@ sass.render({
 }, function(err, output) {
   fs.writeFile('app/public/quartz-icons.css', output.css, function(err) {
   if (err) { process.stdout.write(chalk.red(err)); }
-    process.stdout.write(chalk.green('Icons Updated \n'));
   });
 });
 
@@ -55,7 +48,6 @@ catw('client/styles/**/*.scss', function() {
   }, function(err, output) {
     fs.writeFile('app/public/app.css', output.css, function(err) {
     if (err) { process.stdout.write(chalk.red(err)); }
-      process.stdout.write(chalk.green('CSS Updated \n'));
     });
   });
 });
@@ -69,7 +61,6 @@ catw('quartz-css/**/*.scss', function() {
   }, function(err, output) {
     fs.writeFile('app/public/quartz.css', output.css, function(err) {
     if (err) { process.stdout.write(chalk.red(err)); }
-      process.stdout.write(chalk.green('CSS Updated \n'));
     });
   });
 });
@@ -90,9 +81,6 @@ catw('quartz-js/**/*.js', function() {
     fs.writeFile(src, result.code, function(err) {
       if (err) {
         process.stdout.write(chalk.red(err));
-      }
-      else {
-        process.stdout.write(chalk.yellow('Quartz JS Updated \n'));
       }
     });
   });
