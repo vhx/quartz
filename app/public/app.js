@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 _.max = function (array) {
   return Math.max.apply(Math, array);
@@ -154,8 +154,8 @@ Q.components.shared.guide.color.ui.container = {
     guide: m.component(Q.components.guide.styleguide.ui.loaders.container),
     code: Q.components.code.loaders
   }, {
-    guide: m.component(Q.components.guide.styleguide.ui.buttons.container),
-    code: Q.components.code.buttons
+    guide: m.component(Q.components.guide.styleguide.ui.tooltips.container),
+    code: Q.components.code.tooltips
   }]
 };Q.components.route.styleguide.ui.utilities = {
   items: [{
@@ -165,8 +165,11 @@ Q.components.shared.guide.color.ui.container = {
     guide: m.component(Q.components.guide.styleguide.ui.grid.container),
     code: Q.components.code.grid
   }, {
-    guide: m.component(Q.components.guide.styleguide.ui.spacing.container),
-    code: Q.components.code.spacing
+    guide: m.component(Q.components.guide.styleguide.ui.spacing_sizes.container),
+    code: Q.components.code['spacing-sizes']
+  }, {
+    guide: m.component(Q.components.guide.styleguide.ui.spacing_positions.container),
+    code: Q.components.code['spacing-positions']
   }]
 };Q.components.route.styleguide.ui.typography = {
   items: [{
