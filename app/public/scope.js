@@ -3,6 +3,11 @@ window.Q = {
     data: {},
   },
   components: {
+    route: {
+      styleguide: {
+        ui: {}
+      }
+    },
     shared: {
       guide: {
         intro: { ui: {} },
