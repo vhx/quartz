@@ -20,34 +20,10 @@
       {{> home}}
     {{else}}
       <section class="stage" id="quartz"></section>
+
       <script src="/vendor.js"></script>
-      <script>
-      window.Q = {
-        models: {
-          data: {},
-        },
-        components: {
-          shared: {
-            guide: {
-              intro: { ui: {} },
-              block: { ui: {} },
-              color: { ui: {} }
-            }
-          },
-          guide: {
-            styleguide: {
-              ui: {}
-            }
-          },
-          code: {{{ code }}}
-        },
-        layouts: {
-          standard: {
-            ui: {}
-          }
-        }
-      };
-      </script>
+      <script src="/scope.js"></script>
+      <script>Q.components.code = {{{ code }}}</script>
       <script src="/quartz.js"></script>
       <script>{{{ views }}}</script>
       <script src="/app.js"></script>
