@@ -13,8 +13,8 @@ Q.components.route.styleguide.ui.elements = {
       code: Q.components.code.loaders
     },
     {
-      guide: m.component(Q.components.guide.styleguide.ui.buttons.container),
-      code: Q.components.code.buttons
+      guide: m.component(Q.components.guide.styleguide.ui.tooltips.container),
+      code: Q.components.code.tooltips
     }
   ]
 };
