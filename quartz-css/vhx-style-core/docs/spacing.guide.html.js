@@ -1,8 +1,9 @@
-Q.components.guide.styleguide.ui.spacing = {};
+Q.components.guide.styleguide.ui.spacing_sizes = {};
+Q.components.guide.styleguide.ui.spacing_positions = {};
 
-Q.components.guide.styleguide.ui.spacing.container = {
+Q.components.guide.styleguide.ui.spacing_sizes.container = {
   view: function(ctrl) {
-    return m('section#guide--style-text', [
+    return m('section#guide--style-spacing_sizes', [
       m.component(Q.components.shared.guide.intro.ui.container, {
         title: 'Spacing'
       }),
@@ -22,12 +23,19 @@ Q.components.guide.styleguide.ui.spacing.container = {
           view: function(ctrl) {
             return m('div', [
               ctrl.items.map(function(item) {
-                return m.component(Q.components.guide.styleguide.ui.spacing.template, item);
+                return m.component(Q.components.guide.styleguide.ui.spacing_sizes.template, item);
               })
             ]);
           }
         }
-      }),
+      })
+    ]);
+  }
+};
+
+Q.components.guide.styleguide.ui.spacing_positions.container = {
+  view: function(ctrl) {
+    return m('section#guide--style-spacing_sizes', [
       m.component(Q.components.shared.guide.block.ui.container, {
         title: 'Positions (Padding | Margin)',
         component: {
@@ -45,7 +53,7 @@ Q.components.guide.styleguide.ui.spacing.container = {
           view: function(ctrl) {
             return m('div', [
               ctrl.items.map(function(item) {
-                return m.component(Q.components.guide.styleguide.ui.spacing.template, item);
+                return m.component(Q.components.guide.styleguide.ui.spacing_sizes.template, item);
               })
             ]);
           }
@@ -55,7 +63,7 @@ Q.components.guide.styleguide.ui.spacing.container = {
   }
 };
 
-Q.components.guide.styleguide.ui.spacing.template = {
+Q.components.guide.styleguide.ui.spacing_sizes.template = {
   view: function(ctrl, opts) {
     return m('div', [
       m('span.square.padding-' + opts.size + '.border.margin-right-medium.margin-bottom-medium', [
@@ -67,72 +75,3 @@ Q.components.guide.styleguide.ui.spacing.template = {
     ]);
   }
 };
-
-    //
-    // <!-- Positions -->
-    // <div class="margin-vert-large padding-bottom-medium border-bottom border-light">
-    //   <h4 class="margin-bottom-medium text-navy"><strong>Positions (Padding | Margin)</strong></h4>
-    //
-    //   <div>
-    //     <span class="square padding-large border margin-right-medium margin-bottom-medium">
-    //       <strong class="text-gray text--small">all sides</strong>
-    //     </span>
-    //     <span class="inline bg-grid-light margin-right-medium margin-bottom-medium">
-    //       <strong class="inline text-gray text--small bg-white border margin-large padding-small">all sides</strong>
-    //     </span>
-    //   </div>
-    //
-    //   <div>
-    //     <span class="square padding-vert-large border margin-right-medium margin-bottom-medium">
-    //       <strong class="text-gray text--small">vertical sides</strong>
-    //     </span>
-    //     <span class="inline bg-grid-light margin-right-medium margin-bottom-medium">
-    //       <strong class="inline text-gray text--small bg-white border margin-vert-large padding-small">vertical sides</strong>
-    //     </span>
-    //   </div>
-    //
-    //   <div>
-    //     <span class="square padding-horz-large border margin-right-medium margin-bottom-medium">
-    //       <strong class="text-gray text--small">horizontal sides</strong>
-    //     </span>
-    //     <span class="inline bg-grid-light margin-right-medium margin-bottom-medium">
-    //       <strong class="inline text-gray text--small bg-white border margin-horz-large padding-small">horizontal sides</strong>
-    //     </span>
-    //   </div>
-    //
-    //   <div>
-    //     <span class="square padding-top-large border margin-right-medium margin-bottom-medium">
-    //       <strong class="text-gray text--small">top side</strong>
-    //     </span>
-    //     <span class="inline bg-grid-light margin-right-medium margin-bottom-medium">
-    //       <strong class="inline text-gray text--small bg-white border margin-top-large padding-small">top side</strong>
-    //     </span>
-    //   </div>
-    //
-    //   <div>
-    //     <span class="square padding-bottom-large border margin-right-medium margin-bottom-medium">
-    //       <strong class="text-gray text--small">bottom side</strong>
-    //     </span>
-    //     <span class="inline bg-grid-light margin-right-medium margin-bottom-medium">
-    //       <strong class="inline text-gray text--small bg-white border margin-bottom-large padding-small">bottom side</strong>
-    //     </span>
-    //   </div>
-    //
-    //   <div>
-    //     <span class="square padding-left-large border margin-right-medium margin-bottom-medium">
-    //       <strong class="text-gray text--small">left side</strong>
-    //     </span>
-    //     <span class="inline bg-grid-light margin-right-medium margin-bottom-medium">
-    //       <strong class="inline text-gray text--small bg-white border margin-left-large padding-small">left side</strong>
-    //     </span>
-    //   </div>
-    //
-    //   <div>
-    //     <span class="square padding-right-large border margin-right-medium margin-bottom-medium">
-    //       <strong class="text-gray text--small">right side</strong>
-    //     </span>
-    //     <span class="inline bg-grid-light margin-right-medium margin-bottom-medium">
-    //       <strong class="inline text-gray text--small bg-white border margin-right-large padding-small">right side</strong>
-    //     </span>
-    //   </div>
-    // </div>

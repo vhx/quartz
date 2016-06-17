@@ -9,8 +9,12 @@ Q.components.route.styleguide.ui.utilities = {
       code: Q.components.code.grid
     },
     {
-      guide: m.component(Q.components.guide.styleguide.ui.spacing.container),
-      code: Q.components.code.spacing
+      guide: m.component(Q.components.guide.styleguide.ui.spacing_sizes.container),
+      code: Q.components.code['spacing-sizes']
+    },
+    {
+      guide: m.component(Q.components.guide.styleguide.ui.spacing_positions.container),
+      code: Q.components.code['spacing-positions']
     }
   ]
 };
