@@ -114,11 +114,11 @@ Q.layouts.standard.ui.container = {
   },
   view: function view() {
     return m('div.fill-width.margin-reset', [Q.components.guide[m.route.param('type')].ui[m.route.param('guide')].items.map(function (item) {
-      return m('div.row', [m('div.column.small-8.padding-reset', [m('section.guide-bar', [m.component(item.guide)])]), m('div.column.small-8.padding-reset', [m('section.code-bar', [m('pre.padding-medium', [m('code.html', {
+      return m('div.row', [m('div.column.small-8.padding-reset', [m('section.guide-bar', [m.component(item.guide)])]), m('div.column.small-8.padding-reset', [m('section.code-bar', [m('pre.padding-medium', [m('code.' + item.code.language, {
         config: function config(el) {
           hljs.highlightBlock(el);
         }
-      }, [JSON.parse(item.code)])])])])]);
+      }, item.code.template)])])])]);
     })]);
   }
 };'use strict';
@@ -145,21 +145,36 @@ Q.components.shared.guide.color.ui.container = {
 };Q.components.guide.styleguide.ui.elements = {
   items: [{
     guide: m.component(Q.components.guide.styleguide.ui.checkbox.container),
-    code: Q.components.code['colors-brands']
+    code: {
+      template: Q.components.code['colors-brands'],
+      language: 'sass'
+    }
   }, {
     guide: m.component(Q.components.guide.styleguide.ui.radio.container),
-    code: Q.components.code['colors-brands']
+    code: {
+      template: Q.components.code['colors-brands'],
+      language: 'sass'
+    }
   }, {
     guide: m.component(Q.components.guide.styleguide.ui.loaders.container),
-    code: Q.components.code['colors-brands']
+    code: {
+      template: Q.components.code['colors-brands'],
+      language: 'sass'
+    }
   }, {
     guide: m.component(Q.components.guide.styleguide.ui.buttons.container),
-    code: Q.components.code['colors-brands']
+    code: {
+      template: Q.components.code['colors-brands'],
+      language: 'sass'
+    }
   }]
 };Q.components.guide.styleguide.ui.typography = {
   items: [{
     guide: m.component(Q.components.guide.styleguide.ui.text.container),
-    code: Q.components.code['colors-brands']
+    code: {
+      template: Q.components.code.text,
+      language: 'html'
+    }
   }]
 };'use strict';
 
