@@ -113,12 +113,8 @@ Q.layouts.standard.ui.container = {
     });
   },
   view: function view() {
-    return m('div.fill-width.margin-reset', [Q.components.guide[m.route.param('type')].ui[m.route.param('guide')].items.map(function (item) {
-      return m('div.row', [m('div.column.small-8.padding-reset', [m('section.guide-bar', [m.component(item.guide)])]), m('div.column.small-8.padding-reset', [m('section.code-bar', [m('pre.padding-medium', [m('code.' + item.code.language, {
-        config: function config(el) {
-          hljs.highlightBlock(el);
-        }
-      }, item.code.template)])])])]);
+    return m('div.fill-width.margin-reset', [Q.components.route[m.route.param('type')].ui[m.route.param('guide')].items.map(function (item) {
+      return m('div.row', [m('div.column.small-8.padding-reset', [m('section.guide-bar', [m.component(item.guide)])]), m('div.column.small-8.padding-reset', [m('section.code-bar', [m('pre.padding-medium', [m('code.hljs.' + item.code.language, m.trust(item.code.template))])])])]);
     })]);
   }
 };'use strict';
@@ -142,39 +138,29 @@ Q.components.shared.guide.color.ui.container = {
   view: function view(ctrl, opts) {
     return m('inline.margin-right-medium.margin-bottom-medium' + (opts.css ? opts.css : ''), [m('span.square.square--large.' + opts.name + (opts.inner_css ? opts.inner_css : ''), [m('span.square-tag.tag.text-3', opts.name)])]);
   }
-};Q.components.guide.styleguide.ui.elements = {
+};Q.components.route.styleguide.ui.buttons = {
+  items: [{
+    guide: m.component(Q.components.guide.styleguide.ui.buttons.container),
+    code: Q.components.code.buttons
+  }]
+};Q.components.route.styleguide.ui.elements = {
   items: [{
     guide: m.component(Q.components.guide.styleguide.ui.checkbox.container),
-    code: {
-      template: Q.components.code['colors-brands'],
-      language: 'sass'
-    }
+    code: Q.components.code.checkbox
   }, {
     guide: m.component(Q.components.guide.styleguide.ui.radio.container),
-    code: {
-      template: Q.components.code['colors-brands'],
-      language: 'sass'
-    }
+    code: Q.components.code.radio
   }, {
     guide: m.component(Q.components.guide.styleguide.ui.loaders.container),
-    code: {
-      template: Q.components.code['colors-brands'],
-      language: 'sass'
-    }
+    code: Q.components.code.loaders
   }, {
     guide: m.component(Q.components.guide.styleguide.ui.buttons.container),
-    code: {
-      template: Q.components.code['colors-brands'],
-      language: 'sass'
-    }
+    code: Q.components.code.buttons
   }]
-};Q.components.guide.styleguide.ui.typography = {
+};Q.components.route.styleguide.ui.typography = {
   items: [{
     guide: m.component(Q.components.guide.styleguide.ui.text.container),
-    code: {
-      template: Q.components.code.text,
-      language: 'html'
-    }
+    code: Q.components.code.text
   }]
 };'use strict';
 

@@ -84,15 +84,18 @@
   color: #d3d0c8;
   font-weight: bold; }
 
-.code-bar .hljs-title {
+.code-bar .hljs-title,
+.code-bar .hljs-name {
   color: #f2777a;
   font-weight: bold; }
 
-.code-bar .hljs-attribute {
+.code-bar .hljs-attribute,
+.code-bar .hljs-attr {
   color: #ed9157;
   font-weight: bold; }
 
-.code-bar .hljs-value {
+.code-bar .hljs-value,
+.code-bar .hljs-string {
   color: #99cc99;
   font-weight: bold; }
 

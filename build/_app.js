@@ -17,6 +17,7 @@ let Manifest = [
   'app/client/components/guide/block.ui.js',
   'app/client/components/guide/intro.ui.js',
   'app/client/components/guide/color.ui.js',
+  'app/client/components/guide/route.buttons.ui.js',
   'app/client/components/guide/route.elements.ui.js',
   'app/client/components/guide/route.typography.ui.js',
 
