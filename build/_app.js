@@ -19,7 +19,12 @@ let Manifest = [
   'app/client/components/guide/color.ui.js',
   'app/client/components/guide/route.buttons.ui.js',
   'app/client/components/guide/route.elements.ui.js',
+  'app/client/components/guide/route.utilities.ui.js',
+  'app/client/components/guide/route.icons.ui.js',
+  'app/client/components/guide/route.colors.ui.js',
+  'app/client/components/guide/route.tables.ui.js',
   'app/client/components/guide/route.typography.ui.js',
+  'app/client/components/guide/route.mithril.ui.js',
 
   /* routes */
   'app/client/routes.js'
