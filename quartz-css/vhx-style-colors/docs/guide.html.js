@@ -1,51 +1,9 @@
-Q.components.guide.styleguide.ui.colors = {};
+Q.components.guide.styleguide.ui.colors_core = {};
+Q.components.guide.styleguide.ui.colors_brand = {};
+Q.components.guide.styleguide.ui.colors_external = {};
+Q.components.guide.styleguide.ui.colors_tools = {};
 
-Q.components.guide.styleguide.ui.colors.container = {
-  view: function(ctrl) {
-    return m('section#guide--style-colors', [
-      m.component(Q.components.shared.guide.intro.ui.container, {
-        title: 'UI Colors',
-        intro: 'These colors are used within the admin for all UI elements. You can reference them in your CSS as SASS variables (shown below and to the right). They are the building blocks for the VHX product and <em class="text--italic">your key to the secret of the multiverse.</em>'
-      }),
-      m.component(Q.components.guide.styleguide.ui.colors.template, {
-        type: 'bw',
-        name: 'Black and White'
-      }),
-      m.component(Q.components.guide.styleguide.ui.colors.template, {
-        type: 'grays',
-        name: 'Grays'
-      }),
-      m.component(Q.components.guide.styleguide.ui.colors.template, {
-        type: 'other',
-        name: 'Other'
-      }),
-      m('section#guide--style-tools-colors', [
-        m.component(Q.components.shared.guide.intro.ui.container, {
-          title: 'Tools',
-          intro: '<p>For alternating a text color when the outputted background color is too light (i.e. unknown site theme colors), we can user our Darken Text helper.</p>'
-        }),
-        m.component(Q.components.guide.styleguide.ui.colors.tools)
-      ]),
-      m('section#guide--style-brand-colors', [
-        m.component(Q.components.shared.guide.intro.ui.container, {
-          title: 'Brand Colors',
-          intro: '<p>These colors are used within the VHX marketing pages and in general are used very sparingly. If you ever need a bright color from the rainbow, YOU ARE HERE.</p><p>When you need a lighter or darker version of a brand color (say for a new button) use the SASS darken, lighten, and transparentize methods (show to the right).</p>'
-        }),
-        m.component(Q.components.guide.styleguide.ui.colors.template, {
-          type: 'vhx_brands',
-          name: 'VHX Brand Palette (Marketing Purposes)',
-        }),
-        m.component(Q.components.guide.styleguide.ui.colors.template, {
-          type: 'external_brands',
-          name: 'Company Brands',
-          description: '<p>When you need a lighter or darker version of a brand color (say for a new button) use the SASS darken, lighten, and transparentize methods (show to the right).</p>'
-        })
-      ])
-    ]);
-  }
-};
-
-Q.components.guide.styleguide.ui.colors.template = {
+Q.components.guide.styleguide.ui.colors_template = {
   controller: function() {
 
     // Black and White
@@ -118,28 +76,98 @@ Q.components.guide.styleguide.ui.colors.template = {
   }
 };
 
-Q.components.guide.styleguide.ui.colors.tools = {
+Q.components.guide.styleguide.ui.colors_core.container = {
+  view: function(ctrl) {
+    return m('section#guide--style-colors', [
+      m.component(Q.components.shared.guide.intro.ui.container, {
+        title: 'UI Colors',
+        intro: 'These colors are used within the admin for all UI elements. You can reference them in your CSS as SASS variables (shown below and to the right). They are the building blocks for the VHX product and <em class="text--italic">your key to the secret of the multiverse.</em>'
+      }),
+      m.component(Q.components.guide.styleguide.ui.colors_template, {
+        type: 'bw',
+        name: 'Black and White'
+      }),
+      m.component(Q.components.guide.styleguide.ui.colors_template, {
+        type: 'grays',
+        name: 'Grays'
+      }),
+      m.component(Q.components.guide.styleguide.ui.colors_template, {
+        type: 'other',
+        name: 'Other'
+      })
+    ]);
+  }
+};
+
+Q.components.guide.styleguide.ui.colors_brand.container = {
+  view: function(ctrl) {
+    return m('section#guide--style-brand-colors', [
+      m.component(Q.components.shared.guide.intro.ui.container, {
+        title: 'Brand Colors',
+        intro: '<p>These colors are used within the VHX marketing pages and in general are used very sparingly. If you ever need a bright color from the rainbow, YOU ARE HERE.</p><p>When you need a lighter or darker version of a brand color (say for a new button) use the SASS darken, lighten, and transparentize methods (show to the right).</p>'
+      }),
+      m.component(Q.components.guide.styleguide.ui.colors_template, {
+        type: 'vhx_brands',
+        name: 'VHX Brand Palette (Marketing Purposes)',
+      })
+    ]);
+  }
+};
+
+Q.components.guide.styleguide.ui.colors_external.container = {
+  view: function(ctrl) {
+    return m('section#guide--style-brand-colors', [
+      m.component(Q.components.shared.guide.intro.ui.container, {
+        title: 'Brand Colors',
+        intro: 'When you need a lighter or darker version of a brand color (say for a new button) use the SASS darken, lighten, and transparentize methods (show to the right).'
+      }),
+      m.component(Q.components.guide.styleguide.ui.colors_template, {
+        type: 'external_brands',
+        name: 'Company Brands',
+      })
+    ]);
+  }
+};
+
+Q.components.guide.styleguide.ui.colors_tools.container = {
   view: function() {
-    return m('div', [
-      m('div.margin-vert-large', [
-        m('h4.margin-bottom-medium.padding-bottom-small.border-bottom.border--gray-light.text--bold.text--gray', 'Lighten/Darken Text'),
-        m('p.margin-bottom-medium.text-2', 'For lightening or darkening a color (Ruby or SASS)'),
-        m('.inline.padding-medium.margin-right-small.text--white', {
-          style: { background: '#1a8e87' }
-        }, 'Darken Teal'),
-        m('.bg-teal-2.inline.padding-medium.margin-right-small.text--white', 'Regular Teal'),
-        m('.inline.padding-medium.margin-right-small.text--white', {
-          style: { background: '#34dad0' }
-        }, 'Lighten Teal')
-      ]),
-      m('.margin-vert-large', [
-        m('h4.margin-bottom-medium.padding-bottom-small.border-bottom.border--gray-light.text--bold.text--gray', 'Transparency'),
-        m('p.margin-bottom-medium.text-2', 'For tranparentizing a color (SASS)'),
-        m('div.bg-teal-2.inline.padding-medium.margin-right-small.text--white', {
-          style: { opacity: 0.50 }
-        }, '50% Teal'),
-        m('div.bg-teal-2.inline.padding-medium.margin-right-small.text--white', 'Regular Teal')
-      ])
+    return m('section#guide--style-colors-tools', [
+      m.component(Q.components.shared.guide.intro.ui.container, {
+        title: 'Tools'
+      }),
+      m.component(Q.components.shared.guide.block.ui.container, {
+        title: 'Darken',
+        description: 'For alternating a text color when the outputted background color is too light (i.e. unknown site theme colors), we can user our Darken Text helper.',
+        component: {
+          view: function() {
+            return m('div', [
+              m('h4.margin-bottom-medium.padding-bottom-small.border-bottom.border--gray-light.text--bold.text--gray', 'Lighten/Darken Text'),
+              m('p.margin-bottom-medium.text-2', 'For lightening or darkening a color (Ruby or SASS)'),
+              m('.inline.padding-medium.margin-right-small.text--white', {
+                style: { background: '#1a8e87' }
+              }, 'Darken Teal'),
+              m('.bg-teal-2.inline.padding-medium.margin-right-small.text--white', 'Regular Teal'),
+              m('.inline.padding-medium.margin-right-small.text--white', {
+                style: { background: '#34dad0' }
+              }, 'Lighten Teal')
+            ]);
+          }
+        }
+      }),
+      m.component(Q.components.shared.guide.block.ui.container, {
+        title: 'Transparency',
+        description: 'For tranparentizing a color (SASS)',
+        component: {
+          view: function() {
+            return m('div', [
+              m('div.bg-teal-2.inline.padding-medium.margin-right-small.text--white', {
+                style: { opacity: 0.50 }
+              }, '50% Teal'),
+              m('div.bg-teal-2.inline.padding-medium.margin-right-small.text--white', 'Regular Teal')
+            ]);
+          }
+        }
+      })
     ]);
   }
 };

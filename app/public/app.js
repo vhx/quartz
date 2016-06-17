@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 _.max = function (array) {
   return Math.max.apply(Math, array);
@@ -131,13 +131,6 @@ Q.components.shared.guide.intro.ui.container = {
   view: function view(ctrl, opts) {
     return m('header', [opts.title ? m('h3.head-3.head--navy.text--bold', opts.title) : '', opts.intro ? m('div.margin-vert-large', [m('.margin-bottom-medium.text-2', m.trust(opts.intro))]) : '']);
   }
-};'use strict';
-
-Q.components.shared.guide.color.ui.container = {
-  controller: function controller(opts) {},
-  view: function view(ctrl, opts) {
-    return m('inline.margin-right-medium.margin-bottom-medium' + (opts.css ? opts.css : ''), [m('span.square.square--large.' + opts.name + (opts.inner_css ? opts.inner_css : ''), [m('span.square-tag.tag.text-3', opts.name)])]);
-  }
 };Q.components.route.styleguide.ui.buttons = {
   items: [{
     guide: m.component(Q.components.guide.styleguide.ui.buttons.container),
@@ -170,6 +163,20 @@ Q.components.shared.guide.color.ui.container = {
   }, {
     guide: m.component(Q.components.guide.styleguide.ui.spacing_positions.container),
     code: Q.components.code['spacing-positions']
+  }]
+};Q.components.route.styleguide.ui.colors = {
+  items: [{
+    guide: m.component(Q.components.guide.styleguide.ui.colors_core.container),
+    code: Q.components.code['colors-core']
+  }, {
+    guide: m.component(Q.components.guide.styleguide.ui.colors_brand.container),
+    code: Q.components.code['colors-brand']
+  }, {
+    guide: m.component(Q.components.guide.styleguide.ui.colors_external.container),
+    code: Q.components.code['colors-external']
+  }, {
+    guide: m.component(Q.components.guide.styleguide.ui.colors_tools.container),
+    code: Q.components.code['colors-tools']
   }]
 };Q.components.route.styleguide.ui.typography = {
   items: [{
