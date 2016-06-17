@@ -2,8 +2,7 @@
 
 let Manifest = [
   'node_modules/underscore/underscore.js',
-  'node_modules/mithril/mithril.js',
-  'node_modules/highlight.js/lib/highlight.js'
+  'node_modules/mithril/mithril.js'
 ];
 
 module.exports = Manifest;

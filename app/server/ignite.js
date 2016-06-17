@@ -10,6 +10,7 @@ const parser      = require('body-parser');
 const handlebars  = require('handlebars');
 const fs          = require('fs');
 const walk        = require('fs-walk');
+const hljs        = require('highlight.js');
 const app         = express();
 const views_dir   = 'quartz-css';
 
@@ -35,7 +36,15 @@ walk.walkSync(views_dir, function(base_dir, filename) {
   if (base_dir.match(/\/docs\/code/)) {
     let temp = fs.readFileSync(base_dir + '/' + filename, 'utf8');
     let name = filename.split('.')[0];
-    code[name] = temp;
+    let language = filename.split('.')[1];
+
+    if (language.match(/rb/)) {
+      language = 'ruby';
+    }
+    code[name] = {
+      language: language,
+      template: hljs.highlight(language, temp).value
+    };
   }
 });
 

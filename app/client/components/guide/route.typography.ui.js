@@ -1,8 +1,8 @@
-Q.components.guide.styleguide.ui.typography = {
+Q.components.route.styleguide.ui.typography = {
   items: [
     {
       guide: m.component(Q.components.guide.styleguide.ui.text.container),
-      code: Q.components.code['colors-brands']
+      code: Q.components.code.text
     }
   ]
 };

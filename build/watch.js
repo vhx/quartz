@@ -41,13 +41,14 @@ sass.render({
   });
 });
 
-catw('client/styles/**/*.scss', function() {
+catw('client/styles/*.scss', function() {
   let src = 'app/client/styles/_manifest.scss';
   sass.render({
       file: src
   }, function(err, output) {
     fs.writeFile('app/public/app.css', output.css, function(err) {
     if (err) { process.stdout.write(chalk.red(err)); }
+    process.stdout.write(chalk.red('upated'));
     });
   });
 });
