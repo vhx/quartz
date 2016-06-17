@@ -35,7 +35,7 @@ walk.walkSync(views_dir, function(base_dir, filename) {
   if (base_dir.match(/\/docs\/code/)) {
     let temp = fs.readFileSync(base_dir + '/' + filename, 'utf8');
     let name = filename.split('.')[0];
-    code[name] = JSON.stringify(temp);
+    code[name] = temp;
   }
 });
 

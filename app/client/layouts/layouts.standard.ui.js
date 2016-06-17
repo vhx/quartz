@@ -18,13 +18,11 @@ Q.layouts.standard.ui.container = {
           m('div.column.small-8.padding-reset', [
             m('section.code-bar', [
               m('pre.padding-medium', [
-                m('code.html', {
+                m('code.' + item.code.language, {
                   config: function(el) {
                      hljs.highlightBlock(el);
                   }
-                }, [
-                  JSON.parse(item.code)
-                ])
+                }, item.code.template)
               ])
             ])
           ])
