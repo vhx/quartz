@@ -1,5 +1,5 @@
 touch ~/.pow/quartz && echo 3001 > ~/.pow/quartz
 echo "Server booting up: http://quartz.dev"
-nohup ./watch &
+nohup node build/watch.js &
 pm2 start app/server/ignite.js --name quartz --watch
 pm2 logs quartz
