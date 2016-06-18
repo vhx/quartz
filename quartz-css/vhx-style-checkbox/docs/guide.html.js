@@ -3,10 +3,10 @@ Q.components.guide.styleguide.ui.checkbox = {};
 Q.components.guide.styleguide.ui.checkbox.container = {
   view: function(ctrl) {
     return m('section#guide--style-checkbox', [
-      m.component(Q.components.shared.guide.intro.ui.container, {
+      m.component(Q.components.shared.intro.ui.container, {
         title: 'Checkbox'
       }),
-      m.component(Q.components.shared.guide.block.ui.container, {
+      m.component(Q.components.shared.block.ui.container, {
         title: 'Standard Checkbox',
         component: {
           view: function() {
@@ -27,7 +27,7 @@ Q.components.guide.styleguide.ui.checkbox.container = {
           }
         }
       }),
-      m.component(Q.components.shared.guide.block.ui.container, {
+      m.component(Q.components.shared.block.ui.container, {
         title: 'Toggle Checkbox',
         component: {
           view: function() {

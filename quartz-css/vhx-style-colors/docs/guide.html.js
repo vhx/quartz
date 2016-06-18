@@ -79,7 +79,7 @@ Q.components.guide.styleguide.ui.colors_template = {
 Q.components.guide.styleguide.ui.colors_core.container = {
   view: function(ctrl) {
     return m('section#guide--style-colors', [
-      m.component(Q.components.shared.guide.intro.ui.container, {
+      m.component(Q.components.shared.intro.ui.container, {
         title: 'UI Colors',
         intro: 'These colors are used within the admin for all UI elements. You can reference them in your CSS as SASS variables (shown below and to the right). They are the building blocks for the VHX product and <em class="text--italic">your key to the secret of the multiverse.</em>'
       }),
@@ -102,7 +102,7 @@ Q.components.guide.styleguide.ui.colors_core.container = {
 Q.components.guide.styleguide.ui.colors_brand.container = {
   view: function(ctrl) {
     return m('section#guide--style-brand-colors', [
-      m.component(Q.components.shared.guide.intro.ui.container, {
+      m.component(Q.components.shared.intro.ui.container, {
         title: 'Brand Colors',
         intro: '<p>These colors are used within the VHX marketing pages and in general are used very sparingly. If you ever need a bright color from the rainbow, YOU ARE HERE.</p><p>When you need a lighter or darker version of a brand color (say for a new button) use the SASS darken, lighten, and transparentize methods (show to the right).</p>'
       }),
@@ -117,7 +117,7 @@ Q.components.guide.styleguide.ui.colors_brand.container = {
 Q.components.guide.styleguide.ui.colors_external.container = {
   view: function(ctrl) {
     return m('section#guide--style-brand-colors', [
-      m.component(Q.components.shared.guide.intro.ui.container, {
+      m.component(Q.components.shared.intro.ui.container, {
         title: 'Brand Colors',
         intro: 'When you need a lighter or darker version of a brand color (say for a new button) use the SASS darken, lighten, and transparentize methods (show to the right).'
       }),
@@ -132,10 +132,10 @@ Q.components.guide.styleguide.ui.colors_external.container = {
 Q.components.guide.styleguide.ui.colors_tools.container = {
   view: function() {
     return m('section#guide--style-colors-tools', [
-      m.component(Q.components.shared.guide.intro.ui.container, {
+      m.component(Q.components.shared.intro.ui.container, {
         title: 'Tools'
       }),
-      m.component(Q.components.shared.guide.block.ui.container, {
+      m.component(Q.components.shared.block.ui.container, {
         title: 'Darken',
         description: 'For alternating a text color when the outputted background color is too light (i.e. unknown site theme colors), we can user our Darken Text helper.',
         component: {
@@ -154,7 +154,7 @@ Q.components.guide.styleguide.ui.colors_tools.container = {
           }
         }
       }),
-      m.component(Q.components.shared.guide.block.ui.container, {
+      m.component(Q.components.shared.block.ui.container, {
         title: 'Transparency',
         description: 'For tranparentizing a color (SASS)',
         component: {

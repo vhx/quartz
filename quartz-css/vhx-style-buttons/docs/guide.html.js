@@ -3,10 +3,10 @@ Q.components.guide.styleguide.ui.buttons = {};
 Q.components.guide.styleguide.ui.buttons.container = {
   view: function(ctrl) {
     return m('section#guide--style-buttons', [
-      m.component(Q.components.shared.guide.intro.ui.container, {
+      m.component(Q.components.shared.intro.ui.container, {
         title: 'Buttons'
       }),
-      m.component(Q.components.shared.guide.block.ui.container, {
+      m.component(Q.components.shared.block.ui.container, {
         title: 'Core Colors',
         component: {
           view: function() {
@@ -19,7 +19,7 @@ Q.components.guide.styleguide.ui.buttons.container = {
           }
         }
       }),
-      m.component(Q.components.shared.guide.block.ui.container, {
+      m.component(Q.components.shared.block.ui.container, {
         title: 'Other Colors',
         component: {
           view: function() {
@@ -36,7 +36,7 @@ Q.components.guide.styleguide.ui.buttons.container = {
           }
         }
       }),
-      m.component(Q.components.shared.guide.block.ui.container, {
+      m.component(Q.components.shared.block.ui.container, {
         title: 'External Company Colors',
         component: {
           view: function() {
@@ -50,7 +50,7 @@ Q.components.guide.styleguide.ui.buttons.container = {
           }
         }
       }),
-      m.component(Q.components.shared.guide.block.ui.container, {
+      m.component(Q.components.shared.block.ui.container, {
         title: 'Sizes',
         component: {
           view: function() {
@@ -64,7 +64,7 @@ Q.components.guide.styleguide.ui.buttons.container = {
           }
         }
       }),
-      m.component(Q.components.shared.guide.block.ui.container, {
+      m.component(Q.components.shared.block.ui.container, {
         title: 'Typography',
         component: {
           view: function() {
@@ -77,7 +77,7 @@ Q.components.guide.styleguide.ui.buttons.container = {
           }
         }
       }),
-      m.component(Q.components.shared.guide.block.ui.container, {
+      m.component(Q.components.shared.block.ui.container, {
         title: 'Processing State',
         component: {
           view: function() {
@@ -90,7 +90,7 @@ Q.components.guide.styleguide.ui.buttons.container = {
           }
         }
       }),
-      m.component(Q.components.shared.guide.block.ui.container, {
+      m.component(Q.components.shared.block.ui.container, {
         title: 'Dropdowns',
         component: {
           view: function() {
@@ -102,7 +102,7 @@ Q.components.guide.styleguide.ui.buttons.container = {
           }
         }
       }),
-      m.component(Q.components.shared.guide.block.ui.container, {
+      m.component(Q.components.shared.block.ui.container, {
         title: 'Button Groups',
         component: {
           view: function() {
@@ -126,7 +126,7 @@ Q.components.guide.styleguide.ui.buttons.container = {
           }
         }
       }),
-      m.component(Q.components.shared.guide.block.ui.container, {
+      m.component(Q.components.shared.block.ui.container, {
         title: 'Icons',
         component: {
           view: function() {

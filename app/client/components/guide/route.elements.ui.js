@@ -2,19 +2,19 @@ Q.components.route.styleguide.ui.elements = {
   items: [
     {
       guide: m.component(Q.components.guide.styleguide.ui.checkbox.container),
-      code: Q.components.code.checkbox
+      code: Q.code.checkbox
     },
     {
       guide: m.component(Q.components.guide.styleguide.ui.radio.container),
-      code: Q.components.code.radio
+      code: Q.code.radio
     },
     {
       guide: m.component(Q.components.guide.styleguide.ui.loaders.container),
-      code: Q.components.code.loaders
+      code: Q.code.loaders
     },
     {
       guide: m.component(Q.components.guide.styleguide.ui.tooltips.container),
-      code: Q.components.code.tooltips
+      code: Q.code.tooltips
     }
   ]
 };
