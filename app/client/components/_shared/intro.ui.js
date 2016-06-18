@@ -1,7 +1,6 @@
 'use strict';
 
-Q.components.shared.guide.intro.ui.container = {
-  controller: function(opts) {},
+Q.components.shared.intro.ui.container = {
   view: function(ctrl, opts) {
     return m('header', [
       opts.title ?
