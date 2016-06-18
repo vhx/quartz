@@ -286,6 +286,9 @@
 .border--gray-light {
   border-color: #F0F2F4 !important; }
 
+.border--navy {
+  border-color: #375667 !important; }
+
 /* modifiers
 ...................................*/
 .border--thick {
@@ -1518,6 +1521,56 @@ select {
 .btn-group .btn-dropdown-teal:last-child {
   border-right: 1px solid #D7DDE1 !important;
   border-radius: 0 5px 5px 0; }
+
+/* imports
+...................................*/
+/* .....................................
+  Fonts
+..................................... */
+/* .....................................
+  Sets
+..................................... */
+/* .....................................
+  Media Query Ranges
+..................................... */
+/* .....................................
+  Colors - Grays
+..................................... */
+/* .....................................
+  Colors - Teals
+..................................... */
+/* .....................................
+  Colors - Red
+..................................... */
+/* .....................................
+  Colors - Navy
+..................................... */
+/* .....................................
+  Colors - Brand Palette
+..................................... */
+/* .....................................
+  Colors - External Palette
+..................................... */
+/* helper function for margin and padding
+......................................*/
+/*.....................................
+  PERCENT BARS
+......................................*/
+.bar {
+  width: 100%;
+  display: block;
+  background: #F7F8F9;
+  border-radius: 10px;
+  height: 15px;
+  position: relative; }
+  .bar .bar-percent {
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #375667;
+    border-radius: 10px; }
 
 /* .....................................
   Fonts
@@ -2951,41 +3004,11 @@ object, embed, [data-clipboard] {
 .word-break {
   word-break: break-word; }
 
+.radius {
+  border-radius: 3px; }
+
 /* scrollable content
 ......................................*/
-.frame {
-  transform: translate3d(0, 0, 0); }
-  .frame.frame--xsmall {
-    height: auto;
-    max-height: 75px;
-    width: 100%;
-    overflow-y: auto; }
-  .frame.frame--small {
-    height: auto;
-    max-height: 75px;
-    width: 100%;
-    overflow-y: auto; }
-  .frame.frame--medium {
-    height: auto;
-    max-height: 125px;
-    width: 100%;
-    overflow-y: auto; }
-  .frame.frame--large {
-    height: auto;
-    max-height: 325px;
-    width: 100%;
-    overflow-y: auto; }
-  .frame.frame--xlarge {
-    height: auto;
-    max-height: 525px;
-    width: 100%;
-    overflow-y: auto; }
-  .frame.frame--xxlarge {
-    height: auto;
-    max-height: 75px;
-    width: 100%;
-    overflow-y: auto; }
-
 .fill-height {
   height: 100%; }
 
@@ -4949,6 +4972,10 @@ input[type="file"] {
 .inline-list > li > * {
   display: block; }
 
+.inline-list.inline > li {
+  margin-left: 0px;
+  display: inline-block; }
+
 @media print {
   dialog, .reveal-modal, dialog {
     display: none;
@@ -6109,6 +6136,11 @@ a.head--white:link, a.head--white:visited {
 a.head--white:hover, a.head--white:active {
   color: rgba(255, 255, 255, 0.7); }
 
+/* header white
+......................................*/
+.head--gothic {
+  font-family: "alternate-gothic-no-3-d-n4", "alternate-gothic-no-3-d", sans-serif; }
+
 /* .....................................
   Fonts
 ..................................... */
@@ -6163,6 +6195,9 @@ a.head--white:hover, a.head--white:active {
   width: 25px;
   height: 25px;
   text-indent: -9999px; }
+  .icon.icon--xxsmall {
+    width: 10px;
+    height: 10px; }
   .icon.icon--xsmall {
     width: 15px;
     height: 15px; }
@@ -6184,6 +6219,33 @@ a.head--white:hover, a.head--white:active {
 
 /* sizes
 ......................................*/
+.icon--left {
+  padding-left: 30px; }
+
+.icon--right {
+  padding-right: 30px; }
+
+.icon--xxsmall {
+  background-size: 10px 10px; }
+  .icon--xxsmall.text-1 {
+    line-height: 24px; }
+  .icon--xxsmall.text-2 {
+    line-height: 22px; }
+  .icon--xxsmall.text-3 {
+    line-height: 18px; }
+  .icon--xxsmall.head-1 {
+    line-height: 40px; }
+  .icon--xxsmall.head-2 {
+    line-height: 30px; }
+  .icon--xxsmall.head-3 {
+    line-height: 22px; }
+  .icon--xxsmall.head-4 {
+    line-height: 16px; }
+  .icon--xxsmall.icon--left {
+    padding-left: 15px; }
+  .icon--xxsmall.icon--right {
+    padding-right: 15px; }
+
 .icon--xsmall {
   background-size: 15px 15px; }
   .icon--xsmall.text-1 {
@@ -6245,12 +6307,14 @@ a.head--white:hover, a.head--white:active {
   .icon--xlarge.icon--right {
     padding-right: 54px; }
 
+.icon--xxsmall.icon--left,
 .icon--xsmall.icon--left,
 .icon--small.icon--left,
 .icon--medium.icon--left,
 .icon--large.icon--left,
 .icon--xlarge.icon--left {
   background-position: 0 center; }
+.icon--xxsmall.icon--right,
 .icon--xsmall.icon--right,
 .icon--small.icon--right,
 .icon--medium.icon--right,
@@ -6269,6 +6333,11 @@ a.head--white:hover, a.head--white:active {
   box-sizing: content-box;
   display: inline-block;
   background-position: 50% 50% !important; }
+  .icon-circle.icon--xxsmall {
+    padding: 3px;
+    background-size: 10px 10px;
+    width: 10px;
+    height: 10px; }
   .icon-circle.icon--xsmall {
     padding: 5px;
     background-size: 15px 15px;
@@ -6299,6 +6368,45 @@ a.head--white:hover, a.head--white:active {
     background-size: 65px 65px;
     width: 65px;
     height: 65px; }
+
+/*.....................................
+  Icon Dot
+......................................*/
+.icon-dot {
+  border-radius: 50%;
+  background-color: #22B9B0;
+  box-sizing: content-box;
+  display: inline-block;
+  background-position: 50% 50% !important;
+  width: 10px;
+  height: 10px; }
+  .icon-dot.icon--small {
+    width: 10px;
+    height: 10px; }
+  .icon-dot.icon--medium {
+    width: 15px;
+    height: 15px; }
+  .icon-dot.icon--large {
+    width: 25px;
+    height: 25px; }
+
+.icon-dot--teal {
+  background-color: #22B9B0; }
+
+.icon-dot--navy {
+  background-color: #00142B; }
+
+.icon-dot--green {
+  background-color: #9DBB36; }
+
+.icon-dot--gray {
+  background-color: #D7DDE1; }
+
+.icon-dot--red {
+  background-color: #D3104A; }
+
+.icon-dot--yellow {
+  background-color: #FFB567; }
 
 /* .....................................
   Fonts
@@ -7677,6 +7785,38 @@ a.text--yellow:hover, a.text--yellow:active {
     color: #FFB567; }
 a.text--yellow.is-disabled:link, a.text--yellow.is-disabled:visited, a.text--yellow.is-disabled:hover, a.text--yellow.is-disabled:active {
   color: #FFB567; }
+
+.text--green {
+  color: #9DBB36; }
+  .text--green.text--transparent {
+    color: rgba(157, 187, 54, 0.5); }
+
+a.text--green:link, a.text--green:visited {
+  color: #9DBB36;
+  text-decoration: none; }
+a.text--green:hover, a.text--green:active {
+  color: #9DBB36;
+  text-decoration: none; }
+  a.text--green:hover.is-hover-text--green, a.text--green:active.is-hover-text--green {
+    color: #9DBB36; }
+a.text--green.is-disabled:link, a.text--green.is-disabled:visited, a.text--green.is-disabled:hover, a.text--green.is-disabled:active {
+  color: #9DBB36; }
+
+.text--red {
+  color: #D3104A; }
+  .text--red.text--transparent {
+    color: rgba(211, 16, 74, 0.5); }
+
+a.text--red:link, a.text--red:visited {
+  color: #D3104A;
+  text-decoration: none; }
+a.text--red:hover, a.text--red:active {
+  color: #D3104A;
+  text-decoration: none; }
+  a.text--red:hover.is-hover-text--red, a.text--red:active.is-hover-text--red {
+    color: #D3104A; }
+a.text--red.is-disabled:link, a.text--red.is-disabled:visited, a.text--red.is-disabled:hover, a.text--red.is-disabled:active {
+  color: #D3104A; }
 
 /* modifiers
 ......................................*/

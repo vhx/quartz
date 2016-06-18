@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = function(grunt) {
 
   grunt.initConfig({
@@ -40,7 +42,7 @@ module.exports = function(grunt) {
       pre_svg: {
         src: ['distro/*.css', 'quartz-rails/vendor/assets/stylesheets/*.css'],
         filter: function(filepath) {
-          var regex = /(vhx-quartz.icon)(.+)(.css)/g;
+          let regex = /(vhx-quartz.icon)(.+)(.css)/g;
           return regex.test(filepath);
         }
       }
@@ -82,8 +84,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-folder-list');
   grunt.registerTask('grunt-svg-css', function() {
-    var done = this.async();
-    var SVG = require('./build/svg')(done);
+    let done = this.async();
+    let SVG = require('./build/svg');
+
+    SVG(done);
   });
 
   grunt.registerTask('build-icons', ['clean:pre_svg', 'grunt-svg-css', 'copy:svg', 'concat:svg', 'clean:svg']);
