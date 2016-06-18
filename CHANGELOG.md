@@ -6,6 +6,7 @@
 * Move app/private/svg to top level (quartz-svg)
 * Rewrite build/watch scripts for easier development
 * Add quartz-js as top level folder for quartz javascript
+* Add legacy style guide for reference
 
 ### 0.7.6
 **2016-03-31**
