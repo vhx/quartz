@@ -3,10 +3,10 @@ Q.components.guide.styleguide.ui.tooltips = {};
 Q.components.guide.styleguide.ui.tooltips.container = {
   view: function(ctrl) {
     return m('section#guide--style-text', [
-      m.component(Q.components.shared.guide.intro.ui.container, {
+      m.component(Q.components.shared.intro.ui.container, {
         title: 'Tooltips'
       }),
-      m.component(Q.components.shared.guide.block.ui.container, {
+      m.component(Q.components.shared.block.ui.container, {
         title: 'Standard',
         component: {
           view: function() {
@@ -21,7 +21,7 @@ Q.components.guide.styleguide.ui.tooltips.container = {
           }
         }
       }),
-      m.component(Q.components.shared.guide.block.ui.container, {
+      m.component(Q.components.shared.block.ui.container, {
         title: 'Fixed',
         component: {
           view: function() {
@@ -34,7 +34,7 @@ Q.components.guide.styleguide.ui.tooltips.container = {
           }
         }
       }),
-      m.component(Q.components.shared.guide.block.ui.container, {
+      m.component(Q.components.shared.block.ui.container, {
         title: 'Sizes',
         component: {
           view: function() {
@@ -58,7 +58,7 @@ Q.components.guide.styleguide.ui.tooltips.container = {
           }
         }
       }),
-      m.component(Q.components.shared.guide.block.ui.container, {
+      m.component(Q.components.shared.block.ui.container, {
         title: 'Arrow Positions',
         component: {
           view: function() {
