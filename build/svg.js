@@ -1,17 +1,17 @@
-SVG = function(gruntDone) {
+'use strict';
 
-  var _         = require('underscore'),
-      a         = require('async'),
-      fs        = require('fs'),
-      mustache  = require('mustache'),
-      path      = require('path'),
-      options   = {},
-      count     = 0;
-      self      = this;
-      icons_list = [];
+const SVG = function(gruntDone) {
 
-var files_count = 0;
-  options = {
+  const _         = require('underscore');
+  const a         = require('async');
+  const fs        = require('fs');
+  const mustache  = require('mustache');
+  const chalk     = require('chalk');
+  const path      = require('path');
+  const self      = this;
+
+  let count     = 0;
+  let options = {
     sets: ['all', 'ui', 'social', 'payment', 'directional', 'apps'],
     colors: {
       navy: '#375667',
@@ -26,7 +26,7 @@ var files_count = 0;
     Setup Color Options
   .................................*/
   self.getColorOptions = function(colors) {
-    var options = {};
+    let options = {};
     options.all = colors;
     options.all.multi = false;
     options.multi = {
@@ -41,28 +41,29 @@ var files_count = 0;
     return options;
   };
 
-  options.colors = getColorOptions(options.colors);
+  options.colors = self.getColorOptions(options.colors);
 
   /* ...............................
     Create Doc List
   .................................*/
   self.createDocList = function(callback) {
-    var template = 'Template.guide__style_icons_names.helpers({ icons: function() {return ' + JSON.stringify(self.icons_list) + ';}});';
-
-    fs.writeFile('app/packages/vhx-style-icons/docs/guide.helpers.js', template, function(err) {
-      if (err) {
-        return console.log(err);
-      }
-
-      callback();
-    });
+    console.log(self.icons_list);
+    // let template = 'Template.guide__style_icons_names.helpers({ icons: function() {return ' + JSON.stringify(self.icons_list) + ';}});';
+    //
+    // fs.writeFile('app/packages/vhx-style-icons/docs/guide.helpers.js', template, function(err) {
+    //   if (err) {
+    //     return process.stdout.write(chalk.red(err));
+    //   }
+    //
+    //   callback();
+    // });
   };
 
   /* ...............................
     Create and Export the CSS
   .................................*/
   self.createCSS = function(icon, color, set, data, all, callback) {
-    var model;
+    let model;
 
     data = color.hex ? data.replace(/(fill=\"\#).{6}(\")/gi, 'fill="' + color.hex + '"') : data;
 
@@ -73,13 +74,13 @@ var files_count = 0;
       color: (color.name === 'multi') ? '' : '-' + color.name
     };
 
-    fs.readFile('app/private/scripts/template.mustache', 'utf8', function (err, template) {
+    fs.readFile('quartz-svg/template.mustache', 'utf8', function (err, template) {
       if (err) {
-        return console.log(err);
+        return process.stdout.write(chalk.red(err));
       }
 
-      var filename_prefix = 'app/private/svg-css/';
-      var filename;
+      let filename_prefix = 'quartz-svg/svg-css/';
+      let filename;
 
       if (all) {
         filename = 'all/vhx-quartz.icon-' + icon + '.css';
@@ -88,7 +89,7 @@ var files_count = 0;
         filename = (color.set === 'all') ?  '.css' :  '-' + color.set + '.css';
       }
 
-      var output = mustache.render(template, model);
+      let output = mustache.render(template, model);
 
       fs.appendFile(filename_prefix + filename,  output, function() {
         callback();
@@ -104,13 +105,13 @@ var files_count = 0;
       return file.substr(-4) === '.svg';
     });
 
-    a.eachLimit(files, 200, function (filename, done) {
-      var file_path = path.join('app/private/svg/' + set, filename);
-      var name = filename.split('.svg')[0];
+    a.eachLimit(files, 200, function (filename) {
+      let file_path = path.join('quartz-svg/svg/' + set, filename);
+      let name = filename.split('.svg')[0];
 
       fs.readFile(file_path, 'utf8', function (err, data) {
         if (err) {
-          return console.log(err);
+          return process.stdout.write(chalk.red(err));
         }
         if (set === 'all') {
           self.icons_list.push({ name: name });
@@ -140,17 +141,17 @@ var files_count = 0;
   _.each(options.sets, function(set) {
     a.waterfall([
       function (cb) {
-        fs.readdir('app/private/svg/' + set, cb);
+        fs.readdir('quartz-svg/svg/' + set, cb);
       },
       function (files, cb) {
         self.walkIcons(files, set, cb);
       }
     ], function (err) {
       if (err) {
-        console.log(err);
+        process.stdout.write(chalk.red(err));
       } else {
         count++;
-        console.log('Created icons-' + set + ' set');
+        process.stdout.write(chalk.green('Created icons-' + set + ' set'));
         if (count >= options.sets.length) {
           self.createDocList(function() {
             gruntDone();
