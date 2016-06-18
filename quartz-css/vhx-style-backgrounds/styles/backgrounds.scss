@@ -14,6 +14,9 @@
 .bg-teal-2 {
   background-color: $teal-2;
 }
+.bg-teal-3 {
+  background-color: $teal-3;
+}
 
 /* Black & White
 ......................................*/
@@ -50,6 +53,12 @@
 .bg-gray-6 {
   background-color: $gray-6;
 }
+.bg-gray-7 {
+  background-color: $gray-7;
+}
+.bg-gray-8 {
+  background-color: $gray-8;
+}
 
 /* Navy
 ......................................*/
@@ -77,8 +86,38 @@
 .bg-currant {
   background: $vhx-currant;
 }
+.bg-debian {
+  background-color: $vhx-debian;
+}
+.bg-blue {
+  background: $vhx-blue;
+}
+.bg-teal {
+  background-color: $vhx-teal;
+}
+.bg-purple {
+  background: $vhx-purple;
+}
 
 .bg-cover {
   background-size: cover;
   background-position: 50% 50%;
+}
+
+/* External Brands
+..................................... */
+.bg-facebook-blue {
+  background-color: $facebook-blue;
+}
+.bg-twitter-blue {
+  background-color: $twitter-blue;
+}
+.bg-tumblr-blue {
+  background-color: $tumblr-blue;
+}
+.bg-paypal-blue {
+  background-color: $paypal-blue;
+}
+.bg-roku-purple {
+  background-color: $roku-purple;
 }

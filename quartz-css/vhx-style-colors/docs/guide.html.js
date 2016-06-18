@@ -33,7 +33,7 @@ Q.components.guide.styleguide.ui.colors_template = {
       { name: 'teal-3' },
       { name: 'red' },
       { name: 'navy' },
-      { name: 'navy-transparent', css: 'bg-grid-light' },
+      { name: 'navy-transparent', css: '.bg-grid-light' },
     ];
 
     // Brand - VHX
