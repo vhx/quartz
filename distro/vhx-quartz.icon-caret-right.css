@@ -1,5 +1,17 @@
+.icon-caret-right-navy {
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-arrows-set%20copy%3C%2Ftitle%3E%3Cpolygon%20points%3D%225%2023.16%205%201.54%2017.7%2012.35%205%2023.16%22%20fill%3D%22%23375667%22%2F%3E%3Cpolygon%20points%3D%228%204.05%205%201.54%205%2023.16%208%2020.66%208%204.05%22%20fill%3D%22%23375667%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+}
 .icon-caret-right-gray {
   background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-arrows-set%20copy%3C%2Ftitle%3E%3Cpolygon%20points%3D%225%2023.16%205%201.54%2017.7%2012.35%205%2023.16%22%20fill%3D%22%239baab2%22%2F%3E%3Cpolygon%20points%3D%228%204.05%205%201.54%205%2023.16%208%2020.66%208%204.05%22%20fill%3D%22%239baab2%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+}
+.icon-caret-right-white {
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-arrows-set%20copy%3C%2Ftitle%3E%3Cpolygon%20points%3D%225%2023.16%205%201.54%2017.7%2012.35%205%2023.16%22%20fill%3D%22%23ffffff%22%2F%3E%3Cpolygon%20points%3D%228%204.05%205%201.54%205%2023.16%208%2020.66%208%204.05%22%20fill%3D%22%23ffffff%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+}
+.icon-caret-right-teal {
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-arrows-set%20copy%3C%2Ftitle%3E%3Cpolygon%20points%3D%225%2023.16%205%201.54%2017.7%2012.35%205%2023.16%22%20fill%3D%22%2322b8af%22%2F%3E%3Cpolygon%20points%3D%228%204.05%205%201.54%205%2023.16%208%2020.66%208%204.05%22%20fill%3D%22%2322b8af%22%2F%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
 }
 .icon-caret-right-black {
@@ -14,11 +26,95 @@
   background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-arrows-set%20copy%3C%2Ftitle%3E%3Cpolygon%20points%3D%225%2023.16%205%201.54%2017.7%2012.35%205%2023.16%22%20fill%3D%22%23375667%22%2F%3E%3Cpolygon%20points%3D%228%204.05%205%201.54%205%2023.16%208%2020.66%208%204.05%22%20fill%3D%22%23375667%22%2F%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
 }
+.icon-caret-right-gray {
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-arrows-set%20copy%3C%2Ftitle%3E%3Cpolygon%20points%3D%225%2023.16%205%201.54%2017.7%2012.35%205%2023.16%22%20fill%3D%22%239baab2%22%2F%3E%3Cpolygon%20points%3D%228%204.05%205%201.54%205%2023.16%208%2020.66%208%204.05%22%20fill%3D%22%239baab2%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+}
 .icon-caret-right-white {
   background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-arrows-set%20copy%3C%2Ftitle%3E%3Cpolygon%20points%3D%225%2023.16%205%201.54%2017.7%2012.35%205%2023.16%22%20fill%3D%22%23ffffff%22%2F%3E%3Cpolygon%20points%3D%228%204.05%205%201.54%205%2023.16%208%2020.66%208%204.05%22%20fill%3D%22%23ffffff%22%2F%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
 }
 .icon-caret-right-teal {
   background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-arrows-set%20copy%3C%2Ftitle%3E%3Cpolygon%20points%3D%225%2023.16%205%201.54%2017.7%2012.35%205%2023.16%22%20fill%3D%22%2322b8af%22%2F%3E%3Cpolygon%20points%3D%228%204.05%205%201.54%205%2023.16%208%2020.66%208%204.05%22%20fill%3D%22%2322b8af%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+}
+.icon-caret-right-black {
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-arrows-set%20copy%3C%2Ftitle%3E%3Cpolygon%20points%3D%225%2023.16%205%201.54%2017.7%2012.35%205%2023.16%22%20fill%3D%22%23000000%22%2F%3E%3Cpolygon%20points%3D%228%204.05%205%201.54%205%2023.16%208%2020.66%208%204.05%22%20fill%3D%22%23000000%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+}
+.icon-caret-right {
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-arrows-set%20copy%3C%2Ftitle%3E%3Cpolygon%20points%3D%225%2023.16%205%201.54%2017.7%2012.35%205%2023.16%22%20fill%3D%22%23375667%22%2F%3E%3Cpolygon%20points%3D%228%204.05%205%201.54%205%2023.16%208%2020.66%208%204.05%22%20fill%3D%22%2322b8af%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+}
+.icon-caret-right-navy {
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-arrows-set%20copy%3C%2Ftitle%3E%3Cpolygon%20points%3D%225%2023.16%205%201.54%2017.7%2012.35%205%2023.16%22%20fill%3D%22%23375667%22%2F%3E%3Cpolygon%20points%3D%228%204.05%205%201.54%205%2023.16%208%2020.66%208%204.05%22%20fill%3D%22%23375667%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+}
+.icon-caret-right-gray {
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-arrows-set%20copy%3C%2Ftitle%3E%3Cpolygon%20points%3D%225%2023.16%205%201.54%2017.7%2012.35%205%2023.16%22%20fill%3D%22%239baab2%22%2F%3E%3Cpolygon%20points%3D%228%204.05%205%201.54%205%2023.16%208%2020.66%208%204.05%22%20fill%3D%22%239baab2%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+}
+.icon-caret-right-white {
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-arrows-set%20copy%3C%2Ftitle%3E%3Cpolygon%20points%3D%225%2023.16%205%201.54%2017.7%2012.35%205%2023.16%22%20fill%3D%22%23ffffff%22%2F%3E%3Cpolygon%20points%3D%228%204.05%205%201.54%205%2023.16%208%2020.66%208%204.05%22%20fill%3D%22%23ffffff%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+}
+.icon-caret-right-teal {
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-arrows-set%20copy%3C%2Ftitle%3E%3Cpolygon%20points%3D%225%2023.16%205%201.54%2017.7%2012.35%205%2023.16%22%20fill%3D%22%2322b8af%22%2F%3E%3Cpolygon%20points%3D%228%204.05%205%201.54%205%2023.16%208%2020.66%208%204.05%22%20fill%3D%22%2322b8af%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+}
+.icon-caret-right-black {
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-arrows-set%20copy%3C%2Ftitle%3E%3Cpolygon%20points%3D%225%2023.16%205%201.54%2017.7%2012.35%205%2023.16%22%20fill%3D%22%23000000%22%2F%3E%3Cpolygon%20points%3D%228%204.05%205%201.54%205%2023.16%208%2020.66%208%204.05%22%20fill%3D%22%23000000%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+}
+.icon-caret-right {
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-arrows-set%20copy%3C%2Ftitle%3E%3Cpolygon%20points%3D%225%2023.16%205%201.54%2017.7%2012.35%205%2023.16%22%20fill%3D%22%23375667%22%2F%3E%3Cpolygon%20points%3D%228%204.05%205%201.54%205%2023.16%208%2020.66%208%204.05%22%20fill%3D%22%2322b8af%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+}
+.icon-caret-right-navy {
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-arrows-set%20copy%3C%2Ftitle%3E%3Cpolygon%20points%3D%225%2023.16%205%201.54%2017.7%2012.35%205%2023.16%22%20fill%3D%22%23375667%22%2F%3E%3Cpolygon%20points%3D%228%204.05%205%201.54%205%2023.16%208%2020.66%208%204.05%22%20fill%3D%22%23375667%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+}
+.icon-caret-right-gray {
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-arrows-set%20copy%3C%2Ftitle%3E%3Cpolygon%20points%3D%225%2023.16%205%201.54%2017.7%2012.35%205%2023.16%22%20fill%3D%22%239baab2%22%2F%3E%3Cpolygon%20points%3D%228%204.05%205%201.54%205%2023.16%208%2020.66%208%204.05%22%20fill%3D%22%239baab2%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+}
+.icon-caret-right-white {
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-arrows-set%20copy%3C%2Ftitle%3E%3Cpolygon%20points%3D%225%2023.16%205%201.54%2017.7%2012.35%205%2023.16%22%20fill%3D%22%23ffffff%22%2F%3E%3Cpolygon%20points%3D%228%204.05%205%201.54%205%2023.16%208%2020.66%208%204.05%22%20fill%3D%22%23ffffff%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+}
+.icon-caret-right-teal {
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-arrows-set%20copy%3C%2Ftitle%3E%3Cpolygon%20points%3D%225%2023.16%205%201.54%2017.7%2012.35%205%2023.16%22%20fill%3D%22%2322b8af%22%2F%3E%3Cpolygon%20points%3D%228%204.05%205%201.54%205%2023.16%208%2020.66%208%204.05%22%20fill%3D%22%2322b8af%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+}
+.icon-caret-right-black {
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-arrows-set%20copy%3C%2Ftitle%3E%3Cpolygon%20points%3D%225%2023.16%205%201.54%2017.7%2012.35%205%2023.16%22%20fill%3D%22%23000000%22%2F%3E%3Cpolygon%20points%3D%228%204.05%205%201.54%205%2023.16%208%2020.66%208%204.05%22%20fill%3D%22%23000000%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+}
+.icon-caret-right {
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-arrows-set%20copy%3C%2Ftitle%3E%3Cpolygon%20points%3D%225%2023.16%205%201.54%2017.7%2012.35%205%2023.16%22%20fill%3D%22%23375667%22%2F%3E%3Cpolygon%20points%3D%228%204.05%205%201.54%205%2023.16%208%2020.66%208%204.05%22%20fill%3D%22%2322b8af%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+}
+.icon-caret-right-navy {
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-arrows-set%20copy%3C%2Ftitle%3E%3Cpolygon%20points%3D%225%2023.16%205%201.54%2017.7%2012.35%205%2023.16%22%20fill%3D%22%23375667%22%2F%3E%3Cpolygon%20points%3D%228%204.05%205%201.54%205%2023.16%208%2020.66%208%204.05%22%20fill%3D%22%23375667%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+}
+.icon-caret-right-gray {
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-arrows-set%20copy%3C%2Ftitle%3E%3Cpolygon%20points%3D%225%2023.16%205%201.54%2017.7%2012.35%205%2023.16%22%20fill%3D%22%239baab2%22%2F%3E%3Cpolygon%20points%3D%228%204.05%205%201.54%205%2023.16%208%2020.66%208%204.05%22%20fill%3D%22%239baab2%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+}
+.icon-caret-right-white {
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-arrows-set%20copy%3C%2Ftitle%3E%3Cpolygon%20points%3D%225%2023.16%205%201.54%2017.7%2012.35%205%2023.16%22%20fill%3D%22%23ffffff%22%2F%3E%3Cpolygon%20points%3D%228%204.05%205%201.54%205%2023.16%208%2020.66%208%204.05%22%20fill%3D%22%23ffffff%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+}
+.icon-caret-right-teal {
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-arrows-set%20copy%3C%2Ftitle%3E%3Cpolygon%20points%3D%225%2023.16%205%201.54%2017.7%2012.35%205%2023.16%22%20fill%3D%22%2322b8af%22%2F%3E%3Cpolygon%20points%3D%228%204.05%205%201.54%205%2023.16%208%2020.66%208%204.05%22%20fill%3D%22%2322b8af%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+}
+.icon-caret-right-black {
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-arrows-set%20copy%3C%2Ftitle%3E%3Cpolygon%20points%3D%225%2023.16%205%201.54%2017.7%2012.35%205%2023.16%22%20fill%3D%22%23000000%22%2F%3E%3Cpolygon%20points%3D%228%204.05%205%201.54%205%2023.16%208%2020.66%208%204.05%22%20fill%3D%22%23000000%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+}
+.icon-caret-right {
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-arrows-set%20copy%3C%2Ftitle%3E%3Cpolygon%20points%3D%225%2023.16%205%201.54%2017.7%2012.35%205%2023.16%22%20fill%3D%22%23375667%22%2F%3E%3Cpolygon%20points%3D%228%204.05%205%201.54%205%2023.16%208%2020.66%208%204.05%22%20fill%3D%22%2322b8af%22%2F%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
 }

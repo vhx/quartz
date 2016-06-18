@@ -68,17 +68,6 @@ module.exports = function(grunt) {
           }
         ]
       }
-    },
-    folder_list: {
-      options: {
-        files: true,
-        folders: true
-      },
-      files: {
-        src: ['quartz-svg/svg/all/*.svg'],
-        dest: 'vhx-style-icons/docs/icon-list.json',
-        cwd: './'
-      }
     }
   });
 
@@ -99,5 +88,4 @@ module.exports = function(grunt) {
 
   grunt.registerTask('build-icons', ['clean:pre_svg', 'grunt-svg-css', 'copy:svg', 'concat:svg', 'clean:svg']);
   grunt.registerTask('build', ['sass_globbing', 'cssmin', 'copy:css', 'sass']);
-  grunt.registerTask('files', ['folder_list']);
 };

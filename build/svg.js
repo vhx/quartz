@@ -8,9 +8,9 @@ const SVG = function(gruntDone) {
   const mustache  = require('mustache');
   const chalk     = require('chalk');
   const path      = require('path');
-  const self      = this;
 
-  let count     = 0;
+  let self    = {};
+  let count   = 0;
   let options = {
     sets: ['all', 'ui', 'social', 'payment', 'directional', 'apps'],
     colors: {
@@ -21,6 +21,8 @@ const SVG = function(gruntDone) {
       black: '#000000'
     }
   };
+
+  self.icons_list = [];
 
   /* ...............................
     Setup Color Options
@@ -47,16 +49,15 @@ const SVG = function(gruntDone) {
     Create Doc List
   .................................*/
   self.createDocList = function(callback) {
-    console.log(self.icons_list);
-    // let template = 'Template.guide__style_icons_names.helpers({ icons: function() {return ' + JSON.stringify(self.icons_list) + ';}});';
-    //
-    // fs.writeFile('app/packages/vhx-style-icons/docs/guide.helpers.js', template, function(err) {
-    //   if (err) {
-    //     return process.stdout.write(chalk.red(err));
-    //   }
-    //
-    //   callback();
-    // });
+    let template = 'Q.components.guide.styleguide.ui.icons_list = function() { return ' + JSON.stringify(self.icons_list) + '; };';
+
+    fs.writeFile('quartz-css/vhx-style-icons/docs/guide.icons.html.js', template, function(err) {
+      if (err) {
+        return process.stdout.write(chalk.red(err));
+      }
+
+      callback();
+    });
   };
 
   /* ...............................
@@ -151,7 +152,7 @@ const SVG = function(gruntDone) {
         process.stdout.write(chalk.red(err));
       } else {
         count++;
-        process.stdout.write(chalk.green('Created icons-' + set + ' set'));
+        process.stdout.write(chalk.green('✓ Created icons-' + set + ' set\n'));
         if (count >= options.sets.length) {
           self.createDocList(function() {
             gruntDone();
