@@ -1189,13 +1189,13 @@ Q.components.shared.intro.ui.container = {
     guide: m.component(Q.components.guide.styleguide.ui.tooltips.container),
     code: Q.code.tooltips
   }]
-};Q.components.route.styleguide.ui.utilities = {
+};Q.components.route.styleguide.ui.layout = {
   items: [{
-    guide: m.component(Q.components.guide.styleguide.ui.display.container),
-    code: Q.code.display
-  }, {
     guide: m.component(Q.components.guide.styleguide.ui.grid.container),
     code: Q.code.grid
+  }, {
+    guide: m.component(Q.components.guide.styleguide.ui.display.container),
+    code: Q.code.display
   }, {
     guide: m.component(Q.components.guide.styleguide.ui.spacing_sizes.container),
     code: Q.code['spacing-sizes']
