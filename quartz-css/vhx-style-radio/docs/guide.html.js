@@ -3,10 +3,10 @@ Q.components.guide.styleguide.ui.radio = {};
 Q.components.guide.styleguide.ui.radio.container = {
   view: function(ctrl) {
     return m('section#guide--style-text', [
-      m.component(Q.components.shared.guide.intro.ui.container, {
+      m.component(Q.components.shared.intro.ui.container, {
         title: 'Radio Input'
       }),
-      m.component(Q.components.shared.guide.block.ui.container, {
+      m.component(Q.components.shared.block.ui.container, {
         title: 'Horizontal Layout',
         component: {
           view: function() {
@@ -45,7 +45,7 @@ Q.components.guide.styleguide.ui.radio.container = {
           }
         }
       }),
-      m.component(Q.components.shared.guide.block.ui.container, {
+      m.component(Q.components.shared.block.ui.container, {
         title: 'Stacked Layout',
         component: {
           view: function() {

@@ -3,10 +3,10 @@ Q.components.guide.styleguide.ui.text = {};
 Q.components.guide.styleguide.ui.text.container = {
   view: function(ctrl) {
     return m('section#guide--style-text', [
-      m.component(Q.components.shared.guide.intro.ui.container, {
+      m.component(Q.components.shared.intro.ui.container, {
         title: 'Text'
       }),
-      m.component(Q.components.shared.guide.block.ui.container, {
+      m.component(Q.components.shared.block.ui.container, {
         title: 'Sizes',
         component: {
           view: function() {
@@ -18,7 +18,7 @@ Q.components.guide.styleguide.ui.text.container = {
           }
         }
       }),
-      m.component(Q.components.shared.guide.block.ui.container, {
+      m.component(Q.components.shared.block.ui.container, {
         title: 'Colors',
         component: {
           view: function() {
@@ -35,7 +35,7 @@ Q.components.guide.styleguide.ui.text.container = {
           }
         }
       }),
-      m.component(Q.components.shared.guide.block.ui.container, {
+      m.component(Q.components.shared.block.ui.container, {
         title: 'Styles',
         component: {
           view: function() {
@@ -47,7 +47,7 @@ Q.components.guide.styleguide.ui.text.container = {
           }
         }
       }),
-      m.component(Q.components.shared.guide.block.ui.container, {
+      m.component(Q.components.shared.block.ui.container, {
         title: 'Links',
         component: {
           view: function() {
@@ -61,7 +61,7 @@ Q.components.guide.styleguide.ui.text.container = {
           }
         }
       }),
-      m.component(Q.components.shared.guide.block.ui.container, {
+      m.component(Q.components.shared.block.ui.container, {
         title: 'Links',
         component: {
           view: function() {

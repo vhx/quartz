@@ -3,10 +3,10 @@ Q.components.guide.styleguide.ui.display = {};
 Q.components.guide.styleguide.ui.display.container = {
   view: function(ctrl) {
     return m('section#guide--style-text', [
-      m.component(Q.components.shared.guide.intro.ui.container, {
+      m.component(Q.components.shared.intro.ui.container, {
         title: 'Layout'
       }),
-      m.component(Q.components.shared.guide.block.ui.container, {
+      m.component(Q.components.shared.block.ui.container, {
         title: 'Display',
         component: {
           view: function() {
@@ -19,7 +19,7 @@ Q.components.guide.styleguide.ui.display.container = {
           }
         }
       }),
-      m.component(Q.components.shared.guide.block.ui.container, {
+      m.component(Q.components.shared.block.ui.container, {
         title: 'Lists',
         component: {
           view: function() {

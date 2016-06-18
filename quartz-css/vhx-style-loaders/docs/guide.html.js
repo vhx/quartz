@@ -3,10 +3,10 @@ Q.components.guide.styleguide.ui.loaders = {};
 Q.components.guide.styleguide.ui.loaders.container = {
   view: function(ctrl) {
     return m('section#guide--style-loaders', [
-      m.component(Q.components.shared.guide.intro.ui.container, {
+      m.component(Q.components.shared.intro.ui.container, {
         title: 'Loaders'
       }),
-      m.component(Q.components.shared.guide.block.ui.container, {
+      m.component(Q.components.shared.block.ui.container, {
         title: 'Core Colors',
         component: {
           view: function() {
@@ -20,7 +20,7 @@ Q.components.guide.styleguide.ui.loaders.container = {
           }
         }
       }),
-      m.component(Q.components.shared.guide.block.ui.container, {
+      m.component(Q.components.shared.block.ui.container, {
         title: 'Sizes',
         component: {
           view: function() {

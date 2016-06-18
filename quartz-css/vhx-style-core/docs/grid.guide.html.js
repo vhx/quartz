@@ -3,10 +3,10 @@ Q.components.guide.styleguide.ui.grid = {};
 Q.components.guide.styleguide.ui.grid.container = {
   view: function(ctrl) {
     return m('section#guide--style-grid', [
-      m.component(Q.components.shared.guide.intro.ui.container, {
+      m.component(Q.components.shared.intro.ui.container, {
         title: 'Grid'
       }),
-      m.component(Q.components.shared.guide.block.ui.container, {
+      m.component(Q.components.shared.block.ui.container, {
         title: 'Basic Setup',
         component: {
           controller: function() {
@@ -23,7 +23,7 @@ Q.components.guide.styleguide.ui.grid.container = {
           }
         }
       }),
-      m.component(Q.components.shared.guide.block.ui.container, {
+      m.component(Q.components.shared.block.ui.container, {
         title: 'Responsive',
         component: {
           view: function() {
@@ -44,7 +44,7 @@ Q.components.guide.styleguide.ui.grid.container = {
           }
         }
       }),
-      m.component(Q.components.shared.guide.block.ui.container, {
+      m.component(Q.components.shared.block.ui.container, {
         title: 'Offsets',
         component: {
           view: function() {
@@ -87,7 +87,7 @@ Q.components.guide.styleguide.ui.grid.container = {
           }
         }
       }),
-      m.component(Q.components.shared.guide.block.ui.container, {
+      m.component(Q.components.shared.block.ui.container, {
         title: 'Hide and Show',
         component: {
           view: function() {

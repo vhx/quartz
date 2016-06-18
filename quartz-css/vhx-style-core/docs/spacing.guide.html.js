@@ -4,10 +4,10 @@ Q.components.guide.styleguide.ui.spacing_positions = {};
 Q.components.guide.styleguide.ui.spacing_sizes.container = {
   view: function(ctrl) {
     return m('section#guide--style-spacing_sizes', [
-      m.component(Q.components.shared.guide.intro.ui.container, {
+      m.component(Q.components.shared.intro.ui.container, {
         title: 'Spacing'
       }),
-      m.component(Q.components.shared.guide.block.ui.container, {
+      m.component(Q.components.shared.block.ui.container, {
         title: 'Sizes (Padding | Margin)',
         component: {
           controller: function() {
@@ -36,7 +36,7 @@ Q.components.guide.styleguide.ui.spacing_sizes.container = {
 Q.components.guide.styleguide.ui.spacing_positions.container = {
   view: function(ctrl) {
     return m('section#guide--style-spacing_sizes', [
-      m.component(Q.components.shared.guide.block.ui.container, {
+      m.component(Q.components.shared.block.ui.container, {
         title: 'Positions (Padding | Margin)',
         component: {
           controller: function() {
