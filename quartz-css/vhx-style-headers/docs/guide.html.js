@@ -37,7 +37,7 @@ Q.components.guide.styleguide.ui.headers.container = {
         component: {
           view: function() {
             return m('div', [
-              m('h1.head-3.head--navy.margin-bottom-small.inline', 'Header Navy'), 
+              m('h1.head-3.head--navy.margin-bottom-small.inline', 'Header Navy'),
               m('span', '(default)'),
               m('h1.head-3.head--gray.margin-bottom-small', 'Header Gray'),
               m('h1.head-3.head--teal.margin-bottom-small', 'Header Teal'),
@@ -51,11 +51,11 @@ Q.components.guide.styleguide.ui.headers.container = {
         component: {
           view: function() {
             return m('div', [
-              m('a.head-4.margin-bottom-small.inline', { href="#" }, 'Header Navy'),
+              m('a.head-4.margin-bottom-small.inline', { href: "#" }, 'Header Navy'),
               m('span', 'default'),
-              m('a.head-4.head--gray.block.margin-bottom-small', { href="#" }, 'Header Gray'),
-              m('a.head-4.head--teal.block.margin-bottom-small', { href="#" }, 'Header Teal'),
-              m('a.head-4.head--white.block.inline.margin-bottom-small.bg-grid-dark', { href="#" }, 'Header White')
+              m('a.head-4.head--gray.block.margin-bottom-small', { href: "#" }, 'Header Gray'),
+              m('a.head-4.head--teal.block.margin-bottom-small', { href: "#" }, 'Header Teal'),
+              m('a.head-4.head--white.block.inline.margin-bottom-small.bg-grid-dark', { href: "#" }, 'Header White')
             ]);
           }
         }

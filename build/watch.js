@@ -83,7 +83,7 @@ app_js_watcher.on('change', function() {
 
     let Q = { code: {} };
     let views = '';
-
+console.log(scope);
     walk.walkSync('quartz-css', function(base_dir, filename) {
       if (base_dir.match(/\/docs/) && filename.match(/\.html\.js/)) {
         let template = fs.readFileSync(base_dir + '/' + filename, 'utf8');
