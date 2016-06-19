@@ -1,3 +1,4 @@
+// for route /styleguide/typography
 Q.components.route.styleguide.ui.typography = {
   items: [
     {

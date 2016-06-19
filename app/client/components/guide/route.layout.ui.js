@@ -1,3 +1,4 @@
+// for route /styleguide/layout
 Q.components.route.styleguide.ui.layout = {
   items: [
     {

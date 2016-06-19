@@ -1,3 +1,4 @@
+// for route /styleguide/icons
 Q.components.route.styleguide.ui.icons = {
   items: [
     {

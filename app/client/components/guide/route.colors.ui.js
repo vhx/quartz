@@ -1,3 +1,4 @@
+// for route /styleguide/colors
 Q.components.route.styleguide.ui.colors = {
   items: [
     {
