@@ -9,3 +9,11 @@ app/private/svg-icons-renamed
 app/private/svg-icons-minified
 app/quartz-css/vhx-style-icons/docs/icon-list.json
 .sass-cache
+.ebignore
+.elasticbeanstalk
+.ebextensions
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
