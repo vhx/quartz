@@ -7,6 +7,7 @@ const hljs        = require('highlight.js');
 const chalk       = require('chalk');
 const babel       = require('babel-core');
 const sass        = require('node-sass');
+const uglify      = require('uglify-js');
 const concat      = require('concat-files');
 const src         = {
   // app
@@ -17,18 +18,18 @@ const src         = {
   },
   appjs: {
     watch: './app/client/**/*.js',
-    manifest: require(__dirname + '/_app.js'),
+    manifest: './build/_app.js',
     distr: 'app/public/app.js'
   },
   // vendor
   vendorjs: {
-    manifest: require(__dirname + '/_vendor.js'),
+    manifest: './build/_vendor.js',
     distr: 'app/public/vendor.js'
   },
   // quartz
   quartzjs: {
     watch: './quartz-js/**/*.js',
-    manifest: require(__dirname + '/_quartz.js'),
+    manifest: './build/_quartz.js',
     distr: 'app/public/quartz.js'
   },
   quartzcss: {
@@ -45,7 +46,7 @@ const src         = {
 /* ....................................
   APP CSS > public/app.css
 ....................................*/
-let app_css_watcher = chokidar.watch(src.appcss.watch, {
+const app_css_watcher = chokidar.watch(src.appcss.watch, {
   ignored: /[\/\\]\./
 });
 
@@ -65,14 +66,14 @@ app_css_watcher.on('change', function() {
 /* ....................................
   APP JS > public/app.js
 ....................................*/
-let app_js_watcher = chokidar.watch(src.appjs.watch, {
+const app_js_watcher = chokidar.watch(src.appjs.watch, {
   ignored: /[\/\\]\./
 });
 
 app_js_watcher.add('quartz-css/**/*.html.js');
 app_js_watcher.add(src.appjs.manifest);
 app_js_watcher.on('change', function() {
-  concat(src.appjs.manifest, src.appjs.distr, function() {
+  concat(require('.' + src.appjs.manifest), src.appjs.distr, function() {
     let components = babel.transform(fs.readFileSync(src.appjs.distr).toString(), {
       'presets': ['es2015']
     }).code;
@@ -104,7 +105,9 @@ app_js_watcher.on('change', function() {
       }
     });
 
-    fs.writeFile(src.appjs.distr, scope + ';' + views + ';' + ';Q.code=' + JSON.stringify(Q.code) + ';' +  components, 'utf-8');
+    let min = uglify.minify(scope + ';' + views + ';' + ';Q.code=' + JSON.stringify(Q.code) + ';' + components, { fromString: true });
+
+    fs.writeFile(src.appjs.distr, min.code, 'utf-8');
   });
 });
 
@@ -115,10 +118,18 @@ app_js_watcher.on('change', function() {
 chokidar.watch(src.vendorjs.manifest, {
   ignored: /[\/\\]\./
 }).on('change', function() {
-  concat(src.vendorjs.manifest, src.vendorjs.distr, function(err) {
+  fs.writeFile(src.vendorjs.distr, '', 'utf-8');
+  concat(require('.' + src.vendorjs.manifest), src.vendorjs.distr, function(err) {
     if (err) {
       process.stdout.write(chalk.red(err));
     }
+
+    let min = uglify.minify(src.vendorjs.distr);
+    fs.writeFile(src.vendorjs.distr, min.code, function(err) {
+      if (err) {
+        process.stdout.write(chalk.red(err));
+      }
+    });
   });
 });
 
@@ -143,7 +154,7 @@ chokidar.watch(src.quartzicons.manifest, {
 /* ....................................
   QUARTZ CSS > public/quartz.css
 ....................................*/
-let quartz_css_watcher = chokidar.watch(src.quartzcss.watch, {
+const quartz_css_watcher = chokidar.watch(src.quartzcss.watch, {
   ignored: /[\/\\]\./
 });
 
@@ -163,7 +174,7 @@ quartz_css_watcher.on('change', function() {
 /* ....................................
   QUARTZ JS > public/quartz.js
 ....................................*/
-let quartz_js_watcher = chokidar.watch(src.quartzjs.watch, {
+const quartz_js_watcher = chokidar.watch(src.quartzjs.watch, {
   ignored: /[\/\\]\./
 });
 
@@ -179,7 +190,9 @@ quartz_js_watcher.on('change', function() {
     let result = babel.transform(fs.readFileSync(src.quartzjs.distr).toString(), {
       'presets': ['es2015']
     });
-    fs.writeFile(src.quartzjs.distr, result.code, function(err) {
+
+    let min = uglify.minify(result.code, { fromString: true });
+    fs.writeFile(src.quartzjs.distr, min.code, function(err) {
       if (err) {
         process.stdout.write(chalk.red(err));
       }

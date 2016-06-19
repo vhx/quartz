@@ -4,8 +4,6 @@ let Manifest = [
   'app/client/ext.js',
 
   /* layouts */
-  'app/client/layouts/layouts.standard.controller.js',
-  'app/client/layouts/layouts.standard.state.js',
   'app/client/layouts/layouts.standard.ui.js',
 
   /* components */
@@ -14,7 +12,7 @@ let Manifest = [
 
   'app/client/components/guide/route.buttons.ui.js',
   'app/client/components/guide/route.elements.ui.js',
-  'app/client/components/guide/route.utilities.ui.js',
+  'app/client/components/guide/route.layout.ui.js',
   'app/client/components/guide/route.icons.ui.js',
   'app/client/components/guide/route.colors.ui.js',
   'app/client/components/guide/route.tables.ui.js',

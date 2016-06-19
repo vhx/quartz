@@ -237,6 +237,10 @@ html {
     padding: 35px 65px; }
   .stage .code-bar {
     padding: 35px; }
+  .stage .container {
+    background-image: url("/bg.png");
+    background-position: 50% 50%;
+    background-repeat: repeat-y; }
 
 #code--style-brand-colors .hljs-constant {
   color: #ffffff; }
