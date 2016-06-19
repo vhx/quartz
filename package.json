@@ -1,8 +1,14 @@
 {
   "name": "vhx-quartz",
   "version": "0.7.7",
+  "description": "VHX Style Guide and JS Components.",
   "homepage": "https://github.com/vhx/quartz",
-  "main": "app/server/start.js",
+  "author": "VHX",
+  "readmeFilename": "README.md",
+  "engines": {
+    "node": "4.4.x"
+  },
+  "main": "app/server/ignite.js",
   "dependencies": {
     "body-parser": "1.13.3",
     "dotenv": "1.2.0",
@@ -11,8 +17,6 @@
   },
   "devDependencies": {
     "async": "^1.5.2",
-    "mithril": "0.2.0",
-    "underscore": "1.8.3",
     "babel-core": "^6.9.0",
     "babel-preset-es2015": "^6.9.0",
     "chalk": "^1.1.3",
@@ -35,9 +39,16 @@
     "grunt-svgmin": "^2.0.1",
     "highlightjs": "^8.7.0",
     "junk": "^1.0.2",
+    "mithril": "0.2.0",
     "mustache": "^2.2.1",
     "node-sass": "^3.7.0",
     "path": "^0.12.7",
-    "pm2": "^1.1.3"
+    "pm2": "^1.1.3",
+    "uglify": "^0.1.5",
+    "uglify-js": "^2.6.2",
+    "underscore": "1.8.3"
+  },
+  "scripts": {
+    "start": "node app/server/ignite.js"
   }
 }
