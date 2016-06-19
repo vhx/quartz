@@ -26,11 +26,14 @@ handlebars.registerPartial('home', home_template);
 app.get('*', function(request, response) {
   fs.readFile(__dirname + '/layouts/app.html', 'utf8', function(err, source){
     if (err) {
-      return console.log(err);
+      return process.stdout.write(err);
     }
 
     response.send(handlebars.compile(source)({
-      index: request.url === '/'
+      index: request.url === '/',
+      config: {
+        typekit_id: process.env.TYPEKIT_ID
+      }
     }));
   });
 });
