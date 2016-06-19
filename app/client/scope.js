@@ -13,6 +13,9 @@ window.Q ={
     guide: {
       styleguide: {
         ui: {}
+      },
+      js: {
+        ui: {}
       }
     }
   },

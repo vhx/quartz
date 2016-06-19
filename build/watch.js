@@ -106,6 +106,29 @@ const app_js_render = function() {
         };
       }
     });
+    walk.walkSync('quartz-js', function(base_dir, filename) {
+      if (base_dir.match(/\/docs/) && filename.match(/\.html\.js/)) {
+        let template = fs.readFileSync(base_dir + '/' + filename, 'utf8');
+        views = views + template;
+      }
+      if (base_dir.match(/\/docs\/code/)) {
+        let temp = fs.readFileSync(base_dir + '/' + filename, 'utf8');
+        let name = filename.split('.')[0];
+        let language = filename.split('.')[1];
+
+        if (language.match(/js/)) {
+          language = 'javascript';
+        }
+        if (language.match(/md/)) {
+          language = 'markdown';
+        }
+
+        Q.code[name] = {
+          language: language,
+          template: language === 'x' ? temp : hljs.highlight(language, temp).value
+        };
+      }
+    });
 
     let min = uglify.minify(scope + ';' + views + ';' + ';Q.code=' + JSON.stringify(Q.code) + ';' + components, { fromString: true });
 
@@ -114,6 +137,7 @@ const app_js_render = function() {
 };
 
 app_js_watcher.add('quartz-css/**/*.html.js');
+app_js_watcher.add('quartz-js/**/*.html.js');
 app_js_watcher.add(src.appjs.manifest);
 app_js_watcher.on('change', function() {
   app_js_render();
