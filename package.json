@@ -47,6 +47,7 @@
     "nodemon": "1.9.2"
   },
   "scripts": {
-    "start": "nodemon app/server/ignite.js"
+    "start": "node app/server/ignite.js",
+    "dev": "nodemon app/server/ignite.js"
   }
 }
