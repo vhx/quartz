@@ -16,6 +16,10 @@ Q.components.route.styleguide.ui.elements = {
     {
       guide: m.component(Q.components.guide.styleguide.ui.tooltips.container),
       code: Q.code.tooltips
+    },
+    {
+      guide: m.component(Q.components.guide.styleguide.ui.charts.container),
+      code: Q.code.charts
     }
   ]
 };
