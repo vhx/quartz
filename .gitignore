@@ -3,7 +3,7 @@ private/node_modules/
 .DS_Store
 .env
 .env.local
-nohup.out
+logs
 npm-debug.log
 app/private/svg-icons-renamed
 app/private/svg-icons-minified
