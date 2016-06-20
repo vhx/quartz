@@ -152,6 +152,9 @@
 .bg-teal-2 {
   background-color: #22B9B0; }
 
+.bg-teal-3 {
+  background-color: #149A97; }
+
 /* Black & White
 ......................................*/
 .bg-white {
@@ -186,6 +189,12 @@
 .bg-gray-6 {
   background-color: #5E7887; }
 
+.bg-gray-7 {
+  background-color: #375667; }
+
+.bg-gray-8 {
+  background-color: #233741; }
+
 /* Navy
 ......................................*/
 .bg-navy {
@@ -211,9 +220,38 @@
 .bg-currant {
   background: #2E064A; }
 
+.bg-debian {
+  background-color: #BA0F45; }
+
+.bg-blue {
+  background: #0F4E7B; }
+
+.bg-teal {
+  background-color: #149A97; }
+
+.bg-purple {
+  background: #783479; }
+
 .bg-cover {
   background-size: cover;
   background-position: 50% 50%; }
+
+/* External Brands
+..................................... */
+.bg-facebook-blue {
+  background-color: #3B5999; }
+
+.bg-twitter-blue {
+  background-color: #55ACEE; }
+
+.bg-tumblr-blue {
+  background-color: #34465D; }
+
+.bg-paypal-blue {
+  background-color: #00457C; }
+
+.bg-roku-purple {
+  background-color: #662C91; }
 
 /* .....................................
   Fonts
@@ -1630,16 +1668,12 @@ select {
   .form .checkbox input[type="checkbox"] {
     display: none; }
   .form .checkbox label {
-    opacity: 0;
-    transition: opacity 100ms ease-in;
     display: block;
     min-height: 40px;
     margin: 0;
     float: left;
     box-sizing: border-box;
     line-height: 40px; }
-    .form .checkbox label.ready {
-      opacity: 1; }
     .form .checkbox label:after {
       content: "";
       display: table;

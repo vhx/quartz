@@ -1,9 +1,9 @@
-.icon-angle-down-black {
-  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-arrows-set%20copy%3C%2Ftitle%3E%3Cpath%20d%3D%22M3.25%2C5.61l8.26%2C8.26%2C8.26-8.26c0.69-.68%2C1.58.61%2C2%2C1%2C0.69%2C0.72-.78%2C1.76-1.22%2C2.2l-3.39%2C3.39L12%2C17.41c-0.69.71-1.77-.8-2.19-1.22L6.41%2C12.8%2C1.23%2C7.63c-0.67-.7.61-1.58%2C1-2A0.68%2C0.68%2C0%2C0%2C1%2C3.25%2C5.61Z%22%20fill%3D%22%23000000%22%2F%3E%3C%2Fsvg%3E');
-  background-repeat: no-repeat;
-}
 .icon-angle-left-black {
   background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-arrows-set%20copy%3C%2Ftitle%3E%3Cpath%20d%3D%22M17.48%2C3.12L9.1%2C11.51l8.38%2C8.39c0.7%2C0.69-.63%2C1.61-1.06%2C2-0.72.69-1.75-.76-2.19-1.2l-3.49-3.49L5.5%2C12c-0.71-.69.78-1.76%2C1.2-2.18l3.49-3.49%2C5.25-5.25c0.71-.69%2C1.6.62%2C2%2C1.07A0.68%2C0.68%2C0%2C0%2C1%2C17.48%2C3.12Z%22%20fill%3D%22%23000000%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+}
+.icon-angle-down-black {
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-arrows-set%20copy%3C%2Ftitle%3E%3Cpath%20d%3D%22M3.25%2C5.61l8.26%2C8.26%2C8.26-8.26c0.69-.68%2C1.58.61%2C2%2C1%2C0.69%2C0.72-.78%2C1.76-1.22%2C2.2l-3.39%2C3.39L12%2C17.41c-0.69.71-1.77-.8-2.19-1.22L6.41%2C12.8%2C1.23%2C7.63c-0.67-.7.61-1.58%2C1-2A0.68%2C0.68%2C0%2C0%2C1%2C3.25%2C5.61Z%22%20fill%3D%22%23000000%22%2F%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
 }
 .icon-angle-right-black {
@@ -46,12 +46,12 @@
   background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-arrows-set%20copy%3C%2Ftitle%3E%3Cpolygon%20points%3D%2222.31%2017%200.69%2017%2011.5%204.29%2022.31%2017%22%20fill%3D%22%23000000%22%2F%3E%3Cpolygon%20points%3D%223.2%2014%200.69%2017%2022.31%2017%2019.8%2014%203.2%2014%22%20fill%3D%22%23000000%22%2F%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
 }
-.icon-chevron-left-black {
-  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-arrows-set%20copy%3C%2Ftitle%3E%3Crect%20x%3D%223.47%22%20y%3D%225.09%22%20width%3D%2216.05%22%20height%3D%226.03%22%20transform%3D%22translate(-2.36%2010.51)%20rotate(-45.01)%22%20fill%3D%22%23000000%22%2F%3E%3Crect%20x%3D%228.48%22%20y%3D%227.16%22%20width%3D%226.03%22%20height%3D%2216.05%22%20transform%3D%22translate(-7.37%2012.58)%20rotate(-45)%22%20fill%3D%22%23000000%22%2F%3E%3C%2Fsvg%3E');
-  background-repeat: no-repeat;
-}
 .icon-chevron-down-black {
   background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-arrows-set%20copy%3C%2Ftitle%3E%3Crect%20x%3D%224.94%22%20y%3D%223.47%22%20width%3D%226.03%22%20height%3D%2216.05%22%20transform%3D%22translate(-5.8%209)%20rotate(-45.01)%22%20fill%3D%22%23000000%22%2F%3E%3Crect%20x%3D%227.02%22%20y%3D%228.48%22%20width%3D%2216.05%22%20height%3D%226.03%22%20transform%3D%22translate(-3.73%2014.01)%20rotate(-45)%22%20fill%3D%22%23000000%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+}
+.icon-chevron-left-black {
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-arrows-set%20copy%3C%2Ftitle%3E%3Crect%20x%3D%223.47%22%20y%3D%225.09%22%20width%3D%2216.05%22%20height%3D%226.03%22%20transform%3D%22translate(-2.36%2010.51)%20rotate(-45.01)%22%20fill%3D%22%23000000%22%2F%3E%3Crect%20x%3D%228.48%22%20y%3D%227.16%22%20width%3D%226.03%22%20height%3D%2216.05%22%20transform%3D%22translate(-7.37%2012.58)%20rotate(-45)%22%20fill%3D%22%23000000%22%2F%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
 }
 .icon-chevron-right-black {
