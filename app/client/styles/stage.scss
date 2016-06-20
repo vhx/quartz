@@ -1,5 +1,5 @@
 html {
-  background-color: #1C0D32;
+  background-color: #00142B;
 }
 .stage-banner {
   width: 100%;
@@ -33,4 +33,15 @@ html {
   .code-bar {
     padding: 35px;
   }
+  .container {
+    background-image: url("/bg.png");
+    background-position: 50% 50%;
+    background-repeat: repeat-y;
+  }
+}
+
+#code--style-brand-colors {
+  .hljs-constant { color: #ffffff; }
+  .hljs-prompt { color: #ffffff; }
+  .hljs-variable { color: #ffffff; }
 }

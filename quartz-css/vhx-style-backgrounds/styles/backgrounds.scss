@@ -1,0 +1,123 @@
+/* imports
+...................................*/
+@import "../config/include";
+
+/*.....................................
+  Backgrounds
+......................................*/
+
+/* Teal
+......................................*/
+.bg-teal-1 {
+  background-color: $teal-1;
+}
+.bg-teal-2 {
+  background-color: $teal-2;
+}
+.bg-teal-3 {
+  background-color: $teal-3;
+}
+
+/* Black & White
+......................................*/
+.bg-white {
+  background-color: $white;
+}
+.bg-white-transparent {
+  background-color: $white-transparent;
+}
+.bg-black {
+  background-color: $black;
+}
+.bg-black-transparent {
+  background-color: $black-transparent;
+}
+
+/* Grays
+......................................*/
+.bg-gray-1 {
+  background-color: $gray-1;
+}
+.bg-gray-2 {
+  background-color: $gray-2;
+}
+.bg-gray-3 {
+  background-color: $gray-3;
+}
+.bg-gray-4 {
+  background-color: $gray-4;
+}
+.bg-gray-5 {
+  background-color: $gray-5;
+}
+.bg-gray-6 {
+  background-color: $gray-6;
+}
+.bg-gray-7 {
+  background-color: $gray-7;
+}
+.bg-gray-8 {
+  background-color: $gray-8;
+}
+
+/* Navy
+......................................*/
+.bg-navy {
+  background-color: $navy;
+}
+.bg-navy-transparent {
+  background-color: $navy-transparent;
+}
+
+/* Other Colors
+......................................*/
+.bg-red {
+  background-color: $red;
+}
+.bg-green {
+  background-color: $vhx-green;
+}
+.bg-yellow {
+  background-color: $vhx-yellow;
+}
+.bg-orange {
+  background-color: $vhx-orange;
+}
+.bg-currant {
+  background: $vhx-currant;
+}
+.bg-debian {
+  background-color: $vhx-debian;
+}
+.bg-blue {
+  background: $vhx-blue;
+}
+.bg-teal {
+  background-color: $vhx-teal;
+}
+.bg-purple {
+  background: $vhx-purple;
+}
+
+.bg-cover {
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/* External Brands
+..................................... */
+.bg-facebook-blue {
+  background-color: $facebook-blue;
+}
+.bg-twitter-blue {
+  background-color: $twitter-blue;
+}
+.bg-tumblr-blue {
+  background-color: $tumblr-blue;
+}
+.bg-paypal-blue {
+  background-color: $paypal-blue;
+}
+.bg-roku-purple {
+  background-color: $roku-purple;
+}

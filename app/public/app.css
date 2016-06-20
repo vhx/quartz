@@ -1,0 +1,252 @@
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #2d2d2d;
+  color: #fff;
+  font-size: 12px !important;
+  overflow-wrap: break-word !important;
+  font-family: Menlo, Monaco, 'Andale Mono', 'Lucida Console', 'Courier New', monospace;
+  -webkit-text-size-adjust: none;
+  font-weight: bold; }
+
+.hljs-comment,
+.hljs-title {
+  color: #777; }
+
+.code-bar .hljs-variable,
+.code-bar .hljs-attribute,
+.code-bar .hljs-tag,
+.code-bar .hljs-regexp,
+.code-bar .hljs-name,
+.code-bar .ruby .constant,
+.code-bar .xml .tag .title,
+.code-bar .xml .pi,
+.code-bar .xml .doctype,
+.code-bar .html .doctype {
+  color: #ab875d; }
+
+.code-bar .css .value {
+  color: #cd6a51; }
+
+.code-bar .css .value .function,
+.code-bar .css .value .string {
+  color: #a67f59; }
+
+.code-bar .css .value .number {
+  color: #9b869c; }
+
+.code-bar .css .id,
+.code-bar .css .class,
+.code-bar .css-pseudo,
+.code-bar .css .selector,
+.code-bar .css .tag {
+  color: #dfc48c; }
+
+.code-bar .hljs-number,
+.code-bar .hljs-preprocessor,
+.code-bar .hljs-built_in,
+.code-bar .hljs-literal,
+.code-bar .hljs-params,
+.code-bar .hljs-constant {
+  color: #ab875d; }
+
+.code-bar .ruby .class .title,
+.code-bar .css .rules .attribute {
+  color: #9b869b; }
+
+.code-bar .hljs-string,
+.code-bar .hljs-value,
+.code-bar .hljs-inheritance,
+.code-bar .hljs-header,
+.code-bar .ruby .symbol,
+.code-bar .xml .cdata {
+  color: #edb46b; }
+
+.code-bar .css .hexcolor {
+  color: #cd6a51; }
+
+.code-bar .function,
+.code-bar .python .decorator,
+.code-bar .python .title,
+.code-bar .ruby .function .title,
+.code-bar .ruby .title .keyword,
+.code-bar .perl .sub,
+.code-bar .javascript .title,
+.code-bar .coffeescript .title {
+  color: #fff; }
+
+.code-bar .hljs-keyword,
+.code-bar .javascript .function {
+  color: #8f9c6c; }
+
+.code-bar .hljs-tag {
+  color: #d3d0c8;
+  font-weight: bold; }
+
+.code-bar .hljs-title,
+.code-bar .hljs-name {
+  color: #f2777a;
+  font-weight: bold; }
+
+.code-bar .hljs-attribute,
+.code-bar .hljs-attr {
+  color: #ed9157;
+  font-weight: bold; }
+
+.code-bar .hljs-value,
+.code-bar .hljs-string {
+  color: #99cc99;
+  font-weight: bold; }
+
+.bg-grid-light {
+  background-image: url("bg.grid-light.png");
+  background-repeat: repeat; }
+
+.bg-grid-dark {
+  background-image: url("bg.grid-dark.png");
+  background-repeat: repeat; }
+
+.square {
+  text-align: center;
+  display: inline-block; }
+  .square .square-tag {
+    padding: 5px;
+    border-radius: 3px;
+    display: inline-block;
+    background-color: #ffffff !important;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); }
+  .square.square--medium {
+    width: 100px;
+    height: 100px; }
+  .square.square--large {
+    width: 120px;
+    height: 120px; }
+
+.logo-mithril {
+  font-size: 175px;
+  float: left;
+  line-height: 1.3em;
+  padding: 0;
+  text-decoration: none;
+  font-family: Arial;
+  font-style: normal;
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  margin-left: -50px; }
+  .logo-mithril:before {
+    content: "\25CB";
+    position: absolute;
+    margin: -0.17em 0 0 -0.10em; }
+  .logo-mithril:after {
+    content: "\25CB";
+    position: absolute;
+    margin: -0.17em 0 0 -0.5em; }
+
+.box-shadow {
+  box-shadow: 0 0 5px 0 #f0f0f0; }
+
+/* .....................................
+  Fonts
+..................................... */
+/* .....................................
+  Sets
+..................................... */
+/* .....................................
+  Media Query Ranges
+..................................... */
+/* .....................................
+  Colors - Grays
+..................................... */
+/* .....................................
+  Colors - Teals
+..................................... */
+/* .....................................
+  Colors - Red
+..................................... */
+/* .....................................
+  Colors - Navy
+..................................... */
+/* .....................................
+  Colors - Brand Palette
+..................................... */
+/* .....................................
+  Colors - External Palette
+..................................... */
+/* helper function for margin and padding
+......................................*/
+.nav-primary {
+  background: #F7F8F9;
+  border-right: 1px solid #F0F2F4;
+  top: 0;
+  left: 0;
+  position: fixed;
+  overflow-y: auto;
+  width: 225px;
+  height: 100%;
+  z-index: 1; }
+  .nav-primary .head--teal {
+    text-indent: 30px;
+    vertical-align: bottom; }
+    .nav-primary .head--teal a {
+      vertical-align: bottom; }
+  .nav-primary .head-5,
+  .nav-primary .no-bullet a {
+    text-indent: 30px; }
+  .nav-primary .no-bullet a {
+    display: block;
+    line-height: 40px; }
+    .nav-primary .no-bullet a:link, .nav-primary .no-bullet a:visited {
+      color: #869AA5; }
+    .nav-primary .no-bullet a:hover {
+      background: #D7DDE1; }
+    .nav-primary .no-bullet a.is-active {
+      background: #22B9B0;
+      color: #fff; }
+
+html {
+  background-color: #00142B; }
+
+.stage-banner {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 225px;
+  background-image: linear-gradient(135deg, rgba(158, 29, 113, 0.25) 20%, rgba(13, 233, 199, 0.25) 100%), url("/bg.stage-banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%, cover; }
+  .stage-banner nav {
+    position: absolute;
+    bottom: 20px;
+    right: 20px; }
+
+.stage {
+  width: 100%;
+  background: #2d2d2d;
+  box-sizing: border-box;
+  padding-left: 225px; }
+  .stage .guide-bar {
+    background: #ffffff;
+    position: relative;
+    padding: 35px 65px; }
+  .stage .code-bar {
+    padding: 35px; }
+  .stage .container {
+    background-image: url("/bg.png");
+    background-position: 50% 50%;
+    background-repeat: repeat-y; }
+
+#code--style-brand-colors .hljs-constant {
+  color: #ffffff; }
+
+#code--style-brand-colors .hljs-prompt {
+  color: #ffffff; }
+
+#code--style-brand-colors .hljs-variable {
+  color: #ffffff; }
