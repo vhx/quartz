@@ -91,7 +91,7 @@ const app_js_render = function() {
         let template = fs.readFileSync(base_dir + '/' + filename, 'utf8');
         views = views + template;
       }
-      if (base_dir.match(/\/docs\/code/)) {
+      if (base_dir.match(/\/docs\/code/) && !filename.match(/^\./)) {
         let temp = fs.readFileSync(base_dir + '/' + filename, 'utf8');
         let name = filename.split('.')[0];
         let language = filename.split('.')[1];
@@ -111,7 +111,7 @@ const app_js_render = function() {
         let template = fs.readFileSync(base_dir + '/' + filename, 'utf8');
         views = views + template;
       }
-      if (base_dir.match(/\/docs\/code/)) {
+      if (base_dir.match(/\/docs\/code/) && !filename.match(/^\./)) {
         let temp = fs.readFileSync(base_dir + '/' + filename, 'utf8');
         let name = filename.split('.')[0];
         let language = filename.split('.')[1];
