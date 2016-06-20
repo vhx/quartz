@@ -23,7 +23,7 @@ Q.components.route.styleguide.ui.elements = {
     },
     {
       guide: m.component(Q.components.guide.styleguide.ui.borders.container),
-      code: Q.code.charts
+      code: Q.code.borders
     }
   ]
 };
