@@ -10,15 +10,15 @@
   background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-singletons%3C%2Ftitle%3E%3Cpolygon%20points%3D%226.38%206.19%2011.5%203.28%2016.62%206.19%2011.5%209.28%206.38%206.19%22%20fill%3D%22%23000000%22%2F%3E%3Cpath%20d%3D%22M11.5%2C0.25L1.87%2C5.72V17.28l9.63%2C5.47%2C9.63-5.47V5.72ZM19%2C6.15L11.5%2C10.68%2C4%2C6.15%2C11.5%2C1.87ZM3.28%2C7.37L10.8%2C11.9v8.83L3.28%2C16.46V7.37ZM12.2%2C20.73V11.9l7.52-4.52v9.09Z%22%20fill%3D%22%23000000%22%2F%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
 }
-.icon-product-gray {
-  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-singletons%3C%2Ftitle%3E%3Cpolygon%20points%3D%226.38%206.19%2011.5%203.28%2016.62%206.19%2011.5%209.28%206.38%206.19%22%20fill%3D%22%239baab2%22%2F%3E%3Cpath%20d%3D%22M11.5%2C0.25L1.87%2C5.72V17.28l9.63%2C5.47%2C9.63-5.47V5.72ZM19%2C6.15L11.5%2C10.68%2C4%2C6.15%2C11.5%2C1.87ZM3.28%2C7.37L10.8%2C11.9v8.83L3.28%2C16.46V7.37ZM12.2%2C20.73V11.9l7.52-4.52v9.09Z%22%20fill%3D%22%239baab2%22%2F%3E%3C%2Fsvg%3E');
-  background-repeat: no-repeat;
-}
 .icon-product {
   background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-singletons%3C%2Ftitle%3E%3Cpolygon%20points%3D%226.38%206.19%2011.5%203.28%2016.62%206.19%2011.5%209.28%206.38%206.19%22%20fill%3D%22%2322b8af%22%2F%3E%3Cpath%20d%3D%22M11.5%2C0.25L1.87%2C5.72V17.28l9.63%2C5.47%2C9.63-5.47V5.72ZM19%2C6.15L11.5%2C10.68%2C4%2C6.15%2C11.5%2C1.87ZM3.28%2C7.37L10.8%2C11.9v8.83L3.28%2C16.46V7.37ZM12.2%2C20.73V11.9l7.52-4.52v9.09Z%22%20fill%3D%22%23375667%22%2F%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
 }
 .icon-product-white {
   background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-singletons%3C%2Ftitle%3E%3Cpolygon%20points%3D%226.38%206.19%2011.5%203.28%2016.62%206.19%2011.5%209.28%206.38%206.19%22%20fill%3D%22%23ffffff%22%2F%3E%3Cpath%20d%3D%22M11.5%2C0.25L1.87%2C5.72V17.28l9.63%2C5.47%2C9.63-5.47V5.72ZM19%2C6.15L11.5%2C10.68%2C4%2C6.15%2C11.5%2C1.87ZM3.28%2C7.37L10.8%2C11.9v8.83L3.28%2C16.46V7.37ZM12.2%2C20.73V11.9l7.52-4.52v9.09Z%22%20fill%3D%22%23ffffff%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+}
+.icon-product-gray {
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-singletons%3C%2Ftitle%3E%3Cpolygon%20points%3D%226.38%206.19%2011.5%203.28%2016.62%206.19%2011.5%209.28%206.38%206.19%22%20fill%3D%22%239baab2%22%2F%3E%3Cpath%20d%3D%22M11.5%2C0.25L1.87%2C5.72V17.28l9.63%2C5.47%2C9.63-5.47V5.72ZM19%2C6.15L11.5%2C10.68%2C4%2C6.15%2C11.5%2C1.87ZM3.28%2C7.37L10.8%2C11.9v8.83L3.28%2C16.46V7.37ZM12.2%2C20.73V11.9l7.52-4.52v9.09Z%22%20fill%3D%22%239baab2%22%2F%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
 }
