@@ -1,3 +1,9 @@
+### 0.8.0
+**2016-06-23**
+
+* Add Filter Mithril Component
+* Add Template for Mithril Component Docs
+
 ### 0.7.7
 **2016-06-19**
 
