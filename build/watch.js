@@ -7,6 +7,7 @@ const hljs        = require('highlight.js');
 const chalk       = require('chalk');
 const babel       = require('babel-core');
 const sass        = require('node-sass');
+const glob        = require('glob');
 const uglify      = require('uglify-js');
 const concat      = require('concat-files');
 const src         = {
@@ -216,6 +217,39 @@ quartz_css_watcher.on('change', function() {
 });
 
 /* ....................................
+  QUARTZ CSS > public/quartz.css
+....................................*/
+const quartz_component_css_watcher = chokidar.watch(src.quartzcss.watch, {
+  ignored: /[\/\\]\./
+});
+
+const quartz_component_css_render = function() {
+  glob.sync('quartz-js/**/styles/*.scss').forEach(function(file) {
+    fs.appendFileSync('quartz-js/components/components.scss', fs.readFileSync(file, 'utf-8'));
+  });
+
+  sass.render({
+    file: 'quartz-js/components/components.scss'
+  }, function(err, output) {
+    if (err) {
+      process.stdout.write(chalk.red(err));
+    } else {
+      fs.writeFile('app/public/components.css', output.css, function(err) {
+        if (err) {
+          process.stdout.write(chalk.red(err));
+        }
+      });
+    }
+  });
+  fs.unlink('quartz-js/components/components.scss');
+};
+
+quartz_component_css_watcher.add(src.quartzcss.manifest);
+quartz_component_css_watcher.on('change', function() {
+  quartz_component_css_render();
+});
+
+/* ....................................
   QUARTZ JS > public/quartz.js
 ....................................*/
 let quartz_js_arr = require('.' + src.quartzjs.manifest);
@@ -225,22 +259,33 @@ const quartz_js_watcher = chokidar.watch(src.quartzjs.watch, {
 
 const quartz_js_render = function() {
   walk.walkSync('quartz-js/components', function(base_dir, filename, stat) {
-    if (!stat.isDirectory() && !filename.match(/scope\.js/)) {
+    if (!stat.isDirectory() && !filename.match(/scope\.js/) && !base_dir.match(/docs/) && filename.match(/\.js/)) {
       quartz_js_arr.push(base_dir + '/' + filename);
     }
   });
 
   concat(quartz_js_arr, src.quartzjs.distr, function() {
-    let result = babel.transform(fs.readFileSync(src.quartzjs.distr).toString(), {
-      'presets': ['es2015']
-    });
+    let result, min;
 
-    let min = uglify.minify(result.code, { fromString: true });
-    fs.writeFile(src.quartzjs.distr, min.code, function(err) {
-      if (err) {
-        process.stdout.write(chalk.red(err));
-      }
-    });
+    try {
+      result = babel.transform(fs.readFileSync(src.quartzjs.distr).toString(), {
+        'presets': ['es2015']
+      });
+
+      min = uglify.minify(result.code, { fromString: true });
+    } catch (e) {
+      process.stdout.write(chalk.red(e));
+    }
+
+    try {
+      fs.writeFile(src.quartzjs.distr, min.code, function(err) {
+        if (err) {
+          process.stdout.write(chalk.red(err));
+        }
+      });
+    } catch (e) {
+      process.stdout.write(chalk.red(e));
+    }
   });
 };
 
@@ -252,9 +297,14 @@ quartz_js_watcher.on('change', function() {
 /* ....................................
   Render on watch start
 ....................................*/
-app_css_render();
-app_js_render();
-quartz_js_render();
-quartz_css_render();
-quartz_icons_render();
-vendor_js_render();
+try {
+  app_css_render();
+  app_js_render();
+  quartz_js_render();
+  quartz_css_render();
+  quartz_component_css_render();
+  quartz_icons_render();
+  vendor_js_render();
+} catch (e) {
+  console.log(e);
+}
