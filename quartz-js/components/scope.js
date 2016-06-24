@@ -8,6 +8,14 @@ if (typeof(vhxm) !== 'undefined') {
       date: {},
       ui: {
       }
+    },
+    select: {
+      ui: {
+        list: {}
+      }
+    },
+    search_input: {
+      ui: {}
     }
   };
 }
