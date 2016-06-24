@@ -1,0 +1,1 @@
+vhxm.components.shared.filter.location.controller = function() {};

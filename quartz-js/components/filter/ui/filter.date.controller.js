@@ -1,0 +1,1 @@
+vhxm.components.shared.filter.date.controller = function() {};
