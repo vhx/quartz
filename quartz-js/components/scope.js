@@ -17,6 +17,11 @@ if (typeof(vhxm) !== 'undefined') {
         list: {}
       }
     },
+    autosuggest: {
+      ui: {
+        list: {}
+      }
+    },
     search_input: {
       ui: {}
     },

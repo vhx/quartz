@@ -14,6 +14,10 @@ Q.components.route.js.ui.components = {
       code: Q.code.select
     },
     {
+      guide: m.component(Q.components.guide.js.ui.autosuggest.container),
+      code: Q.code.autosuggest
+    },
+    {
       guide: m.component(Q.components.guide.js.ui.filter.container),
       code: Q.code.filter
     },
