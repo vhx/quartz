@@ -2,6 +2,10 @@
 **2016-06-23**
 
 * Add Filter Mithril Component
+* Add Select Mithril Component
+* Add Checkbox Mithril Component
+* Add Header Mithril Component
+* Add Auto-suggest Mithril Component
 * Add Template for Mithril Component Docs
 
 ### 0.7.7
