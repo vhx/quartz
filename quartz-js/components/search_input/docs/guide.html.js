@@ -1,39 +1,31 @@
-Q.components.guide.js.ui.filter = {};
-Q.components.guide.js.ui.filter.container = {
+Q.components.guide.js.ui.search_input = {};
+Q.components.guide.js.ui.search_input.container = {
   view: function(ctrl) {
-    return m('section#guide--component-filter', [
+    return m('section#guide--search_input', [
       m.component(Q.components.shared.intro.ui.container, {
-        title: 'Filter',
-        intro: 'The Filter Component can be use for sections that require ways to request smaller subsets of content from a given resource. An example, is our Customers section where we have a table of customers. You may want to only see customers from a specific location, or who purchased a specific product.'
+        title: 'Search Input',
+        intro: 'A text input for submitting a query and handling results. Initially created for usage within the select component.'
       }),
       m.component(Q.components.shared.options.ui.container, {
         options: [
-          { name: 'label', description: 'A label to appear to the right of the filter, that shows when no filters are selected.' },
-          { name: 'filters', description: m.trust('An array of filters to include. Strings for predefined filters (<code class="text--yellow">date</code>, <code class="text--yellow">location</code>) or objecsts (with the properties <code class="text--yellow">title</code>, <code class="text--yellow">template</code>, <code class="text--yellow">type</code>) for customer filters.') },
-          { name: 'api', description: 'A reference variable that will make available the state and model of the component.' }
+          { name: 'config', description: 'function, optional. Populates Mithril config attribute, which is called after element gets created.' },
+          { name: 'placeholder', description: 'string, default \'Search\', optional. Sets input\'s placeholder to something other than Search' },
+          { name: 'oninput', description: 'function, optional. Function that runs immediately on field input' },
+          { name: 'search', description: 'function that handles endpoint and query submission (debounced at 300ms)' },
+          { name: 'callback', description: 'function that runs once search function is complete' }
         ]
       }),
       m.component(Q.components.shared.block.ui.container, {
         title: 'Example',
         component: {
           view: function() {
-            return m('div', [
-              m.component(vhxm.components.shared.filter.ui.container, {
-                label: 'Customize this table',
-                // api: m.prop(),
-                filters: [
-                  'date',
-                  'location',
-                  {
-                    type: 'test',
-                    title: 'Test',
-                    template: {
-                      view: function() {
-                        return m('div');
-                      }
-                    }
-                  }
-                ]
+            return m('div.form', [
+              m.component(vhxm.components.shared.search_input.ui.container, {
+                config: function(el) { },
+                callback: ctrl.searchCallback,
+                search: function() { },
+                placeholder: 'Search',
+                oninput: function() { }
               })
             ]);
           }

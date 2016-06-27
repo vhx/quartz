@@ -13,6 +13,10 @@ Q.components.route.js.ui.components = {
       guide: m.component(Q.components.guide.js.ui.header.container),
       code: Q.code.header
     },
+    {
+      guide: m.component(Q.components.guide.js.ui.search_input.container),
+      code: Q.code.search_input
+    }
 
   ]
 };
