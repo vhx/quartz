@@ -4,6 +4,8 @@ vhxm.components.shared.checkbox.ui.container = {
       m('input[type=checkbox]', {
         checked: opts.checked,
         name: opts.name,
+        onchange: opts.onchange,
+        oninput: opts.oninput,
         id: opts.name
       }),
       m('label', {
@@ -22,7 +24,8 @@ vhxm.components.shared.checkbox.ui.container = {
           m('span.checkbox--icon', [
             m('span.checkbox-animate')
           ]),
-          m('span.checkbox--label')
+          opts.label ?
+          m('span.checkbox--label', opts.label) : ''
         ])
       ])
     ]);

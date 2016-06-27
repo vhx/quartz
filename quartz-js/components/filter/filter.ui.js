@@ -39,7 +39,7 @@ vhxm.components.shared.filter.ui.dropdown = {
         opts.filters.map(function(item) {
           if (typeof(item) === 'string' && vhxm.components.shared.filter.ui[item]) {
             return m('li.border-bottom', [
-              m('a.head-5.fill-width.icon--right.icon-chevron-' + (ctrl.state.dropdown.filtersOpen().indexOf(item) >= 0 ? 'up' : 'down') + '-navy.icon--xxsmall', {
+              m('a.c-filter--item.head-5.fill-width.icon--right.icon-chevron-' + (ctrl.state.dropdown.filtersOpen().indexOf(item) >= 0 ? 'up' : 'down') + '-navy.icon--xxsmall', {
                 href: '#',
                 onclick: function(event) {
                   ctrl.handleFilterClick(event, item);
@@ -50,20 +50,66 @@ vhxm.components.shared.filter.ui.dropdown = {
               ])
             ]);
           }
-          if (typeof(item) === 'object' && item.template) {
-            return m('li.border-bottom', [
-              m('a.head-5.fill-width.icon--right.icon-chevron-' + (ctrl.state.dropdown.filtersOpen().indexOf(item.type) >= 0 ? 'up' : 'down') + '-navy.icon--xxsmall', {
-                href: '#',
-                onclick: function(event) {
-                  ctrl.handleFilterClick(event, item.type);
-                }
-              }, item.title),
-              m('div.c-filter--item-container' + (ctrl.state.dropdown.filtersOpen().indexOf(item.type) >= 0 ? '.is-active' : ''), [
-                m.component(item.template)
-              ])
-            ]);
+          if (typeof(item) === 'object') {
+            if (item.template) {
+              return m.component(vhxm.components.shared.filter.ui.template, item, ctrl);
+            }
+            else if (item.data) {
+              return m.component(vhxm.components.shared.filter.ui.data, item, ctrl);
+            }
           }
         })
+      ])
+    ]);
+  }
+};
+
+vhxm.components.shared.filter.ui.template = {
+  controller: function(item, parent_ctrl) {
+    return parent_ctrl;
+  },
+  view: function(ctrl, item) {
+    return m('li.border-bottom', [
+      m('a.c-filter--item.head-5.fill-width.icon--right.icon-chevron-' + (ctrl.state.dropdown.filtersOpen().indexOf(item.type) >= 0 ? 'up' : 'down') + '-navy.icon--xxsmall', {
+        href: '#',
+        onclick: function(event) {
+          ctrl.handleFilterClick(event, item.type);
+        }
+      }, item.title),
+      m('div.c-filter--item-container' + (ctrl.state.dropdown.filtersOpen().indexOf(item.type) >= 0 ? '.is-active' : ''), [
+        m.component(item.template)
+      ])
+    ]);
+  }
+};
+
+vhxm.components.shared.filter.ui.data = {
+  controller: function(opts, parent_ctrl) {
+    return parent_ctrl;
+  },
+  view: function(ctrl, item) {
+    return m('li.border-bottom', [
+      m('a.c-filter--item.head-5.fill-width.icon--right.icon-chevron-' + (ctrl.state.dropdown.filtersOpen().indexOf(item.type) >= 0 ? 'up' : 'down') + '-navy.icon--xxsmall', {
+        href: '#',
+        onclick: function(event) {
+          ctrl.handleFilterClick(event, item.type);
+        }
+      }, item.title),
+      m('div.c-filter--item-container' + (ctrl.state.dropdown.filtersOpen().indexOf(item.type) >= 0 ? '.is-active' : ''), [
+        m('ul.form', [
+          item.data().map(function(item, index) {
+            return m('li', [
+              m.component(vhxm.components.shared.checkbox.ui.container, {
+                name: item.type + '-' + index,
+                checked: item.checked,
+                label: item.label,
+                oninput: function(event) {
+                  debugger;
+                }
+              })
+            ]);
+          })
+        ])
       ])
     ]);
   }

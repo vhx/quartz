@@ -16,8 +16,11 @@
     &:after {
       left: 45px;
     }
+    .icon-calendar-navy {
+      background-position: 10px center;
+    }
     ul { max-height: none; }
-    a {
+    .c-filter--item {
       background-position: center right 15px;
       padding: 15px !important;
       display: block;
