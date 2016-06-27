@@ -16,6 +16,9 @@ if (typeof(vhxm) !== 'undefined') {
     },
     search_input: {
       ui: {}
+    },
+    header: {
+      ui: {}
     }
   };
 }

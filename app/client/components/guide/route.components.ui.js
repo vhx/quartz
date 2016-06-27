@@ -8,6 +8,11 @@ Q.components.route.js.ui.components = {
     {
       guide: m.component(Q.components.guide.js.ui.filter.container),
       code: Q.code.filter
-    }
+    },
+    {
+      guide: m.component(Q.components.guide.js.ui.header.container),
+      code: Q.code.header
+    },
+
   ]
 };
