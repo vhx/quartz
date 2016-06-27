@@ -1,5 +1,5 @@
 vhxm.components.shared.select.ui.list.controller = function(opts, parent) {
-  var self = this;
+  let self = this;
 
   self.parent = new vhxm.components.shared.select.controller(opts);
   self.state = parent.state;

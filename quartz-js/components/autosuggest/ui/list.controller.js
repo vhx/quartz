@@ -1,5 +1,5 @@
 vhxm.components.shared.autosuggest.ui.list.controller = function(opts, parent) {
-  var self = this;
+  let self = this;
 
   self.parent = new vhxm.components.shared.autosuggest.controller(opts);
   self.state = parent.state;

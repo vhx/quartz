@@ -1,5 +1,5 @@
 vhxm.components.shared.search_input.controller = function(opts) {
-  var self = this;
+  let self = this;
 
   self.timeout = null;
 

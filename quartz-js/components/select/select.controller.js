@@ -1,5 +1,5 @@
 vhxm.components.shared.select.controller = function(opts) {
-  var self = this;
+  let self = this;
 
   self.init = function() {
     self.state = new vhxm.components.shared.select.state();
@@ -9,7 +9,7 @@ vhxm.components.shared.select.controller = function(opts) {
     self.state.selected(opts.selected);
 
     $(document).on('click', function(event) {
-      var is_dropdown = $(event.target).closest('.c-select--container').length;
+      let is_dropdown = $(event.target).closest('.c-select--container').length;
 
       if (!is_dropdown && self.state.isDropdownOpen()) {
         m.startComputation();
@@ -20,7 +20,7 @@ vhxm.components.shared.select.controller = function(opts) {
   };
 
   self.selectedLabel = function() {
-    var is_default = true;
+    let is_default = true;
 
     self.model.items().map(function(item) {
       if (self.state.selected().value === item[opts.value_prop]) {
@@ -41,7 +41,7 @@ vhxm.components.shared.select.controller = function(opts) {
 
 
   self.handleKeydown = function(e) {
-    var container = $(e.target).closest('.c-select--container').find('.c-select--options');
+    let container = $(e.target).closest('.c-select--container').find('.c-select--options');
 
     // Down Arrow
     if (e.keyCode === 40) {
@@ -67,7 +67,7 @@ vhxm.components.shared.select.controller = function(opts) {
 
   self.handleClick = function(event) {
     event.preventDefault();
-    var container = $(event.target).closest('.c-select--container').find('.c-select--options');
+    let container = $(event.target).closest('.c-select--container').find('.c-select--options');
 
     self.state.isDropdownOpen(!self.state.isDropdownOpen());
     self.state.highlightIndex(-1);
