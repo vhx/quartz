@@ -6,6 +6,10 @@ Q.components.route.js.ui.components = {
       code: Q.code.checkbox
     },
     {
+      guide: m.component(Q.components.guide.js.ui.radio.container),
+      code: Q.code.radio
+    },
+    {
       guide: m.component(Q.components.guide.js.ui.select.container),
       code: Q.code.select
     },

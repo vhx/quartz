@@ -200,15 +200,23 @@ const quartz_css_watcher = chokidar.watch(src.quartzcss.watch, {
 });
 
 const quartz_css_render = function() {
-  sass.render({
-    file: src.quartzcss.manifest
-  }, function(err, output) {
-    fs.writeFile(src.quartzcss.distr, output.css, function(err) {
+  try {
+    sass.render({
+      file: src.quartzcss.manifest
+    }, function(err, output) {
       if (err) {
         process.stdout.write(chalk.red(err));
+      } else {
+        fs.writeFile(src.quartzcss.distr, output.css, function(err) {
+          if (err) {
+            process.stdout.write(chalk.red(err));
+          }
+        });
       }
     });
-  });
+  } catch (e) {
+    process.stdout.write(chalk.red(e));
+  }
 };
 
 quartz_css_watcher.add(src.quartzcss.manifest);

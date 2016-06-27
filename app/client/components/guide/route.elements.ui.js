@@ -7,7 +7,7 @@ Q.components.route.styleguide.ui.elements = {
     },
     {
       guide: m.component(Q.components.guide.styleguide.ui.radio.container),
-      code: Q.code.radio
+      code: Q.code['radio-ruby']
     },
     {
       guide: m.component(Q.components.guide.styleguide.ui.loaders.container),
