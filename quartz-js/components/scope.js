@@ -3,6 +3,9 @@ if (typeof(vhxm) !== 'undefined') {
     radio: {
       ui: {}
     },
+    checkbox: {
+      ui: {}
+    },
     filter: {
       location: {},
       date: {},

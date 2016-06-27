@@ -3,7 +3,7 @@ Q.components.route.styleguide.ui.elements = {
   items: [
     {
       guide: m.component(Q.components.guide.styleguide.ui.checkbox.container),
-      code: Q.code.checkbox
+      code: Q.code['checkbox-ruby']
     },
     {
       guide: m.component(Q.components.guide.styleguide.ui.radio.container),

@@ -2,6 +2,10 @@
 Q.components.route.js.ui.components = {
   items: [
     {
+      guide: m.component(Q.components.guide.js.ui.checkbox.container),
+      code: Q.code.checkbox
+    },
+    {
       guide: m.component(Q.components.guide.js.ui.select.container),
       code: Q.code.select
     },
