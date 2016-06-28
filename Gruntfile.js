@@ -67,6 +67,11 @@ module.exports = function(grunt) {
             expand: true
           }
         ]
+      },
+      components: {
+        files: [
+          {}
+        ]
       }
     }
   });
@@ -82,10 +87,12 @@ module.exports = function(grunt) {
         // create a subtask for each module, find all src files
         // and combine into a single js file per module
         let dir_path = [dir + '/**/*.js', '!' + dir + '/docs/*.js', '!' + dir + '/docs/*.html.js'];
-        concat[component_name] = {
-            src: dir_path,
-            dest: 'distro/vhx-quartz.' + component_name + '.js'
-        };
+        let opts = { files: {} };
+
+        opts.files['quartz-rails/vendor/assets/javascripts/vhx-quartz.' + component_name + '.js'] = dir_path;
+        opts.files['distro/vhx-quartz.' + component_name + '.js'] = dir_path;
+
+        concat[component_name] = opts;
 
         // add module subtasks to the concat task in initConfig
         grunt.config.set('concat', concat);
@@ -107,6 +114,7 @@ module.exports = function(grunt) {
         let dest_dir = 'distro/vhx-quartz.' + component_name + '.css';
         let src_dir =  dir + '/styles/*.scss';
 
+        sass.dist.files['quartz-rails/vendor/assets/stylesheets/vhx-quartz.' + component_name + '.css'] = src_dir;
         sass.dist.files[dest_dir] = src_dir;
 
         // add module subtasks to the concat task in initConfig
@@ -139,8 +147,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
 
   grunt.registerTask('build-icons', ['clean:pre_svg', 'grunt-svg-css', 'copy:svg', 'concat:svg', 'clean:svg']);
-  grunt.registerTask('components', ['prepareComponents', 'concat']);
-  grunt.registerTask('component-styles', ['prepareComponentStyles', 'sass']);
+  grunt.registerTask('component-js', ['prepareComponents', 'concat']);
+  grunt.registerTask('component-styles', ['prepareComponentStyles']);
 
-  grunt.registerTask('build', ['sass_globbing', 'cssmin', 'copy:css', 'sass']);
+  grunt.registerTask('build', ['sass_globbing', 'cssmin', 'copy:css', 'component-js', 'component-styles', 'sass']);
 };
