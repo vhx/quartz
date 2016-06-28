@@ -6543,13 +6543,15 @@ a.head--white:hover, a.head--white:active {
     box-sizing: border-box;
     transition: background 200ms ease-out;
     background: #ffffff;
-    border-bottom: 1px solid #D7DDE1; }
+    border-bottom: 1px solid #D7DDE1;
+    border-left: 3px solid tranparent; }
     .table tr.is-disabled {
       background: #375667; }
     .table tr.is-sticky {
       background-color: #F2FBFB; }
     .table tr.is-selected {
-      background-color: #149A97; }
+      background-color: #F2FBFB;
+      border-left: 3px solid #149A97; }
     .table tr.is-clickable {
       cursor: pointer; }
       .table tr.is-clickable.is-hovered, .table tr.is-clickable:hover, .table tr.is-clickable:active {
@@ -6720,6 +6722,11 @@ a {
 .text-3 {
   font-size: 13px;
   line-height: 18px;
+  color: #5E7887; }
+
+.text-4 {
+  font-size: 12px;
+  line-height: 16px;
   color: #5E7887; }
 
 /* colors

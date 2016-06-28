@@ -24,11 +24,11 @@ Q.components.guide.js.ui.search_input.container = {
       }),
       m.component(Q.components.shared.options.ui.container, {
         options: [
-          { name: 'config', description: 'function, optional. Populates Mithril config attribute, which is called after element gets created.' },
-          { name: 'placeholder', description: 'string, default \'Search\', optional. Sets input\'s placeholder to something other than Search' },
-          { name: 'oninput', description: 'function, optional. Function that runs immediately on field input' },
-          { name: 'search', description: 'function that handles endpoint and query submission (debounced at 300ms)' },
-          { name: 'callback', description: 'function that runs once search function is complete' }
+          { name: 'search', type: 'function', required: true, description: m.trust('A request function for handling query submission (debounced at 300ms). Parameters available are <span class="text--bold text--navy text-4">query</span> and <span class="text--bold text--navy text-4">callback</span>.') },
+          { name: 'config', type: 'function', default_value: 'null', description: 'Populates Mithril config attribute, which is called after element gets created.' },
+          { name: 'placeholder', type: 'string', default_value: 'Search', description: 'Option to set the input\'s placeholder.' },
+          { name: 'oninput', type: 'function', default_value: 'null', description: 'Event handler fired immediately on field input.' },
+          { name: 'callback', type: 'function', default_value: 'null', description: 'A callback function that runs once fired from within the search request (above).' }
         ]
       })
     ]);

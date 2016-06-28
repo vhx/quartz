@@ -25,7 +25,7 @@ vhxm.components.shared.autosuggest.ui.container = {
           name: opts.name ? opts.name : null,
           type: 'text',
           value: ctrl.state.selected(),
-          placeholder: opts.placeholder,
+          placeholder: opts.placeholder ? opts.placeholder : '',
           oninput: ctrl.handleInput
         })
       ]),

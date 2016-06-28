@@ -15,7 +15,7 @@ vhxm.components.shared.filter.ui.container = {
         m('.column.small-13.padding-reset', [
           m('.margin-left-small.padding-left-medium.border-left', [
             ctrl.state.applied() && ctrl.state.applied().length ?
-            m.component(vhxm.components.shared.filter.ui.applied, opts) : m('span.c-filter--label', opts.label)
+            m.component(vhxm.components.shared.filter.ui.applied, opts) : m('span.c-filter--label', opts.label ? opts.label : '')
           ])
         ])
       ])

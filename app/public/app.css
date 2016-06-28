@@ -7,8 +7,7 @@
   font-size: 12px !important;
   overflow-wrap: break-word !important;
   font-family: Menlo, Monaco, 'Andale Mono', 'Lucida Console', 'Courier New', monospace;
-  -webkit-text-size-adjust: none;
-  font-weight: bold; }
+  -webkit-text-size-adjust: none; }
 
 .hljs-comment,
 .hljs-title {
@@ -99,6 +98,18 @@
   color: #99cc99;
   font-weight: bold; }
 
+pre .javascript .hljs-literal {
+  color: #f2777a; }
+
+pre .javascript .hljs-string {
+  color: #ffb567; }
+
+pre .javascript .hljs-keyword {
+  color: #9dbb36; }
+
+pre .javascript .hljs-params {
+  color: #6a9fb5; }
+
 .bg-grid-light {
   background-image: url("bg.grid-light.png");
   background-repeat: repeat; }
@@ -148,6 +159,15 @@
 
 .box-shadow {
   box-shadow: 0 0 5px 0 #f0f0f0; }
+
+section[id^="guide--component"]:after {
+  content: ' ';
+  height: 1px;
+  width: 100%;
+  background: #F0F2F4;
+  position: absolute;
+  bottom: 20px;
+  left: 0; }
 
 /* .....................................
   Fonts

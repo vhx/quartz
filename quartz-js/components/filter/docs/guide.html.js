@@ -4,7 +4,7 @@ Q.components.guide.js.ui.filter.container = {
     return m('section#guide--component-filter', [
       m.component(Q.components.shared.intro.ui.container, {
         title: 'Filter',
-        intro: 'The Filter Component can be use for sections that require ways to request smaller subsets of content from a given resource. An example, is our Customers section where we have a table of customers. You may want to only see customers from a specific location, or who purchased a specific product.'
+        intro: 'The Filter component can be use for sections that require ways to request smaller subsets of content for a given resource. An example is our Customers section where we have a table of customers. You may want to only see customers from a specific location, or who purchased a specific product.'
       }),
       m.component(Q.components.shared.block.ui.container, {
         title: 'Example',
@@ -47,9 +47,9 @@ Q.components.guide.js.ui.filter.container = {
       }),
       m.component(Q.components.shared.options.ui.container, {
         options: [
-          { name: 'label', description: 'A label to appear to the right of the filter, that shows when no filters are selected.' },
-          { name: 'filters', description: m.trust('An array of filters to include. Each filter must be of a different type. Strings for predefined filters (<code class="text--yellow">date</code>) or objecsts (with the properties <code class="text--yellow">title</code>, <code class="text--yellow">type</code>, and either <code class="text--yellow">template</code> (a view function) or <code class="text--yellow">data</code> (an array)) for customer filters.') },
-          { name: 'api', description: 'A reference variable that will make available the state and model of the component.' }
+          { name: 'filters', type: 'array', required: true, description: m.trust('An array of filters to include. Each filter must be of a different type. Strings for predefined filters (<span class="text--bold text--navy text-4">date</span>) or objects for custom filters. Custom filters must have the properties <span class="text--bold text--navy text-4">title</span>, <span class="text--bold text--navy text-4">type</span>, and either <span class="text--bold text--navy text-4">template</span> (a Mithril view function) or <span class="text--bold text--navy text-4">data</span> (an array of objects). Each item in a <span class="text--bold text--navy text-4">data</span> array custom filter, must have a <span class="text-4 text--bold text--navy">label</span>, <span class="text-4 text--bold text--navy">value</span>, and optional <span class="text-4 text--bold text--navy">checked</span> property.') },
+          { name: 'label', type: 'string', default_value: 'null', description: 'A label to appear to the right of the filter, that shows when no filters are selected.' },
+          { name: 'api', type: 'variable', default_value: 'null', description: m.trust('A reference variable that will make available the reactive <span class="text--bold text--navy text-4">state</span> and <span class="text--bold text--navy text-4">model</span> of the component. This will be required if you are passing any custom filters.') }
         ]
       })
     ]);

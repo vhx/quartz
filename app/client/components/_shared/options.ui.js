@@ -15,7 +15,15 @@ Q.components.shared.options.ui.container = {
           opts.options.map(function(item) {
             return m('tr', [
               m('td.text-left', [
-                m('code', item.name)
+                m('p.text--navy.margin-bottom-xsmall', item.name),
+                m('p.text-4', [
+                  item.required ? m('span.text--red', 'required ') : m('span.text--yellow', 'optional ')
+                ]),
+                m('p.text-4', [
+                  item.type ? m('span', item.type) : '',
+                  item.type && item.default_value ? ', ' : '',
+                  item.default_value ? m('span', 'default is ' + item.default_value) : ''
+                ])
               ]),
               m('td.text-left', item.description)
             ]);

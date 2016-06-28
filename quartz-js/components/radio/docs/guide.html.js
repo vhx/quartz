@@ -4,7 +4,7 @@ Q.components.guide.js.ui.radio.container = {
     return m('section#guide--component-radio', [
       m.component(Q.components.shared.intro.ui.container, {
         title: 'Radio',
-        intro: 'The Radio Component can be used either stacked or side-by-side radio form elements.'
+        intro: 'The Radio component is a stylized version of the the standard HTML form element. A stacked or horizontal (side-by-side) layout can be used.'
       }),
       m.component(Q.components.shared.block.ui.container, {
         title: 'Examples',
@@ -16,13 +16,13 @@ Q.components.guide.js.ui.radio.container = {
                 name: 'horz-gray',
                 items: [
                   {
-                    label: 'This',
-                    value: 'this',
+                    label: 'Option A',
+                    value: 'a',
                     checked: true
                   },
                   {
-                    label: 'That',
-                    value: 'that'
+                    label: 'Option B',
+                    value: 'b'
                   }
                 ]
               }),
@@ -33,13 +33,13 @@ Q.components.guide.js.ui.radio.container = {
                   stacked: true,
                   items: [
                     {
-                      label: 'Here',
-                      value: 'here',
+                      label: 'Choice A',
+                      value: 'a',
                       checked: true
                     },
                     {
-                      label: 'There',
-                      value: 'there'
+                      label: 'Choice B',
+                      value: 'b'
                     }
                   ]
                 })
@@ -50,10 +50,10 @@ Q.components.guide.js.ui.radio.container = {
       }),
       m.component(Q.components.shared.options.ui.container, {
         options: [
-          { name: 'name', description: 'A unique name for the checkbox used for the input name as well as the id + for attr pairing to ensure the radio works properly.' },
-          { name: 'stacked', description: 'Whether the radio elements are stacked vertically. Defaults to false (horizontal layout).' },
-          { name: 'color', description: m.trust('The color of the radio. Either <code class="text--yellow">teal</code> or <code class="text--yellow">gray</code>.') },
-          { name: 'items', description: m.trust('An array of objects for each radio item. Object must have <code class="text--yellow">label</code> and <code class="text--yellow">value</code> properties. The <code class="text--yellow">checked</code> property is optional.') }
+          { name: 'name', required: true, type: 'string', description: m.trust('A unique name for the checkbox used for the input name as well as the id + for attr pairing to ensure the radio works properly.') },
+          { name: 'items', type: 'array', required: true, description: m.trust('An array of objects for each radio item. Object must have a <span class="text--navy text--bold text-4">label</span> and <span class="text--navy text--bold text-4">value</span> properties. The <span class="text--navy text--bold text-4">checked</span> property is optional.') },
+          { name: 'stacked', type: 'boolean', default_value: 'false', description: m.trust('Whether the radio elements are stacked vertically. Defaults to <span class="text--bold text--navy text-4">false</span> (horizontal layout).') },
+          { name: 'color', type: 'string', default_value: 'teal', description: m.trust('The color of the radio buttons. Either <span class="text--navy text--bold text-4">teal</span> or <span class="text--navy text--bold text-4">gray</span>.') },
         ]
       })
     ]);

@@ -39,14 +39,14 @@ Q.components.guide.js.ui.select.container = {
       }),
       m.component(Q.components.shared.options.ui.container, {
         options: [
-          { name: 'search', description: 'boolean that toggles inclusion of search input' },
-          { name: 'selected', description: 'object with the id and value of the chosen option' },
-          { name: 'items', description: 'array of objects to populate options' },
-          { name: 'value_prop', description: 'string of item key to use as option value' },
-          { name: 'label_prop', description: 'string of item key to use as option label' },
-          { name: 'descriptor_prop', description: 'string of supplemental item key to use within option UI (optional)' },
-          { name: 'name', description: 'string key of input name' },
-          { name: 'callback', description: 'function called after option is chosen' }
+          { name: 'name', type: 'string', required: true, description: m.trust('A unique key for the input name attribute.') },
+          { name: 'callback', type: 'function', required: true, description: 'Callback function that is called after an option is chosen.' },
+          { name: 'selected', type: 'object', required: true, description: 'Object with the id and value of the initial selected option.' },
+          { name: 'items', type: 'array', required: true, description: m.trust('An array of objects to populate options. Each object must map to the defined <span class="text--bold text--navy text-4">label_prop</span> and <span class="text--bold text--navy text-4">value_prop</span>.') },
+          { name: 'value_prop', type: 'string', required: true, description: 'Item key to look for in the provided items for the item value.' },
+          { name: 'label_prop', type: 'string', required: true, description: 'Item key to look for in the provided items to display a label.' },
+          { name: 'search', type: 'boolean', default_value: 'false', description: 'Toggles inclusion of search input' },
+          { name: 'descriptor_prop', type: 'string', default_value: 'null', description: 'Supplemental item key to look for in the provided items to display a descriptor for each item.' }
         ]
       })
     ]);

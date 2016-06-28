@@ -14,7 +14,7 @@ Q.components.guide.js.ui.header.container = {
               m.component(vhxm.components.shared.header.ui.container, {
                 title: 'Section Title',
                 icon: 'product',
-                description: 'This should be a concise summary of what this section does',
+                description: 'A concise summary of this section',
                 buttons: m('a.btn-teal', {
                   href: '#'
                 }, 'Action')
@@ -25,10 +25,10 @@ Q.components.guide.js.ui.header.container = {
       }),
       m.component(Q.components.shared.options.ui.container, {
         options: [
-          { name: 'title', description: 'string, section title' },
-          { name: 'icon', description: 'string, section icon class name' },
-          { name: 'description', description: 'string, section subtitle/description' },
-          { name: 'buttons', description: 'mithril component, has section actions on right-side of header' }
+          { name: 'title', type: 'string', required: true, description: 'The section title.' },
+          { name: 'icon', type: 'string', required: true, description: 'Section icon class name.' },
+          { name: 'description', type: 'string', default_value: 'null', description: 'The section subtitle or description.' },
+          { name: 'buttons', type: 'component', default_value: 'null', description: 'A Mithril component that fills the space on on the right-side of header (i.e. action buttons).' }
         ]
       })
     ]);

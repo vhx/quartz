@@ -8,7 +8,6 @@
   overflow-wrap: break-word !important;
   font-family: Menlo, Monaco, 'Andale Mono', 'Lucida Console', 'Courier New', monospace;
   -webkit-text-size-adjust: none;
-  font-weight: bold;
 }
 
 .hljs-comment,
@@ -113,4 +112,11 @@
     color: #99cc99;
     font-weight: bold;
   }
+}
+
+pre .javascript {
+  .hljs-literal { color: #f2777a; }
+  .hljs-string { color: #ffb567; }
+  .hljs-keyword { color: #9dbb36; }
+  .hljs-params { color: #6a9fb5; }
 }
