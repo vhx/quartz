@@ -19,6 +19,9 @@ module.exports = function(grunt) {
     },
     sass: {
       dist: {
+        options: {
+          sourcemap: 'none'
+        },
         files : {
           'quartz-rails/vendor/assets/stylesheets/vhx-quartz.css' : 'quartz-css/vhx.scss'
         }
