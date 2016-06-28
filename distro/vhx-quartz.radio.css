@@ -1,0 +1,150 @@
+/* .....................................
+  Fonts
+..................................... */
+/* .....................................
+  Sets
+..................................... */
+/* .....................................
+  Media Query Ranges
+..................................... */
+/* .....................................
+  Colors - Grays
+..................................... */
+/* .....................................
+  Colors - Teals
+..................................... */
+/* .....................................
+  Colors - Red
+..................................... */
+/* .....................................
+  Colors - Navy
+..................................... */
+/* .....................................
+  Colors - Brand Palette
+..................................... */
+/* .....................................
+  Colors - External Palette
+..................................... */
+/* helper function for margin and padding
+......................................*/
+/*.....................................
+  Admin Radio
+......................................*/
+.form .radio-gray,
+.form .radio-teal {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  list-style: none;
+  margin-left: 0;
+  color: #5E7887;
+  font-size: 14px;
+  background: transparent;
+  user-select: none;
+  /* radio
+  ...................................*/
+  /* label unchecked
+...................................*/
+  /* label checked
+  ...................................*/
+  /* stacked radio
+  ...................................*/
+  /* color styles
+  ...................................*/ }
+  .form .radio-gray input[type="radio"],
+  .form .radio-teal input[type="radio"] {
+    display: none; }
+  .form .radio-gray li,
+  .form .radio-teal li {
+    display: inline-block;
+    margin-right: 10px; }
+    .form .radio-gray li:after,
+    .form .radio-teal li:after {
+      clear: both; }
+    .form .radio-gray li:before, .form .radio-gray li:after,
+    .form .radio-teal li:before,
+    .form .radio-teal li:after {
+      content: " ";
+      display: table; }
+  .form .radio-gray label,
+  .form .radio-teal label {
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    margin: 0px;
+    float: left;
+    box-sizing: border-box; }
+    .form .radio-gray label .radio--icon,
+    .form .radio-teal label .radio--icon {
+      position: relative;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
+      float: left;
+      border: 1px solid #5E7887;
+      box-shadow: none;
+      box-sizing: border-box;
+      border-radius: 20px;
+      transition: box-shadow .2s ease, color .2s ease; }
+      .form .radio-gray label .radio--icon .circle-top,
+      .form .radio-teal label .radio--icon .circle-top {
+        opacity: 0;
+        transition: opacity .2s ease;
+        display: block;
+        height: 5px;
+        overflow: hidden;
+        position: absolute;
+        top: 4px;
+        left: 4px; }
+        .form .radio-gray label .radio--icon .circle-top span,
+        .form .radio-teal label .radio--icon .circle-top span {
+          display: block;
+          width: 10px;
+          height: 10px;
+          background: #869AA5;
+          border-radius: 10px; }
+      .form .radio-gray label .radio--icon .circle-bottom,
+      .form .radio-teal label .radio--icon .circle-bottom {
+        opacity: 0;
+        transition: opacity .2s ease;
+        display: block;
+        height: 5px;
+        overflow: hidden;
+        position: absolute;
+        bottom: 4px;
+        left: 4px; }
+        .form .radio-gray label .radio--icon .circle-bottom span,
+        .form .radio-teal label .radio--icon .circle-bottom span {
+          position: relative;
+          top: -5px;
+          display: block;
+          width: 10px;
+          height: 10px;
+          background: #5E7887;
+          border-radius: 10px; }
+    .form .radio-gray label .radio--label,
+    .form .radio-teal label .radio--label {
+      display: block;
+      float: left;
+      height: 20px; }
+  .form .radio-gray input[type="radio"]:checked + label .radio--icon .circle-top, .form .radio-gray input[type="radio"]:checked + label .radio--icon .circle-bottom,
+  .form .radio-teal input[type="radio"]:checked + label .radio--icon .circle-top,
+  .form .radio-teal input[type="radio"]:checked + label .radio--icon .circle-bottom {
+    opacity: 1;
+    transition: opacity .2s ease; }
+  .form .radio-gray.radio--stacked,
+  .form .radio-teal.radio--stacked {
+    display: block;
+    height: auto; }
+    .form .radio-gray.radio--stacked li,
+    .form .radio-teal.radio--stacked li {
+      display: block;
+      margin-right: 0px;
+      margin-bottom: 10px; }
+  .form .radio-gray.radio-teal .circle-top span,
+  .form .radio-teal.radio-teal .circle-top span {
+    background: #22B9B0 !important; }
+  .form .radio-gray.radio-teal .circle-bottom span,
+  .form .radio-teal.radio-teal .circle-bottom span {
+    background: #149A97 !important; }

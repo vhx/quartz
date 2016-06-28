@@ -1,0 +1,128 @@
+/* .....................................
+  Fonts
+..................................... */
+/* .....................................
+  Sets
+..................................... */
+/* .....................................
+  Media Query Ranges
+..................................... */
+/* .....................................
+  Colors - Grays
+..................................... */
+/* .....................................
+  Colors - Teals
+..................................... */
+/* .....................................
+  Colors - Red
+..................................... */
+/* .....................................
+  Colors - Navy
+..................................... */
+/* .....................................
+  Colors - Brand Palette
+..................................... */
+/* .....................................
+  Colors - External Palette
+..................................... */
+/* helper function for margin and padding
+......................................*/
+.c-select--input-container:after {
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Cpath%20d%3D%22M21.8%2019.5L17.4%2015c-.6.9-1.5%201.7-2.4%202.4l4.5%204.4c1.4%201.6%203.8-.8%202.3-2.3z%22%20fill%3D%22%23375667%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M15%2017.4c4.4-3%205.2-9.4%201.8-13.4C13.8.5%208.6-.3%204.7%202.3.9%204.7-.4%209.9%201.7%2014c2.2%204.4%207.7%206.2%2012.1%204.1.4-.2.8-.5%201.2-.7zm-5.2-1.7C6.7%2015.7%204%2013%204%209.8%204%206.7%206.7%204%209.8%204c3.2%200%205.8%202.7%205.8%205.8.1%203.2-2.6%205.9-5.8%205.9z%22%20fill%3D%22%23375667%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M9.8%202.2c4.2%200%207.7%203.4%207.7%207.7%200%201.5-.5%203.1-1.4%204.3-.5.7-1%201.3-1.7%201.8l-.3.2c-1.2.9-2.8%201.3-4.3%201.3-4.2%200-7.7-3.4-7.7-7.7.1-4.2%203.5-7.6%207.7-7.6m0-1.5C4.7.7.6%204.8.6%209.9s4.1%209.2%209.2%209.2c1.8%200%203.7-.6%205.2-1.6.9-.6%201.7-1.4%202.3-2.4%201.1-1.5%201.6-3.3%201.6-5.2.1-5.1-4-9.2-9.1-9.2z%22%20fill%3D%22%23375667%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat; }
+
+/*
+  Mithril Chosen-like Dropdown w/ Search styles
+  See app/assets/javascripts/_shared/components/select/select.ui.js for markup
+*/
+.c-select--container {
+  position: relative; }
+
+.c-select--dropdown {
+  position: absolute;
+  max-height: 282px;
+  top: 55px;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  background: #ffffff;
+  z-index: 2147483600;
+  border: 1px solid #D7DDE1;
+  border-radius: 5px;
+  display: none; }
+  .c-select--dropdown.is-open {
+    display: block; }
+  .c-select--dropdown:after, .c-select--dropdown:before {
+    bottom: 100%;
+    right: 22px;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none; }
+  .c-select--dropdown:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #ffffff;
+    border-width: 9px;
+    margin-right: -10px; }
+  .c-select--dropdown:before {
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #D7DDE1;
+    border-width: 10px;
+    margin-right: -11px; }
+
+.c-select--input-container {
+  position: absolute;
+  width: 100%;
+  border-radius: 5px;
+  z-index: 2;
+  background: #fff; }
+  .c-select--input-container:after {
+    position: absolute;
+    top: 50%;
+    right: 24px;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    content: ' ';
+    display: block;
+    background-position: 97% 50%;
+    background-size: 15px; }
+
+.c-select--container.has-search .c-select--dropdown {
+  min-height: 150px; }
+.c-select--container.has-search .c-select--options {
+  margin-top: 70px; }
+
+.c-select--options {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  overflow-y: auto;
+  max-height: 210px; }
+  .c-select--options.is-loading {
+    background-position: center center;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0D%0A%20%20viewBox%3D%220%200%2040%2040%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cpath%20opacity%3D%220.2%22%20fill%3D%22%237a878e%22%20d%3D%22M20.201%2C5.169c-8.254%2C0-14.946%2C6.692-14.946%2C14.946c0%2C8.255%2C6.692%2C14.946%2C14.946%2C14.946%0D%0A%20%20s14.946-6.691%2C14.946-14.946C35.146%2C11.861%2C28.455%2C5.169%2C20.201%2C5.169z%20M20.201%2C31.749c-6.425%2C0-11.634-5.208-11.634-11.634%0D%0A%20%20c0-6.425%2C5.209-11.634%2C11.634-11.634c6.425%2C0%2C11.633%2C5.209%2C11.633%2C11.634C31.834%2C26.541%2C26.626%2C31.749%2C20.201%2C31.749z%22%2F%3E%0D%0A%3Cpath%20fill%3D%22%237a878e%22%20d%3D%22M26.013%2C10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0%0D%0A%20%20C22.32%2C8.481%2C24.301%2C9.057%2C26.013%2C10.047z%22%3E%0D%0A%20%20%3CanimateTransform%20attributeType%3D%22xml%22%0D%0A%20%20%20%20attributeName%3D%22transform%22%0D%0A%20%20%20%20type%3D%22rotate%22%0D%0A%20%20%20%20from%3D%220%2020%2020%22%0D%0A%20%20%20%20to%3D%22360%2020%2020%22%0D%0A%20%20%20%20dur%3D%220.5s%22%0D%0A%20%20%20%20repeatCount%3D%22indefinite%22%2F%3E%0D%0A%20%20%3C%2Fpath%3E%0D%0A%3C%2Fsvg%3E"); }
+    .c-select--options.is-loading li {
+      opacity: 0; }
+
+.c-select--option {
+  color: #233741; }
+  .c-select--option.is-selected {
+    cursor: pointer;
+    background-color: #F0F2F4; }
+  .c-select--option.padding-horizontal-large {
+    padding-left: 25px !important;
+    padding-right: 25px !important; }
+  .c-select--option.padding-vertical-small {
+    padding-top: 0.3125rem !important;
+    padding-bottom: 0.3125rem !important; }
+
+.c-select--item-label {
+  max-width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block; }
