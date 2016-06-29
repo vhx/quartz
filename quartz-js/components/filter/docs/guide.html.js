@@ -13,7 +13,7 @@ Q.components.guide.js.ui.filter.container = {
             return m('div', [
               m.component(vhxm.components.shared.filter.ui.container, {
                 label: 'Customize this table',
-                // api: m.prop(),
+                api: m.prop(),
                 filters: [
                   'date',
                   {

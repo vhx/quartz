@@ -5,13 +5,11 @@ vhxm.components.shared.filter.controller = function(opts) {
     self.state = new vhxm.components.shared.filter.state();
     self.model = new vhxm.components.shared.filter.model();
 
-    self.state.applied = m.prop(false);
-
     if (opts.api) {
-      opts.api = {
+      opts.api({
         state: self.state,
         model: self.model
-      };
+      });
     }
   };
 

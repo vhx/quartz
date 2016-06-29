@@ -97,14 +97,24 @@ vhxm.components.shared.filter.ui.data = {
       }, item.title),
       m('div.c-filter--item-container' + (ctrl.state.dropdown.filtersOpen().indexOf(item.type) >= 0 ? '.is-active' : ''), [
         m('ul.form', [
-          item.data().map(function(item, index) {
+          item.data().map(function(child, index) {
             return m('li', [
               m.component(vhxm.components.shared.checkbox.ui.container, {
                 name: item.type + '-' + index,
-                checked: item.checked,
-                label: item.label,
-                oninput: function(event) {
-                  debugger;
+                checked: child.checked,
+                label: child.label,
+                onchange: function(event) {
+                  ctrl.state.applied().filter(function(i, index) {
+                    if (i.value === item.value) {
+                      ctrl.state.applied().splice(i, 1);
+                    }
+                  });
+                  if (event.target.checked) {
+                   ctrl.state.applied().push({
+                     type: item.type,
+                     value: child.value
+                   });
+                  }
                 }
               })
             ]);
