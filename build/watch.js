@@ -264,33 +264,35 @@ quartz_css_watcher.on('change', function() {
 /* ....................................
   QUARTZ CSS > public/quartz.css
 ....................................*/
-const quartz_component_css_watcher = chokidar.watch(src.quartzcss.watch, {
+const quartz_component_css_watcher = chokidar.watch('quartz-js/**/styles/*.scss', {
   ignored: /[\/\\]\./
 });
 
 const quartz_component_css_render = function() {
-  glob.sync('quartz-js/**/styles/*.scss').forEach(function(file) {
-    fs.appendFileSync('quartz-js/components/components.scss', fs.readFileSync(file, 'utf-8'));
-  });
+  fs.writeFile('quartz-js/components/components.scss', '', function() {
+    glob.sync('quartz-js/**/styles/*.scss').forEach(function(file) {
+      fs.appendFileSync('quartz-js/components/components.scss', fs.readFileSync(file, 'utf-8'));
+    });
 
-  sass.render({
-    file: 'quartz-js/components/components.scss'
-  }, function(err, output) {
-    if (err) {
-      process.stdout.write(chalk.red(err));
-    } else {
-      fs.writeFile('app/public/components.css', output.css, function(err) {
-        if (err) {
-          process.stdout.write(chalk.red(err));
-        }
-      });
-    }
+    sass.render({
+      file: 'quartz-js/components/components.scss'
+    }, function(err, output) {
+      if (err) {
+        process.stdout.write(chalk.red(err));
+      } else {
+        fs.writeFile('app/public/components.css', output.css, function(err) {
+          if (err) {
+            process.stdout.write(chalk.red(err));
+          }
+        });
+      }
+    });
+    // fs.unlink('quartz-js/components/components.scss');
   });
-  fs.unlink('quartz-js/components/components.scss');
 };
 
-quartz_component_css_watcher.add(src.quartzcss.manifest);
 quartz_component_css_watcher.on('change', function() {
+  console.log('render');
   try {
     quartz_component_css_render();
   } catch (e) {
@@ -355,13 +357,13 @@ quartz_js_watcher.on('change', function() {
   Render on watch start
 ....................................*/
 try {
-  // app_css_render();
+  app_css_render();
   app_js_render();
-  // quartz_js_render();
-  // quartz_css_render();
-  // quartz_component_css_render();
-  // quartz_icons_render();
-  // vendor_js_render();
+  quartz_js_render();
+  quartz_css_render();
+  quartz_component_css_render();
+  quartz_icons_render();
+  vendor_js_render();
 } catch (e) {
   process.stdout.write(chalk.red(e + '\n'));
 }
