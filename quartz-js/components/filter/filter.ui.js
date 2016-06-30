@@ -4,18 +4,21 @@ vhxm.components.shared.filter.ui.container = {
     return new vhxm.components.shared.filter.controller(opts);
   },
   view: function(ctrl, opts) {
+    let ready_to_apply = ctrl.state.dropdown.isOpen() && ctrl.state.selected() && ctrl.state.selected().length;
+
     return m('.c-filter--container.dropdown.dropdown--large' + (ctrl.state.dropdown.isOpen() ? '.is-open' : ''), [
       m('div.row', [
         m('.column.small-3.padding-reset', [
-          m('a.c-filter--trigger.radius.head-5.text--gray.icon--right.icon-' + (ctrl.state.dropdown.isOpen() ? 'x-navy' : 'chevron-down-gray') + '.icon--xxsmall.margin-right-medium.fill-width', {
+          m('a.c-filter--trigger.block.radius.head-5.text--gray' +
+            (ready_to_apply ? '.text-center' : ('.icon--right.icon-' + (ctrl.state.dropdown.isOpen() ? 'x-navy' : 'chevron-down-gray') + '.icon--xxsmall.margin-right-medium.fill-width')), {
             onclick: ctrl.handleClick
-          }, 'Filters'),
+          }, ready_to_apply ? 'Apply' : 'Filters'),
           m.component(vhxm.components.shared.filter.ui.dropdown, opts, ctrl)
         ]),
         m('.column.small-13.padding-reset', [
           m('.margin-left-small.padding-left-medium.border-left', [
-            ctrl.state.applied() && ctrl.state.applied().length ?
-            m.component(vhxm.components.shared.filter.ui.applied, opts) : m('span.c-filter--label', opts.label ? opts.label : '')
+            ctrl.state.applied() && ctrl.state.selected().length ?
+            m.component(vhxm.components.shared.filter.ui.applied, opts, ctrl) : m('span.c-filter--label', opts.label ? opts.label : '')
           ])
         ])
       ])
@@ -24,8 +27,20 @@ vhxm.components.shared.filter.ui.container = {
 };
 
 vhxm.components.shared.filter.ui.applied = {
-  view: function() {
-    return m('div', 'What is this');
+  controller: function(opts, parent_ctrl) {
+    return parent_ctrl;
+  },
+  view: function(ctrl) {
+    return m('div', [
+      ctrl.state.selected().map(function(item) {
+        return m('a.c-filter--applied.icon--right.icon-x-navy.icon--xxsmall', {
+          href: '#',
+          onclick: function(event) {
+            console.log('click');
+          }
+        }, item.label);
+      })
+    ]);
   }
 };
 
@@ -104,14 +119,16 @@ vhxm.components.shared.filter.ui.data = {
                 checked: child.checked,
                 label: child.label,
                 onchange: function(event) {
-                  ctrl.state.applied().filter(function(i, index) {
-                    if (i.value === item.value) {
-                      ctrl.state.applied().splice(i, 1);
+                  ctrl.state.selected().filter(function(i, index) {
+                    if (i.value === child.value) {
+                      ctrl.state.selected().splice(i, 1);
                     }
                   });
                   if (event.target.checked) {
-                   ctrl.state.applied().push({
+                   ctrl.state.selected().push({
                      type: item.type,
+                     label: child.label,
+                     title: item.title,
                      value: child.value
                    });
                   }
