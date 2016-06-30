@@ -26,16 +26,49 @@ vhxm.components.shared.filter.controller = function(opts) {
     }
   };
 
-  self.handleClick = function(event) {
+  self.handleApplyClick = function(event) {
     event.preventDefault();
 
     let state = self.state.dropdown.isOpen() ? false : true;
+
+    if (!state && self.state.selected().length) {
+      self.applyFilter();
+    }
+
     self.state.dropdown.isOpen(state);
   };
 
-  self.applyFilter = function(filter) {
-    // apply the filter
-    self.state.applied(filter);
+  self.handleFilterRemoveClick = function(filter) {
+    self.removeFilter(filter, function() {
+      self.applyFilter();
+    });
+  };
+
+  self.applyFilter = function() {
+    self.state.applied(true);
+    if (opts.filterHandler) {
+      opts.filterHandler(self.state.selected(), function() {});
+    }
+  };
+
+  self.removeFilter = function(filter, callback) {
+    self.state.selected().filter(function(item, index) {
+      if (item.value === filter.value) {
+        self.state.selected().splice(item, 1);
+      }
+    });
+
+    if (callback) {
+      callback();
+    }
+  };
+
+  self.addFilter = function(filter, type) {
+    self.state.selected().push({
+      type: type,
+      label: filter.label,
+      value: filter.value
+    });
   };
 
   if (opts && opts.init) {

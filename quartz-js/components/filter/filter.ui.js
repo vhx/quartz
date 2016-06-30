@@ -11,7 +11,7 @@ vhxm.components.shared.filter.ui.container = {
         m('.column.small-3.padding-reset', [
           m('a.c-filter--trigger.block.radius.head-5.text--gray' +
             (ready_to_apply ? '.text-center' : ('.icon--right.icon-' + (ctrl.state.dropdown.isOpen() ? 'x-navy' : 'chevron-down-gray') + '.icon--xxsmall.margin-right-medium.fill-width')), {
-            onclick: ctrl.handleClick
+            onclick: ctrl.handleApplyClick
           }, ready_to_apply ? 'Apply' : 'Filters'),
           m.component(vhxm.components.shared.filter.ui.dropdown, opts, ctrl)
         ]),
@@ -36,7 +36,8 @@ vhxm.components.shared.filter.ui.applied = {
         return m('a.c-filter--applied.icon--right.icon-x-navy.icon--xxsmall', {
           href: '#',
           onclick: function(event) {
-            console.log('click');
+            event.preventDefault();
+            ctrl.handleFilterRemoveClick(item);
           }
         }, item.label);
       })
@@ -119,18 +120,9 @@ vhxm.components.shared.filter.ui.data = {
                 checked: child.checked,
                 label: child.label,
                 onchange: function(event) {
-                  ctrl.state.selected().filter(function(i, index) {
-                    if (i.value === child.value) {
-                      ctrl.state.selected().splice(i, 1);
-                    }
-                  });
+                  ctrl.removeFilter(child);
                   if (event.target.checked) {
-                   ctrl.state.selected().push({
-                     type: item.type,
-                     label: child.label,
-                     title: item.title,
-                     value: child.value
-                   });
+                   ctrl.addFilter(child, item);
                   }
                 }
               })

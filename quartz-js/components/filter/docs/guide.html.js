@@ -14,6 +14,8 @@ Q.components.guide.js.ui.filter.container = {
               m.component(vhxm.components.shared.filter.ui.container, {
                 label: 'Customize this table',
                 api: m.prop(),
+                filterHandler: function() {
+                },
                 filters: [
                   'date',
                   {
