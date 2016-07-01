@@ -1,12 +1,14 @@
 ### 0.8.0
-**2016-06-23**
+**2016-07-05**
 
 * Add Filter Mithril Component
 * Add Select Mithril Component
 * Add Checkbox Mithril Component
+* Add Radio Mithril Component
 * Add Header Mithril Component
 * Add Auto-suggest Mithril Component
 * Add Template for Mithril Component Docs
+* Improved the build/watch script for easier development
 
 ### 0.7.7
 **2016-06-19**
