@@ -8,7 +8,9 @@ vhxm.components.shared.filter.controller = function(opts) {
     if (opts.api) {
       opts.api({
         state: self.state,
-        model: self.model
+        model: self.model,
+        removeFilter: self.removeFilter,
+        addFilter: self.addFilter,
       });
     }
   };
