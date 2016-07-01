@@ -41,5 +41,5 @@ app.get('*', function(request, response) {
 const server = http.createServer(app);
 
 server.listen(app.get('port'), function() {
-  process.stdout.write('Web server listening on port ' + app.get('port'));
+  process.stdout.write('Web server listening on port ' + app.get('port') + '\n');
 });

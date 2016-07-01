@@ -8,6 +8,7 @@ const chalk       = require('chalk');
 const babel       = require('babel-core');
 const sass        = require('node-sass');
 const glob        = require('glob');
+const cleancss    = require('clean-css');
 const uglify      = require('uglify-js');
 const concat      = require('concat-files');
 const src         = {
@@ -44,49 +45,64 @@ const src         = {
   }
 };
 
+ const log_stream = fs.createWriteStream('logs/' + (process.argv[2] ? 'build.log' : 'output.log'), { flags: 'a' });
+ const logger = function(type, message) {
+   let color = '\x1b[37m';
+   if (type === 'error') {
+     color = '\x1b[31m';
+   }
+   if (type === 'success') {
+     color = '\x1b[36m';
+   }
+   log_stream.write(color + '[watch] ' + message + '\x1b[39m \n');
+ };
+
 /* ....................................
   APP CSS > public/app.css
 ....................................*/
-const app_css_watcher = chokidar.watch(src.appcss.watch, {
-  ignored: /[\/\\]\./
-});
-
 const app_css_render = function() {
   sass.render({
     file: src.appcss.manifest
   }, function(err, output) {
     if (err) {
-      process.stdout.write(chalk.red(err));
+      logger('error', err);
     } else {
-      fs.writeFile(src.appcss.distr, output.css, function(err) {
+      let css = process.argv[2] ? new cleancss().minify(output.css).styles : output.css;
+
+      fs.writeFile(src.appcss.distr, css, function(err) {
         if (err) {
-          process.stdout.write(chalk.red(err));
+          logger('error', err);
+        }
+        else {
+          logger('success', 'App CSS Updated');
         }
       });
     }
   });
 };
 
-app_css_watcher.add(src.appcss.manifest);
-app_css_watcher.on('change', function() {
-  try {
-    app_css_render();
-  } catch (e) {
-    process.stdout.write(chalk.red(e + '\n'));
-  }
-});
+if (!process.argv[2]) {
+  const app_css_watcher = chokidar.watch(src.appcss.watch, {
+    ignored: /[\/\\]\./
+  });
+
+  app_css_watcher.add(src.appcss.manifest);
+  app_css_watcher.on('change', function() {
+    try {
+      app_css_render();
+    } catch (err) {
+      logger('error', err);
+    }
+  });
+}
 
 /* ....................................
   APP JS > public/app.js
 ....................................*/
-const app_js_watcher = chokidar.watch(src.appjs.watch, {
-  ignored: /[\/\\]\./
-});
-
 const app_js_render = function() {
   concat(require('.' + src.appjs.manifest), src.appjs.distr, function(err) {
     if (err) {
-      process.stdout.write(chalk.red(err + '\n'));
+      logger('error', err);
     } else {
       let components;
       let scope;
@@ -98,8 +114,8 @@ const app_js_render = function() {
         scope = babel.transform(fs.readFileSync('app/client/scope.js').toString(), {
           'presets': ['es2015']
         }).code;
-      } catch (e) {
-        process.stdout.write(chalk.red(e + '\n'));
+      } catch (err) {
+        logger('error', err);
       }
 
       let Q = { code: {} };
@@ -149,24 +165,35 @@ const app_js_render = function() {
         }
       });
 
+      let js = scope + ';' + views + ';' + ';Q.code=' + JSON.stringify(Q.code) + ';' + components;
+
       try {
-        let min = uglify.minify(scope + ';' + views + ';' + ';Q.code=' + JSON.stringify(Q.code) + ';' + components, { fromString: true });
-        fs.writeFile(src.appjs.distr, min.code, 'utf-8');
-      } catch (e) {
-        process.stdout.write(chalk.red(e + '\n'));
+        if (process.argv[2]) {
+          js = uglify.minify(js, { fromString: true }).code;
+        }
+        fs.writeFile(src.appjs.distr, js, 'utf-8', function() {
+          logger('success', 'App JS Updated');
+        });
+      } catch (err) {
+        logger('error', err);
       }
     }
   });
 };
 
-app_js_watcher.add('quartz-css/**/*.html.js');
-app_js_watcher.add('quartz-js/**/*.html.js');
-app_js_watcher.add(src.appjs.manifest);
-app_js_watcher.on('change', function() {
-  try {
-    app_js_render();
-  } catch (e) {}
-});
+if (!process.argv[2]) {
+  const app_js_watcher = chokidar.watch(src.appjs.watch, {
+    ignored: /[\/\\]\./
+  });
+  app_js_watcher.add('quartz-css/**/*.html.js');
+  app_js_watcher.add('quartz-js/**/*.html.js');
+  app_js_watcher.add(src.appjs.manifest);
+  app_js_watcher.on('change', function() {
+    try {
+      app_js_render();
+    } catch (e) {}
+  });
+}
 
 
 /* ....................................
@@ -176,27 +203,36 @@ const vendor_js_render = function() {
   fs.writeFile(src.vendorjs.distr, '', 'utf-8');
   concat(require('.' + src.vendorjs.manifest), src.vendorjs.distr, function(err) {
     if (err) {
-      process.stdout.write(chalk.red(err));
-    }
-
-    let min = uglify.minify(src.vendorjs.distr);
-    fs.writeFile(src.vendorjs.distr, min.code, function(err) {
-      if (err) {
-        process.stdout.write(chalk.red(err));
+      logger('error', err);
+    } else {
+      if (process.argv[2]) {
+        let js = uglify.minify(src.vendorjs.distr).code;
+        fs.writeFile(src.vendorjs.distr, js, function(err) {
+          if (err) {
+            logger('error', err);
+          }
+          else {
+            logger('success', 'Vendor JS Updated');
+          }
+        });
+      } else {
+        logger('success', 'Vendor JS Updated');
       }
-    });
+    }
   });
 };
 
-chokidar.watch(src.vendorjs.manifest, {
-  ignored: /[\/\\]\./
-}).on('change', function() {
-  try {
-    vendor_js_render();
-  } catch (e) {
-    process.stdout.write(chalk.red(e + '\n'));
-  }
-});
+if (!process.argv[2]) {
+  chokidar.watch(src.vendorjs.manifest, {
+    ignored: /[\/\\]\./
+  }).on('change', function() {
+    try {
+      vendor_js_render();
+    } catch (err) {
+      logger('error', err);
+    }
+  });
+}
 
 
 /* ....................................
@@ -207,35 +243,38 @@ const quartz_icons_render = function() {
       file: src.quartzicons.manifest
   }, function(err, output) {
     if (err) {
-      process.stdout.write(chalk.red(err + '\n'));
+      logger('error', err);
     }
     else {
-      fs.writeFile(src.quartzicons.distr, output.css, function(err) {
+      let css = process.argv[2] ? new cleancss().minify(output.css).styles : output.css;
+      fs.writeFile(src.quartzicons.distr, css, function(err) {
         if (err) {
-          process.stdout.write(chalk.red(err));
+          logger('error', err);
+        }
+        else {
+          logger('success', 'Quartz Icons CSS Updated');
         }
       });
     }
   });
 };
 
-chokidar.watch(src.quartzicons.manifest, {
-  ignored: /[\/\\]\./
-}).on('change', function() {
-  try {
-    quartz_icons_render();
-  } catch (e) {
-    process.stdout.write(chalk.red(e + '\n'));
-  }
-});
+if (!process.argv[2]) {
+  chokidar.watch(src.quartzicons.manifest, {
+    ignored: /[\/\\]\./
+  }).on('change', function() {
+    try {
+      quartz_icons_render();
+    } catch (e) {
+      process.stdout.write(chalk.red(e + '\n'));
+    }
+  });
+}
+
 
 /* ....................................
   QUARTZ CSS > public/quartz.css
 ....................................*/
-const quartz_css_watcher = chokidar.watch(src.quartzcss.watch, {
-  ignored: /[\/\\]\./
-});
-
 const quartz_css_render = function() {
   sass.render({
     file: src.quartzcss.manifest
@@ -243,31 +282,37 @@ const quartz_css_render = function() {
     if (err) {
       process.stdout.write(chalk.red(err));
     } else {
-      fs.writeFile(src.quartzcss.distr, output.css, function(err) {
+      let css = process.argv[2] ? new cleancss().minify(output.css).styles : output.css;
+      fs.writeFile(src.quartzcss.distr, css, function(err) {
         if (err) {
-          process.stdout.write(chalk.red(err));
+          logger('error', err);
+        }
+        else {
+          logger('success', 'Quartz CSS Updated');
         }
       });
     }
   });
 };
 
-quartz_css_watcher.add(src.quartzcss.manifest);
-quartz_css_watcher.on('change', function() {
-  try {
-    quartz_css_render();
-  } catch (e) {
-    process.stdout.write(chalk.red(e));
-  }
-});
+if (!process.argv[2]) {
+  const quartz_css_watcher = chokidar.watch(src.quartzcss.watch, {
+    ignored: /[\/\\]\./
+  });
+  quartz_css_watcher.add(src.quartzcss.manifest);
+  quartz_css_watcher.on('change', function() {
+    try {
+      quartz_css_render();
+    } catch (err) {
+      logger('error', err);
+    }
+  });
+}
+
 
 /* ....................................
   QUARTZ CSS > public/quartz.css
 ....................................*/
-const quartz_component_css_watcher = chokidar.watch('quartz-js/**/styles/*.scss', {
-  ignored: /[\/\\]\./
-});
-
 const quartz_component_css_render = function() {
   fs.writeFile('quartz-js/components/components.scss', '', function() {
     glob.sync('quartz-js/**/styles/*.scss').forEach(function(file) {
@@ -278,35 +323,42 @@ const quartz_component_css_render = function() {
       file: 'quartz-js/components/components.scss'
     }, function(err, output) {
       if (err) {
-        process.stdout.write(chalk.red(err));
+        logger('error', err);
       } else {
-        fs.writeFile('app/public/components.css', output.css, function(err) {
+        let css = process.argv[2] ? new cleancss().minify(output.css).styles : output.css;
+
+        fs.writeFile('app/public/components.css', css, function(err) {
           if (err) {
-            process.stdout.write(chalk.red(err));
+            logger('error', err);
+          }
+          else {
+            logger('success', 'Components CSS Updated');
+            fs.unlink('quartz-js/components/components.scss');
           }
         });
       }
     });
-    // fs.unlink('quartz-js/components/components.scss');
   });
 };
 
-quartz_component_css_watcher.on('change', function() {
-  console.log('render');
-  try {
-    quartz_component_css_render();
-  } catch (e) {
-    process.stdout.write(chalk.red(e));
-  }
-});
+if (!process.argv[2]) {
+  const quartz_component_css_watcher = chokidar.watch('quartz-js/**/styles/*.scss', {
+    ignored: /[\/\\]\./
+  });
+  quartz_component_css_watcher.on('change', function() {
+    try {
+      quartz_component_css_render();
+    } catch (e) {
+      process.stdout.write(chalk.red(e));
+    }
+  });
+}
+
 
 /* ....................................
   QUARTZ JS > public/quartz.js
 ....................................*/
 let quartz_js_arr = require('.' + src.quartzjs.manifest);
-const quartz_js_watcher = chokidar.watch(src.quartzjs.watch, {
-  ignored: /[\/\\]\./
-});
 
 const quartz_js_render = function() {
   walk.walkSync('quartz-js/components', function(base_dir, filename, stat) {
@@ -325,33 +377,47 @@ const quartz_js_render = function() {
         result = babel.transform(fs.readFileSync(src.quartzjs.distr).toString(), {
           'presets': ['es2015']
         });
-
-        min = uglify.minify(result.code, { fromString: true });
-      } catch (e) {
-        process.stdout.write(chalk.red(e));
+      } catch (err) {
+        logger('error', err);
       }
 
       try {
-        fs.writeFile(src.quartzjs.distr, min.code, function(err) {
+        let js = result.code;
+
+        if (process.argv[2]) {
+
+          js = uglify.minify(js, { fromString: true }).code;
+        }
+
+        fs.writeFile(src.quartzjs.distr, js, function(err) {
           if (err) {
-            process.stdout.write(chalk.red(err));
+            logger('error', err);
+          }
+          else {
+            logger('success', 'Quartz JS Updated');
           }
         });
-      } catch (e) {
-        process.stdout.write(chalk.red(e));
+      } catch (err) {
+        logger('error', err);
       }
     }
   });
 };
 
-quartz_js_watcher.add(src.quartzjs.manifest);
-quartz_js_watcher.on('change', function() {
-  try {
-    quartz_js_render();
-  } catch (e) {
-    process.stdout.write(chalk.red(e + '\n'));
-  }
-});
+if (!process.argv[2]) {
+  const quartz_js_watcher = chokidar.watch(src.quartzjs.watch, {
+    ignored: /[\/\\]\./
+  });
+  quartz_js_watcher.add(src.quartzjs.manifest);
+  quartz_js_watcher.on('change', function() {
+    try {
+      quartz_js_render();
+    } catch (err) {
+      logger('error', err);
+    }
+  });
+}
+
 
 /* ....................................
   Render on watch start
@@ -364,6 +430,6 @@ try {
   quartz_component_css_render();
   quartz_icons_render();
   vendor_js_render();
-} catch (e) {
-  process.stdout.write(chalk.red(e + '\n'));
+} catch (err) {
+  logger('error', err);
 }
