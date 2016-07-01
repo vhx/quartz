@@ -3,6 +3,7 @@ node_modules/
 .env
 .env.local
 logs
+deploy
 npm-debug.log
 app/public/quartz.js
 app/public/components.css
