@@ -29,6 +29,8 @@
 ......................................*/
 .c-filter--container {
   width: 550px; }
+  .c-filter--container .c-filter--applied {
+    background-color: #D7DDE1; }
   .c-filter--container.is-open .c-filter--trigger {
     background-color: #D7DDE1; }
   .c-filter--container.is-open .c-filter--dropdown {
@@ -48,11 +50,17 @@
     display: none; }
     .c-filter--container .c-filter--item-container.is-active {
       display: block; }
-  .c-filter--container .c-filter--trigger {
+  .c-filter--container .c-filter--trigger,
+  .c-filter--container .c-filter--applied {
     background-position: right 15px center;
-    line-height: 25px;
+    line-height: 20px;
     height: 40px;
     padding: 10px; }
+  .c-filter--container .c-filter--applied {
+    margin-right: 10px;
+    padding-right: 40px;
+    color: #00142B;
+    border-radius: 3px; }
   .c-filter--container .c-filter--label {
     height: 40px;
     line-height: 40px; }

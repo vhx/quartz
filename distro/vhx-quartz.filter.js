@@ -32,13 +32,13 @@ vhxm.components.shared.filter.controller = function(opts) {
     self.state = new vhxm.components.shared.filter.state();
     self.model = new vhxm.components.shared.filter.model();
 
-    self.state.applied = m.prop(false);
-
     if (opts.api) {
-      opts.api = {
+      opts.api({
         state: self.state,
-        model: self.model
-      };
+        model: self.model,
+        removeFilter: self.removeFilter,
+        addFilter: self.addFilter,
+      });
     }
   };
 
@@ -55,16 +55,49 @@ vhxm.components.shared.filter.controller = function(opts) {
     }
   };
 
-  self.handleClick = function(event) {
+  self.handleApplyClick = function(event) {
     event.preventDefault();
 
     let state = self.state.dropdown.isOpen() ? false : true;
+
+    if (!state && self.state.selected().length) {
+      self.applyFilter();
+    }
+
     self.state.dropdown.isOpen(state);
   };
 
-  self.applyFilter = function(filter) {
-    // apply the filter
-    self.state.applied(filter);
+  self.handleFilterRemoveClick = function(filter) {
+    self.removeFilter(filter, function() {
+      self.applyFilter();
+    });
+  };
+
+  self.applyFilter = function() {
+    self.state.applied(true);
+    if (opts.filterHandler) {
+      opts.filterHandler(self.state.selected(), function() {});
+    }
+  };
+
+  self.removeFilter = function(filter, callback) {
+    self.state.selected().filter(function(item, index) {
+      if (item.value === filter.value) {
+        self.state.selected().splice(item, 1);
+      }
+    });
+
+    if (callback) {
+      callback();
+    }
+  };
+
+  self.addFilter = function(filter, type) {
+    self.state.selected().push({
+      type: type,
+      label: filter.label,
+      value: filter.value
+    });
   };
 
   if (opts && opts.init) {
@@ -75,7 +108,8 @@ vhxm.components.shared.filter.model = function() {
 };
 
 vhxm.components.shared.filter.state = function() {
-  this.applied = m.prop([]);
+  this.selected = m.prop([]);
+  this.applied = m.prop(false);
   this.available = m.prop(null);
   this.dropdown = {
     isOpen: m.prop(false),
@@ -89,18 +123,21 @@ vhxm.components.shared.filter.ui.container = {
     return new vhxm.components.shared.filter.controller(opts);
   },
   view: function(ctrl, opts) {
+    let ready_to_apply = ctrl.state.dropdown.isOpen() && ctrl.state.selected() && ctrl.state.selected().length;
+
     return m('.c-filter--container.dropdown.dropdown--large' + (ctrl.state.dropdown.isOpen() ? '.is-open' : ''), [
       m('div.row', [
         m('.column.small-3.padding-reset', [
-          m('a.c-filter--trigger.radius.head-5.text--gray.icon--right.icon-' + (ctrl.state.dropdown.isOpen() ? 'x-navy' : 'chevron-down-gray') + '.icon--xxsmall.margin-right-medium.fill-width', {
-            onclick: ctrl.handleClick
-          }, 'Filters'),
+          m('a.c-filter--trigger.block.radius.head-5.text--gray' +
+            (ready_to_apply ? '.text-center' : ('.icon--right.icon-' + (ctrl.state.dropdown.isOpen() ? 'x-navy' : 'chevron-down-gray') + '.icon--xxsmall.margin-right-medium.fill-width')), {
+            onclick: ctrl.handleApplyClick
+          }, ready_to_apply ? 'Apply' : 'Filters'),
           m.component(vhxm.components.shared.filter.ui.dropdown, opts, ctrl)
         ]),
         m('.column.small-13.padding-reset', [
           m('.margin-left-small.padding-left-medium.border-left', [
-            ctrl.state.applied() && ctrl.state.applied().length ?
-            m.component(vhxm.components.shared.filter.ui.applied, opts) : m('span.c-filter--label', opts.label ? opts.label : '')
+            ctrl.state.applied() && ctrl.state.selected().length ?
+            m.component(vhxm.components.shared.filter.ui.applied, opts, ctrl) : m('span.c-filter--label', opts.label ? opts.label : '')
           ])
         ])
       ])
@@ -109,8 +146,21 @@ vhxm.components.shared.filter.ui.container = {
 };
 
 vhxm.components.shared.filter.ui.applied = {
-  view: function() {
-    return m('div', 'What is this');
+  controller: function(opts, parent_ctrl) {
+    return parent_ctrl;
+  },
+  view: function(ctrl) {
+    return m('div', [
+      ctrl.state.selected().map(function(item) {
+        return m('a.c-filter--applied.icon--right.icon-x-navy.icon--xxsmall', {
+          href: '#',
+          onclick: function(event) {
+            event.preventDefault();
+            ctrl.handleFilterRemoveClick(item);
+          }
+        }, item.label);
+      })
+    ]);
   }
 };
 
@@ -182,33 +232,23 @@ vhxm.components.shared.filter.ui.data = {
       }, item.title),
       m('div.c-filter--item-container' + (ctrl.state.dropdown.filtersOpen().indexOf(item.type) >= 0 ? '.is-active' : ''), [
         m('ul.form', [
-          item.data().map(function(item, index) {
+          item.data().map(function(child, index) {
             return m('li', [
               m.component(vhxm.components.shared.checkbox.ui.container, {
                 name: item.type + '-' + index,
-                checked: item.checked,
-                label: item.label,
-                oninput: function(event) {
-                  debugger;
+                checked: child.checked,
+                label: child.label,
+                onchange: function(event) {
+                  ctrl.removeFilter(child);
+                  if (event.target.checked) {
+                   ctrl.addFilter(child, item);
+                  }
                 }
               })
             ]);
           })
         ])
       ])
-    ]);
-  }
-};
-vhxm.components.shared.filter.date.controller = function() {};
-vhxm.components.shared.filter.ui.date = {
-  controller: function(opts) {
-    return new vhxm.components.shared.filter.date.controller(opts);
-  },
-  view: function(ctrl, opts) {
-    return m('.c-filter--date.padding-medium', [
-      m('a.icon-calendar-navy.icon--small.icon--left.border.radius.fill-width.inline.padding-small.text-center', 'January 1, 2014'),
-      m('span.block.text-center.padding-vert-small', 'to'),
-      m('a.icon-calendar-navy.icon--small.icon--left.border.radius.fill-width.inline.padding-small.text-center', 'January 1, 2014'),
     ]);
   }
 };

@@ -5,7 +5,6 @@ vhxm.components.shared.checkbox.ui.container = {
         checked: opts.checked,
         name: opts.name,
         onchange: opts.onchange,
-        oninput: opts.oninput,
         id: opts.name
       }),
       m('label', {

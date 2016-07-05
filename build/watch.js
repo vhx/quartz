@@ -314,13 +314,17 @@ if (!process.argv[2]) {
   QUARTZ CSS > public/quartz.css
 ....................................*/
 const quartz_component_css_render = function() {
-  fs.writeFile('quartz-js/components/components.scss', '', function() {
+  if (!fs.existsSync('quartz-js/components/temp/styles')){
+   fs.mkdirSync('quartz-js/components/temp');
+   fs.mkdirSync('quartz-js/components/temp/styles');
+  }
+  fs.writeFile('quartz-js/components/temp/styles/components.scss', '', function() {
     glob.sync('quartz-js/**/styles/*.scss').forEach(function(file) {
-      fs.appendFileSync('quartz-js/components/components.scss', fs.readFileSync(file, 'utf-8'));
+      fs.appendFileSync('quartz-js/components/temp/styles/components.scss', fs.readFileSync(file, 'utf-8'));
     });
 
     sass.render({
-      file: 'quartz-js/components/components.scss'
+      file: 'quartz-js/components/temp/styles/components.scss'
     }, function(err, output) {
       if (err) {
         logger('error', err);
@@ -333,7 +337,9 @@ const quartz_component_css_render = function() {
           }
           else {
             logger('success', 'Components CSS Updated');
-            fs.unlink('quartz-js/components/components.scss');
+            fs.unlinkSync('quartz-js/components/temp/styles/components.scss');
+            fs.rmdirSync('quartz-js/components/temp/styles');
+            fs.rmdirSync('quartz-js/components/temp');
           }
         });
       }
