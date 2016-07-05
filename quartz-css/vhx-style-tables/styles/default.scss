@@ -89,6 +89,7 @@
     transition: background 200ms ease-out;
     background: $white;
     border-bottom: 1px solid $gray-3;
+    border-left: 3px solid tranparent;
 
     &.is-disabled {
       background: $gray-7;
@@ -97,7 +98,9 @@
       background-color: $teal-1;
     }
     &.is-selected {
-      background-color: $teal-3;
+      background-color: $teal-1;
+      border-left: 3px solid $teal-3;
+
     }
     &.is-clickable {
       cursor: pointer;

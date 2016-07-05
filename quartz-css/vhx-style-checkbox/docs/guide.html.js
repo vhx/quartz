@@ -11,16 +11,19 @@ Q.components.guide.styleguide.ui.checkbox.container = {
         component: {
           view: function() {
             return m('form.form', [
-              m.component(Q.components.guide.styleguide.ui.checkbox.standard, {
+              m.component(vhxm.components.shared.checkbox.ui.container, {
                 size: 'small',
-                name: 'small-standard'
+                name: 'small-standard',
+                checked: true
               }),
-              m.component(Q.components.guide.styleguide.ui.checkbox.standard, {
+              m.component(vhxm.components.shared.checkbox.ui.container, {
                 size: 'medium',
+                checked: true,
                 name: 'medium-standard'
               }),
-              m.component(Q.components.guide.styleguide.ui.checkbox.standard, {
+              m.component(vhxm.components.shared.checkbox.ui.container, {
                 size: 'large',
+                checked: true,
                 name: 'large-standard'
               })
             ]);
@@ -32,12 +35,16 @@ Q.components.guide.styleguide.ui.checkbox.container = {
         component: {
           view: function() {
             return m('form.form', [
-              m.component(Q.components.guide.styleguide.ui.checkbox.toggle, {
+              m.component(vhxm.components.shared.checkbox.ui.container, {
                 size: 'small',
+                type: 'toggle',
+                checked: true,
                 name: 'small-toggle'
               }),
-              m.component(Q.components.guide.styleguide.ui.checkbox.toggle, {
+              m.component(vhxm.components.shared.checkbox.ui.container, {
                 size: 'medium',
+                type: 'toggle',
+                checked: true,
                 name: 'medium-toggle'
               })
             ]);
@@ -48,48 +55,3 @@ Q.components.guide.styleguide.ui.checkbox.container = {
   }
 };
 
-Q.components.guide.styleguide.ui.checkbox.standard = {
-  view: function(ctrl, opts) {
-    return m('fieldset.checkbox.' + (opts.size ? opts.size : 'medium'), [
-      m('input[type=checkbox]', {
-        checked: true,
-        name: opts.name,
-        id: opts.name
-      }),
-      m('label', {
-        for: opts.name
-      }, [
-        m('span.checkbox--contain', [
-          m('span.checkbox--icon', [
-            m('span.checkbox-animate')
-          ]),
-          m('span.checkbox--label')
-        ])
-      ])
-    ]);
-  }
-};
-
-Q.components.guide.styleguide.ui.checkbox.toggle = {
-  view: function(ctrl, opts) {
-    return m('fieldset.checkbox.alt.' + (opts.size ? opts.size : 'medium'), [
-      m('input[type=checkbox]', {
-        checked: true,
-        name: opts.name,
-        id: opts.name
-      }),
-      m('label', {
-        for: opts.name
-      }, [
-        m('span.checkbox--contain', [
-          m('span.checkbox--icon'),
-          m('span.checkbox--circle', [
-            m('i.circle-top', m.trust('<span></span>')),
-            m('i.circle-bottom', m.trust('<span></span>'))
-          ]),
-          m('span.checkbox--label')
-        ])
-      ])
-    ]);
-  }
-};

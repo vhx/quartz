@@ -1,0 +1,55 @@
+@import "../../quartz-css/vhx-style-core/config/mixins";
+
+.c-filter--container {
+  width: 550px;
+  .c-filter--applied {
+    background-color: #D7DDE1;
+  }
+  &.is-open {
+    .c-filter--trigger {
+      background-color: #D7DDE1;
+    }
+    .c-filter--dropdown {
+      right: auto;
+      left: 0;
+    }
+  }
+  .c-filter--dropdown {
+    &:before,
+    &:after {
+      left: 45px;
+    }
+    .icon-calendar-navy {
+      background-position: 10px center;
+    }
+    ul { max-height: none; }
+    .c-filter--item {
+      background-position: center right 15px;
+      padding: 15px !important;
+      display: block;
+    }
+  }
+  .c-filter--item-container {
+    display: none;
+    &.is-active {
+      display: block;
+    }
+  }
+  .c-filter--trigger,
+  .c-filter--applied {
+    background-position: right 15px center;
+    line-height: 20px;
+    height: 40px;
+    padding: 10px;
+  }
+  .c-filter--applied {
+    margin-right: 10px;
+    padding-right: 40px;
+    color: $navy;
+    border-radius: 3px;
+  }
+  .c-filter--label {
+    height: 40px;
+    line-height: 40px;
+  }
+}

@@ -58,3 +58,14 @@
 .box-shadow {
   box-shadow: 0 0 5px 0 #f0f0f0;
 }
+section[id^="guide--component"] {
+  &:after {
+    content: ' ';
+    height: 1px;
+    width: 100%;
+    background: #F0F2F4;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+  }
+}

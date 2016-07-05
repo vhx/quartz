@@ -1,0 +1,328 @@
+/* .....................................
+  Fonts
+..................................... */
+/* .....................................
+  Sets
+..................................... */
+/* .....................................
+  Media Query Ranges
+..................................... */
+/* .....................................
+  Colors - Grays
+..................................... */
+/* .....................................
+  Colors - Teals
+..................................... */
+/* .....................................
+  Colors - Red
+..................................... */
+/* .....................................
+  Colors - Navy
+..................................... */
+/* .....................................
+  Colors - Brand Palette
+..................................... */
+/* .....................................
+  Colors - External Palette
+..................................... */
+/* helper function for margin and padding
+......................................*/
+/*.....................................
+  Admin Checkbox
+......................................*/
+.form .checkbox {
+  position: relative;
+  display: inline-block;
+  min-height: 40px;
+  width: 100%;
+  color: #5E7887;
+  font-size: 14px;
+  background: transparent;
+  user-select: none;
+  /* checkbox
+  ...................................*/
+  /* label unchecked
+  ...................................*/
+  /* label not-checked
+  ...................................*/
+  /* label checked
+  ...................................*/
+  /* label checked
+  ...................................*/ }
+  .form .checkbox:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .form .checkbox input[type="checkbox"] {
+    display: none; }
+  .form .checkbox label {
+    display: block;
+    min-height: 40px;
+    margin: 0;
+    float: left;
+    box-sizing: border-box;
+    line-height: 40px; }
+    .form .checkbox label:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .form .checkbox label.wide {
+      width: 100%; }
+      .form .checkbox label.wide .checkbox--contain {
+        min-height: 40px; }
+    .form .checkbox label .checkbox--contain {
+      width: 100%;
+      display: block; }
+      .form .checkbox label .checkbox--contain:after {
+        content: "";
+        display: table;
+        clear: both; }
+    .form .checkbox label .checkbox--icon {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      margin-right: 10;
+      float: left;
+      background-color: #fff;
+      background-position: 50% 50%;
+      background-size: 75%;
+      position: relative;
+      box-shadow: none;
+      box-sizing: border-box;
+      border-radius: 3px;
+      transition: box-shadow .2s ease, color .2s ease; }
+      .form .checkbox label .checkbox--icon .checkbox-animate {
+        transition: all 300ms ease;
+        width: 30px;
+        height: 30px;
+        top: 4px;
+        right: 4px;
+        display: block;
+        position: absolute;
+        background: #fff; }
+    .form .checkbox label .checkbox--label {
+      display: block;
+      margin-left: 5px;
+      float: left;
+      min-height: 40px; }
+    .form .checkbox label.check-right .checkbox--label {
+      float: left;
+      text-align: left; }
+    .form .checkbox label.check-right .checkbox--icon {
+      float: right; }
+  .form .checkbox.invert input[type="checkbox"]:checked + label .checkbox--icon,
+  .form .checkbox input[type="checkbox"]:not(:checked) + label .checkbox--icon {
+    transition: border 400ms ease-out;
+    border: 1px solid #d1d9dc;
+    background-image: none; }
+  .form .checkbox input[type="checkbox"]:checked + label .checkbox--icon, .form .checkbox.invert input[type="checkbox"]:not(:checked) + label .checkbox--icon {
+    transition: border 400ms ease-out;
+    border: 1px solid #5E7887;
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Cpath%20fill%3D%22%2322B8AF%22%20d%3D%22M9.291%2019.819l-3.323-3.323%2013.293-13.293%203.323%203.323z%22%2F%3E%3Cpath%20fill%3D%22%23149996%22%20d%3D%22M3.748%207.535l8.84%208.838-3.323%203.324-8.84-8.838z%22%2F%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat; }
+    .form .checkbox input[type="checkbox"]:checked + label .checkbox--icon .checkbox-animate, .form .checkbox.invert input[type="checkbox"]:not(:checked) + label .checkbox--icon .checkbox-animate {
+      width: 0px;
+      height: 0px; }
+  .form .checkbox input[type="checkbox"]:focus + label .checkbox--icon {
+    border: 1px solid #9aaab4; }
+
+.form .checkbox.small {
+  min-height: 13.33333px; }
+  .form .checkbox.small label {
+    min-height: 13.33333px;
+    line-height: 13.33333px; }
+    .form .checkbox.small label .checkbox--icon {
+      width: 13.33333px;
+      height: 13.33333px; }
+      .form .checkbox.small label .checkbox--icon .checkbox-animate {
+        width: 10.33333px;
+        height: 10.33333px;
+        top: 1px;
+        right: 1px; }
+    .form .checkbox.small label .checkbox--label,
+    .form .checkbox.small label .checkbox--contain {
+      min-height: 13.33333px; }
+
+.form .checkbox.medium {
+  min-height: 20px; }
+  .form .checkbox.medium label {
+    min-height: 20px;
+    line-height: 20px; }
+    .form .checkbox.medium label .checkbox--icon {
+      width: 20px;
+      height: 20px; }
+      .form .checkbox.medium label .checkbox--icon .checkbox-animate {
+        width: 15px;
+        height: 15px;
+        top: 2px;
+        right: 2px; }
+    .form .checkbox.medium label .checkbox--label,
+    .form .checkbox.medium label .checkbox--contain {
+      min-height: 20px; }
+
+.form .checkbox.alt {
+  /* label not-checked
+  ...................................*/
+  /* label checked
+  ...................................*/ }
+  .form .checkbox.alt label {
+    border-radius: 20px;
+    background: #ffffff;
+    width: 70px;
+    padding: 7px; }
+    .form .checkbox.alt label .checkbox--contain {
+      display: block;
+      background: #ffffff;
+      position: relative;
+      padding: 0;
+      border-radius: 20px;
+      height: 100%;
+      width: 100%; }
+    .form .checkbox.alt label .checkbox--label {
+      display: none; }
+    .form .checkbox.alt label .checkbox--circle {
+      transition: all 200ms ease;
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      top: 0; }
+      .form .checkbox.alt label .checkbox--circle .circle-top {
+        transition: opacity .2s ease;
+        display: block;
+        height: 12px;
+        overflow: hidden;
+        position: absolute;
+        top: 0px;
+        left: 0px; }
+        .form .checkbox.alt label .checkbox--circle .circle-top span {
+          display: block;
+          width: 24px;
+          height: 24px;
+          background: #D7DDE1;
+          border-radius: 24px; }
+      .form .checkbox.alt label .checkbox--circle .circle-bottom {
+        transition: opacity .2s ease;
+        display: block;
+        height: 12px;
+        overflow: hidden;
+        position: absolute;
+        bottom: 0px;
+        left: 0px; }
+        .form .checkbox.alt label .checkbox--circle .circle-bottom span {
+          position: relative;
+          top: -12px;
+          display: block;
+          width: 24px;
+          height: 24px;
+          background: #D7DDE1;
+          border-radius: 23px; }
+  .form .checkbox.alt.invert input[type="checkbox"]:checked + label,
+  .form .checkbox.alt input[type="checkbox"]:not(:checked) + label {
+    border: 1px solid #d1d9dc; }
+    .form .checkbox.alt.invert input[type="checkbox"]:checked + label .checkbox--icon,
+    .form .checkbox.alt input[type="checkbox"]:not(:checked) + label .checkbox--icon {
+      border: none;
+      height: 20px;
+      width: 20px;
+      position: absolute;
+      margin-right: 0;
+      top: 2px;
+      left: auto;
+      right: 3px;
+      background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Cpath%20d%3D%22M21.5%2018.3c.3.3.4.6.4.9%200%20.3-.1.6-.4.9l-1.3%201.4c-.3.3-.6.4-.9.4-.3%200-.6-.1-.9-.4l-6.8-6.8-6.8%206.8c-.3.3-.6.4-.9.4-.3%200-.6-.1-.9-.4l-1.4-1.3c-.3-.3-.4-.6-.4-.9%200-.3.1-.6.4-.9l6.8-6.9-6.9-6.8c-.2-.3-.3-.6-.3-.9%200-.3.1-.6.4-.9l1.4-1.4c.3-.3.6-.4.9-.4.3%200%20.6.1.9.4l6.8%206.8%206.8-6.8c.3-.3.6-.4.9-.4.3%200%20.6.1.9.4l1.3%201.4c.3.3.4.6.4.9%200%20.3-.1.7-.4.9l-6.8%206.9%206.8%206.7z%22%20fill%3D%22%23D1D9DC%22%2F%3E%3C%2Fsvg%3E");
+      background-repeat: no-repeat; }
+    .form .checkbox.alt.invert input[type="checkbox"]:checked + label .checkbox--circle,
+    .form .checkbox.alt input[type="checkbox"]:not(:checked) + label .checkbox--circle {
+      left: 0; }
+      .form .checkbox.alt.invert input[type="checkbox"]:checked + label .checkbox--circle .circle-top span,
+      .form .checkbox.alt input[type="checkbox"]:not(:checked) + label .checkbox--circle .circle-top span {
+        background: #D7DDE1; }
+      .form .checkbox.alt.invert input[type="checkbox"]:checked + label .checkbox--circle .circle-bottom span,
+      .form .checkbox.alt input[type="checkbox"]:not(:checked) + label .checkbox--circle .circle-bottom span {
+        background: #D7DDE1; }
+  .form .checkbox.alt input[type="checkbox"]:checked + label, .form .checkbox.alt.invert input[type="checkbox"]:not(:checked) + label {
+    border: 1px solid #9aaab4; }
+    .form .checkbox.alt input[type="checkbox"]:checked + label .contain, .form .checkbox.alt.invert input[type="checkbox"]:not(:checked) + label .contain {
+      background: #149A97; }
+    .form .checkbox.alt input[type="checkbox"]:checked + label .checkbox--icon, .form .checkbox.alt.invert input[type="checkbox"]:not(:checked) + label .checkbox--icon {
+      border: none;
+      height: 20px;
+      width: 20px;
+      position: absolute;
+      margin-right: 0;
+      top: 2px;
+      left: 5px;
+      right: auto;
+      background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Cg%20fill%3D%22%2322B8AF%22%3E%3Cpath%20d%3D%22M9.291%2019.819l-3.323-3.323%2013.293-13.293%203.323%203.323zM3.748%207.535l8.84%208.838-3.323%203.324-8.84-8.838z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+      background-repeat: no-repeat; }
+    .form .checkbox.alt input[type="checkbox"]:checked + label .checkbox--circle, .form .checkbox.alt.invert input[type="checkbox"]:not(:checked) + label .checkbox--circle {
+      left: 30px; }
+      .form .checkbox.alt input[type="checkbox"]:checked + label .checkbox--circle .circle-top span, .form .checkbox.alt.invert input[type="checkbox"]:not(:checked) + label .checkbox--circle .circle-top span {
+        background: #22B9B0; }
+      .form .checkbox.alt input[type="checkbox"]:checked + label .checkbox--circle .circle-bottom span, .form .checkbox.alt.invert input[type="checkbox"]:not(:checked) + label .checkbox--circle .circle-bottom span {
+        background: #149A97; }
+  .form .checkbox.alt.small input[type="checkbox"]:checked + label .checkbox--circle, .form .checkbox.alt.small.invert input[type="checkbox"]:not(:checked) + label .checkbox--circle {
+    left: 20px; }
+  .form .checkbox.alt.small {
+    /* label not-checked
+    ...................................*/
+    /* label checked
+    ...................................*/ }
+    .form .checkbox.alt.small label {
+      border-radius: 15px;
+      width: 52.5px;
+      padding: 7px; }
+      .form .checkbox.alt.small label .checkbox--contain {
+        border-radius: 15px; }
+      .form .checkbox.alt.small label .checkbox--circle {
+        left: 0px;
+        top: -2px;
+        width: 18px;
+        height: 18px; }
+        .form .checkbox.alt.small label .checkbox--circle .circle-top {
+          height: 9px; }
+          .form .checkbox.alt.small label .checkbox--circle .circle-top span {
+            width: 18px;
+            height: 18px;
+            border-radius: 18px; }
+        .form .checkbox.alt.small label .checkbox--circle .circle-bottom {
+          height: 9px; }
+          .form .checkbox.alt.small label .checkbox--circle .circle-bottom span {
+            top: -9px;
+            width: 18px;
+            height: 18px;
+            border-radius: 18px; }
+    .form .checkbox.alt.small.invert input[type="checkbox"]:checked + label .checkbox--icon,
+    .form .checkbox.alt.small input[type="checkbox"]:not(:checked) + label .checkbox--icon {
+      height: 15px;
+      width: 15px;
+      top: 0px;
+      right: 0px;
+      left: auto; }
+    .form .checkbox.alt.small.invert input[type="checkbox"]:checked + label .checkbox--circle,
+    .form .checkbox.alt.small input[type="checkbox"]:not(:checked) + label .checkbox--circle {
+      left: 0px; }
+    .form .checkbox.alt.small input[type="checkbox"]:checked + label .checkbox--icon, .form .checkbox.alt.small.invert input[type="checkbox"]:not(:checked) + label .checkbox--icon {
+      height: 18px;
+      width: 18px;
+      top: -2px;
+      left: -1px;
+      right: auto; }
+
+.checkbox-container:after {
+  clear: both; }
+.checkbox-container:before, .checkbox-container:after {
+  content: " ";
+  display: table; }
+.checkbox-container .checkbox {
+  float: left;
+  width: auto; }
+.checkbox-container .checkbox-label {
+  float: left;
+  padding-left: 15px;
+  line-height: 30px; }
+
+[data-checkable].is-hovered, [data-checkable]:hover {
+  background: #149A97 !important;
+  cursor: pointer; }

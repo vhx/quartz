@@ -19,6 +19,9 @@ module.exports = function(grunt) {
     },
     sass: {
       dist: {
+        options: {
+          sourcemap: 'none'
+        },
         files : {
           'quartz-rails/vendor/assets/stylesheets/vhx-quartz.css' : 'quartz-css/vhx.scss'
         }
@@ -31,12 +34,7 @@ module.exports = function(grunt) {
         }
       }
     },
-    concat: {
-      svg: {
-        src: 'quartz-svg/svg-css/all/*.css',
-        dest: 'quartz-css/vhx-style-icons/styles/icons.svg.scss'
-      },
-    },
+    concat: {},
     clean: {
       svg: ['quartz-svg/svg-css/all/*.css', 'quartz-svg/svg-css/sets/*.css'],
       pre_svg: {
@@ -69,8 +67,76 @@ module.exports = function(grunt) {
             expand: true
           }
         ]
+      },
+      components: {
+        files: [
+          {}
+        ]
       }
     }
+  });
+
+  grunt.registerTask('prepareComponents', function() {
+    grunt.file.expand('quartz-js/components/*').forEach(function(dir) {
+      let component_name = dir.substr(dir.lastIndexOf('/')+1);
+
+      if (component_name !== 'scope.js') {
+        // get the current concat object from initConfig
+        let concat = grunt.config.get('concat') || {};
+
+        // create a subtask for each module, find all src files
+        // and combine into a single js file per module
+        let dir_path = [dir + '/**/*.js', '!' + dir + '/docs/*.js', '!' + dir + '/docs/*.html.js'];
+        let opts = { files: {} };
+
+        opts.files['quartz-rails/vendor/assets/javascripts/vhx-quartz.' + component_name + '.js'] = dir_path;
+        opts.files['distro/vhx-quartz.' + component_name + '.js'] = dir_path;
+
+        concat[component_name] = opts;
+
+        // add module subtasks to the concat task in initConfig
+        grunt.config.set('concat', concat);
+      }
+
+    });
+  });
+
+  grunt.registerTask('prepareComponentStyles', function() {
+    grunt.file.expand('quartz-js/components/*').forEach(function(dir) {
+      let component_name = dir.substr(dir.lastIndexOf('/')+1);
+
+      if (component_name !== 'header' && component_name !== 'search_input' && component_name !== 'scope.js') {
+        // get the current concat object from initConfig
+        let sass = grunt.config.get('sass') || {};
+
+        // create a subtask for each module, find all src files
+        // and combine into a single js file per module
+        let dest_dir = 'distro/vhx-quartz.' + component_name + '.css';
+        let src_dir =  dir + '/styles/*.scss';
+
+        sass.dist.files['quartz-rails/vendor/assets/stylesheets/vhx-quartz.' + component_name + '.css'] = src_dir;
+        sass.dist.files[dest_dir] = src_dir;
+
+        // add module subtasks to the concat task in initConfig
+        grunt.config.set('sass', sass);
+      }
+
+    });
+  });
+
+  grunt.registerTask('grunt-svg-css', function() {
+    let concat = grunt.config.get('concat') || {};
+
+    concat.svg = {
+      src: 'quartz-svg/svg-css/all/*.css',
+      dest: 'quartz-css/vhx-style-icons/styles/icons.svg.scss'
+    };
+    grunt.config.set('concat', concat);
+
+    let done = this.async();
+    let SVG = require('./build/svg');
+
+    SVG(done);
   });
 
   grunt.loadNpmTasks('grunt-contrib-copy');
@@ -79,13 +145,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.registerTask('grunt-svg-css', function() {
-    let done = this.async();
-    let SVG = require('./build/svg');
-
-    SVG(done);
-  });
 
   grunt.registerTask('build-icons', ['clean:pre_svg', 'grunt-svg-css', 'copy:svg', 'concat:svg', 'clean:svg']);
-  grunt.registerTask('build', ['sass_globbing', 'cssmin', 'copy:css', 'sass']);
+  grunt.registerTask('component-js', ['prepareComponents', 'concat']);
+  grunt.registerTask('component-styles', ['prepareComponentStyles']);
+
+  grunt.registerTask('build', ['sass_globbing', 'cssmin', 'copy:css', 'component-js', 'component-styles', 'sass']);
 };

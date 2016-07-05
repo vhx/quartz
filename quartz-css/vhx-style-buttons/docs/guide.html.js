@@ -11,10 +11,10 @@ Q.components.guide.styleguide.ui.buttons.container = {
         component: {
           view: function() {
             return m('div', [
-              m('button.btn-gray', 'Gray'),
-              m('button.btn-teal', 'Teal'),
-              m('button.btn-white', 'White'),
-              m('button.btn-red', 'Red')
+              m('button.btn-gray.margin-right-small.margin-bottom-small', 'Gray'),
+              m('button.btn-teal.margin-right-small.margin-bottom-small', 'Teal'),
+              m('button.btn-white.margin-right-small.margin-bottom-small', 'White'),
+              m('button.btn-red.margin-right-small.margin-bottom-small', 'Red')
             ]);
           }
         }
@@ -24,11 +24,11 @@ Q.components.guide.styleguide.ui.buttons.container = {
         component: {
           view: function() {
             return m('div', [
-              m('button.btn-purple', 'Purple'),
-              m('button.btn-green', 'Green'),
-              m('button.btn-slate', 'Slate'),
-              m('button.btn-black', 'Black'),
-              m('button.btn-yellow', 'Yellow'),
+              m('button.btn-purple.margin-right-small.margin-bottom-small', 'Purple'),
+              m('button.btn-green.margin-right-small.margin-bottom-small', 'Green'),
+              m('button.btn-slate.margin-right-small.margin-bottom-small', 'Slate'),
+              m('button.btn-black.margin-right-small.margin-bottom-small', 'Black'),
+              m('button.btn-yellow.margin-right-small.margin-bottom-small', 'Yellow'),
               m('div.bg-grid-dark.padding-small.inline', [
                 m('button.btn-transparent', 'Transparent')
               ])
@@ -41,11 +41,11 @@ Q.components.guide.styleguide.ui.buttons.container = {
         component: {
           view: function() {
             return m('div', [
-              m('button.btn-twitter', 'Twitter'),
-              m('button.btn-facebook', 'Facebook'),
-              m('button.btn-tumblr', 'Tumblr'),
-              m('button.btn-paypal', 'Paypal'),
-              m('button.btn-roku', 'Roku')
+              m('button.btn-twitter.margin-right-small.margin-bottom-small', 'Twitter'),
+              m('button.btn-facebook.margin-right-small.margin-bottom-small', 'Facebook'),
+              m('button.btn-tumblr.margin-right-small.margin-bottom-small', 'Tumblr'),
+              m('button.btn-paypal.margin-right-small.margin-bottom-small', 'Paypal'),
+              m('button.btn-roku.margin-right-small.margin-bottom-small', 'Roku')
             ]);
           }
         }
@@ -55,11 +55,11 @@ Q.components.guide.styleguide.ui.buttons.container = {
         component: {
           view: function() {
             return m('div', [
-              m('button.btn-gray.btn--small.block', 'Small'),
-              m('button.btn-gray.btn--medium.block', 'Medium'),
-              m('button.btn-gray.btn--large.block', 'Large'),
-              m('button.btn-gray.btn--half', 'Half'),
-              m('button.btn-gray.btn--fill', 'Fill')
+              m('button.btn-gray.btn--small.block.margin-bottom-small', 'Small'),
+              m('button.btn-gray.btn--medium.block.margin-bottom-small', 'Medium'),
+              m('button.btn-gray.btn--large.block.margin-bottom-small', 'Large'),
+              m('button.btn-gray.btn--half.margin-bottom-small', 'Half'),
+              m('button.btn-gray.btn--fill.margin-bottom-small', 'Fill')
             ]);
           }
         }
@@ -69,10 +69,10 @@ Q.components.guide.styleguide.ui.buttons.container = {
         component: {
           view: function() {
             return m('div', [
-              m('button.btn-gray', 'Helvetica'),
-              m('button.btn-gray.btn--brandon', 'Brandon'),
-              m('button.btn-teal', 'Helvetica'),
-              m('button.btn-teal.btn--brandon', 'Brandon')
+              m('button.btn-gray.margin-right-small.margin-bottom-small', 'Helvetica'),
+              m('button.btn-gray.btn--brandon.margin-right-small.margin-bottom-small', 'Brandon'),
+              m('button.btn-teal.margin-right-small.margin-bottom-small', 'Helvetica'),
+              m('button.btn-teal.btn--brandon.margin-right-small.margin-bottom-small', 'Brandon')
             ]);
           }
         }
@@ -82,10 +82,10 @@ Q.components.guide.styleguide.ui.buttons.container = {
         component: {
           view: function() {
             return m('div', [
-              m('button.btn-gray.is-processing', 'Button'),
-              m('button.btn-teal.is-processing', 'Button'),
-              m('button.btn-white.is-processing', 'Button'),
-              m('button.btn-red.is-processing', 'Button')
+              m('button.btn-gray.is-processing.margin-right-small.margin-bottom-small', 'Button'),
+              m('button.btn-teal.is-processing.margin-right-small.margin-bottom-small', 'Button'),
+              m('button.btn-white.is-processing.margin-right-small.margin-bottom-small', 'Button'),
+              m('button.btn-red.is-processing.margin-right-small.margin-bottom-small', 'Button')
             ]);
           }
         }
@@ -95,9 +95,9 @@ Q.components.guide.styleguide.ui.buttons.container = {
         component: {
           view: function() {
             return m('div', [
-              m('button.btn-dropdown-gray', 'Dropdown'),
-              m('button.btn-dropdown-teal', 'Dropdown'),
-              m('button.btn-dropdown-white', 'Dropdown')
+              m('button.btn-dropdown-gray.margin-right-small.margin-bottom-small', 'Dropdown'),
+              m('button.btn-dropdown-teal.margin-right-small.margin-bottom-small', 'Dropdown'),
+              m('button.btn-dropdown-white.margin-right-small.margin-bottom-small', 'Dropdown')
             ]);
           }
         }
@@ -132,9 +132,9 @@ Q.components.guide.styleguide.ui.buttons.container = {
           view: function() {
             return m('div', [
               m('p.text-2.margin-bottom-medium', m.trust('For a full list of available icons <a href="/styleguide/icons">go here</a>.')),
-              m('button.btn-gray.icon-product-navy.icon--left.margin-bottom-medium', 'Icon Left'),
-              m('button.btn-gray.icon-product-navy.icon--right.margin-bottom-medium', 'Icon Center'),
-              m('button.btn-gray.icon-product-navy.icon--left.margin-bottom-medium', [
+              m('button.btn-gray.icon-product-navy.icon--left.margin-right-small.margin-bottom-small', 'Icon Left'),
+              m('button.btn-gray.icon-product-navy.icon--right.margin-right-small.margin-bottom-small', 'Icon Center'),
+              m('button.btn-gray.icon-product-navy.icon--left.margin-right-small.margin-bottom-small', [
                 m('.icon-chevron-down-navy.icon--right', 'Icon Both')
               ])
             ]);

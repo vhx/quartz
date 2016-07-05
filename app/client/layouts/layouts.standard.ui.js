@@ -12,9 +12,10 @@ Q.layouts.standard.ui.container = {
           ]),
           m('div.column.small-8.padding-reset', [
             m('section.code-bar', [
+              item.code ?
               m('pre.padding-medium', [
                 m('code.hljs.' + item.code.language, m.trust(item.code.template))
-              ])
+              ]) : ''
             ])
           ])
         ]);

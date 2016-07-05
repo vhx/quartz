@@ -8,7 +8,8 @@ window.Q ={
     },
     shared: {
       intro: { ui: {} },
-      block: { ui: {} }
+      block: { ui: {} },
+      options: { ui: {} }
     },
     guide: {
       styleguide: {
