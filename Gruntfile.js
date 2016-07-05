@@ -1,5 +1,7 @@
 'use strict';
 
+const fs = require('fs');
+
 module.exports = function(grunt) {
 
   grunt.initConfig({
@@ -80,24 +82,25 @@ module.exports = function(grunt) {
     grunt.file.expand('quartz-js/components/*').forEach(function(dir) {
       let component_name = dir.substr(dir.lastIndexOf('/')+1);
 
-      if (component_name !== 'scope.js') {
-        // get the current concat object from initConfig
-        let concat = grunt.config.get('concat') || {};
-
-        // create a subtask for each module, find all src files
-        // and combine into a single js file per module
-        let dir_path = [dir + '/**/*.js', '!' + dir + '/docs/*.js', '!' + dir + '/docs/*.html.js'];
-        let opts = { files: {} };
-
-        opts.files['quartz-rails/vendor/assets/javascripts/vhx-quartz.' + component_name + '.js'] = dir_path;
-        opts.files['distro/vhx-quartz.' + component_name + '.js'] = dir_path;
-
-        concat[component_name] = opts;
-
-        // add module subtasks to the concat task in initConfig
-        grunt.config.set('concat', concat);
+      if (component_name === 'scope.js') {
+        component_name = 'scope';
       }
 
+      // get the current concat object from initConfig
+      let concat = grunt.config.get('concat') || {};
+
+      // wcreate a subtask for each module, find all src files
+      // and combine into a single js file per module
+      let dir_path = [dir + '/**/*.js', '!' + dir + '/docs/**/*.js'];
+      let opts = { files: {} };
+
+      opts.files['quartz-rails/vendor/assets/javascripts/vhx-quartz.' + component_name + '.js'] = dir_path;
+      opts.files['distro/vhx-quartz.' + component_name + '.js'] = dir_path;
+
+      concat[component_name] = opts;
+
+      // add module subtasks to the concat task in initConfig
+      grunt.config.set('concat', concat);
     });
   });
 
@@ -105,7 +108,8 @@ module.exports = function(grunt) {
     grunt.file.expand('quartz-js/components/*').forEach(function(dir) {
       let component_name = dir.substr(dir.lastIndexOf('/')+1);
 
-      if (component_name !== 'header' && component_name !== 'search_input' && component_name !== 'scope.js') {
+      if (component_name !== 'scope.js' && fs.existsSync(dir + '/styles')) {
+
         // get the current concat object from initConfig
         let sass = grunt.config.get('sass') || {};
 
