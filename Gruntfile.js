@@ -47,6 +47,14 @@ module.exports = function(grunt) {
         }
       }
     },
+    babel: {
+      options: {
+        presets: ['es2015']
+      },
+      dist: {
+        files: {}
+      }
+    },
     copy: {
       css: {
         cwd: 'quartz-rails/vendor/assets/stylesheets/',
@@ -81,26 +89,31 @@ module.exports = function(grunt) {
   grunt.registerTask('prepareComponents', function() {
     grunt.file.expand('quartz-js/components/*').forEach(function(dir) {
       let component_name = dir.substr(dir.lastIndexOf('/')+1);
-
+      let dir_path = [dir + '/**/*.js', '!' + dir + '/docs/**/*.js'];
       if (component_name === 'scope.js') {
         component_name = 'scope';
+        dir_path = [dir];
       }
 
       // get the current concat object from initConfig
       let concat = grunt.config.get('concat') || {};
+      let babel = grunt.config.get('babel') || {};
 
-      // wcreate a subtask for each module, find all src files
+      // create a subtask for each module, find all src files
       // and combine into a single js file per module
-      let dir_path = [dir + '/**/*.js', '!' + dir + '/docs/**/*.js'];
-      let opts = { files: {} };
 
-      opts.files['quartz-rails/vendor/assets/javascripts/vhx-quartz.' + component_name + '.js'] = dir_path;
-      opts.files['distro/vhx-quartz.' + component_name + '.js'] = dir_path;
+      let concat_opts = { files: {} };
 
-      concat[component_name] = opts;
+      concat_opts.files['quartz-rails/vendor/assets/javascripts/vhx-quartz.' + component_name + '.js'] = dir_path;
+      concat_opts.files['distro/vhx-quartz.' + component_name + '.js'] = dir_path;
+      babel.dist.files['quartz-rails/vendor/assets/javascripts/vhx-quartz.' + component_name + '.js'] = 'quartz-rails/vendor/assets/javascripts/vhx-quartz.' + component_name + '.js';
+      babel.dist.files['distro/vhx-quartz.' + component_name + '.js'] = 'distro/vhx-quartz.' + component_name + '.js';
+
+      concat[component_name] = concat_opts;
 
       // add module subtasks to the concat task in initConfig
       grunt.config.set('concat', concat);
+      grunt.config.set('babel', babel);
     });
   });
 
@@ -149,9 +162,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-babel');
 
   grunt.registerTask('build-icons', ['clean:pre_svg', 'grunt-svg-css', 'copy:svg', 'concat:svg', 'clean:svg']);
-  grunt.registerTask('component-js', ['prepareComponents', 'concat']);
+  grunt.registerTask('component-js', ['prepareComponents', 'concat', 'babel']);
   grunt.registerTask('component-styles', ['prepareComponentStyles']);
 
   grunt.registerTask('build', ['sass_globbing', 'cssmin', 'copy:css', 'component-js', 'component-styles', 'sass']);
