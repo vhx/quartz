@@ -118,7 +118,7 @@ Q.components.guide.styleguide.ui.colors_external.container = {
   view: function(ctrl) {
     return m('section#guide--style-brand-colors', [
       m.component(Q.components.shared.intro.ui.container, {
-        title: 'Brand Colors',
+        title: 'External Brand Colors',
         intro: 'When you need a lighter or darker version of a brand color (say for a new button) use the SASS darken, lighten, and transparentize methods (show to the right).'
       }),
       m.component(Q.components.guide.styleguide.ui.colors_template, {
