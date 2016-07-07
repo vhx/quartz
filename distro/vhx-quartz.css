@@ -3295,6 +3295,9 @@ img {
 .clearfix:after {
   clear: both; }
 
+.clear {
+  clear: both; }
+
 textarea {
   height: auto;
   min-height: 50px; }
