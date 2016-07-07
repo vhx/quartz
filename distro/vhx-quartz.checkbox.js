@@ -5,6 +5,7 @@ vhxm.components.shared.checkbox.ui.container = {
     return m('fieldset.checkbox.' + (opts.size ? opts.size : 'medium') + (opts.type === 'toggle' ? '.alt' : ''), [m('input[type=checkbox]', {
       checked: opts.checked,
       name: opts.name,
+      value: opts.value,
       onchange: opts.onchange,
       id: opts.name
     }), m('label', {

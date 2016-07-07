@@ -32,7 +32,7 @@ vhxm.components.shared.search_input.ui.container = {
     return new vhxm.components.shared.search_input.controller(opts);
   },
   view: function view(ctrl, opts) {
-    return m('input.c-select--search.padding-right-large', {
+    return m('input.c-select--search.padding-right-large.icon-search-navy.icon--xsmall', {
       config: opts.config ? opts.config : '',
       type: 'text',
       placeholder: opts.placeholder ? opts.placeholder : 'Search',

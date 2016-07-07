@@ -27,10 +27,6 @@
 ..................................... */
 /* helper function for margin and padding
 ......................................*/
-.c-select--input-container:after {
-  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Cpath%20d%3D%22M21.8%2019.5L17.4%2015c-.6.9-1.5%201.7-2.4%202.4l4.5%204.4c1.4%201.6%203.8-.8%202.3-2.3z%22%20fill%3D%22%23375667%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M15%2017.4c4.4-3%205.2-9.4%201.8-13.4C13.8.5%208.6-.3%204.7%202.3.9%204.7-.4%209.9%201.7%2014c2.2%204.4%207.7%206.2%2012.1%204.1.4-.2.8-.5%201.2-.7zm-5.2-1.7C6.7%2015.7%204%2013%204%209.8%204%206.7%206.7%204%209.8%204c3.2%200%205.8%202.7%205.8%205.8.1%203.2-2.6%205.9-5.8%205.9z%22%20fill%3D%22%23375667%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M9.8%202.2c4.2%200%207.7%203.4%207.7%207.7%200%201.5-.5%203.1-1.4%204.3-.5.7-1%201.3-1.7%201.8l-.3.2c-1.2.9-2.8%201.3-4.3%201.3-4.2%200-7.7-3.4-7.7-7.7.1-4.2%203.5-7.6%207.7-7.6m0-1.5C4.7.7.6%204.8.6%209.9s4.1%209.2%209.2%209.2c1.8%200%203.7-.6%205.2-1.6.9-.6%201.7-1.4%202.3-2.4%201.1-1.5%201.6-3.3%201.6-5.2.1-5.1-4-9.2-9.1-9.2z%22%20fill%3D%22%23375667%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
-  background-repeat: no-repeat; }
-
 /*
   Mithril Chosen-like Dropdown w/ Search styles
   See app/assets/javascripts/_shared/components/select/select.ui.js for markup
@@ -78,17 +74,6 @@
   border-radius: 5px;
   z-index: 2;
   background: #fff; }
-  .c-select--input-container:after {
-    position: absolute;
-    top: 50%;
-    right: 24px;
-    width: 20px;
-    height: 20px;
-    margin-top: -10px;
-    content: ' ';
-    display: block;
-    background-position: 97% 50%;
-    background-size: 15px; }
 
 .c-select--container.has-search .c-select--dropdown {
   min-height: 150px; }
