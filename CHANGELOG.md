@@ -1,3 +1,19 @@
+### 0.8.3
+**2016-07-07**
+* Fix Checkbox guide > show label in demo
+* Update Filter component > add size option
+* Update Header component > add border option
+* Update Radio component > add template item option and onchange handler
+* Add `clear` class for clearing floats
+
+### 0.8.2
+**2016-07-06**
+* Fix bug with build script not processing JS with Babel
+
+### 0.8.1
+**2016-07-06**
+* Fix grunt build script for exported component JS/Styles
+
 ### 0.8.0
 **2016-07-05**
 
