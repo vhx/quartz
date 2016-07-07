@@ -7,6 +7,7 @@ vhxm.components.shared.radio.ui.container = {
             m('input', {
               id: opts.name + '-' + index,
               type: 'radio',
+              onchange: opts.onchange,
               name: opts.name,
               value: item.value,
               checked: item.checked ? item.checked : null
@@ -23,7 +24,10 @@ vhxm.components.shared.radio.ui.container = {
                 ])
               ]),
               m('span.radio--label', item.label)
-            ])
+            ]),
+            item.template ? m('div.clear.padding-top-xsmall', [
+              item.template
+            ]) : ''
           ]);
         })
       ])
