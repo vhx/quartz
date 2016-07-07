@@ -1,3 +1,10 @@
+### 0.8.4
+**2016-07-07**
+* Add missind brand text colors
+* Fix search input styles
+* Small typo fixes
+* Additional checkbox value option
+
 ### 0.8.3
 **2016-07-07**
 * Fix Checkbox guide > show label in demo
