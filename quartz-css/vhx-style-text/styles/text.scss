@@ -290,6 +290,147 @@ a.text--red {
   }
 }
 
+.text--orange {
+  color: $vhx-orange;
+  &.text--transparent {
+    color: transparentize($vhx-orange, .5);
+  }
+}
+a.text--orange {
+  &:link,
+  &:visited {
+    color: $vhx-orange;
+    text-decoration: none;
+  }
+  &:hover,
+  &:active {
+    color: $vhx-orange;
+    text-decoration: none;
+    &.is-hover-text--orange {
+      color: $vhx-orange;
+    }
+  }
+  &.is-disabled {
+  &:link, &:visited,
+  &:hover, &:active {
+      color: $vhx-orange;
+    }
+  }
+}
+
+.text--debian {
+  color: $vhx-debian;
+  &.text--transparent {
+    color: transparentize($vhx-debian, .5);
+  }
+}
+a.text--debian {
+  &:link,
+  &:visited {
+    color: $vhx-debian;
+    text-decoration: none;
+  }
+  &:hover,
+  &:active {
+    color: $vhx-debian;
+    text-decoration: none;
+    &.is-hover-text--debian {
+      color: $vhx-debian;
+    }
+  }
+  &.is-disabled {
+  &:link, &:visited,
+  &:hover, &:active {
+      color: $vhx-debian;
+    }
+  }
+}
+
+.text--purple {
+  color: $vhx-purple;
+  &.text--transparent {
+    color: transparentize($vhx-purple, .5);
+  }
+}
+
+a.text--purple {
+  &:link,
+  &:visited {
+    color: $vhx-purple;
+    text-decoration: none;
+  }
+  &:hover,
+  &:active {
+    color: $vhx-purple;
+    text-decoration: none;
+    &.is-hover-text--purple {
+      color: $vhx-purple;
+    }
+  }
+  &.is-disabled {
+  &:link, &:visited,
+  &:hover, &:active {
+      color: $vhx-purple;
+    }
+  }
+}
+
+.text--currant {
+  color: $vhx-currant;
+  &.text--transparent {
+    color: transparentize($vhx-currant, .5);
+  }
+}
+a.text--currant {
+  &:link,
+  &:visited {
+    color: $vhx-currant;
+    text-decoration: none;
+  }
+  &:hover,
+  &:active {
+    color: $vhx-currant;
+    text-decoration: none;
+    &.is-hover-text--currant {
+      color: $vhx-currant;
+    }
+  }
+  &.is-disabled {
+  &:link, &:visited,
+  &:hover, &:active {
+      color: $vhx-currant;
+    }
+  }
+}
+
+.text--blue {
+  color: $vhx-blue;
+  &.text--transparent {
+    color: transparentize($vhx-blue, .5);
+  }
+}
+a.text--blue {
+  &:link,
+  &:visited {
+    color: $vhx-blue;
+    text-decoration: none;
+  }
+  &:hover,
+  &:active {
+    color: $vhx-blue;
+    text-decoration: none;
+    &.is-hover-text--blue {
+      color: $vhx-blue;
+    }
+  }
+  &.is-disabled {
+  &:link, &:visited,
+  &:hover, &:active {
+      color: $vhx-blue;
+    }
+  }
+}
+
 /* modifiers
 ......................................*/
 .text--bold {
