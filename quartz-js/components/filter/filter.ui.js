@@ -6,7 +6,7 @@ vhxm.components.shared.filter.ui.container = {
   view: function(ctrl, opts) {
     let ready_to_apply = ctrl.state.dropdown.isOpen() && ctrl.state.selected() && ctrl.state.selected().length;
 
-    return m('.c-filter--container.dropdown.dropdown--large' + (ctrl.state.dropdown.isOpen() ? '.is-open' : ''), [
+    return m('.c-filter--container.dropdown.dropdown--' + (opts.size ? opts.size : 'large') + (ctrl.state.dropdown.isOpen() ? '.is-open' : ''), [
       m('div.row', [
         m('.column.small-3.padding-reset', [
           m('a.c-filter--trigger.block.radius.head-5.text--gray' +
