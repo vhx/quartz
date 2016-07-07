@@ -14,12 +14,20 @@ Q.components.guide.js.ui.checkbox.container = {
               m.component(vhxm.components.shared.checkbox.ui.container, {
                 name: 'standard',
                 checked: true,
-                size: 'medium'
+                size: 'small',
+                label: 'Label'
               }),
               m.component(vhxm.components.shared.checkbox.ui.container, {
                 name: 'standard',
                 checked: true,
-                size: 'large'
+                size: 'medium',
+                label: 'Label'
+              }),
+              m.component(vhxm.components.shared.checkbox.ui.container, {
+                name: 'standard',
+                checked: true,
+                size: 'large',
+                label: 'Label'
               }),
               m.component(vhxm.components.shared.checkbox.ui.container, {
                 name: 'toggle-large',

@@ -2,7 +2,8 @@
 m.component(vhxm.components.shared.checkbox.ui.container, {
   name: 'standard',
   checked: true,
-  size: 'medium'
+  size: 'medium',
+  label: 'Label'
 });
 
 // toggle checkbox
