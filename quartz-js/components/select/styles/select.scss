@@ -57,19 +57,6 @@ $border_color: #8d9da6;
   border-radius: 5px;
   z-index: 2;
   background: #fff;
-  &:after {
-    position: absolute;
-    top: 50%;
-    right: 24px;
-    width: 20px;
-    height: 20px;
-    margin-top: -10px;
-    content: ' ';
-    display: block;
-    @extend %icon-search-navy;
-    background-position: 97% 50%;
-    background-size: 15px;
-  }
 }
 
 .c-select--container.has-search {

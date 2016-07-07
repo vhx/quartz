@@ -63,7 +63,7 @@ Q.components.guide.styleguide.ui.colors_template = {
         m('h4.margin-bottom-medium.padding-bottom-small.border-bottom.border--gray-light.text--bold.text--gray', data.name) : '',
       data.description ?
         m('div.text-contain.text-2', [
-          m('p', 'When you need a lighter or darker version of a brand color (say for a new button) use the SASS darken, lighten, and transparentize methods (show to the right).')
+          m('p', 'When you need a lighter or darker version of a brand color (say for a new button) use the SASS darken, lighten, and transparentize methods (shown to the right).')
         ]) : '',
       ctrl[data.type].map(function(item) {
         return m('.inline.margin-right-medium.margin-bottom-medium' + (item.css || ''), [
@@ -118,7 +118,7 @@ Q.components.guide.styleguide.ui.colors_external.container = {
   view: function(ctrl) {
     return m('section#guide--style-brand-colors', [
       m.component(Q.components.shared.intro.ui.container, {
-        title: 'Brand Colors',
+        title: 'External Brand Colors',
         intro: 'When you need a lighter or darker version of a brand color (say for a new button) use the SASS darken, lighten, and transparentize methods (show to the right).'
       }),
       m.component(Q.components.guide.styleguide.ui.colors_template, {

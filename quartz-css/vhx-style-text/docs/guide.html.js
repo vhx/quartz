@@ -31,7 +31,12 @@ Q.components.guide.styleguide.ui.text.container = {
               m('p.text-2.text--yellow.margin-bottom-small', 'Text Yellow'),
               m('p.text-2.text--red.margin-bottom-small', 'Text Red'),
               m('p.text-2.text--green.margin-bottom-small', 'Text Green'),
-              m('p.text-2.text--white.inline.bg-grid-darksmall', 'Text White')
+              m('p.text-2.text--white.bg-grid-dark.margin-bottom-small.inline', 'Text White'),
+              m('p.text-2.text--orange.margin-bottom-small', 'Text Orange'),
+              m('p.text-2.text--debian.margin-bottom-small', 'Text Debian'),
+              m('p.text-2.text--purple.margin-bottom-small', 'Text Purple'),
+              m('p.text-2.text--currant.margin-bottom-small', 'Text Currant'),
+              m('p.text-2.text--blue.margin-bottom-small', 'Text Blue')
             ]);
           }
         }
@@ -57,7 +62,12 @@ Q.components.guide.styleguide.ui.text.container = {
               m('a[href=#].text-2.block.text--gray.margin-bottom-small', 'Link Gray'),
               m('a[href=#].text-2.text--gray-light.inline.bg-navy.margin-bottom-small', 'Link Gray Light'),
               m('a[href=#].text-2.block.text--navy.margin-bottom-small', 'Link Navy'),
-              m('a[href=#].text-2.text--white.inline.bg-grid-dark.margin-bottom-small', 'Link White')
+              m('a[href=#].text-2.text--white.inline.bg-grid-dark.margin-bottom-small', 'Link White'),
+              m('a[href=#].text-2.block.text--orange.margin-bottom-small', 'Link Orange'),
+              m('a[href=#].text-2.block.text--debian.margin-bottom-small', 'Link Debian'),
+              m('a[href=#].text-2.block.text--purple.margin-bottom-small', 'Link Purple'),
+              m('a[href=#].text-2.block.text--currant.margin-bottom-small', 'Link Currant'),
+              m('a[href=#].text-2.block.text--blue.margin-bottom-small', 'Link Blue')
             ]);
           }
         }
@@ -71,7 +81,13 @@ Q.components.guide.styleguide.ui.text.container = {
               m('a[href=#].text-2.is-disabled.block.text--gray.margin-bottom-small', 'Link Gray'),
               m('a[href=#].text-2.is-disabled.text--gray-light.inline.bg-navy.margin-bottom-small', 'Link Gray Light'),
               m('a[href=#].text-2.is-disabled.block.text--navy.margin-bottom-small', 'Link Navy'),
-              m('a[href=#].text-2.is-disabled.text--white.inline.bg-grid-dark.margin-bottom-small', 'Link White')
+              m('a[href=#].text-2.is-disabled.text--white.inline.bg-grid-dark.margin-bottom-small', 'Link White'),
+              m('a[href=#].text-2.is-disabled.block.text--orange.margin-bottom-small', 'Link Orange'),
+              m('a[href=#].text-2.is-disabled.block.text--debian.margin-bottom-small', 'Link Debian'),
+              m('a[href=#].text-2.is-disabled.block.text--purple.margin-bottom-small', 'Link Purple'),
+              m('a[href=#].text-2.is-disabled.block.text--currant.margin-bottom-small', 'Link Currant'),
+              m('a[href=#].text-2.is-disabled.block.text--blue.margin-bottom-small', 'Link Blue')
+
             ]);
           }
         }
