@@ -7250,6 +7250,86 @@ a.text--red:hover, a.text--red:active {
 a.text--red.is-disabled:link, a.text--red.is-disabled:visited, a.text--red.is-disabled:hover, a.text--red.is-disabled:active {
   color: #D3104A; }
 
+.text--orange {
+  color: #D06B5E; }
+  .text--orange.text--transparent {
+    color: rgba(208, 107, 94, 0.5); }
+
+a.text--orange:link, a.text--orange:visited {
+  color: #D06B5E;
+  text-decoration: none; }
+a.text--orange:hover, a.text--orange:active {
+  color: #D06B5E;
+  text-decoration: none; }
+  a.text--orange:hover.is-hover-text--orange, a.text--orange:active.is-hover-text--orange {
+    color: #D06B5E; }
+a.text--orange.is-disabled:link, a.text--orange.is-disabled:visited, a.text--orange.is-disabled:hover, a.text--orange.is-disabled:active {
+  color: #D06B5E; }
+
+.text--debian {
+  color: #BA0F45; }
+  .text--debian.text--transparent {
+    color: rgba(186, 15, 69, 0.5); }
+
+a.text--debian:link, a.text--debian:visited {
+  color: #BA0F45;
+  text-decoration: none; }
+a.text--debian:hover, a.text--debian:active {
+  color: #BA0F45;
+  text-decoration: none; }
+  a.text--debian:hover.is-hover-text--debian, a.text--debian:active.is-hover-text--debian {
+    color: #BA0F45; }
+a.text--debian.is-disabled:link, a.text--debian.is-disabled:visited, a.text--debian.is-disabled:hover, a.text--debian.is-disabled:active {
+  color: #BA0F45; }
+
+.text--purple {
+  color: #783479; }
+  .text--purple.text--transparent {
+    color: rgba(120, 52, 121, 0.5); }
+
+a.text--purple:link, a.text--purple:visited {
+  color: #783479;
+  text-decoration: none; }
+a.text--purple:hover, a.text--purple:active {
+  color: #783479;
+  text-decoration: none; }
+  a.text--purple:hover.is-hover-text--purple, a.text--purple:active.is-hover-text--purple {
+    color: #783479; }
+a.text--purple.is-disabled:link, a.text--purple.is-disabled:visited, a.text--purple.is-disabled:hover, a.text--purple.is-disabled:active {
+  color: #783479; }
+
+.text--currant {
+  color: #2E064A; }
+  .text--currant.text--transparent {
+    color: rgba(46, 6, 74, 0.5); }
+
+a.text--currant:link, a.text--currant:visited {
+  color: #2E064A;
+  text-decoration: none; }
+a.text--currant:hover, a.text--currant:active {
+  color: #2E064A;
+  text-decoration: none; }
+  a.text--currant:hover.is-hover-text--currant, a.text--currant:active.is-hover-text--currant {
+    color: #2E064A; }
+a.text--currant.is-disabled:link, a.text--currant.is-disabled:visited, a.text--currant.is-disabled:hover, a.text--currant.is-disabled:active {
+  color: #2E064A; }
+
+.text--blue {
+  color: #0F4E7B; }
+  .text--blue.text--transparent {
+    color: rgba(15, 78, 123, 0.5); }
+
+a.text--blue:link, a.text--blue:visited {
+  color: #0F4E7B;
+  text-decoration: none; }
+a.text--blue:hover, a.text--blue:active {
+  color: #0F4E7B;
+  text-decoration: none; }
+  a.text--blue:hover.is-hover-text--blue, a.text--blue:active.is-hover-text--blue {
+    color: #0F4E7B; }
+a.text--blue.is-disabled:link, a.text--blue.is-disabled:visited, a.text--blue.is-disabled:hover, a.text--blue.is-disabled:active {
+  color: #0F4E7B; }
+
 /* modifiers
 ......................................*/
 .text--bold {

@@ -21,10 +21,14 @@ vhxm.components.shared.filter.controller = function (opts) {
       opts.api({
         state: self.state,
         model: self.model,
+        applyFilter: self.applyFilter,
         removeFilter: self.removeFilter,
         addFilter: self.addFilter
       });
     }
+
+    opts.beforeOpen = opts.beforeOpen ? opts.beforeOpen : function () {};
+    opts.afterClose = opts.afterClose ? opts.afterClose : function () {};
   };
 
   self.handleFilterClick = function (event, name) {
@@ -44,11 +48,18 @@ vhxm.components.shared.filter.controller = function (opts) {
 
     var state = self.state.dropdown.isOpen() ? false : true;
 
-    if (!state && self.state.selected().length) {
+    if (!state && self.state.selected().length && !opts.applyOnChange) {
       self.applyFilter();
     }
 
     self.state.dropdown.isOpen(state);
+
+    if (state) {
+      self.state.dropdown.filtersOpen([]);
+      return opts.beforeOpen();
+    } else {
+      return opts.afterClose();
+    }
   };
 
   self.handleFilterRemoveClick = function (filter) {
@@ -77,6 +88,11 @@ vhxm.components.shared.filter.controller = function (opts) {
   };
 
   self.addFilter = function (filter, type) {
+    self.state.selected().map(function (item) {
+      if (item.type === type) {
+        self.removeFilter(item);
+      }
+    });
     self.state.selected().push({
       type: type,
       label: filter.label,
@@ -87,6 +103,14 @@ vhxm.components.shared.filter.controller = function (opts) {
   if (opts && opts.init) {
     self.init();
   }
+
+  $(document).on('click', function (event) {
+    if ($('.c-filter--container.is-open').length && !$(event.target).closest('.c-filter--container.is-open').length) {
+      m.startComputation();
+      self.state.dropdown.isOpen(false);
+      m.endComputation();
+    }
+  });
 };
 vhxm.components.shared.filter.model = function () {};
 
@@ -106,7 +130,7 @@ vhxm.components.shared.filter.ui.container = {
     return new vhxm.components.shared.filter.controller(opts);
   },
   view: function view(ctrl, opts) {
-    var ready_to_apply = ctrl.state.dropdown.isOpen() && ctrl.state.selected() && ctrl.state.selected().length;
+    var ready_to_apply = ctrl.state.dropdown.isOpen() && ctrl.state.selected() && ctrl.state.selected().length && !opts.applyOnChange;
 
     return m('.c-filter--container.dropdown.dropdown--' + (opts.size ? opts.size : 'large') + (ctrl.state.dropdown.isOpen() ? '.is-open' : ''), [m('div.row', [m('.column.small-3.padding-reset', [m('a.c-filter--trigger.block.radius.head-5.text--gray' + (ready_to_apply ? '.text-center' : '.icon--right.icon-' + (ctrl.state.dropdown.isOpen() ? 'x-navy' : 'chevron-down-gray') + '.icon--xxsmall.margin-right-medium.fill-width'), {
       onclick: ctrl.handleApplyClick
