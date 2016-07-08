@@ -78,7 +78,7 @@ vhxm.components.shared.filter.controller = function (opts) {
   self.removeFilter = function (filter, callback) {
     self.state.selected().filter(function (item, index) {
       if (item.value === filter.value) {
-        self.state.selected().splice(item, 1);
+        self.state.selected().splice(index, 1);
       }
     });
 
@@ -132,9 +132,9 @@ vhxm.components.shared.filter.ui.container = {
   view: function view(ctrl, opts) {
     var ready_to_apply = ctrl.state.dropdown.isOpen() && ctrl.state.selected() && ctrl.state.selected().length && !opts.applyOnChange;
 
-    return m('.c-filter--container.dropdown.dropdown--' + (opts.size ? opts.size : 'large') + (ctrl.state.dropdown.isOpen() ? '.is-open' : ''), [m('div.row', [m('.column.small-3.padding-reset', [m('a.c-filter--trigger.block.radius.head-5.text--gray' + (ready_to_apply ? '.text-center' : '.icon--right.icon-' + (ctrl.state.dropdown.isOpen() ? 'x-navy' : 'chevron-down-gray') + '.icon--xxsmall.margin-right-medium.fill-width'), {
+    return m('.c-filter--container.dropdown.dropdown--' + (opts.size ? opts.size : 'large') + (ctrl.state.dropdown.isOpen() ? '.is-open' : ''), [m('div.row', [m('.c-filter--trigger-container.small-3.column.pull.padding-reset', [m('a.c-filter--trigger.block.radius.head-5.text--gray' + (ready_to_apply ? '.text-center' : '.icon--right.icon-' + (ctrl.state.dropdown.isOpen() ? 'x-navy' : 'chevron-down-gray') + '.icon--xxsmall.margin-right-medium.fill-width'), {
       onclick: ctrl.handleApplyClick
-    }, ready_to_apply ? 'Apply' : 'Filters'), m.component(vhxm.components.shared.filter.ui.dropdown, opts, ctrl)]), m('.column.small-13.padding-reset', [m('.margin-left-small.padding-left-medium.border-left', [ctrl.state.applied() && ctrl.state.selected().length ? m.component(vhxm.components.shared.filter.ui.applied, opts, ctrl) : m('span.c-filter--label', opts.label ? opts.label : '')])])])]);
+    }, ready_to_apply ? 'Apply' : 'Filters'), m.component(vhxm.components.shared.filter.ui.dropdown, opts, ctrl)]), m('.c-filter--applied-container.small-13.column.pull.padding-reset', [m('.margin-left-small.padding-left-medium.border-left', [ctrl.state.applied() && ctrl.state.selected().length ? m.component(vhxm.components.shared.filter.ui.applied, opts, ctrl) : m('span.c-filter--label', opts.label ? opts.label : '')])])])]);
   }
 };
 
