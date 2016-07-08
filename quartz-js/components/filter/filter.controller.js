@@ -67,7 +67,7 @@ vhxm.components.shared.filter.controller = function(opts) {
   self.removeFilter = function(filter, callback) {
     self.state.selected().filter(function(item, index) {
       if (item.value === filter.value) {
-        self.state.selected().splice(item, 1);
+        self.state.selected().splice(index, 1);
       }
     });
 
