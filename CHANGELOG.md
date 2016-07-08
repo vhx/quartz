@@ -1,3 +1,12 @@
+### 0.8.7
+**2016-07-08**
+* Fix bug with removeFilter method in Filter component
+* Fix styling to allow for more space for filters
+
+### 0.8.6
+**2016-07-08**
+* Fix a variety of bugs with the Filter component
+
 ### 0.8.4
 **2016-07-07**
 * Add missind brand text colors
