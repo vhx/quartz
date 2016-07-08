@@ -4,8 +4,8 @@ vhxm.components.shared.filter.ui.container = {
     return new vhxm.components.shared.filter.controller(opts);
   },
   view: function(ctrl, opts) {
-    let ready_to_apply = ctrl.state.dropdown.isOpen() && ctrl.state.selected() && ctrl.state.selected().length;
-
+    let ready_to_apply = ctrl.state.dropdown.isOpen() && ctrl.state.selected() && ctrl.state.selected().length && !opts.applyOnChange;
+    
     return m('.c-filter--container.dropdown.dropdown--' + (opts.size ? opts.size : 'large') + (ctrl.state.dropdown.isOpen() ? '.is-open' : ''), [
       m('div.row', [
         m('.column.small-3.padding-reset', [
