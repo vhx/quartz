@@ -9,10 +9,14 @@ vhxm.components.shared.filter.controller = function(opts) {
       opts.api({
         state: self.state,
         model: self.model,
+        applyFilter: self.applyFilter,
         removeFilter: self.removeFilter,
         addFilter: self.addFilter,
       });
     }
+
+    opts.beforeOpen = opts.beforeOpen ? opts.beforeOpen : function() {};
+    opts.afterClose = opts.afterClose ? opts.afterClose : function() {};
   };
 
   self.handleFilterClick = function(event, name) {
@@ -33,11 +37,18 @@ vhxm.components.shared.filter.controller = function(opts) {
 
     let state = self.state.dropdown.isOpen() ? false : true;
 
-    if (!state && self.state.selected().length) {
+    if (!state && self.state.selected().length && !opts.applyOnChange) {
       self.applyFilter();
     }
 
     self.state.dropdown.isOpen(state);
+
+    if (state) {
+      self.state.dropdown.filtersOpen([]);
+      return opts.beforeOpen();
+    } else {
+      return opts.afterClose();
+    }
   };
 
   self.handleFilterRemoveClick = function(filter) {
@@ -66,6 +77,11 @@ vhxm.components.shared.filter.controller = function(opts) {
   };
 
   self.addFilter = function(filter, type) {
+    self.state.selected().map(function(item) {
+      if (item.type === type) {
+        self.removeFilter(item);
+      }
+    });
     self.state.selected().push({
       type: type,
       label: filter.label,
@@ -76,4 +92,12 @@ vhxm.components.shared.filter.controller = function(opts) {
   if (opts && opts.init) {
     self.init();
   }
+
+  $(document).on('click', function(event) {
+   if ($('.c-filter--container.is-open').length && !$(event.target).closest('.c-filter--container.is-open').length) {
+     m.startComputation();
+     self.state.dropdown.isOpen(false);
+     m.endComputation();
+   }
+ });
 };
