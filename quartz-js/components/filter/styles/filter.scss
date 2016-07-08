@@ -1,7 +1,7 @@
 @import "../../../../quartz-css/vhx-style-core/config/mixins";
 
 .c-filter--container {
-  width: 550px;
+  width: auto;
   .c-filter--applied {
     background-color: #D7DDE1;
   }
@@ -14,8 +14,14 @@
       left: 0;
     }
   }
+  .c-filter--trigger-container {
+    max-width: 125px;
+    min-width: 100px;
+  }
   .c-filter--dropdown {
-    &:before,
+    &:before {
+      left: 44px;
+    }
     &:after {
       left: 45px;
     }
