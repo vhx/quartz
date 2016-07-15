@@ -50,6 +50,13 @@
     th:last-child:before {
       display: none;
     }
+    .table--ticks {
+      .no--tick {
+        &:before {
+          display: none;
+        }
+      }
+    }
   }
 
   thead, th {
