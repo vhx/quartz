@@ -1,3 +1,10 @@
+### 0.8.8
+**2016-07-15**
+* Fix header component subtext color
+* Fix filter component bug fixes, improve styling, added filtersStartOpen option
+* Add processing states for dropdown buttons
+* Add table no--tick class for refined control of table ticks
+
 ### 0.8.7
 **2016-07-08**
 * Fix bug with removeFilter method in Filter component
