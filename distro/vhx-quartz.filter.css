@@ -29,6 +29,8 @@
 ......................................*/
 .c-filter--container {
   width: auto; }
+  .c-filter--container .c-filter--applied-container {
+    float: left !important; }
   .c-filter--container .c-filter--applied {
     background-color: #D7DDE1; }
   .c-filter--container.is-open .c-filter--trigger {
@@ -37,14 +39,17 @@
     right: auto;
     left: 0; }
   .c-filter--container .c-filter--trigger-container {
-    max-width: 125px;
-    min-width: 100px; }
+    width: 100px;
+    margin-top: 5px; }
   .c-filter--container .c-filter--dropdown:before {
     left: 44px; }
   .c-filter--container .c-filter--dropdown:after {
     left: 45px; }
   .c-filter--container .c-filter--dropdown .icon-calendar-navy {
     background-position: 10px center; }
+  .c-filter--container .c-filter--dropdown .radio--stacked {
+    padding-top: 0px;
+    padding-bottom: 0px; }
   .c-filter--container .c-filter--dropdown ul {
     max-height: none; }
   .c-filter--container .c-filter--dropdown .c-filter--item {
@@ -52,9 +57,12 @@
     padding: 15px !important;
     display: block; }
   .c-filter--container .c-filter--item-container {
-    display: none; }
+    display: none;
+    padding-bottom: 10px; }
     .c-filter--container .c-filter--item-container.is-active {
       display: block; }
+    .c-filter--container .c-filter--item-container .radio-teal label .radio--icon {
+      margin-right: 8px; }
   .c-filter--container .c-filter--trigger,
   .c-filter--container .c-filter--applied {
     background-position: right 15px center;
@@ -62,10 +70,12 @@
     height: 40px;
     padding: 10px; }
   .c-filter--container .c-filter--applied {
+    margin-bottom: 5px;
+    margin-top: 5px;
     margin-right: 10px;
-    padding-right: 40px;
+    padding-right: 0px;
     color: #00142B;
     border-radius: 3px; }
   .c-filter--container .c-filter--label {
-    height: 40px;
-    line-height: 40px; }
+    height: 50px;
+    line-height: 50px; }
