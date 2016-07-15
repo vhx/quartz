@@ -12,8 +12,9 @@ Q.components.guide.js.ui.filter.container = {
           view: function() {
             return m('div', [
               m.component(vhxm.components.shared.filter.ui.container, {
-                label: 'Customize this table',
                 api: m.prop(),
+                label: 'Customize',
+                filtersStartOpen: true,
                 filterHandler: function() {
                 },
                 filters: [
