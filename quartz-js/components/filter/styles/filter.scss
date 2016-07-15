@@ -2,6 +2,10 @@
 
 .c-filter--container {
   width: auto;
+
+  .c-filter--applied-container {
+    float: left !important;
+  }
   .c-filter--applied {
     background-color: #D7DDE1;
   }
@@ -15,8 +19,8 @@
     }
   }
   .c-filter--trigger-container {
-    max-width: 125px;
-    min-width: 100px;
+    width: 100px;
+    margin-top: 5px;
   }
   .c-filter--dropdown {
     &:before {
@@ -27,6 +31,10 @@
     }
     .icon-calendar-navy {
       background-position: 10px center;
+    }
+    .radio--stacked {
+      padding-top: 0px;
+      padding-bottom: 0px;
     }
     ul { max-height: none; }
     .c-filter--item {
@@ -40,6 +48,10 @@
     &.is-active {
       display: block;
     }
+    padding-bottom: 10px;
+    .radio-teal label .radio--icon {
+      margin-right: 8px;
+    }
   }
   .c-filter--trigger,
   .c-filter--applied {
@@ -49,13 +61,15 @@
     padding: 10px;
   }
   .c-filter--applied {
+    margin-bottom: 5px;
+    margin-top: 5px;
     margin-right: 10px;
-    padding-right: 40px;
+    padding-right: 0px;
     color: $navy;
     border-radius: 3px;
   }
   .c-filter--label {
-    height: 40px;
-    line-height: 40px;
+    height: 50px;
+    line-height: 50px;
   }
 }
