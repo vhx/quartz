@@ -18,7 +18,7 @@ vhxm.components.shared.filter.ui.container = {
         m('.c-filter--applied-container.small-13.column.pull.padding-reset', [
           m('.margin-left-small.padding-left-medium.border-left', [
             ctrl.state.applied() && ctrl.state.selected().length ?
-            m.component(vhxm.components.shared.filter.ui.applied, opts, ctrl) : m('span.c-filter--label', opts.label ? opts.label : '')
+            m.component(vhxm.components.shared.filter.ui.applied, opts, ctrl) : m('span.c-filter--label.text--gray', opts.label ? opts.label : m.trust('&nbsp;'))
           ])
         ])
       ])
@@ -33,13 +33,21 @@ vhxm.components.shared.filter.ui.applied = {
   view: function(ctrl) {
     return m('div', [
       ctrl.state.selected().map(function(item) {
-        return m('a.c-filter--applied.icon--right.icon-x-navy.icon--xxsmall', {
-          href: '#',
-          onclick: function(event) {
-            event.preventDefault();
-            ctrl.handleFilterRemoveClick(item);
-          }
-        }, item.label);
+        return m('span.c-filter--applied.inline', [
+          m('a.text--navy', {
+            href: '#',
+            onclick: function(event) {
+              event.preventDefault();
+              ctrl.openFilter(item);
+            }
+          }, item.label),
+          m('a.icon--center.icon-x-navy.icon--xxsmall', {
+            onclick: function(event) {
+              event.preventDefault();
+              ctrl.handleFilterRemoveClick(item);
+            }
+          })
+        ]);
       })
     ]);
   }
@@ -122,7 +130,7 @@ vhxm.components.shared.filter.ui.data = {
                 onchange: function(event) {
                   ctrl.removeFilter(child);
                   if (event.target.checked) {
-                   ctrl.addFilter(child, item);
+                   ctrl.addFilter(child, item.type);
                   }
                 }
               })

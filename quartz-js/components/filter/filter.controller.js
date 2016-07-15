@@ -15,6 +15,23 @@ vhxm.components.shared.filter.controller = function(opts) {
       });
     }
 
+    if (opts.filtersStartOpen) {
+      opts.filters.map(function(item) {
+        let name;
+
+        if (typeof(item) === 'string' && vhxm.components.shared.filter.ui[item]) {
+          name = item;
+        }
+        if (typeof(item) === 'object') {
+          name = item.type;
+        }
+
+        if (name) {
+          self.state.dropdown.filtersOpen().push(name);
+        }
+      });
+    }
+
     opts.beforeOpen = opts.beforeOpen ? opts.beforeOpen : function() {};
     opts.afterClose = opts.afterClose ? opts.afterClose : function() {};
   };
@@ -44,7 +61,6 @@ vhxm.components.shared.filter.controller = function(opts) {
     self.state.dropdown.isOpen(state);
 
     if (state) {
-      self.state.dropdown.filtersOpen([]);
       return opts.beforeOpen();
     } else {
       return opts.afterClose();
@@ -74,6 +90,11 @@ vhxm.components.shared.filter.controller = function(opts) {
     if (callback) {
       callback();
     }
+  };
+
+  self.openFilter = function(item) {
+    self.state.dropdown.filtersOpen().push(item.type);
+    self.state.dropdown.isOpen(true);
   };
 
   self.addFilter = function(filter, type) {
