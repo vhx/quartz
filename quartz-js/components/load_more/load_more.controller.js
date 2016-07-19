@@ -1,7 +1,6 @@
 vhxm.components.shared.load_more.controller = function(opts) {
   var self = this;
-
-console.log(opts);
+  
   self.state = new vhxm.components.shared.load_more.state();
   self.action = opts.action ? opts.action : function() {};
 

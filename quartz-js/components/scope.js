@@ -30,6 +30,9 @@ if (typeof(vhxm) !== 'undefined') {
     },
     load_more: {
       ui: {}
+    },
+    sidebar: {
+      ui: {}
     }
   };
 }
