@@ -1,6 +1,6 @@
 vhxm.components.shared.load_more.controller = function(opts) {
   var self = this;
-  
+
   self.state = new vhxm.components.shared.load_more.state();
   self.action = opts.action ? opts.action : function() {};
 
@@ -12,9 +12,6 @@ vhxm.components.shared.load_more.controller = function(opts) {
   };
 
   self.isElementInViewport = function(el, isInit, ctx) {
-    var element = $('#js-load-more-btn');
-    var in_view = false;
-
     if (!isInit) {
       var rect = el.getBoundingClientRect();
       window.addEventListener('scroll', function() {
