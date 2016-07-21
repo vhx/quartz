@@ -319,7 +319,7 @@ const quartz_component_css_render = function() {
    fs.mkdirSync('quartz-js/components/temp/styles');
   }
   fs.writeFile('quartz-js/components/temp/styles/components.scss', '', function() {
-    glob.sync('quartz-js/**/styles/*.scss').forEach(function(file) {
+    glob.sync('quartz-js/**/styles/*.scss', { ignore: 'quartz-js/components/temp/styles/components.scss' }).forEach(function(file) {
       fs.appendFileSync('quartz-js/components/temp/styles/components.scss', fs.readFileSync(file, 'utf-8'));
     });
 

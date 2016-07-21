@@ -11,23 +11,24 @@ Q.components.guide.js.ui.sidebar.container = {
         component: {
           view: function() {
             return m('div', [
-              m('button', {
+              m('button.btn-white', {
                 onclick: function(event) {
-                  vhxm.components.shared.sidebar.state.model({hi: "hello"});
+                  event.preventDefault();
+                  vhxm.components.shared.sidebar.state.model({ hi: "hello" });
                   vhxm.components.shared.sidebar.toggleSidebar('open');
                 }
-              }, 'click me')
+              }, 'Open sidebar')
             ]);
           }
         }
       }),
       m.component(Q.components.shared.options.ui.container, {
         options: [
-          { name: 'toggleSidebar', type: 'function', required: true, description: 'Accepts two params- the first being "open" or "closed" and the next being the subsequent route.' },
-          { name: 'setTemplate', type: 'function', required: true, description: 'Pass this a component, which is then rendered within the sidebar.' },
-          { name: 'setModel', type: 'function', required: true, description: 'Pass this a model for your top-level component. If none is passed, a loader will be displayed.' },
-          { name: 'onAnimateOut', type: 'function', required: true, description: 'Takes a callback function called once the sidebar has been opened.' },
-          { name: 'onAnimatein', type: 'function', required: true, description: 'Takes a callback function called once the sidebar has been closed.' },
+          { name: 'toggleSidebar', type: 'function', description: 'Accepts two params- the first being "open" or "closed" and the next being the subsequent route.' },
+          { name: 'setTemplate', type: 'function', description: 'Pass this a component, which is then rendered within the sidebar.' },
+          { name: 'setModel', type: 'function', description: 'Pass this a model for your top-level component. If none is passed, a loader will be displayed.' },
+          { name: 'onAnimateOut', type: 'function', description: 'Takes a callback function called once the sidebar has been opened.' },
+          { name: 'onAnimatein', type: 'function', description: 'Takes a callback function called once the sidebar has been closed.' },
         ]
       })
     ]);

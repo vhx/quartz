@@ -2,7 +2,12 @@
 
 Q.layouts.standard.ui.container = {
   view: function() {
+    if (m.route.param('type') === 'js' && m.route.param('guide') === 'components') {
+      var sidebar = m.component(vhxm.components.shared.sidebar.ui.container);
+    }
+
     return m('div.fill-width.margin-reset.container', [
+      sidebar ? sidebar : '',
       Q.components.route[m.route.param('type')].ui[m.route.param('guide')].items.map(function(item) {
         return m('div.row', [
           m('div.column.small-8.padding-reset', [

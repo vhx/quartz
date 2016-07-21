@@ -1,7 +1,5 @@
 vhxm.components.shared.sidebar.ui.container = {
-  controller: function() {
-    return new vhxm.components.shared.sidebar.controller();
-  },
+  controller: vhxm.components.shared.sidebar.controller,
   view: function(ctrl) {
     if (!vhxm.components.shared.sidebar.state.model()) {
       return m('.c-sidebar.bg-white.shadow--gray.background-white.loader-slate.loader--cover-hide.loader--large.is-loading', { config: ctrl.animatorIn })

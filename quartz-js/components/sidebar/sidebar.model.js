@@ -2,7 +2,7 @@ vhxm.components.shared.sidebar.toggleSidebar = function(state, route) {
   state = state === 'open' ? true : false;
 
   vhxm.components.shared.sidebar.state.isOpen(state);
-  m.route(route);
+  route ? m.route(route) : m.redraw();
 };
 
 vhxm.components.shared.sidebar.setTemplate = function(template) {

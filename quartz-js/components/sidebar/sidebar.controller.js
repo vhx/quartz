@@ -2,7 +2,7 @@ vhxm.components.shared.sidebar.controller = function() {
   var self = this;
 
   self.animatorIn = function(elem, isInit) {
-    if (!isInit) {
+    // if (!isInit) {
       if (vhxm.components.shared.sidebar.state.isOpen()) {
         $(elem).velocity({
           right: 0,
@@ -16,7 +16,7 @@ vhxm.components.shared.sidebar.controller = function() {
           }
         });
       }
-    }
+    // }
   };
 
   self.animatorOut = function(elem, isInit) {
@@ -39,5 +39,4 @@ vhxm.components.shared.sidebar.controller = function() {
       }
     }
   };
-
 };
