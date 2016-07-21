@@ -349,7 +349,7 @@ const quartz_component_css_render = function() {
 
 if (!process.argv[2]) {
   const quartz_component_css_watcher = chokidar.watch('quartz-js/**/styles/*.scss', {
-    ignored: /[\/\\]\./
+    ignored: [/[\/\\]\./, 'quartz-js/components/temp/styles/components.scss']
   });
   quartz_component_css_watcher.on('change', function() {
     try {
