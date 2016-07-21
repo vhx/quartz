@@ -1,3 +1,9 @@
+### 0.8.9
+**2016-07-21**
+* Add load more component
+* Add sidebar component
+* Fix bug with component css watch script
+
 ### 0.8.8
 **2016-07-15**
 * Fix header component subtext color

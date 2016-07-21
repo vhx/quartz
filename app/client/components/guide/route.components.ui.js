@@ -28,7 +28,14 @@ Q.components.route.js.ui.components = {
     {
       guide: m.component(Q.components.guide.js.ui.search_input.container),
       code: Q.code.search_input
+    },
+    {
+      guide: m.component(Q.components.guide.js.ui.load_more.container),
+      code: Q.code.load_more
+    },
+    {
+      guide: m.component(Q.components.guide.js.ui.sidebar.container),
+      code: Q.code.sidebar
     }
-
   ]
 };
