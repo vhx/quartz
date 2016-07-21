@@ -28,6 +28,12 @@ if (typeof vhxm !== 'undefined') {
     },
     header: {
       ui: {}
+    },
+    load_more: {
+      ui: {}
+    },
+    sidebar: {
+      ui: {}
     }
   };
 }
