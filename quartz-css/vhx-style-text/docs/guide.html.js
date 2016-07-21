@@ -14,7 +14,7 @@ Q.components.guide.styleguide.ui.text.container = {
               m('p.text-1.margin-bottom-large', 'Text 1 (16px). General marketing copy. Sell films, TV shows, web series, and more. Trusted by 5000+ sellers and their 1.25M customers.'),
               m('p.text-2.margin-bottom-large', 'Text 2 (14px). General admin copy. The first step to selling your videos is uploading them — features, shorts, clips, director\'s commentary, whatever you\'ve got.'),
               m('p.text-3.margin-bottom-large', 'Text 3 (13px). Secondary text (i.e the footer). Lovingly made in Brooklyn, NY USA.'),
-              m('p.text-3.margin-bottom-large', 'Text 4 (11px). Small text for subtext (seldomly used).')
+              m('p.text-4.margin-bottom-large', 'Text 4 (11px). Small text for subtext (seldomly used).')
             ]);
           }
         }
