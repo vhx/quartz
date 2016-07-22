@@ -34,6 +34,7 @@ if (typeof vhxm !== 'undefined') {
     },
     sidebar: {
       ui: {}
-    }
+    },
+    avatar: {}
   };
 }
