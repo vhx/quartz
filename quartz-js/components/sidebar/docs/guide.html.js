@@ -11,13 +11,30 @@ Q.components.guide.js.ui.sidebar.container = {
         component: {
           view: function() {
             return m('div', [
-              m('button.btn-white', {
+              m('button.block.margin-bottom-medium.btn-white', {
                 onclick: function(event) {
                   event.preventDefault();
-                  vhxm.components.shared.sidebar.state.model({ hi: "hello" });
-                  vhxm.components.shared.sidebar.toggleSidebar('open');
+                  vhxm.components.shared.sidebar.setTemplate({
+                    view: function() {
+                      return m('h5.text-center.padding-medium.head-4', 'Sidebar');
+                    }
+                  });
+                  vhxm.components.shared.sidebar.setLoadedState(m.prop(false));
+                  vhxm.components.shared.sidebar.toggle('open');
                 }
-              }, 'Open sidebar')
+              }, 'Open sidebar (loading)'),
+              m('button.block.btn-white', {
+                onclick: function(event) {
+                  event.preventDefault();
+                  vhxm.components.shared.sidebar.setTemplate({
+                    view: function() {
+                      return m('h5.text-center.padding-medium.head-4', 'Sidebar');
+                    }
+                  });
+                  vhxm.components.shared.sidebar.setLoadedState(m.prop(true));
+                  vhxm.components.shared.sidebar.toggle('open');
+                }
+              }, 'Open sidebar (loaded)')
             ]);
           }
         }
