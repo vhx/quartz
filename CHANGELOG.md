@@ -1,3 +1,9 @@
+### 0.8.10
+**2016-07-21**
+* Add avatar component
+* Improvements/Fixes to sidebar component
+* Fix loading class positioning
+
 ### 0.8.9
 **2016-07-21**
 * Add load more component

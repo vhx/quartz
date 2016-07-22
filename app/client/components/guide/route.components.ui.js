@@ -36,6 +36,10 @@ Q.components.route.js.ui.components = {
     {
       guide: m.component(Q.components.guide.js.ui.sidebar.container),
       code: Q.code.sidebar
+    },
+    {
+      guide: m.component(Q.components.guide.js.ui.avatar.container),
+      code: Q.code.avatar
     }
   ]
 };

@@ -61,9 +61,12 @@
     @include avatar-defaults(45px);
   }
   &.avatar--large {
-    @include avatar-defaults(55px);
+    @include avatar-defaults(60px);
   }
   &.avatar--xlarge {
-    @include avatar-defaults(60px);
+    @include avatar-defaults(80px);
+  }
+  &.avatar--xxlarge {
+    @include avatar-defaults(100px);
   }
 }
