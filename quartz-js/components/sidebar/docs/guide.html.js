@@ -41,11 +41,11 @@ Q.components.guide.js.ui.sidebar.container = {
       }),
       m.component(Q.components.shared.options.ui.container, {
         options: [
-          { name: 'toggleSidebar', type: 'function', description: 'Accepts two params- the first being "open" or "closed" and the next being the subsequent route.' },
-          { name: 'setTemplate', type: 'function', description: 'Pass this a component, which is then rendered within the sidebar.' },
-          { name: 'setModel', type: 'function', description: 'Pass this a model for your top-level component. If none is passed, a loader will be displayed.' },
-          { name: 'onAnimateOut', type: 'function', description: 'Takes a callback function called once the sidebar has been opened.' },
-          { name: 'onAnimatein', type: 'function', description: 'Takes a callback function called once the sidebar has been closed.' },
+          { name: 'loadedState', type: 'function', description: 'Pass this a mithril prop (e.g. a model) that tracks the loaded state of the sidebar. If none is passed, a loader will be displayed.' },
+          { name: 'template', type: 'function', description: 'Pass this a component, which is then rendered within the sidebar.' },
+          { name: 'onOpen', type: 'function', description: 'Takes a callback function called once the sidebar has been opened.' },
+          { name: 'onClose', type: 'function', description: 'Takes a callback function called once the sidebar has been closed.' },
+          { name: 'toggle', type: 'api method', description: 'Call directly on sidebar object <code>vhxm.components.shared.sidebar.toggle()</code>. Accepts two params- the first being "open" or "closed" and the next being the subsequent route.' },
         ]
       })
     ]);
