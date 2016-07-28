@@ -1,3 +1,8 @@
+### 0.8.12
+**2016-07-28**
+* Filter Component > Bug fix, address issue when persisting component across routes, and media sizing
+* Sidebar Component > Bug fix, ensure onOpen and onClose callbacks are called
+
 ### 0.8.11
 **2016-07-28**
 * Add sizes component
