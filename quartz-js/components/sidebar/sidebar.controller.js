@@ -12,10 +12,10 @@ vhxm.components.shared.sidebar.controller = function(opts) {
       vhxm.components.shared.sidebar.setTemplate(opts.template);
     }
     if (opts.onOpen) {
-      vhxm.components.shared.sidebar.state.onOpen(opts.onOpen);
+      vhxm.components.shared.sidebar.state.onOpen = opts.onOpen;
     }
     if (opts.onClose) {
-      vhxm.components.shared.sidebar.state.onClose(opts.onClose);
+      vhxm.components.shared.sidebar.state.onClose = opts.onClose;
     }
   }
 
