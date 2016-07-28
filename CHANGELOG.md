@@ -1,3 +1,10 @@
+### 0.8.11
+**2016-07-28**
+* Add sizes component
+* Filter component > remove toggle when only 1 filter
+* Add .is-invisible, .shadow--gray, and .img--borderless classes
+* Fix .text--uppercase styling so that placeholder text remains as typed
+
 ### 0.8.10
 **2016-07-21**
 * Add avatar component
