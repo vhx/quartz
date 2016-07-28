@@ -29,6 +29,9 @@
 .radius {
   border-radius: 3px;
 }
+.is-invisible {
+  visibility: hidden;
+}
 
 
 /* scrollable content
@@ -87,4 +90,8 @@ hr.column {
 
 .z-top {
   z-index: 2147483647 !important;
+}
+
+.shadow--gray {
+  box-shadow: 0 0 10px 0 rgba(10, 16, 40, 0.2) !important;
 }
