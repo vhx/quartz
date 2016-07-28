@@ -17,7 +17,7 @@ Q.components.shared.options.ui.container = {
               m('td.text-left', [
                 m('p.text--navy.margin-bottom-xsmall', item.name),
                 m('p.text-4', [
-                  item.required ? m('span.text--red', 'required ') : m('span.text--yellow', 'optional ')
+                  item.required ? m('span.text--red', 'required ') : item.type === 'method' ?  '' : m('span.text--yellow', 'optional ')
                 ]),
                 m('p.text-4', [
                   item.type ? m('span', item.type) : '',
