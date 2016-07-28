@@ -110,6 +110,17 @@ vhxm.components.shared.filter.controller = function(opts) {
     });
   };
 
+  self.hasMultipleFilters = function() {
+    return opts.filters.length > 1;
+  };
+
+  self.iconHelper = function(item) {
+    if (self.hasMultipleFilters()) {
+      return '.icon--right.icon-chevron-' + (self.state.dropdown.filtersOpen().indexOf(item) >= 0 ? 'up' : 'down') + '-navy.icon--xxsmall';
+    }
+    return '';
+  };
+
   if (opts && opts.init) {
     self.init();
   }
