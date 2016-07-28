@@ -1,19 +1,23 @@
 vhxm.components.shared.filter.controller = function(opts) {
   let self = this;
-
+  let api = opts.api ? opts.api : m.prop(null);
+  
   self.init = function() {
-    self.state = new vhxm.components.shared.filter.state();
-    self.model = new vhxm.components.shared.filter.model();
-
-    if (opts.api) {
-      opts.api({
-        state: self.state,
-        model: self.model,
-        applyFilter: self.applyFilter,
-        removeFilter: self.removeFilter,
-        addFilter: self.addFilter,
-      });
+    if (api() && api().state) {
+      self.state = api().state;
+      self.model = api().model;
+    } else {
+      self.state = new vhxm.components.shared.filter.state();
+      self.model = new vhxm.components.shared.filter.model();
     }
+
+    api({
+      state: self.state,
+      model: self.model,
+      applyFilter: self.applyFilter,
+      removeFilter: self.removeFilter,
+      addFilter: self.addFilter
+    });
 
     if (opts.filtersStartOpen) {
       opts.filters.map(function(item) {
