@@ -450,6 +450,9 @@ a.text--blue {
 }
 .text--uppercase {
   text-transform: uppercase;
+  &::placeholder {
+    text-transform: none;
+  }
 }
 .text--break {
   word-break: break-all;

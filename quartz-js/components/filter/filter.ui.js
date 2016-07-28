@@ -63,10 +63,12 @@ vhxm.components.shared.filter.ui.dropdown = {
         opts.filters.map(function(item) {
           if (typeof(item) === 'string' && vhxm.components.shared.filter.ui[item]) {
             return m('li.border-bottom', [
-              m('a.c-filter--item.head-5.fill-width.icon--right.icon-chevron-' + (ctrl.state.dropdown.filtersOpen().indexOf(item) >= 0 ? 'up' : 'down') + '-navy.icon--xxsmall', {
+              m((ctrl.hasMultipleFilters() ? 'a' : 'span') + '.c-filter--item.head-5.fill-width' + ctrl.iconHelper(item), {
                 href: '#',
                 onclick: function(event) {
-                  ctrl.handleFilterClick(event, item);
+                  if (ctrl.hasMultipleFilters()) {
+                    ctrl.handleFilterClick(event, item);
+                  }
                 }
               }, vhxm.components.shared.filter.constants[item].title),
               m('div.c-filter--item-container' + (ctrl.state.dropdown.filtersOpen().indexOf(item) >= 0 ? '.is-active' : ''), [
@@ -94,10 +96,12 @@ vhxm.components.shared.filter.ui.template = {
   },
   view: function(ctrl, item) {
     return m('li.border-bottom', [
-      m('a.c-filter--item.head-5.fill-width.icon--right.icon-chevron-' + (ctrl.state.dropdown.filtersOpen().indexOf(item.type) >= 0 ? 'up' : 'down') + '-navy.icon--xxsmall', {
+      m((ctrl.hasMultipleFilters() ? 'a' : 'span') + '.c-filter--item.head-5.fill-width' + ctrl.iconHelper(item), {
         href: '#',
         onclick: function(event) {
-          ctrl.handleFilterClick(event, item.type);
+          if (ctrl.hasMultipleFilters()) {
+            ctrl.handleFilterClick(event, item.type);
+          }
         }
       }, item.title),
       m('div.c-filter--item-container' + (ctrl.state.dropdown.filtersOpen().indexOf(item.type) >= 0 ? '.is-active' : ''), [
@@ -113,10 +117,12 @@ vhxm.components.shared.filter.ui.data = {
   },
   view: function(ctrl, item) {
     return m('li.border-bottom', [
-      m('a.c-filter--item.head-5.fill-width.icon--right.icon-chevron-' + (ctrl.state.dropdown.filtersOpen().indexOf(item.type) >= 0 ? 'up' : 'down') + '-navy.icon--xxsmall', {
+      m((ctrl.hasMultipleFilters() ? 'a' : 'span') + '.c-filter--item.head-5.fill-width' + ctrl.iconHelper(item), {
         href: '#',
         onclick: function(event) {
-          ctrl.handleFilterClick(event, item.type);
+          if (ctrl.hasMultipleFilters()) {
+            ctrl.handleFilterClick(event, item.type);
+          }
         }
       }, item.title),
       m('div.c-filter--item-container' + (ctrl.state.dropdown.filtersOpen().indexOf(item.type) >= 0 ? '.is-active' : ''), [
