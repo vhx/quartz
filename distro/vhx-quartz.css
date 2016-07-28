@@ -2729,6 +2729,9 @@ object, embed, [data-clipboard] {
 .radius {
   border-radius: 3px; }
 
+.is-invisible {
+  visibility: hidden; }
+
 /* scrollable content
 ......................................*/
 .fill-height {
@@ -2775,6 +2778,9 @@ hr.column {
 
 .z-top {
   z-index: 2147483647 !important; }
+
+.shadow--gray {
+  box-shadow: 0 0 10px 0 rgba(10, 16, 40, 0.2) !important; }
 
 /* .....................................
   Fonts
@@ -6098,6 +6104,9 @@ a.head--white:hover, a.head--white:active {
     width: 100%; }
   .img.cell, .embed.cell {
     width: auto; } }
+.img--borderless {
+  border: none !important; }
+
 /* .....................................
   Fonts
 ..................................... */
@@ -7366,6 +7375,8 @@ a.text--blue.is-disabled:link, a.text--blue.is-disabled:visited, a.text--blue.is
 
 .text--uppercase {
   text-transform: uppercase; }
+  .text--uppercase::placeholder {
+    text-transform: none; }
 
 .text--break {
   word-break: break-all; }
