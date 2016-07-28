@@ -14,10 +14,10 @@ vhxm.components.shared.sidebar.controller = function (opts) {
       vhxm.components.shared.sidebar.setTemplate(opts.template);
     }
     if (opts.onOpen) {
-      vhxm.components.shared.sidebar.state.onOpen(opts.onOpen);
+      vhxm.components.shared.sidebar.state.onOpen = opts.onOpen;
     }
     if (opts.onClose) {
-      vhxm.components.shared.sidebar.state.onClose(opts.onClose);
+      vhxm.components.shared.sidebar.state.onClose = opts.onClose;
     }
   }
 
@@ -82,8 +82,8 @@ vhxm.components.shared.sidebar.state = {
   isLoaded: m.prop(false),
   skipTransition: m.prop(false),
   template: m.prop(null),
-  onClose: m.prop(function () {}),
-  onOpen: m.prop(function () {})
+  onClose: function onClose() {},
+  onOpen: function onOpen() {}
 };
 
 vhxm.components.shared.sidebar.ui.container = {
