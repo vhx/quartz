@@ -10,7 +10,7 @@ vhxm.components.shared.filter.ui.container = {
       m('div.row', [
         m('.c-filter--trigger-container.small-' + (vhxm.components.shared.size.state.smallToMedium() ? '5' : '3') + '.column.pull.padding-reset', [
           m('a.c-filter--trigger.block.radius.head-5.text--gray' +
-            (ready_to_apply ? '.text-center' : ('.icon--right.icon-' + (ctrl.state.dropdown.isOpen() ? 'x-navy' : 'chevron-down-gray') + '.icon--xxsmall.margin-right-medium.fill-width')), {
+            (ready_to_apply ? '.text-center' : ('.icon--right.icon-' + (ctrl.state.dropdown.isOpen() ? 'chevron-up-navy' : 'chevron-down-gray') + '.icon--xxsmall.margin-right-medium.fill-width')), {
             onclick: ctrl.handleApplyClick
           }, ready_to_apply ? 'Apply' : 'Filters'),
           m.component(vhxm.components.shared.filter.ui.dropdown, opts, ctrl)
