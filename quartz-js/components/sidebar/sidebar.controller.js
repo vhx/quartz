@@ -27,6 +27,7 @@ vhxm.components.shared.sidebar.controller = function(opts) {
         duration: vhxm.components.shared.sidebar.state.skipTransition() ? 0 : 500,
         easing: [0.19, 1, 0.22, 1],
         complete: function complete() {
+          $(document).on('keyup', self.esc);
           vhxm.components.shared.sidebar.state.onOpen();
           vhxm.components.shared.sidebar.state.skipTransition(true);
         }
@@ -42,8 +43,17 @@ vhxm.components.shared.sidebar.controller = function(opts) {
       easing: [0.19, 1, 0.22, 1],
       complete: function complete() {
         vhxm.components.shared.sidebar.state.onClose();
+        $(document).off('keyup', self.esc);
         vhxm.components.shared.sidebar.state.skipTransition(false);
       }
     });
+  };
+
+  self.esc = function(event) {
+    if (event.keyCode === 27) {
+      m.startComputation();
+      vhxm.components.shared.sidebar.toggle('close');
+      m.endComputation();
+    }
   };
 };
