@@ -1,7 +1,7 @@
 vhxm.components.shared.filter.controller = function(opts) {
   let self = this;
   let api = opts.api ? opts.api : m.prop(null);
-  
+
   self.init = function() {
     if (api() && api().state) {
       self.state = api().state;
@@ -130,7 +130,10 @@ vhxm.components.shared.filter.controller = function(opts) {
   }
 
   $(document).on('click', function(event) {
-   if ($('.c-filter--container.is-open').length && !$(event.target).closest('.c-filter--container.is-open').length) {
+    if ($('.c-filter--container.is-open').length &&
+    !$(event.target).closest('.c-filter--applied').length &&
+    !$(event.target).closest('.c-filter--trigger-container').length
+    ) {
      m.startComputation();
      self.state.dropdown.isOpen(false);
      m.endComputation();
