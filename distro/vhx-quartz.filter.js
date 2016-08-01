@@ -141,7 +141,7 @@ vhxm.components.shared.filter.controller = function (opts) {
   }
 
   $(document).on('click', function (event) {
-    if ($('.c-filter--container.is-open').length && !$(event.target).closest('.c-filter--container.is-open').length) {
+    if ($('.c-filter--container.is-open').length && !$(event.target).closest('.c-filter--applied').length && !$(event.target).closest('.c-filter--trigger-container').length) {
       m.startComputation();
       self.state.dropdown.isOpen(false);
       m.endComputation();
@@ -168,7 +168,7 @@ vhxm.components.shared.filter.ui.container = {
   view: function view(ctrl, opts) {
     var ready_to_apply = ctrl.state.dropdown.isOpen() && ctrl.state.selected() && ctrl.state.selected().length && !opts.applyOnChange;
 
-    return m('.c-filter--container.dropdown.dropdown--' + (opts.size ? opts.size : 'large') + (ctrl.state.dropdown.isOpen() ? '.is-open' : ''), [m('div.row', [m('.c-filter--trigger-container.small-' + (vhxm.components.shared.size.state.smallToMedium() ? '5' : '3') + '.column.pull.padding-reset', [m('a.c-filter--trigger.block.radius.head-5.text--gray' + (ready_to_apply ? '.text-center' : '.icon--right.icon-' + (ctrl.state.dropdown.isOpen() ? 'x-navy' : 'chevron-down-gray') + '.icon--xxsmall.margin-right-medium.fill-width'), {
+    return m('.c-filter--container.dropdown.dropdown--' + (opts.size ? opts.size : 'large') + (ctrl.state.dropdown.isOpen() ? '.is-open' : ''), [m('div.row', [m('.c-filter--trigger-container.small-' + (vhxm.components.shared.size.state.smallToMedium() ? '5' : '3') + '.column.pull.padding-reset', [m('a.c-filter--trigger.block.radius.head-5.text--gray' + (ready_to_apply ? '.text-center' : '.icon--right.icon-' + (ctrl.state.dropdown.isOpen() ? 'chevron-up-navy' : 'chevron-down-gray') + '.icon--xxsmall.margin-right-medium.fill-width'), {
       onclick: ctrl.handleApplyClick
     }, ready_to_apply ? 'Apply' : 'Filters'), m.component(vhxm.components.shared.filter.ui.dropdown, opts, ctrl)]), m('.c-filter--applied-container.small-' + (vhxm.components.shared.size.state.smallToMedium() ? '11' : '13') + '.column.pull.padding-reset', [m('.margin-left-small.padding-left-medium.border-left', [ctrl.state.applied() && ctrl.state.selected().length ? m.component(vhxm.components.shared.filter.ui.applied, opts, ctrl) : m('span.c-filter--label.text--gray', opts.label ? opts.label : m.trust('&nbsp;'))])])])]);
   }
