@@ -1,3 +1,8 @@
+### 0.8.13
+**2016-08-01**
+* Filter Component > Bug fix, closing of filter dropdown, icon swap
+* Sidebar Component > Bug fix, z-index, bind esc button for closing dropdown
+
 ### 0.8.12
 **2016-07-28**
 * Filter Component > Bug fix, address issue when persisting component across routes, and media sizing
