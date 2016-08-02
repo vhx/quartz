@@ -2,7 +2,9 @@ vhxm.components.shared.search_input.controller = function(opts) {
   let self = this;
 
   self.timeout = null;
-
+  self.state = new vhxm.components.shared.search_input.state();
+  self.state.value(opts.value ? opts.value : null);
+  
   self.debounceSearch = function(event) {
     if (self.timeout) {
       clearTimeout(self.timeout);
