@@ -1,3 +1,9 @@
+### 0.8.15
+**2016-08-02**
+* Sidebar Component >
+  - Handle click to close in sidebar component
+  - Add clickBlackList param for ignore certain elements when clicking to close
+
 ### 0.8.14
 **2016-08-01**
 * Search Input Component >
