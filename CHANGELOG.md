@@ -1,3 +1,10 @@
+### 0.8.14
+**2016-08-01**
+* Search Input Component >
+  - Add param for appending `q=` query param
+  - bug fix for tracking input via mithril prop
+  - Allow force search when hitting `enter`
+
 ### 0.8.13
 **2016-08-01**
 * Filter Component > Bug fix, closing of filter dropdown, icon swap
