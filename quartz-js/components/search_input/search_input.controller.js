@@ -23,4 +23,20 @@ vhxm.components.shared.search_input.controller = function(opts) {
       opts.callback(data);
     });
   };
+
+  self.updateQueryParam = function(query) {
+    let loc = window.location;
+    let search;
+    let href = loc.pathname;
+
+    if (query.length && window.history && window.history.replaceState) {
+      search = loc.search.length && loc.search.match(/\?/) ? loc.search : '?';
+      href += (search.match(/q\=/) ? search.replace(/q\=(\w|\-)*/, 'q=' + query) : search + 'q=' + query);
+      history.replaceState({}, '', href);
+    } else {
+      search = loc.search.replace(/q\=(\w|\-)*/, '');
+      href += search.length === 1 ? '' : loc.search;
+      history.replaceState({}, '', href);
+    }
+  };
 };

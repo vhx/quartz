@@ -8,6 +8,9 @@ vhxm.components.shared.search_input.ui.container = {
       type: 'text',
       placeholder: opts.placeholder ? opts.placeholder : 'Search',
       oninput: function(event) {
+        if (opts.queryParam) {
+          ctrl.updateQueryParam(event.target.value);
+        }
         if (opts.oninput) {
           opts.oninput(event);
         }
