@@ -6,6 +6,7 @@ vhxm.components.shared.search_input.ui.container = {
     return m('input.c-select--search.padding-right-large.icon-search-navy.icon--xsmall', {
       config: opts.config ? opts.config : '',
       type: 'text',
+      value: ctrl.state.value(),
       placeholder: opts.placeholder ? opts.placeholder : 'Search',
       onkeydown: function oninput(event) {
         if ( parseInt(event.which,10) === 13 || parseInt(event.keyCode,10) === 13) {
@@ -14,6 +15,7 @@ vhxm.components.shared.search_input.ui.container = {
         }
       },
       oninput: function(event) {
+        ctrl.state.value(event.target.value);
         if (opts.queryParam) {
           ctrl.updateQueryParam(event.target.value);
         }
