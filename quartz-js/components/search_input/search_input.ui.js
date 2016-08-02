@@ -7,6 +7,12 @@ vhxm.components.shared.search_input.ui.container = {
       config: opts.config ? opts.config : '',
       type: 'text',
       placeholder: opts.placeholder ? opts.placeholder : 'Search',
+      onkeydown: function oninput(event) {
+        if ( parseInt(event.which,10) === 13 || parseInt(event.keyCode,10) === 13) {
+          ctrl.fetchResults(event.target.value);
+          ctrl.timeout = null;
+        }
+      },
       oninput: function(event) {
         if (opts.queryParam) {
           ctrl.updateQueryParam(event.target.value);
