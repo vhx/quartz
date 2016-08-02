@@ -2,8 +2,9 @@
 
 Q.layouts.standard.ui.container = {
   view: function() {
+    let sidebar;
     if (m.route.param('type') === 'js' && m.route.param('guide') === 'components') {
-      var sidebar = m.component(vhxm.components.shared.sidebar.ui.container);
+      sidebar = m.component(vhxm.components.shared.sidebar.ui.container);
     }
 
     return m('div.fill-width.margin-reset.container', [

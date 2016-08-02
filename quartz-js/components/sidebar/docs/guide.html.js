@@ -45,7 +45,8 @@ Q.components.guide.js.ui.sidebar.container = {
           { name: 'template', type: 'function', description: 'Pass this a component, which is then rendered within the sidebar.' },
           { name: 'onOpen', type: 'function', description: 'Takes a callback function called once the sidebar has been opened.' },
           { name: 'onClose', type: 'function', description: 'Takes a callback function called once the sidebar has been closed.' },
-          { name: 'toggle', type: 'api method', description: m.trust('Call directly on sidebar object <span class="text--bold text--navy text-4">vhxm.components.shared.sidebar.toggle()</span>. Accepts two params- the first being "open" or "closed" and the next being the subsequent route.') },
+          { name: 'clickBlackList', type: 'string', description: 'A string of comma separated classes or ids of elements that should be ignored when clicked (that would otherwise close the sidebar).' },
+          { name: 'toggle', type: 'method', description: m.trust('Call directly on sidebar object <span class="text--bold text--navy text-4">vhxm.components.shared.sidebar.toggle()</span>. Accepts two params- the first being "open" or "closed" and the next being the subsequent route.') },
         ]
       })
     ]);
