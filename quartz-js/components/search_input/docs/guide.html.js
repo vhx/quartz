@@ -13,6 +13,7 @@ Q.components.guide.js.ui.search_input.container = {
             return m('div.form', [
               m.component(vhxm.components.shared.search_input.ui.container, {
                 config: function(el) { },
+                queryParam: true,
                 callback: ctrl.searchCallback,
                 search: function() { },
                 placeholder: 'Search',
