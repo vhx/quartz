@@ -20,7 +20,7 @@ vhxm.components.shared.sidebar.controller = function(opts) {
     }
   }
 
-  self.documentClickHandler = function() {
+  self.documentClickHandler = function(event) {
 
     let is_sidebar = !$(event.target).closest('body').length ||
                       $(event.target).hasClass('c-sidebar') ||
