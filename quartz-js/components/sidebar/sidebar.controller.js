@@ -32,19 +32,26 @@ vhxm.components.shared.sidebar.controller = function(opts) {
   };
 
   self.animatorIn = function(elem, isInit) {
+    let callback = function() {
+      $(document).on('keyup', self.esc);
+      $(document).on('click', self.documentClickHandler);
+      vhxm.components.shared.sidebar.state.onOpen();
+      vhxm.components.shared.sidebar.state.skipTransition(true);
+    };
+
     if (vhxm.components.shared.sidebar.state.isOpen()) {
-      $(elem).velocity({
-        right: 0
-      }, {
-        duration: vhxm.components.shared.sidebar.state.skipTransition() ? 0 : 500,
-        easing: [0.19, 1, 0.22, 1],
-        complete: function complete() {
-          $(document).on('keyup', self.esc);
-          $(document).on('click', self.documentClickHandler);
-          vhxm.components.shared.sidebar.state.onOpen();
-          vhxm.components.shared.sidebar.state.skipTransition(true);
-        }
-      });
+      if (vhxm.components.shared.sidebar.state.skipTransition()) {
+        elem.style.right = '0px';
+        callback();
+      } else {
+        $(elem).velocity({
+          right: 0
+        }, {
+          duration: vhxm.components.shared.sidebar.state.skipTransition() ? 0 : 500,
+          easing: [0.19, 1, 0.22, 1],
+          complete: callback
+        });
+      }
     }
   };
 
@@ -54,7 +61,7 @@ vhxm.components.shared.sidebar.controller = function(opts) {
     }, {
       duration: 500,
       easing: [0.19, 1, 0.22, 1],
-      complete: function complete() {
+      complete: function() {
         vhxm.components.shared.sidebar.state.onClose();
         $(document).off('keyup', self.esc);
         $(document).off('click', self.documentClickHandler);
