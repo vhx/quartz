@@ -22,7 +22,7 @@ vhxm.components.shared.sidebar.controller = function (opts) {
     }
   }
 
-  self.documentClickHandler = function () {
+  self.documentClickHandler = function (event) {
 
     var is_sidebar = !$(event.target).closest('body').length || $(event.target).hasClass('c-sidebar') || $(event.target).closest('[data-flash], tr.is-clickable, .c-sidebar' + (self.opts && self.opts.clickBlackList ? ', ' + self.opts.clickBlackList : '')).length;
 

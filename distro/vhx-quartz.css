@@ -7378,6 +7378,9 @@ a.text--blue.is-disabled:link, a.text--blue.is-disabled:visited, a.text--blue.is
   .text--uppercase::placeholder {
     text-transform: none; }
 
+.text--lowercase {
+  text-transform: lowercase !important; }
+
 .text--break {
   word-break: break-all; }
 
