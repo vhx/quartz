@@ -5,7 +5,6 @@
 /*.....................................
   AVATARS
 ......................................*/
-
 .avatar {
   @include avatar-defaults(35px);
   position: relative;
@@ -14,7 +13,7 @@
 
   @for $i from 1 through length($avatar-colors-name) {
     &.color-#{nth($avatar-colors-name, $i)} {
-      background-color: lighten(nth($avatar-colors-hex, $i), 10);
+      background-color: nth($avatar-colors-hex, $i);
     }
   }
 
