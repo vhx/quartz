@@ -1,3 +1,10 @@
+### 0.8.18
+**2016-08-03**
+* Avatar Component >
+  - Default to teal background
+* Sidebar Component >
+  - Fix Safari bug with transition when changing sidebar content and already open
+
 ### 0.8.17
 **2016-08-03**
 * Sidebar Component >
