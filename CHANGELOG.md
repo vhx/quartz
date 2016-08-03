@@ -1,3 +1,10 @@
+### 0.8.17
+**2016-08-03**
+* Sidebar Component >
+  - Fix Firefox bug with undefined event in document click handler
+* Text Styles >
+  - Added `text--lowercase` class
+
 ### 0.8.16
 **2016-08-03**
 * Search Input Component >
