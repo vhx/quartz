@@ -454,6 +454,9 @@ a.text--blue {
     text-transform: none;
   }
 }
+.text--lowercase {
+  text-transform: lowercase !important;
+}
 .text--break {
   word-break: break-all;
 }
