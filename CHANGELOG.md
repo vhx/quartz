@@ -1,3 +1,8 @@
+### 0.8.16
+**2016-08-03**
+* Search Input Component >
+  - Fix regex for replacing `q=` query param
+
 ### 0.8.15
 **2016-08-02**
 * Sidebar Component >
