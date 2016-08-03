@@ -45,21 +45,23 @@
   .avatar .avatar-img {
     line-height: 35px; }
   .avatar.color-blue {
-    background-color: #156ba8; }
+    background-color: #0F4E7B; }
   .avatar.color-purple {
-    background-color: #9b439d; }
+    background-color: #783479; }
   .avatar.color-pink {
-    background-color: white; }
+    background-color: #fde5ec; }
   .avatar.color-orange {
-    background-color: #dc8f85; }
+    background-color: #D06B5E; }
   .avatar.color-green {
-    background-color: white; }
+    background-color: #fafcf4; }
   .avatar.color-forest {
-    background-color: #b3ce56; }
+    background-color: #9DBB36; }
   .avatar.color-light-blue {
-    background-color: #5ea9ff; }
+    background-color: #2b8eff; }
   .avatar.color-gray {
-    background-color: #355362; }
+    background-color: #233741; }
+  .avatar.color-teal {
+    background-color: #22B9B0; }
   .avatar.avatar--border .avatar-img {
     border: 2px solid #ffffff; }
   .avatar .avatar-user {

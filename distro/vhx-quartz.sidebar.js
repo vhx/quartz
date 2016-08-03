@@ -32,19 +32,26 @@ vhxm.components.shared.sidebar.controller = function (opts) {
   };
 
   self.animatorIn = function (elem, isInit) {
+    var callback = function callback() {
+      $(document).on('keyup', self.esc);
+      $(document).on('click', self.documentClickHandler);
+      vhxm.components.shared.sidebar.state.onOpen();
+      vhxm.components.shared.sidebar.state.skipTransition(true);
+    };
+
     if (vhxm.components.shared.sidebar.state.isOpen()) {
-      $(elem).velocity({
-        right: 0
-      }, {
-        duration: vhxm.components.shared.sidebar.state.skipTransition() ? 0 : 500,
-        easing: [0.19, 1, 0.22, 1],
-        complete: function complete() {
-          $(document).on('keyup', self.esc);
-          $(document).on('click', self.documentClickHandler);
-          vhxm.components.shared.sidebar.state.onOpen();
-          vhxm.components.shared.sidebar.state.skipTransition(true);
-        }
-      });
+      if (vhxm.components.shared.sidebar.state.skipTransition()) {
+        elem.style.right = '0px';
+        callback();
+      } else {
+        $(elem).velocity({
+          right: 0
+        }, {
+          duration: vhxm.components.shared.sidebar.state.skipTransition() ? 0 : 500,
+          easing: [0.19, 1, 0.22, 1],
+          complete: callback
+        });
+      }
     }
   };
 
@@ -110,15 +117,9 @@ vhxm.components.shared.sidebar.state = {
 vhxm.components.shared.sidebar.ui.container = {
   controller: vhxm.components.shared.sidebar.controller,
   view: function view(ctrl) {
-    if (!vhxm.components.shared.sidebar.state.isLoaded()) {
-      return m('.c-sidebar.bg-white.shadow--gray.background-white.loader-slate.loader--cover-hide.loader--large.is-loading', {
-        config: vhxm.components.shared.sidebar.state.isOpen() ? ctrl.animatorIn : ctrl.animatorOut
-      });
-    }
-
-    return m('.c-sidebar.bg-white.shadow--gray', {
+    return m('.c-sidebar.bg-white.shadow--gray' + (vhxm.components.shared.sidebar.state.isLoaded() ? '' : '.loader-slate.loader--cover-hide.loader--large.is-loading'), {
       config: vhxm.components.shared.sidebar.state.isOpen() ? ctrl.animatorIn : ctrl.animatorOut
-    }, [m('a.c-sidebar--close.icon-circle.icon-x-navy.icon--xsmall', {
+    }, vhxm.components.shared.sidebar.state.isLoaded() ? [m('a.c-sidebar--close.icon-circle.icon-x-navy.icon--xsmall', {
       onclick: function onclick() {
         vhxm.components.shared.sidebar.toggle('close');
       }
@@ -127,6 +128,6 @@ vhxm.components.shared.sidebar.ui.container = {
       config: function config(elem) {
         $(elem).velocity({ opacity: '1' }, { duration: 400 });
       }
-    }, [m.component(vhxm.components.shared.sidebar.state.template())])]);
+    }, [m.component(vhxm.components.shared.sidebar.state.template())])] : '');
   }
 };
