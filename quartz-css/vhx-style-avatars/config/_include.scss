@@ -7,5 +7,5 @@
     line-height: $diameter;
   }
 }
-$avatar-colors-name: "blue", "purple", "pink", "orange", "green", "forest", "light-blue", "gray";
-$avatar-colors-hex: $vhx-blue, $vhx-purple, lighten($red, 50%), $vhx-orange, lighten($vhx-green, 50%), $vhx-green, lighten($navy, 50%), $gray-8;
+$avatar-colors-name: "blue", "purple", "pink", "orange", "green", "forest", "light-blue", "gray", "teal";
+$avatar-colors-hex: $vhx-blue, $vhx-purple, lighten($red, 50%), $vhx-orange, lighten($vhx-green, 50%), $vhx-green, lighten($navy, 50%), $gray-8, #20B8AC;
