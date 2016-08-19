@@ -14,6 +14,22 @@ Q.components.route.js.ui.components = {
       code: Q.code.select
     },
     {
+      guide: m.component(Q.components.guide.js.ui.header.container),
+      code: Q.code.header
+    },
+    {
+      guide: m.component(Q.components.guide.js.ui.avatar.container),
+      code: Q.code.avatar
+    },
+    {
+      guide: m.component(Q.components.guide.js.ui.load_more.container),
+      code: Q.code.load_more
+    },
+    {
+      guide: m.component(Q.components.guide.js.ui.tag.container),
+      code: Q.code.tag
+    },
+    {
       guide: m.component(Q.components.guide.js.ui.autosuggest.container),
       code: Q.code.autosuggest
     },
@@ -22,24 +38,12 @@ Q.components.route.js.ui.components = {
       code: Q.code.filter
     },
     {
-      guide: m.component(Q.components.guide.js.ui.header.container),
-      code: Q.code.header
-    },
-    {
       guide: m.component(Q.components.guide.js.ui.search_input.container),
       code: Q.code.search_input
     },
     {
-      guide: m.component(Q.components.guide.js.ui.load_more.container),
-      code: Q.code.load_more
-    },
-    {
       guide: m.component(Q.components.guide.js.ui.sidebar.container),
       code: Q.code.sidebar
-    },
-    {
-      guide: m.component(Q.components.guide.js.ui.avatar.container),
-      code: Q.code.avatar
     },
     {
       guide: m.component(Q.components.guide.js.ui.sizes.container),

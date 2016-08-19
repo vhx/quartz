@@ -36,5 +36,8 @@ if (typeof(vhxm) !== 'undefined') {
     },
     avatar: {},
     size: {},
+    tag: {
+      ui: {}
+    }
   };
 }
