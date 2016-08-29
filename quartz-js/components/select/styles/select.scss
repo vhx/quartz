@@ -106,3 +106,15 @@ $border_color: #8d9da6;
   text-overflow: ellipsis;
   display: inline-block;
 }
+
+.c-media-item--container {
+  transition: background-color .2s ease-out;
+  &:hover {
+    cursor: pointer;
+    background-color: transparentize($teal-2, .9);
+  }
+}
+.media-items {
+  margin-top: 70px;
+}
+

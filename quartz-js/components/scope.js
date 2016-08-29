@@ -14,7 +14,8 @@ if (typeof(vhxm) !== 'undefined') {
     },
     select: {
       ui: {
-        list: {}
+        list: {},
+        media_item: {}
       }
     },
     autosuggest: {

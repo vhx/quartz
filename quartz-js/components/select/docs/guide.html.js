@@ -31,7 +31,19 @@ Q.components.guide.js.ui.select.container = {
                 descriptor_prop: 'desc',
                 name: 'select_id',
                 callback: function(obj) {
-                }
+                },
+                media_items: [
+                  {
+                    title: 'Media Item #1',
+                    detail: 'Item detail line',
+                    img_src: 'https://placekitten.com/g/300/200'
+                  },
+                  {
+                    title: 'Media Item #2',
+                    detail: 'Item #2 detail line',
+                    img_src: 'https://placekitten.com/g/300/200'
+                  }
+                ]
               })
             ]);
           }
