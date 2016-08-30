@@ -21,29 +21,27 @@ Q.components.guide.js.ui.select.container = {
                   value: null,
                   label: 'Nothing Selected'
                 },
-                items: m.prop([{
-                  id: 123,
-                  title: 'Thing',
-                  desc: 'Extra'
-                }]),
-                value_prop: 'id',
-                label_prop: 'title',
-                descriptor_prop: 'desc',
-                name: 'select_id',
-                callback: function(obj) {
-                },
-                media_items: [
+                items: m.prop([
                   {
+                    id: 1,
                     title: 'Media Item #1',
                     detail: 'Item detail line',
                     img_src: 'https://placekitten.com/g/300/200'
                   },
                   {
+                    id: 2,
                     title: 'Media Item #2',
                     detail: 'Item #2 detail line',
                     img_src: 'https://placekitten.com/g/300/200'
                   }
-                ]
+                ]),
+                value_prop: 'id',
+                label_prop: 'title',
+                descriptor_prop: 'desc',
+                name: 'select_id',
+                item_type: 'media',
+                callback: function(obj) {
+                }
               })
             ]);
           }

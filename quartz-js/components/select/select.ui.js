@@ -29,10 +29,6 @@ vhxm.components.shared.select.ui.container = {
             oninput: ctrl.handleInput
           })
         ]) : '',
-        opts.media_items ?
-        m.component(vhxm.components.shared.select.ui.media_item.container, {
-          items: opts.media_items
-        }) : '',
         m.component(vhxm.components.shared.select.ui.list.container, opts, ctrl),
         m('input', {
           type: 'hidden',

@@ -13,18 +13,13 @@ vhxm.components.shared.select.ui.list.container = {
     }, [
       ctrl.hasItems() ?
         ctrl.model.items().map(function(item, index) {
-          return m('li.c-select--option.padding-horizontal-large.padding-vertical-small' + (index === ctrl.state.highlightIndex() ? '.is-selected' : ''), {
-            config: function(el) {
-              ctrl.state.optionHeight($(el).outerHeight());
-            },
-            onmouseover: function() {
-              ctrl.state.highlightIndex(index);
-            },
-            onclick: function(event) {
-              ctrl.handleItemClick(event, item);
-            }
-          }, [
-            m('span.c-select--item-label', item[opts.label_prop]), item[opts.descriptor_prop] ? m('span.right.text.primary', item[opts.descriptor_prop]) : '' ]);
+          return m.component(vhxm.components.shared.select.ui['item_' + opts.item_type], {
+            item: item,
+            index: index,
+            parent: parent,
+            ctrl: ctrl,
+            opts: opts
+          });
         })
       : m.component(vhxm.components.shared.select.ui.list.empty, opts)
     ]);
