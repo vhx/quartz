@@ -30,6 +30,11 @@ vhxm.components.shared.select.ui.container = {
           })
         ]) : '',
         m.component(vhxm.components.shared.select.ui.list.container, opts, ctrl),
+        m('.c-select--footer.border-top', [
+          m('a.c-select--footer-link.block.text-center.padding-vert-small', {
+            href: '#'
+          }, 'Create a new category' + (ctrl.state.searchInputValue().length ? (' \'' + ctrl.state.searchInputValue() + '\'') : ''))
+        ]),
         m('input', {
           type: 'hidden',
           name: opts.name,

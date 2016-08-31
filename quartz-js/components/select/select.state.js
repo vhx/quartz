@@ -7,4 +7,5 @@ vhxm.components.shared.select.state = function() {
   this.optionHeight = m.prop(0);
   this.optionsHeight = m.prop(0);
   this.isLoadingResults = m.prop(false);
+  this.searchInputValue = m.prop('');
 };

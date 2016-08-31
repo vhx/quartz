@@ -75,7 +75,9 @@ vhxm.components.shared.select.controller = function(opts) {
     self.scrollOptionsList(container);
   };
 
-  self.handleInput = function() {
+  self.handleInput = function(event) {
+    self.state.searchInputValue(event.target.value);
+
     self.state.isLoadingResults(true);
     self.state.highlightIndex(0);
   };

@@ -128,3 +128,10 @@ $border_color: #8d9da6;
     background-color: $white;
   }
 }
+
+.c-select--footer-link {
+  &:hover {
+    color: #fff;
+    background-color: $teal-3;
+  }
+}
