@@ -20,21 +20,23 @@ vhxm.components.shared.select.ui.item_media = {
         m('p.text--navy', item.title),
         m('p.text--gray', item.detail)
       ]),
+
+      // by default ctrl.state.selected().value isn't array
+      // so on first click, make it one, then do some checks as needed
       m('.c-media-item--action.clearfix.right', [
-        m('.c-item-toggle.icon--xsmall.icon-check-navy.border' + (ctrl.state.selected().value === item[opts.value_prop] ? '.icon-plus-navy' : '.is-selected.icon-check-navy'), {
+        m('.c-item-toggle.icon--xsmall.icon-check-navy.border' + (Array.isArray(ctrl.state.selected().value) && (ctrl.state.selected().value.indexOf(item[opts.value_prop]) > -1) ? '.icon-plus-navy' : '.is-selected.icon-check-navy'), {
           onclick: function() {
-            if (ctrl.state.selected().value != item[opts.value_prop]) {
-              ctrl.state.selected({
-                value: item[opts.value_prop],
-                label: item[opts.label_prop]
-              });
+            if (!Array.isArray(ctrl.state.selected().value)) {
+              ctrl.state.selected().value = [];
+            }
+
+            if (ctrl.state.selected().value.indexOf(item[opts.value_prop]) > -1) {
+              ctrl.state.selected().value.splice(ctrl.state.selected().value.indexOf(item[opts.value_prop]), 1);
             }
             else {
-              ctrl.state.selected({
-                value: null,
-                label: null
-              });
+              ctrl.state.selected().value.push(item[opts.value_prop]);
             }
+
           }
         })
       ])
