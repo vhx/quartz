@@ -30,11 +30,13 @@ vhxm.components.shared.select.ui.container = {
           })
         ]) : '',
         m.component(vhxm.components.shared.select.ui.list.container, opts, ctrl),
+        opts.footer_action ?
+        // show Create New Category dropdown footer action
         m('.c-select--footer.border-top', [
           m('a.c-select--footer-link.block.text-center.padding-vert-small', {
             href: '#'
           }, 'Create a new category' + (ctrl.state.searchInputValue().length ? (' \'' + ctrl.state.searchInputValue() + '\'') : ''))
-        ]),
+        ]) : '',
         m('input', {
           type: 'hidden',
           name: opts.name,

@@ -40,6 +40,7 @@ Q.components.guide.js.ui.select.container = {
                 descriptor_prop: 'desc',
                 name: 'select_id',
                 item_type: 'media',
+                footer_action: true,
                 callback: function(obj) {
                 }
               })
@@ -56,7 +57,9 @@ Q.components.guide.js.ui.select.container = {
           { name: 'value_prop', type: 'string', required: true, description: 'Item key to look for in the provided items for the item value.' },
           { name: 'label_prop', type: 'string', required: true, description: 'Item key to look for in the provided items to display a label.' },
           { name: 'search', type: 'boolean', default_value: 'false', description: 'Toggles inclusion of search input' },
-          { name: 'descriptor_prop', type: 'string', default_value: 'null', description: 'Supplemental item key to look for in the provided items to display a descriptor for each item.' }
+          { name: 'descriptor_prop', type: 'string', default_value: 'null', description: 'Supplemental item key to look for in the provided items to display a descriptor for each item.' },
+          { name: 'item_type', type: 'string', default_value: 'standard', description: 'standard OR media - sets UI of item in dropdown list' },
+          { name: 'footer_action', type: 'boolean', default_value: 'false', description: 'Currently for Collections - show a Create New Category action at the bottom of dropdown.' }
         ]
       })
     ]);
