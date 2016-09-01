@@ -24,7 +24,7 @@ vhxm.components.shared.select.ui.item_media = {
       // by default ctrl.state.selected().value isn't array
       // so on first click, make it one, then do some checks as needed
       m('.c-media-item--action.clearfix.right', [
-        m('.c-item-toggle.icon--xsmall.icon-check-navy.border' + (Array.isArray(ctrl.state.selected().value) && (ctrl.state.selected().value.indexOf(item[opts.value_prop]) > -1) ? '.icon-plus-navy' : '.is-selected.icon-check-navy'), {
+        m('.c-item-toggle.icon--xsmall.icon-check-navy.border' + (Array.isArray(ctrl.state.selected().value) && (ctrl.state.selected().value.indexOf(item[opts.value_prop]) > -1) ? '.is-selected.icon-check-navy' : '.icon-plus-navy'), {
           onclick: function() {
             if (!Array.isArray(ctrl.state.selected().value)) {
               ctrl.state.selected().value = [];

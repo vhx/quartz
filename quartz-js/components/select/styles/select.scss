@@ -113,19 +113,25 @@ $border_color: #8d9da6;
   &:hover {
     cursor: pointer;
     background-color: transparentize($teal-2, .9);
+    .c-item-toggle {
+      opacity: 1;
+    }
   }
 }
 
 // Media Item +/✓ circle
 .c-item-toggle {
+  opacity: 0;
   width: 32px;
   height: 32px;
   border-radius: 50%;
   background-position: center;
   background-color: $teal-2;
   transform: translateY(8px);
+  transition: opacity .2s ease-out;
   &.is-selected {
     background-color: $white;
+    opacity: 1;
   }
 }
 
