@@ -1,5 +1,8 @@
 if (typeof(vhxm) !== 'undefined') {
   vhxm.components.shared = {
+    modal: {
+      ui: {}
+    },
     radio: {
       ui: {}
     },

@@ -46,6 +46,10 @@ Q.components.route.js.ui.components = {
       code: Q.code.sidebar
     },
     {
+      guide: m.component(Q.components.guide.js.ui.modal.container),
+      code: Q.code.modal
+    },
+    {
       guide: m.component(Q.components.guide.js.ui.sizes.container),
       code: Q.code.sizes
     }

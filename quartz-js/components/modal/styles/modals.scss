@@ -1,25 +1,23 @@
-@import "../config/include";
+@import "../../../../quartz-css/vhx-style-core/config/mixins";
 
-
-.modal-container {
+.c-modal {
   position: fixed;
   left: -9999px;
   &.is-active,
-  &.open {
+  &.is-open {
     z-index: 2147483639;
     position: relative;
     left: 0;
-    .modal {
+    .c-modal-container {
       position: fixed;
       animation: modal-open 200ms ease forwards;
     }
-    .modal-bg {
+    .c-modal-bg {
       animation: modal-bg-open 300ms ease forwards;
     }
   }
-  .modal {
+  .c-modal-container {
     animation: modal-close 200ms ease forwards;
-    padding: 35px;
     width: 450px;
     background: #ffffff;
     box-shadow: 0 0 7px rgba(0,0,0,0.2);
@@ -28,29 +26,25 @@
     margin-left: -225px;
     position: absolute;
 
-    &.iframe {
-      width: auto;
-    }
-
-    &.large {
-      width: 650px;
-      margin-left: -325px;
-    }
-
-    &.small {
+    &.c-modal--small {
       width: 300px;
       margin-left: -150px;
     }
 
-    &.small-screen {
-      width: 90vw;
-      margin-left: -45vw;
+    &.c-modal--medium {
+      width: 450px;
+      margin-left: -225px;
     }
 
-    &.modal--has-actions {
-      padding-bottom: 70px;
+    &.c-modal--large {
+      width: 650px;
+      margin-left: -325px;
     }
-    .modal--close {
+
+    &.c-modal--has-actions {
+      padding-bottom: 65px;
+    }
+    .c-modal--close {
       display: block;
       position: absolute;
       top: -25px;
@@ -58,10 +52,10 @@
       cursor: pointer;
       width: 16px;
     }
-    .modal--header {
+    .c-modal--header {
       border-bottom: 1px solid rgba(55, 86, 103, 0.2);
     }
-    .modal--actions {
+    .c-modal--actions {
       background: #ffffff;
       border-top: 1px solid rgba(55, 86, 103, 0.2);
       position: absolute;
@@ -69,30 +63,30 @@
       left: 0;
       width: 100%;
 
-      .modal--btn-container {
-        transition: all .2s ease;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        display: block;
-        height: 70px;
-        padding-top: 27px;
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 16px;
-        text-align: center;
-        text-transform: capitalize;
-      }
-
-      .modal--btn-container-padding {
-        padding: 14px 27px;
-      }
+      // .c-modal--btn-container {
+      //   transition: all .2s ease;
+      //   display: -webkit-box;
+      //   display: -webkit-flex;
+      //   display: -ms-flexbox;
+      //   display: flex;
+      //   align-items: center;
+      //   justify-content: center;
+      //   display: block;
+      //   height: 70px;
+      //   padding-top: 27px;
+      //   font-weight: bold;
+      //   font-size: 14px;
+      //   line-height: 16px;
+      //   text-align: center;
+      //   text-transform: capitalize;
+      // }
+      //
+      // .modal--btn-container-padding {
+      //   padding: 14px 27px;
+      // }
     }
   }
-  .modal-bg {
+  .c-modal-bg {
     background-color: rgba(0, 20, 43, .55);
     position: fixed;
     width: 100%;
