@@ -10,9 +10,14 @@ vhxm.components.shared.tag.ui.container = {
       }
     }, [
       m('button.c-tag--button' + (ctrl.state.isHover() ? '.btn-teal.is-hover' : '.btn-gray'), {
-
+        onclick: function() {
+          ctrl.state.onShow();
+        }
       }, 'Tag'),
       m('a.c-tag--remove.icon--center.icon-x-white.icon--xxsmall' + (ctrl.state.isRemoveHover() ? '.btn-red' : '.btn-teal'), {
+        onclick: function() {
+          ctrl.state.onRemove();
+        },
         onmouseover: function() {
           ctrl.state.isRemoveHover(true);
         },
