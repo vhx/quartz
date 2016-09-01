@@ -1,3 +1,10 @@
+### 0.9.0
+**2016-09-02**
+* Add Modal Component
+* Add Tag Component
+* Radio Component >
+  - Add button style
+
 ### 0.8.18
 **2016-08-03**
 * Avatar Component >
