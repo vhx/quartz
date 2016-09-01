@@ -52,10 +52,6 @@ Q.components.guide.js.ui.radio.container = {
                   items: [
                     {
                       label: 'Choice A',
-                      // label: {
-                      //   title: 'Choice A',
-                      //   descriptor: 'Descriptor'
-                      // },
                       value: 'a',
                       checked: true
                     },
