@@ -2,10 +2,11 @@
   Standard Item Component
 .................................................*/
 vhxm.components.shared.select.ui.item_standard = {
-  view: function(ctrl, params) {
-    let opts = params.opts;
+  view: function(c, params) {
     let item = params.item;
     let index = params.index;
+    let ctrl = params.ctrl;
+    let opts = params.opts;
 
     return m('li.c-select--option.padding-horizontal-large.padding-vertical-small' + (index === ctrl.state.highlightIndex() ? '.is-selected' : ''), {
       config: function(el) {

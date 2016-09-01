@@ -1,5 +1,5 @@
 vhxm.components.shared.select.state = function() {
-  this.selected = m.prop({});
+  this.selected = m.prop([]);
   this.highlighted = m.prop({});
   this.isDropdownOpen = m.prop(false);
   this.highlightIndex = m.prop(null);

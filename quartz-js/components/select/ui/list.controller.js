@@ -10,11 +10,20 @@ vhxm.components.shared.select.ui.list.controller = function(opts, parent) {
   };
 
   self.handleItemClick = function(event, item) {
-    self.state.selected({
-      value: item[opts.value_prop],
-      label: item[opts.label_prop]
-    });
-    self.state.isDropdownOpen(false);
+    let selected = self.state.selected();
+    if (selected[item[opts.key]]) {
+      delete selected[item[opts.key]];
+    }
+    else {
+      selected[item[opts.key]] = {
+        value: item[opts.value_prop],
+        label: item[opts.label_prop]
+      };
+    }
+
+    self.state.selected(selected);
+
+    self.state.isDropdownOpen(true);
     self.state.highlightIndex(-1);
     if (opts.callback) {
       opts.callback(self.state.selected());

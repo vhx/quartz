@@ -16,10 +16,12 @@ Q.components.guide.js.ui.select.container = {
                   callback([
                     { id: 345, title: 'What is this', desc: 'Greatness'}
                   ]);
-                }, // format is function(query, callback)
+                },
                 selected: {
-                  value: null,
-                  label: 'Nothing Selected'
+                  key: {
+                    value: null,
+                    label: 'Nothing Selected'
+                  }
                 },
                 items: m.prop([
                   {
@@ -35,11 +37,13 @@ Q.components.guide.js.ui.select.container = {
                     img_src: 'https://placekitten.com/g/300/200'
                   }
                 ]),
+                key: 'title',
                 value_prop: 'id',
                 label_prop: 'title',
-                descriptor_prop: 'desc',
+                descriptor_prop: 'detail',
+                img_prop: 'img_src',
                 name: 'select_id',
-                item_type: 'media',
+                item_type: 'standard',
                 footer_action: true,
                 callback: function(obj) {
                 }

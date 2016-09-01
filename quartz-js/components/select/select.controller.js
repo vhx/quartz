@@ -7,7 +7,10 @@ vhxm.components.shared.select.controller = function(opts) {
 
     opts.item_type = opts.item_type || 'standard';
     self.model.items = opts.items;
-    self.state.selected(opts.selected);
+
+    if (opts.selected) {
+      self.state.selected(opts.selected);
+    }
 
     $(document).on('click', function(event) {
       let is_dropdown = $(event.target).closest('.c-select--container').length;
@@ -22,22 +25,20 @@ vhxm.components.shared.select.controller = function(opts) {
 
   self.selectedLabel = function() {
     let is_default = true;
+    let selected;
 
     self.model.items().map(function(item) {
-      if (self.state.selected().value === item[opts.value_prop]) {
-        self.state.selected({
-          value: item[opts.value_prop],
-          label: item[opts.label_prop]
-        });
-        is_default = false;
+      if (self.state.selected()[item[opts.key]]) {
+        selected = self.state.selected()[item[opts.key]];
       }
     });
 
-    if (is_default) {
-      self.state.selected(opts.selected);
-    }
-
-    return self.state.selected().label;
+    // if (is_default) {
+    //   self.state.selected(opts.selected);
+    // }
+    //
+    // return self.state.selected().label;
+    return selected;
   };
 
 
@@ -71,6 +72,7 @@ vhxm.components.shared.select.controller = function(opts) {
     let container = $(event.target).closest('.c-select--container').find('.c-select--options');
 
     self.state.isDropdownOpen(!self.state.isDropdownOpen());
+
     self.state.highlightIndex(-1);
 
     self.scrollOptionsList(container);
