@@ -75,7 +75,19 @@ html {
 
 .flex-vertical-middle {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  &.flex-row {
+    flex-direction: row;
+  }
+}
+.flex-horizontal-middle {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  &.text-left {
+    justify-content: initial;
+  }
 }
