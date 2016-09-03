@@ -1,0 +1,134 @@
+/* .....................................
+  Fonts
+..................................... */
+/* .....................................
+  Sets
+..................................... */
+/* .....................................
+  Media Query Ranges
+..................................... */
+/* .....................................
+  Colors - Grays
+..................................... */
+/* .....................................
+  Colors - Teals
+..................................... */
+/* .....................................
+  Colors - Red
+..................................... */
+/* .....................................
+  Colors - Navy
+..................................... */
+/* .....................................
+  Colors - Brand Palette
+..................................... */
+/* .....................................
+  Colors - External Palette
+..................................... */
+/* helper function for margin and padding
+......................................*/
+.c-modal {
+  position: fixed;
+  left: -9999px; }
+  .c-modal.is-active, .c-modal.is-open {
+    z-index: 2147483639;
+    position: relative;
+    left: 0; }
+    .c-modal.is-active .c-modal-container, .c-modal.is-open .c-modal-container {
+      position: fixed;
+      animation: modal-open 200ms ease forwards; }
+    .c-modal.is-active .c-modal-bg, .c-modal.is-open .c-modal-bg {
+      animation: modal-bg-open 300ms ease forwards; }
+  .c-modal .c-modal-container {
+    animation: modal-close 200ms ease forwards;
+    width: 450px;
+    background: #ffffff;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+    border-radius: 0px;
+    bottom: 50%;
+    margin-left: -225px;
+    position: absolute; }
+    .c-modal .c-modal-container.c-modal--small {
+      width: 300px;
+      margin-left: -150px; }
+    .c-modal .c-modal-container.c-modal--medium {
+      width: 450px;
+      margin-left: -225px; }
+    .c-modal .c-modal-container.c-modal--large {
+      width: 650px;
+      margin-left: -325px; }
+    .c-modal .c-modal-container.c-modal--has-actions {
+      padding-bottom: 65px; }
+    .c-modal .c-modal-container .c-modal--close {
+      display: block;
+      position: absolute;
+      top: -25px;
+      right: -25px;
+      cursor: pointer;
+      width: 16px; }
+    .c-modal .c-modal-container .c-modal--header {
+      border-bottom: 1px solid rgba(55, 86, 103, 0.2); }
+    .c-modal .c-modal-container .c-modal--actions {
+      background: #ffffff;
+      border-top: 1px solid rgba(55, 86, 103, 0.2);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%; }
+  .c-modal .c-modal-bg {
+    background-color: rgba(0, 20, 43, 0.55);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    animation: modal-bg-close 300ms ease forwards; }
+
+@keyframes modal-open {
+  0% {
+    left: 50%;
+    z-index: 10;
+    transform: scale(0.5);
+    opacity: 0; }
+  100% {
+    left: 50%;
+    z-index: 10;
+    transform: scale(1);
+    opacity: 1; } }
+@keyframes modal-close {
+  0% {
+    left: 50%;
+    z-index: 10;
+    transform: scale(1);
+    opacity: 1; }
+  99% {
+    left: 50%;
+    z-index: 10;
+    transform: scale(0.5);
+    opacity: 0; }
+  100% {
+    left: -99999px;
+    z-index: 10;
+    transform: scale(0.5);
+    opacity: 0; } }
+@keyframes modal-bg-open {
+  0% {
+    z-index: 5;
+    left: 0;
+    opacity: 0; }
+  100% {
+    z-index: 5;
+    left: 0;
+    opacity: 1; } }
+@keyframes modal-bg-close {
+  0% {
+    z-index: 5;
+    left: 0;
+    opacity: 1; }
+  99% {
+    z-index: 5;
+    left: 0;
+    opacity: 0; }
+  100% {
+    z-index: -10;
+    left: -99999px;
+    opacity: 0; } }

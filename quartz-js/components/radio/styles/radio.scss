@@ -111,13 +111,29 @@
 
   /* stacked radio
   ...................................*/
-  &.radio--stacked {
+  &.radio--stacked,
+  &.radio--buttons {
     display: block;
     height: auto;
     li {
       display: block;
       margin-right: 0px;
       margin-bottom: 10px;
+    }
+  }
+  &.radio--buttons li {
+    height: auto !important;
+    label {
+      padding: 10px;
+      min-height: 58px;
+    }
+    .radio--label,
+    label {
+      height: auto !important;
+    }
+    .radio--icon {
+      margin-top: 8px;
+      background: white;
     }
   }
 

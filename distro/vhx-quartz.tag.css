@@ -1,0 +1,18 @@
+.c-tag .c-tag--button {
+  z-index: 1; }
+.c-tag .icon-x-white {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+  opacity: 0;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  transition: right 500ms cubic-bezier(0.19, 1, 0.22, 1), opacity 300ms ease; }
+.c-tag.is-hover .c-tag--button {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  background-color: #22B9B0 !important; }
+.c-tag.is-hover .icon-x-white {
+  opacity: 1;
+  right: -38px; }

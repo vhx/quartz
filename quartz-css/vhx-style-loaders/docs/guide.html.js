@@ -11,10 +11,22 @@ Q.components.guide.styleguide.ui.loaders.container = {
         component: {
           view: function() {
             return m('div', [
-              m('span.loader-slate'),
-              m('span.loader-teal'),
-              m('span.bg-grid-dark.inline', [
-                m('span.loader-white')
+              m('.row', [
+                m('.column.small-thirds', [
+                  m('span.block.loader-slate', {
+                    style: { height: '60px' }
+                  })
+                ]),
+                m('.column.small-thirds', [
+                  m('span.block.loader-teal', {
+                    style: { height: '60px' }
+                  })
+                ]),
+                m('.column.small-thirds.bg-grid-dark', [
+                  m('span.block.loader-white', {
+                    style: { height: '60px' }
+                  })
+                ])
               ])
             ]);
           }
@@ -25,10 +37,51 @@ Q.components.guide.styleguide.ui.loaders.container = {
         component: {
           view: function() {
             return m('div', [
-              m('span.loader-slate.loader--small'),
-              m('span.loader-slate.loader--medium'),
-              m('span.loader-slate.loader--large'),
-              m('span.loader-slate.loader--xlarge')
+              m('.row', [
+                m('.column.small-4', [
+                  m('span.block.loader-slate.loader--small', {
+                    style: { height: '100px' }
+                  })
+                ]),
+                m('.column.small-4', [
+                  m('span.block.loader-slate.loader--medium', {
+                    style: { height: '100px' }
+                  })
+                ]),
+                m('.column.small-4', [
+                  m('span.block.loader-slate.loader--large', {
+                    style: { height: '100px' }
+                  })
+                ]),
+                m('.column.small-4', [
+                  m('span.block.loader-slate.loader--xlarge', {
+                    style: { height: '100px' }
+                  })
+                ])
+              ])
+            ]);
+          }
+        }
+      }),
+      m.component(Q.components.shared.block.ui.container, {
+        title: 'Cover Types',
+        component: {
+          view: function() {
+            return m('div.row', [
+              m('div.pull.border.loader--hide.loader-slate.is-processing', {
+                style: {
+                  width: '150px',
+                  height: '150px'
+                }
+              }),
+              m('div.pull.padding-small.margin-left-medium.border.loader--transparent.loader-slate.is-processing', {
+                style: {
+                  width: '150px',
+                  height: '150px'
+                }
+              }, [
+                m('p', 'All child elements will be transparent when in the container is in a loading state.')
+              ])
             ]);
           }
         }

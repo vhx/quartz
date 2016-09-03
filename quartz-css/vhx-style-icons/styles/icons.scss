@@ -184,7 +184,6 @@
 .icon-circle {
   border-radius: 50%;
   border: 1px solid $gray-3;
-  background-color: $white;
   box-sizing: content-box;
   display: inline-block;
   background-position: 50% 50% !important;
@@ -244,7 +243,7 @@
   background-position: 50% 50% !important;
   width: $icon-xxsmall;
   height: $icon-xxsmall;
-  
+
   &.icon--small {
     width: $icon-xxsmall;
     height: $icon-xxsmall;
