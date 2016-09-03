@@ -133,15 +133,33 @@
   .form .radio-teal input[type="radio"]:checked + label .radio--icon .circle-bottom {
     opacity: 1;
     transition: opacity .2s ease; }
-  .form .radio-gray.radio--stacked,
-  .form .radio-teal.radio--stacked {
+  .form .radio-gray.radio--stacked, .form .radio-gray.radio--buttons,
+  .form .radio-teal.radio--stacked,
+  .form .radio-teal.radio--buttons {
     display: block;
     height: auto; }
-    .form .radio-gray.radio--stacked li,
-    .form .radio-teal.radio--stacked li {
+    .form .radio-gray.radio--stacked li, .form .radio-gray.radio--buttons li,
+    .form .radio-teal.radio--stacked li,
+    .form .radio-teal.radio--buttons li {
       display: block;
       margin-right: 0px;
       margin-bottom: 10px; }
+  .form .radio-gray.radio--buttons li,
+  .form .radio-teal.radio--buttons li {
+    height: auto !important; }
+    .form .radio-gray.radio--buttons li label,
+    .form .radio-teal.radio--buttons li label {
+      padding: 10px;
+      min-height: 58px; }
+    .form .radio-gray.radio--buttons li .radio--label,
+    .form .radio-gray.radio--buttons li label,
+    .form .radio-teal.radio--buttons li .radio--label,
+    .form .radio-teal.radio--buttons li label {
+      height: auto !important; }
+    .form .radio-gray.radio--buttons li .radio--icon,
+    .form .radio-teal.radio--buttons li .radio--icon {
+      margin-top: 8px;
+      background: white; }
   .form .radio-gray.radio-teal .circle-top span,
   .form .radio-teal.radio-teal .circle-top span {
     background: #22B9B0 !important; }

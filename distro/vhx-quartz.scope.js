@@ -2,6 +2,9 @@
 
 if (typeof vhxm !== 'undefined') {
   vhxm.components.shared = {
+    modal: {
+      ui: {}
+    },
     radio: {
       ui: {}
     },
@@ -36,6 +39,9 @@ if (typeof vhxm !== 'undefined') {
       ui: {}
     },
     avatar: {},
-    size: {}
+    size: {},
+    tag: {
+      ui: {}
+    }
   };
 }
