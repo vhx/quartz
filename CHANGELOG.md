@@ -4,7 +4,14 @@
 * Add Tag Component
 * Radio Component >
   - Add button style
-
+* CSS Loaders >
+  - Fix centering issues
+  - Improve usefulness of cover class (hide and transparent)
+  - Change `loader--cover-hide` class to `loader--hide`
+  - Change `loader--cover-transparent` class to `loader--transparent`
+* CSS Textarea >
+  - Fix missing `px` for sizes
+  
 ### 0.8.18
 **2016-08-03**
 * Avatar Component >
