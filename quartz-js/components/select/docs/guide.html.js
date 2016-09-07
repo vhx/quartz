@@ -43,7 +43,7 @@ Q.components.guide.js.ui.select.container = {
                 descriptor_prop: 'detail',
                 img_prop: 'img_src',
                 name: 'select_id',
-                item_type: 'standard',
+                item_type: 'media',
                 footer_action: true,
                 callback: function(obj) {
                 }
