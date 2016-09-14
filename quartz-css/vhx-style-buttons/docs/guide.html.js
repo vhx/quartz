@@ -97,7 +97,24 @@ Q.components.guide.styleguide.ui.buttons.container = {
             return m('div', [
               m('button.btn-dropdown-gray.margin-right-small.margin-bottom-small', 'Dropdown'),
               m('button.btn-dropdown-teal.margin-right-small.margin-bottom-small', 'Dropdown'),
-              m('button.btn-dropdown-white.margin-right-small.margin-bottom-small', 'Dropdown')
+              m('button.btn-dropdown-white.margin-right-small.margin-bottom-small', 'Dropdown'),
+              m('select.btn-dropdown-white.margin-bottom-small', {
+              }, [
+                m('option', {
+                  value: '',
+                  disabled: true,
+                  selected: true
+                }, 'Choose subtitle language'),
+                m('option', {
+                  value: 'ru'
+                }, 'Russian'),
+                m('option', {
+                  value: 'en'
+                }, 'English'),
+                m('option', {
+                  value: 'CN'
+                }, 'Chinese')
+              ])
             ]);
           }
         }
