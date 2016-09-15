@@ -1,7 +1,12 @@
+### 0.9.3
+**2016-09-15**
+* Radio Component >
+  - Fix bug introduced in 9.1, where arguments are not passed as expected
+
 ### 0.9.2
 **2016-09-15**
 * Sidebar Component >
-  - Fix transtions
+  - Fix transitions
 
 ### 0.9.1
 **2016-09-14**
