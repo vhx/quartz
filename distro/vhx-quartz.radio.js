@@ -27,10 +27,10 @@ vhxm.components.shared.radio.ui.container = {
       return m('li', [m('input', {
         id: opts.name + '-' + index,
         type: 'radio',
-        onchange: function onchange() {
+        onchange: function onchange(event) {
           ctrl.state.isChecked(item.value);
           if (opts.onchange) {
-            opts.onchange(arguments);
+            opts.onchange(event);
           }
         },
         name: opts.name,
