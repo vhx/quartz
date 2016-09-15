@@ -5,13 +5,13 @@ vhxm.components.shared.select.ui.container = {
   },
   view: function(ctrl, opts) {
     opts.custom_trigger ? opts.custom_trigger.attrs.onclick = ctrl.handleClick : '';
-    opts.custom_trigger ? opts.custom_trigger.attrs.className += ' select-trigger' : '';
+    opts.custom_trigger ? opts.custom_trigger.attrs.className += ' c-select--trigger' : '';
 
     return m('.c-select--container.form' + (opts.search ? '.has-search' : '') + (opts.inline ? '.inline' : ''), {
         config: function(el, isInitialized) {
           if (opts.custom_trigger && isInitialized) {
-            var left_pos = el.querySelector('.select-trigger').offsetWidth * .25;
-            el.querySelector('.caret').style.left = left_pos + 'px';
+            var left_pos = el.querySelector('.c-select--trigger').offsetWidth * .25;
+            el.querySelector('.c-select--caret').style.left = left_pos + 'px';
           }
         },
         onkeydown: ctrl.handleKeydown
@@ -46,7 +46,7 @@ vhxm.components.shared.select.ui.container = {
           name: opts.name,
           value: ctrl.state.selected().value
         }),
-        m('span.caret')
+        m('span.c-select--caret')
       ])
     ]);
   }
