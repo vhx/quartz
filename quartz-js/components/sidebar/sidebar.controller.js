@@ -18,6 +18,9 @@ vhxm.components.shared.sidebar.controller = function(opts) {
     if (opts.onClose) {
       vhxm.components.shared.sidebar.state.onClose = self.opts.onClose;
     }
+    if (opts.onBeforeClose) {
+      vhxm.components.shared.sidebar.state.onBeforeClose = self.opts.onBeforeClose;
+    }
   }
 
   self.documentClickHandler = function(event) {
