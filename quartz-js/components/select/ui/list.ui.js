@@ -6,14 +6,14 @@ vhxm.components.shared.select.ui.list.container = {
     return new vhxm.components.shared.select.ui.list.controller(opts, parent);
   },
   view: function(ctrl, opts) {
-    return m('ul.c-select--options.margin-left-reset' + (ctrl.state.isLoadingResults() ? '.is-loading.padding-bottom-medium' : ''), {
+    return m('ul.c-select--options.margin-left-reset' + (ctrl.state.isLoading() ? '.is-loading' : ''), {
       config: function(el) {
         ctrl.state.optionsHeight($(el).outerHeight());
       }
     }, [
       ctrl.hasItems() ?
         ctrl.model.items().map(function(item, index) {
-          return m.component(vhxm.components.shared.select.ui['item_' + opts.item_type], {
+          return m.component(vhxm.components.shared.select.ui['item_' + opts.type], {
             item: item,
             index: index,
             parent: parent,

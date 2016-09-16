@@ -16,13 +16,13 @@ vhxm.components.shared.select.ui.container = {
         // if search is enabled
         m('.c-select--input-container.padding-medium', [
           m.component(vhxm.components.shared.search_input.ui.container, {
-            config: function(el) {
-              if (ctrl.state.isDropdownOpen()) {
-                setTimeout(function() {
-                  el.focus();
-                }, 10);
-              }
-            },
+            // config: function(el) {
+            //   if (ctrl.state.isDropdownOpen()) {
+            //     setTimeout(function() {
+            //       el.focus();
+            //     }, 10);
+            //   }
+            // },
             callback: ctrl.searchCallback,
             search: opts.search,
             placeholder: 'Search',
@@ -30,12 +30,12 @@ vhxm.components.shared.select.ui.container = {
           })
         ]) : '',
         m.component(vhxm.components.shared.select.ui.list.container, opts, ctrl),
-        opts.footer_action ?
+        opts.footer_action && ctrl.state.searchInputValue().length ?
         // show Create New Category dropdown footer action
         m('.c-select--footer.border-top', [
-          m('a.c-select--footer-link.block.text-center.padding-vert-small', {
+          m('a.c-select--footer-link.block.text--bold.text-center.padding-vert-small', {
             href: '#'
-          }, 'Create a new category' + (ctrl.state.searchInputValue().length ? (' \'' + ctrl.state.searchInputValue() + '\'') : ''))
+          }, opts.footer_action + (ctrl.state.searchInputValue().length ? (' \'' + ctrl.state.searchInputValue() + '\'') : ''))
         ]) : ''
       ])
     ]);

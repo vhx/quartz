@@ -15,11 +15,18 @@ Q.components.guide.js.ui.select.container = {
               m.component(vhxm.components.shared.select.ui.container, {
                 search: function(query, callback) {
                   callback([
-                    { id: 345, title: 'What is this', desc: 'Greatness'}
+                    {
+                      id: 3,
+                      title: 'Media Item #3',
+                      detail: 'Search Reesult',
+                      img_src: 'https://placekitten.com/g/300/200'
+                    }
                   ]);
                 },
+                type: 'media',
                 placeholder: 'Nothing selected',
                 selected: null,
+                footer_action: 'Create new category',
                 items: m.prop([
                   {
                     id: 1,
@@ -35,15 +42,15 @@ Q.components.guide.js.ui.select.container = {
                   }
                 ]),
                 api: Q.api,
-                key_prop: 'title',
-                value_prop: 'id',
-                label_prop: 'title',
-                descriptor_prop: 'detail',
-                img_prop: 'img_src',
-                item_type: 'media',
-                footer_action: 'Create new Category',
+                prop_map: {
+                  key: 'title',
+                  label: 'title',
+                  value: 'id',
+                  descriptor: 'detail',
+                  img: 'img_src'
+                },
                 onCreate: function() {
-
+                  console.log('create!');
                 },
                 onSelect: function(obj) {
                   console.log(obj);

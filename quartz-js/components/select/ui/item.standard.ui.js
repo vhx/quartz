@@ -3,10 +3,10 @@
 .................................................*/
 vhxm.components.shared.select.ui.item_standard = {
   view: function(c, params) {
-    let item = params.item;
+    let item  = params.item;
     let index = params.index;
-    let ctrl = params.ctrl;
-    let opts = params.opts;
+    let ctrl  = params.ctrl;
+    let opts  = params.opts;
 
     return m('li.c-select--option.padding-horizontal-large.padding-vertical-small' + (index === ctrl.state.highlightIndex() ? '.is-selected' : ''), {
       config: function(el) {
@@ -19,7 +19,7 @@ vhxm.components.shared.select.ui.item_standard = {
         ctrl.handleItemClick(event, item);
       }
     }, [
-      m('span.c-select--item-label', item[opts.label_prop]), item[opts.descriptor_prop] ? m('span.right.text.primary', item[opts.descriptor_prop]) : ''
+      m('span.c-select--item-label', item[opts.prop_map.label]), item[opts.prop_map.descriptor] ? m('span.right.text.primary', item[opts.prop_map.descriptor]) : ''
     ]);
   }
 };

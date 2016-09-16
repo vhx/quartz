@@ -6,18 +6,18 @@ vhxm.components.shared.select.ui.list.controller = function(opts, parent) {
   self.model = parent.model;
 
   self.hasItems = function() {
-    return self.model.items() && self.model.items().length > 1;
+    return self.model.items() && self.model.items().length > 0;
   };
 
   self.handleItemClick = function(event, item) {
     let selected = self.state.selected() || self.state.selected({});
-    if (selected[item[opts.key_prop]]) {
-      delete selected[item[opts.key_prop]];
+    if (selected[item[opts.prop_map.key]]) {
+      delete selected[item[opts.prop_map.key]];
     }
     else {
-      selected[item[opts.key_prop]] = {
-        value: item[opts.value_prop],
-        label: item[opts.label_prop]
+      selected[item[opts.prop_map.key]] = {
+        value: item[opts.prop_map.value],
+        label: item[opts.prop_map.label]
       };
     }
 
@@ -27,5 +27,4 @@ vhxm.components.shared.select.ui.list.controller = function(opts, parent) {
     self.state.onSelect(self.state.selected());
     self.parent.scrollOptionsList(0);
   };
-
 };

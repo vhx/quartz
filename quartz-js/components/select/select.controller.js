@@ -6,7 +6,7 @@ vhxm.components.shared.select.controller = function(opts) {
     self.state = new vhxm.components.shared.select.state();
     self.model = new vhxm.components.shared.select.model();
 
-    opts.item_type = opts.item_type || 'standard';
+    opts.type = opts.type || 'standard';
     self.model.items = opts.items;
 
     if (opts.selected) {
@@ -39,8 +39,8 @@ vhxm.components.shared.select.controller = function(opts) {
 
     if (self.state.selected()) {
       self.model.items().map(function(item) {
-        if (self.state.selected()[item[opts.key_prop]]) {
-          selected = self.state.selected()[item[opts.key_prop]].label;
+        if (self.state.selected()[item[opts.prop_map.key]]) {
+          selected = self.state.selected()[item[opts.prop_map.key]].label;
         }
       });
       if (Object.keys(self.state.selected()).length > 1) {
@@ -50,7 +50,6 @@ vhxm.components.shared.select.controller = function(opts) {
 
     return selected;
   };
-
 
   self.handleKeydown = function(e) {
     let container = $(e.target).closest('.c-select--container').find('.c-select--options');
@@ -68,8 +67,8 @@ vhxm.components.shared.select.controller = function(opts) {
     // Enter/Return
     else if (e.keyCode === 13 && self.state.isDropdownOpen()) {
       self.state.selected({
-        value: self.model.items()[self.state.highlightIndex()][opts.value_prop],
-        label: self.model.items()[self.state.highlightIndex()][opts.label_prop]
+        value: self.model.items()[self.state.highlightIndex()][opts.prop_map.value],
+        label: self.model.items()[self.state.highlightIndex()][opts.prop_map.label]
       });
 
       self.state.isDropdownOpen(false);
@@ -90,8 +89,7 @@ vhxm.components.shared.select.controller = function(opts) {
 
   self.handleInput = function(event) {
     self.state.searchInputValue(event.target.value);
-
-    self.state.isLoadingResults(true);
+    self.state.isLoading(true);
     self.state.highlightIndex(0);
   };
 
