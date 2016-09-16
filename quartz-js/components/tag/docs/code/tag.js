@@ -1,4 +1,5 @@
 m.component(vhxm.components.shared.tag.ui.container, {
+  label: 'Comedy',
   onShow: function() {
     window.alert('show something');
   },
