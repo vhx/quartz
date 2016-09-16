@@ -36,12 +36,7 @@ vhxm.components.shared.select.ui.container = {
           m('a.c-select--footer-link.block.text-center.padding-vert-small', {
             href: '#'
           }, 'Create a new category' + (ctrl.state.searchInputValue().length ? (' \'' + ctrl.state.searchInputValue() + '\'') : ''))
-        ]) : '',
-        m('input', {
-          type: 'hidden',
-          name: opts.name,
-          value: ctrl.state.selected().value
-        })
+        ]) : ''
       ])
     ]);
   }

@@ -21,7 +21,7 @@ vhxm.components.shared.select.ui.item_media = {
         m('p.text--gray', item[opts.descriptor_prop])
       ]),
       m('.c-media-item--action.clearfix.right', [
-        m('.c-item-toggle.icon--xsmall.icon-check-navy.border' + (ctrl.state.selected()[item[opts.key]] ? '.is-selected.icon-check-navy' : '.icon-plus-navy'), {
+        m('.c-item-toggle.icon--xsmall.icon-check-navy.border' + (ctrl.state.selected() && ctrl.state.selected()[item[opts.key_prop]] ? '.is-selected.icon-check-navy' : '.icon-plus-navy'), {
           onclick: function(event) {
             ctrl.handleItemClick(event, item);
           }

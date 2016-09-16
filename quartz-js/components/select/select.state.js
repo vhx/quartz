@@ -1,5 +1,5 @@
 vhxm.components.shared.select.state = function() {
-  this.selected = m.prop([]);
+  this.selected = m.prop(null);
   this.highlighted = m.prop({});
   this.isDropdownOpen = m.prop(false);
   this.highlightIndex = m.prop(null);
@@ -8,4 +8,6 @@ vhxm.components.shared.select.state = function() {
   this.optionsHeight = m.prop(0);
   this.isLoadingResults = m.prop(false);
   this.searchInputValue = m.prop('');
+  this.onSelect = function() {};
+  this.onCreate = function() {};
 };

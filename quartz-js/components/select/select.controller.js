@@ -1,5 +1,6 @@
 vhxm.components.shared.select.controller = function(opts) {
   let self = this;
+  let api = opts.api ? opts.api : m.prop(null);
 
   self.init = function() {
     self.state = new vhxm.components.shared.select.state();
@@ -12,6 +13,14 @@ vhxm.components.shared.select.controller = function(opts) {
       self.state.selected(opts.selected);
     }
 
+    if (opts.onSelect) {
+      self.state.onSelect = opts.onSelect;
+    }
+
+    if (opts.onCreate) {
+      self.state.onSelect = opts.onSelect;
+    }
+
     $(document).on('click', function(event) {
       let is_dropdown = $(event.target).closest('.c-select--container').length;
 
@@ -21,23 +30,24 @@ vhxm.components.shared.select.controller = function(opts) {
         m.endComputation();
       }
     });
+
+    api(self);
   };
 
   self.selectedLabel = function() {
-    let is_default = true;
-    let selected;
+    let selected = opts.placeholder ? opts.placeholder : 'Select...';
 
-    self.model.items().map(function(item) {
-      if (self.state.selected()[item[opts.key]]) {
-        selected = self.state.selected()[item[opts.key]];
+    if (self.state.selected()) {
+      self.model.items().map(function(item) {
+        if (self.state.selected()[item[opts.key_prop]]) {
+          selected = self.state.selected()[item[opts.key_prop]].label;
+        }
+      });
+      if (Object.keys(self.state.selected()).length > 1) {
+        selected = 'Multiple items selected';
       }
-    });
+    }
 
-    // if (is_default) {
-    //   self.state.selected(opts.selected);
-    // }
-    //
-    // return self.state.selected().label;
     return selected;
   };
 
