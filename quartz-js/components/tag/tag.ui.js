@@ -13,7 +13,7 @@ vhxm.components.shared.tag.ui.container = {
         onclick: function() {
           ctrl.state.onShow();
         }
-      }, 'Tag'),
+      }, (opts.label ? opts.label : 'Tag')),
       m('a.c-tag--remove.icon--center.icon-x-white.icon--xxsmall' + (ctrl.state.isRemoveHover() ? '.btn-red' : '.btn-teal'), {
         onclick: function() {
           ctrl.state.onRemove();
