@@ -48,25 +48,28 @@
   display: none; }
   .c-select--dropdown.is-open {
     display: block; }
-  .c-select--dropdown:after, .c-select--dropdown:before {
-    bottom: 100%;
-    right: 22px;
-    border: solid transparent;
-    content: " ";
-    height: 0;
-    width: 0;
+
+.c-select--caret {
+  border: solid transparent;
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: #D7DDE1;
+  border-width: 10px;
+  margin-right: -11px;
+  bottom: 100%;
+  right: 22px;
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none; }
+  .c-select--caret:before {
     position: absolute;
-    pointer-events: none; }
-  .c-select--dropdown:after {
-    border-color: rgba(255, 255, 255, 0);
+    bottom: -10px;
+    right: -9px;
+    content: ' ';
+    display: block;
+    border: solid transparent;
     border-bottom-color: #ffffff;
-    border-width: 9px;
-    margin-right: -10px; }
-  .c-select--dropdown:before {
-    border-color: rgba(255, 255, 255, 0);
-    border-bottom-color: #D7DDE1;
-    border-width: 10px;
-    margin-right: -11px; }
+    border-width: 9px; }
 
 .c-select--input-container {
   position: absolute;
