@@ -20,6 +20,9 @@ vhxm.components.shared.sidebar.controller = function (opts) {
     if (opts.onClose) {
       vhxm.components.shared.sidebar.state.onClose = self.opts.onClose;
     }
+    if (opts.onBeforeClose) {
+      vhxm.components.shared.sidebar.state.onBeforeClose = self.opts.onBeforeClose;
+    }
   }
 
   self.documentClickHandler = function (event) {
@@ -85,13 +88,21 @@ vhxm.components.shared.sidebar.controller = function (opts) {
 vhxm.components.shared.sidebar.toggle = function (state, route) {
   state = state === 'open' ? true : false;
 
-  if (vhxm.components.shared.sidebar.state.isOpen() && !state || !vhxm.components.shared.sidebar.state.isOpen() && state) {
+  var done = function done() {
     vhxm.components.shared.sidebar.state.isOpen(state);
     if (route) {
       return m.route(route);
     }
 
     m.redraw();
+  };
+
+  if (vhxm.components.shared.sidebar.state.isOpen() && !state || !vhxm.components.shared.sidebar.state.isOpen() && state) {
+    if (!state) {
+      vhxm.components.shared.sidebar.state.onBeforeClose(done);
+    } else {
+      done();
+    }
   }
 };
 
@@ -114,6 +125,7 @@ vhxm.components.shared.sidebar.state = {
   isLoaded: m.prop(false),
   skipTransition: m.prop(false),
   template: m.prop(null),
+  onBeforeClose: function onBeforeClose() {},
   onClose: function onClose() {},
   onOpen: function onOpen() {}
 };
