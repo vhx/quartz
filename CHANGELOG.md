@@ -1,3 +1,37 @@
+### 0.9.4
+**2016-09-16**
+* Sidebar Component >
+  - Add `onBeforeClose` callback
+
+### 0.9.3
+**2016-09-15**
+* Radio Component >
+  - Fix bug introduced in 9.1, where arguments are not passed as expected
+
+### 0.9.2
+**2016-09-15**
+* Sidebar Component >
+  - Fix transitions
+
+### 0.9.1
+**2016-09-14**
+* Select Component >
+  - Fix Firefox default select styles
+
+### 0.9.0
+**2016-09-02**
+* Add Modal Component
+* Add Tag Component
+* Radio Component >
+  - Add button style
+* CSS Loaders >
+  - Fix centering issues
+  - Improve usefulness of cover class (hide and transparent)
+  - Change `loader--cover-hide` class to `loader--hide`
+  - Change `loader--cover-transparent` class to `loader--transparent`
+* CSS Textarea >
+  - Fix missing `px` for sizes
+
 ### 0.8.18
 **2016-08-03**
 * Avatar Component >

@@ -32,3 +32,26 @@ m.component(vhxm.components.shared.radio.ui.container, {
     }
   ]
 });
+
+// stacked teal button
+m.component(vhxm.components.shared.radio.ui.container, {
+  color: 'teal',
+  buttons: true,
+  name: 'stacked-button',
+  items: [
+    {
+      // no descriptor
+      label: 'Choice A',
+      value: 'a',
+      checked: true
+    },
+    {
+      // title and descriptor
+      label: {
+        title: 'Choice B',
+        descriptor: 'Descriptor'
+      },
+      value: 'b'
+    }
+  ]
+});
