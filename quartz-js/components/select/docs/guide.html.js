@@ -12,6 +12,7 @@ Q.components.guide.js.ui.select.container = {
           view: function() {
             return m('div', [
               m.component(vhxm.components.shared.select.ui.container, {
+                custom_trigger: m('a', { href: '#', }, '+ Add Video'),
                 search: function(query, callback) {
                   callback([
                     { id: 345, title: 'What is this', desc: 'Greatness'}
@@ -46,7 +47,8 @@ Q.components.guide.js.ui.select.container = {
           { name: 'value_prop', type: 'string', required: true, description: 'Item key to look for in the provided items for the item value.' },
           { name: 'label_prop', type: 'string', required: true, description: 'Item key to look for in the provided items to display a label.' },
           { name: 'search', type: 'boolean', default_value: 'false', description: 'Toggles inclusion of search input' },
-          { name: 'descriptor_prop', type: 'string', default_value: 'null', description: 'Supplemental item key to look for in the provided items to display a descriptor for each item.' }
+          { name: 'descriptor_prop', type: 'string', default_value: 'null', description: 'Supplemental item key to look for in the provided items to display a descriptor for each item.' },
+          { name: 'custom_trigger', type: 'mithril element', default_value: 'null', required: false, description: 'Trigger element that will replace default button dropdown' }
         ]
       })
     ]);
