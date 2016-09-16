@@ -1,13 +1,22 @@
 vhxm.components.shared.sidebar.toggle = function(state, route) {
   state = state === 'open' ? true : false;
 
-  if (vhxm.components.shared.sidebar.state.isOpen() && !state || !vhxm.components.shared.sidebar.state.isOpen() && state) {
+  let done = function() {
     vhxm.components.shared.sidebar.state.isOpen(state);
     if (route) {
       return m.route(route);
     }
 
     m.redraw();
+  };
+
+  if (vhxm.components.shared.sidebar.state.isOpen() && !state || !vhxm.components.shared.sidebar.state.isOpen() && state) {
+    if (!state) {
+      vhxm.components.shared.sidebar.state.onBeforeClose(done);
+    }
+    else {
+      done();
+    }
   }
 };
 

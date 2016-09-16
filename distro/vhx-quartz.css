@@ -4551,6 +4551,7 @@ textarea[rows] {
 /* Add height value for select elements to match text input height */
 select {
   -webkit-appearance: none !important;
+  -moz-appearance: none !important;
   -webkit-border-radius: 0px;
   line-height: normal; }
 

@@ -9,10 +9,10 @@ vhxm.components.shared.radio.ui.container = {
             m('input', {
               id: opts.name + '-' + index,
               type: 'radio',
-              onchange: function() {
+              onchange: function(event) {
                 ctrl.state.isChecked(item.value);
                 if (opts.onchange) {
-                  opts.onchange(arguments);
+                  opts.onchange(event);
                 }
               },
               name: opts.name,
