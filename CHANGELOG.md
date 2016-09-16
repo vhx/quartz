@@ -1,3 +1,8 @@
+### 0.9.4
+**2016-09-16**
+* Sidebar Component >
+  - Add `onBeforeClose` callback
+
 ### 0.9.3
 **2016-09-15**
 * Radio Component >
