@@ -24,7 +24,7 @@ vhxm.components.shared.tag.ui.container = {
       onclick: function onclick() {
         ctrl.state.onShow();
       }
-    }, 'Tag'), m('a.c-tag--remove.icon--center.icon-x-white.icon--xxsmall' + (ctrl.state.isRemoveHover() ? '.btn-red' : '.btn-teal'), {
+    }, opts.label ? opts.label : 'Tag'), m('a.c-tag--remove.icon--center.icon-x-white.icon--xxsmall' + (ctrl.state.isRemoveHover() ? '.btn-red' : '.btn-teal'), {
       onclick: function onclick() {
         ctrl.state.onRemove();
       },
