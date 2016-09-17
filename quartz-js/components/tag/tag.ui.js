@@ -10,13 +10,15 @@ vhxm.components.shared.tag.ui.container = {
       }
     }, [
       m('button.c-tag--button' + (ctrl.state.isHover() ? '.btn-teal.is-hover' : '.btn-gray'), {
-        onclick: function() {
-          ctrl.state.onShow();
+        onclick: function(event) {
+          event.preventDefault();
+          ctrl.state.onShow(event);
         }
       }, (opts.label ? opts.label : 'Tag')),
       m('a.c-tag--remove.icon--center.icon-x-white.icon--xxsmall' + (ctrl.state.isRemoveHover() ? '.btn-red' : '.btn-teal'), {
-        onclick: function() {
-          ctrl.state.onRemove();
+        onclick: function(event) {
+          event.preventDefault();
+          ctrl.state.onRemove(event);
         },
         onmouseover: function() {
           ctrl.state.isRemoveHover(true);
