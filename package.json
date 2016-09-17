@@ -21,7 +21,7 @@
     "velocity-animate": "^0.10.1"
   },
   "devDependencies": {
-    "async": "^1.5.2",
+    "async": "^0.10.2",
     "babel-core": "^6.9.0",
     "babel-preset-es2015": "^6.9.0",
     "chalk": "^1.1.3",
