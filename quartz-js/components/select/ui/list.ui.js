@@ -6,11 +6,7 @@ vhxm.components.shared.select.ui.list.container = {
     return new vhxm.components.shared.select.ui.list.controller(opts, parent);
   },
   view: function(ctrl, opts) {
-    return m('ul.c-select--options.margin-left-reset.loader-slate.loader--transparent' + (ctrl.state.isLoading() ? '.is-loading' : ''), {
-      config: function(el) {
-        ctrl.state.optionsHeight($(el).outerHeight());
-      }
-    }, [
+    return m('ul.c-select--options.margin-left-reset.loader-slate.loader--transparent' + (ctrl.state.isLoading() ? '.is-loading' : ''), [
       ctrl.hasItems() ?
         ctrl.model.items().map(function(item, index) {
           return m.component(vhxm.components.shared.select.ui['item_' + ctrl.parent.type], {

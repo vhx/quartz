@@ -112,6 +112,30 @@ Q.components.guide.js.ui.select.container = {
                     title: 'Media Item #2',
                     detail: 'Item #2 detail line',
                     img_src: 'https://placekitten.com/g/300/200'
+                  },
+                  {
+                    id: 3,
+                    title: 'Media Item #3',
+                    detail: 'Item #3 detail line',
+                    img_src: 'https://placekitten.com/g/300/200'
+                  },
+                  {
+                    id: 4,
+                    title: 'Media Item #4',
+                    detail: 'Item #4 detail line',
+                    img_src: 'https://placekitten.com/g/300/200'
+                  },
+                  {
+                    id: 5,
+                    title: 'Media Item #5',
+                    detail: 'Item #5 detail line',
+                    img_src: 'https://placekitten.com/g/300/200'
+                  },
+                  {
+                    id: 6,
+                    title: 'Media Item #6',
+                    detail: 'Item #6 detail line',
+                    img_src: 'https://placekitten.com/g/300/200'
                   }
                 ]),
                 api: m.prop(),

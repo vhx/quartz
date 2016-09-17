@@ -83,9 +83,6 @@ vhxm.components.shared.select.controller = function(opts) {
     }
 
     self.state.isDropdownOpen(!self.state.isDropdownOpen());
-
-    self.state.highlightIndex(-1);
-
     self.scrollOptionsList(container);
   };
 
@@ -115,11 +112,12 @@ vhxm.components.shared.select.controller = function(opts) {
 
     self.state.selected(selected);
     self.state.isDropdownOpen(self.multiselect ? true : false);
-    self.state.onSelect(self.state.selected());
-    if (!self.multiselect) {
+
+    if (self.multiselect) {
       self.state.highlightIndex(-1);
-      self.scrollOptionsList(0);
     }
+
+    self.state.onSelect(self.state.selected());
   };
 
   self.handleAction = function(event) {
@@ -145,25 +143,20 @@ vhxm.components.shared.select.controller = function(opts) {
 
   self.setHighlightedState = function(direction, container, input) {
     if (direction === 'down') {
-      self.state.highlightIndex(self.state.highlightIndex() + 1);
-      if (self.state.highlightIndex() < self.model.items().length) {
-        self.state.scrollIndex(self.state.scrollIndex() + 1);
+      if (self.state.highlightIndex() < self.model.items().length - 1) {
+        self.state.highlightIndex(self.state.highlightIndex() + 1);
       }
       else {
         self.state.highlightIndex(self.model.items().length - 1);
       }
     }
     else if (direction === 'up') {
-      self.state.highlightIndex(self.state.highlightIndex() - 1);
       if (self.state.highlightIndex() > 0) {
-        self.state.scrollIndex(self.state.scrollIndex() - 1);
+        self.state.highlightIndex(self.state.highlightIndex() - 1);
       }
-      else if (self.state.highlightIndex() < 0) {
+      else if (self.state.highlightIndex() <= 0) {
         self.state.highlightIndex(-1);
         input.focus();
-      }
-      else {
-        self.state.highlightIndex(0);
       }
     }
     self.scrollOptionsList(container);
