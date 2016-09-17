@@ -6361,7 +6361,7 @@ a.head--white:hover, a.head--white:active {
   .loader--transparent.is-processing:after, .loader--transparent.is-loading:after {
     display: block;
     content: ' ' !important; }
-  .loader--transparent.is-processing *, .loader--transparent.is-loading * {
+  .loader--transparent.is-processing > *, .loader--transparent.is-loading > * {
     opacity: .2; }
 
 .loader--hide {
