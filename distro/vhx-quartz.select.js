@@ -85,9 +85,6 @@ vhxm.components.shared.select.controller = function (opts) {
     }
 
     self.state.isDropdownOpen(!self.state.isDropdownOpen());
-
-    self.state.highlightIndex(-1);
-
     self.scrollOptionsList(container);
   };
 
@@ -116,11 +113,12 @@ vhxm.components.shared.select.controller = function (opts) {
 
     self.state.selected(selected);
     self.state.isDropdownOpen(self.multiselect ? true : false);
-    self.state.onSelect(self.state.selected());
-    if (!self.multiselect) {
+
+    if (self.multiselect) {
       self.state.highlightIndex(-1);
-      self.scrollOptionsList(0);
     }
+
+    self.state.onSelect(self.state.selected());
   };
 
   self.handleAction = function (event) {
@@ -146,21 +144,17 @@ vhxm.components.shared.select.controller = function (opts) {
 
   self.setHighlightedState = function (direction, container, input) {
     if (direction === 'down') {
-      self.state.highlightIndex(self.state.highlightIndex() + 1);
-      if (self.state.highlightIndex() < self.model.items().length) {
-        self.state.scrollIndex(self.state.scrollIndex() + 1);
+      if (self.state.highlightIndex() < self.model.items().length - 1) {
+        self.state.highlightIndex(self.state.highlightIndex() + 1);
       } else {
         self.state.highlightIndex(self.model.items().length - 1);
       }
     } else if (direction === 'up') {
-      self.state.highlightIndex(self.state.highlightIndex() - 1);
       if (self.state.highlightIndex() > 0) {
-        self.state.scrollIndex(self.state.scrollIndex() - 1);
-      } else if (self.state.highlightIndex() < 0) {
+        self.state.highlightIndex(self.state.highlightIndex() - 1);
+      } else if (self.state.highlightIndex() <= 0) {
         self.state.highlightIndex(-1);
         input.focus();
-      } else {
-        self.state.highlightIndex(0);
       }
     }
     self.scrollOptionsList(container);
@@ -185,10 +179,8 @@ vhxm.components.shared.select.state = function () {
   this.selected = m.prop(null);
   this.highlighted = m.prop({});
   this.isDropdownOpen = m.prop(false);
-  this.highlightIndex = m.prop(null);
-  this.scrollIndex = m.prop(0);
+  this.highlightIndex = m.prop(-1);
   this.optionHeight = m.prop(0);
-  this.optionsHeight = m.prop(0);
   this.isLoading = m.prop(false);
   this.searchInputValue = m.prop('');
   this.footerLoading = m.prop(false);
@@ -207,11 +199,12 @@ vhxm.components.shared.select.ui.container = {
   view: function view(ctrl, opts) {
     var options = opts.search ? '.has-search' : '';
     options += opts.trigger ? '.has-trigger' : '';
+    options += opts.type === 'media' ? '.has-media' : '';
     options += opts.inline ? '.inline' : '';
 
     if (opts.trigger) {
       opts.trigger.attrs.onclick = ctrl.handleClick;
-      opts.trigger.attrs.className += ' c-select--trigger';
+      opts.trigger.attrs.className = opts.trigger.attrs.className ? opts.trigger.attrs.className + ' c-select--trigger' : 'c-select--trigger';
     }
 
     return m('.c-select--container.relative.form' + options, {
@@ -268,6 +261,9 @@ vhxm.components.shared.select.ui.item_media = {
     var opts = params.opts;
 
     return m('.c-media-item--container.padding-horz-medium.padding-vert-small.clearfix' + (index === ctrl.state.highlightIndex() ? '.is-selected' : ''), {
+      config: function config(el) {
+        ctrl.state.optionHeight($(el).outerHeight());
+      },
       onmouseover: function onmouseover() {
         ctrl.state.highlightIndex(index);
       },
@@ -278,7 +274,7 @@ vhxm.components.shared.select.ui.item_media = {
       src: item[opts.prop_map.img],
       width: 70,
       height: 40
-    })]), m('.c-media-item--content.clearfix.left', [m('p.text--navy', item[opts.prop_map.label]), m('p.text--gray', item[opts.prop_map.descriptor])]), m('.c-media-item--action.clearfix.right', [m('.c-item-toggle.icon--xsmall.icon-check-navy.border' + (ctrl.state.selected() && ctrl.state.selected()[item[opts.prop_map.key]] ? '.is-selected.icon-check-navy' : '.icon-plus-thin-white'))])]);
+    })]), m('.c-media-item--content.clearfix.left', [m('p.text--navy', item[opts.prop_map.label]), m('p.text--gray', item[opts.prop_map.descriptor])]), ctrl.parent.multiselect ? m('.c-media-item--action.clearfix.right', [m('.c-item-toggle.icon--xsmall.icon-check-navy.border' + (ctrl.state.selected() && ctrl.state.selected()[item[opts.prop_map.key]] ? '.is-selected.icon-check-navy' : '.icon-plus-thin-white'))]) : '']);
   }
 };
 
@@ -292,7 +288,7 @@ vhxm.components.shared.select.ui.item_standard = {
     var ctrl = params.ctrl;
     var opts = params.opts;
 
-    return m('li.c-select--option.padding-horz-medium.padding-vert-xsmall' + (index === ctrl.state.highlightIndex() ? '.is-selected' : ''), {
+    return m('li.c-select--option.padding-horz-medium' + (index === ctrl.state.highlightIndex() ? '.is-selected' : ''), {
       config: function config(el) {
         ctrl.state.optionHeight($(el).outerHeight());
       },
@@ -330,11 +326,7 @@ vhxm.components.shared.select.ui.list.container = {
     return new vhxm.components.shared.select.ui.list.controller(opts, parent);
   },
   view: function view(ctrl, opts) {
-    return m('ul.c-select--options.margin-left-reset.loader-slate.loader--transparent' + (ctrl.state.isLoading() ? '.is-loading' : ''), {
-      config: function config(el) {
-        ctrl.state.optionsHeight($(el).outerHeight());
-      }
-    }, [ctrl.hasItems() ? ctrl.model.items().map(function (item, index) {
+    return m('ul.c-select--options.margin-left-reset.loader-slate.loader--transparent' + (ctrl.state.isLoading() ? '.is-loading' : ''), [ctrl.hasItems() ? ctrl.model.items().map(function (item, index) {
       return m.component(vhxm.components.shared.select.ui['item_' + ctrl.parent.type], {
         item: item,
         index: index,

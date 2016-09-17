@@ -18,7 +18,7 @@
     "dotenv": "0.10.1",
     "express": "4.13.3",
     "handlebars": "0.10.0",
-    "velocity-animate": "^1.2.3"
+    "velocity-animate": "^0.10.1"
   },
   "devDependencies": {
     "async": "^1.5.2",

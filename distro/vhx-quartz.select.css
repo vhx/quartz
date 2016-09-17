@@ -71,13 +71,13 @@
   margin-top: 80px; }
 
 .c-select--options {
-  margin-top: 15px;
-  margin-bottom: 15px;
   overflow-y: auto;
-  max-height: 210px; }
+  max-height: 200px; }
 
 .c-select--option {
-  color: #233741; }
+  color: #233741;
+  line-height: 25px;
+  padding-top: 7px; }
   .c-select--option.is-selected {
     cursor: pointer;
     background-color: #F0F2F4; }
