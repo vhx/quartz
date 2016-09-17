@@ -1,3 +1,12 @@
+### 0.10.2
+**2016-09-17**
+* Tag Component >
+  - Fix bugs with `onRemove` and `onShow` callback methods
+  - Ensure hovered tag has higher z-index
+* Select Component >
+  - Fix some stylistic bugs
+  - Add caret position option
+
 ### 0.10.1
 **2016-09-17**
 * Select Component >
