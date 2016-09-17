@@ -1,4 +1,8 @@
 .c-tag {
+  &.is-hover,
+  &:hover {
+    z-index: 2;
+  }
   .c-tag--button {
     z-index: 1;
   }
