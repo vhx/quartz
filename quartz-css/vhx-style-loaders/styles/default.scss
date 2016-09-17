@@ -21,8 +21,8 @@
 .loader--transparent {
   @include loader_cover();
   transition: opacity 500ms ease;
-  &.is-processing *,
-  &.is-loading * {
+  &.is-processing > *,
+  &.is-loading > * {
     opacity: .2;
   }
 }
