@@ -4,20 +4,21 @@ vhxm.components.shared.select.ui.container = {
     return new vhxm.components.shared.select.controller(opts);
   },
   view: function(ctrl, opts) {
-    opts.custom_trigger ? opts.custom_trigger.attrs.onclick = ctrl.handleClick : '';
-    opts.custom_trigger ? opts.custom_trigger.attrs.className += ' c-select--trigger' : '';
+    if (opts.trigger) {
+      opts.trigger.attrs.onclick = ctrl.handleClick;
+      opts.trigger.attrs.className += ' c-select--trigger';
+    }
 
     return m('.c-select--container.form' + (opts.search ? '.has-search' : '') + (opts.inline ? '.inline' : ''), {
         config: function(el, isInitialized) {
-          if (opts.custom_trigger && isInitialized) {
-            var left_pos = el.querySelector('.c-select--trigger').offsetWidth * .25;
+          if (opts.trigger && isInitialized) {
+            let left_pos = el.querySelector('.c-select--trigger').offsetWidth * 0.25;
             el.querySelector('.c-select--caret').style.left = left_pos + 'px';
           }
         },
         onkeydown: ctrl.handleKeydown
       }, [
-      opts.custom_trigger ?
-      opts.custom_trigger :
+      opts.trigger ? opts.trigger :
       m('a.c-select--trigger.btn-dropdown-' + (opts.color ? opts.color : 'gray') + '.btn--fill' + (ctrl.state.isDropdownOpen() ? '.is-active' : ''), {
         href: '#',
         onclick: ctrl.handleClick
@@ -27,13 +28,15 @@ vhxm.components.shared.select.ui.container = {
         // if search is enabled
         m('.c-select--input-container.padding-medium', [
           m.component(vhxm.components.shared.search_input.ui.container, {
-            // config: function(el) {
-            //   if (ctrl.state.isDropdownOpen()) {
-            //     setTimeout(function() {
-            //       el.focus();
-            //     }, 10);
-            //   }
-            // },
+            config: function(el, init) {
+              el.value = ctrl.state.searchInputValue();
+              if (ctrl.state.focusInput()){
+                setTimeout(function() {
+                  el.focus();
+                  ctrl.state.focusInput(false);
+                }, 10);
+              }
+            },
             callback: ctrl.searchCallback,
             search: opts.search,
             placeholder: 'Search',
@@ -41,12 +44,13 @@ vhxm.components.shared.select.ui.container = {
           })
         ]) : '',
         m.component(vhxm.components.shared.select.ui.list.container, opts, ctrl),
-        opts.footer_action && ctrl.state.searchInputValue().length ?
+        opts.action && ctrl.state.searchInputValue().length ?
         // show Create New Category dropdown footer action
         m('.c-select--footer.border-top', [
-          m('a.c-select--footer-link.block.text--bold.text-center.padding-vert-small', {
+          m('a.btn-teal.btn--fill' + (ctrl.state.footerLoading() ? '.is-loading' : ''), {
+            onclick: ctrl.handleAction,
             href: '#'
-          }, opts.footer_action + (ctrl.state.searchInputValue().length ? (' \'' + ctrl.state.searchInputValue() + '\'') : ''))
+          }, opts.action + (ctrl.state.searchInputValue().length ? (' \'' + ctrl.state.searchInputValue() + '\'') : ''))
         ]) : '',
         m('span.c-select--caret')
       ])

@@ -8,6 +8,8 @@ vhxm.components.shared.select.state = function() {
   this.optionsHeight = m.prop(0);
   this.isLoading = m.prop(false);
   this.searchInputValue = m.prop('');
+  this.footerLoading = m.prop(false);
+  this.focusInput = m.prop(true);
   this.onSelect = function() {};
-  this.onCreate = function() {};
+  this.onAction = function(done) { done(); };
 };

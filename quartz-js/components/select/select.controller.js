@@ -17,8 +17,8 @@ vhxm.components.shared.select.controller = function(opts) {
       self.state.onSelect = opts.onSelect;
     }
 
-    if (opts.onCreate) {
-      self.state.onSelect = opts.onSelect;
+    if (opts.onAction) {
+      self.state.onAction = opts.onAction;
     }
 
     $(document).on('click', function(event) {
@@ -80,6 +80,10 @@ vhxm.components.shared.select.controller = function(opts) {
     event.preventDefault();
     let container = $(event.target).closest('.c-select--container').find('.c-select--options');
 
+    if (!self.state.isDropdownOpen()) {
+      self.state.focusInput(true);
+    }
+
     self.state.isDropdownOpen(!self.state.isDropdownOpen());
 
     self.state.highlightIndex(-1);
@@ -93,9 +97,25 @@ vhxm.components.shared.select.controller = function(opts) {
     self.state.highlightIndex(0);
   };
 
+  self.handleAction = function(event) {
+    event.preventDefault();
+    m.startComputation();
+      self.state.footerLoading(true);
+    m.endComputation();
+
+    self.state.onAction(function() {
+      m.startComputation();
+        self.state.searchInputValue('');
+        self.state.footerLoading(false);
+      m.endComputation();
+    });
+  };
+
   self.searchCallback = function(data) {
+    m.startComputation();
     self.model.items(data);
-    self.state.isLoadingResults(false);
+    self.state.isLoading(false);
+    m.endComputation();
   };
 
   self.setHighlightedState = function(direction, container) {
