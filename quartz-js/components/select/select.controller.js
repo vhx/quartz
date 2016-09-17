@@ -6,7 +6,7 @@ vhxm.components.shared.select.controller = function(opts) {
     self.state = new vhxm.components.shared.select.state();
     self.model = new vhxm.components.shared.select.model();
 
-    opts.type = opts.type || 'standard';
+    self.type = opts.type || 'standard';
     self.model.items = opts.items;
 
     if (opts.selected) {

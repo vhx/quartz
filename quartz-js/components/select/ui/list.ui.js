@@ -13,10 +13,9 @@ vhxm.components.shared.select.ui.list.container = {
     }, [
       ctrl.hasItems() ?
         ctrl.model.items().map(function(item, index) {
-          return m.component(vhxm.components.shared.select.ui['item_' + opts.type], {
+          return m.component(vhxm.components.shared.select.ui['item_' + ctrl.parent.type], {
             item: item,
             index: index,
-            parent: parent,
             ctrl: ctrl,
             opts: opts
           });

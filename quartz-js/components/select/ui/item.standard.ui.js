@@ -8,7 +8,7 @@ vhxm.components.shared.select.ui.item_standard = {
     let ctrl  = params.ctrl;
     let opts  = params.opts;
 
-    return m('li.c-select--option.padding-horizontal-large.padding-vertical-small' + (index === ctrl.state.highlightIndex() ? '.is-selected' : ''), {
+    return m('li.c-select--option.padding-horz-medium.padding-vert-xsmall' + (index === ctrl.state.highlightIndex() ? '.is-selected' : ''), {
       config: function(el) {
         ctrl.state.optionHeight($(el).outerHeight());
       },
@@ -19,7 +19,7 @@ vhxm.components.shared.select.ui.item_standard = {
         ctrl.handleItemClick(event, item);
       }
     }, [
-      m('span.c-select--item-label', item[opts.prop_map.label]), item[opts.prop_map.descriptor] ? m('span.right.text.primary', item[opts.prop_map.descriptor]) : ''
+      m('span.c-select--item-label.text--navy', item[opts.prop_map.label]), item[opts.prop_map.descriptor] ? m('span.right.text--gray', item[opts.prop_map.descriptor]) : ''
     ]);
   }
 };
