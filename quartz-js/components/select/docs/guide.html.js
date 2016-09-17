@@ -79,7 +79,7 @@ Q.components.guide.js.ui.select.container = {
         }
       }),
       m.component(Q.components.shared.block.ui.container, {
-        title: 'Example (w/ search, custom trigger & media)',
+        title: 'Example (w/ search, custom trigger, multi-select & media)',
         component: {
           view: function() {
             return m('div', [
@@ -95,6 +95,7 @@ Q.components.guide.js.ui.select.container = {
                     }
                   ]);
                 },
+                multiselect: true,
                 type: 'media',
                 placeholder: 'Nothing selected',
                 selected: null,
@@ -141,6 +142,7 @@ Q.components.guide.js.ui.select.container = {
           { name: 'onSelect', type: 'function', required: true, description: 'Callback function that is called after an option is chosen.' },
           { name: 'onAction', type: 'function', required: true, description: 'Callback function that is called after the action button is clicked.' },
           { name: 'selected', type: 'object', required: true, description: 'Object with each selected value. Each value is an object with a label and value.' },
+          { name: 'multiselect', type: 'boolean', required: false, default_value: false, description: 'Set whether the dropdown allows for selected multiple values.' },
           { name: 'items', type: 'array', required: true, description: m.trust('An array of objects to populate options. Each object must map to the defined <span class="text--bold text--navy text-4">prop_map.label</span> and <span class="text--bold text--navy text-4">prop_map.value</span>.') },
           { name: 'prop_map.key', type: 'string', required: true, description: 'The unique identifier (key) for each item selected (the selected object) that is returned in the onSelect callback method.' },
           { name: 'prop_map.value', type: 'string', required: true, description: 'Item key to look for in the provided items for the item value.' },
