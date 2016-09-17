@@ -1,4 +1,3 @@
-Q.api = m.prop();
 Q.components.guide.js.ui.select = {};
 Q.components.guide.js.ui.select.container = {
   view: function(ctrl) {
@@ -13,7 +12,7 @@ Q.components.guide.js.ui.select.container = {
           view: function() {
             return m('div', [
               m.component(vhxm.components.shared.select.ui.container, {
-                custom_trigger: m('a', { href: '#', }, '+ Add Video'),
+                trigger: m('a', { href: '#', }, '+ Add Video'),
                 search: function(query, callback) {
                   callback([
                     {
@@ -27,7 +26,7 @@ Q.components.guide.js.ui.select.container = {
                 type: 'media',
                 placeholder: 'Nothing selected',
                 selected: null,
-                footer_action: 'Create new category',
+                action: 'Create new category',
                 items: m.prop([
                   {
                     id: 1,
@@ -42,7 +41,7 @@ Q.components.guide.js.ui.select.container = {
                     img_src: 'https://placekitten.com/g/300/200'
                   }
                 ]),
-                api: Q.api,
+                api: m.prop(),
                 prop_map: {
                   key: 'title',
                   label: 'title',
@@ -50,12 +49,13 @@ Q.components.guide.js.ui.select.container = {
                   descriptor: 'detail',
                   img: 'img_src'
                 },
-                onCreate: function() {
-                  console.log('create!');
+                onAction: function(done) {
+                  setTimeout(function() {
+                    window.alert('Create callback');
+                    done();
+                  }, 1000);
                 },
-                onSelect: function(obj) {
-                  console.log(obj);
-                }
+                onSelect: function() {}
               })
             ]);
           }
@@ -63,17 +63,18 @@ Q.components.guide.js.ui.select.container = {
       }),
       m.component(Q.components.shared.options.ui.container, {
         options: [
-          { name: 'key_prop', type: 'string', required: true, description: 'The unique identifier (key) for each item selected (the selected object) that is returned in the onSelected callback method.' },
+          { name: 'type', type: 'string', default_value: 'standard', description: 'standard OR media - sets UI of item in dropdown list' },
+          { name: 'action', type: 'boolean', default_value: 'false', description: 'Show an action button at the bottom upon typing value in search input.' },
+          { name: 'trigger', type: 'mithril element', default_value: 'null', required: false, description: 'Trigger element that will replace default button dropdown' },
           { name: 'onSelect', type: 'function', required: true, description: 'Callback function that is called after an option is chosen.' },
-          { name: 'selected', type: 'object', required: true, description: 'Object with the id and value of the initial selected option.' },
-          { name: 'items', type: 'array', required: true, description: m.trust('An array of objects to populate options. Each object must map to the defined <span class="text--bold text--navy text-4">label_prop</span> and <span class="text--bold text--navy text-4">value_prop</span>.') },
-          { name: 'value_prop', type: 'string', required: true, description: 'Item key to look for in the provided items for the item value.' },
-          { name: 'label_prop', type: 'string', required: true, description: 'Item key to look for in the provided items to display a label.' },
-          { name: 'search', type: 'boolean', default_value: 'false', description: 'Toggles inclusion of search input' },
-          { name: 'descriptor_prop', type: 'string', default_value: 'null', description: 'Supplemental item key to look for in the provided items to display a descriptor for each item.' },
-          { name: 'item_type', type: 'string', default_value: 'standard', description: 'standard OR media - sets UI of item in dropdown list' },
-          { name: 'footer_action', type: 'boolean', default_value: 'false', description: 'Currently for Collections - show a Create New Category action at the bottom of dropdown.' },
-          { name: 'custom_trigger', type: 'mithril element', default_value: 'null', required: false, description: 'Trigger element that will replace default button dropdown' }
+          { name: 'onAction', type: 'function', required: true, description: 'Callback function that is called after the action button is clicked.' },
+          { name: 'selected', type: 'object', required: true, description: 'Object with each selected value. Each value is an object with a label and value.' },
+          { name: 'items', type: 'array', required: true, description: m.trust('An array of objects to populate options. Each object must map to the defined <span class="text--bold text--navy text-4">prop_map.label</span> and <span class="text--bold text--navy text-4">prop_map.value</span>.') },
+          { name: 'prop_map.key', type: 'string', required: true, description: 'The unique identifier (key) for each item selected (the selected object) that is returned in the onSelect callback method.' },
+          { name: 'prop_map.value', type: 'string', required: true, description: 'Item key to look for in the provided items for the item value.' },
+          { name: 'prop_map.label', type: 'string', required: true, description: 'Item key to look for in the provided items to display a label.' },
+          { name: 'prop_map.search', type: 'boolean', default_value: 'false', description: 'Toggles inclusion of search input' },
+          { name: 'prop_map.descriptor', type: 'string', default_value: 'null', description: 'Supplemental item key to look for in the provided items to display a descriptor for each item.' },
         ]
       })
     ]);
