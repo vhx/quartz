@@ -1,12 +1,25 @@
 vhxm.components.shared.select.controller = function(opts) {
   let self = this;
+  let api = opts.api ? opts.api : m.prop(null);
 
   self.init = function() {
     self.state = new vhxm.components.shared.select.state();
     self.model = new vhxm.components.shared.select.model();
 
+    self.type = opts.type || 'standard';
     self.model.items = opts.items;
-    self.state.selected(opts.selected);
+
+    if (opts.selected) {
+      self.state.selected(opts.selected);
+    }
+
+    if (opts.onSelect) {
+      self.state.onSelect = opts.onSelect;
+    }
+
+    if (opts.onAction) {
+      self.state.onAction = opts.onAction;
+    }
 
     $(document).on('click', function(event) {
       let is_dropdown = $(event.target).closest('.c-select--container').length;
@@ -17,51 +30,46 @@ vhxm.components.shared.select.controller = function(opts) {
         m.endComputation();
       }
     });
+
+    api(self);
   };
 
   self.selectedLabel = function() {
-    let is_default = true;
+    let selected = opts.placeholder ? opts.placeholder : 'Select...';
 
-    self.model.items().map(function(item) {
-      if (self.state.selected().value === item[opts.value_prop]) {
-        self.state.selected({
-          value: item[opts.value_prop],
-          label: item[opts.label_prop]
-        });
-        is_default = false;
+    if (self.state.selected()) {
+      self.model.items().map(function(item) {
+        if (self.state.selected()[item[opts.prop_map.key]]) {
+          selected = self.state.selected()[item[opts.prop_map.key]].label;
+        }
+      });
+      if (Object.keys(self.state.selected()).length > 1) {
+        selected = 'Multiple items selected';
       }
-    });
-
-    if (is_default) {
-      self.state.selected(opts.selected);
     }
 
-    return self.state.selected().label;
+    return selected;
   };
 
-
-  self.handleKeydown = function(e) {
-    let container = $(e.target).closest('.c-select--container').find('.c-select--options');
+  self.handleKeydown = function(event) {
+    let container = $(event.target).closest('.c-select--container');
+    let options = container.find('.c-select--options');
+    let input = container.find('.c-select--input-container input');
 
     // Down Arrow
-    if (e.keyCode === 40) {
-      self.setHighlightedState('down', container);
-      e.preventDefault();
+    if (event.keyCode === 40) {
+      event.preventDefault();
+      self.setHighlightedState('down', options);
     }
     // Up Arrow
-    else if (e.keyCode === 38) {
-      self.setHighlightedState('up', container);
-      e.preventDefault();
+    else if (event.keyCode === 38) {
+      event.preventDefault();
+      self.setHighlightedState('up', options, input);
     }
     // Enter/Return
-    else if (e.keyCode === 13 && self.state.isDropdownOpen()) {
-      self.state.selected({
-        value: self.model.items()[self.state.highlightIndex()][opts.value_prop],
-        label: self.model.items()[self.state.highlightIndex()][opts.label_prop]
-      });
-
-      self.state.isDropdownOpen(false);
-      e.preventDefault();
+    else if (event.keyCode === 13 && self.state.isDropdownOpen()) {
+      event.preventDefault();
+      self.selectItem(self.model.items()[self.state.highlightIndex()]);
     }
   };
 
@@ -69,23 +77,72 @@ vhxm.components.shared.select.controller = function(opts) {
     event.preventDefault();
     let container = $(event.target).closest('.c-select--container').find('.c-select--options');
 
+    if (!self.state.isDropdownOpen()) {
+      self.state.focusInput(true);
+    }
+
     self.state.isDropdownOpen(!self.state.isDropdownOpen());
+
     self.state.highlightIndex(-1);
 
     self.scrollOptionsList(container);
   };
 
-  self.handleInput = function() {
-    self.state.isLoadingResults(true);
-    self.state.highlightIndex(0);
+  self.handleInput = function(event) {
+    self.state.highlightIndex(-1);
+    self.state.searchInputValue(event.target.value);
+    self.state.isLoading(true);
+  };
+
+  self.selectItem = function(item) {
+    let selected;
+    if (!opts.multiselect) {
+      self.state.selected({});
+    }
+
+    selected = self.state.selected() || self.state.selected({});
+
+    if (selected[item[opts.prop_map.key]]) {
+      delete selected[item[opts.prop_map.key]];
+    }
+    else {
+      selected[item[opts.prop_map.key]] = {
+        value: item[opts.prop_map.value],
+        label: item[opts.prop_map.label]
+      };
+    }
+
+    self.state.selected(selected);
+    self.state.isDropdownOpen(opts.multiselect ? true : false);
+    self.state.onSelect(self.state.selected());
+    if (!opts.multiselect) {
+      self.state.highlightIndex(-1);
+      self.scrollOptionsList(0);
+    }
+  };
+
+  self.handleAction = function(event) {
+    event.preventDefault();
+    m.startComputation();
+      self.state.footerLoading(true);
+    m.endComputation();
+
+    self.state.onAction(function() {
+      m.startComputation();
+        self.state.searchInputValue('');
+        self.state.footerLoading(false);
+      m.endComputation();
+    });
   };
 
   self.searchCallback = function(data) {
+    m.startComputation();
     self.model.items(data);
-    self.state.isLoadingResults(false);
+    self.state.isLoading(false);
+    m.endComputation();
   };
 
-  self.setHighlightedState = function(direction, container) {
+  self.setHighlightedState = function(direction, container, input) {
     if (direction === 'down') {
       self.state.highlightIndex(self.state.highlightIndex() + 1);
       if (self.state.highlightIndex() < self.model.items().length) {
@@ -99,6 +156,10 @@ vhxm.components.shared.select.controller = function(opts) {
       self.state.highlightIndex(self.state.highlightIndex() - 1);
       if (self.state.highlightIndex() > 0) {
         self.state.scrollIndex(self.state.scrollIndex() - 1);
+      }
+      else if (self.state.highlightIndex() < 0) {
+        self.state.highlightIndex(-1);
+        input.focus();
       }
       else {
         self.state.highlightIndex(0);

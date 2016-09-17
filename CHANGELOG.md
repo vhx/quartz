@@ -1,3 +1,19 @@
+### 0.10.0
+**2016-09-17**
+* Select Component >
+  - Add media item type
+  - Fix some styling (use quartz classes)
+
+### 0.9.6
+**2016-09-16**
+* Tag Component >
+  - Add custom label option
+
+### 0.9.5
+**2016-09-16**
+* Select Component >
+  - Add custom trigger option
+
 ### 0.9.4
 **2016-09-16**
 * Sidebar Component >

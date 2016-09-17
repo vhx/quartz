@@ -12,43 +12,143 @@ Q.components.guide.js.ui.select.container = {
           view: function() {
             return m('div', [
               m.component(vhxm.components.shared.select.ui.container, {
-                custom_trigger: m('a', { href: '#', }, '+ Add Video'),
+                placeholder: 'Select Option...',
+                selected: null,
+                items: m.prop([
+                  {
+                    id: 1,
+                    title: 'Item #1'
+                  },
+                  {
+                    id: 2,
+                    title: 'Item #2'
+                  }
+                ]),
+                api: m.prop(),
+                prop_map: {
+                  key: 'title',
+                  label: 'title',
+                  value: 'id'
+                },
+                onSelect: function(data) {}
+              })
+            ]);
+          }
+        }
+      }),
+      m.component(Q.components.shared.block.ui.container, {
+        title: 'Example (w/ search)',
+        component: {
+          view: function() {
+            return m('div', [
+              m.component(vhxm.components.shared.select.ui.container, {
                 search: function(query, callback) {
                   callback([
-                    { id: 345, title: 'What is this', desc: 'Greatness'}
+                    {
+                      id: 3,
+                      title: 'Item #3',
+                      detail: 'Descriptor',
+                    }
                   ]);
-                }, // format is function(query, callback)
-                selected: {
-                  value: null,
-                  label: 'Nothing Selected'
                 },
-                items: m.prop([{
-                  id: 123,
-                  title: 'Thing',
-                  desc: 'Extra'
-                }]),
-                value_prop: 'id',
-                label_prop: 'title',
-                descriptor_prop: 'desc',
-                name: 'select_id',
-                callback: function(obj) {
-                }
+                placeholder: 'Nothing selected',
+                selected: null,
+                items: m.prop([
+                  {
+                    id: 1,
+                    title: 'Item #1',
+                    detail: 'Descriptor',
+                  },
+                  {
+                    id: 2,
+                    title: 'Item #2',
+                    detail: 'Descriptor',
+                  }
+                ]),
+                api: m.prop(),
+                prop_map: {
+                  key: 'title',
+                  label: 'title',
+                  value: 'id',
+                  descriptor: 'detail'
+                },
+                onSelect: function(data) {}
               })
+            ]);
+          }
+        }
+      }),
+      m.component(Q.components.shared.block.ui.container, {
+        title: 'Example (w/ search, custom trigger, multi-select & media)',
+        component: {
+          view: function() {
+            return m('div', [
+              m.component(vhxm.components.shared.select.ui.container, {
+                trigger: m('a', { href: '#', }, '+ Add Video'),
+                search: function(query, callback) {
+                  callback([
+                    {
+                      id: 3,
+                      title: 'Media Item #3',
+                      detail: 'Search Reesult',
+                      img_src: 'https://placekitten.com/g/300/200'
+                    }
+                  ]);
+                },
+                multiselect: true,
+                type: 'media',
+                placeholder: 'Nothing selected',
+                selected: null,
+                action: 'Create new category',
+                items: m.prop([
+                  {
+                    id: 1,
+                    title: 'Media Item #1',
+                    detail: 'Item detail line',
+                    img_src: 'https://placekitten.com/g/300/200'
+                  },
+                  {
+                    id: 2,
+                    title: 'Media Item #2',
+                    detail: 'Item #2 detail line',
+                    img_src: 'https://placekitten.com/g/300/200'
+                  }
+                ]),
+                api: m.prop(),
+                prop_map: {
+                  key: 'title',
+                  label: 'title',
+                  value: 'id',
+                  descriptor: 'detail',
+                  img: 'img_src'
+                },
+                onAction: function(done) {
+                  setTimeout(function() {
+                    window.alert('Create callback');
+                    done();
+                  }, 1000);
+                },
+                onSelect: function() {}
+              }),
             ]);
           }
         }
       }),
       m.component(Q.components.shared.options.ui.container, {
         options: [
-          { name: 'name', type: 'string', required: true, description: m.trust('A unique key for the input name attribute.') },
-          { name: 'callback', type: 'function', required: true, description: 'Callback function that is called after an option is chosen.' },
-          { name: 'selected', type: 'object', required: true, description: 'Object with the id and value of the initial selected option.' },
-          { name: 'items', type: 'array', required: true, description: m.trust('An array of objects to populate options. Each object must map to the defined <span class="text--bold text--navy text-4">label_prop</span> and <span class="text--bold text--navy text-4">value_prop</span>.') },
-          { name: 'value_prop', type: 'string', required: true, description: 'Item key to look for in the provided items for the item value.' },
-          { name: 'label_prop', type: 'string', required: true, description: 'Item key to look for in the provided items to display a label.' },
-          { name: 'search', type: 'boolean', default_value: 'false', description: 'Toggles inclusion of search input' },
-          { name: 'descriptor_prop', type: 'string', default_value: 'null', description: 'Supplemental item key to look for in the provided items to display a descriptor for each item.' },
-          { name: 'custom_trigger', type: 'mithril element', default_value: 'null', required: false, description: 'Trigger element that will replace default button dropdown' }
+          { name: 'type', type: 'string', default_value: 'standard', description: 'standard OR media - sets UI of item in dropdown list' },
+          { name: 'action', type: 'boolean', default_value: 'false', description: 'Show an action button at the bottom upon typing value in search input.' },
+          { name: 'trigger', type: 'mithril element', default_value: 'null', required: false, description: 'Trigger element that will replace default button dropdown' },
+          { name: 'onSelect', type: 'function', required: true, description: 'Callback function that is called after an option is chosen.' },
+          { name: 'onAction', type: 'function', required: true, description: 'Callback function that is called after the action button is clicked.' },
+          { name: 'selected', type: 'object', required: true, description: 'Object with each selected value. Each value is an object with a label and value.' },
+          { name: 'multiselect', type: 'boolean', required: false, default_value: false, description: 'Set whether the dropdown allows for selected multiple values.' },
+          { name: 'items', type: 'array', required: true, description: m.trust('An array of objects to populate options. Each object must map to the defined <span class="text--bold text--navy text-4">prop_map.label</span> and <span class="text--bold text--navy text-4">prop_map.value</span>.') },
+          { name: 'prop_map.key', type: 'string', required: true, description: 'The unique identifier (key) for each item selected (the selected object) that is returned in the onSelect callback method.' },
+          { name: 'prop_map.value', type: 'string', required: true, description: 'Item key to look for in the provided items for the item value.' },
+          { name: 'prop_map.label', type: 'string', required: true, description: 'Item key to look for in the provided items to display a label.' },
+          { name: 'prop_map.search', type: 'boolean', default_value: 'false', description: 'Toggles inclusion of search input' },
+          { name: 'prop_map.descriptor', type: 'string', default_value: 'null', description: 'Supplemental item key to look for in the provided items to display a descriptor for each item.' },
         ]
       })
     ]);
