@@ -12,6 +12,78 @@ Q.components.guide.js.ui.select.container = {
           view: function() {
             return m('div', [
               m.component(vhxm.components.shared.select.ui.container, {
+                placeholder: 'Select Option...',
+                selected: null,
+                items: m.prop([
+                  {
+                    id: 1,
+                    title: 'Item #1'
+                  },
+                  {
+                    id: 2,
+                    title: 'Item #2'
+                  }
+                ]),
+                api: m.prop(),
+                prop_map: {
+                  key: 'title',
+                  label: 'title',
+                  value: 'id'
+                },
+                onSelect: function(data) {}
+              })
+            ]);
+          }
+        }
+      }),
+      m.component(Q.components.shared.block.ui.container, {
+        title: 'Example (w/ search)',
+        component: {
+          view: function() {
+            return m('div', [
+              m.component(vhxm.components.shared.select.ui.container, {
+                search: function(query, callback) {
+                  callback([
+                    {
+                      id: 3,
+                      title: 'Item #3',
+                      detail: 'Descriptor',
+                    }
+                  ]);
+                },
+                placeholder: 'Nothing selected',
+                selected: null,
+                items: m.prop([
+                  {
+                    id: 1,
+                    title: 'Item #1',
+                    detail: 'Descriptor',
+                  },
+                  {
+                    id: 2,
+                    title: 'Item #2',
+                    detail: 'Descriptor',
+                  }
+                ]),
+                api: m.prop(),
+                prop_map: {
+                  key: 'title',
+                  label: 'title',
+                  value: 'id',
+                  descriptor: 'detail'
+                },
+                onSelect: function(data) {}
+              })
+            ]);
+          }
+        }
+      }),
+      m.component(Q.components.shared.block.ui.container, {
+        title: 'Example (w/ search, custom trigger & media)',
+        component: {
+          view: function() {
+            return m('div', [
+              m.component(vhxm.components.shared.select.ui.container, {
                 trigger: m('a', { href: '#', }, '+ Add Video'),
                 search: function(query, callback) {
                   callback([
@@ -56,7 +128,7 @@ Q.components.guide.js.ui.select.container = {
                   }, 1000);
                 },
                 onSelect: function() {}
-              })
+              }),
             ]);
           }
         }
