@@ -1,3 +1,5 @@
+.c-tag.is-hover, .c-tag:hover {
+  z-index: 2; }
 .c-tag .c-tag--button {
   z-index: 1; }
 .c-tag .icon-x-white {

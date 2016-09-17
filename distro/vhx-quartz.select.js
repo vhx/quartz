@@ -10,10 +10,13 @@ vhxm.components.shared.select.controller = function (opts) {
 
     self.type = opts.type || 'standard';
     self.multiselect = opts.multiselect || false;
+    self.caret_position = opts.caret_position || 'right';
     self.model.items = opts.items;
 
     if (opts.selected) {
-      self.state.selected(opts.selected);
+      opts.selected.map(function (item) {
+        self.selectItem(item, true);
+      });
     }
 
     if (opts.onSelect) {
@@ -94,7 +97,7 @@ vhxm.components.shared.select.controller = function (opts) {
     self.state.isLoading(true);
   };
 
-  self.selectItem = function (item) {
+  self.selectItem = function (item, isInit) {
     var selected = void 0;
     if (!self.multiselect) {
       self.state.selected({});
@@ -104,15 +107,21 @@ vhxm.components.shared.select.controller = function (opts) {
 
     if (selected[item[opts.prop_map.key]]) {
       delete selected[item[opts.prop_map.key]];
+      self.state.onSelect(null, self.state.selected(), 'removed');
     } else {
-      selected[item[opts.prop_map.key]] = {
+      var obj = {
         value: item[opts.prop_map.value],
         label: item[opts.prop_map.label]
       };
+      selected[item[opts.prop_map.key]] = obj;
+      self.state.onSelect(obj, self.state.selected(), 'added');
     }
 
     self.state.selected(selected);
-    self.state.isDropdownOpen(self.multiselect ? true : false);
+
+    if (!isInit) {
+      self.state.isDropdownOpen(self.multiselect ? true : false);
+    }
 
     if (self.multiselect) {
       self.state.highlightIndex(-1);
@@ -201,6 +210,7 @@ vhxm.components.shared.select.ui.container = {
     options += opts.trigger ? '.has-trigger' : '';
     options += opts.type === 'media' ? '.has-media' : '';
     options += opts.inline ? '.inline' : '';
+    options += '.caret--' + ctrl.caret_position;
 
     if (opts.trigger) {
       opts.trigger.attrs.onclick = ctrl.handleClick;
@@ -208,12 +218,6 @@ vhxm.components.shared.select.ui.container = {
     }
 
     return m('.c-select--container.relative.form' + options, {
-      config: function config(el, isInitialized) {
-        if (opts.trigger && isInitialized) {
-          var left_pos = el.querySelector('.c-select--trigger').offsetWidth * 0.25;
-          el.querySelector('.c-select--caret').style.left = left_pos + 'px';
-        }
-      },
       onmouseleave: function onmouseleave() {
         ctrl.state.highlightIndex(-1);
       },

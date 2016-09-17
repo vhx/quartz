@@ -27,6 +27,19 @@
 ..................................... */
 /* helper function for margin and padding
 ......................................*/
+.c-select--container.has-trigger .c-select--dropdown {
+  top: 35px; }
+.c-select--container.has-search .c-select--dropdown {
+  min-height: 150px; }
+.c-select--container.has-search .c-select--options {
+  margin-top: 80px; }
+.c-select--container.caret--left .c-select--caret {
+  left: 22px; }
+.c-select--container.caret--center .c-select--caret {
+  left: 50%; }
+.c-select--container.caret--right .c-select--caret {
+  right: 22px; }
+
 .c-select--dropdown {
   position: absolute;
   max-height: 282px;
@@ -34,8 +47,6 @@
   left: 0;
   z-index: 2147483600;
   display: none; }
-  .c-select--dropdown.has-trigger {
-    top: 35px; }
   .c-select--dropdown.is-open {
     display: block; }
 
@@ -64,11 +75,6 @@
 .c-select--input-container {
   z-index: 2;
   position: absolute; }
-
-.c-select--container.has-search .c-select--dropdown {
-  min-height: 150px; }
-.c-select--container.has-search .c-select--options {
-  margin-top: 80px; }
 
 .c-select--options {
   overflow-y: auto;
