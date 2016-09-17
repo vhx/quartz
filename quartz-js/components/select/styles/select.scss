@@ -1,6 +1,21 @@
 @import "../../../../quartz-css/vhx-style-core/config/mixins";
 @import "../../../../quartz-css/vhx-style-icons/styles/icons.extends";
 
+.c-select--container {
+  &.has-trigger {
+    .c-select-dropdown {
+      top: 35px;
+    }
+  }
+  &.has-search {
+    .c-select--dropdown {
+      min-height: 150px;
+    }
+    .c-select--options {
+      margin-top: 80px;
+    }
+  }
+}
 .c-select--dropdown {
   position: absolute;
   max-height: 282px;
@@ -8,9 +23,6 @@
   left: 0;
   z-index: 2147483600;
   display: none;
-  &.has-trigger {
-    top: 35px;
-  }
   &.is-open {
     display: block;
   }
@@ -42,15 +54,6 @@
 .c-select--input-container {
   z-index: 2;
   position: absolute;
-}
-
-.c-select--container.has-search {
-  .c-select--dropdown {
-    min-height: 150px;
-  }
-  .c-select--options {
-    margin-top: 80px;
-  }
 }
 
 .c-select--options {

@@ -11,7 +11,9 @@ vhxm.components.shared.select.controller = function(opts) {
     self.model.items = opts.items;
 
     if (opts.selected) {
-      self.state.selected(opts.selected);
+      opts.selected.map(function(item) {
+        self.selectItem(item, true);
+      });
     }
 
     if (opts.onSelect) {
@@ -92,7 +94,7 @@ vhxm.components.shared.select.controller = function(opts) {
     self.state.isLoading(true);
   };
 
-  self.selectItem = function(item) {
+  self.selectItem = function(item, isInit) {
     let selected;
     if (!self.multiselect) {
       self.state.selected({});
@@ -102,16 +104,22 @@ vhxm.components.shared.select.controller = function(opts) {
 
     if (selected[item[opts.prop_map.key]]) {
       delete selected[item[opts.prop_map.key]];
+      self.state.onSelect(null, self.state.selected(), 'removed');
     }
     else {
-      selected[item[opts.prop_map.key]] = {
+      let obj = {
         value: item[opts.prop_map.value],
         label: item[opts.prop_map.label]
       };
+      selected[item[opts.prop_map.key]] = obj;
+      self.state.onSelect(obj, self.state.selected(), 'added');
     }
 
     self.state.selected(selected);
-    self.state.isDropdownOpen(self.multiselect ? true : false);
+
+    if (!isInit) {
+      self.state.isDropdownOpen(self.multiselect ? true : false);
+    }
 
     if (self.multiselect) {
       self.state.highlightIndex(-1);
