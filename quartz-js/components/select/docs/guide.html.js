@@ -136,19 +136,20 @@ Q.components.guide.js.ui.select.container = {
       }),
       m.component(Q.components.shared.options.ui.container, {
         options: [
-          { name: 'type', type: 'string', default_value: 'standard', description: 'standard OR media - sets UI of item in dropdown list' },
-          { name: 'action', type: 'boolean', default_value: 'false', description: 'Show an action button at the bottom upon typing value in search input.' },
-          { name: 'trigger', type: 'mithril element', default_value: 'null', required: false, description: 'Trigger element that will replace default button dropdown' },
-          { name: 'onSelect', type: 'function', required: true, description: 'Callback function that is called after an option is chosen.' },
-          { name: 'onAction', type: 'function', required: true, description: 'Callback function that is called after the action button is clicked.' },
-          { name: 'selected', type: 'object', required: true, description: 'Object with each selected value. Each value is an object with a label and value.' },
-          { name: 'multiselect', type: 'boolean', required: false, default_value: false, description: 'Set whether the dropdown allows for selected multiple values.' },
           { name: 'items', type: 'array', required: true, description: m.trust('An array of objects to populate options. Each object must map to the defined <span class="text--bold text--navy text-4">prop_map.label</span> and <span class="text--bold text--navy text-4">prop_map.value</span>.') },
-          { name: 'prop_map.key', type: 'string', required: true, description: 'The unique identifier (key) for each item selected (the selected object) that is returned in the onSelect callback method.' },
+          { name: 'type', type: 'string', default_value: 'standard', description: m.trust('Sets UI of the items in the dropdown list. Either <span class="text--bold text--navy text-4">standard</span> OR <span class="text--bold text--navy text-4">media</span>. The default is <span class="text--bold text--navy text-4">standard</span>.') },
+          { name: 'multiselect', type: 'boolean', required: false, default_value: 'false', description: 'Set whether the dropdown allows for selected multiple values.' },
+          { name: 'action', type: 'boolean', default_value: 'false', description: 'Whether to show an action button or not, at the bottom of the dropdown. If turned on, it will appear upon typing a value in the search input.' },
+          { name: 'trigger', type: 'mithril element', default_value: 'null', required: false, description: 'Trigger element that will replace default button dropdown' },
+          { name: 'onSelect', type: 'function', required: false, default_value: 'null', description: 'Callback function that is called after an option is chosen.' },
+          { name: 'onAction', type: 'function', required: false, default_value: 'null', description: 'Callback function that is called after the action button is clicked.' },
+          { name: 'selected', type: 'object', required: false, default_value: 'null', description: 'Object with selected values for initializing the dropdown pre-selected. Each value is an object with a label and value.' },
+          { name: 'prop_map.key', type: 'string', required: true, description: 'The unique identifier (key) for each item selected (the selected object). The selected object will be returned in the onSelect callback method.' },
           { name: 'prop_map.value', type: 'string', required: true, description: 'Item key to look for in the provided items for the item value.' },
           { name: 'prop_map.label', type: 'string', required: true, description: 'Item key to look for in the provided items to display a label.' },
-          { name: 'prop_map.search', type: 'boolean', default_value: 'false', description: 'Toggles inclusion of search input' },
-          { name: 'prop_map.descriptor', type: 'string', default_value: 'null', description: 'Supplemental item key to look for in the provided items to display a descriptor for each item.' },
+          { name: 'prop_map.search', type: 'boolean', default_value: 'false', description: 'Toggles inclusion of search input.' },
+          { name: 'prop_map.image', type: 'string', default_value: 'null', description: m.trust('Item key to display an image for each item when using type <span class="text--bold text--navy text-4">media</span>.') },
+          { name: 'prop_map.descriptor', type: 'string', default_value: 'null', description: 'Item key to display a descriptor for each item.' },
         ]
       })
     ]);
