@@ -9,6 +9,9 @@ vhxm.components.shared.select.ui.item_media = {
     let opts  = params.opts;
 
     return m('.c-media-item--container.padding-horz-medium.padding-vert-small.clearfix' + (index === ctrl.state.highlightIndex() ? '.is-selected' : ''), {
+      config: function(el) {
+        ctrl.state.optionHeight($(el).outerHeight());
+      },
       onmouseover: function() {
         ctrl.state.highlightIndex(index);
       },
@@ -27,9 +30,9 @@ vhxm.components.shared.select.ui.item_media = {
         m('p.text--navy', item[opts.prop_map.label]),
         m('p.text--gray', item[opts.prop_map.descriptor])
       ]),
-      m('.c-media-item--action.clearfix.right', [
+      ctrl.parent.multiselect ? m('.c-media-item--action.clearfix.right', [
         m('.c-item-toggle.icon--xsmall.icon-check-navy.border' + (ctrl.state.selected() && ctrl.state.selected()[item[opts.prop_map.key]] ? '.is-selected.icon-check-navy' : '.icon-plus-thin-white'))
-      ])
+      ]) : ''
     ]);
   }
 };
