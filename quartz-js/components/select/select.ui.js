@@ -6,11 +6,12 @@ vhxm.components.shared.select.ui.container = {
   view: function(ctrl, opts) {
     let options = opts.search ? '.has-search' : '';
     options += opts.trigger ? '.has-trigger' : '';
+    options += opts.type === 'media' ? '.has-media' : '';
     options += opts.inline ? '.inline' : '';
 
     if (opts.trigger) {
       opts.trigger.attrs.onclick = ctrl.handleClick;
-      opts.trigger.attrs.className += ' c-select--trigger';
+      opts.trigger.attrs.className = opts.trigger.attrs.className ? opts.trigger.attrs.className + ' c-select--trigger' : 'c-select--trigger';
     }
 
     return m('.c-select--container.relative.form' + options, {
