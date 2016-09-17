@@ -7,6 +7,7 @@ vhxm.components.shared.select.controller = function(opts) {
     self.model = new vhxm.components.shared.select.model();
 
     self.type = opts.type || 'standard';
+    self.multiselect = opts.multiselect || false;
     self.model.items = opts.items;
 
     if (opts.selected) {
@@ -96,7 +97,7 @@ vhxm.components.shared.select.controller = function(opts) {
 
   self.selectItem = function(item) {
     let selected;
-    if (!opts.multiselect) {
+    if (!self.multiselect) {
       self.state.selected({});
     }
 
@@ -113,9 +114,9 @@ vhxm.components.shared.select.controller = function(opts) {
     }
 
     self.state.selected(selected);
-    self.state.isDropdownOpen(opts.multiselect ? true : false);
+    self.state.isDropdownOpen(self.multiselect ? true : false);
     self.state.onSelect(self.state.selected());
-    if (!opts.multiselect) {
+    if (!self.multiselect) {
       self.state.highlightIndex(-1);
       self.scrollOptionsList(0);
     }
