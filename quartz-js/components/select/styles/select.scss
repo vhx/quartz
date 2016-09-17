@@ -1,28 +1,16 @@
 @import "../../../../quartz-css/vhx-style-core/config/mixins";
 @import "../../../../quartz-css/vhx-style-icons/styles/icons.extends";
 
-
-/*
-  Mithril Chosen-like Dropdown w/ Search styles
-  See app/assets/javascripts/_shared/components/select/select.ui.js for markup
-*/
-$border_color: #8d9da6;
-
-.c-select--container {
-  position: relative;
-}
 .c-select--dropdown {
   position: absolute;
   max-height: 282px;
   top: 55px;
   left: 0;
-  width: 100%;
-  background-color: #fff;
-  background: $white;
   z-index: 2147483600;
-  border: 1px solid $gray-3;
-  border-radius: 5px;
   display: none;
+  &.has-trigger {
+    top: 35px;
+  }
   &.is-open {
     display: block;
   }
@@ -52,11 +40,8 @@ $border_color: #8d9da6;
 }
 
 .c-select--input-container {
-  position: absolute;
-  width: 100%;
-  border-radius: 5px;
   z-index: 2;
-  background: #fff;
+  position: absolute;
 }
 
 .c-select--container.has-search {
@@ -91,7 +76,8 @@ $border_color: #8d9da6;
 // Media Item container
 .c-media-item--container {
   transition: background-color .2s ease-out;
-  &:hover {
+  &:hover,
+  &.is-selected {
     cursor: pointer;
     background-color: transparentize($teal-2, .9);
     .c-item-toggle {

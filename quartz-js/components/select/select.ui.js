@@ -4,17 +4,24 @@ vhxm.components.shared.select.ui.container = {
     return new vhxm.components.shared.select.controller(opts);
   },
   view: function(ctrl, opts) {
+    let options = opts.search ? '.has-search' : '';
+    options += opts.trigger ? '.has-trigger' : '';
+    options += opts.inline ? '.inline' : '';
+
     if (opts.trigger) {
       opts.trigger.attrs.onclick = ctrl.handleClick;
       opts.trigger.attrs.className += ' c-select--trigger';
     }
 
-    return m('.c-select--container.form' + (opts.search ? '.has-search' : '') + (opts.inline ? '.inline' : ''), {
+    return m('.c-select--container.relative.form' + options, {
         config: function(el, isInitialized) {
           if (opts.trigger && isInitialized) {
             let left_pos = el.querySelector('.c-select--trigger').offsetWidth * 0.25;
             el.querySelector('.c-select--caret').style.left = left_pos + 'px';
           }
+        },
+        onmouseleave: function() {
+          ctrl.state.highlightIndex(-1);
         },
         onkeydown: ctrl.handleKeydown
       }, [
@@ -23,10 +30,10 @@ vhxm.components.shared.select.ui.container = {
         href: '#',
         onclick: ctrl.handleClick
       }, ctrl.selectedLabel()),
-      m('.c-select--dropdown' + (ctrl.state.isDropdownOpen() ? '.is-open' : ''), [
+      m('.c-select--dropdown.bg-white.border.radius.fill-width' + (ctrl.state.isDropdownOpen() ? '.is-open' : ''), [
         opts.search ?
         // if search is enabled
-        m('.c-select--input-container.padding-medium', [
+        m('.c-select--input-container.padding-medium.absolute.bg-white.fill-width.radius', [
           m.component(vhxm.components.shared.search_input.ui.container, {
             config: function(el, init) {
               el.value = ctrl.state.searchInputValue();
@@ -38,7 +45,11 @@ vhxm.components.shared.select.ui.container = {
               }
             },
             callback: ctrl.searchCallback,
-            search: opts.search,
+            search: function(query, callback) {
+              if (ctrl.state.highlightIndex() === -1) {
+                opts.search(query, callback);
+              }
+            },
             placeholder: 'Search',
             oninput: ctrl.handleInput
           })

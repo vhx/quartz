@@ -8,7 +8,14 @@ vhxm.components.shared.select.ui.item_media = {
     let ctrl  = params.ctrl;
     let opts  = params.opts;
 
-    return m('.c-media-item--container.padding-horz-medium.padding-vert-small.clearfix', [
+    return m('.c-media-item--container.padding-horz-medium.padding-vert-small.clearfix' + (index === ctrl.state.highlightIndex() ? '.is-selected' : ''), {
+      onmouseover: function() {
+        ctrl.state.highlightIndex(index);
+      },
+      onclick: function(event) {
+        ctrl.handleItemClick(event, item);
+      }
+    }, [
       m('.c-media-item--image-container.left', [
         m('img.c-media-item--image.radius.margin-right-medium', {
           src: item[opts.prop_map.img],
@@ -21,11 +28,7 @@ vhxm.components.shared.select.ui.item_media = {
         m('p.text--gray', item[opts.prop_map.descriptor])
       ]),
       m('.c-media-item--action.clearfix.right', [
-        m('.c-item-toggle.icon--xsmall.icon-check-navy.border' + (ctrl.state.selected() && ctrl.state.selected()[item[opts.prop_map.key]] ? '.is-selected.icon-check-navy' : '.icon-plus-thin-white'), {
-          onclick: function(event) {
-            ctrl.handleItemClick(event, item);
-          }
-        })
+        m('.c-item-toggle.icon--xsmall.icon-check-navy.border' + (ctrl.state.selected() && ctrl.state.selected()[item[opts.prop_map.key]] ? '.is-selected.icon-check-navy' : '.icon-plus-thin-white'))
       ])
     ]);
   }
