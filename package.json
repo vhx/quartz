@@ -10,12 +10,12 @@
     "url": "https://github.com/vhx/quartz.git"
   },
   "engines": {
-    "node": "4.4.x"
+    "node": "0.10.1x"
   },
   "main": "app/server/ignite.js",
   "dependencies": {
     "body-parser": "1.13.3",
-    "dotenv": "1.2.0",
+    "dotenv": "0.10.1",
     "express": "4.13.3",
     "handlebars": "4.0.5",
     "velocity-animate": "^1.2.3"
