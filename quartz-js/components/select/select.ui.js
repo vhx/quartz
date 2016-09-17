@@ -8,6 +8,7 @@ vhxm.components.shared.select.ui.container = {
     options += opts.trigger ? '.has-trigger' : '';
     options += opts.type === 'media' ? '.has-media' : '';
     options += opts.inline ? '.inline' : '';
+    options += '.caret--' + ctrl.caret_position;
 
     if (opts.trigger) {
       opts.trigger.attrs.onclick = ctrl.handleClick;
@@ -15,12 +16,6 @@ vhxm.components.shared.select.ui.container = {
     }
 
     return m('.c-select--container.relative.form' + options, {
-        config: function(el, isInitialized) {
-          if (opts.trigger && isInitialized) {
-            let left_pos = el.querySelector('.c-select--trigger').offsetWidth * 0.25;
-            el.querySelector('.c-select--caret').style.left = left_pos + 'px';
-          }
-        },
         onmouseleave: function() {
           ctrl.state.highlightIndex(-1);
         },

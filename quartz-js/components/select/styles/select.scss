@@ -3,7 +3,7 @@
 
 .c-select--container {
   &.has-trigger {
-    .c-select-dropdown {
+    .c-select--dropdown {
       top: 35px;
     }
   }
@@ -14,6 +14,15 @@
     .c-select--options {
       margin-top: 80px;
     }
+  }
+  &.caret--left .c-select--caret {
+    left: 22px;
+  }
+  &.caret--center .c-select--caret {
+    left: 50%;
+  }
+  &.caret--right .c-select--caret {
+    right: 22px;
   }
 }
 .c-select--dropdown {

@@ -2,15 +2,18 @@
 
 m.component(vhxm.components.shared.select.ui.container, {
   search: mySearch(query, callback),
-  selected: {
-    value: null,
-    label: 'Nothing Selected'
-  },
+  selected: [
+    {
+      id: 1,
+      title: 'Title'
+    }
+  ],
   items: vhxm.models.section.items,
-  value_prop: 'id',
-  label_prop: 'title',
-  descriptor_prop: 'details',
-  name: 'selected_id',
+  prop_map: {
+    value: 'id',
+    label: 'title',
+    descriptor: 'details'
+  },
   callback: function(obj) {
     vhxm.models.section.chosen_item = { id: obj.value };
   }

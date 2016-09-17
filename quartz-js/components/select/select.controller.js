@@ -8,6 +8,7 @@ vhxm.components.shared.select.controller = function(opts) {
 
     self.type = opts.type || 'standard';
     self.multiselect = opts.multiselect || false;
+    self.caret_position = opts.caret_position || 'right';
     self.model.items = opts.items;
 
     if (opts.selected) {
