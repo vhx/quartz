@@ -1,3 +1,8 @@
+### 0.10.1
+**2016-09-17**
+* Select Component >
+  - Fix bugs with new media item
+
 ### 0.10.0
 **2016-09-17**
 * Select Component >
