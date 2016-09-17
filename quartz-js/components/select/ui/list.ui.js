@@ -6,7 +6,7 @@ vhxm.components.shared.select.ui.list.container = {
     return new vhxm.components.shared.select.ui.list.controller(opts, parent);
   },
   view: function(ctrl, opts) {
-    return m('ul.c-select--options.margin-left-reset' + (ctrl.state.isLoading() ? '.is-loading' : ''), {
+    return m('ul.c-select--options.margin-left-reset.loader-slate.loader--transparent' + (ctrl.state.isLoading() ? '.is-loading' : ''), {
       config: function(el) {
         ctrl.state.optionsHeight($(el).outerHeight());
       }
@@ -30,6 +30,6 @@ vhxm.components.shared.select.ui.list.container = {
 .................................................*/
 vhxm.components.shared.select.ui.list.empty = {
   view: function() {
-    return m('li.c-select--option.padding-horizontal-large.padding-top-small.padding-bottom-medium.text.primary', 'No results');
+    return m('li.c-select--option.padding-horz-large.padding-top-small.padding-bottom-medium.text.primary', 'No results');
   }
 };
