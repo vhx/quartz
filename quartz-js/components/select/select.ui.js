@@ -25,12 +25,12 @@ vhxm.components.shared.select.ui.container = {
       opts.trigger ? opts.trigger :
       m('a.c-select--trigger.btn-dropdown-' + (opts.color ? opts.color : 'gray') + '.btn--fill' + (ctrl.state.isDropdownOpen() ? '.is-active' : ''), {
         href: '#',
-        onclick: ctrl.handleClick,
-        style: {
-          top: opts.offset ? opts.offset + 'px' : '40px'
-        }
+        onclick: ctrl.handleClick
       }, ctrl.selectedLabel()),
       m('.c-select--dropdown.bg-white.border.radius.fill-width' + (ctrl.state.isDropdownOpen() ? '.is-open' : ''), {
+        style: {
+          top: opts.offset ? opts.offset + 'px' : '40px'
+        },
         config: function(el) {
           if (ctrl.position === 'top') {
             el.style.top = - (el.offsetHeight + 10) + 'px';
