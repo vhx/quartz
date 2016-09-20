@@ -3,6 +3,14 @@
 /*.....................................
   Stand-alone icons using <i>
 ......................................*/
+.icon,
+.icon-circle {
+  &.is-loading,
+  &.is-processing {
+    background-image: none;
+  }
+}
+
 .icon {
   display: inline-block;
   background-position: 50% 50%;
