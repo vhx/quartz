@@ -17,6 +17,9 @@ vhxm.components.shared.select.controller = function(opts) {
       });
     }
 
+    if (opts.isProcessing) {
+      self.state.isProcessing = opts.isProcessing;
+    }
     if (opts.onSelect) {
       self.state.onSelect = opts.onSelect;
     }

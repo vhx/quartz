@@ -8,6 +8,7 @@ vhxm.components.shared.select.state = function() {
   this.searchInputValue = m.prop('');
   this.footerLoading = m.prop(false);
   this.focusInput = m.prop(true);
+  this.isProcessing = m.prop([]);
   this.onSelect = function() {};
   this.onAction = function(done) { done(); };
 };
