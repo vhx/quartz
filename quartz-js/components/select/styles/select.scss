@@ -147,10 +147,14 @@
   z-index: 2;
   position: absolute;
 }
-
 .c-select--options {
   overflow-y: auto;
-  max-height: 200px;
+  max-height: 218px;
+}
+.has-action {
+  .c-select--options {
+    max-height: 200px;
+  }
 }
 .c-select--option {
   color: #233741;

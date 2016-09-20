@@ -116,6 +116,9 @@
 
 .c-select--options {
   overflow-y: auto;
+  max-height: 218px; }
+
+.has-action .c-select--options {
   max-height: 200px; }
 
 .c-select--option {
