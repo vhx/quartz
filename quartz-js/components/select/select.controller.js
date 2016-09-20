@@ -128,8 +128,6 @@ vhxm.components.shared.select.controller = function(opts) {
     if (self.multiselect) {
       self.state.highlightIndex(-1);
     }
-
-    self.state.onSelect(self.state.selected());
   };
 
   self.handleAction = function(event) {
