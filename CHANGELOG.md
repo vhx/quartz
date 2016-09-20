@@ -1,4 +1,19 @@
-### 0.10.2
+### 0.10.4
+**2016-09-20**
+* Styles >
+  - Account for different icon sizes for buttons
+  - Add `absolute` positioning class
+  - Ensure icons backgrounds are hidden in processing state
+  - Add `loader--offset` class
+  - Add line height classes
+* Select Component >
+  - Remove duplicate `onSelect` callback
+  - Add `offset` option
+  - Fix max height issue
+* Sidebar Component >
+  - Fix sidebar close button background color
+
+### 0.10.3
 **2016-09-20**
 * Tag Component >
   - Add ability to toggle tag processing state
