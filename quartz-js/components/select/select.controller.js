@@ -8,7 +8,8 @@ vhxm.components.shared.select.controller = function(opts) {
 
     self.type = opts.type || 'standard';
     self.multiselect = opts.multiselect || false;
-    self.caret_position = opts.caret_position || 'right';
+    self.caret = opts.caret || 'right';
+    self.position = opts.position || 'bottom';
     self.model.items = opts.items;
 
     if (opts.selected) {
@@ -98,6 +99,11 @@ vhxm.components.shared.select.controller = function(opts) {
 
   self.selectItem = function(item, isInit) {
     let selected;
+    let obj = {
+      value: item[opts.prop_map.value],
+      label: item[opts.prop_map.label]
+    };
+
     if (!self.multiselect) {
       self.state.selected({});
     }
@@ -106,13 +112,9 @@ vhxm.components.shared.select.controller = function(opts) {
 
     if (selected[item[opts.prop_map.key]]) {
       delete selected[item[opts.prop_map.key]];
-      self.state.onSelect(null, self.state.selected(), 'removed');
+      self.state.onSelect(obj, self.state.selected(), 'removed');
     }
     else {
-      let obj = {
-        value: item[opts.prop_map.value],
-        label: item[opts.prop_map.label]
-      };
       selected[item[opts.prop_map.key]] = obj;
       self.state.onSelect(obj, self.state.selected(), 'added');
     }

@@ -1,3 +1,4 @@
+Q.fun = m.prop(false);
 Q.components.guide.js.ui.tag = {};
 Q.components.guide.js.ui.tag.container = {
   view: function(ctrl) {
@@ -13,6 +14,7 @@ Q.components.guide.js.ui.tag.container = {
             return m('div', [
               m.component(vhxm.components.shared.tag.ui.container, {
                 label: 'Comedy',
+                isProcessing: Q.fun,
                 onShow: function() {
                   window.alert('show something');
                 },
@@ -27,6 +29,7 @@ Q.components.guide.js.ui.tag.container = {
       m.component(Q.components.shared.options.ui.container, {
         options: [
           { name: 'label', type: 'string', default_value: 'Tag', description: m.trust('Text label of tag.') },
+          { name: 'isProcessing', type: 'prop', required: false, default_value: 'false', description: 'Whether or not in a processing state. Requires redraw upon changing.' },
           { name: 'onShow', type: 'function', default_value: 'null', description: m.trust('Fired when the tag is clicked.') },
           { name: 'onRemove', type: 'function', default_value: 'null', description: m.trust('Fired when the remove action is clicked.') },
         ]
