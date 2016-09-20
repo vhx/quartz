@@ -52,7 +52,14 @@ select {
   &.icon--left {
     background-position: left 21px center;
     padding-left: 43px;
-
+    &.icon--xsmall {
+      background-position: left 16px center;
+      padding-left: 40px;
+    }
+    &.icon--xxsmall {
+      background-position: left 18px center;
+      padding-left: 37px;
+    }
     .icon--right {
       background-position: right 0px center;
       padding-right: 21px;
@@ -62,6 +69,14 @@ select {
   &.icon--right {
     background-position: right 21px center;
     padding-right: 43px;
+    &.icon--xsmall {
+      background-position: right 16px center;
+      padding-left: 40px;
+    }
+    &.icon--xxsmall {
+      background-position: right 18px center;
+      padding-left: 37px;
+    }
   }
 }
 
