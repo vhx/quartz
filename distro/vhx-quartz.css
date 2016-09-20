@@ -637,6 +637,12 @@ select {
   .btn.icon--left, .icon--left.btn-gray, .icon--left.btn-dropdown-gray, .icon--left.btn-slate, .icon--left.btn-teal, .icon--left.btn-dropdown-teal, .icon--left.btn-red, .icon--left.btn-purple, .icon--left.btn-green, .icon--left.btn-black, .icon--left.btn-white, .icon--left.btn-dropdown-white, .icon--left.btn-yellow, .icon--left.btn-facebook, .icon--left.btn-twitter, .icon--left.btn-transparent, .icon--left.btn-tumblr, .icon--left.btn-paypal, .icon--left.btn-roku, .icon--left.btn-search, .icon--left.btn-dropdown {
     background-position: left 21px center;
     padding-left: 43px; }
+    .btn.icon--left.icon--xsmall, .icon--left.icon--xsmall.btn-gray, .icon--left.icon--xsmall.btn-dropdown-gray, .icon--left.icon--xsmall.btn-slate, .icon--left.icon--xsmall.btn-teal, .icon--left.icon--xsmall.btn-dropdown-teal, .icon--left.icon--xsmall.btn-red, .icon--left.icon--xsmall.btn-purple, .icon--left.icon--xsmall.btn-green, .icon--left.icon--xsmall.btn-black, .icon--left.icon--xsmall.btn-white, .icon--left.icon--xsmall.btn-dropdown-white, .icon--left.icon--xsmall.btn-yellow, .icon--left.icon--xsmall.btn-facebook, .icon--left.icon--xsmall.btn-twitter, .icon--left.icon--xsmall.btn-transparent, .icon--left.icon--xsmall.btn-tumblr, .icon--left.icon--xsmall.btn-paypal, .icon--left.icon--xsmall.btn-roku, .icon--left.icon--xsmall.btn-search, .icon--left.icon--xsmall.btn-dropdown {
+      background-position: left 16px center;
+      padding-left: 40px; }
+    .btn.icon--left.icon--xxsmall, .icon--left.icon--xxsmall.btn-gray, .icon--left.icon--xxsmall.btn-dropdown-gray, .icon--left.icon--xxsmall.btn-slate, .icon--left.icon--xxsmall.btn-teal, .icon--left.icon--xxsmall.btn-dropdown-teal, .icon--left.icon--xxsmall.btn-red, .icon--left.icon--xxsmall.btn-purple, .icon--left.icon--xxsmall.btn-green, .icon--left.icon--xxsmall.btn-black, .icon--left.icon--xxsmall.btn-white, .icon--left.icon--xxsmall.btn-dropdown-white, .icon--left.icon--xxsmall.btn-yellow, .icon--left.icon--xxsmall.btn-facebook, .icon--left.icon--xxsmall.btn-twitter, .icon--left.icon--xxsmall.btn-transparent, .icon--left.icon--xxsmall.btn-tumblr, .icon--left.icon--xxsmall.btn-paypal, .icon--left.icon--xxsmall.btn-roku, .icon--left.icon--xxsmall.btn-search, .icon--left.icon--xxsmall.btn-dropdown {
+      background-position: left 18px center;
+      padding-left: 37px; }
     .btn.icon--left .icon--right, .icon--left.btn-gray .icon--right, .icon--left.btn-dropdown-gray .icon--right, .icon--left.btn-slate .icon--right, .icon--left.btn-teal .icon--right, .icon--left.btn-dropdown-teal .icon--right, .icon--left.btn-red .icon--right, .icon--left.btn-purple .icon--right, .icon--left.btn-green .icon--right, .icon--left.btn-black .icon--right, .icon--left.btn-white .icon--right, .icon--left.btn-dropdown-white .icon--right, .icon--left.btn-yellow .icon--right, .icon--left.btn-facebook .icon--right, .icon--left.btn-twitter .icon--right, .icon--left.btn-transparent .icon--right, .icon--left.btn-tumblr .icon--right, .icon--left.btn-paypal .icon--right, .icon--left.btn-roku .icon--right, .icon--left.btn-search .icon--right, .icon--left.btn-dropdown .icon--right {
       background-position: right 0px center;
       padding-right: 21px;
@@ -644,6 +650,12 @@ select {
   .btn.icon--right, .icon--right.btn-gray, .icon--right.btn-dropdown-gray, .icon--right.btn-slate, .icon--right.btn-teal, .icon--right.btn-dropdown-teal, .icon--right.btn-red, .icon--right.btn-purple, .icon--right.btn-green, .icon--right.btn-black, .icon--right.btn-white, .icon--right.btn-dropdown-white, .icon--right.btn-yellow, .icon--right.btn-facebook, .icon--right.btn-twitter, .icon--right.btn-transparent, .icon--right.btn-tumblr, .icon--right.btn-paypal, .icon--right.btn-roku, .icon--right.btn-search, .icon--right.btn-dropdown {
     background-position: right 21px center;
     padding-right: 43px; }
+    .btn.icon--right.icon--xsmall, .icon--right.icon--xsmall.btn-gray, .icon--right.icon--xsmall.btn-dropdown-gray, .icon--right.icon--xsmall.btn-slate, .icon--right.icon--xsmall.btn-teal, .icon--right.icon--xsmall.btn-dropdown-teal, .icon--right.icon--xsmall.btn-red, .icon--right.icon--xsmall.btn-purple, .icon--right.icon--xsmall.btn-green, .icon--right.icon--xsmall.btn-black, .icon--right.icon--xsmall.btn-white, .icon--right.icon--xsmall.btn-dropdown-white, .icon--right.icon--xsmall.btn-yellow, .icon--right.icon--xsmall.btn-facebook, .icon--right.icon--xsmall.btn-twitter, .icon--right.icon--xsmall.btn-transparent, .icon--right.icon--xsmall.btn-tumblr, .icon--right.icon--xsmall.btn-paypal, .icon--right.icon--xsmall.btn-roku, .icon--right.icon--xsmall.btn-search, .icon--right.icon--xsmall.btn-dropdown {
+      background-position: right 16px center;
+      padding-left: 40px; }
+    .btn.icon--right.icon--xxsmall, .icon--right.icon--xxsmall.btn-gray, .icon--right.icon--xxsmall.btn-dropdown-gray, .icon--right.icon--xxsmall.btn-slate, .icon--right.icon--xxsmall.btn-teal, .icon--right.icon--xxsmall.btn-dropdown-teal, .icon--right.icon--xxsmall.btn-red, .icon--right.icon--xxsmall.btn-purple, .icon--right.icon--xxsmall.btn-green, .icon--right.icon--xxsmall.btn-black, .icon--right.icon--xxsmall.btn-white, .icon--right.icon--xxsmall.btn-dropdown-white, .icon--right.icon--xxsmall.btn-yellow, .icon--right.icon--xxsmall.btn-facebook, .icon--right.icon--xxsmall.btn-twitter, .icon--right.icon--xxsmall.btn-transparent, .icon--right.icon--xxsmall.btn-tumblr, .icon--right.icon--xxsmall.btn-paypal, .icon--right.icon--xxsmall.btn-roku, .icon--right.icon--xxsmall.btn-search, .icon--right.icon--xxsmall.btn-dropdown {
+      background-position: right 18px center;
+      padding-left: 37px; }
 
 /* button gray shorthand
 ......................................*/
@@ -1908,6 +1920,9 @@ html {
 
 .relative {
   position: relative; }
+
+.absolute {
+  position: absolute; }
 
 .pull {
   float: left; }
@@ -5800,6 +5815,11 @@ a.head--white:hover, a.head--white:active {
 /*.....................................
   Stand-alone icons using <i>
 ......................................*/
+.icon.is-loading, .icon.is-processing,
+.icon-circle.is-loading,
+.icon-circle.is-processing {
+  background-image: none; }
+
 .icon {
   display: inline-block;
   background-position: 50% 50%;
@@ -6363,6 +6383,9 @@ a.head--white:hover, a.head--white:active {
     content: ' ' !important; }
   .loader--transparent.is-processing > *, .loader--transparent.is-loading > * {
     opacity: .2; }
+
+.loader--offset:after {
+  top: 125px; }
 
 .loader--hide {
   position: relative; }
@@ -7014,6 +7037,15 @@ a.text--blue.is-disabled:link, a.text--blue.is-disabled:visited, a.text--blue.is
   margin-bottom: 22px; }
 .text-contain.text-3 p {
   margin-bottom: 18px; }
+
+.line-small {
+  line-height: 15px; }
+
+.line-medium {
+  line-height: 18px; }
+
+.line-large {
+  line-height: 21px; }
 
 /* imports
 ...................................*/
