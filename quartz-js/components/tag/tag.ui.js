@@ -9,7 +9,7 @@ vhxm.components.shared.tag.ui.container = {
         ctrl.state.isHover(false);
       }
     }, [
-      m('button.c-tag--button' + (ctrl.state.isHover() ? '.btn-teal.is-hover' : '.btn-gray'), {
+      m('button.c-tag--button' + (ctrl.state.isHover() ? '.btn-teal.is-hover' : '.btn-gray') + (ctrl.state.isProcessing() ? '.is-processing': ''), {
         onclick: function(event) {
           event.preventDefault();
           ctrl.state.onShow(event);
