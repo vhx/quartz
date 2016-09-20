@@ -10,7 +10,8 @@ vhxm.components.shared.select.controller = function (opts) {
 
     self.type = opts.type || 'standard';
     self.multiselect = opts.multiselect || false;
-    self.caret_position = opts.caret_position || 'right';
+    self.caret = opts.caret || 'right';
+    self.position = opts.position || 'bottom';
     self.model.items = opts.items;
 
     if (opts.selected) {
@@ -19,6 +20,9 @@ vhxm.components.shared.select.controller = function (opts) {
       });
     }
 
+    if (opts.isProcessing) {
+      self.state.isProcessing = opts.isProcessing;
+    }
     if (opts.onSelect) {
       self.state.onSelect = opts.onSelect;
     }
@@ -44,13 +48,11 @@ vhxm.components.shared.select.controller = function (opts) {
     var selected = opts.placeholder ? opts.placeholder : 'Select...';
 
     if (self.state.selected()) {
-      self.model.items().map(function (item) {
-        if (self.state.selected()[item[opts.prop_map.key]]) {
-          selected = self.state.selected()[item[opts.prop_map.key]].label;
-        }
-      });
       if (Object.keys(self.state.selected()).length > 1) {
         selected = 'Multiple items selected';
+      } else {
+        var key = Object.keys(self.state.selected())[0];
+        selected = self.state.selected()[key].label;
       }
     }
 
@@ -99,6 +101,11 @@ vhxm.components.shared.select.controller = function (opts) {
 
   self.selectItem = function (item, isInit) {
     var selected = void 0;
+    var obj = {
+      value: item[opts.prop_map.value],
+      label: item[opts.prop_map.label]
+    };
+
     if (!self.multiselect) {
       self.state.selected({});
     }
@@ -107,12 +114,8 @@ vhxm.components.shared.select.controller = function (opts) {
 
     if (selected[item[opts.prop_map.key]]) {
       delete selected[item[opts.prop_map.key]];
-      self.state.onSelect(null, self.state.selected(), 'removed');
+      self.state.onSelect(obj, self.state.selected(), 'removed');
     } else {
-      var obj = {
-        value: item[opts.prop_map.value],
-        label: item[opts.prop_map.label]
-      };
       selected[item[opts.prop_map.key]] = obj;
       self.state.onSelect(obj, self.state.selected(), 'added');
     }
@@ -194,6 +197,7 @@ vhxm.components.shared.select.state = function () {
   this.searchInputValue = m.prop('');
   this.footerLoading = m.prop(false);
   this.focusInput = m.prop(true);
+  this.isProcessing = m.prop([]);
   this.onSelect = function () {};
   this.onAction = function (done) {
     done();
@@ -210,7 +214,7 @@ vhxm.components.shared.select.ui.container = {
     options += opts.trigger ? '.has-trigger' : '';
     options += opts.type === 'media' ? '.has-media' : '';
     options += opts.inline ? '.inline' : '';
-    options += '.caret--' + ctrl.caret_position;
+    options += '.caret--' + (ctrl.position === 'top' ? 'bottom' : 'top') + '-' + ctrl.caret;
 
     if (opts.trigger) {
       opts.trigger.attrs.onclick = ctrl.handleClick;
@@ -225,7 +229,13 @@ vhxm.components.shared.select.ui.container = {
     }, [opts.trigger ? opts.trigger : m('a.c-select--trigger.btn-dropdown-' + (opts.color ? opts.color : 'gray') + '.btn--fill' + (ctrl.state.isDropdownOpen() ? '.is-active' : ''), {
       href: '#',
       onclick: ctrl.handleClick
-    }, ctrl.selectedLabel()), m('.c-select--dropdown.bg-white.border.radius.fill-width' + (ctrl.state.isDropdownOpen() ? '.is-open' : ''), [opts.search ?
+    }, ctrl.selectedLabel()), m('.c-select--dropdown.bg-white.border.radius.fill-width' + (ctrl.state.isDropdownOpen() ? '.is-open' : ''), {
+      config: function config(el) {
+        if (ctrl.position === 'top') {
+          el.style.top = -(el.offsetHeight + 10) + 'px';
+        }
+      }
+    }, [opts.search ?
     // if search is enabled
     m('.c-select--input-container.padding-medium.absolute.bg-white.fill-width.radius', [m.component(vhxm.components.shared.search_input.ui.container, {
       config: function config(el, init) {
@@ -250,7 +260,7 @@ vhxm.components.shared.select.ui.container = {
     m('.c-select--footer.border-top', [m('a.btn-teal.btn--fill' + (ctrl.state.footerLoading() ? '.is-loading' : ''), {
       onclick: ctrl.handleAction,
       href: '#'
-    }, opts.action + (ctrl.state.searchInputValue().length ? ' \'' + ctrl.state.searchInputValue() + '\'' : ''))]) : '', m('span.c-select--caret')])]);
+    }, opts.action + (ctrl.state.searchInputValue().length ? ' \'' + ctrl.state.searchInputValue() + '\'' : ''))]) : ''])]);
   }
 };
 
@@ -278,7 +288,7 @@ vhxm.components.shared.select.ui.item_media = {
       src: item[opts.prop_map.img],
       width: 70,
       height: 40
-    })]), m('.c-media-item--content.clearfix.left', [m('p.text--navy', item[opts.prop_map.label]), m('p.text--gray', item[opts.prop_map.descriptor])]), ctrl.parent.multiselect ? m('.c-media-item--action.clearfix.right', [m('.c-item-toggle.icon--xsmall.icon-check-navy.border' + (ctrl.state.selected() && ctrl.state.selected()[item[opts.prop_map.key]] ? '.is-selected.icon-check-navy' : '.icon-plus-thin-white'))]) : '']);
+    })]), m('.c-media-item--content.clearfix.left', [m('p.text--navy', item[opts.prop_map.label]), m('p.text--gray', item[opts.prop_map.descriptor])]), ctrl.parent.multiselect ? m('.c-media-item--action.clearfix.right', [ctrl.state.isProcessing().indexOf(item[opts.prop_map.value]) >= 0 ? m('.c-item-toggle.loader-white.loader--small') : m('.c-item-toggle.icon--xsmall.icon-check-navy.border' + (ctrl.state.selected() && ctrl.state.selected()[item[opts.prop_map.key]] ? '.is-selected.icon-check-navy' : '.icon-plus-thin-white'))]) : '']);
   }
 };
 
