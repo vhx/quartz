@@ -27,6 +27,10 @@
   }
 }
 
+.loader--offset:after {
+  top: 125px;
+}
+
 .loader--hide {
   @include loader_cover();
   &.is-processing *,
