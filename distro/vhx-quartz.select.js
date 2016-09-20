@@ -129,8 +129,6 @@ vhxm.components.shared.select.controller = function (opts) {
     if (self.multiselect) {
       self.state.highlightIndex(-1);
     }
-
-    self.state.onSelect(self.state.selected());
   };
 
   self.handleAction = function (event) {
@@ -212,6 +210,7 @@ vhxm.components.shared.select.ui.container = {
   view: function view(ctrl, opts) {
     var options = opts.search ? '.has-search' : '';
     options += opts.trigger ? '.has-trigger' : '';
+    options += opts.action ? '.has-action' : '';
     options += opts.type === 'media' ? '.has-media' : '';
     options += opts.inline ? '.inline' : '';
     options += '.caret--' + (ctrl.position === 'top' ? 'bottom' : 'top') + '-' + ctrl.caret;
@@ -228,7 +227,10 @@ vhxm.components.shared.select.ui.container = {
       onkeydown: ctrl.handleKeydown
     }, [opts.trigger ? opts.trigger : m('a.c-select--trigger.btn-dropdown-' + (opts.color ? opts.color : 'gray') + '.btn--fill' + (ctrl.state.isDropdownOpen() ? '.is-active' : ''), {
       href: '#',
-      onclick: ctrl.handleClick
+      onclick: ctrl.handleClick,
+      style: {
+        top: opts.offset ? opts.offset + 'px' : '40px'
+      }
     }, ctrl.selectedLabel()), m('.c-select--dropdown.bg-white.border.radius.fill-width' + (ctrl.state.isDropdownOpen() ? '.is-open' : ''), {
       config: function config(el) {
         if (ctrl.position === 'top') {
