@@ -1,4 +1,12 @@
 ### 0.10.2
+**2016-09-20**
+* Tag Component >
+  - Add ability to toggle tag processing state
+* Select Component >
+  - Add ability to toggle processing states of media items
+  - Add position options for dropdown and carets
+
+### 0.10.2
 **2016-09-17**
 * Tag Component >
   - Fix bugs with `onRemove` and `onShow` callback methods

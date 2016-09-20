@@ -5,6 +5,9 @@ vhxm.components.shared.tag.controller = function (opts) {
 
   self.state = new vhxm.components.shared.tag.state();
 
+  if (opts.isProcessing) {
+    self.state.isProcessing = opts.isProcessing;
+  }
   if (opts.onShow) {
     self.state.onShow = opts.onShow;
   }
@@ -15,6 +18,7 @@ vhxm.components.shared.tag.controller = function (opts) {
 vhxm.components.shared.tag.state = function () {
   this.isHover = m.prop(false);
   this.isRemoveHover = m.prop(false);
+  this.isProcessing = m.prop(false);
   this.onShow = function () {};
   this.onRemove = function () {};
 };
@@ -29,7 +33,7 @@ vhxm.components.shared.tag.ui.container = {
       onmouseout: function onmouseout() {
         ctrl.state.isHover(false);
       }
-    }, [m('button.c-tag--button' + (ctrl.state.isHover() ? '.btn-teal.is-hover' : '.btn-gray'), {
+    }, [m('button.c-tag--button' + (ctrl.state.isHover() ? '.btn-teal.is-hover' : '.btn-gray') + (ctrl.state.isProcessing() ? '.is-processing' : ''), {
       onclick: function onclick(event) {
         event.preventDefault();
         ctrl.state.onShow(event);

@@ -3,6 +3,9 @@ vhxm.components.shared.tag.controller = function(opts) {
 
   self.state = new vhxm.components.shared.tag.state();
 
+  if (opts.isProcessing) {
+    self.state.isProcessing = opts.isProcessing;
+  }
   if (opts.onShow) {
     self.state.onShow = opts.onShow;
   }

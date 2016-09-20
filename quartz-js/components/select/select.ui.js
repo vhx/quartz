@@ -8,7 +8,7 @@ vhxm.components.shared.select.ui.container = {
     options += opts.trigger ? '.has-trigger' : '';
     options += opts.type === 'media' ? '.has-media' : '';
     options += opts.inline ? '.inline' : '';
-    options += '.caret--' + ctrl.caret_position;
+    options += '.caret--' + (ctrl.position === 'top' ? 'bottom' : 'top') + '-' + ctrl.caret;
 
     if (opts.trigger) {
       opts.trigger.attrs.onclick = ctrl.handleClick;
@@ -26,7 +26,13 @@ vhxm.components.shared.select.ui.container = {
         href: '#',
         onclick: ctrl.handleClick
       }, ctrl.selectedLabel()),
-      m('.c-select--dropdown.bg-white.border.radius.fill-width' + (ctrl.state.isDropdownOpen() ? '.is-open' : ''), [
+      m('.c-select--dropdown.bg-white.border.radius.fill-width' + (ctrl.state.isDropdownOpen() ? '.is-open' : ''), {
+        config: function(el) {
+          if (ctrl.position === 'top') {
+            el.style.top = - (el.offsetHeight + 10) + 'px';
+          }
+        }
+      }, [
         opts.search ?
         // if search is enabled
         m('.c-select--input-container.padding-medium.absolute.bg-white.fill-width.radius', [
@@ -58,8 +64,7 @@ vhxm.components.shared.select.ui.container = {
             onclick: ctrl.handleAction,
             href: '#'
           }, opts.action + (ctrl.state.searchInputValue().length ? (' \'' + ctrl.state.searchInputValue() + '\'') : ''))
-        ]) : '',
-        m('span.c-select--caret')
+        ]) : ''
       ])
     ]);
   }
