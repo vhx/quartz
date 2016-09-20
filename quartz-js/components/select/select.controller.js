@@ -45,13 +45,11 @@ vhxm.components.shared.select.controller = function(opts) {
     let selected = opts.placeholder ? opts.placeholder : 'Select...';
 
     if (self.state.selected()) {
-      self.model.items().map(function(item) {
-        if (self.state.selected()[item[opts.prop_map.key]]) {
-          selected = self.state.selected()[item[opts.prop_map.key]].label;
-        }
-      });
       if (Object.keys(self.state.selected()).length > 1) {
         selected = 'Multiple items selected';
+      } else {
+        let key = Object.keys(self.state.selected())[0];
+        selected = self.state.selected()[key].label;
       }
     }
 
