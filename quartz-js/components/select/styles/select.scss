@@ -219,6 +219,9 @@
   .btn-teal.is-loading, {
     background-color: $teal-2 !important;
     border-color: $teal-2 !important;
-    color: $white !important;
+    color: $white;
+  }
+  .btn-teal.is-loading {
+    color: transparent;
   }
 }

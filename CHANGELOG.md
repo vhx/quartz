@@ -1,4 +1,9 @@
-### 0.10.5
+### 0.10.7
+**2016-09-21**
+* Select Component >
+  - Fix processing state text color (introduced in 0.10.5)
+
+### 0.10.6
 **2016-09-21**
 * Select Component >
   - Fix processing state and "No results" styling
