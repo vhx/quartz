@@ -171,4 +171,6 @@
 .c-select--footer .btn-teal.is-loading {
   background-color: #22B9B0 !important;
   border-color: #22B9B0 !important;
-  color: #ffffff !important; }
+  color: #ffffff; }
+.c-select--footer .btn-teal.is-loading {
+  color: transparent; }
