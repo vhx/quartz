@@ -25,6 +25,6 @@ vhxm.components.shared.select.ui.list.container = {
 .................................................*/
 vhxm.components.shared.select.ui.list.empty = {
   view: function() {
-    return m('li.c-select--option.padding-horz-large.padding-top-small.padding-bottom-medium.text.primary', 'No results');
+    return m('li.padding-horz-large.padding-top-small.padding-bottom-medium.text--gray.text-center', 'No results');
   }
 };
