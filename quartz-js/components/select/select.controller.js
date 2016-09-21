@@ -9,7 +9,7 @@ vhxm.components.shared.select.controller = function(opts) {
     self.type = opts.type || 'standard';
     self.multiselect = opts.multiselect || false;
     self.caret = opts.caret || 'right';
-    self.position = opts.position || 'bottom';
+    self.position = opts.position || m.prop('bottom');
     self.model.items = opts.items;
 
     if (opts.selected) {
@@ -140,6 +140,7 @@ vhxm.components.shared.select.controller = function(opts) {
       m.startComputation();
         self.state.searchInputValue('');
         self.state.footerLoading(false);
+        self.state.isDropdownOpen(false);
       m.endComputation();
     });
   };
