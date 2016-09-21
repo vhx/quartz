@@ -1,4 +1,11 @@
 ### 0.10.5
+**2016-09-21**
+* Select Component >
+  - Fix processing state and "No results" styling
+  - Require position option to an `m.prop`
+  - Add box shadow to dropdown
+
+### 0.10.5
 **2016-09-20**
 * Select Component >
   - Fix bug with offset option introduced in 0.10.4
