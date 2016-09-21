@@ -14,7 +14,7 @@ Q.components.guide.js.ui.select.container = {
               m.component(vhxm.components.shared.select.ui.container, {
                 placeholder: 'Select Option...',
                 selected: null,
-                position: 'top',
+                position: m.prop('top'),
                 caret: 'center',
                 items: m.prop([
                   {
@@ -26,6 +26,7 @@ Q.components.guide.js.ui.select.container = {
                     title: 'Item #2'
                   }
                 ]),
+                remove: 'Remove Trailer',
                 prop_map: {
                   key: 'title',
                   label: 'title',
@@ -175,7 +176,7 @@ Q.components.guide.js.ui.select.container = {
           { name: 'selected', type: 'object', required: false, default_value: 'null', description: 'Object with selected values for initializing the dropdown pre-selected. Each value is an object with a label and value.' },
           { name: 'caret', type: 'string', default_value: 'right', description: m.trust('Specify the position of the caret. Either <span class="text--bold text--navy text-4">left</span>, <span class="text--bold text--navy text-4">center</span>, or <span class="text--bold text--navy text-4">right</span>.') },
           { name: 'offset', type: 'integer', default_value: '40', description: m.trust('Specify the offset of the dropdown from the trigger.') },
-          { name: 'position', type: 'string', default_value: 'bottom', description: m.trust('Specify the position of the dropdown. Either <span class="text--bold text--navy text-4">top</span> or <span class="text--bold text--navy text-4">bottom</span>.') },
+          { name: 'position', type: 'prop', default_value: 'bottom', description: m.trust('Specify the position of the dropdown. Either <span class="text--bold text--navy text-4">top</span> or <span class="text--bold text--navy text-4">bottom</span>.') },
           { name: 'prop_map.key', type: 'string', required: true, description: 'The unique identifier (key) for each item selected (the selected object). The selected object will be returned in the onSelect callback method.' },
           { name: 'prop_map.value', type: 'string', required: true, description: 'Item key to look for in the provided items for the item value.' },
           { name: 'prop_map.label', type: 'string', required: true, description: 'Item key to look for in the provided items to display a label.' },
