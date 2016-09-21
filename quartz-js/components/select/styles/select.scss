@@ -23,6 +23,7 @@
   left: 0;
   z-index: 2147483600;
   display: none;
+  box-shadow: 0 0 10px $gray-3;
   &.is-open {
     display: block;
   }
@@ -216,8 +217,8 @@
   .btn-teal:hover,
   .btn-teal:active,
   .btn-teal.is-loading, {
-    background-color: $teal-2;
-    border-color: $teal-2;
-    color: $white;
+    background-color: $teal-2 !important;
+    border-color: $teal-2 !important;
+    color: $white !important;
   }
 }
