@@ -11,7 +11,7 @@ vhxm.components.shared.select.controller = function (opts) {
     self.type = opts.type || 'standard';
     self.multiselect = opts.multiselect || false;
     self.caret = opts.caret || 'right';
-    self.position = opts.position || 'bottom';
+    self.position = opts.position || m.prop('bottom');
     self.model.items = opts.items;
 
     if (opts.selected) {
@@ -141,6 +141,7 @@ vhxm.components.shared.select.controller = function (opts) {
       m.startComputation();
       self.state.searchInputValue('');
       self.state.footerLoading(false);
+      self.state.isDropdownOpen(false);
       m.endComputation();
     });
   };
@@ -213,7 +214,7 @@ vhxm.components.shared.select.ui.container = {
     options += opts.action ? '.has-action' : '';
     options += opts.type === 'media' ? '.has-media' : '';
     options += opts.inline ? '.inline' : '';
-    options += '.caret--' + (ctrl.position === 'top' ? 'bottom' : 'top') + '-' + ctrl.caret;
+    options += '.caret--' + (ctrl.position() === 'top' ? 'bottom' : 'top') + '-' + ctrl.caret;
 
     if (opts.trigger) {
       opts.trigger.attrs.onclick = ctrl.handleClick;
@@ -233,7 +234,7 @@ vhxm.components.shared.select.ui.container = {
         top: opts.offset ? opts.offset + 'px' : '40px'
       },
       config: function config(el) {
-        if (ctrl.position === 'top') {
+        if (ctrl.position() === 'top') {
           el.style.top = -(el.offsetHeight + 10) + 'px';
         }
       }
@@ -357,6 +358,6 @@ vhxm.components.shared.select.ui.list.container = {
 .................................................*/
 vhxm.components.shared.select.ui.list.empty = {
   view: function view() {
-    return m('li.c-select--option.padding-horz-large.padding-top-small.padding-bottom-medium.text.primary', 'No results');
+    return m('li.padding-horz-large.padding-top-small.padding-bottom-medium.text--gray.text-center', 'No results');
   }
 };

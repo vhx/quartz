@@ -40,7 +40,8 @@
   top: 55px;
   left: 0;
   z-index: 2147483600;
-  display: none; }
+  display: none;
+  box-shadow: 0 0 10px #D7DDE1; }
   .c-select--dropdown.is-open {
     display: block; }
 
@@ -168,6 +169,6 @@
 .c-select--footer .btn-teal:hover,
 .c-select--footer .btn-teal:active,
 .c-select--footer .btn-teal.is-loading {
-  background-color: #22B9B0;
-  border-color: #22B9B0;
-  color: #ffffff; }
+  background-color: #22B9B0 !important;
+  border-color: #22B9B0 !important;
+  color: #ffffff !important; }
