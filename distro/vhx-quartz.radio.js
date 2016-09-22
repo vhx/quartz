@@ -42,7 +42,7 @@ vhxm.components.shared.radio.ui.container = {
         style: {
           marginTop: !opts.buttons || opts.buttons && item.label.title ? '0px' : '8px'
         }
-      }, opts.buttons ? [m('strong.head-5' + (is_checked ? '.text--white' : '.text--navy'), item.label.title ? item.label.title : item.label), item.label.descriptor ? m('p.text-4' + (is_checked ? '.text--white' : ''), item.label.descriptor) : ''] : item.label)]), item.template ? m('div.clear.padding-top-xsmall', [item.template]) : '']);
+      }, opts.buttons ? [m('strong.text-2' + (is_checked ? '.text--white' : '.text--navy'), item.label.title ? item.label.title : item.label), item.label.descriptor ? m('p.text-4' + (is_checked ? '.text--white' : ''), item.label.descriptor) : ''] : item.label)]), item.template ? m('div.clear.padding-top-xsmall', [item.template]) : '']);
     })])]);
   }
 };
