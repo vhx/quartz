@@ -27,6 +27,12 @@
 ..................................... */
 /* helper function for margin and padding
 ......................................*/
+.form .checkbox.small label .checkbox--label, .form .checkbox.medium label .checkbox--label {
+  position: absolute;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
 /*.....................................
   Admin Checkbox
 ......................................*/
@@ -139,6 +145,9 @@
         height: 10.33333px;
         top: 1px;
         right: 1px; }
+    .form .checkbox.small label .checkbox--label {
+      width: calc(100% - 18.33333px);
+      left: 18.33333px; }
     .form .checkbox.small label .checkbox--label,
     .form .checkbox.small label .checkbox--contain {
       min-height: 13.33333px; }
@@ -156,6 +165,9 @@
         height: 15px;
         top: 2px;
         right: 2px; }
+    .form .checkbox.medium label .checkbox--label {
+      width: calc(100% - 25px);
+      left: 25px; }
     .form .checkbox.medium label .checkbox--label,
     .form .checkbox.medium label .checkbox--contain {
       min-height: 20px; }
