@@ -20,15 +20,19 @@ vhxm.components.shared.select.controller = function (opts) {
       });
     }
 
+    self.state.focusInput(opts.focusOnOpen || true);
+
     if (opts.isProcessing) {
       self.state.isProcessing = opts.isProcessing;
     }
     if (opts.onSelect) {
       self.state.onSelect = opts.onSelect;
     }
-
     if (opts.onAction) {
       self.state.onAction = opts.onAction;
+    }
+    if (opts.onClose) {
+      self.state.onClose = opts.onClose;
     }
 
     $(document).on('click', function (event) {
@@ -37,6 +41,7 @@ vhxm.components.shared.select.controller = function (opts) {
       if (!is_dropdown && self.state.isDropdownOpen()) {
         m.startComputation();
         self.state.isDropdownOpen(false);
+        self.state.onClose();
         m.endComputation();
       }
     });
@@ -90,6 +95,9 @@ vhxm.components.shared.select.controller = function (opts) {
     }
 
     self.state.isDropdownOpen(!self.state.isDropdownOpen());
+    if (!self.state.isDropdownOpen()) {
+      self.state.onClose();
+    }
     self.scrollOptionsList(container);
   };
 
@@ -124,6 +132,9 @@ vhxm.components.shared.select.controller = function (opts) {
 
     if (!isInit) {
       self.state.isDropdownOpen(self.multiselect ? true : false);
+      if (!self.multiselect) {
+        self.state.onClose();
+      }
     }
 
     if (self.multiselect) {
@@ -142,6 +153,7 @@ vhxm.components.shared.select.controller = function (opts) {
       self.state.searchInputValue('');
       self.state.footerLoading(false);
       self.state.isDropdownOpen(false);
+      self.state.onClose();
       m.endComputation();
     });
   };
@@ -198,6 +210,7 @@ vhxm.components.shared.select.state = function () {
   this.focusInput = m.prop(true);
   this.isProcessing = m.prop([]);
   this.onSelect = function () {};
+  this.onClose = function () {};
   this.onAction = function (done) {
     done();
   };
@@ -242,7 +255,6 @@ vhxm.components.shared.select.ui.container = {
     // if search is enabled
     m('.c-select--input-container.padding-medium.absolute.bg-white.fill-width.radius', [m.component(vhxm.components.shared.search_input.ui.container, {
       config: function config(el, init) {
-        el.value = ctrl.state.searchInputValue();
         if (ctrl.state.focusInput()) {
           setTimeout(function () {
             el.focus();
@@ -288,7 +300,7 @@ vhxm.components.shared.select.ui.item_media = {
         ctrl.handleItemClick(event, item);
       }
     }, [m('.c-media-item--image-container.left', [m('img.c-media-item--image.radius.margin-right-medium', {
-      src: item[opts.prop_map.img],
+      src: item[opts.prop_map.image],
       width: 70,
       height: 40
     })]), m('.c-media-item--content.clearfix.left', [m('p.text--navy', item[opts.prop_map.label]), m('p.text--gray', item[opts.prop_map.descriptor])]), ctrl.parent.multiselect ? m('.c-media-item--action.clearfix.right', [ctrl.state.isProcessing().indexOf(item[opts.prop_map.value]) >= 0 ? m('.c-item-toggle.loader-white.loader--small') : m('.c-item-toggle.icon--xsmall.icon-check-navy.border' + (ctrl.state.selected() && ctrl.state.selected()[item[opts.prop_map.key]] ? '.is-selected.icon-check-navy' : '.icon-plus-thin-white'))]) : '']);
