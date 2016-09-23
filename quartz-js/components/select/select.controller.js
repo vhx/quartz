@@ -26,9 +26,11 @@ vhxm.components.shared.select.controller = function(opts) {
     if (opts.onSelect) {
       self.state.onSelect = opts.onSelect;
     }
-
     if (opts.onAction) {
       self.state.onAction = opts.onAction;
+    }
+    if (opts.onClose) {
+      self.state.onClose = opts.onClose;
     }
 
     $(document).on('click', function(event) {
@@ -37,6 +39,7 @@ vhxm.components.shared.select.controller = function(opts) {
       if (!is_dropdown && self.state.isDropdownOpen()) {
         m.startComputation();
         self.state.isDropdownOpen(false);
+        self.state.onClose();
         m.endComputation();
       }
     });
@@ -90,6 +93,9 @@ vhxm.components.shared.select.controller = function(opts) {
     }
 
     self.state.isDropdownOpen(!self.state.isDropdownOpen());
+    if (!self.state.isDropdownOpen()) {
+      self.state.onClose();
+    }
     self.scrollOptionsList(container);
   };
 
@@ -125,6 +131,9 @@ vhxm.components.shared.select.controller = function(opts) {
 
     if (!isInit) {
       self.state.isDropdownOpen(self.multiselect ? true : false);
+      if (!self.multiselect) {
+        self.state.onClose();
+      }
     }
 
     if (self.multiselect) {
@@ -143,6 +152,7 @@ vhxm.components.shared.select.controller = function(opts) {
         self.state.searchInputValue('');
         self.state.footerLoading(false);
         self.state.isDropdownOpen(false);
+        self.state.onClose();
       m.endComputation();
     });
   };

@@ -172,6 +172,7 @@ Q.components.guide.js.ui.select.container = {
           { name: 'trigger', type: 'mithril element', default_value: 'null', required: false, description: 'Trigger element that will replace default button dropdown' },
           { name: 'onSelect', type: 'function', required: false, default_value: 'null', description: 'Callback function that is called after an option is chosen.' },
           { name: 'onAction', type: 'function', required: false, default_value: 'null', description: 'Callback function that is called after the action button is clicked.' },
+          { name: 'onClose', type: 'function', required: false, default_value: 'null', description: 'Callback function that is called when the select dropdown closes.' },
           { name: 'isProcessing', type: 'prop', required: false, default_value: '[]', description: 'An array of values for any items that are in a processing state. Add or remove values to trigger the processing state of an item.' },
           { name: 'selected', type: 'object', required: false, default_value: 'null', description: 'Object with selected values for initializing the dropdown pre-selected. Each value is an object with a label and value.' },
           { name: 'caret', type: 'string', default_value: 'right', description: m.trust('Specify the position of the caret. Either <span class="text--bold text--navy text-4">left</span>, <span class="text--bold text--navy text-4">center</span>, or <span class="text--bold text--navy text-4">right</span>.') },

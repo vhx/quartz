@@ -10,5 +10,6 @@ vhxm.components.shared.select.state = function() {
   this.focusInput = m.prop(true);
   this.isProcessing = m.prop([]);
   this.onSelect = function() {};
+  this.onClose = function() {};
   this.onAction = function(done) { done(); };
 };
