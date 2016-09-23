@@ -11,18 +11,32 @@ Q.components.guide.js.ui.checkbox.container = {
         component: {
           view: function() {
             return m('div.form', [
-              m.component(vhxm.components.shared.checkbox.ui.container, {
-                name: 'standard',
-                checked: true,
-                size: 'small',
-                label: 'Label'
-              }),
-              m.component(vhxm.components.shared.checkbox.ui.container, {
-                name: 'standard',
-                checked: true,
-                size: 'medium',
-                label: 'Label'
-              }),
+              m('.row', [
+                m('.column.small-thirds', [
+                  m.component(vhxm.components.shared.checkbox.ui.container, {
+                    name: 'standard',
+                    checked: true,
+                    size: 'small',
+                    label: 'Can you lift at least 50 pounds?'
+                  })
+                ]),
+                m('.column.small-thirds', [
+                  m.component(vhxm.components.shared.checkbox.ui.container, {
+                    name: 'standard',
+                    checked: true,
+                    size: 'medium',
+                    label: 'My preferred mode of transportation is an airplane'
+                  })
+                ]),
+                m('.column.small-thirds', [
+                  m.component(vhxm.components.shared.checkbox.ui.container, {
+                    name: 'standard',
+                    checked: true,
+                    size: 'medium',
+                    label: 'Label'
+                  })
+                ])
+              ]),
               m.component(vhxm.components.shared.checkbox.ui.container, {
                 name: 'standard',
                 checked: true,

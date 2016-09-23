@@ -2,6 +2,18 @@
 
 $field-height: 40px;
 
+%checkbox-label-overflow {
+  position: absolute;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@mixin checkbox-label($denominator) {
+  @extend %checkbox-label-overflow;
+  width: calc(100% - #{($field-height / $denominator) + 5});
+  left: #{($field-height / $denominator) + 5};
+}
+
 /*.....................................
   Admin Checkbox
 ......................................*/
@@ -164,6 +176,9 @@ $field-height: 40px;
         right: 1px;
       }
     }
+    .checkbox--label {
+      @include checkbox-label(3);
+    }
     .checkbox--label,
     .checkbox--contain {
       min-height: $field-height/3;
@@ -185,6 +200,9 @@ $field-height: 40px;
         top: 2px;
         right: 2px;
       }
+    }
+    .checkbox--label {
+      @include checkbox-label(2);
     }
     .checkbox--label,
     .checkbox--contain {
