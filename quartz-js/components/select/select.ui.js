@@ -42,7 +42,6 @@ vhxm.components.shared.select.ui.container = {
         m('.c-select--input-container.padding-medium.absolute.bg-white.fill-width.radius', [
           m.component(vhxm.components.shared.search_input.ui.container, {
             config: function(el, init) {
-              el.value = ctrl.state.searchInputValue();
               if (ctrl.state.focusInput()){
                 setTimeout(function() {
                   el.focus();
