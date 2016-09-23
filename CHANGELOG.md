@@ -1,3 +1,16 @@
+### 0.10.9
+**2016-09-23**
+* Select Component >
+  - Add `onClose` callback method
+  - Fix issue with not being able to select text in search input
+  - Add `focusOnOpen` option
+  - Change `prop_map.img` option to `prop_map.image`
+
+### 0.10.8
+**2016-09-23**
+* Select Component >
+  - Fix processing state text color (introduced in 0.10.5)
+
 ### 0.10.7
 **2016-09-21**
 * Select Component >
