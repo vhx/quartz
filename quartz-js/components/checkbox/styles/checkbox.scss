@@ -2,11 +2,14 @@
 
 $field-height: 40px;
 
-@mixin checkbox-label($denominator) {
+%checkbox-label-overflow {
   position: absolute;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+@mixin checkbox-label($denominator) {
+  @extend %checkbox-label-overflow;
   width: calc(100% - #{($field-height / $denominator) + 5});
   left: #{($field-height / $denominator) + 5};
 }
