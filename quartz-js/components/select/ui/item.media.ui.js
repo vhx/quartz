@@ -21,7 +21,7 @@ vhxm.components.shared.select.ui.item_media = {
     }, [
       m('.c-media-item--image-container.left', [
         m('img.c-media-item--image.radius.margin-right-medium', {
-          src: item[opts.prop_map.img],
+          src: item[opts.prop_map.image],
           width: 70,
           height: 40
         })
