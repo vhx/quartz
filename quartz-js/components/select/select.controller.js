@@ -18,6 +18,8 @@ vhxm.components.shared.select.controller = function(opts) {
       });
     }
 
+    self.state.focusInput(opts.focusOnOpen || true);
+
     if (opts.isProcessing) {
       self.state.isProcessing = opts.isProcessing;
     }
