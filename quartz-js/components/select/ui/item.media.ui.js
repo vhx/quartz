@@ -27,8 +27,8 @@ vhxm.components.shared.select.ui.item_media = {
         })
       ]),
       m('.c-media-item--content.clearfix.left', [
-        m('p.text--navy', item[opts.prop_map.label]),
-        m('p.text--gray', item[opts.prop_map.descriptor])
+        m('p.text--navy.line-medium', item[opts.prop_map.label]),
+        m('p.text--gray.line-medium', item[opts.prop_map.descriptor])
       ]),
       ctrl.parent.multiselect ? m('.c-media-item--action.clearfix.right', [
         ctrl.state.isProcessing().indexOf(item[opts.prop_map.value]) >= 0 ?
