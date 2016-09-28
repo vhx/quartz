@@ -18,7 +18,7 @@ vhxm.components.shared.select.controller = function(opts) {
       });
     }
 
-    self.state.focusInput(opts.focusOnOpen || true);
+    self.state.focusInput(opts.focusOnOpen ? opts.focusOnOpen : true);
 
     if (opts.isProcessing) {
       self.state.isProcessing = opts.isProcessing;
@@ -89,7 +89,7 @@ vhxm.components.shared.select.controller = function(opts) {
     let container = $(event.target).closest('.c-select--container').find('.c-select--options');
 
     if (!self.state.isDropdownOpen()) {
-      self.state.focusInput(true);
+      self.state.focusInput(opts.focusOnOpen ? opts.focusOnOpen : true);
     }
 
     self.state.isDropdownOpen(!self.state.isDropdownOpen());
