@@ -80,7 +80,9 @@ vhxm.components.shared.select.controller = function(opts) {
     // Enter/Return
     else if (event.keyCode === 13 && self.state.isDropdownOpen()) {
       event.preventDefault();
-      self.selectItem(self.model.items()[self.state.highlightIndex()]);
+      if (self.state.highlightIndex() >= 0) {
+        self.selectItem(self.model.items()[self.state.highlightIndex()]);
+      }
     }
   };
 
