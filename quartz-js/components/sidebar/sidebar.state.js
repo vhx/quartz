@@ -3,7 +3,7 @@ vhxm.components.shared.sidebar.state = {
   isLoaded       : m.prop(false),
   skipTransition : m.prop(false),
   template       : m.prop(null),
-  onBeforeClose  : function() {},
+  onBeforeClose  : function(done) { done(); },
   onClose        : function() {},
   onOpen         : function() {}
 };
