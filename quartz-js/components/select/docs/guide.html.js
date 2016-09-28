@@ -148,7 +148,7 @@ Q.components.guide.js.ui.select.container = {
                   label: 'title',
                   value: 'id',
                   descriptor: 'detail',
-                  img: 'img_src'
+                  image: 'img_src'
                 },
                 caret_position: 'left',
                 onAction: function(done) {
