@@ -35,7 +35,7 @@ vhxm.components.shared.search_input.controller = function (opts) {
 
     if (query.length && window.history && window.history.replaceState) {
       search = loc.search.length && loc.search.match(/\?/) ? loc.search : '?';
-      href += search.match(/q\=/) ? search.replace(/q\=[^&]*/, 'q=' + query) : search + 'q=' + query;
+      href += search.match(/q\=/) ? search.replace(/q\=[^&]*/, 'q=' + query) : search + '&q=' + query;
       history.replaceState({}, '', href);
     } else {
       search = loc.search.replace(/q\=[^&]*/, '');

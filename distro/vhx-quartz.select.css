@@ -144,6 +144,10 @@
     background-color: rgba(34, 185, 176, 0.1); }
     .c-media-item--container:hover .c-item-toggle, .c-media-item--container.is-selected .c-item-toggle {
       opacity: 1; }
+  .c-media-item--container .c-media-item--image-container {
+    max-width: 30%; }
+  .c-media-item--container .c-media-item--content {
+    max-width: 70%; }
 
 .c-item-toggle {
   opacity: 0;
