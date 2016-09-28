@@ -185,6 +185,12 @@
       opacity: 1;
     }
   }
+  .c-media-item--image-container {
+    max-width: 30%;
+  }
+  .c-media-item--content {
+    max-width: 70%;
+  }
 }
 
 // Media Item +/✓ circle
