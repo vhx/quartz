@@ -1,10 +1,25 @@
-### 0.10.9
+### 0.10.11
+**2016-09-28**
+* Search Component >
+  - Fix bug where query was not being appended to the URL with an ampersand
+* Select Component >
+  - Fix bug where JS error was being thrown when hitting enter on search input
+  - Ensure onBeforeClose callback method default calls done()
+  - Better line heights, ensure long text doesn't break, and image is contained for media items
+
+
+### 0.10.10
 **2016-09-23**
 * Select Component >
   - Add `onClose` callback method
   - Fix issue with not being able to select text in search input
   - Add `focusOnOpen` option
   - Change `prop_map.img` option to `prop_map.image`
+
+### 0.10.9
+**2016-09-23**
+* Checkbox Component and Styles >
+  - Truncate lengthy checkbox labels
 
 ### 0.10.8
 **2016-09-23**
