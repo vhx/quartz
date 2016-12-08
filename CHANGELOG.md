@@ -1,3 +1,8 @@
+### 0.10.12
+**2016-12-08**
+* document select component's `placeholder` option
+* document Quartz build and release process
+
 ### 0.10.11
 **2016-09-28**
 * Search Component >
@@ -6,7 +11,6 @@
   - Fix bug where JS error was being thrown when hitting enter on search input
   - Ensure onBeforeClose callback method default calls done()
   - Better line heights, ensure long text doesn't break, and image is contained for media items
-
 
 ### 0.10.10
 **2016-09-23**
