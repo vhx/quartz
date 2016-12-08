@@ -9,13 +9,13 @@ Style guide &amp; elements + asset build pipeline for [VHX](http://vhx.tv).<br>
 
 **Initial Setup**
 
-1. Clone the repo  
-1. Run `./setup`  
+1. Clone the repo
+1. Run `./setup`
 1. Done.
 
 **Starting the server**
 
-1. Run `./server`  
+1. Run `./server`
 1. Go to: http://quartz.dev
 
 ## Build and Release
@@ -30,9 +30,11 @@ account at [https://rubygems.org/](https://rubygems.org/) and then let
 
 The build and release script will release both the `vhx-quartz` gem and `vhx-quartz` bower packages for use across VHX applications.
 
-1. Bump the version in `VERSION`. Use standard practice for [semantic versioning](http://semver.org/)  
-1. Run `./build-and-release`  
-1. Done.  
+1. Squash and Merge PR
+1. Checkout Master branch locally
+1. Update `VERSION` (using [Semantic Versioning](http://semver.org/))
+1. Update `CHANGELOG` (add new entry using `VERSION`'s number, the date, and description from PR)
+1. Run `./build`
 
 ## Using in your Application
 
@@ -57,24 +59,24 @@ gem install vhx-quartz
 1. Then include in your layout or SASS files
 
 	* *In your Layout*
-	
+
 	  Add the following to your `config.rb` file
 	```ruby
 	sprockets.import_asset 'vhx-quartz.css'
 	```
-	
+
 	Then include in your layout directly
 	```html
 	<%= stylesheet_link_tag  'vhx-quartz' %>
 	```
-	
+
 	* *Or in your SASS files*
-	
+
 	At the top of your file, either via the asset pipeline
 	```sass
 	//= require vhx-quartz
 	```
-	
+
 	Or via a SASS import
 	```sass
 	@import "vhx-quartz"
