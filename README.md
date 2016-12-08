@@ -47,7 +47,7 @@ You can use Quartz either through the Ruby Gem or Bower package.
 gem 'vhx-quartz'
 ```
 
-1.  Then install the gem either via
+2.  Then install the gem either via
 ```shell
 bundle install
 ```
@@ -56,7 +56,7 @@ or directly with
 gem install vhx-quartz
 ```
 
-1. Then include in your layout or SASS files
+3. Then include in your layout or SASS files
 
 	a. *In your Layout*
 
