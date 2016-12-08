@@ -175,6 +175,7 @@ Q.components.guide.js.ui.select.container = {
           { name: 'onClose', type: 'function', required: false, default_value: 'null', description: 'Callback function that is called when the select dropdown closes.' },
           { name: 'isProcessing', type: 'prop', required: false, default_value: '[]', description: 'An array of values for any items that are in a processing state. Add or remove values to trigger the processing state of an item.' },
           { name: 'selected', type: 'object', required: false, default_value: 'null', description: 'Object with selected values for initializing the dropdown pre-selected. Each value is an object with a label and value.' },
+          { name: 'placeholder', type: 'string', required: false, default_value: 'Select...', description: 'Text displayed in dropdown when no option is selected' },
           { name: 'caret', type: 'string', default_value: 'right', description: m.trust('Specify the position of the caret. Either <span class="text--bold text--navy text-4">left</span>, <span class="text--bold text--navy text-4">center</span>, or <span class="text--bold text--navy text-4">right</span>.') },
           { name: 'offset', type: 'integer', default_value: '40', description: m.trust('Specify the offset of the dropdown from the trigger.') },
           { name: 'position', type: 'prop', default_value: 'bottom', description: m.trust('Specify the position of the dropdown. Either <span class="text--bold text--navy text-4">top</span> or <span class="text--bold text--navy text-4">bottom</span>.') },
