@@ -58,7 +58,7 @@ gem install vhx-quartz
 
 1. Then include in your layout or SASS files
 
-	* *In your Layout*
+	a. *In your Layout*
 
 	  Add the following to your `config.rb` file
 	```ruby
@@ -70,7 +70,7 @@ gem install vhx-quartz
 	<%= stylesheet_link_tag  'vhx-quartz' %>
 	```
 
-	* *Or in your SASS files*
+	b. *Or in your SASS files*
 
 	At the top of your file, either via the asset pipeline
 	```sass
