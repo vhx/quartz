@@ -2,6 +2,7 @@
 
 m.component(vhxm.components.shared.select.ui.container, {
   search: mySearch(query, callback),
+  placeholder: 'Select Option...',
   selected: [
     {
       id: 1,
