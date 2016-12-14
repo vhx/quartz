@@ -1,6 +1,6 @@
 {
-  "name": "vhx-quartz",
-  "version": "0.10.12",
+  "name": "@vhx/quartz",
+  "version": "0.10.13",
   "description": "VHX Style Guide and JS Components.",
   "homepage": "https://github.com/vhx/quartz",
   "author": "VHX",
@@ -8,9 +8,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/vhx/quartz.git"
-  },
-  "engines": {
-    "node": "0.10.1x"
   },
   "main": "app/server/ignite.js",
   "dependencies": {
