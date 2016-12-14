@@ -1,3 +1,8 @@
+### 0.10.13
+**2016-12-14**
+* add alignment class to button groups
+* setup package.json to publish to our scoped org, @vhx/quartz
+
 ### 0.10.12
 **2016-12-08**
 * document select component's `placeholder` option

@@ -566,6 +566,28 @@ select {
 /* buttons group
 ......................................*/
 .btn-group {
+
+  &.btn-group--center,
+  &.btn-group--left,
+  &.btn-group--right {
+    .btn-white,
+    .btn-gray,
+    .btn-teal {
+      display: inline-block;
+      float: none;
+    }
+  }
+
+  &.btn-group--center {
+    text-align: center;
+  }
+  &.btn-group--left {
+    text-align: left;
+  }
+  &.btn-group--right {
+    text-align: right;
+  }
+
   &:after {
     content: ' ';
     clear: both;
