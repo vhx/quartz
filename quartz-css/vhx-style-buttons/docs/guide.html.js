@@ -138,6 +138,22 @@ Q.components.guide.styleguide.ui.buttons.container = {
                 m('button.btn-gray.small-thirds.is-selected', 'Button 1'),
                 m('button.btn-gray.small-thirds', 'Button 2'),
                 m('button.btn-gray.small-thirds', 'Button 3')
+              ]),
+              m('h3.text-4.margin-bottom-small', 'Button Group Alignment'),
+              m('div.btn-group.btn-group--left.margin-bottom-medium', [
+                m('button.btn-gray.small-4.is-selected', 'Tab'),
+                m('button.btn-gray.small-4', 'Tab'),
+                m('button.btn-gray.small-4', 'Tab')
+              ]),
+              m('div.btn-group.btn-group--center.margin-bottom-medium', [
+                m('button.btn-gray.small-4.is-selected', 'Tab'),
+                m('button.btn-gray.small-4', 'Tab'),
+                m('button.btn-gray.small-4', 'Tab')
+              ]),
+              m('div.btn-group.btn-group--right.margin-bottom-medium', [
+                m('button.btn-gray.small-4.is-selected', 'Tab'),
+                m('button.btn-gray.small-4', 'Tab'),
+                m('button.btn-gray.small-4', 'Tab')
               ])
             ]);
           }
@@ -152,7 +168,7 @@ Q.components.guide.styleguide.ui.buttons.container = {
               m('button.btn-gray.icon-product-navy.icon--left.margin-right-small.margin-bottom-small', 'Icon Left'),
               m('button.btn-gray.icon-product-navy.icon--right.margin-right-small.margin-bottom-small', 'Icon Center'),
               m('button.btn-gray.icon-product-navy.icon--left.margin-right-small.margin-bottom-small', [
-                m('.icon-chevron-down-navy.icon--right', 'Icon Both')
+                m('.icon-chevron-down-navy.icon-xxsmall.icon--right', 'Icon Both')
               ])
             ]);
           }
