@@ -78,6 +78,14 @@ module.exports = function(grunt) {
           }
         ]
       },
+      scss: {
+        files: [
+          {
+            src: 'quartz-css/vhx-style-colors/config/_variables.scss',
+            dest: 'distro/vhx-quartz.colors.scss'
+          }
+        ]
+      },
       components: {
         files: [
           {}
@@ -168,5 +176,5 @@ module.exports = function(grunt) {
   grunt.registerTask('component-js', ['prepareComponents', 'concat', 'babel']);
   grunt.registerTask('component-styles', ['prepareComponentStyles']);
 
-  grunt.registerTask('build', ['sass_globbing', 'cssmin', 'copy:css', 'component-js', 'component-styles', 'sass']);
+  grunt.registerTask('build', ['sass_globbing', 'cssmin', 'copy:css', 'copy:scss', 'component-js', 'component-styles', 'sass']);
 };
