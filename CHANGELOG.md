@@ -1,3 +1,8 @@
+### 0.10.14
+**2017-01-05**
+* add `api` icon
+* add `vhx-quartz.colors.scss` to `/distro` for usage via npm package
+
 ### 0.10.13
 **2016-12-14**
 * add alignment class to button groups

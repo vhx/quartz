@@ -1517,6 +1517,27 @@ select {
     margin-right: .5% !important; } }
 /* buttons group
 ......................................*/
+.btn-group.btn-group--center .btn-white, .btn-group.btn-group--center .btn-dropdown-white,
+.btn-group.btn-group--center .btn-gray,
+.btn-group.btn-group--center .btn-dropdown-gray,
+.btn-group.btn-group--center .btn-teal,
+.btn-group.btn-group--center .btn-dropdown-teal, .btn-group.btn-group--left .btn-white, .btn-group.btn-group--left .btn-dropdown-white,
+.btn-group.btn-group--left .btn-gray,
+.btn-group.btn-group--left .btn-dropdown-gray,
+.btn-group.btn-group--left .btn-teal,
+.btn-group.btn-group--left .btn-dropdown-teal, .btn-group.btn-group--right .btn-white, .btn-group.btn-group--right .btn-dropdown-white,
+.btn-group.btn-group--right .btn-gray,
+.btn-group.btn-group--right .btn-dropdown-gray,
+.btn-group.btn-group--right .btn-teal,
+.btn-group.btn-group--right .btn-dropdown-teal {
+  display: inline-block;
+  float: none; }
+.btn-group.btn-group--center {
+  text-align: center; }
+.btn-group.btn-group--left {
+  text-align: left; }
+.btn-group.btn-group--right {
+  text-align: right; }
 .btn-group:after {
   content: ' ';
   clear: both;
