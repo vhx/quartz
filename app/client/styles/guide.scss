@@ -69,3 +69,12 @@ section[id^="guide--component"] {
     left: 0;
   }
 }
+
+#guide--style-buttons {
+  button {
+    margin-bottom: 10px;
+    &.btn-transparent {
+      margin-bottom: 0px;
+    }
+  }
+}

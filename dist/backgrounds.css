@@ -1,0 +1,142 @@
+/* imports
+...................................*/
+/* .....................................
+  Fonts
+..................................... */
+/* .....................................
+  Sets
+..................................... */
+/* .....................................
+  Media Query Ranges
+..................................... */
+/* .....................................
+  Colors - Grays
+..................................... */
+/* .....................................
+  Colors - Teals
+..................................... */
+/* .....................................
+  Colors - Red
+..................................... */
+/* .....................................
+  Colors - Navy
+..................................... */
+/* .....................................
+  Colors - Brand Palette
+..................................... */
+/* .....................................
+  Colors - External Palette
+..................................... */
+/* helper function for margin and padding
+......................................*/
+/*.....................................
+  Backgrounds
+......................................*/
+/* Teal
+......................................*/
+.bg-teal-1 {
+  background-color: #F2FBFB; }
+
+.bg-teal-2 {
+  background-color: #22B9B0; }
+
+.bg-teal-3 {
+  background-color: #149A97; }
+
+/* Black & White
+......................................*/
+.bg-white {
+  background-color: #ffffff; }
+
+.bg-white-transparent {
+  background-color: rgba(255, 255, 255, 0.7); }
+
+.bg-black {
+  background-color: #000000; }
+
+.bg-black-transparent {
+  background-color: rgba(0, 0, 0, 0.7); }
+
+/* Grays
+......................................*/
+.bg-gray-1 {
+  background-color: #F7F8F9; }
+
+.bg-gray-2 {
+  background-color: #F0F2F4; }
+
+.bg-gray-3 {
+  background-color: #D7DDE1; }
+
+.bg-gray-4 {
+  background-color: #AFBCC3; }
+
+.bg-gray-5 {
+  background-color: #869AA5; }
+
+.bg-gray-6 {
+  background-color: #5E7887; }
+
+.bg-gray-7 {
+  background-color: #375667; }
+
+.bg-gray-8 {
+  background-color: #233741; }
+
+/* Navy
+......................................*/
+.bg-navy {
+  background-color: #00142B; }
+
+.bg-navy-transparent {
+  background-color: rgba(0, 20, 43, 0.5); }
+
+/* Other Colors
+......................................*/
+.bg-red {
+  background-color: #D3104A; }
+
+.bg-green {
+  background-color: #9DBB36; }
+
+.bg-yellow {
+  background-color: #FFB567; }
+
+.bg-orange {
+  background-color: #D06B5E; }
+
+.bg-currant {
+  background: #2E064A; }
+
+.bg-debian {
+  background-color: #BA0F45; }
+
+.bg-blue {
+  background: #0F4E7B; }
+
+.bg-teal {
+  background-color: #149A97; }
+
+.bg-purple {
+  background: #783479; }
+
+.bg-cover {
+  background-size: cover;
+  background-position: 50% 50%; }
+
+/* External Brands
+..................................... */
+.bg-facebook-blue {
+  background-color: #3B5999; }
+
+.bg-twitter-blue {
+  background-color: #55ACEE; }
+
+.bg-tumblr-blue {
+  background-color: #34465D; }
+
+.bg-paypal-blue {
+  background-color: #00457C; }
+
+.bg-roku-purple {
+  background-color: #662C91; }

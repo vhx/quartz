@@ -10,11 +10,10 @@ module.exports = function(grunt) {
         files : {
           'quartz-css/vhx.scss': [
           'quartz-css/**/styles/*.scss',
-          '!quartz-css/vhx-style-icons/styles/icons.svg.scss',
-          '!quartz-css/vhx-style-icons/styles/icons.extends.scss',
-          '!quartz-css/vhx-style-colors/styles/colors.scss',
-          '!quartz-css/**/styles/guide.scss',
-          '!quartz-css/_vhx-style-template/**/*.scss'
+          '!quartz-css/icons/styles/icons.svg.scss',
+          '!quartz-css/icons/styles/icons.extends.scss',
+          '!quartz-css/colors/styles/colors.scss',
+          '!quartz-css/**/styles/guide.scss'
           ]
         }
       }
@@ -27,6 +26,19 @@ module.exports = function(grunt) {
         files : {
           'quartz-rails/vendor/assets/stylesheets/vhx-quartz.css' : 'quartz-css/vhx.scss'
         }
+      },
+      npm: {
+        options: {
+          sourcemap: 'none'
+        },
+        files: [{
+          expand: true,
+          flatten: true,
+          cwd: 'quartz-css',
+          src: ['**/styles/*.scss'],
+          dest: './dist',
+          ext: '.css'
+        }]
       }
     },
     cssmin: {
@@ -40,7 +52,7 @@ module.exports = function(grunt) {
     clean: {
       svg: ['quartz-svg/svg-css/all/*.css', 'quartz-svg/svg-css/sets/*.css'],
       pre_svg: {
-        src: ['distro/*.css', 'quartz-rails/vendor/assets/stylesheets/*.css'],
+        src: ['dist/*.css', 'quartz-rails/vendor/assets/stylesheets/*.css'],
         filter: function(filepath) {
           let regex = /(vhx-quartz.icon)(.+)(.css)/g;
           return regex.test(filepath);
@@ -59,14 +71,14 @@ module.exports = function(grunt) {
       css: {
         cwd: 'quartz-rails/vendor/assets/stylesheets/',
         src: '**/*',
-        dest: 'distro/',
+        dest: 'dist/',
         expand: true
       },
       svg: {
         files: [
           {
             src: 'quartz-svg/svg-css/**/*.css',
-            dest: 'distro/',
+            dest: 'dist/',
             flatten: true,
             expand: true
           },
@@ -81,8 +93,8 @@ module.exports = function(grunt) {
       scss: {
         files: [
           {
-            src: 'quartz-css/vhx-style-colors/config/_variables.scss',
-            dest: 'distro/vhx-quartz.colors.scss'
+            src: 'quartz-css/colors/config/_variables.scss',
+            dest: 'dist/colors.scss'
           }
         ]
       },
@@ -113,9 +125,9 @@ module.exports = function(grunt) {
       let concat_opts = { files: {} };
 
       concat_opts.files['quartz-rails/vendor/assets/javascripts/vhx-quartz.' + component_name + '.js'] = dir_path;
-      concat_opts.files['distro/vhx-quartz.' + component_name + '.js'] = dir_path;
+      concat_opts.files['dist/vhx-quartz.' + component_name + '.js'] = dir_path;
       babel.dist.files['quartz-rails/vendor/assets/javascripts/vhx-quartz.' + component_name + '.js'] = 'quartz-rails/vendor/assets/javascripts/vhx-quartz.' + component_name + '.js';
-      babel.dist.files['distro/vhx-quartz.' + component_name + '.js'] = 'distro/vhx-quartz.' + component_name + '.js';
+      babel.dist.files['dist/vhx-quartz.' + component_name + '.js'] = 'dist/vhx-quartz.' + component_name + '.js';
 
       concat[component_name] = concat_opts;
 
@@ -136,7 +148,7 @@ module.exports = function(grunt) {
 
         // create a subtask for each module, find all src files
         // and combine into a single js file per module
-        let dest_dir = 'distro/vhx-quartz.' + component_name + '.css';
+        let dest_dir = 'dist/vhx-quartz.' + component_name + '.css';
         let src_dir =  dir + '/styles/*.scss';
 
         sass.dist.files['quartz-rails/vendor/assets/stylesheets/vhx-quartz.' + component_name + '.css'] = src_dir;
@@ -154,7 +166,7 @@ module.exports = function(grunt) {
 
     concat.svg = {
       src: 'quartz-svg/svg-css/all/*.css',
-      dest: 'quartz-css/vhx-style-icons/styles/icons.svg.scss'
+      dest: 'quartz-css/icons/styles/icons.svg.scss'
     };
     grunt.config.set('concat', concat);
 
@@ -176,5 +188,5 @@ module.exports = function(grunt) {
   grunt.registerTask('component-js', ['prepareComponents', 'concat', 'babel']);
   grunt.registerTask('component-styles', ['prepareComponentStyles']);
 
-  grunt.registerTask('build', ['sass_globbing', 'cssmin', 'copy:css', 'copy:scss', 'component-js', 'component-styles', 'sass']);
+  grunt.registerTask('build', ['sass_globbing', 'cssmin', 'copy:css', 'copy:scss', 'component-js', 'component-styles', 'sass:dist', 'sass:npm']);
 };

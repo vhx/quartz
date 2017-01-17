@@ -51,7 +51,7 @@ const SVG = function(gruntDone) {
   self.createDocList = function(callback) {
     let template = 'Q.components.guide.styleguide.ui.icons_list = function() { return ' + JSON.stringify(self.icons_list) + '; };';
 
-    fs.writeFile('quartz-css/vhx-style-icons/docs/guide.icons.html.js', template, function(err) {
+    fs.writeFile('quartz-css/icons/docs/guide.icons.html.js', template, function(err) {
       if (err) {
         return process.stdout.write(chalk.red(err));
       }
