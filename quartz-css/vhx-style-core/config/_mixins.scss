@@ -1,8 +1,8 @@
 @import "variables";
 @import "../../vhx-style-colors/config/variables";
 
-$arrow-colors: #000000, #ffffff, $gray-1, $red, $teal-2;
-$arrow-classes: 'background-black', 'background-white', 'background-gray', 'is-alert', 'is-error', 'is-success';
+$arrow-colors: $navy, $white, $gray-1, $gray-2, $red, $teal-1, $teal-2;
+$arrow-classes: 'bg-navy', 'bg-white', 'bg-gray-1', 'bg-gray-2', 'bg-red', 'bg-teal-1', 'bg-teal-2';
 
 // RANGES
 // We use these functions to define ranges for various things, like media queries.
