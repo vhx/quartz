@@ -1,3 +1,8 @@
+### 0.10.15
+**2017-01-17**
+* correctly truncate lengthy strings in `media` items
+* fix default dropdown caret position so it aligns with dropdown trigger
+
 ### 0.10.14
 **2017-01-05**
 * add `api` icon

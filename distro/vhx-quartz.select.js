@@ -307,7 +307,7 @@ vhxm.components.shared.select.ui.item_media = {
         height: '40px',
         backgroundImage: 'url(' + item[opts.prop_map.image] + ')'
       }
-    })]), m('.c-media-item--content.clearfix.left', [m('p.text--navy.line-medium', item[opts.prop_map.label]), m('p.text--gray.line-medium', item[opts.prop_map.descriptor])]), ctrl.parent.multiselect ? m('.c-media-item--action.clearfix.right', [ctrl.state.isProcessing().indexOf(item[opts.prop_map.value]) >= 0 ? m('.c-item-toggle.loader-white.loader--small') : m('.c-item-toggle.icon--xsmall.icon-check-navy.border' + (ctrl.state.selected() && ctrl.state.selected()[item[opts.prop_map.key]] ? '.is-selected.icon-check-navy' : '.icon-plus-thin-white'))]) : '']);
+    })]), m('.c-media-item--content.clearfix.left', [m('p.text--navy.line-medium.truncate.block', item[opts.prop_map.label]), m('p.text--gray.line-medium.truncate.block', item[opts.prop_map.descriptor])]), ctrl.parent.multiselect ? m('.c-media-item--action.clearfix.right', [ctrl.state.isProcessing().indexOf(item[opts.prop_map.value]) >= 0 ? m('.c-item-toggle.loader-white.loader--small') : m('.c-item-toggle.icon--xsmall.icon-check-navy.border' + (ctrl.state.selected() && ctrl.state.selected()[item[opts.prop_map.key]] ? '.is-selected.icon-check-navy' : '.icon-plus-thin-white'))]) : '']);
   }
 };
 

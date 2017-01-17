@@ -96,9 +96,9 @@
 
 .caret--top-right .c-select--dropdown:after, .caret--top-right .c-select--dropdown:before {
   bottom: 100%;
-  right: 22px; }
+  right: 11px; }
 .caret--top-right .c-select--dropdown:before {
-  right: 23px; }
+  right: 12px; }
 
 .caret--top-right .c-select--dropdown:after,
 .caret--top-left .c-select--dropdown:after,
@@ -147,7 +147,7 @@
   .c-media-item--container .c-media-item--image-container {
     max-width: 30%; }
   .c-media-item--container .c-media-item--content {
-    max-width: 70%; }
+    max-width: 65%; }
 
 .c-item-toggle {
   opacity: 0;
