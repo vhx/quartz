@@ -20,6 +20,18 @@ Q.components.guide.styleguide.ui.text.container = {
         }
       }),
       m.component(Q.components.shared.block.ui.container, {
+        title: 'Alignment',
+        component: {
+          view: function() {
+            return m('div', [
+              m('p.text-left.margin-bottom-large', 'Text aligned to the left (default).'),
+              m('p.text-center.margin-bottom-large', 'Text aligned to the center.'),
+              m('p.text-right.margin-bottom-large', 'Text aligned to the right.'),
+            ]);
+          }
+        }
+      }),
+      m.component(Q.components.shared.block.ui.container, {
         title: 'Colors',
         component: {
           view: function() {
