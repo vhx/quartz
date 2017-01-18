@@ -1,0 +1,204 @@
+/* .....................................
+  Fonts
+..................................... */
+/* .....................................
+  Sets
+..................................... */
+/* .....................................
+  Media Query Ranges
+..................................... */
+/* .....................................
+  Colors - Grays
+..................................... */
+/* .....................................
+  Colors - Teals
+..................................... */
+/* .....................................
+  Colors - Red
+..................................... */
+/* .....................................
+  Colors - Navy
+..................................... */
+/* .....................................
+  Colors - Brand Palette
+..................................... */
+/* .....................................
+  Colors - External Palette
+..................................... */
+/* helper function for margin and padding
+......................................*/
+/*.....................................
+  Tables
+......................................*/
+.table {
+  box-sizing: border-box;
+  width: 100%;
+  table-layout: fixed;
+  border: none;
+  margin-bottom: 0;
+  /* table truncate
+  ..................................*/
+  /* table head
+  ..................................*/
+  /* table body
+  ..................................*/
+  /* row head
+  ..................................*/
+  /* table striped
+  ..................................*/
+  /* table small
+  ..................................*/
+  /* table block
+  ..................................*/ }
+  .table.border-top {
+    border-bottom: 1px solid #D7DDE1; }
+  .table.table--auto {
+    width: auto; }
+  .table.table--truncate td, .table.table--truncate th {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .table.table--ticks th {
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .table.table--ticks th:before {
+    content: " ";
+    height: 10px;
+    width: 1px;
+    background: #D7DDE1;
+    position: absolute;
+    bottom: 0;
+    right: 0; }
+  .table.table--ticks th:last-child:before {
+    display: none; }
+  .table.table--ticks .table--ticks .no--tick:before {
+    display: none; }
+  .table thead, .table th {
+    box-sizing: border-box; }
+  .table thead {
+    border: none;
+    font-weight: bold;
+    background: transparent; }
+    .table thead tr {
+      border-bottom: 1px solid #D7DDE1; }
+    .table thead th {
+      padding: 15px 15px 15px 20px;
+      border: none; }
+      .table thead th:first-child {
+        background: none; }
+  .table th, .table td {
+    box-sizing: border-box;
+    padding: 20px 15px;
+    vertical-align: top; }
+  .table tbody {
+    box-sizing: border-box; }
+  .table tr {
+    box-sizing: border-box;
+    transition: background 200ms ease-out;
+    background: #ffffff;
+    border-bottom: 1px solid #D7DDE1;
+    border-left: 3px solid tranparent; }
+    .table tr.is-disabled {
+      background: #375667; }
+    .table tr.is-sticky {
+      background-color: #F2FBFB; }
+    .table tr.is-selected {
+      background-color: #F2FBFB;
+      border-left: 3px solid #149A97; }
+    .table tr.is-clickable {
+      cursor: pointer; }
+      .table tr.is-clickable.is-hovered, .table tr.is-clickable:hover, .table tr.is-clickable:active {
+        background-color: #F2FBFB !important; }
+    .table tr:nth-child(even) {
+      background: transparent; }
+  .table .table-row-head {
+    background-color: #F7F8F9;
+    border-bottom: 1px solid #D7DDE1 !important; }
+    .table .table-row-head td {
+      height: auto;
+      position: relative; }
+    .table .table-row-head:nth-child(even) {
+      background-color: #F7F8F9; }
+    .table .table-row-head .table-row-arrow {
+      display: block;
+      position: absolute;
+      bottom: 0px;
+      left: 30px;
+      background: #D7DDE1; }
+      .table .table-row-head .table-row-arrow:after, .table .table-row-head .table-row-arrow:before {
+        top: 100%;
+        left: 50%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none; }
+      .table .table-row-head .table-row-arrow:after {
+        border-color: rgba(255, 255, 255, 0);
+        border-top-color: #F7F8F9;
+        border-width: 10px;
+        margin-left: -10px; }
+      .table .table-row-head .table-row-arrow:before {
+        border-color: rgba(255, 255, 255, 0);
+        border-top-color: #D7DDE1;
+        border-width: 11px;
+        margin-left: -11px; }
+  .table.table--striped tbody tr {
+    border: none; }
+  .table.table--striped tbody tr:nth-child(odd) {
+    background: #F7F8F9; }
+  .table.table--small th,
+  .table.table--small td {
+    padding: 10px;
+    height: auto; }
+  .table.table--block thead,
+  .table.table--block th,
+  .table.table--block tr,
+  .table.table--block td {
+    display: block; }
+  .table.table--block th,
+  .table.table--block td {
+    float: left; }
+  .table.table--block thead,
+  .table.table--block tr {
+    width: 100%; }
+    .table.table--block thead:before, .table.table--block thead:after,
+    .table.table--block tr:before,
+    .table.table--block tr:after {
+      content: " ";
+      display: table; }
+    .table.table--block thead:after,
+    .table.table--block tr:after {
+      clear: both; }
+  @media only screen and (max-width: upper-bound(0em, 40em)) {
+    .table thead,
+    .table th,
+    .table tr,
+    .table td {
+      display: block; }
+    .table th,
+    .table td {
+      width: 100%;
+      float: left;
+      padding: 10px 15px; }
+    .table .table-row-head td {
+      padding: 20px 15px; }
+    .table thead,
+    .table tr {
+      width: 100%; }
+      .table thead:before, .table thead:after,
+      .table tr:before,
+      .table tr:after {
+        content: " ";
+        display: table; }
+      .table thead:after,
+      .table tr:after {
+        clear: both; } }
+
+/* browser tweak
+..................................*/
+.firefox .table .table-row-head .table-row-arrow {
+  bottom: 1px; }

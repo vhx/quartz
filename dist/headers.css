@@ -1,0 +1,131 @@
+/* .....................................
+  Fonts
+..................................... */
+/* .....................................
+  Sets
+..................................... */
+/* .....................................
+  Media Query Ranges
+..................................... */
+/* .....................................
+  Colors - Grays
+..................................... */
+/* .....................................
+  Colors - Teals
+..................................... */
+/* .....................................
+  Colors - Red
+..................................... */
+/* .....................................
+  Colors - Navy
+..................................... */
+/* .....................................
+  Colors - Brand Palette
+..................................... */
+/* .....................................
+  Colors - External Palette
+..................................... */
+/* helper function for margin and padding
+......................................*/
+/*.....................................
+  BUTTON MIXINS
+......................................*/
+/* sizes
+......................................*/
+/*.....................................
+  HEADERS
+......................................*/
+/* sizes
+......................................*/
+.head, .head-1, .head-2, .head-3, .head-4, .head-5 {
+  color: #375667;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: "brandon-grotesque-n1", "brandon-grotesque", "Brandon Grotesque", sans-serif; }
+  .head .text--bold, .head-1 .text--bold, .head-2 .text--bold, .head-3 .text--bold, .head-4 .text--bold, .head-5 .text--bold {
+    font-weight: 600; }
+
+.head-1 {
+  font-weight: 400;
+  font-size: 40px;
+  letter-spacing: 2px;
+  line-height: 40px; }
+  .head-1 i {
+    line-height: 40px; }
+
+.head-2 {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: 3px; }
+
+.head-3 {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 1px; }
+
+.head-4 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px; }
+
+.head-5 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px; }
+
+/* header navy
+......................................*/
+.head--navy {
+  color: #375667; }
+
+a.head--navy:link, a.head--navy:visited,
+a.head-1:link,
+a.head-1:visited, a.head-2:link, a.head-2:visited, a.head-3:link, a.head-3:visited, a.head-4:link, a.head-4:visited, a.head-5:link, a.head-5:visited {
+  color: #375667;
+  text-decoration: none; }
+a.head--navy:visited, a.head--navy:hover,
+a.head-1:visited,
+a.head-1:hover, a.head-2:visited, a.head-2:hover, a.head-3:visited, a.head-3:hover, a.head-4:visited, a.head-4:hover, a.head-5:visited, a.head-5:hover {
+  color: #869AA5;
+  text-decoration: none; }
+
+/* header gray
+......................................*/
+.head--gray {
+  color: #869AA5; }
+
+a.head--gray:link, a.head--gray:visited {
+  color: #869AA5;
+  text-decoration: none; }
+a.head--gray:hover, a.head--gray:active {
+  color: #5E7887;
+  text-decoration: none; }
+
+/* header teal
+......................................*/
+.head--teal {
+  color: #22B9B0; }
+
+a.head--teal:link, a.head--teal:visited {
+  color: #22B9B0;
+  text-decoration: none; }
+a.head--teal:hover, a.head--teal:active {
+  color: #149A97;
+  text-decoration: none; }
+
+/* header white
+......................................*/
+.head--white {
+  color: #ffffff; }
+
+a.head--white:link, a.head--white:visited {
+  color: #ffffff; }
+a.head--white:hover, a.head--white:active {
+  color: rgba(255, 255, 255, 0.7); }
+
+/* header white
+......................................*/
+.head--gothic {
+  font-family: "alternate-gothic-no-3-d-n4", "alternate-gothic-no-3-d", sans-serif; }

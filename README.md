@@ -21,77 +21,37 @@ Style guide &amp; elements + asset build pipeline for [VHX](http://vhx.tv).<br>
 ## Build and Release
 
 *Note:* Currently for VHX internal use. You will need permissions to push changes
-to the quartz repo (VHX team members) and the quartz-rails rubygem repo. Create an
-account at [https://rubygems.org/](https://rubygems.org/) and then let
-<david@vhx.tv> know.
-
+to the quartz repo (VHX team members) and the quartz npm package.
 
 **Release Steps**
 
-The build and release script will release both the `vhx-quartz` gem and `vhx-quartz` bower packages for use across VHX applications.
+The publish script will build, tag, and publish to [NPM](https://www.npmjs.com/package/@vhx/quartz) for use across VHX applications.
 
 1. Squash and Merge PR
 1. Checkout Master branch locally
 1. Update `VERSION` (using [Semantic Versioning](http://semver.org/))
 1. Update `CHANGELOG` (add new entry using `VERSION`'s number, the date, and description from PR)
-1. Run `./build`
+1. Run `./publish`
 
 ## Using in your Application
 
-You can use Quartz either through the Ruby Gem or Bower package.
-
-**Via the Ruby Gem**
-
-1.  Add the VHX Quartz to your Gemfile
-```ruby
-gem 'vhx-quartz'
+#### First install via NPM.
+```
+npm install @vhx/quartz
 ```
 
-2.  Then install the gem either via
-```shell
-bundle install
+#### Then include Quartz files as needed.
+
+Include all of Quartz core (in SASS or LESS). This does not include icons.
 ```
-or directly with
-```shell
-gem install vhx-quartz
+@import '~@vhx/quartz/dist/quartz.css';
+
+// minified
+@import '~@vhx/quartz/dist/quartz.min.css';
 ```
 
-3. Then include in your layout or SASS files
-
-	a. *In your Layout*
-
-	  Add the following to your `config.rb` file
-	```ruby
-	sprockets.import_asset 'vhx-quartz.css'
-	```
-
-	Then include in your layout directly
-	```html
-	<%= stylesheet_link_tag  'vhx-quartz' %>
-	```
-
-	b. *Or in your SASS files*
-
-	At the top of your file, either via the asset pipeline
-	```sass
-	//= require vhx-quartz
-	```
-
-	Or via a SASS import
-	```sass
-	@import "vhx-quartz"
-	```
-
-### Via the Bower Package
-
-1.  Install Bower via npm if you don't already have it installed
-
-	```shell
-	npm install -g bower
-	```
-
-1.  Add the VHX Quartz package to your repo
-
-	```shell
-	bower install vhx-quartz
-	```
+Or include individual features and icons (in SASS or LESS).
+```
+@import '~@vhx/quartz/dist/grid.css';
+@import '~@vhx/quartz/dist/icon-code.css';
+```

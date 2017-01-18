@@ -1,0 +1,67 @@
+/* .....................................
+  Fonts
+..................................... */
+/* .....................................
+  Sets
+..................................... */
+/* .....................................
+  Media Query Ranges
+..................................... */
+/* .....................................
+  Colors - Grays
+..................................... */
+/* .....................................
+  Colors - Teals
+..................................... */
+/* .....................................
+  Colors - Red
+..................................... */
+/* .....................................
+  Colors - Navy
+..................................... */
+/* .....................................
+  Colors - Brand Palette
+..................................... */
+/* .....................................
+  Colors - External Palette
+..................................... */
+/* helper function for margin and padding
+......................................*/
+/*.....................................
+  Tags
+......................................*/
+.tag {
+  display: inline-block;
+  background-color: #F7F8F9;
+  border: 1px solid #D7DDE1;
+  padding: 0px 7px;
+  border-radius: 5px;
+  font-size: 12px; }
+  .tag:link, .tag:visited {
+    color: #5E7887; }
+  .tag:hover, .tag:active {
+    color: #5E7887;
+    background-color: #D7DDE1; }
+  .tag.is-selected {
+    background-color: #22B9B0;
+    color: #ffffff; }
+  .tag.tag-removable-small {
+    padding-left: 10px;
+    padding-right: 30px;
+    background-size: 15px;
+    background-position: right 10px center; }
+
+.tag-list {
+  list-style: none;
+  text-indent: 0;
+  margin-left: 0;
+  font-size: 14px; }
+  .tag-list li {
+    margin: 5px 0px; }
+    .tag-list li:after {
+      clear: both; }
+    .tag-list li:before, .tag-list li:after {
+      content: " ";
+      display: table; }
+    .tag-list li span {
+      float: right; }

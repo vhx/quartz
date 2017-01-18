@@ -40,7 +40,7 @@ const src         = {
     distr: 'app/public/quartz.css'
   },
   quartzicons: {
-    manifest: './quartz-css/vhx-style-icons/styles/icons.svg.scss',
+    manifest: './quartz-css/icons/styles/icons.svg.scss',
     distr: 'app/public/quartz-icons.css'
   }
 };
