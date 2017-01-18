@@ -58,7 +58,7 @@
   &.arrow-left-top {
     &:after, &:before {
       right: 100%;
-      top: 15%;
+      top: 15px;
     }
   }
 
@@ -97,7 +97,7 @@
   &.arrow-right-bottom {
     &:after, &:before {
       left: 100%;
-      bottom: 15%;
+      bottom: 15px;
     }
   }
 

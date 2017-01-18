@@ -20,6 +20,7 @@ let Manifest = [
   'app/client/components/guide/route.typography.ui.js',
   'app/client/components/guide/route.mithril.ui.js',
   'app/client/components/guide/route.components.ui.js',
+  'app/client/components/guide/route.forms.ui.js',
 
   /* routes */
   'app/client/routes.js'

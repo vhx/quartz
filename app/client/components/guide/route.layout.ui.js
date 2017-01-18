@@ -10,6 +10,10 @@ Q.components.route.styleguide.ui.layout = {
       code: Q.code.display
     },
     {
+      guide: m.component(Q.components.guide.styleguide.ui.images.container),
+      code: Q.code.images
+    },
+    {
       guide: m.component(Q.components.guide.styleguide.ui.spacing_sizes.container),
       code: Q.code['spacing-sizes']
     },

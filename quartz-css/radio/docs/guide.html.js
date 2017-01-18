@@ -85,6 +85,31 @@ Q.components.guide.styleguide.ui.radio.container = {
             ]);
           }
         }
+      }),
+      m.component(Q.components.shared.block.ui.container, {
+        title: 'Buttons',
+        component: {
+          view: function() {
+            return m('div', [
+              m.component(vhxm.components.shared.radio.ui.container, {
+                color: 'teal',
+                buttons: true,
+                name: 'stacked-button',
+                items: [
+                  {
+                    label: 'Near',
+                    value: 'near',
+                    checked: true
+                  },
+                  {
+                    label: 'Far',
+                    value: 'far'
+                  }
+                ]
+              })
+            ]);
+          }
+        }
       })
     ]);
   }
