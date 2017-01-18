@@ -1,3 +1,16 @@
+### 1.0.0
+**2017-01-18**
+* Forms documentation
+* Reorganize hierarchy
+* Export to individual style files
+* Loaders (all cover types) documentation
+* Avatars documentation
+* Media (Images/Embeds) documentation
+* Alignment (text and containers) documentation
+* Radio Buttons documentation
+* Arrows, Lists, Display documentation
+* Remove `module-footer` styles
+
 ### 0.10.15
 **2017-01-17**
 * correctly truncate lengthy strings in `media` items
