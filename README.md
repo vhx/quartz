@@ -1,3 +1,6 @@
+# THIS IS THE PRE 1.0 QUARTZ.
+# FOR USE WITH OUR DEPRECATED RUBY GEM. 
+
 # Quartz
 ![quartz](https://github.com/vhx/quartz/blob/master/app/public/quartz.screenshot.jpg)
 
