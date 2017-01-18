@@ -105,6 +105,7 @@ const SVG = function(gruntDone) {
     files = files.filter(function(file) {
       return file.substr(-4) === '.svg';
     });
+    let filesCount = 0;
 
     a.eachLimit(files, 200, function (filename) {
       let file_path = path.join('quartz-svg/svg/' + set, filename);
@@ -128,10 +129,14 @@ const SVG = function(gruntDone) {
               name: color,
               hex: hex
             }, set, data, (set === 'all') ? true : false, function() {
-              cb();
+              filesCount++;
+              if (filesCount === files.length) {
+                cb();
+              }
             });
           });
         });
+
       });
     });
   };

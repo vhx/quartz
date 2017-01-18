@@ -31,8 +31,26 @@ The build and release script will release both the `vhx-quartz` gem and `vhx-qua
 1. Checkout Master branch locally
 1. Update `VERSION` (using [Semantic Versioning](http://semver.org/))
 1. Update `CHANGELOG` (add new entry using `VERSION`'s number, the date, and description from PR)
-1. Run `./build`
+1. Run `./publish`
 
 ## Using in your Application
 
-You can use Quartz either through the Ruby Gem or Bower package.
+You can use Quartz via NPM.
+
+```
+npm install @vhx/quartz
+```
+
+Include all of quartz core (in SASS or LESS). This does not include icons.
+```
+@import '~@vhx/quartz/dist/quartz.css';
+
+// minified
+@import '~@vhx/quartz/dist/quartz.min.css';
+```
+
+Or include individual features and icons (in SASS or LESS).
+```
+@import '~@vhx/quartz/dist/grid.css';
+@import '~@vhx/quartz/dist/icon.css';
+```
