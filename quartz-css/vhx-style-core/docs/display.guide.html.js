@@ -53,40 +53,40 @@ Q.components.guide.styleguide.ui.display.container = {
               '<code class="block text--yellow">bg-teal-2</code>')),
               m('div.row', [
                 m('div.col.small-thirds', [
-                  m('div.margin-small.arrow.arrow-top-left.text-center.padding-small.block.bg-gray-2.text-gray.text--small', 'Top left')
+                  m('div.margin-small.arrow.arrow-top-left.text-center.padding-medium.block.bg-gray-2.text-gray.text--small', 'Top left')
                 ]),
                 m('div.col.small-thirds', [
-                  m('div.margin-small.arrow.arrow-top-middle.text-center.padding-small.block.bg-gray-2.text-gray.text--small', 'Top middle')
+                  m('div.margin-small.arrow.arrow-top-middle.text-center.padding-medium.block.bg-gray-2.text-gray.text--small', 'Top middle')
                 ]),
                 m('div.col.small-thirds', [
-                  m('div.margin-small.arrow.arrow-top-right.text-center.padding-small.block.bg-gray-2.text-gray.text--small', 'Top right')
+                  m('div.margin-small.arrow.arrow-top-right.text-center.padding-medium.block.bg-gray-2.text-gray.text--small', 'Top right')
                 ]),
                 m('div.col.small-thirds', [
-                  m('div.margin-small.arrow.arrow-right-top.text-center.padding-small.block.bg-gray-2.text-gray.text--small', 'Right top')
+                  m('div.margin-small.arrow.arrow-right-top.text-center.padding-medium.block.bg-gray-2.text-gray.text--small', 'Right top')
                 ]),
                 m('div.col.small-thirds', [
-                  m('div.margin-small.arrow.arrow-right-middle.text-center.padding-small.block.bg-gray-2.text-gray.text--small', 'Right middle')
+                  m('div.margin-small.arrow.arrow-right-middle.text-center.padding-medium.block.bg-gray-2.text-gray.text--small', 'Right middle')
                 ]),
                 m('div.col.small-thirds', [
-                  m('div.margin-small.arrow.arrow-right-bottom.text-center.padding-small.block.bg-gray-2.text-gray.text--small', 'Right bottom')
+                  m('div.margin-small.arrow.arrow-right-bottom.text-center.padding-medium.block.bg-gray-2.text-gray.text--small', 'Right bottom')
                 ]),
                 m('div.col.small-thirds', [
-                  m('div.margin-small.arrow.arrow-bottom-left.text-center.padding-small.block.bg-gray-2.text-gray.text--small', 'Bottom left')
+                  m('div.margin-small.arrow.arrow-bottom-left.text-center.padding-medium.block.bg-gray-2.text-gray.text--small', 'Bottom left')
                 ]),
                 m('div.col.small-thirds', [
-                  m('div.margin-small.arrow.arrow-bottom-middle.text-center.padding-small.block.bg-gray-2.text-gray.text--small', 'Bottom middle')
+                  m('div.margin-small.arrow.arrow-bottom-middle.text-center.padding-medium.block.bg-gray-2.text-gray.text--small', 'Bottom middle')
                 ]),
                 m('div.col.small-thirds', [
-                  m('div.margin-small.arrow.arrow-bottom-right.text-center.padding-small.block.bg-gray-2.text-gray.text--small', 'Bottom right')
+                  m('div.margin-small.arrow.arrow-bottom-right.text-center.padding-medium.block.bg-gray-2.text-gray.text--small', 'Bottom right')
                 ]),
                 m('div.col.small-thirds', [
-                  m('div.margin-small.arrow.arrow-left-top.text-center.padding-small.block.bg-gray-2.text-gray.text--small', 'Left top')
+                  m('div.margin-small.arrow.arrow-left-top.text-center.padding-medium.block.bg-gray-2.text-gray.text--small', 'Left top')
                 ]),
                 m('div.col.small-thirds', [
-                  m('div.margin-small.arrow.arrow-left-middle.text-center.padding-small.block.bg-gray-2.text-gray.text--small', 'Left middle')
+                  m('div.margin-small.arrow.arrow-left-middle.text-center.padding-medium.block.bg-gray-2.text-gray.text--small', 'Left middle')
                 ]),
                 m('div.col.small-thirds', [
-                  m('div.margin-small.arrow.arrow-left-bottom.text-center.padding-small.block.bg-gray-2.text-gray.text--small', 'Left bottom')
+                  m('div.margin-small.arrow.arrow-left-bottom.text-center.padding-medium.block.bg-gray-2.text-gray.text--small', 'Left bottom')
                 ])
               ])
             ]);
