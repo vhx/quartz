@@ -25,7 +25,7 @@ to the quartz repo (VHX team members) and the quartz npm package.
 
 **Release Steps**
 
-The build and release script will release both the `vhx-quartz` gem and `vhx-quartz` bower packages for use across VHX applications.
+The publish script will build, tag, and publish to [NPM](https://www.npmjs.com/package/@vhx/quartz) for use across VHX applications.
 
 1. Squash and Merge PR
 1. Checkout Master branch locally
@@ -35,13 +35,14 @@ The build and release script will release both the `vhx-quartz` gem and `vhx-qua
 
 ## Using in your Application
 
-You can use Quartz via NPM.
-
+#### First install via NPM.
 ```
 npm install @vhx/quartz
 ```
 
-Include all of quartz core (in SASS or LESS). This does not include icons.
+#### Then include Quartz files as needed.
+
+Include all of Quartz core (in SASS or LESS). This does not include icons.
 ```
 @import '~@vhx/quartz/dist/quartz.css';
 
@@ -52,5 +53,5 @@ Include all of quartz core (in SASS or LESS). This does not include icons.
 Or include individual features and icons (in SASS or LESS).
 ```
 @import '~@vhx/quartz/dist/grid.css';
-@import '~@vhx/quartz/dist/icon.css';
+@import '~@vhx/quartz/dist/icon-code.css';
 ```
