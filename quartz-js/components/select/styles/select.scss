@@ -1,5 +1,5 @@
-@import "../../../../quartz-css/vhx-style-core/config/mixins";
-@import "../../../../quartz-css/vhx-style-icons/styles/icons.extends";
+@import "../../../../quartz-css/core/config/mixins";
+@import "../../../../quartz-css/icons/styles/icons.extends";
 
 .c-select--container {
   &.has-trigger {
@@ -121,10 +121,10 @@
   .c-select--dropdown {
     &:after, &:before {
       bottom: 100%;
-      right: 22px;
+      right: 11px;
     }
     &:before {
-      right: 23px;
+      right: 12px;
     }
   }
 }
@@ -189,7 +189,7 @@
     max-width: 30%;
   }
   .c-media-item--content {
-    max-width: 70%;
+    max-width: 65%;
   }
 }
 

@@ -1,0 +1,332 @@
+/* .....................................
+  Fonts
+..................................... */
+/* .....................................
+  Sets
+..................................... */
+/* .....................................
+  Media Query Ranges
+..................................... */
+/* .....................................
+  Colors - Grays
+..................................... */
+/* .....................................
+  Colors - Teals
+..................................... */
+/* .....................................
+  Colors - Red
+..................................... */
+/* .....................................
+  Colors - Navy
+..................................... */
+/* .....................................
+  Colors - Brand Palette
+..................................... */
+/* .....................................
+  Colors - External Palette
+..................................... */
+/* helper function for margin and padding
+......................................*/
+/*.....................................
+  TEXT
+......................................*/
+/* reset
+......................................*/
+body {
+  color: #5E7887; }
+
+body, ul, ol, dl, li, p, div, section, nav, table, h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* links
+......................................*/
+a {
+  transition: color 200ms ease; }
+  a:link, a:visited {
+    color: #22B9B0;
+    text-decoration: none; }
+  a:hover, a:active {
+    color: #149A97;
+    text-decoration: none; }
+  a.is-disabled:link, a.is-disabled:visited, a.is-disabled:hover, a.is-disabled:active {
+    cursor: default;
+    opacity: .5;
+    color: #22B9B0; }
+
+/* sizes
+......................................*/
+.text-1 {
+  font-size: 16px;
+  line-height: 24px;
+  color: #5E7887; }
+
+.text-2 {
+  font-size: 14px;
+  line-height: 22px;
+  color: #5E7887; }
+
+.text-3 {
+  font-size: 13px;
+  line-height: 18px;
+  color: #5E7887; }
+
+.text-4 {
+  font-size: 12px;
+  line-height: 16px;
+  color: #5E7887; }
+
+/* colors
+......................................*/
+.text--navy {
+  color: #375667; }
+  .text--navy.text--transparent {
+    color: rgba(55, 86, 103, 0.5); }
+
+a.text--navy:link, a.text--navy:visited {
+  color: #375667;
+  text-decoration: none; }
+a.text--navy:hover, a.text--navy:active {
+  color: #869AA5;
+  text-decoration: none; }
+  a.text--navy:hover.is-hover-text--navy, a.text--navy:active.is-hover-text--navy {
+    color: #375667; }
+a.text--navy.is-disabled:link, a.text--navy.is-disabled:visited, a.text--navy.is-disabled:hover, a.text--navy.is-disabled:active {
+  color: #375667; }
+
+.text--gray {
+  color: #869AA5; }
+  .text--gray.text--transparent {
+    color: rgba(134, 154, 165, 0.5); }
+
+a.text--gray:link, a.text--gray:visited {
+  color: #869AA5;
+  text-decoration: none; }
+a.text--gray:hover, a.text--gray:active {
+  color: #375667;
+  text-decoration: none; }
+  a.text--gray:hover.is-hover-text--gray, a.text--gray:active.is-hover-text--gray {
+    color: #869AA5; }
+a.text--gray.is-disabled:link, a.text--gray.is-disabled:visited, a.text--gray.is-disabled:hover, a.text--gray.is-disabled:active {
+  color: #869AA5; }
+
+.text--gray-light {
+  color: #F0F2F4; }
+  .text--gray-light.text--transparent {
+    color: rgba(240, 242, 244, 0.5); }
+
+a.text--gray-light:link, a.text--gray-light:visited {
+  color: #F0F2F4;
+  text-decoration: none; }
+a.text--gray-light:hover, a.text--gray-light:active {
+  color: #AFBCC3;
+  text-decoration: none; }
+  a.text--gray-light:hover.is-hover-text--gray-light, a.text--gray-light:active.is-hover-text--gray-light {
+    color: #F0F2F4; }
+a.text--gray-light.is-disabled:link, a.text--gray-light.is-disabled:visited, a.text--gray-light.is-disabled:hover, a.text--gray-light.is-disabled:active {
+  color: #AFBCC3; }
+
+.text--teal {
+  color: #22B9B0; }
+  .text--teal.text--transparent {
+    color: rgba(34, 185, 176, 0.5); }
+
+a.text--teal:link, a.text--teal:visited {
+  color: #22B9B0;
+  text-decoration: none; }
+a.text--teal:hover, a.text--teal:active {
+  color: #149A97;
+  text-decoration: none; }
+  a.text--teal:hover.is-hover-text--teal, a.text--teal:active.is-hover-text--teal {
+    color: #F0F2F4; }
+a.text--teal.is-disabled:link, a.text--teal.is-disabled:visited, a.text--teal.is-disabled:hover, a.text--teal.is-disabled:active {
+  color: #149A97; }
+
+.text--white {
+  color: #ffffff; }
+  .text--white.text--transparent {
+    color: rgba(255, 255, 255, 0.7); }
+
+a.text--white:link, a.text--white:visited {
+  color: #ffffff;
+  text-decoration: none; }
+a.text--white:hover, a.text--white:active {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none; }
+  a.text--white:hover.is-hover-text--white, a.text--white:active.is-hover-text--white {
+    color: #ffffff; }
+a.text--white.is-disabled:link, a.text--white.is-disabled:visited, a.text--white.is-disabled:hover, a.text--white.is-disabled:active {
+  color: #ffffff; }
+
+.text--yellow {
+  color: #FFB567; }
+  .text--yellow.text--transparent {
+    color: rgba(255, 181, 103, 0.7); }
+
+a.text--yellow:link, a.text--yellow:visited {
+  color: #FFB567;
+  text-decoration: none; }
+a.text--yellow:hover, a.text--yellow:active {
+  color: rgba(255, 181, 103, 0.7);
+  text-decoration: none; }
+  a.text--yellow:hover.is-hover-text--yellow, a.text--yellow:active.is-hover-text--yellow {
+    color: #FFB567; }
+a.text--yellow.is-disabled:link, a.text--yellow.is-disabled:visited, a.text--yellow.is-disabled:hover, a.text--yellow.is-disabled:active {
+  color: #FFB567; }
+
+.text--green {
+  color: #9DBB36; }
+  .text--green.text--transparent {
+    color: rgba(157, 187, 54, 0.5); }
+
+a.text--green:link, a.text--green:visited {
+  color: #9DBB36;
+  text-decoration: none; }
+a.text--green:hover, a.text--green:active {
+  color: #9DBB36;
+  text-decoration: none; }
+  a.text--green:hover.is-hover-text--green, a.text--green:active.is-hover-text--green {
+    color: #9DBB36; }
+a.text--green.is-disabled:link, a.text--green.is-disabled:visited, a.text--green.is-disabled:hover, a.text--green.is-disabled:active {
+  color: #9DBB36; }
+
+.text--red {
+  color: #D3104A; }
+  .text--red.text--transparent {
+    color: rgba(211, 16, 74, 0.5); }
+
+a.text--red:link, a.text--red:visited {
+  color: #D3104A;
+  text-decoration: none; }
+a.text--red:hover, a.text--red:active {
+  color: #D3104A;
+  text-decoration: none; }
+  a.text--red:hover.is-hover-text--red, a.text--red:active.is-hover-text--red {
+    color: #D3104A; }
+a.text--red.is-disabled:link, a.text--red.is-disabled:visited, a.text--red.is-disabled:hover, a.text--red.is-disabled:active {
+  color: #D3104A; }
+
+.text--orange {
+  color: #D06B5E; }
+  .text--orange.text--transparent {
+    color: rgba(208, 107, 94, 0.5); }
+
+a.text--orange:link, a.text--orange:visited {
+  color: #D06B5E;
+  text-decoration: none; }
+a.text--orange:hover, a.text--orange:active {
+  color: #D06B5E;
+  text-decoration: none; }
+  a.text--orange:hover.is-hover-text--orange, a.text--orange:active.is-hover-text--orange {
+    color: #D06B5E; }
+a.text--orange.is-disabled:link, a.text--orange.is-disabled:visited, a.text--orange.is-disabled:hover, a.text--orange.is-disabled:active {
+  color: #D06B5E; }
+
+.text--debian {
+  color: #BA0F45; }
+  .text--debian.text--transparent {
+    color: rgba(186, 15, 69, 0.5); }
+
+a.text--debian:link, a.text--debian:visited {
+  color: #BA0F45;
+  text-decoration: none; }
+a.text--debian:hover, a.text--debian:active {
+  color: #BA0F45;
+  text-decoration: none; }
+  a.text--debian:hover.is-hover-text--debian, a.text--debian:active.is-hover-text--debian {
+    color: #BA0F45; }
+a.text--debian.is-disabled:link, a.text--debian.is-disabled:visited, a.text--debian.is-disabled:hover, a.text--debian.is-disabled:active {
+  color: #BA0F45; }
+
+.text--purple {
+  color: #783479; }
+  .text--purple.text--transparent {
+    color: rgba(120, 52, 121, 0.5); }
+
+a.text--purple:link, a.text--purple:visited {
+  color: #783479;
+  text-decoration: none; }
+a.text--purple:hover, a.text--purple:active {
+  color: #783479;
+  text-decoration: none; }
+  a.text--purple:hover.is-hover-text--purple, a.text--purple:active.is-hover-text--purple {
+    color: #783479; }
+a.text--purple.is-disabled:link, a.text--purple.is-disabled:visited, a.text--purple.is-disabled:hover, a.text--purple.is-disabled:active {
+  color: #783479; }
+
+.text--currant {
+  color: #2E064A; }
+  .text--currant.text--transparent {
+    color: rgba(46, 6, 74, 0.5); }
+
+a.text--currant:link, a.text--currant:visited {
+  color: #2E064A;
+  text-decoration: none; }
+a.text--currant:hover, a.text--currant:active {
+  color: #2E064A;
+  text-decoration: none; }
+  a.text--currant:hover.is-hover-text--currant, a.text--currant:active.is-hover-text--currant {
+    color: #2E064A; }
+a.text--currant.is-disabled:link, a.text--currant.is-disabled:visited, a.text--currant.is-disabled:hover, a.text--currant.is-disabled:active {
+  color: #2E064A; }
+
+.text--blue {
+  color: #0F4E7B; }
+  .text--blue.text--transparent {
+    color: rgba(15, 78, 123, 0.5); }
+
+a.text--blue:link, a.text--blue:visited {
+  color: #0F4E7B;
+  text-decoration: none; }
+a.text--blue:hover, a.text--blue:active {
+  color: #0F4E7B;
+  text-decoration: none; }
+  a.text--blue:hover.is-hover-text--blue, a.text--blue:active.is-hover-text--blue {
+    color: #0F4E7B; }
+a.text--blue.is-disabled:link, a.text--blue.is-disabled:visited, a.text--blue.is-disabled:hover, a.text--blue.is-disabled:active {
+  color: #0F4E7B; }
+
+/* modifiers
+......................................*/
+.text--bold {
+  font-weight: 600; }
+  .text--bold strong {
+    font-weight: 600; }
+
+.text--italic {
+  font-style: italic; }
+  .text--italic em {
+    font-style: italic; }
+
+.text--transparent {
+  color: rgba(94, 120, 135, 0.5); }
+
+.text--uppercase {
+  text-transform: uppercase; }
+  .text--uppercase::placeholder {
+    text-transform: none; }
+
+.text--lowercase {
+  text-transform: lowercase !important; }
+
+.text--break {
+  word-break: break-all; }
+
+.text-contain.text-1 p {
+  margin-bottom: 24px; }
+.text-contain.text-2 p {
+  margin-bottom: 22px; }
+.text-contain.text-3 p {
+  margin-bottom: 18px; }
+
+.line-small {
+  line-height: 15px; }
+
+.line-medium {
+  line-height: 18px; }
+
+.line-large {
+  line-height: 21px; }

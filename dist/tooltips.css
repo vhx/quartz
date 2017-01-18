@@ -1,0 +1,142 @@
+/* imports
+...................................*/
+/* .....................................
+  Fonts
+..................................... */
+/* .....................................
+  Sets
+..................................... */
+/* .....................................
+  Media Query Ranges
+..................................... */
+/* .....................................
+  Colors - Grays
+..................................... */
+/* .....................................
+  Colors - Teals
+..................................... */
+/* .....................................
+  Colors - Red
+..................................... */
+/* .....................................
+  Colors - Navy
+..................................... */
+/* .....................................
+  Colors - Brand Palette
+..................................... */
+/* .....................................
+  Colors - External Palette
+..................................... */
+/* helper function for margin and padding
+......................................*/
+/*.....................................
+  TOOLTIPS
+......................................*/
+.tooltip {
+  padding: 15px;
+  display: none;
+  position: relative;
+  opacity: 0;
+  border-radius: 5px;
+  border: 1px solid #00142B;
+  background: #00142B;
+  /* arrows
+  ......................................*/ }
+  .tooltip.is-active {
+    opacity: 1; }
+  .tooltip:after, .tooltip:before {
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none; }
+  .tooltip:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-width: 10px; }
+  .tooltip:before {
+    border-color: rgba(255, 255, 255, 0);
+    border-width: 11px; }
+  .tooltip.tooltip--fixed {
+    opacity: 1;
+    display: block;
+    position: relative;
+    border: none;
+    left: auto;
+    top: auto;
+    max-width: 100%; }
+    .tooltip.tooltip--fixed.is-active {
+      display: block; }
+  .tooltip.arrow--bottom-center:after, .tooltip.arrow--bottom-center:before {
+    top: 100%;
+    left: 50%; }
+  .tooltip.arrow--bottom-left:after, .tooltip.arrow--bottom-left:before {
+    top: 100%;
+    left: 10%; }
+  .tooltip.arrow--bottom-right:after, .tooltip.arrow--bottom-right:before {
+    top: 100%;
+    right: 10%; }
+  .tooltip.arrow--bottom-right:after, .tooltip.arrow--bottom-left:after, .tooltip.arrow--bottom-center:after {
+    border-top-color: #00142B;
+    margin-left: -10px; }
+  .tooltip.arrow--bottom-right:before, .tooltip.arrow--bottom-left:before, .tooltip.arrow--bottom-center:before {
+    border-top-color: #00142B;
+    margin-left: -11px; }
+  .tooltip.arrow--left-center:after, .tooltip.arrow--left-center:before {
+    right: 100%;
+    top: 50%; }
+  .tooltip.arrow--left-top:after, .tooltip.arrow--left-top:before {
+    right: 100%;
+    top: 10%; }
+  .tooltip.arrow--left-bottom:after, .tooltip.arrow--left-bottom:before {
+    right: 100%;
+    bottom: 10%; }
+  .tooltip.arrow--left-center:after, .tooltip.arrow--left-top:after, .tooltip.arrow--left-bottom:after {
+    border-right-color: #00142B;
+    margin-top: -10px; }
+  .tooltip.arrow--left-center:before, .tooltip.arrow--left-top:before, .tooltip.arrow--left-bottom:before {
+    border-right-color: #00142B;
+    margin-top: -11px; }
+  .tooltip.arrow--right-center:after, .tooltip.arrow--right-center:before {
+    left: 100%;
+    top: 50%; }
+  .tooltip.arrow--right-top:after, .tooltip.arrow--right-top:before {
+    left: 100%;
+    top: 10%; }
+  .tooltip.arrow--right-bottom:after, .tooltip.arrow--right-bottom:before {
+    left: 100%;
+    bottom: 10%; }
+  .tooltip.arrow--right-bottom:after, .tooltip.arrow--right-top:after, .tooltip.arrow--right-center:after {
+    border-left-color: #00142B;
+    margin-top: -10px; }
+  .tooltip.arrow--right-bottom:before, .tooltip.arrow--right-top:before, .tooltip.arrow--right-center:before {
+    border-left-color: #00142B;
+    margin-top: -11px; }
+  .tooltip.arrow--top-center:after, .tooltip.arrow--top-center:before {
+    bottom: 100%;
+    left: 50%; }
+  .tooltip.arrow--top-left:after, .tooltip.arrow--top-left:before {
+    bottom: 100%;
+    left: 10%; }
+  .tooltip.arrow--top-right:after, .tooltip.arrow--top-right:before {
+    bottom: 100%;
+    right: 10%; }
+  .tooltip.arrow--top-right:after, .tooltip.arrow--top-left:after, .tooltip.arrow--top-center:after {
+    border-bottom-color: #00142B;
+    margin-left: -10px; }
+  .tooltip.arrow--top-right:before, .tooltip.arrow--top-left:before, .tooltip.arrow--top-center:before {
+    border-bottom-color: #00142B;
+    margin-left: -11px; }
+
+/* tooltip sizes
+......................................*/
+.tooltip.tooltip--xlarge {
+  max-width: 500px; }
+.tooltip.tooltip--large {
+  max-width: 400px; }
+.tooltip.tooltip--medium {
+  max-width: 300px; }
+.tooltip.tooltip--small {
+  max-width: 200px; }
+.tooltip.tooltip--fill {
+  width: 100%; }

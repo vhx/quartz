@@ -51,7 +51,7 @@ const SVG = function(gruntDone) {
   self.createDocList = function(callback) {
     let template = 'Q.components.guide.styleguide.ui.icons_list = function() { return ' + JSON.stringify(self.icons_list) + '; };';
 
-    fs.writeFile('quartz-css/vhx-style-icons/docs/guide.icons.html.js', template, function(err) {
+    fs.writeFile('quartz-css/icons/docs/guide.icons.html.js', template, function(err) {
       if (err) {
         return process.stdout.write(chalk.red(err));
       }
@@ -84,9 +84,9 @@ const SVG = function(gruntDone) {
       let filename;
 
       if (all) {
-        filename = 'all/vhx-quartz.icon-' + icon + '.css';
+        filename = 'all/icon-' + icon + '.css';
       } else {
-        filename_prefix = filename_prefix + 'sets/vhx-quartz.icons-' + set;
+        filename_prefix = filename_prefix + 'sets/icons-' + set;
         filename = (color.set === 'all') ?  '.css' :  '-' + color.set + '.css';
       }
 
@@ -105,6 +105,7 @@ const SVG = function(gruntDone) {
     files = files.filter(function(file) {
       return file.substr(-4) === '.svg';
     });
+    let filesCount = 0;
 
     a.eachLimit(files, 200, function (filename) {
       let file_path = path.join('quartz-svg/svg/' + set, filename);
@@ -128,10 +129,14 @@ const SVG = function(gruntDone) {
               name: color,
               hex: hex
             }, set, data, (set === 'all') ? true : false, function() {
-              cb();
+              filesCount++;
+              if (filesCount === files.length) {
+                cb();
+              }
             });
           });
         });
+
       });
     });
   };
