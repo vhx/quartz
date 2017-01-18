@@ -71,39 +71,51 @@
   .arrow.arrow-bottom-left:before, .arrow.arrow-bottom-middle:before, .arrow.arrow-bottom-right:before {
     border-top-right-color: #192b3d;
     margin-left: -11px; }
-  .arrow.arrow-bottom-left.background-black, .arrow.arrow-bottom-middle.background-black, .arrow.arrow-bottom-right.background-black {
-    background: #000000; }
-    .arrow.arrow-bottom-left.background-black:after, .arrow.arrow-bottom-middle.background-black:after, .arrow.arrow-bottom-right.background-black:after {
-      border-top-color: #000000; }
-    .arrow.arrow-bottom-left.background-black:before, .arrow.arrow-bottom-middle.background-black:before, .arrow.arrow-bottom-right.background-black:before {
-      border-top-color: #000000; }
-  .arrow.arrow-bottom-left.background-white, .arrow.arrow-bottom-middle.background-white, .arrow.arrow-bottom-right.background-white {
+  .arrow.arrow-bottom-left.bg-navy, .arrow.arrow-bottom-middle.bg-navy, .arrow.arrow-bottom-right.bg-navy {
+    background: #00142B; }
+    .arrow.arrow-bottom-left.bg-navy:after, .arrow.arrow-bottom-middle.bg-navy:after, .arrow.arrow-bottom-right.bg-navy:after {
+      border-top-color: #00142B; }
+    .arrow.arrow-bottom-left.bg-navy:before, .arrow.arrow-bottom-middle.bg-navy:before, .arrow.arrow-bottom-right.bg-navy:before {
+      border-top-color: #00142B; }
+  .arrow.arrow-bottom-left.bg-white, .arrow.arrow-bottom-middle.bg-white, .arrow.arrow-bottom-right.bg-white {
     background: #ffffff; }
-    .arrow.arrow-bottom-left.background-white:after, .arrow.arrow-bottom-middle.background-white:after, .arrow.arrow-bottom-right.background-white:after {
+    .arrow.arrow-bottom-left.bg-white:after, .arrow.arrow-bottom-middle.bg-white:after, .arrow.arrow-bottom-right.bg-white:after {
       border-top-color: #ffffff; }
-    .arrow.arrow-bottom-left.background-white:before, .arrow.arrow-bottom-middle.background-white:before, .arrow.arrow-bottom-right.background-white:before {
+    .arrow.arrow-bottom-left.bg-white:before, .arrow.arrow-bottom-middle.bg-white:before, .arrow.arrow-bottom-right.bg-white:before {
       border-top-color: #ffffff; }
-  .arrow.arrow-bottom-left.background-gray, .arrow.arrow-bottom-middle.background-gray, .arrow.arrow-bottom-right.background-gray {
+  .arrow.arrow-bottom-left.bg-gray-1, .arrow.arrow-bottom-middle.bg-gray-1, .arrow.arrow-bottom-right.bg-gray-1 {
     background: #F7F8F9; }
-    .arrow.arrow-bottom-left.background-gray:after, .arrow.arrow-bottom-middle.background-gray:after, .arrow.arrow-bottom-right.background-gray:after {
+    .arrow.arrow-bottom-left.bg-gray-1:after, .arrow.arrow-bottom-middle.bg-gray-1:after, .arrow.arrow-bottom-right.bg-gray-1:after {
       border-top-color: #F7F8F9; }
-    .arrow.arrow-bottom-left.background-gray:before, .arrow.arrow-bottom-middle.background-gray:before, .arrow.arrow-bottom-right.background-gray:before {
+    .arrow.arrow-bottom-left.bg-gray-1:before, .arrow.arrow-bottom-middle.bg-gray-1:before, .arrow.arrow-bottom-right.bg-gray-1:before {
       border-top-color: #F7F8F9; }
-  .arrow.arrow-bottom-left.is-alert, .arrow.arrow-bottom-middle.is-alert, .arrow.arrow-bottom-right.is-alert {
+  .arrow.arrow-bottom-left.bg-gray-2, .arrow.arrow-bottom-middle.bg-gray-2, .arrow.arrow-bottom-right.bg-gray-2 {
+    background: #F0F2F4; }
+    .arrow.arrow-bottom-left.bg-gray-2:after, .arrow.arrow-bottom-middle.bg-gray-2:after, .arrow.arrow-bottom-right.bg-gray-2:after {
+      border-top-color: #F0F2F4; }
+    .arrow.arrow-bottom-left.bg-gray-2:before, .arrow.arrow-bottom-middle.bg-gray-2:before, .arrow.arrow-bottom-right.bg-gray-2:before {
+      border-top-color: #F0F2F4; }
+  .arrow.arrow-bottom-left.bg-red, .arrow.arrow-bottom-middle.bg-red, .arrow.arrow-bottom-right.bg-red {
     background: #D3104A; }
-    .arrow.arrow-bottom-left.is-alert:after, .arrow.arrow-bottom-middle.is-alert:after, .arrow.arrow-bottom-right.is-alert:after {
+    .arrow.arrow-bottom-left.bg-red:after, .arrow.arrow-bottom-middle.bg-red:after, .arrow.arrow-bottom-right.bg-red:after {
       border-top-color: #D3104A; }
-    .arrow.arrow-bottom-left.is-alert:before, .arrow.arrow-bottom-middle.is-alert:before, .arrow.arrow-bottom-right.is-alert:before {
+    .arrow.arrow-bottom-left.bg-red:before, .arrow.arrow-bottom-middle.bg-red:before, .arrow.arrow-bottom-right.bg-red:before {
       border-top-color: #D3104A; }
-  .arrow.arrow-bottom-left.is-error, .arrow.arrow-bottom-middle.is-error, .arrow.arrow-bottom-right.is-error {
+  .arrow.arrow-bottom-left.bg-teal-1, .arrow.arrow-bottom-middle.bg-teal-1, .arrow.arrow-bottom-right.bg-teal-1 {
+    background: #F2FBFB; }
+    .arrow.arrow-bottom-left.bg-teal-1:after, .arrow.arrow-bottom-middle.bg-teal-1:after, .arrow.arrow-bottom-right.bg-teal-1:after {
+      border-top-color: #F2FBFB; }
+    .arrow.arrow-bottom-left.bg-teal-1:before, .arrow.arrow-bottom-middle.bg-teal-1:before, .arrow.arrow-bottom-right.bg-teal-1:before {
+      border-top-color: #F2FBFB; }
+  .arrow.arrow-bottom-left.bg-teal-2, .arrow.arrow-bottom-middle.bg-teal-2, .arrow.arrow-bottom-right.bg-teal-2 {
     background: #22B9B0; }
-    .arrow.arrow-bottom-left.is-error:after, .arrow.arrow-bottom-middle.is-error:after, .arrow.arrow-bottom-right.is-error:after {
+    .arrow.arrow-bottom-left.bg-teal-2:after, .arrow.arrow-bottom-middle.bg-teal-2:after, .arrow.arrow-bottom-right.bg-teal-2:after {
       border-top-color: #22B9B0; }
-    .arrow.arrow-bottom-left.is-error:before, .arrow.arrow-bottom-middle.is-error:before, .arrow.arrow-bottom-right.is-error:before {
+    .arrow.arrow-bottom-left.bg-teal-2:before, .arrow.arrow-bottom-middle.bg-teal-2:before, .arrow.arrow-bottom-right.bg-teal-2:before {
       border-top-color: #22B9B0; }
   .arrow.arrow-left-top:after, .arrow.arrow-left-top:before {
     right: 100%;
-    top: 15%; }
+    top: 15px; }
   .arrow.arrow-left-middle:after, .arrow.arrow-left-middle:before {
     right: 100%;
     top: 50%; }
@@ -116,35 +128,47 @@
   .arrow.arrow-left-top:before, .arrow.arrow-left-middle:before, .arrow.arrow-left-bottom:before {
     border-right-right-color: #192b3d;
     margin-top: -11px; }
-  .arrow.arrow-left-top.background-black, .arrow.arrow-left-middle.background-black, .arrow.arrow-left-bottom.background-black {
-    background: #000000; }
-    .arrow.arrow-left-top.background-black:after, .arrow.arrow-left-middle.background-black:after, .arrow.arrow-left-bottom.background-black:after {
-      border-right-color: #000000; }
-    .arrow.arrow-left-top.background-black:before, .arrow.arrow-left-middle.background-black:before, .arrow.arrow-left-bottom.background-black:before {
-      border-right-color: #000000; }
-  .arrow.arrow-left-top.background-white, .arrow.arrow-left-middle.background-white, .arrow.arrow-left-bottom.background-white {
+  .arrow.arrow-left-top.bg-navy, .arrow.arrow-left-middle.bg-navy, .arrow.arrow-left-bottom.bg-navy {
+    background: #00142B; }
+    .arrow.arrow-left-top.bg-navy:after, .arrow.arrow-left-middle.bg-navy:after, .arrow.arrow-left-bottom.bg-navy:after {
+      border-right-color: #00142B; }
+    .arrow.arrow-left-top.bg-navy:before, .arrow.arrow-left-middle.bg-navy:before, .arrow.arrow-left-bottom.bg-navy:before {
+      border-right-color: #00142B; }
+  .arrow.arrow-left-top.bg-white, .arrow.arrow-left-middle.bg-white, .arrow.arrow-left-bottom.bg-white {
     background: #ffffff; }
-    .arrow.arrow-left-top.background-white:after, .arrow.arrow-left-middle.background-white:after, .arrow.arrow-left-bottom.background-white:after {
+    .arrow.arrow-left-top.bg-white:after, .arrow.arrow-left-middle.bg-white:after, .arrow.arrow-left-bottom.bg-white:after {
       border-right-color: #ffffff; }
-    .arrow.arrow-left-top.background-white:before, .arrow.arrow-left-middle.background-white:before, .arrow.arrow-left-bottom.background-white:before {
+    .arrow.arrow-left-top.bg-white:before, .arrow.arrow-left-middle.bg-white:before, .arrow.arrow-left-bottom.bg-white:before {
       border-right-color: #ffffff; }
-  .arrow.arrow-left-top.background-gray, .arrow.arrow-left-middle.background-gray, .arrow.arrow-left-bottom.background-gray {
+  .arrow.arrow-left-top.bg-gray-1, .arrow.arrow-left-middle.bg-gray-1, .arrow.arrow-left-bottom.bg-gray-1 {
     background: #F7F8F9; }
-    .arrow.arrow-left-top.background-gray:after, .arrow.arrow-left-middle.background-gray:after, .arrow.arrow-left-bottom.background-gray:after {
+    .arrow.arrow-left-top.bg-gray-1:after, .arrow.arrow-left-middle.bg-gray-1:after, .arrow.arrow-left-bottom.bg-gray-1:after {
       border-right-color: #F7F8F9; }
-    .arrow.arrow-left-top.background-gray:before, .arrow.arrow-left-middle.background-gray:before, .arrow.arrow-left-bottom.background-gray:before {
+    .arrow.arrow-left-top.bg-gray-1:before, .arrow.arrow-left-middle.bg-gray-1:before, .arrow.arrow-left-bottom.bg-gray-1:before {
       border-right-color: #F7F8F9; }
-  .arrow.arrow-left-top.is-alert, .arrow.arrow-left-middle.is-alert, .arrow.arrow-left-bottom.is-alert {
+  .arrow.arrow-left-top.bg-gray-2, .arrow.arrow-left-middle.bg-gray-2, .arrow.arrow-left-bottom.bg-gray-2 {
+    background: #F0F2F4; }
+    .arrow.arrow-left-top.bg-gray-2:after, .arrow.arrow-left-middle.bg-gray-2:after, .arrow.arrow-left-bottom.bg-gray-2:after {
+      border-right-color: #F0F2F4; }
+    .arrow.arrow-left-top.bg-gray-2:before, .arrow.arrow-left-middle.bg-gray-2:before, .arrow.arrow-left-bottom.bg-gray-2:before {
+      border-right-color: #F0F2F4; }
+  .arrow.arrow-left-top.bg-red, .arrow.arrow-left-middle.bg-red, .arrow.arrow-left-bottom.bg-red {
     background: #D3104A; }
-    .arrow.arrow-left-top.is-alert:after, .arrow.arrow-left-middle.is-alert:after, .arrow.arrow-left-bottom.is-alert:after {
+    .arrow.arrow-left-top.bg-red:after, .arrow.arrow-left-middle.bg-red:after, .arrow.arrow-left-bottom.bg-red:after {
       border-right-color: #D3104A; }
-    .arrow.arrow-left-top.is-alert:before, .arrow.arrow-left-middle.is-alert:before, .arrow.arrow-left-bottom.is-alert:before {
+    .arrow.arrow-left-top.bg-red:before, .arrow.arrow-left-middle.bg-red:before, .arrow.arrow-left-bottom.bg-red:before {
       border-right-color: #D3104A; }
-  .arrow.arrow-left-top.is-error, .arrow.arrow-left-middle.is-error, .arrow.arrow-left-bottom.is-error {
+  .arrow.arrow-left-top.bg-teal-1, .arrow.arrow-left-middle.bg-teal-1, .arrow.arrow-left-bottom.bg-teal-1 {
+    background: #F2FBFB; }
+    .arrow.arrow-left-top.bg-teal-1:after, .arrow.arrow-left-middle.bg-teal-1:after, .arrow.arrow-left-bottom.bg-teal-1:after {
+      border-right-color: #F2FBFB; }
+    .arrow.arrow-left-top.bg-teal-1:before, .arrow.arrow-left-middle.bg-teal-1:before, .arrow.arrow-left-bottom.bg-teal-1:before {
+      border-right-color: #F2FBFB; }
+  .arrow.arrow-left-top.bg-teal-2, .arrow.arrow-left-middle.bg-teal-2, .arrow.arrow-left-bottom.bg-teal-2 {
     background: #22B9B0; }
-    .arrow.arrow-left-top.is-error:after, .arrow.arrow-left-middle.is-error:after, .arrow.arrow-left-bottom.is-error:after {
+    .arrow.arrow-left-top.bg-teal-2:after, .arrow.arrow-left-middle.bg-teal-2:after, .arrow.arrow-left-bottom.bg-teal-2:after {
       border-right-color: #22B9B0; }
-    .arrow.arrow-left-top.is-error:before, .arrow.arrow-left-middle.is-error:before, .arrow.arrow-left-bottom.is-error:before {
+    .arrow.arrow-left-top.bg-teal-2:before, .arrow.arrow-left-middle.bg-teal-2:before, .arrow.arrow-left-bottom.bg-teal-2:before {
       border-right-color: #22B9B0; }
   .arrow.arrow-right-top:after, .arrow.arrow-right-top:before {
     left: 100%;
@@ -154,42 +178,54 @@
     top: 50%; }
   .arrow.arrow-right-bottom:after, .arrow.arrow-right-bottom:before {
     left: 100%;
-    bottom: 15%; }
+    bottom: 15px; }
   .arrow.arrow-right-top:after, .arrow.arrow-right-middle:after, .arrow.arrow-right-bottom:after {
     border-left-color: #192b3d;
     margin-bottom: -10px; }
   .arrow.arrow-right-top:before, .arrow.arrow-right-middle:before, .arrow.arrow-right-bottom:before {
     border-left-right-color: #192b3d;
     margin-bottom: -11px; }
-  .arrow.arrow-right-top.background-black, .arrow.arrow-right-middle.background-black, .arrow.arrow-right-bottom.background-black {
-    background: #000000; }
-    .arrow.arrow-right-top.background-black:after, .arrow.arrow-right-middle.background-black:after, .arrow.arrow-right-bottom.background-black:after {
-      border-left-color: #000000; }
-    .arrow.arrow-right-top.background-black:before, .arrow.arrow-right-middle.background-black:before, .arrow.arrow-right-bottom.background-black:before {
-      border-left-color: #000000; }
-  .arrow.arrow-right-top.background-white, .arrow.arrow-right-middle.background-white, .arrow.arrow-right-bottom.background-white {
+  .arrow.arrow-right-top.bg-navy, .arrow.arrow-right-middle.bg-navy, .arrow.arrow-right-bottom.bg-navy {
+    background: #00142B; }
+    .arrow.arrow-right-top.bg-navy:after, .arrow.arrow-right-middle.bg-navy:after, .arrow.arrow-right-bottom.bg-navy:after {
+      border-left-color: #00142B; }
+    .arrow.arrow-right-top.bg-navy:before, .arrow.arrow-right-middle.bg-navy:before, .arrow.arrow-right-bottom.bg-navy:before {
+      border-left-color: #00142B; }
+  .arrow.arrow-right-top.bg-white, .arrow.arrow-right-middle.bg-white, .arrow.arrow-right-bottom.bg-white {
     background: #ffffff; }
-    .arrow.arrow-right-top.background-white:after, .arrow.arrow-right-middle.background-white:after, .arrow.arrow-right-bottom.background-white:after {
+    .arrow.arrow-right-top.bg-white:after, .arrow.arrow-right-middle.bg-white:after, .arrow.arrow-right-bottom.bg-white:after {
       border-left-color: #ffffff; }
-    .arrow.arrow-right-top.background-white:before, .arrow.arrow-right-middle.background-white:before, .arrow.arrow-right-bottom.background-white:before {
+    .arrow.arrow-right-top.bg-white:before, .arrow.arrow-right-middle.bg-white:before, .arrow.arrow-right-bottom.bg-white:before {
       border-left-color: #ffffff; }
-  .arrow.arrow-right-top.background-gray, .arrow.arrow-right-middle.background-gray, .arrow.arrow-right-bottom.background-gray {
+  .arrow.arrow-right-top.bg-gray-1, .arrow.arrow-right-middle.bg-gray-1, .arrow.arrow-right-bottom.bg-gray-1 {
     background: #F7F8F9; }
-    .arrow.arrow-right-top.background-gray:after, .arrow.arrow-right-middle.background-gray:after, .arrow.arrow-right-bottom.background-gray:after {
+    .arrow.arrow-right-top.bg-gray-1:after, .arrow.arrow-right-middle.bg-gray-1:after, .arrow.arrow-right-bottom.bg-gray-1:after {
       border-left-color: #F7F8F9; }
-    .arrow.arrow-right-top.background-gray:before, .arrow.arrow-right-middle.background-gray:before, .arrow.arrow-right-bottom.background-gray:before {
+    .arrow.arrow-right-top.bg-gray-1:before, .arrow.arrow-right-middle.bg-gray-1:before, .arrow.arrow-right-bottom.bg-gray-1:before {
       border-left-color: #F7F8F9; }
-  .arrow.arrow-right-top.is-alert, .arrow.arrow-right-middle.is-alert, .arrow.arrow-right-bottom.is-alert {
+  .arrow.arrow-right-top.bg-gray-2, .arrow.arrow-right-middle.bg-gray-2, .arrow.arrow-right-bottom.bg-gray-2 {
+    background: #F0F2F4; }
+    .arrow.arrow-right-top.bg-gray-2:after, .arrow.arrow-right-middle.bg-gray-2:after, .arrow.arrow-right-bottom.bg-gray-2:after {
+      border-left-color: #F0F2F4; }
+    .arrow.arrow-right-top.bg-gray-2:before, .arrow.arrow-right-middle.bg-gray-2:before, .arrow.arrow-right-bottom.bg-gray-2:before {
+      border-left-color: #F0F2F4; }
+  .arrow.arrow-right-top.bg-red, .arrow.arrow-right-middle.bg-red, .arrow.arrow-right-bottom.bg-red {
     background: #D3104A; }
-    .arrow.arrow-right-top.is-alert:after, .arrow.arrow-right-middle.is-alert:after, .arrow.arrow-right-bottom.is-alert:after {
+    .arrow.arrow-right-top.bg-red:after, .arrow.arrow-right-middle.bg-red:after, .arrow.arrow-right-bottom.bg-red:after {
       border-left-color: #D3104A; }
-    .arrow.arrow-right-top.is-alert:before, .arrow.arrow-right-middle.is-alert:before, .arrow.arrow-right-bottom.is-alert:before {
+    .arrow.arrow-right-top.bg-red:before, .arrow.arrow-right-middle.bg-red:before, .arrow.arrow-right-bottom.bg-red:before {
       border-left-color: #D3104A; }
-  .arrow.arrow-right-top.is-error, .arrow.arrow-right-middle.is-error, .arrow.arrow-right-bottom.is-error {
+  .arrow.arrow-right-top.bg-teal-1, .arrow.arrow-right-middle.bg-teal-1, .arrow.arrow-right-bottom.bg-teal-1 {
+    background: #F2FBFB; }
+    .arrow.arrow-right-top.bg-teal-1:after, .arrow.arrow-right-middle.bg-teal-1:after, .arrow.arrow-right-bottom.bg-teal-1:after {
+      border-left-color: #F2FBFB; }
+    .arrow.arrow-right-top.bg-teal-1:before, .arrow.arrow-right-middle.bg-teal-1:before, .arrow.arrow-right-bottom.bg-teal-1:before {
+      border-left-color: #F2FBFB; }
+  .arrow.arrow-right-top.bg-teal-2, .arrow.arrow-right-middle.bg-teal-2, .arrow.arrow-right-bottom.bg-teal-2 {
     background: #22B9B0; }
-    .arrow.arrow-right-top.is-error:after, .arrow.arrow-right-middle.is-error:after, .arrow.arrow-right-bottom.is-error:after {
+    .arrow.arrow-right-top.bg-teal-2:after, .arrow.arrow-right-middle.bg-teal-2:after, .arrow.arrow-right-bottom.bg-teal-2:after {
       border-left-color: #22B9B0; }
-    .arrow.arrow-right-top.is-error:before, .arrow.arrow-right-middle.is-error:before, .arrow.arrow-right-bottom.is-error:before {
+    .arrow.arrow-right-top.bg-teal-2:before, .arrow.arrow-right-middle.bg-teal-2:before, .arrow.arrow-right-bottom.bg-teal-2:before {
       border-left-color: #22B9B0; }
   .arrow.arrow-top-left:after, .arrow.arrow-top-left:before {
     bottom: 100%;
@@ -206,35 +242,47 @@
   .arrow.arrow-top-left:before, .arrow.arrow-top-middle:before, .arrow.arrow-top-right:before {
     border-bottom-right-color: #192b3d;
     margin-left: -11px; }
-  .arrow.arrow-top-left.background-black, .arrow.arrow-top-middle.background-black, .arrow.arrow-top-right.background-black {
-    background: #000000; }
-    .arrow.arrow-top-left.background-black:after, .arrow.arrow-top-middle.background-black:after, .arrow.arrow-top-right.background-black:after {
-      border-bottom-color: #000000; }
-    .arrow.arrow-top-left.background-black:before, .arrow.arrow-top-middle.background-black:before, .arrow.arrow-top-right.background-black:before {
-      border-bottom-color: #000000; }
-  .arrow.arrow-top-left.background-white, .arrow.arrow-top-middle.background-white, .arrow.arrow-top-right.background-white {
+  .arrow.arrow-top-left.bg-navy, .arrow.arrow-top-middle.bg-navy, .arrow.arrow-top-right.bg-navy {
+    background: #00142B; }
+    .arrow.arrow-top-left.bg-navy:after, .arrow.arrow-top-middle.bg-navy:after, .arrow.arrow-top-right.bg-navy:after {
+      border-bottom-color: #00142B; }
+    .arrow.arrow-top-left.bg-navy:before, .arrow.arrow-top-middle.bg-navy:before, .arrow.arrow-top-right.bg-navy:before {
+      border-bottom-color: #00142B; }
+  .arrow.arrow-top-left.bg-white, .arrow.arrow-top-middle.bg-white, .arrow.arrow-top-right.bg-white {
     background: #ffffff; }
-    .arrow.arrow-top-left.background-white:after, .arrow.arrow-top-middle.background-white:after, .arrow.arrow-top-right.background-white:after {
+    .arrow.arrow-top-left.bg-white:after, .arrow.arrow-top-middle.bg-white:after, .arrow.arrow-top-right.bg-white:after {
       border-bottom-color: #ffffff; }
-    .arrow.arrow-top-left.background-white:before, .arrow.arrow-top-middle.background-white:before, .arrow.arrow-top-right.background-white:before {
+    .arrow.arrow-top-left.bg-white:before, .arrow.arrow-top-middle.bg-white:before, .arrow.arrow-top-right.bg-white:before {
       border-bottom-color: #ffffff; }
-  .arrow.arrow-top-left.background-gray, .arrow.arrow-top-middle.background-gray, .arrow.arrow-top-right.background-gray {
+  .arrow.arrow-top-left.bg-gray-1, .arrow.arrow-top-middle.bg-gray-1, .arrow.arrow-top-right.bg-gray-1 {
     background: #F7F8F9; }
-    .arrow.arrow-top-left.background-gray:after, .arrow.arrow-top-middle.background-gray:after, .arrow.arrow-top-right.background-gray:after {
+    .arrow.arrow-top-left.bg-gray-1:after, .arrow.arrow-top-middle.bg-gray-1:after, .arrow.arrow-top-right.bg-gray-1:after {
       border-bottom-color: #F7F8F9; }
-    .arrow.arrow-top-left.background-gray:before, .arrow.arrow-top-middle.background-gray:before, .arrow.arrow-top-right.background-gray:before {
+    .arrow.arrow-top-left.bg-gray-1:before, .arrow.arrow-top-middle.bg-gray-1:before, .arrow.arrow-top-right.bg-gray-1:before {
       border-bottom-color: #F7F8F9; }
-  .arrow.arrow-top-left.is-alert, .arrow.arrow-top-middle.is-alert, .arrow.arrow-top-right.is-alert {
+  .arrow.arrow-top-left.bg-gray-2, .arrow.arrow-top-middle.bg-gray-2, .arrow.arrow-top-right.bg-gray-2 {
+    background: #F0F2F4; }
+    .arrow.arrow-top-left.bg-gray-2:after, .arrow.arrow-top-middle.bg-gray-2:after, .arrow.arrow-top-right.bg-gray-2:after {
+      border-bottom-color: #F0F2F4; }
+    .arrow.arrow-top-left.bg-gray-2:before, .arrow.arrow-top-middle.bg-gray-2:before, .arrow.arrow-top-right.bg-gray-2:before {
+      border-bottom-color: #F0F2F4; }
+  .arrow.arrow-top-left.bg-red, .arrow.arrow-top-middle.bg-red, .arrow.arrow-top-right.bg-red {
     background: #D3104A; }
-    .arrow.arrow-top-left.is-alert:after, .arrow.arrow-top-middle.is-alert:after, .arrow.arrow-top-right.is-alert:after {
+    .arrow.arrow-top-left.bg-red:after, .arrow.arrow-top-middle.bg-red:after, .arrow.arrow-top-right.bg-red:after {
       border-bottom-color: #D3104A; }
-    .arrow.arrow-top-left.is-alert:before, .arrow.arrow-top-middle.is-alert:before, .arrow.arrow-top-right.is-alert:before {
+    .arrow.arrow-top-left.bg-red:before, .arrow.arrow-top-middle.bg-red:before, .arrow.arrow-top-right.bg-red:before {
       border-bottom-color: #D3104A; }
-  .arrow.arrow-top-left.is-error, .arrow.arrow-top-middle.is-error, .arrow.arrow-top-right.is-error {
+  .arrow.arrow-top-left.bg-teal-1, .arrow.arrow-top-middle.bg-teal-1, .arrow.arrow-top-right.bg-teal-1 {
+    background: #F2FBFB; }
+    .arrow.arrow-top-left.bg-teal-1:after, .arrow.arrow-top-middle.bg-teal-1:after, .arrow.arrow-top-right.bg-teal-1:after {
+      border-bottom-color: #F2FBFB; }
+    .arrow.arrow-top-left.bg-teal-1:before, .arrow.arrow-top-middle.bg-teal-1:before, .arrow.arrow-top-right.bg-teal-1:before {
+      border-bottom-color: #F2FBFB; }
+  .arrow.arrow-top-left.bg-teal-2, .arrow.arrow-top-middle.bg-teal-2, .arrow.arrow-top-right.bg-teal-2 {
     background: #22B9B0; }
-    .arrow.arrow-top-left.is-error:after, .arrow.arrow-top-middle.is-error:after, .arrow.arrow-top-right.is-error:after {
+    .arrow.arrow-top-left.bg-teal-2:after, .arrow.arrow-top-middle.bg-teal-2:after, .arrow.arrow-top-right.bg-teal-2:after {
       border-bottom-color: #22B9B0; }
-    .arrow.arrow-top-left.is-error:before, .arrow.arrow-top-middle.is-error:before, .arrow.arrow-top-right.is-error:before {
+    .arrow.arrow-top-left.bg-teal-2:before, .arrow.arrow-top-middle.bg-teal-2:before, .arrow.arrow-top-right.bg-teal-2:before {
       border-bottom-color: #22B9B0; }
   .arrow.border {
     border: 1px solid #ddd !important; }
