@@ -67,21 +67,30 @@ Q.components.guide.styleguide.ui.loaders.container = {
         title: 'Cover Types',
         component: {
           view: function() {
-            return m('div.row', [
-              m('div.pull.border.loader--hide.loader-slate.is-processing', {
+            return m('div', [
+              m('p.margin-bottom-medium', m.trust('Hide all content when showing the loader by using the <code class="text--yellow">loader--hide</code> class. The container must have a width and height, either explicitly or from having content.')),
+              m('div.margin-bottom-large.border.loader--hide.loader-slate.is-processing', {
                 style: {
                   width: '150px',
                   height: '150px'
                 }
               }),
-              m('div.pull.padding-small.margin-left-medium.border.loader--transparent.loader-slate.is-processing', {
+              m('p.margin-bottom-medium', m.trust('Make content transparent when showing the loader by using the <code class="text--yellow">loader--transparent</code>. Must have a width and height, either explicitly or from having content')),
+              m('div.margin-bottom-large.padding-small.border.loader--transparent.loader-slate.is-processing', {
                 style: {
                   width: '150px',
                   height: '150px'
                 }
               }, [
                 m('p', 'All child elements will be transparent when in the container is in a loading state.')
-              ])
+              ]),
+              m('p.margin-bottom-medium', m.trust('By default, the loader will be positioned in the center of the container when using cover types. In some cases when you have a large container (that extends beyond the window size), you may want it positioned offset from the top, and can use <code class="text--yellow">loader--offset</code>. This will offset the loader 125px from the top.')),
+              m('div.margin-bottom-large.padding-small.border.loader--offset.loader--hide.loader-slate.is-processing', {
+                style: {
+                  width: '350px',
+                  height: '350px'
+                }
+              })
             ]);
           }
         }

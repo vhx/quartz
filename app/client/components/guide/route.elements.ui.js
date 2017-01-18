@@ -24,6 +24,10 @@ Q.components.route.styleguide.ui.elements = {
     {
       guide: m.component(Q.components.guide.styleguide.ui.borders.container),
       code: Q.code.borders
+    },
+    {
+      guide: m.component(Q.components.guide.styleguide.ui.avatars.container),
+      code: Q.code.avatars
     }
   ]
 };
