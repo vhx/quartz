@@ -1,6 +1,2 @@
 echo 3001 > ~/.pow/quartz
 npm install
-cd quartz-rails
-git submodule update --init
-git checkout master
-cd ../
