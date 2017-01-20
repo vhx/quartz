@@ -12,4 +12,13 @@ vhxm.components.shared.select.ui.list.controller = function(opts, parent) {
   self.handleItemClick = function(event, item) {
     self.parent.selectItem(item);
   };
+
+  self.formatLabelString = function(opts) {
+    if (opts.label && opts.label_length && (opts.label.length > opts.label_length)) {
+      return opts.label.substr(0, opts.label_length).trim() + '...';
+    }
+
+    return opts.label;
+  };
+
 };
