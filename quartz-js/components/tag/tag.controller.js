@@ -14,7 +14,7 @@ vhxm.components.shared.tag.controller = function(opts) {
   }
 
   self.formatLabelString = function(opts) {
-    if (opts.label && opts.label_length) {
+    if (opts.label && opts.label_length && (opts.label.length > opts.label_length)) {
       return opts.label.substr(0, opts.label_length).trim() + '...';
     }
 
