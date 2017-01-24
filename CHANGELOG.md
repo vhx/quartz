@@ -1,3 +1,7 @@
+### 0.10.16
+**2017-01-24**
+* Add `label_length` option to the Tag and Select components
+
 ### 0.10.15
 **2017-01-17**
 * correctly truncate lengthy strings in `media` items

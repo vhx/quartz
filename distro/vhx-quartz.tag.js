@@ -14,7 +14,16 @@ vhxm.components.shared.tag.controller = function (opts) {
   if (opts.onRemove) {
     self.state.onRemove = opts.onRemove;
   }
+
+  self.formatLabelString = function (opts) {
+    if (opts.label && opts.label_length && opts.label.length > opts.label_length) {
+      return opts.label.substr(0, opts.label_length).trim() + '...';
+    }
+
+    return opts.label;
+  };
 };
+
 vhxm.components.shared.tag.state = function () {
   this.isHover = m.prop(false);
   this.isRemoveHover = m.prop(false);
@@ -38,7 +47,7 @@ vhxm.components.shared.tag.ui.container = {
         event.preventDefault();
         ctrl.state.onShow(event);
       }
-    }, opts.label ? opts.label : 'Tag'), m('a.c-tag--remove.icon--center.icon-x-white.icon--xxsmall' + (ctrl.state.isRemoveHover() ? '.btn-red' : '.btn-teal'), {
+    }, opts.label ? ctrl.formatLabelString(opts) : 'Tag'), m('a.c-tag--remove.icon--center.icon-x-white.icon--xxsmall' + (ctrl.state.isRemoveHover() ? '.btn-red' : '.btn-teal'), {
       onclick: function onclick(event) {
         event.preventDefault();
         ctrl.state.onRemove(event);
