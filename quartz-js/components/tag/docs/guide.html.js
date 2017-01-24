@@ -12,8 +12,21 @@ Q.components.guide.js.ui.tag.container = {
         component: {
           view: function() {
             return m('div', [
+              m('.margin-right-medium.left',
+                m.component(vhxm.components.shared.tag.ui.container, {
+                  label: 'My Series: Complete Series Package',
+                  label_length: 20,
+                  isProcessing: Q.fun,
+                  onShow: function() {
+                    window.alert('show something');
+                  },
+                  onRemove: function() {
+                    window.alert('remove something');
+                  }
+                })
+              ),
               m.component(vhxm.components.shared.tag.ui.container, {
-                label: 'Comedy',
+                label: 'Episode 1',
                 isProcessing: Q.fun,
                 onShow: function() {
                   window.alert('show something');
@@ -29,6 +42,7 @@ Q.components.guide.js.ui.tag.container = {
       m.component(Q.components.shared.options.ui.container, {
         options: [
           { name: 'label', type: 'string', default_value: 'Tag', description: m.trust('Text label of tag.') },
+          { name: 'label_length', type: 'integer', default_value: '0 (unlimited)', description: m.trust('Length of string to truncate after.') },
           { name: 'isProcessing', type: 'prop', required: false, default_value: 'false', description: 'Whether or not in a processing state. Requires redraw upon changing.' },
           { name: 'onShow', type: 'function', default_value: 'null', description: m.trust('Fired when the tag is clicked.') },
           { name: 'onRemove', type: 'function', default_value: 'null', description: m.trust('Fired when the remove action is clicked.') },
