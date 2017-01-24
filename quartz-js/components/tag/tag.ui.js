@@ -14,7 +14,7 @@ vhxm.components.shared.tag.ui.container = {
           event.preventDefault();
           ctrl.state.onShow(event);
         }
-      }, (opts.label ? opts.label : 'Tag')),
+      }, (opts.label ? ctrl.formatLabelString(opts) : 'Tag')),
       m('a.c-tag--remove.icon--center.icon-x-white.icon--xxsmall' + (ctrl.state.isRemoveHover() ? '.btn-red' : '.btn-teal'), {
         onclick: function(event) {
           event.preventDefault();
