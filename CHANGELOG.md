@@ -1,3 +1,7 @@
+### 1.1.0
+**2017-02-01**
+* Add `checkedByDefault` and `api` options to radio component
+
 ### 1.0.0
 **2017-01-18**
 * Forms documentation

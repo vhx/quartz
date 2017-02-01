@@ -1,6 +1,6 @@
 'use strict';
 
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 vhxm.components.shared.filter.constants = Object.freeze({
   date: {
@@ -179,14 +179,16 @@ vhxm.components.shared.filter.ui.applied = {
     return parent_ctrl;
   },
   view: function view(ctrl) {
+    var isSingle = ctrl.state.selected().length <= 1;
+
     return m('div', [ctrl.state.selected().map(function (item) {
-      return m('span.c-filter--applied.inline', [m('a.text--navy', {
+      return m('span.c-filter--applied.inline', [m('a.text--navy' + (isSingle ? '.margin-right-small' : ''), {
         href: '#',
         onclick: function onclick(event) {
           event.preventDefault();
           ctrl.openFilter(item);
         }
-      }, item.label), m('a.icon--center.icon-x-navy.icon--xxsmall', {
+      }, item.label), isSingle ? '' : m('a.icon--center.icon-x-navy.icon--xxsmall', {
         onclick: function onclick(event) {
           event.preventDefault();
           ctrl.handleFilterRemoveClick(item);
