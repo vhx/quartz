@@ -1,3 +1,7 @@
+### 1.2.0
+**2017-02-01**
+* Add `label_length` option to the Tag and Select components
+
 ### 1.1.0
 **2017-02-01**
 * Add `checkedByDefault` and `api` options to radio component
