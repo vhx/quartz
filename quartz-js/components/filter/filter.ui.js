@@ -31,17 +31,19 @@ vhxm.components.shared.filter.ui.applied = {
     return parent_ctrl;
   },
   view: function(ctrl) {
+    let isSingle = ctrl.state.selected().length <= 1;
+
     return m('div', [
       ctrl.state.selected().map(function(item) {
         return m('span.c-filter--applied.inline', [
-          m('a.text--navy', {
+          m('a.text--navy' + (isSingle ? '.margin-right-small' : ''), {
             href: '#',
             onclick: function(event) {
               event.preventDefault();
               ctrl.openFilter(item);
             }
           }, item.label),
-          m('a.icon--center.icon-x-navy.icon--xxsmall', {
+          isSingle ? '' : m('a.icon--center.icon-x-navy.icon--xxsmall', {
             onclick: function(event) {
               event.preventDefault();
               ctrl.handleFilterRemoveClick(item);

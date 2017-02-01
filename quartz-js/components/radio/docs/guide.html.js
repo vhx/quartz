@@ -76,6 +76,8 @@ Q.components.guide.js.ui.radio.container = {
           { name: 'onchange', type: 'function', default_value: null, description: m.trust('Callback fired when the the radio value changes.') },
           { name: 'stacked', type: 'boolean', default_value: 'false', description: m.trust('Whether the radio elements are stacked vertically. Defaults to <span class="text--bold text--navy text-4">false</span> (horizontal layout).') },
           { name: 'color', type: 'string', default_value: 'teal', description: m.trust('The color of the radio buttons. Either <span class="text--navy text--bold text-4">teal</span> or <span class="text--navy text--bold text-4">gray</span>.') },
+          { name: 'checkedByDefault', type: 'boolean', default_value: 'true', description: m.trust('Dictates whether a radio should be set as checked by default or not') },
+          { name: 'api', type: 'Mithril prop', default_value: 'null', description: m.trust('When set, surfaces direct access to internal component state') },
         ]
       })
     ]);
