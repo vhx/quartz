@@ -24,7 +24,7 @@ vhxm.components.shared.select.ui.container = {
         onkeydown: ctrl.handleKeydown
       }, [
       opts.trigger ? opts.trigger :
-      m('a.c-select--trigger.btn-dropdown-' + (opts.color ? opts.color : 'gray') + '.btn--fill' + (ctrl.state.isDropdownOpen() ? '.is-active' : ''), {
+      m('a.c-select--trigger.truncate.btn-dropdown-' + (opts.color ? opts.color : 'gray') + '.btn--fill' + (ctrl.state.isDropdownOpen() ? '.is-active' : ''), {
         href: '#',
         onclick: ctrl.handleClick
       }, ctrl.selectedLabel()),
