@@ -1,3 +1,7 @@
+### 1.2.1
+**2017-02-09**
+* Apply CSS-based text truncation (with ellipsis) to select component's label/placeholder.
+
 ### 1.2.0
 **2017-02-01**
 * Add `label_length` option to the Tag and Select components
