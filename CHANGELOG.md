@@ -1,3 +1,7 @@
+### 1.2.2
+**2017-02-16**
+* Fix bug with webpack + sidebar, by removing aggressive m.redraw().
+
 ### 1.2.1
 **2017-02-09**
 * Apply CSS-based text truncation (with ellipsis) to select component's label/placeholder.
