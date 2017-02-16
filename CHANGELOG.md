@@ -1,3 +1,7 @@
+### 1.2.3
+**2017-02-16**
+* Fix bug with webpack + sidebar, by removing m.startComputation and m.stopComputation.
+
 ### 1.2.2
 **2017-02-16**
 * Fix bug with webpack + sidebar, by removing aggressive m.redraw().

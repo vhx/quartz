@@ -79,9 +79,7 @@ vhxm.components.shared.sidebar.controller = function (opts) {
 
   self.esc = function (event) {
     if (event.keyCode === 27) {
-      m.startComputation();
       vhxm.components.shared.sidebar.toggle('close');
-      m.endComputation();
     }
   };
 };
@@ -93,6 +91,8 @@ vhxm.components.shared.sidebar.toggle = function (state, route) {
     if (route) {
       return m.route(route);
     }
+
+    m.redraw();
   };
 
   if (vhxm.components.shared.sidebar.state.isOpen() && !state || !vhxm.components.shared.sidebar.state.isOpen() && state) {
@@ -137,7 +137,9 @@ vhxm.components.shared.sidebar.ui.container = {
       config: vhxm.components.shared.sidebar.state.isOpen() ? ctrl.animatorIn : ctrl.animatorOut
     }, vhxm.components.shared.sidebar.state.isLoaded() ? [m('a.c-sidebar--close.icon-circle.icon-x-navy.icon--xsmall', {
       onclick: function onclick() {
-        vhxm.components.shared.sidebar.toggle('close');
+        setTimeout(function () {
+          vhxm.components.shared.sidebar.toggle('close');
+        }, 0);
       }
     }), m('div', {
       style: { opacity: 0 },
