@@ -6,7 +6,9 @@ vhxm.components.shared.sidebar.ui.container = {
     }, vhxm.components.shared.sidebar.state.isLoaded() ? [
       m('a.c-sidebar--close.icon-circle.icon-x-navy.icon--xsmall', {
         onclick: function() {
-          vhxm.components.shared.sidebar.toggle('close');
+          setTimeout(function() {
+            vhxm.components.shared.sidebar.toggle('close');
+          }, 0);
         }
       }),
       m('div', {
