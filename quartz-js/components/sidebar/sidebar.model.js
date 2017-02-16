@@ -6,8 +6,6 @@ vhxm.components.shared.sidebar.toggle = function(state, route) {
     if (route) {
       return m.route(route);
     }
-
-    m.redraw();
   };
 
   if (vhxm.components.shared.sidebar.state.isOpen() && !state || !vhxm.components.shared.sidebar.state.isOpen() && state) {
