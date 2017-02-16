@@ -79,9 +79,7 @@ vhxm.components.shared.sidebar.controller = function(opts) {
 
   self.esc = function(event) {
     if (event.keyCode === 27) {
-      m.startComputation();
       vhxm.components.shared.sidebar.toggle('close');
-      m.endComputation();
     }
   };
 };
