@@ -8,7 +8,9 @@ vhxm.components.shared.select.ui.item_standard = {
     let ctrl  = params.ctrl;
     let opts  = params.opts;
 
-    return m('li.c-select--option.padding-horz-medium' + (index === ctrl.state.highlightIndex() ? '.is-selected' : ''), {
+    return m('li.c-select--option.padding-horz-medium' +
+      (item[opts.prop_map.label] === ctrl.parent.selectedLabel() ? '.icon-check-navy.icon--right' : '') +
+      (index === ctrl.state.highlightIndex() ? '.is-selected' : ''), {
       config: function(el) {
         ctrl.state.optionHeight($(el).outerHeight());
       },
