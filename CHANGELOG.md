@@ -1,3 +1,7 @@
+### 1.2.4
+**2017-03-24**
+* Fix bug unused label_length property, causing styling issues with the select container classes.
+
 ### 1.2.3
 **2017-02-16**
 * Fix bug with webpack + sidebar, by removing m.startComputation and m.stopComputation.

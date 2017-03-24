@@ -229,7 +229,6 @@ vhxm.components.shared.select.ui.container = {
     options += opts.action ? '.has-action' : '';
     options += opts.type === 'media' ? '.has-media' : '';
     options += opts.inline ? '.inline' : '';
-    options += opts.label_length ? opts.label_length : 0;
     options += '.caret--' + (ctrl.position() === 'top' ? 'bottom' : 'top') + '-' + ctrl.caret;
 
     if (opts.trigger) {
