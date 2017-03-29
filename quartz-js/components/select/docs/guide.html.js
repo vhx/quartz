@@ -166,7 +166,7 @@ Q.components.guide.js.ui.select.container = {
       }),
       m.component(Q.components.shared.options.ui.container, {
         options: [
-          { name: 'items', type: 'array', required: true, description: m.trust('An array of objects to populate options. Each object must map to the defined <span class="text--bold text--navy text-4">prop_map.label</span> and <span class="text--bold text--navy text-4">prop_map.value</span>.') },
+          { name: 'items', type: 'array', required: true, description: m.trust('A mithril prop (m.prop()) containing an array of objects to populate options. Each object must map to the defined <span class="text--bold text--navy text-4">prop_map.label</span> and <span class="text--bold text--navy text-4">prop_map.value</span>.') },
           { name: 'type', type: 'string', default_value: 'standard', description: m.trust('Sets UI of the items in the dropdown list. Either <span class="text--bold text--navy text-4">standard</span> OR <span class="text--bold text--navy text-4">media</span>. The default is <span class="text--bold text--navy text-4">standard</span>.') },
           { name: 'multiselect', type: 'boolean', required: false, default_value: 'false', description: 'Set whether the dropdown allows for selected multiple values.' },
           { name: 'action', type: 'boolean', default_value: 'false', description: 'Whether to show an action button or not, at the bottom of the dropdown. If turned on, it will appear upon typing a value in the search input.' },
