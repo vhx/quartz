@@ -166,7 +166,7 @@ Q.components.guide.js.ui.select.container = {
       }),
       m.component(Q.components.shared.options.ui.container, {
         options: [
-          { name: 'items', type: 'array', required: true, description: m.trust('A mithril prop (m.prop()) containing an array of objects to populate options. Each object must map to the defined <span class="text--bold text--navy text-4">prop_map.label</span> and <span class="text--bold text--navy text-4">prop_map.value</span>.') },
+          { name: 'items', type: 'm.prop', required: true, description: m.trust('A mithril prop (m.prop()) containing an array of objects to populate options. Each object must map to the defined <span class="text--bold text--navy text-4">prop_map.label</span> and <span class="text--bold text--navy text-4">prop_map.value</span>.') },
           { name: 'type', type: 'string', default_value: 'standard', description: m.trust('Sets UI of the items in the dropdown list. Either <span class="text--bold text--navy text-4">standard</span> OR <span class="text--bold text--navy text-4">media</span>. The default is <span class="text--bold text--navy text-4">standard</span>.') },
           { name: 'multiselect', type: 'boolean', required: false, default_value: 'false', description: 'Set whether the dropdown allows for selected multiple values.' },
           { name: 'action', type: 'boolean', default_value: 'false', description: 'Whether to show an action button or not, at the bottom of the dropdown. If turned on, it will appear upon typing a value in the search input.' },
@@ -175,7 +175,7 @@ Q.components.guide.js.ui.select.container = {
           { name: 'onAction', type: 'function', required: false, default_value: 'null', description: 'Callback function that is called after the action button is clicked.' },
           { name: 'onClose', type: 'function', required: false, default_value: 'null', description: 'Callback function that is called when the select dropdown closes.' },
           { name: 'isProcessing', type: 'prop', required: false, default_value: '[]', description: 'An array of values for any items that are in a processing state. Add or remove values to trigger the processing state of an item.' },
-          { name: 'selected', type: 'object', required: false, default_value: 'null', description: 'Object with selected values for initializing the dropdown pre-selected. Each value is an object with a label and value.' },
+          { name: 'selected', type: 'array', required: false, default_value: 'null', description: 'Array that contains a 1 or more objects with selected values for initializing the dropdown pre-selected. Each object should have a label and value property (as defined in the prop_map).' },
           { name: 'placeholder', type: 'string', required: false, default_value: 'Select...', description: 'Text displayed in dropdown when no option is selected' },
           { name: 'caret', type: 'string', default_value: 'right', description: m.trust('Specify the position of the caret. Either <span class="text--bold text--navy text-4">left</span>, <span class="text--bold text--navy text-4">center</span>, or <span class="text--bold text--navy text-4">right</span>.') },
           { name: 'offset', type: 'integer', default_value: '40', description: m.trust('Specify the offset of the dropdown from the trigger.') },
