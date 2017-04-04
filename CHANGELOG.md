@@ -1,3 +1,7 @@
+### 1.2.5
+**2017-04-03**
+* Added new VimeoVHX icons
+
 ### 1.2.4
 **2017-03-24**
 * Fix bug unused label_length property, causing styling issues with the select container classes.
