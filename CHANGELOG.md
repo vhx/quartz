@@ -1,3 +1,7 @@
+### 1.2.6
+**2017-04-03**
+* Added selected icons for the standard select style
+
 ### 1.2.5
 **2017-04-03**
 * Added new VimeoVHX icons
