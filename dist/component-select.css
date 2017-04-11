@@ -1,0 +1,179 @@
+/* .....................................
+  Fonts
+..................................... */
+/* .....................................
+  Sets
+..................................... */
+/* .....................................
+  Media Query Ranges
+..................................... */
+/* .....................................
+  Colors - Grays
+..................................... */
+/* .....................................
+  Colors - Teals
+..................................... */
+/* .....................................
+  Colors - Red
+..................................... */
+/* .....................................
+  Colors - Navy
+..................................... */
+/* .....................................
+  Colors - Brand Palette
+..................................... */
+/* .....................................
+  Colors - External Palette
+..................................... */
+/* helper function for margin and padding
+......................................*/
+.c-select--container.has-trigger .c-select--dropdown {
+  top: 35px; }
+.c-select--container.has-search .c-select--dropdown {
+  min-height: 150px; }
+.c-select--container.has-search .c-select--options {
+  margin-top: 80px; }
+
+.c-select--dropdown {
+  position: absolute;
+  max-height: 323px;
+  top: 55px;
+  left: 0;
+  z-index: 2147483600;
+  display: none; }
+  .c-select--dropdown.is-open {
+    display: block; }
+
+.c-select--dropdown:after, .c-select--dropdown:before {
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none; }
+.c-select--dropdown:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-width: 10px;
+  z-index: 0; }
+.c-select--dropdown:before {
+  border: solid transparent;
+  border-width: 9px;
+  z-index: 1; }
+
+.caret--bottom-center .c-select--dropdown:after, .caret--bottom-center .c-select--dropdown:before {
+  top: 100%;
+  left: 50%; }
+
+.caret--bottom-left .c-select--dropdown:after, .caret--bottom-left .c-select--dropdown:before {
+  top: 100%;
+  left: 22px; }
+
+.caret--bottom-right .c-select--dropdown:after, .caret--bottom-right .c-select--dropdown:before {
+  top: 100%;
+  right: 22px; }
+.caret--bottom-right .c-select--dropdown:before {
+  right: 23px; }
+
+.caret--bottom-right .c-select--dropdown:after,
+.caret--bottom-left .c-select--dropdown:after,
+.caret--bottom-center .c-select--dropdown:after {
+  border-top-color: #D7DDE1;
+  margin-left: -11px; }
+.caret--bottom-right .c-select--dropdown:before,
+.caret--bottom-left .c-select--dropdown:before,
+.caret--bottom-center .c-select--dropdown:before {
+  border-top-color: #ffffff;
+  margin-left: -10px; }
+
+.caret--top-center .c-select--dropdown:after, .caret--top-center .c-select--dropdown:before {
+  bottom: 100%;
+  left: 50%; }
+
+.caret--top-left .c-select--dropdown:after, .caret--top-left .c-select--dropdown:before {
+  bottom: 100%;
+  left: 22px; }
+
+.caret--top-right .c-select--dropdown:after, .caret--top-right .c-select--dropdown:before {
+  bottom: 100%;
+  right: 11px; }
+.caret--top-right .c-select--dropdown:before {
+  right: 12px; }
+
+.caret--top-right .c-select--dropdown:after,
+.caret--top-left .c-select--dropdown:after,
+.caret--top-center .c-select--dropdown:after {
+  border-bottom-color: #D7DDE1;
+  margin-left: -11px; }
+.caret--top-right .c-select--dropdown:before,
+.caret--top-left .c-select--dropdown:before,
+.caret--top-center .c-select--dropdown:before {
+  border-bottom-color: #ffffff;
+  margin-left: -10px; }
+
+.c-select--input-container {
+  z-index: 2;
+  position: absolute; }
+
+.c-select--options {
+  overflow-y: auto;
+  max-height: 218px; }
+
+.has-action .c-select--options {
+  max-height: 200px; }
+
+.c-select--option {
+  color: #233741;
+  line-height: 25px;
+  padding-top: 7px; }
+  .c-select--option.is-selected {
+    cursor: pointer;
+    background-color: #F0F2F4; }
+
+.c-select--item-label {
+  max-width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block; }
+
+.c-media-item--container {
+  transition: background-color .2s ease-out; }
+  .c-media-item--container:hover, .c-media-item--container.is-selected {
+    cursor: pointer;
+    background-color: rgba(34, 185, 176, 0.1); }
+    .c-media-item--container:hover .c-item-toggle, .c-media-item--container.is-selected .c-item-toggle {
+      opacity: 1; }
+  .c-media-item--container .c-media-item--image-container {
+    max-width: 30%; }
+  .c-media-item--container .c-media-item--content {
+    max-width: 65%; }
+
+.c-item-toggle {
+  opacity: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-position: center;
+  background-color: #22B9B0;
+  transform: translateY(8px);
+  transition: opacity .2s ease-out; }
+  .c-item-toggle.is-selected {
+    background-color: #ffffff;
+    opacity: 1; }
+
+.c-select--footer .btn-teal {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px; }
+.c-select--footer .btn-teal:link,
+.c-select--footer .btn-teal:visited {
+  background-color: white;
+  border-color: white;
+  color: #22B9B0; }
+.c-select--footer .btn-teal:hover,
+.c-select--footer .btn-teal:active,
+.c-select--footer .btn-teal.is-loading {
+  background-color: #22B9B0 !important;
+  border-color: #22B9B0 !important;
+  color: #ffffff; }
+.c-select--footer .btn-teal.is-loading {
+  color: transparent; }

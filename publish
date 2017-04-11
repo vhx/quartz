@@ -18,7 +18,7 @@ if [ "$type" == "y" ]; then
     git push origin master --tags
     npm publish
   else
-    echo "Ask dave@vhx.tv or scott@vhx.tv for access."
+    echo "Ask dave@vhx.tv for access."
   fi
 else
   echo "Crisis averted. Update it then come on back."
