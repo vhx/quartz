@@ -112,8 +112,8 @@ module.exports = function(grunt) {
 
       let concat_opts = { files: {} };
 
-      concat_opts.files['dist/' + component_name + '.js'] = dir_path;
-      babel.dist.files['dist/' + component_name + '.js'] = 'dist/' + component_name + '.js';
+      concat_opts.files['dist/component-' + component_name + '.js'] = dir_path;
+      babel.dist.files['dist/component-' + component_name + '.js'] = 'dist/component-' + component_name + '.js';
 
       concat[component_name] = concat_opts;
 
@@ -134,15 +134,13 @@ module.exports = function(grunt) {
 
         // create a subtask for each module, find all src files
         // and combine into a single js file per module
-        let dest_dir = 'dist/' + component_name + '.css';
+        let dest_dir = 'dist/component-' + component_name + '.css';
         let src_dir =  dir + '/styles/*.scss';
 
         sass.dist.files[dest_dir] = src_dir;
-
         // add module subtasks to the concat task in initConfig
         grunt.config.set('sass', sass);
       }
-
     });
   });
 
