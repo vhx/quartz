@@ -1,5 +1,9 @@
+### 1.2.7
+**2017-04-11**
+* Name scope component build assets to avoid files being overridden.
+
 ### 1.2.6
-**2017-04-03**
+**2017-04-11**
 * Added selected icons for the standard select style
 
 ### 1.2.5

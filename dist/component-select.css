@@ -40,7 +40,8 @@
   top: 55px;
   left: 0;
   z-index: 2147483600;
-  display: none; }
+  display: none;
+  box-shadow: 0 0 10px #D7DDE1; }
   .c-select--dropdown.is-open {
     display: block; }
 
