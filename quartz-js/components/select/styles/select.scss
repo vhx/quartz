@@ -165,6 +165,12 @@
     cursor: pointer;
     background-color: #F0F2F4;
   }
+  &.icon-check-navy {
+    background-size: 16px;
+  }
+  &.icon--right {
+    background-position: 95% 50%;
+  }
 }
 .c-select--item-label {
   max-width: 80%;
