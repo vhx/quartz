@@ -28,9 +28,11 @@ to the quartz repo (VHX team members) and the quartz npm package.
 The publish script will build, tag, and publish to [NPM](https://www.npmjs.com/package/@vhx/quartz) for use across VHX applications.
 
 1. Squash and Merge PR
-1. Checkout Master branch locally
+1. Checkout Master branch locally and pull latest
 1. Update `VERSION` (using [Semantic Versioning](http://semver.org/))
 1. Update `CHANGELOG` (add new entry using `VERSION`'s number, the date, and description from PR)
+1. Don't commit as this will be part of the `publish` script (adds a tag with your commit)
+1. Check that you're logged in with `npm whoami` and that you have Quartz npm package permissions [https://www.npmjs.com/package/@vhx/quartz](https://www.npmjs.com/package/@vhx/quartz)
 1. Run `./publish`
 
 ## Using in your Application

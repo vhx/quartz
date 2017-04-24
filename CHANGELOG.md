@@ -1,3 +1,7 @@
+### 1.2.8
+**2017-04-24**
+* Fix checkbox icon margin by adding unit type
+
 ### 1.2.7
 **2017-04-11**
 * Name scope component build assets to avoid files being overridden.
