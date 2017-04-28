@@ -5,13 +5,6 @@ node_modules/
 logs
 deploy
 npm-debug.log
-app/public/quartz.js
-app/public/components.css
-app/public/app.js
-app/public/quartz-icons.css
-app/public/app.css
-app/public/vendor.js
-app/public/quartz.css
 .sass-cache
 .ebignore
 .elasticbeanstalk
