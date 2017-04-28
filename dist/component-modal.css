@@ -31,14 +31,16 @@
   position: fixed;
   left: -9999px; }
   .c-modal.is-active, .c-modal.is-open {
-    z-index: 2147483639;
+    z-index: 2147483801;
     position: relative;
     left: 0; }
     .c-modal.is-active .c-modal-container, .c-modal.is-open .c-modal-container {
       position: fixed;
       animation: modal-open 200ms ease forwards; }
     .c-modal.is-active .c-modal-bg, .c-modal.is-open .c-modal-bg {
-      animation: modal-bg-open 300ms ease forwards; }
+      animation: modal-bg-open 300ms ease forwards;
+      position: fixed;
+      left: 0; }
   .c-modal .c-modal-container {
     animation: modal-close 200ms ease forwards;
     width: 450px;
@@ -77,11 +79,12 @@
       width: 100%; }
   .c-modal .c-modal-bg {
     background-color: rgba(0, 20, 43, 0.55);
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
-    animation: modal-bg-close 300ms ease forwards; }
+    animation: modal-bg-close 300ms ease forwards;
+    left: -99999px; }
 
 @keyframes modal-open {
   0% {

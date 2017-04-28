@@ -29,7 +29,7 @@ The publish script will build, tag, and publish to [NPM](https://www.npmjs.com/p
 
 1. Squash and Merge PR
 1. Checkout Master branch locally and pull latest
-1. Update `VERSION` (using [Semantic Versioning](http://semver.org/))
+1. Update `VERSION` (using [Semantic Versioning](http://semver.org/)) - package.json versioning is handled by the publish script based on this VERSION file
 1. Update `CHANGELOG` (add new entry using `VERSION`'s number, the date, and description from PR)
 1. Don't commit as this will be part of the `publish` script (adds a tag with your commit)
 1. Check that you're logged in with `npm whoami` and that you have Quartz npm package permissions [https://www.npmjs.com/package/@vhx/quartz](https://www.npmjs.com/package/@vhx/quartz)

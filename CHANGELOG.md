@@ -1,3 +1,7 @@
+### 1.2.9
+**2017-04-28**
+* Fixed modal issue with background flashing on page load
+
 ### 1.2.8
 **2017-04-24**
 * Fix checkbox icon margin by adding unit type
