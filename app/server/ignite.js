@@ -12,7 +12,7 @@ const fs          = require('fs');
 const app         = express();
 
 app.set('port', process.env.PORT);
-app.use(express.static('app/public'));
+app.use(express.static(__dirname + '/app/public'));
 app.use(parser.json());
 
 
