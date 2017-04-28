@@ -5,7 +5,7 @@
   left: -9999px;
   &.is-active,
   &.is-open {
-    z-index: 2147483639;
+    z-index: 2147483801;
     position: relative;
     left: 0;
     .c-modal-container {
@@ -14,6 +14,8 @@
     }
     .c-modal-bg {
       animation: modal-bg-open 300ms ease forwards;
+      position: fixed;
+      left: 0;
     }
   }
   .c-modal-container {
@@ -62,37 +64,16 @@
       bottom: 0;
       left: 0;
       width: 100%;
-
-      // .c-modal--btn-container {
-      //   transition: all .2s ease;
-      //   display: -webkit-box;
-      //   display: -webkit-flex;
-      //   display: -ms-flexbox;
-      //   display: flex;
-      //   align-items: center;
-      //   justify-content: center;
-      //   display: block;
-      //   height: 70px;
-      //   padding-top: 27px;
-      //   font-weight: bold;
-      //   font-size: 14px;
-      //   line-height: 16px;
-      //   text-align: center;
-      //   text-transform: capitalize;
-      // }
-      //
-      // .modal--btn-container-padding {
-      //   padding: 14px 27px;
-      // }
     }
   }
   .c-modal-bg {
     background-color: rgba(0, 20, 43, .55);
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     animation: modal-bg-close 300ms ease forwards;
+    left: -99999px;
   }
 }
 
