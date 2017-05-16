@@ -1,0 +1,14 @@
+{
+  "presets": [
+    "stage-1",
+    "react"
+  ],
+  "env": {
+    "release": {
+      "plugins": [
+        "transform-runtime",
+        ["transform-react-remove-prop-types", {"mode": "wrap"}]
+      ]
+    }
+  }
+}
