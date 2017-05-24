@@ -1,3 +1,7 @@
+### 1.2.10
+**2017-05-24**
+* Fixed a text overflow issue in the radio filters
+
 ### 1.2.9
 **2017-04-28**
 * Fixed modal issue with background flashing on page load
