@@ -1,3 +1,7 @@
+### 1.2.11
+**2017-07-07**
+* Fixed issue where opening a new select dropdown would not close open select dropdowns
+
 ### 1.2.10
 **2017-05-24**
 * Fixed a text overflow issue in the radio filters
