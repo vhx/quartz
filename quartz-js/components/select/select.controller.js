@@ -47,7 +47,6 @@ vhxm.components.shared.select.controller = function(opts) {
     api(self);
 
     $(window).on('quartz:select:open', () => {
-      console.log('event');
       self.state.isDropdownOpen(false);
     });
   };
