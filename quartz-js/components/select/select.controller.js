@@ -45,6 +45,10 @@ vhxm.components.shared.select.controller = function(opts) {
     });
 
     api(self);
+
+    $(window).on('quartz:select:open', () => {
+      self.state.isDropdownOpen(false);
+    });
   };
 
   self.selectedLabel = function() {
@@ -92,6 +96,7 @@ vhxm.components.shared.select.controller = function(opts) {
 
     if (!self.state.isDropdownOpen()) {
       self.state.focusInput(opts.focusOnOpen ? opts.focusOnOpen : true);
+      $(window).trigger('quartz:select:open');
     }
 
     self.state.isDropdownOpen(!self.state.isDropdownOpen());
