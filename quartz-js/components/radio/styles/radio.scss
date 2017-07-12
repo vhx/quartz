@@ -92,12 +92,8 @@
       }
     }
     .radio--label {
-      display: inline-block;
+      float: left;
       height: 20px;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      width: 90%;
     }
   }
 

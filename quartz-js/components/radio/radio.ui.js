@@ -23,7 +23,7 @@ vhxm.components.shared.radio.ui.container = {
               for: opts.name + '-' + index,
             }, [
               m.component(vhxm.components.shared.radio.ui.icon),
-              m('span.radio--label.text-left' + (opts.buttons ? '.padding-left-small' : ''), {
+              m('span.radio--label.text-left' + (opts.buttons ? '.padding-left-small' : '') + (opts.stacked ? '.truncate.truncate--xlarge' : ''), {
                 style: {
                   marginTop: (!opts.buttons || (opts.buttons && item.label.title)) ? '0px' : '8px'
                 }
