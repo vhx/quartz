@@ -46,7 +46,7 @@ vhxm.components.shared.radio.ui.container = {
         checked: is_checked
       }), m('label' + (opts.buttons ? '.btn-' + (is_checked ? 'teal' : 'gray') + '.btn--fill.btn-radio.margin-bottom-medium' : ''), {
         for: opts.name + '-' + index
-      }, [m.component(vhxm.components.shared.radio.ui.icon), m('span.radio--label.text-left' + (opts.buttons ? '.padding-left-small' : ''), {
+      }, [m.component(vhxm.components.shared.radio.ui.icon), m('span.radio--label.text-left' + (opts.buttons ? '.padding-left-small' : '') + (opts.stacked ? '.truncate.truncate--xlarge' : ''), {
         style: {
           marginTop: !opts.buttons || opts.buttons && item.label.title ? '0px' : '8px'
         }

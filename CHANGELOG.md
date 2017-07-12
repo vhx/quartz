@@ -1,3 +1,7 @@
+### 1.2.12
+**2017-07-12**
+* Revert 1.2.10 which caused a regression for non-stacked radios. Non-breaking implementation uses `.truncate` instead
+
 ### 1.2.11
 **2017-07-07**
 * Fixed issue where opening a new select dropdown would not close open select dropdowns

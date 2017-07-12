@@ -125,12 +125,8 @@
           border-radius: 10px; }
     .form .radio-gray label .radio--label,
     .form .radio-teal label .radio--label {
-      display: inline-block;
-      height: 20px;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      width: 90%; }
+      float: left;
+      height: 20px; }
   .form .radio-gray input[type="radio"]:checked + label .radio--icon .circle-top, .form .radio-gray input[type="radio"]:checked + label .radio--icon .circle-bottom,
   .form .radio-teal input[type="radio"]:checked + label .radio--icon .circle-top,
   .form .radio-teal input[type="radio"]:checked + label .radio--icon .circle-bottom {
