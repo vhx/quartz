@@ -31,7 +31,8 @@ When adding future SCSS partials, the order matters.  Most widely used styles ar
 // Not sure if dropdown is currently being used.
 // @import "dropdowns/styles/dropdowns";
 @import "forms/styles/forms";
-@import "headers/styles/headers";
+/* Not sure if Headers is being used, also needs refactor like whoa */
+// @import "headers/styles/headers";
 @import "images/styles/images";
 @import "lists/styles/pagination";
 @import "lists/styles/tags";
