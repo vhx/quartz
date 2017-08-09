@@ -1,4 +1,11 @@
 /* generated with grunt-sass-globbing */
+
+/*
+NOTE:
+
+When adding future SCSS partials, the order matters.  Most widely used styles are at the top down to the more specific at the bottom. Pls consider this when adding new components or styles.
+
+*/
 // foundation/grid
 @import "foundation/styles/normalize";
 @import "foundation/styles/foundation";
