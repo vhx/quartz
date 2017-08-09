@@ -26,11 +26,9 @@ When adding future SCSS partials, the order matters.  Most widely used styles ar
 @import "buttons/styles/block";
 @import "buttons/styles/default";
 @import "charts/styles/bars";
-
 @import "dropdowns/styles/dropdowns";
 @import "forms/styles/input";
 @import "forms/styles/select";
-
 @import "headers/styles/headers";
 @import "icons/styles/icons";
 @import "images/styles/images";
