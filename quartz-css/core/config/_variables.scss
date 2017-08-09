@@ -45,3 +45,16 @@ $xlarge-only: "#{$screen} and (min-width:#{lower-bound($xlarge-range)}) and (max
 
 $xxlarge-up: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)})";
 $xxlarge-only: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)}) and (max-width:#{upper-bound($xxlarge-range)})";
+
+
+/*.....................................
+  Icon Sizes
+......................................*/
+
+$icon-xxsmall: 10px;
+$icon-xsmall: 15px;
+$icon-small: 25px;
+$icon-medium: 35px;
+$icon-large: 45px;
+$icon-xlarge: 55px;
+$icon-xxlarge: 65px;

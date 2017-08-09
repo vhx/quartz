@@ -2013,6 +2013,9 @@ h1, h2, h3, h4, h5, h6, p {
 /* .....................................
   Media Query Ranges
 ..................................... */
+/*.....................................
+  Icon Sizes
+......................................*/
 /* .....................................
   Fonts
 ..................................... */
@@ -2022,6 +2025,9 @@ h1, h2, h3, h4, h5, h6, p {
 /* .....................................
   Media Query Ranges
 ..................................... */
+/*.....................................
+  Icon Sizes
+......................................*/
 /* .....................................
   Colors - Grays
 ..................................... */
@@ -2047,6 +2053,21 @@ h1, h2, h3, h4, h5, h6, p {
  ......................................*/
 /* button colors
  ......................................*/
+/*.....................................
+  Icon Extends
+......................................*/
+.btn-dropdown-gray:hover, .btn-dropdown-white, .btn-dropdown-white:hover {
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Cpath%20fill%3D%22%23375667%22%20d%3D%22M4.38%203.68l11.387%2011.383-4.242%204.243L.14%207.925z%22%3E%3C%2Fpath%3E%3Cpath%20fill%3D%22%23375667%22%20d%3D%22M22.853%207.933L11.47%2019.318l-4.244-4.243L18.61%203.69z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat; }
+
+.btn-dropdown-teal, .btn-dropdown-teal:hover {
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M4.38%203.68l11.387%2011.383-4.242%204.243L.14%207.925z%22%3E%3C%2Fpath%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M22.853%207.933L11.47%2019.318l-4.244-4.243L18.61%203.69z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat; }
+
+.btn-search {
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Cpath%20d%3D%22M21.8%2019.5L17.4%2015c-.6.9-1.5%201.7-2.4%202.4l4.5%204.4c1.4%201.6%203.8-.8%202.3-2.3z%22%20fill%3D%22%23375667%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M15%2017.4c4.4-3%205.2-9.4%201.8-13.4C13.8.5%208.6-.3%204.7%202.3.9%204.7-.4%209.9%201.7%2014c2.2%204.4%207.7%206.2%2012.1%204.1.4-.2.8-.5%201.2-.7zm-5.2-1.7C6.7%2015.7%204%2013%204%209.8%204%206.7%206.7%204%209.8%204c3.2%200%205.8%202.7%205.8%205.8.1%203.2-2.6%205.9-5.8%205.9z%22%20fill%3D%22%23375667%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M9.8%202.2c4.2%200%207.7%203.4%207.7%207.7%200%201.5-.5%203.1-1.4%204.3-.5.7-1%201.3-1.7%201.8l-.3.2c-1.2.9-2.8%201.3-4.3%201.3-4.2%200-7.7-3.4-7.7-7.7.1-4.2%203.5-7.6%207.7-7.6m0-1.5C4.7.7.6%204.8.6%209.9s4.1%209.2%209.2%209.2c1.8%200%203.7-.6%205.2-1.6.9-.6%201.7-1.4%202.3-2.4%201.1-1.5%201.6-3.3%201.6-5.2.1-5.1-4-9.2-9.1-9.2z%22%20fill%3D%22%23375667%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat; }
+
 /* .....................................
   Fonts
 ..................................... */
@@ -2056,6 +2077,9 @@ h1, h2, h3, h4, h5, h6, p {
 /* .....................................
   Media Query Ranges
 ..................................... */
+/*.....................................
+  Icon Sizes
+......................................*/
 /* .....................................
   Colors - Grays
 ..................................... */
@@ -2171,6 +2195,9 @@ hr.column {
 /* .....................................
   Media Query Ranges
 ..................................... */
+/*.....................................
+  Icon Sizes
+......................................*/
 /* .....................................
   Colors - Grays
 ..................................... */
@@ -2283,6 +2310,9 @@ html {
 /* .....................................
   Media Query Ranges
 ..................................... */
+/*.....................................
+  Icon Sizes
+......................................*/
 /* .....................................
   Colors - Grays
 ..................................... */
@@ -2819,6 +2849,9 @@ html {
 /* .....................................
   Media Query Ranges
 ..................................... */
+/*.....................................
+  Icon Sizes
+......................................*/
 /* .....................................
   Colors - Grays
 ..................................... */
@@ -3113,6 +3146,9 @@ html {
 /* .....................................
   Media Query Ranges
 ..................................... */
+/*.....................................
+  Icon Sizes
+......................................*/
 /* .....................................
   Colors - Grays
 ..................................... */
@@ -3164,6 +3200,9 @@ ul, ol {
 /* .....................................
   Media Query Ranges
 ..................................... */
+/*.....................................
+  Icon Sizes
+......................................*/
 /* .....................................
   Colors - Grays
 ..................................... */
@@ -3415,55 +3454,235 @@ object, embed, [data-clipboard] {
 .radius {
   border-radius: 5px; }
 
-/* .....................................
-  Fonts
-..................................... */
-/* .....................................
-  Sets
-..................................... */
-/* .....................................
-  Media Query Ranges
-..................................... */
-/* .....................................
-  Colors - Grays
-..................................... */
-/* .....................................
-  Colors - Teals
-..................................... */
-/* .....................................
-  Colors - Red
-..................................... */
-/* .....................................
-  Colors - Navy
-..................................... */
-/* .....................................
-  Colors - Brand Palette
-..................................... */
-/* .....................................
-  Colors - External Palette
-..................................... */
-/* helper function for margin and padding
-......................................*/
+/* Icon fonts are used in buttons, pls note */
 /*.....................................
-   BUTTON MIXINS
- ......................................*/
-/* button colors
- ......................................*/
-.btn-dropdown-gray:hover, .btn-dropdown-white, .btn-dropdown-white:hover {
-  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Cpath%20fill%3D%22%23375667%22%20d%3D%22M4.38%203.68l11.387%2011.383-4.242%204.243L.14%207.925z%22%3E%3C%2Fpath%3E%3Cpath%20fill%3D%22%23375667%22%20d%3D%22M22.853%207.933L11.47%2019.318l-4.244-4.243L18.61%203.69z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
-  background-repeat: no-repeat; }
+  Stand-alone icons using <i>
+......................................*/
+.icon.is-loading, .icon.is-processing,
+.icon-circle.is-loading,
+.icon-circle.is-processing {
+  background-image: none; }
 
-.btn-dropdown-teal, .btn-dropdown-teal:hover {
-  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M4.38%203.68l11.387%2011.383-4.242%204.243L.14%207.925z%22%3E%3C%2Fpath%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M22.853%207.933L11.47%2019.318l-4.244-4.243L18.61%203.69z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
-  background-repeat: no-repeat; }
+.icon {
+  display: inline-block;
+  background-position: 50% 50%;
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+  text-indent: -9999px; }
+  .icon.icon--xxsmall {
+    width: 10px;
+    height: 10px; }
+  .icon.icon--xsmall {
+    width: 15px;
+    height: 15px; }
+  .icon.icon--small {
+    width: 25px;
+    height: 25px; }
+  .icon.icon--medium {
+    width: 35px;
+    height: 35px; }
+  .icon.icon--large {
+    width: 45px;
+    height: 45px; }
+  .icon.icon--xlarge {
+    width: 55px;
+    height: 55px; }
+  .icon.icon--xxlarge {
+    width: 65px;
+    height: 65px; }
 
-.btn-search {
-  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Cpath%20d%3D%22M21.8%2019.5L17.4%2015c-.6.9-1.5%201.7-2.4%202.4l4.5%204.4c1.4%201.6%203.8-.8%202.3-2.3z%22%20fill%3D%22%23375667%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M15%2017.4c4.4-3%205.2-9.4%201.8-13.4C13.8.5%208.6-.3%204.7%202.3.9%204.7-.4%209.9%201.7%2014c2.2%204.4%207.7%206.2%2012.1%204.1.4-.2.8-.5%201.2-.7zm-5.2-1.7C6.7%2015.7%204%2013%204%209.8%204%206.7%206.7%204%209.8%204c3.2%200%205.8%202.7%205.8%205.8.1%203.2-2.6%205.9-5.8%205.9z%22%20fill%3D%22%23375667%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M9.8%202.2c4.2%200%207.7%203.4%207.7%207.7%200%201.5-.5%203.1-1.4%204.3-.5.7-1%201.3-1.7%201.8l-.3.2c-1.2.9-2.8%201.3-4.3%201.3-4.2%200-7.7-3.4-7.7-7.7.1-4.2%203.5-7.6%207.7-7.6m0-1.5C4.7.7.6%204.8.6%209.9s4.1%209.2%209.2%209.2c1.8%200%203.7-.6%205.2-1.6.9-.6%201.7-1.4%202.3-2.4%201.1-1.5%201.6-3.3%201.6-5.2.1-5.1-4-9.2-9.1-9.2z%22%20fill%3D%22%23375667%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
-  background-repeat: no-repeat; }
+/* sizes
+......................................*/
+.icon--left {
+  padding-left: 30px; }
+
+.icon--right {
+  padding-right: 30px; }
+
+.icon--xxsmall {
+  background-size: 10px 10px; }
+  .icon--xxsmall.text-1 {
+    line-height: 24px; }
+  .icon--xxsmall.text-2 {
+    line-height: 22px; }
+  .icon--xxsmall.text-3 {
+    line-height: 18px; }
+  .icon--xxsmall.head-1 {
+    line-height: 40px; }
+  .icon--xxsmall.head-2 {
+    line-height: 30px; }
+  .icon--xxsmall.head-3 {
+    line-height: 22px; }
+  .icon--xxsmall.head-4 {
+    line-height: 16px; }
+  .icon--xxsmall.icon--left {
+    padding-left: 15px; }
+  .icon--xxsmall.icon--right {
+    padding-right: 15px; }
+
+.icon--xsmall {
+  background-size: 15px 15px; }
+  .icon--xsmall.text-1 {
+    line-height: 24px; }
+  .icon--xsmall.text-2 {
+    line-height: 22px; }
+  .icon--xsmall.text-3 {
+    line-height: 18px; }
+  .icon--xsmall.head-1 {
+    line-height: 40px; }
+  .icon--xsmall.head-2 {
+    line-height: 30px; }
+  .icon--xsmall.head-3 {
+    line-height: 22px; }
+  .icon--xsmall.head-4 {
+    line-height: 16px; }
+  .icon--xsmall.icon--left {
+    padding-left: 25px; }
+  .icon--xsmall.icon--right {
+    padding-right: 25px; }
+
+.icon--small {
+  background-size: 25px 25px;
+  line-height: 25px !important; }
+  .icon--small.text-1 {
+    line-height: 24px !important; }
+  .icon--small.head-1 {
+    line-height: 40px !important; }
+  .icon--small.head-2 {
+    line-height: 30px !important; }
+  .icon--small.icon--left {
+    padding-left: 30px; }
+  .icon--small.icon--right {
+    padding-right: 30px; }
+
+.icon--medium {
+  background-size: 35px 35px;
+  line-height: 35px !important; }
+  .icon--medium.head-1 {
+    line-height: 40px !important; }
+  .icon--medium.icon--left {
+    padding-left: 40px; }
+  .icon--medium.icon--right {
+    padding-right: 40px; }
+
+.icon--large {
+  background-size: 45px 45px;
+  line-height: 45px !important; }
+  .icon--large.icon--left {
+    padding-left: 45px; }
+  .icon--large.icon--right {
+    padding-right: 45px; }
+
+.icon--xlarge {
+  background-size: 55px 55px;
+  line-height: 55px !important; }
+  .icon--xlarge.icon--left {
+    padding-left: 54px; }
+  .icon--xlarge.icon--right {
+    padding-right: 54px; }
+
+.icon--xxsmall.icon--left,
+.icon--xsmall.icon--left,
+.icon--small.icon--left,
+.icon--medium.icon--left,
+.icon--large.icon--left,
+.icon--xlarge.icon--left {
+  background-position: 0 center; }
+
+.icon--xxsmall.icon--right,
+.icon--xsmall.icon--right,
+.icon--small.icon--right,
+.icon--medium.icon--right,
+.icon--large.icon--right,
+.icon--xlarge.icon--right {
+  display: inline-block;
+  background-position: 100% center; }
 
 /*.....................................
-  Icon Sizes
+  Icon Circle
 ......................................*/
+.icon-circle {
+  border-radius: 50%;
+  border: 1px solid #D7DDE1;
+  box-sizing: content-box;
+  display: inline-block;
+  background-position: 50% 50% !important; }
+  .icon-circle.icon--xxsmall {
+    padding: 3px;
+    background-size: 10px 10px;
+    width: 10px;
+    height: 10px; }
+  .icon-circle.icon--xsmall {
+    padding: 5px;
+    background-size: 15px 15px;
+    width: 15px;
+    height: 15px; }
+  .icon-circle.icon--small {
+    padding: 10px;
+    background-size: 25px 25px;
+    width: 25px;
+    height: 25px; }
+  .icon-circle.icon--medium {
+    padding: 15px;
+    background-size: 35px 35px;
+    width: 35px;
+    height: 35px; }
+  .icon-circle.icon--large {
+    padding: 20px;
+    background-size: 45px 45px;
+    width: 45px;
+    height: 45px; }
+  .icon-circle.icon--xlarge {
+    padding: 25px;
+    background-size: 55px 55px;
+    width: 55px;
+    height: 55px; }
+  .icon-circle.icon--xxlarge {
+    padding: 35px;
+    background-size: 65px 65px;
+    width: 65px;
+    height: 65px; }
+
+/*.....................................
+  Icon Dot
+......................................*/
+.icon-dot {
+  border-radius: 50%;
+  background-color: #22B9B0;
+  box-sizing: content-box;
+  display: inline-block;
+  background-position: 50% 50% !important;
+  width: 10px;
+  height: 10px; }
+  .icon-dot.icon--small {
+    width: 10px;
+    height: 10px; }
+  .icon-dot.icon--medium {
+    width: 15px;
+    height: 15px; }
+  .icon-dot.icon--large {
+    width: 25px;
+    height: 25px; }
+
+.icon-dot--teal {
+  background-color: #22B9B0; }
+
+.icon-dot--navy {
+  background-color: #00142B; }
+
+.icon-dot--green {
+  background-color: #9DBB36; }
+
+.icon-dot--gray {
+  background-color: #D7DDE1; }
+
+.icon-dot--red {
+  background-color: #D3104A; }
+
+.icon-dot--yellow {
+  background-color: #FFB567; }
+
 /*.....................................
   BLOCK BUTTONS
 ......................................*/
@@ -3530,55 +3749,6 @@ object, embed, [data-clipboard] {
     color: #5E7887;
     box-shadow: inset 0px -4px 0px #5E7887; }
 
-/* .....................................
-  Fonts
-..................................... */
-/* .....................................
-  Sets
-..................................... */
-/* .....................................
-  Media Query Ranges
-..................................... */
-/* .....................................
-  Colors - Grays
-..................................... */
-/* .....................................
-  Colors - Teals
-..................................... */
-/* .....................................
-  Colors - Red
-..................................... */
-/* .....................................
-  Colors - Navy
-..................................... */
-/* .....................................
-  Colors - Brand Palette
-..................................... */
-/* .....................................
-  Colors - External Palette
-..................................... */
-/* helper function for margin and padding
-......................................*/
-/*.....................................
-   BUTTON MIXINS
- ......................................*/
-/* button colors
- ......................................*/
-.btn-dropdown-gray:hover, .btn-dropdown-white, .btn-dropdown-white:hover {
-  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Cpath%20fill%3D%22%23375667%22%20d%3D%22M4.38%203.68l11.387%2011.383-4.242%204.243L.14%207.925z%22%3E%3C%2Fpath%3E%3Cpath%20fill%3D%22%23375667%22%20d%3D%22M22.853%207.933L11.47%2019.318l-4.244-4.243L18.61%203.69z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
-  background-repeat: no-repeat; }
-
-.btn-dropdown-teal, .btn-dropdown-teal:hover {
-  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M4.38%203.68l11.387%2011.383-4.242%204.243L.14%207.925z%22%3E%3C%2Fpath%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M22.853%207.933L11.47%2019.318l-4.244-4.243L18.61%203.69z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
-  background-repeat: no-repeat; }
-
-.btn-search {
-  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Cpath%20d%3D%22M21.8%2019.5L17.4%2015c-.6.9-1.5%201.7-2.4%202.4l4.5%204.4c1.4%201.6%203.8-.8%202.3-2.3z%22%20fill%3D%22%23375667%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M15%2017.4c4.4-3%205.2-9.4%201.8-13.4C13.8.5%208.6-.3%204.7%202.3.9%204.7-.4%209.9%201.7%2014c2.2%204.4%207.7%206.2%2012.1%204.1.4-.2.8-.5%201.2-.7zm-5.2-1.7C6.7%2015.7%204%2013%204%209.8%204%206.7%206.7%204%209.8%204c3.2%200%205.8%202.7%205.8%205.8.1%203.2-2.6%205.9-5.8%205.9z%22%20fill%3D%22%23375667%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M9.8%202.2c4.2%200%207.7%203.4%207.7%207.7%200%201.5-.5%203.1-1.4%204.3-.5.7-1%201.3-1.7%201.8l-.3.2c-1.2.9-2.8%201.3-4.3%201.3-4.2%200-7.7-3.4-7.7-7.7.1-4.2%203.5-7.6%207.7-7.6m0-1.5C4.7.7.6%204.8.6%209.9s4.1%209.2%209.2%209.2c1.8%200%203.7-.6%205.2-1.6.9-.6%201.7-1.4%202.3-2.4%201.1-1.5%201.6-3.3%201.6-5.2.1-5.1-4-9.2-9.1-9.2z%22%20fill%3D%22%23375667%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
-  background-repeat: no-repeat; }
-
-/*.....................................
-  Icon Sizes
-......................................*/
 /*.....................................
   BUTTONS
 ......................................*/
@@ -4620,6 +4790,9 @@ select {
 /* .....................................
   Media Query Ranges
 ..................................... */
+/*.....................................
+  Icon Sizes
+......................................*/
 /* .....................................
   Colors - Grays
 ..................................... */
@@ -4673,6 +4846,9 @@ select {
 /* .....................................
   Media Query Ranges
 ..................................... */
+/*.....................................
+  Icon Sizes
+......................................*/
 /* .....................................
   Colors - Grays
 ..................................... */
@@ -4781,6 +4957,9 @@ select {
 /* .....................................
   Media Query Ranges
 ..................................... */
+/*.....................................
+  Icon Sizes
+......................................*/
 /* .....................................
   Colors - Grays
 ..................................... */
@@ -5138,6 +5317,9 @@ select {
 /* .....................................
   Media Query Ranges
 ..................................... */
+/*.....................................
+  Icon Sizes
+......................................*/
 /* .....................................
   Colors - Grays
 ..................................... */
@@ -5179,6 +5361,9 @@ select {
 /* .....................................
   Media Query Ranges
 ..................................... */
+/*.....................................
+  Icon Sizes
+......................................*/
 /* .....................................
   Colors - Grays
 ..................................... */
@@ -5320,283 +5505,9 @@ a.head--white:hover, a.head--white:active {
 /* .....................................
   Media Query Ranges
 ..................................... */
-/* .....................................
-  Colors - Grays
-..................................... */
-/* .....................................
-  Colors - Teals
-..................................... */
-/* .....................................
-  Colors - Red
-..................................... */
-/* .....................................
-  Colors - Navy
-..................................... */
-/* .....................................
-  Colors - Brand Palette
-..................................... */
-/* .....................................
-  Colors - External Palette
-..................................... */
-/* helper function for margin and padding
-......................................*/
-/*.....................................
-   BUTTON MIXINS
- ......................................*/
-/* button colors
- ......................................*/
-.btn-dropdown-gray:hover, .btn-dropdown-white, .btn-dropdown-white:hover {
-  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Cpath%20fill%3D%22%23375667%22%20d%3D%22M4.38%203.68l11.387%2011.383-4.242%204.243L.14%207.925z%22%3E%3C%2Fpath%3E%3Cpath%20fill%3D%22%23375667%22%20d%3D%22M22.853%207.933L11.47%2019.318l-4.244-4.243L18.61%203.69z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
-  background-repeat: no-repeat; }
-
-.btn-dropdown-teal, .btn-dropdown-teal:hover {
-  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M4.38%203.68l11.387%2011.383-4.242%204.243L.14%207.925z%22%3E%3C%2Fpath%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M22.853%207.933L11.47%2019.318l-4.244-4.243L18.61%203.69z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
-  background-repeat: no-repeat; }
-
-.btn-search {
-  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Cpath%20d%3D%22M21.8%2019.5L17.4%2015c-.6.9-1.5%201.7-2.4%202.4l4.5%204.4c1.4%201.6%203.8-.8%202.3-2.3z%22%20fill%3D%22%23375667%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M15%2017.4c4.4-3%205.2-9.4%201.8-13.4C13.8.5%208.6-.3%204.7%202.3.9%204.7-.4%209.9%201.7%2014c2.2%204.4%207.7%206.2%2012.1%204.1.4-.2.8-.5%201.2-.7zm-5.2-1.7C6.7%2015.7%204%2013%204%209.8%204%206.7%206.7%204%209.8%204c3.2%200%205.8%202.7%205.8%205.8.1%203.2-2.6%205.9-5.8%205.9z%22%20fill%3D%22%23375667%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M9.8%202.2c4.2%200%207.7%203.4%207.7%207.7%200%201.5-.5%203.1-1.4%204.3-.5.7-1%201.3-1.7%201.8l-.3.2c-1.2.9-2.8%201.3-4.3%201.3-4.2%200-7.7-3.4-7.7-7.7.1-4.2%203.5-7.6%207.7-7.6m0-1.5C4.7.7.6%204.8.6%209.9s4.1%209.2%209.2%209.2c1.8%200%203.7-.6%205.2-1.6.9-.6%201.7-1.4%202.3-2.4%201.1-1.5%201.6-3.3%201.6-5.2.1-5.1-4-9.2-9.1-9.2z%22%20fill%3D%22%23375667%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
-  background-repeat: no-repeat; }
-
 /*.....................................
   Icon Sizes
 ......................................*/
-/*.....................................
-  Stand-alone icons using <i>
-......................................*/
-.icon.is-loading, .icon.is-processing,
-.icon-circle.is-loading,
-.icon-circle.is-processing {
-  background-image: none; }
-
-.icon {
-  display: inline-block;
-  background-position: 50% 50%;
-  background-size: contain;
-  width: 25px;
-  height: 25px;
-  text-indent: -9999px; }
-  .icon.icon--xxsmall {
-    width: 10px;
-    height: 10px; }
-  .icon.icon--xsmall {
-    width: 15px;
-    height: 15px; }
-  .icon.icon--small {
-    width: 25px;
-    height: 25px; }
-  .icon.icon--medium {
-    width: 35px;
-    height: 35px; }
-  .icon.icon--large {
-    width: 45px;
-    height: 45px; }
-  .icon.icon--xlarge {
-    width: 55px;
-    height: 55px; }
-  .icon.icon--xxlarge {
-    width: 65px;
-    height: 65px; }
-
-/* sizes
-......................................*/
-.icon--left {
-  padding-left: 30px; }
-
-.icon--right {
-  padding-right: 30px; }
-
-.icon--xxsmall {
-  background-size: 10px 10px; }
-  .icon--xxsmall.text-1 {
-    line-height: 24px; }
-  .icon--xxsmall.text-2 {
-    line-height: 22px; }
-  .icon--xxsmall.text-3 {
-    line-height: 18px; }
-  .icon--xxsmall.head-1 {
-    line-height: 40px; }
-  .icon--xxsmall.head-2 {
-    line-height: 30px; }
-  .icon--xxsmall.head-3 {
-    line-height: 22px; }
-  .icon--xxsmall.head-4 {
-    line-height: 16px; }
-  .icon--xxsmall.icon--left {
-    padding-left: 15px; }
-  .icon--xxsmall.icon--right {
-    padding-right: 15px; }
-
-.icon--xsmall {
-  background-size: 15px 15px; }
-  .icon--xsmall.text-1 {
-    line-height: 24px; }
-  .icon--xsmall.text-2 {
-    line-height: 22px; }
-  .icon--xsmall.text-3 {
-    line-height: 18px; }
-  .icon--xsmall.head-1 {
-    line-height: 40px; }
-  .icon--xsmall.head-2 {
-    line-height: 30px; }
-  .icon--xsmall.head-3 {
-    line-height: 22px; }
-  .icon--xsmall.head-4 {
-    line-height: 16px; }
-  .icon--xsmall.icon--left {
-    padding-left: 25px; }
-  .icon--xsmall.icon--right {
-    padding-right: 25px; }
-
-.icon--small {
-  background-size: 25px 25px;
-  line-height: 25px !important; }
-  .icon--small.text-1 {
-    line-height: 24px !important; }
-  .icon--small.head-1 {
-    line-height: 40px !important; }
-  .icon--small.head-2 {
-    line-height: 30px !important; }
-  .icon--small.icon--left {
-    padding-left: 30px; }
-  .icon--small.icon--right {
-    padding-right: 30px; }
-
-.icon--medium {
-  background-size: 35px 35px;
-  line-height: 35px !important; }
-  .icon--medium.head-1 {
-    line-height: 40px !important; }
-  .icon--medium.icon--left {
-    padding-left: 40px; }
-  .icon--medium.icon--right {
-    padding-right: 40px; }
-
-.icon--large {
-  background-size: 45px 45px;
-  line-height: 45px !important; }
-  .icon--large.icon--left {
-    padding-left: 45px; }
-  .icon--large.icon--right {
-    padding-right: 45px; }
-
-.icon--xlarge {
-  background-size: 55px 55px;
-  line-height: 55px !important; }
-  .icon--xlarge.icon--left {
-    padding-left: 54px; }
-  .icon--xlarge.icon--right {
-    padding-right: 54px; }
-
-.icon--xxsmall.icon--left,
-.icon--xsmall.icon--left,
-.icon--small.icon--left,
-.icon--medium.icon--left,
-.icon--large.icon--left,
-.icon--xlarge.icon--left {
-  background-position: 0 center; }
-
-.icon--xxsmall.icon--right,
-.icon--xsmall.icon--right,
-.icon--small.icon--right,
-.icon--medium.icon--right,
-.icon--large.icon--right,
-.icon--xlarge.icon--right {
-  display: inline-block;
-  background-position: 100% center; }
-
-/*.....................................
-  Icon Circle
-......................................*/
-.icon-circle {
-  border-radius: 50%;
-  border: 1px solid #D7DDE1;
-  box-sizing: content-box;
-  display: inline-block;
-  background-position: 50% 50% !important; }
-  .icon-circle.icon--xxsmall {
-    padding: 3px;
-    background-size: 10px 10px;
-    width: 10px;
-    height: 10px; }
-  .icon-circle.icon--xsmall {
-    padding: 5px;
-    background-size: 15px 15px;
-    width: 15px;
-    height: 15px; }
-  .icon-circle.icon--small {
-    padding: 10px;
-    background-size: 25px 25px;
-    width: 25px;
-    height: 25px; }
-  .icon-circle.icon--medium {
-    padding: 15px;
-    background-size: 35px 35px;
-    width: 35px;
-    height: 35px; }
-  .icon-circle.icon--large {
-    padding: 20px;
-    background-size: 45px 45px;
-    width: 45px;
-    height: 45px; }
-  .icon-circle.icon--xlarge {
-    padding: 25px;
-    background-size: 55px 55px;
-    width: 55px;
-    height: 55px; }
-  .icon-circle.icon--xxlarge {
-    padding: 35px;
-    background-size: 65px 65px;
-    width: 65px;
-    height: 65px; }
-
-/*.....................................
-  Icon Dot
-......................................*/
-.icon-dot {
-  border-radius: 50%;
-  background-color: #22B9B0;
-  box-sizing: content-box;
-  display: inline-block;
-  background-position: 50% 50% !important;
-  width: 10px;
-  height: 10px; }
-  .icon-dot.icon--small {
-    width: 10px;
-    height: 10px; }
-  .icon-dot.icon--medium {
-    width: 15px;
-    height: 15px; }
-  .icon-dot.icon--large {
-    width: 25px;
-    height: 25px; }
-
-.icon-dot--teal {
-  background-color: #22B9B0; }
-
-.icon-dot--navy {
-  background-color: #00142B; }
-
-.icon-dot--green {
-  background-color: #9DBB36; }
-
-.icon-dot--gray {
-  background-color: #D7DDE1; }
-
-.icon-dot--red {
-  background-color: #D3104A; }
-
-.icon-dot--yellow {
-  background-color: #FFB567; }
-
-/* .....................................
-  Fonts
-..................................... */
-/* .....................................
-  Sets
-..................................... */
-/* .....................................
-  Media Query Ranges
-..................................... */
 /* .....................................
   Colors - Grays
 ..................................... */
@@ -5703,6 +5614,9 @@ a.head--white:hover, a.head--white:active {
 /* .....................................
   Media Query Ranges
 ..................................... */
+/*.....................................
+  Icon Sizes
+......................................*/
 /* .....................................
   Colors - Grays
 ..................................... */
@@ -5770,6 +5684,9 @@ a.head--white:hover, a.head--white:active {
 /* .....................................
   Media Query Ranges
 ..................................... */
+/*.....................................
+  Icon Sizes
+......................................*/
 /* .....................................
   Colors - Grays
 ..................................... */
@@ -5978,6 +5895,9 @@ a.head--white:hover, a.head--white:active {
 /* .....................................
   Media Query Ranges
 ..................................... */
+/*.....................................
+  Icon Sizes
+......................................*/
 /* .....................................
   Colors - Grays
 ..................................... */
@@ -6188,6 +6108,9 @@ a.head--white:hover, a.head--white:active {
 /* .....................................
   Media Query Ranges
 ..................................... */
+/*.....................................
+  Icon Sizes
+......................................*/
 /* .....................................
   Colors - Grays
 ..................................... */
@@ -6556,6 +6479,9 @@ a.text--blue.is-disabled:link, a.text--blue.is-disabled:visited, a.text--blue.is
 /* .....................................
   Media Query Ranges
 ..................................... */
+/*.....................................
+  Icon Sizes
+......................................*/
 /* .....................................
   Colors - Grays
 ..................................... */

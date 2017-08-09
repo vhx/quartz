@@ -13,6 +13,8 @@ When adding future SCSS partials, the order matters.  Most widely used styles ar
 // core styles
 @import "core/config/variables";
 @import "core/config/mixins";
+@import "core/config/extends";
+
 @import "core/styles/utils";
 @import "core/styles/grid";
 @import "core/styles/spacing";
@@ -23,6 +25,8 @@ When adding future SCSS partials, the order matters.  Most widely used styles ar
 // component styles
 @import "backgrounds/styles/backgrounds";
 @import "borders/styles/borders";
+/* Icon fonts are used in buttons, pls note */
+@import "icons/styles/icons";
 @import "buttons/styles/block";
 @import "buttons/styles/default";
 @import "charts/styles/bars";
@@ -30,7 +34,6 @@ When adding future SCSS partials, the order matters.  Most widely used styles ar
 @import "forms/styles/input";
 @import "forms/styles/select";
 @import "headers/styles/headers";
-@import "icons/styles/icons";
 @import "images/styles/images";
 @import "lists/styles/pagination";
 @import "lists/styles/tags";
