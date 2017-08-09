@@ -5,6 +5,8 @@ NOTE:
 
 When adding future SCSS partials, the order matters.  Most widely used styles are at the top down to the more specific at the bottom. Pls consider this when adding new components or styles.
 
+also note the underscores on partials.  If you need a standalone version of these files, you may opt not to use one.  https://stackoverflow.com/questions/31311147/underscore-in-partial-sass-file
+
 */
 // foundation/grid
 @import "foundation/styles/normalize";
@@ -15,12 +17,13 @@ When adding future SCSS partials, the order matters.  Most widely used styles ar
 @import "core/config/mixins";
 @import "core/config/extends";
 
+// can any of these be refactored into other components?
 @import "core/styles/utils";
 @import "core/styles/grid";
 @import "core/styles/spacing";
 @import "core/styles/arrows";
 @import "core/styles/lists";
-@import "core/styles/media";z
+@import "core/styles/media";
 
 // component styles
 @import "backgrounds/styles/backgrounds";
