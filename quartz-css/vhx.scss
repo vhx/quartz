@@ -1,21 +1,29 @@
 /* generated with grunt-sass-globbing */
+// foundation/grid
+@import "foundation/styles/normalize";
+@import "foundation/styles/foundation";
 
+// core styles
+@import "core/config/variables";
+@import "core/config/mixins";
+@import "core/styles/utils";
+@import "core/styles/grid";
+@import "core/styles/spacing";
+@import "core/styles/arrows";
+@import "core/styles/lists";
+@import "core/styles/media";
+
+// component styles
 @import "backgrounds/styles/backgrounds";
 @import "borders/styles/borders";
 @import "buttons/styles/block";
 @import "buttons/styles/default";
 @import "charts/styles/bars";
-@import "core/styles/arrows";
-@import "core/styles/grid";
-@import "core/styles/lists";
-@import "core/styles/media";
-@import "core/styles/spacing";
-@import "core/styles/utils";
+
 @import "dropdowns/styles/dropdowns";
 @import "forms/styles/input";
 @import "forms/styles/select";
-@import "foundation/styles/foundation";
-@import "foundation/styles/normalize";
+
 @import "headers/styles/headers";
 @import "icons/styles/icons";
 @import "images/styles/images";
