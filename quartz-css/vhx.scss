@@ -28,7 +28,7 @@ When adding future SCSS partials, the order matters.  Most widely used styles ar
 /* Icon fonts are used in buttons, pls note */
 @import "icons/styles/icons";
 @import "buttons/styles/buttons";
-@import "charts/styles/bars";
+@import "charts/styles/charts";
 @import "dropdowns/styles/dropdowns";
 @import "forms/styles/input";
 @import "forms/styles/select";
