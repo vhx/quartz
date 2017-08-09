@@ -30,8 +30,7 @@ When adding future SCSS partials, the order matters.  Most widely used styles ar
 @import "charts/styles/charts";
 // Not sure if dropdown is currently being used.
 // @import "dropdowns/styles/dropdowns";
-@import "forms/styles/input";
-@import "forms/styles/select";
+@import "forms/styles/forms";
 @import "headers/styles/headers";
 @import "images/styles/images";
 @import "lists/styles/pagination";
