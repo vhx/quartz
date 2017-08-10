@@ -1,4 +1,53 @@
-@import "../config/include";
+/*.....................................
+  Pagination
+......................................*/
+
+.pagination {
+  display: inline-block;
+  text-align: center;
+  margin: 20px 0px;
+
+  .previous_page, .next_page {
+    font-weight: bold;
+  }
+
+  .disabled {
+    display: none;
+  }
+
+  .current {
+    display: inline-block;
+    background: $gray-3;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-style: normal;
+  }
+
+  i {
+    position: relative;
+    top: 3px;
+  }
+
+  a {
+    display: inline-block;
+    padding: 0 5px;
+  }
+
+  a:link,
+  a:visited {
+    color: $gray-6;
+  }
+
+  a:hover,
+  a:active {
+    font-weight: bold;
+  }
+
+  .gap {
+    color: $gray-6;
+  }
+}
 
 /*.....................................
   Tags

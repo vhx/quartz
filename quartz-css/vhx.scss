@@ -31,14 +31,11 @@ also note the underscores on partials.  If you need a standalone version of thes
 @import "icons/styles/icons";
 @import "buttons/styles/buttons";
 @import "charts/styles/charts";
-// Not sure if dropdown is currently being used.
-// @import "dropdowns/styles/dropdowns";
+@import "dropdowns/styles/dropdowns";
 @import "forms/styles/forms";
 @import "headers/styles/headers";
 @import "images/styles/images";
-// pagination and tags are lists, not sure where used.
-@import "lists/styles/pagination";
-@import "lists/styles/tags";
+@import "lists/styles/lists";
 @import "loaders/styles/loaders";
 @import "tables/styles/tables";
 @import "text/styles/text";
