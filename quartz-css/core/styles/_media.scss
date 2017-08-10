@@ -1,0 +1,35 @@
+/*.....................................
+  Foundation Media Events
+......................................*/
+
+@media only screen and (min-width: 64em) {
+  body:after {
+    content: 'large';
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  body:after {
+    content: 'medium';
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 45em) {
+  body:after {
+    content: 'smedium';
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  body:after {
+    content: 'small';
+    display: none;
+  }
+}
+
+object, embed, [data-clipboard] {
+  outline: 0 !important;
+}

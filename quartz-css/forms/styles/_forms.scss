@@ -1,0 +1,191 @@
+/*.....................................
+  Admin Input
+......................................*/
+.form {
+  fieldset {
+    &.inline {
+      label, .inner-button, input {
+        display: inline-block;
+      }
+    }
+  }
+
+  fieldset.is-disabled,
+  .is-disabled {
+    opacity: 0.4;
+
+    label {
+      cursor: default;
+    }
+  }
+
+  /* labels
+  ...................................*/
+  label {
+    display: block;
+    color: $gray-6;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+
+  /* input fields
+  ...................................*/
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="password"],
+  input[type="number"],
+  textarea {
+    height: 40px;
+    width: 100%;
+    padding: 6px 15px;
+
+    color: $gray-6;
+    font-size: 14px;
+    background-color: #fff;
+    border: 1px solid #d1d9dc;
+    margin-bottom: 0;
+
+    box-shadow: none;
+    box-sizing: border-box;
+    border-radius: 3px;
+    transition: border .2s ease;
+
+    @include placeholder {
+      color: rgba(55, 86, 103, .5) !important;
+      font-weight: normal;
+    }
+
+    &[disabled] {
+      opacity: 0.4;
+    }
+
+    &.is-transparent {
+      border: 1px solid transparent;
+      color: #fff !important;
+      background-color: rgba(255,255,255,0.1);
+    }
+
+    /* has error
+    ...................................*/
+    &.is-error {
+      color: $red;
+
+      border: 1px solid $red;
+
+      &.is-selected {
+        border: 2px solid #cf124c;
+        background-color: #641728;
+      }
+
+      @include placeholder {
+        color: $red !important;
+      }
+    }
+
+    /* + on focus
+    ...................................*/
+    &:focus {
+      outline: none;
+      color: $gray-6;
+
+      border: 1px solid #9aaab4;
+
+      box-shadow: none;
+
+      @include placeholder {
+        color: transparent !important;
+      }
+
+      /* on focus + has error
+      ...................................*/
+      &.is-error {
+        color: $red;
+
+        border: 1px solid $red;
+
+        &.is-selected {
+          border: 2px solid #cf124c;
+          background-color: #641728;
+        }
+
+        @include placeholder {
+          transition: all .2s ease;
+          color: $red !important;
+        }
+      }
+    }
+
+    &.small {
+      padding: 6px 10px;
+      width: 45px;
+    }
+    &.medium {
+      padding: 6px 10px;
+      width: 75px;
+    }
+    &.large {
+      width: 175px;
+    }
+    &.xlarge {
+      width: 200px;
+    }
+    // over-write height set above, generally for <textarea>
+    &.height-auto {
+      height: auto !important;
+    }
+  }
+
+  /* inner button
+  ...................................*/
+  .inner-button {
+    position: relative;
+    .button,
+    .btn-gray,
+    .btn-search,
+    .btn {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+    }
+  }
+
+  textarea {
+    padding: 10px 15px;
+    &.small {
+      width: 100%;
+      min-height: $field-height;
+    }
+    &.medium {
+      width: 100%;
+      min-height: $field-height * 1.5;
+    }
+    &.large {
+      width: 100%;
+      min-height: $field-height * 2;
+    }
+    &.xlarge {
+      width: 100%;
+      min-height: $field-height * 3.5;
+    }
+  }
+}
+
+.input {
+  position: relative;
+  .input-label {
+    position: absolute;
+    top: 11px;
+    left: 15px;
+    color: $gray-2;
+  }
+}
+
+/*.....................................
+  Admin Multi Select
+......................................*/
+.select-container {
+  position: relative;
+  display: inline-block;
+}

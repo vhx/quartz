@@ -1,0 +1,58 @@
+/* margin and padding
+......................................*/
+.margin-reset {
+  margin: 0 !important;
+}
+.margin-right-reset {
+  margin-right: 0 !important;
+}
+.margin-left-reset {
+  margin-left: 0 !important;
+}
+.margin-top-reset {
+  margin-top: 0 !important;
+}
+.margin-bottom-reset {
+  margin-bottom: 0 !important;
+}
+.padding-reset {
+  padding: 0 !important;
+}
+.padding-right-reset {
+  padding-right: 0 !important;
+}
+.padding-left-reset {
+  padding-left: 0 !important;
+}
+.padding-top-reset {
+  padding-top: 0 !important;
+}
+.padding-bottom-reset {
+  padding-bottom: 0 !important;
+}
+
+@each $size in $sizes {
+  @each $spacing_type in $spacing_types {
+    @include spacer('', $size, $spacing_type, '');
+    @include spacer(top, $size, $spacing_type, '');
+    @include spacer(bottom, $size, $spacing_type, '');
+    @include spacer(right, $size, $spacing_type, '');
+    @include spacer(left, $size, $spacing_type, '');
+    @include spacer('vert', $size, $spacing_type, '');
+    @include spacer('horz', $size, $spacing_type, '');
+  }
+}
+
+@media #{$small-only} {
+  @each $size in $sizes {
+    @each $spacing_type in $spacing_types {
+      @include spacer('', $size, $spacing_type, 'small-only-');
+      @include spacer(top, $size, $spacing_type, 'small-only-');
+      @include spacer(bottom, $size, $spacing_type, 'small-only-');
+      @include spacer(right, $size, $spacing_type, 'small-only-');
+      @include spacer(left, $size, $spacing_type, 'small-only-');
+      @include spacer('vert', $size, $spacing_type, 'small-only-');
+      @include spacer('horz', $size, $spacing_type, 'small-only-');
+    }
+  }
+}

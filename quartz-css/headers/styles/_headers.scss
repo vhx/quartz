@@ -1,0 +1,135 @@
+// @import "../config/include";
+
+/*.....................................
+  HEADERS
+......................................*/
+
+/* sizes
+......................................*/
+.head {
+  color: $gray-7;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: $font-brandon;
+  .text--bold {
+    font-weight: 600;
+  }
+}
+
+.head-1 {
+  @extend .head;
+  font-weight: 400;
+  font-size: 40px;
+  letter-spacing: 2px;
+  line-height: 40px;
+  i { line-height: 40px; }
+}
+
+.head-2 {
+  @extend .head;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: 3px;
+}
+
+.head-3 {
+  @extend .head;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 1px;
+}
+
+.head-4 {
+  @extend .head;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.head-5 {
+  @extend .head;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+
+/* header navy
+......................................*/
+.head--navy {
+  color: $gray-7;
+}
+a.head--navy,
+a.head-1, a.head-2, a.head-3, a.head-4, a.head-5, {
+  &:link,
+  &:visited {
+    color: $gray-7;
+    text-decoration: none;
+  }
+  &:visited,
+  &:hover {
+    color: $gray-5;
+    text-decoration: none;
+  }
+}
+
+/* header gray
+......................................*/
+.head--gray {
+  color: $gray-5;
+}
+a.head--gray {
+  &:link,
+  &:visited {
+    color: $gray-5;
+    text-decoration: none;
+  }
+  &:hover,
+  &:active {
+    color: $gray-6;
+    text-decoration: none;
+  }
+}
+
+/* header teal
+......................................*/
+.head--teal {
+  color: $teal-2;
+}
+a.head--teal {
+  &:link,
+  &:visited {
+    color: $teal-2;
+    text-decoration: none;
+  }
+  &:hover,
+  &:active {
+    color: $teal-3;
+    text-decoration: none;
+  }
+}
+
+/* header white
+......................................*/
+.head--white {
+  color: $white;
+}
+
+a.head--white {
+  &:link,
+  &:visited {
+    color: $white;
+  }
+  &:hover,
+  &:active {
+    color: $white-transparent;
+  }
+}
+
+/* header white
+......................................*/
+.head--gothic {
+  font-family: $font-gothic;
+}

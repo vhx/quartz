@@ -1,0 +1,85 @@
+/*.....................................
+ Dropdown
+......................................*/
+.dropdown {
+  position: relative;
+
+  &.is-open {
+    display: block;
+    .dropdown-list {
+      text-align: left;
+      display: block;
+      right: 0;
+      left: auto;
+    }
+  }
+  select {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+  }
+
+  .dropdown-list {
+    display: none;
+    background: $white;
+    z-index: 2147483600;
+    border: 1px solid $gray-3;
+    border-radius: 5px;
+    position: absolute;
+    top: 50px;
+    right: auto;
+    left: -999999px;
+    &.is-scrolling {
+      ul {
+        overflow-y:  scroll;
+      }
+    }
+    ul {
+      margin: 0;
+      list-style: none;
+      padding: 10px 15px;
+      max-height: 350px;
+      li {
+        padding: 7px 0;
+      }
+    }
+    a {
+      white-space: nowrap;
+      &.has-wrap {
+        white-space: normal;
+        word-break: break-word;
+      }
+    }
+    &:after, &:before {
+      bottom: 100%;
+      right: 22px;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+    }
+
+    &:after {
+      border-color: rgba(255, 255, 255, 0);
+      border-bottom-color: $white;
+      border-width: 5px;
+      margin-right: -7px;
+    }
+    &:before {
+      border-color: rgba(255, 255, 255, 0);
+      border-bottom-color: $gray-3;
+      border-width: 6px;
+      margin-right: -8px;
+    }
+  }
+  &.dropdown--xsmall .dropdown-list { width: 100px; }
+  &.dropdown--small .dropdown-list { width: 150px; }
+  &.dropdown--medium .dropdown-list { width: 200px; }
+  &.dropdown--large .dropdown-list { width: 250px; }
+  &.dropdown--xlarge .dropdown-list { width: 300px; }
+  &.dropdown--fill .dropdown-list { width: 100%; }
+}

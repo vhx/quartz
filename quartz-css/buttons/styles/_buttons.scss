@@ -1,0 +1,727 @@
+/*
+  pls note, all button styles are here.  For button block styles, do a search for BLOCK BUTTONS.  This may be condensed later.
+*/
+
+/*.....................................
+  BUTTONS
+......................................*/
+
+/* reset
+......................................*/
+input[type="submit"], button {
+  border-radius: 5px;
+  margin: 0;
+}
+
+select {
+  width: auto;
+  margin: 0;
+}
+
+/* base
+......................................*/
+.btn {
+  transition: border 300ms cubic-bezier(0.19, 1, 0.22, 1), color 300ms cubic-bezier(0.19, 1, 0.22, 1), opacity 300ms cubic-bezier(0.19, 1, 0.22, 1), background-color 300ms cubic-bezier(0.19, 1, 0.22, 1);
+
+  background-color: transparent;
+  border: 1px solid transparent;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+
+  // fonts
+  text-align: center;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: transparent;
+
+  line-height: 38px;
+  height: 40px;
+  padding: 0 20px;
+
+  // borders
+  outline: none;
+  border-radius: 5px;
+
+  // states
+  &:link,
+  &:visited {
+    text-decoration: none;
+    border: 1px solid transparent;
+  }
+
+  &.icon--left {
+    background-position: left 21px center;
+    padding-left: 43px;
+    &.icon--xsmall {
+      background-position: left 16px center;
+      padding-left: 40px;
+    }
+    &.icon--xxsmall {
+      background-position: left 18px center;
+      padding-left: 37px;
+    }
+    .icon--right {
+      background-position: right 0px center;
+      padding-right: 21px;
+      background-size: 15px 15px;
+    }
+  }
+  &.icon--right {
+    background-position: right 21px center;
+    padding-right: 43px;
+    &.icon--xsmall {
+      background-position: right 16px center;
+      padding-left: 40px;
+    }
+    &.icon--xxsmall {
+      background-position: right 18px center;
+      padding-left: 37px;
+    }
+  }
+}
+
+/* button gray shorthand
+......................................*/
+.btn-gray {
+  @extend .btn;
+  @include button-colors(
+    $gray-2,  // background
+    $gray-3,  // background hover
+    $gray-7,  // color
+    $gray-7,  // color hover
+    $gray-3,  // border color
+    $gray-3,   // border hover,
+    233741   // loader
+  );
+}
+
+/* button dark shorthand
+......................................*/
+.btn-slate {
+  @extend .btn;
+  @include button-colors(
+    $gray-5,  // background
+    $gray-6,  // background hover
+    $white,  // color
+    $white,  // color hover
+    $gray-6,  // border color
+    $gray-6,   // border color hover
+    375667   // loader
+  );
+}
+
+/* button teal shorthand
+......................................*/
+.btn-teal {
+  @extend .btn;
+  @include button-colors(
+    $teal-2,  // background
+    $teal-3,  // background hover
+    $white,  // color
+    $white,  // color hover
+    $teal-3,  // border color
+    $teal-3,   // border color hover
+    ffffff  // loader
+  );
+}
+
+/* button red shorthand
+......................................*/
+.btn-red {
+  @extend .btn;
+  @include button-colors(
+    $red,  // background
+    darken($red, 10%),  // background hover
+    $white,  // color
+    $white,  // color hover
+    darken($red, 10%),  // border color
+    darken($red, 10%),   // border hover
+    ffffff  // loader
+  );
+}
+
+/* button purple shorthand
+......................................*/
+.btn-purple {
+  @extend .btn;
+  @include button-colors(
+    $vhx-purple,  // background
+    darken($vhx-purple, 10%),  // background hover
+    $white,  // color
+    $white,  // color hover
+    $vhx-purple,  // border color
+    darken($vhx-purple, 10%),   // border hover
+    ffffff  // loader
+  );
+}
+
+/* button green shorthand
+......................................*/
+.btn-green {
+  @extend .btn;
+  @include button-colors(
+    $vhx-green,  // background
+    darken($vhx-green, 10%),  // background hover
+    $white,  // color
+    $white,  // color hover
+    $vhx-green,  // border color
+    darken($vhx-green, 10%),  // border color hover
+    ffffff   // loader
+  );
+}
+
+/* button black shorthand
+......................................*/
+.btn-black {
+  @extend .btn;
+  @include button-colors(
+    transparentize($black, .5),    // background
+    transparentize($black, 0),     // background hover
+    transparentize($white, .2),    // color
+    transparentize($white, 0),     // color hover
+    transparentize($white, .6),    // border color
+    transparentize($white, 0),     // border color hover
+    ffffff      // loader
+  );
+}
+
+/* button white shorthand
+......................................*/
+.btn-white {
+  @extend .btn;
+  @include button-colors(
+    $white,  // background
+    $gray-2,  // background hover
+    $gray-6,  // color
+    $gray-6,  // color hover
+    $gray-3,  // border color
+    $gray-3,  // border color hover
+    5E7887   // loader
+  );
+}
+
+/* button yellow shorthand
+......................................*/
+.btn-yellow {
+  @extend .btn;
+  @include button-colors(
+    $vhx-yellow,  // background
+    darken($vhx-yellow, 10%),  // background hover
+    $white,  // color
+    $white,  // color hover
+    darken($vhx-yellow, 10%),  // border color
+    darken($vhx-yellow, 10%),  // border color hover
+    ffffff   // loader
+  );
+}
+/* button facebook shorthand
+......................................*/
+.btn-facebook {
+  @extend .btn;
+  @include button-colors(
+    $facebook-blue,  // background
+    darken($facebook-blue, 10%),  // background hover
+    $white,  // color
+    $white,  // color hover
+    darken($facebook-blue, 10%),  // border color
+    darken($facebook-blue, 10%),   // border color hover
+    ffffff  // loader
+  );
+}
+
+/* button twitter  shorthand
+......................................*/
+.btn-twitter {
+  @extend .btn;
+  @include button-colors(
+    $twitter-blue,  // background
+    darken($twitter-blue, 10%),  // background hover
+    $white,  // color
+    $white,  // color hover
+    darken($twitter-blue, 10%),  // border color
+    darken($twitter-blue, 10%),   // border color hover
+    ffffff  // loader
+  );
+}
+
+/* button transparent shorthand
+......................................*/
+.btn-transparent {
+  @extend .btn;
+  @include button-colors(
+    transparentize($white, .5),  // background
+    transparentize($white, .3),  // background hover
+    $white,  // color
+    $white,  // color hover
+    transparentize($white, 1),  // border color
+    transparentize($white, 1),   // border color hover
+    ffffff  // loader
+  );
+}
+
+/* button tumblr shorthand
+......................................*/
+.btn-tumblr {
+  @extend .btn;
+  @include button-colors(
+    $tumblr-blue,  // background
+    darken($tumblr-blue, 10%),  // background hover
+    $white,  // color
+    $white,  // color hover
+    darken($tumblr-blue, 10%),  // border color
+    darken($tumblr-blue, 10%),   // border color hover
+    ffffff  // loader
+  );
+}
+
+/* button paypal shorthand
+......................................*/
+.btn-paypal {
+  @extend .btn;
+  @include button-colors(
+    $paypal-blue,  // background
+    darken($paypal-blue, 10%),  // background hover
+    $white,  // color
+    $white,  // color hover
+    darken($paypal-blue, 10%),  // border color
+    darken($paypal-blue, 10%),   // border color hover
+    ffffff  // loader
+  );
+}
+
+/* button roku shorthand
+......................................*/
+.btn-roku {
+  @extend .btn;
+  @include button-colors(
+    $roku-purple,  // background
+    darken($roku-purple, 10%),  // background hover
+    $white,  // color
+    $white,  // color hover
+    darken($roku-purple, 10%),  // border color
+    darken($roku-purple, 10%),   // border color hover
+    ffffff  // loader
+  );
+}
+
+/* button search shorthand
+......................................*/
+.btn-search {
+  @extend .btn;
+  @extend .btn--small;
+  @extend .icon--center;
+  @extend %icon-search-navy;
+}
+
+/*.....................................
+  BUTTON ICONS
+......................................*/
+
+/* position
+......................................*/
+.icon--center {
+  background-position: center center !important;
+  color: transparent !important;
+  padding: 0 20px !important;
+  width: 40px;
+  text-indent: -9999px;
+
+  &.btn--small {
+    width: 30px;
+    padding: 0 10px !important;
+  }
+  &.btn--medium {
+    width: 40px;
+    padding: 0 20px !important;
+  }
+  &.btn--large {
+    width: 60px;
+    padding: 0 30px !important;
+  }
+}
+
+.icon--left {
+  &.btn--small {
+    background-position: left 10px center;
+    padding-left: 27px;
+    .icon--right {
+      background-size: 13px 13px;
+      padding-right: 16px;
+    }
+  }
+  &.btn--large {
+    background-position: left 30px center;
+    padding-left: 62px;
+    .icon--right {
+      background-size: 23px 23px;
+      padding-right: 28px;
+    }
+  }
+}
+
+.icon--right {
+  &.btn--small {
+    background-position: right 10px center;
+    padding-right: 27px;
+  }
+  &.btn--large {
+    background-position: right 30px center;
+    padding-right: 62px;
+  }
+}
+
+.btn-dropdown {
+  @extend .btn;
+  background-size: 10px 10px;
+  background-position: right 15px center;
+  padding-right: 35px;
+  text-align: left;
+  position: relative;
+
+  &.btn--small {
+    background-size: 8px 8px;
+    &.icon--center {
+      width: 30px;
+    }
+  }
+
+  &.btn-dropdown--action {
+    padding-right: 60px;
+  }
+  &.btn-dropdown--action:before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    right: 39px;
+    width: 1px;
+    height: 100%;
+    background: $white;
+  }
+  &.icon--center {
+    width: 40px;
+    &.btn-dropdown--action:before {
+      display: none;
+      content: '';
+    }
+  }
+}
+
+/* button dropdowns
+......................................*/
+.btn-dropdown-gray {
+  @extend .btn-dropdown;
+  @extend .btn-gray;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Cpath%20fill%3D%22%23375667%22%20d%3D%22M4.38%203.68l11.387%2011.383-4.242%204.243L.14%207.925z%22%3E%3C%2Fpath%3E%3Cpath%20fill%3D%22%23375667%22%20d%3D%22M22.853%207.933L11.47%2019.318l-4.244-4.243L18.61%203.69z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+
+  &.btn-dropdown--action:before {
+    background: $gray-2;
+  }
+  &:hover {
+    @extend %icon-chevron-down-navy;
+    &.btn-dropdown--action:before {
+      background: $gray-4;
+    }
+  }
+  &.is-processing {
+    span {
+      background: none;
+    }
+    &:hover {
+      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0D%0A%20%20viewBox%3D%220%200%2040%2040%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cpath%20opacity%3D%220.2%22%20fill%3D%22%23233741%22%20d%3D%22M20.201%2C5.169c-8.254%2C0-14.946%2C6.692-14.946%2C14.946c0%2C8.255%2C6.692%2C14.946%2C14.946%2C14.946%0D%0A%20%20s14.946-6.691%2C14.946-14.946C35.146%2C11.861%2C28.455%2C5.169%2C20.201%2C5.169z%20M20.201%2C31.749c-6.425%2C0-11.634-5.208-11.634-11.634%0D%0A%20%20c0-6.425%2C5.209-11.634%2C11.634-11.634c6.425%2C0%2C11.633%2C5.209%2C11.633%2C11.634C31.834%2C26.541%2C26.626%2C31.749%2C20.201%2C31.749z%22%2F%3E%0D%0A%3Cpath%20fill%3D%22%23233741%22%20d%3D%22M26.013%2C10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0%0D%0A%20%20C22.32%2C8.481%2C24.301%2C9.057%2C26.013%2C10.047z%22%3E%0D%0A%20%20%3CanimateTransform%20attributeType%3D%22xml%22%0D%0A%20%20%20%20attributeName%3D%22transform%22%0D%0A%20%20%20%20type%3D%22rotate%22%0D%0A%20%20%20%20from%3D%220%2020%2020%22%0D%0A%20%20%20%20to%3D%22360%2020%2020%22%0D%0A%20%20%20%20dur%3D%220.5s%22%0D%0A%20%20%20%20repeatCount%3D%22indefinite%22%2F%3E%0D%0A%20%20%3C%2Fpath%3E%0D%0A%3C%2Fsvg%3E");
+    }
+  }
+}
+
+.btn-dropdown-white {
+  @extend .btn-dropdown;
+  @extend .btn-white;
+  @extend %icon-chevron-down-navy;
+
+  &.btn-dropdown--action:before {
+    background: $gray-2;
+  }
+  &:hover {
+    @extend %icon-chevron-down-navy;
+    &.btn-dropdown--action:before {
+      background: $gray-4;
+    }
+  }
+  &.is-processing {
+    span {
+      background: none;
+    }
+    &:hover {
+      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0D%0A%20%20viewBox%3D%220%200%2040%2040%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cpath%20opacity%3D%220.2%22%20fill%3D%22%23233741%22%20d%3D%22M20.201%2C5.169c-8.254%2C0-14.946%2C6.692-14.946%2C14.946c0%2C8.255%2C6.692%2C14.946%2C14.946%2C14.946%0D%0A%20%20s14.946-6.691%2C14.946-14.946C35.146%2C11.861%2C28.455%2C5.169%2C20.201%2C5.169z%20M20.201%2C31.749c-6.425%2C0-11.634-5.208-11.634-11.634%0D%0A%20%20c0-6.425%2C5.209-11.634%2C11.634-11.634c6.425%2C0%2C11.633%2C5.209%2C11.633%2C11.634C31.834%2C26.541%2C26.626%2C31.749%2C20.201%2C31.749z%22%2F%3E%0D%0A%3Cpath%20fill%3D%22%23233741%22%20d%3D%22M26.013%2C10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0%0D%0A%20%20C22.32%2C8.481%2C24.301%2C9.057%2C26.013%2C10.047z%22%3E%0D%0A%20%20%3CanimateTransform%20attributeType%3D%22xml%22%0D%0A%20%20%20%20attributeName%3D%22transform%22%0D%0A%20%20%20%20type%3D%22rotate%22%0D%0A%20%20%20%20from%3D%220%2020%2020%22%0D%0A%20%20%20%20to%3D%22360%2020%2020%22%0D%0A%20%20%20%20dur%3D%220.5s%22%0D%0A%20%20%20%20repeatCount%3D%22indefinite%22%2F%3E%0D%0A%20%20%3C%2Fpath%3E%0D%0A%3C%2Fsvg%3E");
+    }
+  }
+}
+
+.btn-dropdown-teal {
+  @extend .btn-dropdown;
+  @extend .btn-teal;
+  @extend %icon-chevron-down-white;
+
+  &.btn-dropdown--action:before {
+    background: $teal-2;
+  }
+  &:hover {
+    @extend %icon-chevron-down-white;
+    &.btn-dropdown--action:before {
+      background: $teal-3;
+    }
+  }
+  &.is-processing {
+    span {
+      background: none;
+    }
+    &:hover {
+      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0D%0A%20%20viewBox%3D%220%200%2040%2040%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cpath%20opacity%3D%220.2%22%20fill%3D%22%23ffffff%22%20d%3D%22M20.201%2C5.169c-8.254%2C0-14.946%2C6.692-14.946%2C14.946c0%2C8.255%2C6.692%2C14.946%2C14.946%2C14.946%0D%0A%20%20s14.946-6.691%2C14.946-14.946C35.146%2C11.861%2C28.455%2C5.169%2C20.201%2C5.169z%20M20.201%2C31.749c-6.425%2C0-11.634-5.208-11.634-11.634%0D%0A%20%20c0-6.425%2C5.209-11.634%2C11.634-11.634c6.425%2C0%2C11.633%2C5.209%2C11.633%2C11.634C31.834%2C26.541%2C26.626%2C31.749%2C20.201%2C31.749z%22%2F%3E%0D%0A%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M26.013%2C10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0%0D%0A%20%20C22.32%2C8.481%2C24.301%2C9.057%2C26.013%2C10.047z%22%3E%0D%0A%20%20%3CanimateTransform%20attributeType%3D%22xml%22%0D%0A%20%20%20%20attributeName%3D%22transform%22%0D%0A%20%20%20%20type%3D%22rotate%22%0D%0A%20%20%20%20from%3D%220%2020%2020%22%0D%0A%20%20%20%20to%3D%22360%2020%2020%22%0D%0A%20%20%20%20dur%3D%220.5s%22%0D%0A%20%20%20%20repeatCount%3D%22indefinite%22%2F%3E%0D%0A%20%20%3C%2Fpath%3E%0D%0A%3C%2Fsvg%3E");
+    }
+  }
+}
+
+/* button sizes
+......................................*/
+.btn--fill {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.btn--half {
+  box-sizing: border-box;
+  width: 48%;
+  margin-left: .5% !important;
+  margin-right: .5% !important;
+}
+
+.btn--small {
+  line-height: 28px;
+  height: 30px;
+  padding: 0 10px;
+  font-size: 12px;
+  background-size: 13px 13px;
+}
+
+.btn--medium {
+  line-height: 38px;
+  height: 40px;
+  padding: 0 20px;
+  font-size: 14px;
+  background-size: 15px 15px;
+}
+
+.btn--large {
+  line-height: 58px;
+  height: 60px;
+  padding: 0 30px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  background-size: 23px 23px;
+}
+
+/* button fonts
+......................................*/
+.btn--brandon {
+  text-transform: uppercase;
+  font-family: $font-brandon;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-size: 14px;
+  line-height: 40px;
+
+  &.btn--small {
+    font-size: 12px;
+    line-height: 30px;
+    background-position: 10px 7px;
+  }
+  &.btn--medium {
+    font-size: 14px;
+    line-height: 40px;
+  }
+  &.btn--large {
+    font-size: 20px;
+    line-height: 60px;
+  }
+}
+
+
+/* button media queries
+......................................*/
+@media #{$small-only} {
+  .small-only-btn--fill {
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .small-only-btn--half {
+    box-sizing: border-box;
+    width: 48%;
+    margin-left: .5% !important;
+    margin-right: .5% !important;
+  }
+}
+
+
+/* buttons group
+......................................*/
+.btn-group {
+
+  &.btn-group--center,
+  &.btn-group--left,
+  &.btn-group--right {
+    .btn-white,
+    .btn-gray,
+    .btn-teal {
+      display: inline-block;
+      float: none;
+    }
+  }
+
+  &.btn-group--center {
+    text-align: center;
+  }
+  &.btn-group--left {
+    text-align: left;
+  }
+  &.btn-group--right {
+    text-align: right;
+  }
+
+  &:after {
+    content: ' ';
+    clear: both;
+    height: 0;
+    font-size: 0;
+    visibility: hidden;
+    display: block;
+  }
+  .btn-white,
+  .btn-gray,
+  .btn-teal {
+    display: block;
+    float: left;
+    border-radius: 0;
+    &.is-selected {
+      box-shadow: inset 0px 0px 7px 0px rgba(170,170,170,0.4);
+    }
+  }
+  .btn-white:nth-child(odd),
+  .btn-gray:nth-child(odd),
+  .btn-teal:nth-child(odd) {
+    border-right: 1px solid $gray-3 !important;
+    border-left: 1px solid $gray-3 !important;
+    &:hover,
+    &:focus {
+      border-right: 1px solid $gray-3 !important;
+      border-left: 1px solid $gray-3 !important;
+      z-index: 10000;
+    }
+  }
+  .btn-white:nth-child(even),
+  .btn-gray:nth-child(even),
+  .btn-teal:nth-child(even) {
+    border-left: 1px solid transparent !important;
+    border-right: 1px solid transparent !important;
+    &:hover,
+    &:focus {
+      border-left: 1px solid $gray-3 !important;
+      border-right: 1px solid $gray-3 !important;
+      z-index: 10000;
+    }
+  }
+  .btn-white:first-child,
+  .btn-gray:first-child,
+  .btn-teal:first-child {
+    border-left: 1px solid $gray-3 !important;
+    border-radius: 5px 0 0 5px;
+  }
+  .btn-white:last-child,
+  .btn-gray:last-child,
+  .btn-teal:last-child {
+    border-right: 1px solid $gray-3 !important;
+    border-radius: 0 5px 5px 0;
+  }
+}
+
+/*.....................................
+  BLOCK BUTTONS
+......................................*/
+
+/* button block base
+......................................*/
+.btn-block {
+  transition: all .2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  display: block;
+  height: 70px;
+  padding-top: 27px;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: $gray-5;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: $font-brandon;
+
+  &.btn--border {
+    border-left: 1px solid $gray-3;
+    border-right: 1px solid $gray-3;
+    & + .btn-block {
+      border-left: 1px solid transparent;
+    }
+  }
+
+  &.is-active,
+  &:hover,
+  &.is-hover {
+    cursor: pointer;
+    box-shadow: inset 0px -4px 0px $gray-5;
+  }
+  span {
+    &:first-child {
+      margin-top: -7px;
+    }
+    display: block;
+  }
+}
+
+/* button block teal
+......................................*/
+.btn-block-teal {
+  @extend .btn-block;
+  @include button-block-colors(
+    $gray-5,  // text color
+    $gray-7,  // text color hover
+    $teal-2 // bottom border-color
+  )
+}
+
+/* button block gray
+......................................*/
+.btn-block-gray {
+  @extend .btn-block;
+  @include button-block-colors(
+    $gray-5, // text color
+    $gray-6, // text color hover
+    $gray-5  // bottom border-color
+  );
+}
+
+/* button block navy
+......................................*/
+.btn-block-navy {
+  @extend .btn-block;
+  @include button-block-colors(
+    $gray-6, // text color
+    $gray-6, // text color hover
+    $gray-6  // bottom border-color
+  );
+}
+

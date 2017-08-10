@@ -1,0 +1,94 @@
+
+/*.....................................
+  BORDERS
+......................................*/
+
+/* positions
+...................................*/
+.border {
+  border: 1px solid $gray-3;
+}
+@each $position in $positions {
+  .border-#{$position} {
+    border-#{$position}: 1px solid $gray-3;
+  }
+}
+.border-vert {
+  border-top: 1px solid $gray-3;
+  border-bottom: 1px solid $gray-3;
+}
+
+.border-horz {
+  border-left: 1px solid $gray-3;
+  border-right: 1px solid $gray-3;
+}
+
+/* colors
+...................................*/
+.border--white {
+  border-color: $white !important;
+}
+.border--white-transparent {
+  border-color: $white-transparent !important;
+}
+.border--gray {
+  border-color: $gray-3 !important;
+}
+.border--gray-light {
+  border-color: $gray-2 !important;
+}
+.border--navy {
+  border-color: $gray-7 !important;
+}
+
+/* modifiers
+...................................*/
+.border--thick {
+  border-width: 5px;
+}
+.border--radius {
+  border-radius: 3px;
+}
+
+/* border center
+...................................*/
+.border-center {
+  z-index: 1;
+  position: relative;
+
+  &:before {
+    content: " ";
+    display: block;
+    height: 1px;
+    top: 50%;
+    left: 0;
+    background-color: $gray-3;
+    margin-top: -2px;
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+  }
+
+  &.border--gray-light:before {
+    background-color: $gray-2;
+  }
+  &.border--white-transparent:before {
+    background-color: $white-transparent;
+  }
+  &.border--white:before {
+    background-color: $white;
+  }
+}
+
+.shadow {
+  box-shadow: 0 0 5px 0 transparentize($navy, .5);
+}
+.shadow--black {
+  box-shadow: 0 0 5px 0 transparentize($black, .5);
+}
+.shadow--gray {
+  box-shadow: 0 0 5px 0 transparentize($gray-3, .5);
+}
+.radius {
+  border-radius: 5px;
+}

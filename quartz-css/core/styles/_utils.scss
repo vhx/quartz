@@ -1,0 +1,95 @@
+/* alignment
+......................................*/
+.text-top {
+  vertical-align: top !important;
+}
+.text-middle {
+  vertical-align: middle !important;;
+}
+.text-bottom {
+  vertical-align: bottom !important;;
+}
+
+/* display
+......................................*/
+.block {
+  display: block !important;
+}
+.inline {
+  display: inline-block !important;
+}
+.is-hidden {
+  display: none !important;
+}
+.word-break {
+  word-break: break-word;
+}
+.radius {
+  border-radius: 3px;
+}
+.is-invisible {
+  visibility: hidden;
+}
+
+
+/* scrollable content
+......................................*/
+.fill-height {
+  height: 100%;
+}
+.fill-width {
+  width: 100%;
+  max-width: 100%;
+}
+
+.truncate {
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+
+  &.truncate--xlarge {
+    max-width: 90%;
+  }
+  &.truncate--large {
+    max-width: 75%;
+  }
+  &.truncate--medium {
+    max-width: 60%;
+  }
+  &.truncate--small {
+    max-width: 40%;
+  }
+}
+
+hr.column {
+  position: relative;
+  border: none;
+  margin: 0;
+  clear: none;
+  display: block;
+  min-width: 1px;
+  border-width: 0;
+  min-height: 1px;
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 1px;
+    background: #ccc;
+  }
+}
+
+.z-top {
+  z-index: 2147483647 !important;
+}
+
+.shadow--gray {
+  box-shadow: 0 0 10px 0 rgba(10, 16, 40, 0.2) !important;
+}

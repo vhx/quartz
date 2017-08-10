@@ -1,0 +1,97 @@
+/*.....................................
+  Pagination
+......................................*/
+
+.pagination {
+  display: inline-block;
+  text-align: center;
+  margin: 20px 0px;
+
+  .previous_page, .next_page {
+    font-weight: bold;
+  }
+
+  .disabled {
+    display: none;
+  }
+
+  .current {
+    display: inline-block;
+    background: $gray-3;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-style: normal;
+  }
+
+  i {
+    position: relative;
+    top: 3px;
+  }
+
+  a {
+    display: inline-block;
+    padding: 0 5px;
+  }
+
+  a:link,
+  a:visited {
+    color: $gray-6;
+  }
+
+  a:hover,
+  a:active {
+    font-weight: bold;
+  }
+
+  .gap {
+    color: $gray-6;
+  }
+}
+
+/*.....................................
+  Tags
+......................................*/
+.tag {
+  display: inline-block;
+  background-color: $gray-1;
+  border: 1px solid $gray-3;
+  padding: 0px 7px;
+  border-radius: 5px;
+  font-size: 12px;
+
+
+  &:link,
+  &:visited {
+    color: $gray-6;
+  }
+  &:hover,
+  &:active {
+    color: $gray-6;
+    background-color: $gray-3;
+  }
+  &.is-selected {
+    background-color: $teal-2;
+    color: $white;
+  }
+  &.tag-removable-small {
+    padding-left: 10px;
+    padding-right: 30px;
+    background-size: 15px;
+    background-position: right 10px center;
+  }
+}
+
+.tag-list {
+  list-style: none;
+  text-indent: 0;
+  margin-left: 0;
+  font-size: 14px;
+  li {
+    @include cf();
+    margin: 5px 0px;
+    span {
+      float: right;
+    }
+  }
+}

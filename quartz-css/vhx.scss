@@ -1,26 +1,41 @@
 /* generated with grunt-sass-globbing */
 
-@import "backgrounds/styles/backgrounds";
-@import "borders/styles/borders";
-@import "buttons/styles/block";
-@import "buttons/styles/default";
-@import "charts/styles/bars";
-@import "core/styles/arrows";
+/*
+NOTE:
+
+When adding future SCSS partials, the order matters.  Most widely used styles are at the top down to the more specific at the bottom. Pls consider this when adding new components or styles.
+
+also note the underscores on partials.  If you need a standalone version of these files, you may opt not to use one.  https://stackoverflow.com/questions/31311147/underscore-in-partial-sass-file
+
+*/
+// foundation/grid
+@import "foundation/styles/normalize";
+@import "foundation/styles/foundation";
+
+// core styles
+@import "core/config/variables";
+@import "core/config/mixins";
+@import "core/config/extends";
+
+// can any of these be refactored into other components?
+@import "core/styles/utils";
 @import "core/styles/grid";
+@import "core/styles/spacing";
+@import "core/styles/arrows";
 @import "core/styles/lists";
 @import "core/styles/media";
-@import "core/styles/spacing";
-@import "core/styles/utils";
-@import "dropdowns/styles/dropdowns";
-@import "forms/styles/input";
-@import "forms/styles/select";
-@import "foundation/styles/foundation";
-@import "foundation/styles/normalize";
-@import "headers/styles/headers";
+
+// component styles
+@import "backgrounds/styles/backgrounds";
+@import "borders/styles/borders";
 @import "icons/styles/icons";
+@import "buttons/styles/buttons";
+@import "charts/styles/charts";
+@import "dropdowns/styles/dropdowns";
+@import "forms/styles/forms";
+@import "headers/styles/headers";
 @import "images/styles/images";
-@import "lists/styles/pagination";
-@import "lists/styles/tags";
+@import "lists/styles/lists";
 @import "loaders/styles/loaders";
 @import "tables/styles/tables";
 @import "text/styles/text";
