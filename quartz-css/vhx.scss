@@ -34,8 +34,7 @@ also note the underscores on partials.  If you need a standalone version of thes
 // Not sure if dropdown is currently being used.
 // @import "dropdowns/styles/dropdowns";
 @import "forms/styles/forms";
-/* Not sure if Headers is being used, also needs refactor like whoa */
-// @import "headers/styles/headers";
+@import "headers/styles/headers";
 @import "images/styles/images";
 // pagination and tags are lists, not sure where used.
 @import "lists/styles/pagination";
