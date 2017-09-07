@@ -54,7 +54,8 @@ Q.components.guide.styleguide.ui.colors_template = {
       { name: 'twitter-blue' },
       { name: 'tumblr-blue' },
       { name: 'paypal-blue' },
-      { name: 'roku-purple' }
+      { name: 'roku-purple' },
+      { name: 'vimeo-blue'}
     ];
   },
   view: function(ctrl, data) {

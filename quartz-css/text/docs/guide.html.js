@@ -48,7 +48,8 @@ Q.components.guide.styleguide.ui.text.container = {
               m('p.text-2.text--debian.margin-bottom-small', 'Text Debian'),
               m('p.text-2.text--purple.margin-bottom-small', 'Text Purple'),
               m('p.text-2.text--currant.margin-bottom-small', 'Text Currant'),
-              m('p.text-2.text--blue.margin-bottom-small', 'Text Blue')
+              m('p.text-2.text--blue.margin-bottom-small', 'Text Blue'),
+              m('p.text-2.text--vimeo-blue.margin-bottom-small', 'Text Vimeo Blue')
             ]);
           }
         }
@@ -79,7 +80,8 @@ Q.components.guide.styleguide.ui.text.container = {
               m('a[href=#].text-2.block.text--debian.margin-bottom-small', 'Link Debian'),
               m('a[href=#].text-2.block.text--purple.margin-bottom-small', 'Link Purple'),
               m('a[href=#].text-2.block.text--currant.margin-bottom-small', 'Link Currant'),
-              m('a[href=#].text-2.block.text--blue.margin-bottom-small', 'Link Blue')
+              m('a[href=#].text-2.block.text--blue.margin-bottom-small', 'Link Blue'),
+              m('a[href=#].text-2.block.text--vimeo-blue.margin-bottom-small', 'Link Vimeo Blue')
             ]);
           }
         }
@@ -98,8 +100,8 @@ Q.components.guide.styleguide.ui.text.container = {
               m('a[href=#].text-2.is-disabled.block.text--debian.margin-bottom-small', 'Link Debian'),
               m('a[href=#].text-2.is-disabled.block.text--purple.margin-bottom-small', 'Link Purple'),
               m('a[href=#].text-2.is-disabled.block.text--currant.margin-bottom-small', 'Link Currant'),
-              m('a[href=#].text-2.is-disabled.block.text--blue.margin-bottom-small', 'Link Blue')
-
+              m('a[href=#].text-2.is-disabled.block.text--blue.margin-bottom-small', 'Link Blue'),
+              m('a[href=#].text-2.is-disabled.block.text--vimeo-blue.margin-bottom-small', 'Link Vimeo Blue')
             ]);
           }
         }
