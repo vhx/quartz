@@ -431,6 +431,34 @@ a.text--blue {
   }
 }
 
+.text--vimeo-blue {
+  color: $vimeo-blue;
+  &.text--transparent {
+    color: transparentize($vimeo-blue, .5);
+  }
+}
+a.text--vimeo-blue {
+  &:link,
+  &:visited {
+    color: $vimeo-blue-darkened;
+    text-decoration: none;
+  }
+  &:hover,
+  &:active {
+    color: $vimeo-blue-darkened;
+    text-decoration: none;
+    &.is-hover-text--currant {
+      color: $vimeo-blue;
+    }
+  }
+  &.is-disabled {
+  &:link, &:visited,
+  &:hover, &:active {
+      color: $vimeo-blue;
+    }
+  }
+}
+
 /* modifiers
 ......................................*/
 .text--bold {
