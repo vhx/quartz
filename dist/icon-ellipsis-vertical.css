@@ -2,23 +2,27 @@
   background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-ui-set%20copy%3C%2Ftitle%3E%3Ccircle%20cx%3D%2211.5%22%20cy%3D%2211.5%22%20r%3D%222.78%22%20fill%3D%22%23375667%22%2F%3E%3Ccircle%20cx%3D%2211.5%22%20cy%3D%2220.22%22%20r%3D%222.78%22%20fill%3D%22%23375667%22%2F%3E%3Ccircle%20cx%3D%2211.5%22%20cy%3D%222.78%22%20r%3D%222.78%22%20fill%3D%22%23375667%22%2F%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
 }
-.icon-ellipsis-vertical-white {
-  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-ui-set%20copy%3C%2Ftitle%3E%3Ccircle%20cx%3D%2211.5%22%20cy%3D%2211.5%22%20r%3D%222.78%22%20fill%3D%22%23ffffff%22%2F%3E%3Ccircle%20cx%3D%2211.5%22%20cy%3D%2220.22%22%20r%3D%222.78%22%20fill%3D%22%23ffffff%22%2F%3E%3Ccircle%20cx%3D%2211.5%22%20cy%3D%222.78%22%20r%3D%222.78%22%20fill%3D%22%23ffffff%22%2F%3E%3C%2Fsvg%3E');
-  background-repeat: no-repeat;
-}
-.icon-ellipsis-vertical-black {
-  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-ui-set%20copy%3C%2Ftitle%3E%3Ccircle%20cx%3D%2211.5%22%20cy%3D%2211.5%22%20r%3D%222.78%22%20fill%3D%22%23000000%22%2F%3E%3Ccircle%20cx%3D%2211.5%22%20cy%3D%2220.22%22%20r%3D%222.78%22%20fill%3D%22%23000000%22%2F%3E%3Ccircle%20cx%3D%2211.5%22%20cy%3D%222.78%22%20r%3D%222.78%22%20fill%3D%22%23000000%22%2F%3E%3C%2Fsvg%3E');
-  background-repeat: no-repeat;
-}
-.icon-ellipsis-vertical {
-  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-ui-set%20copy%3C%2Ftitle%3E%3Ccircle%20cx%3D%2211.5%22%20cy%3D%2211.5%22%20r%3D%222.78%22%20fill%3D%22%23149996%22%2F%3E%3Ccircle%20cx%3D%2211.5%22%20cy%3D%2220.22%22%20r%3D%222.78%22%20fill%3D%22%23149996%22%2F%3E%3Ccircle%20cx%3D%2211.5%22%20cy%3D%222.78%22%20r%3D%222.78%22%20fill%3D%22%23149996%22%2F%3E%3C%2Fsvg%3E');
+.icon-ellipsis-vertical-blue {
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-ui-set%20copy%3C%2Ftitle%3E%3Ccircle%20cx%3D%2211.5%22%20cy%3D%2211.5%22%20r%3D%222.78%22%20fill%3D%22%2300adef%22%2F%3E%3Ccircle%20cx%3D%2211.5%22%20cy%3D%2220.22%22%20r%3D%222.78%22%20fill%3D%22%2300adef%22%2F%3E%3Ccircle%20cx%3D%2211.5%22%20cy%3D%222.78%22%20r%3D%222.78%22%20fill%3D%22%2300adef%22%2F%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
 }
 .icon-ellipsis-vertical-teal {
   background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-ui-set%20copy%3C%2Ftitle%3E%3Ccircle%20cx%3D%2211.5%22%20cy%3D%2211.5%22%20r%3D%222.78%22%20fill%3D%22%2322b8af%22%2F%3E%3Ccircle%20cx%3D%2211.5%22%20cy%3D%2220.22%22%20r%3D%222.78%22%20fill%3D%22%2322b8af%22%2F%3E%3Ccircle%20cx%3D%2211.5%22%20cy%3D%222.78%22%20r%3D%222.78%22%20fill%3D%22%2322b8af%22%2F%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
 }
+.icon-ellipsis-vertical {
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-ui-set%20copy%3C%2Ftitle%3E%3Ccircle%20cx%3D%2211.5%22%20cy%3D%2211.5%22%20r%3D%222.78%22%20fill%3D%22%23149996%22%2F%3E%3Ccircle%20cx%3D%2211.5%22%20cy%3D%2220.22%22%20r%3D%222.78%22%20fill%3D%22%23149996%22%2F%3E%3Ccircle%20cx%3D%2211.5%22%20cy%3D%222.78%22%20r%3D%222.78%22%20fill%3D%22%23149996%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+}
+.icon-ellipsis-vertical-black {
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-ui-set%20copy%3C%2Ftitle%3E%3Ccircle%20cx%3D%2211.5%22%20cy%3D%2211.5%22%20r%3D%222.78%22%20fill%3D%22%23000000%22%2F%3E%3Ccircle%20cx%3D%2211.5%22%20cy%3D%2220.22%22%20r%3D%222.78%22%20fill%3D%22%23000000%22%2F%3E%3Ccircle%20cx%3D%2211.5%22%20cy%3D%222.78%22%20r%3D%222.78%22%20fill%3D%22%23000000%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+}
 .icon-ellipsis-vertical-gray {
   background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-ui-set%20copy%3C%2Ftitle%3E%3Ccircle%20cx%3D%2211.5%22%20cy%3D%2211.5%22%20r%3D%222.78%22%20fill%3D%22%239baab2%22%2F%3E%3Ccircle%20cx%3D%2211.5%22%20cy%3D%2220.22%22%20r%3D%222.78%22%20fill%3D%22%239baab2%22%2F%3E%3Ccircle%20cx%3D%2211.5%22%20cy%3D%222.78%22%20r%3D%222.78%22%20fill%3D%22%239baab2%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+}
+.icon-ellipsis-vertical-white {
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-ui-set%20copy%3C%2Ftitle%3E%3Ccircle%20cx%3D%2211.5%22%20cy%3D%2211.5%22%20r%3D%222.78%22%20fill%3D%22%23ffffff%22%2F%3E%3Ccircle%20cx%3D%2211.5%22%20cy%3D%2220.22%22%20r%3D%222.78%22%20fill%3D%22%23ffffff%22%2F%3E%3Ccircle%20cx%3D%2211.5%22%20cy%3D%222.78%22%20r%3D%222.78%22%20fill%3D%22%23ffffff%22%2F%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
 }

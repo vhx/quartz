@@ -1298,27 +1298,27 @@ Q.components.guide.styleguide.ui.icons_styles.container = {
               m('ul.margin-top-large.no-bullet.text-center.row', [
                 m('li.margin-bottom-medium.margin-right-medium.pull', [
                   m('h4.text--gray margin-bottom-small text--small', 'xxsmall'),
-                  m('i.icon-circle.icon--xxsmall.icon-upload')
+                  m('i.icon-circle.icon--xxsmall.icon-upload-vimeo')
                 ]),
                 m('li.margin-bottom-medium.margin-right-medium.pull', [
                   m('h4.text--gray margin-bottom-small text--small', 'xsmall'),
-                  m('i.icon-circle.icon--xsmall.icon-upload')
+                  m('i.icon-circle.icon--xsmall.icon-upload-vimeo')
                 ]),
                 m('li.margin-bottom-medium.margin-right-medium.pull', [
                   m('h4.text--gray margin-bottom-small text--small', 'small'),
-                  m('i.icon-circle.icon--small.icon-upload')
+                  m('i.icon-circle.icon--small.icon-upload-vimeo')
                 ]),
                 m('li.margin-bottom-medium.margin-right-medium.pull', [
                   m('h4.text--gray margin-bottom-small text--small', 'medium'),
-                  m('i.icon-circle.icon--medium.icon-upload')
+                  m('i.icon-circle.icon--medium.icon-upload-vimeo')
                 ]),
                 m('li.margin-bottom-medium.margin-right-medium.pull', [
                   m('h4.text--gray margin-bottom-small text--small', 'large'),
-                  m('i.icon-circle.icon--large.icon-upload')
+                  m('i.icon-circle.icon--large.icon-upload-vimeo')
                 ]),
                 m('li.margin-bottom-medium.margin-right-medium.pull', [
                   m('h4.text--gray margin-bottom-small text--small', 'xlarge'),
-                  m('i.icon-circle.icon--xlarge.icon-upload')
+                  m('i.icon-circle.icon--xlarge.icon-upload-vimeo')
                 ])
               ])
             ]);
@@ -1406,7 +1406,7 @@ Q.components.guide.styleguide.ui.icons_names.container = {
   }
 };
 
-Q.components.guide.styleguide.ui.icons_list = function() { return [{"name":"activity"},{"name":"add-member"},{"name":"alert"},{"name":"align"},{"name":"amex-card"},{"name":"android-workmark"},{"name":"android"},{"name":"angle-down"},{"name":"angle-left"},{"name":"angle-up"},{"name":"angle-right"},{"name":"api"},{"name":"apple"},{"name":"apps"},{"name":"arrow-down"},{"name":"arrow-left"},{"name":"arrow-right"},{"name":"arrow-up"},{"name":"audio"},{"name":"ban"},{"name":"bell"},{"name":"briefcase"},{"name":"calendar"},{"name":"camera"},{"name":"card"},{"name":"caret-down"},{"name":"caret-left"},{"name":"caret-right"},{"name":"caret-up"},{"name":"cassette-frown"},{"name":"cassette"},{"name":"chevron-down"},{"name":"check"},{"name":"chevron-left"},{"name":"chevron-right"},{"name":"chevron-up"},{"name":"chrome"},{"name":"clapboard"},{"name":"clock"},{"name":"code"},{"name":"cog"},{"name":"collection"},{"name":"comment"},{"name":"comments"},{"name":"currency"},{"name":"desktop"},{"name":"diners-card"},{"name":"csv"},{"name":"discover-card"},{"name":"doc"},{"name":"download-alt"},{"name":"download"},{"name":"dropbox"},{"name":"edit"},{"name":"ellipsis-vertical"},{"name":"ellipsis"},{"name":"envelope-sealed"},{"name":"envelope"},{"name":"external-link"},{"name":"eye"},{"name":"facebook"},{"name":"followers"},{"name":"gift"},{"name":"globe"},{"name":"grid"},{"name":"help"},{"name":"hi"},{"name":"home"},{"name":"instagram"},{"name":"invoice"},{"name":"ios"},{"name":"jcb-card"},{"name":"justify"},{"name":"key"},{"name":"link"},{"name":"list"},{"name":"lock"},{"name":"marker"},{"name":"mastercard-card"},{"name":"media"},{"name":"member"},{"name":"money-card"},{"name":"money-circle"},{"name":"money"},{"name":"paypal-card"},{"name":"pic"},{"name":"play-outline"},{"name":"play"},{"name":"plus-thin"},{"name":"plus"},{"name":"popular"},{"name":"power"},{"name":"printer"},{"name":"product"},{"name":"question"},{"name":"random"},{"name":"referral"},{"name":"refresh"},{"name":"revert"},{"name":"roku-wordmark"},{"name":"reply"},{"name":"roku"},{"name":"search"},{"name":"sliders"},{"name":"star-outline"},{"name":"star"},{"name":"tag"},{"name":"tags"},{"name":"todo"},{"name":"trash"},{"name":"transaction"},{"name":"tumblr"},{"name":"tv"},{"name":"tvos"},{"name":"twitter"},{"name":"upload-alt"},{"name":"upload"},{"name":"vhs"},{"name":"vhx"},{"name":"vimeovhx-dark"},{"name":"vimeovhx-light"},{"name":"visa-card"},{"name":"window"},{"name":"x"},{"name":"xmas-tree"}]; };Q.components.guide.styleguide.ui.images = {};
+Q.components.guide.styleguide.ui.icons_list = function() { return [{"name":"activity"},{"name":"add-member"},{"name":"alert"},{"name":"align"},{"name":"android-workmark"},{"name":"amex-card"},{"name":"android"},{"name":"angle-left"},{"name":"angle-down"},{"name":"angle-right"},{"name":"angle-up"},{"name":"api"},{"name":"apps"},{"name":"apple"},{"name":"arrow-down"},{"name":"arrow-left"},{"name":"arrow-right"},{"name":"arrow-up"},{"name":"audio"},{"name":"ban"},{"name":"camera"},{"name":"bell"},{"name":"briefcase"},{"name":"calendar"},{"name":"card"},{"name":"caret-down"},{"name":"caret-right"},{"name":"caret-left"},{"name":"caret-up"},{"name":"cassette-frown"},{"name":"check"},{"name":"cassette"},{"name":"chevron-down"},{"name":"chevron-left"},{"name":"chevron-up"},{"name":"chevron-right"},{"name":"chrome"},{"name":"clapboard"},{"name":"code"},{"name":"clock"},{"name":"collection"},{"name":"cog"},{"name":"comment"},{"name":"comments"},{"name":"currency"},{"name":"csv"},{"name":"desktop"},{"name":"diners-card"},{"name":"discover-card"},{"name":"doc"},{"name":"download-alt"},{"name":"download"},{"name":"ellipsis"},{"name":"edit"},{"name":"dropbox"},{"name":"ellipsis-vertical"},{"name":"envelope-sealed"},{"name":"external-link"},{"name":"envelope"},{"name":"eye"},{"name":"followers"},{"name":"facebook"},{"name":"gift"},{"name":"grid"},{"name":"globe"},{"name":"help"},{"name":"hi"},{"name":"home"},{"name":"instagram"},{"name":"invoice"},{"name":"ios"},{"name":"justify"},{"name":"key"},{"name":"jcb-card"},{"name":"link"},{"name":"lock"},{"name":"list"},{"name":"mastercard-card"},{"name":"marker"},{"name":"media"},{"name":"member"},{"name":"money-circle"},{"name":"paypal-card"},{"name":"money"},{"name":"money-card"},{"name":"play-outline"},{"name":"plus-thin"},{"name":"pic"},{"name":"play"},{"name":"plus"},{"name":"power"},{"name":"popular"},{"name":"random"},{"name":"printer"},{"name":"product"},{"name":"question"},{"name":"referral"},{"name":"reply"},{"name":"refresh"},{"name":"revert"},{"name":"roku-wordmark"},{"name":"roku"},{"name":"search"},{"name":"sliders"},{"name":"star-outline"},{"name":"star"},{"name":"tag"},{"name":"todo"},{"name":"tags"},{"name":"transaction"},{"name":"tumblr"},{"name":"trash"},{"name":"tv"},{"name":"twitter"},{"name":"tvos"},{"name":"upload-alt"},{"name":"upload-alt-blue"},{"name":"upload"},{"name":"vhx"},{"name":"vhs"},{"name":"vimeovhx-dark"},{"name":"vimeovhx-light"},{"name":"visa-card"},{"name":"window"},{"name":"upload-vimeo"},{"name":"xmas-tree"},{"name":"x"}]; };Q.components.guide.styleguide.ui.images = {};
 
 Q.components.guide.styleguide.ui.images.container = {
   view: function(ctrl) {

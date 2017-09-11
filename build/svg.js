@@ -18,7 +18,8 @@ const SVG = function(gruntDone) {
       gray: '#9baab2',
       white: '#ffffff',
       teal: '#22b8af',
-      black: '#000000'
+      black: '#000000',
+      blue: '#00adef'
     }
   };
 
