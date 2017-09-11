@@ -1,3 +1,7 @@
+### 1.3.0
+**2017-9-11**
+* Added vimeo blue icons to svg's
+
 ### 1.2.12
 **2017-07-12**
 * Revert 1.2.10 which caused a regression for non-stacked radios. Non-breaking implementation uses `.truncate` instead

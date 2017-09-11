@@ -289,6 +289,22 @@ a.text--blue:hover, a.text--blue:active {
 a.text--blue.is-disabled:link, a.text--blue.is-disabled:visited, a.text--blue.is-disabled:hover, a.text--blue.is-disabled:active {
   color: #0F4E7B; }
 
+.text--vimeo-blue {
+  color: #00adef; }
+  .text--vimeo-blue.text--transparent {
+    color: rgba(0, 173, 239, 0.5); }
+
+a.text--vimeo-blue:link, a.text--vimeo-blue:visited {
+  color: #0088cc;
+  text-decoration: none; }
+a.text--vimeo-blue:hover, a.text--vimeo-blue:active {
+  color: #0088cc;
+  text-decoration: none; }
+  a.text--vimeo-blue:hover.is-hover-text--currant, a.text--vimeo-blue:active.is-hover-text--currant {
+    color: #00adef; }
+a.text--vimeo-blue.is-disabled:link, a.text--vimeo-blue.is-disabled:visited, a.text--vimeo-blue.is-disabled:hover, a.text--vimeo-blue.is-disabled:active {
+  color: #00adef; }
+
 /* modifiers
 ......................................*/
 .text--bold {
