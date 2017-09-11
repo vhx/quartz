@@ -1,6 +1,7 @@
 ### 1.3.0
-**2017-09-07**
-* Begins to add Vimeo specific styles
+**2017-9-11**
+* Added vimeo blue icons to svg's
+
 
 ### 1.2.12
 **2017-07-12**

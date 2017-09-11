@@ -125,7 +125,18 @@ a.head--white:link, a.head--white:visited {
 a.head--white:hover, a.head--white:active {
   color: rgba(255, 255, 255, 0.7); }
 
-/* header white
+/* header vimeo-blue
 ......................................*/
+
+.head--vimeo-blue {
+  color: #00adef; }
+
+a.head--vimeo-blue:link, a.head--vimeo-blue:visited {
+  color: #0088cc
+  text-decoration: none; }
+a.head--vimeo-blue:hover, a.head--vimeo-blue:active {
+  color: #0088cc
+  text-decoration: none; }
+
 .head--gothic {
   font-family: "alternate-gothic-no-3-d-n4", "alternate-gothic-no-3-d", sans-serif; }
