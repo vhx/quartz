@@ -49,7 +49,9 @@ Q.components.guide.styleguide.ui.text.container = {
               m('p.text-2.text--purple.margin-bottom-small', 'Text Purple'),
               m('p.text-2.text--currant.margin-bottom-small', 'Text Currant'),
               m('p.text-2.text--blue.margin-bottom-small', 'Text Blue'),
-              m('p.text-2.text--vimeo-blue.margin-bottom-small', 'Text Vimeo Blue')
+              m('p.text-2.text--vimeo-blue.margin-bottom-small', 'Text Vimeo Blue'),
+              m('p.text-2.text--sunset-orange.margin-bottom-small', 'Text Sunset Orange'),
+              m('p.text-2.text--southerly-sky.margin-bottom-small', 'Text Southerly Sky')
             ]);
           }
         }
@@ -81,7 +83,9 @@ Q.components.guide.styleguide.ui.text.container = {
               m('a[href=#].text-2.block.text--purple.margin-bottom-small', 'Link Purple'),
               m('a[href=#].text-2.block.text--currant.margin-bottom-small', 'Link Currant'),
               m('a[href=#].text-2.block.text--blue.margin-bottom-small', 'Link Blue'),
-              m('a[href=#].text-2.block.text--vimeo-blue.margin-bottom-small', 'Link Vimeo Blue')
+              m('a[href=#].text-2.block.text--vimeo-blue.margin-bottom-small', 'Link Vimeo Blue'),
+              m('a[href=#].text-2.block.text--sunset-orange.margin-bottom-small', 'Link Sunset Orange'),
+              m('a[href=#].text-2.block.text--southerly-sky.margin-bottom-small', 'Link Astro Granite')
             ]);
           }
         }
@@ -101,7 +105,9 @@ Q.components.guide.styleguide.ui.text.container = {
               m('a[href=#].text-2.is-disabled.block.text--purple.margin-bottom-small', 'Link Purple'),
               m('a[href=#].text-2.is-disabled.block.text--currant.margin-bottom-small', 'Link Currant'),
               m('a[href=#].text-2.is-disabled.block.text--blue.margin-bottom-small', 'Link Blue'),
-              m('a[href=#].text-2.is-disabled.block.text--vimeo-blue.margin-bottom-small', 'Link Vimeo Blue')
+              m('a[href=#].text-2.is-disabled.block.text--vimeo-blue.margin-bottom-small', 'Link Vimeo Blue'),
+              m('a[href=#].text-2.is-disabled.block.text--sunset-orange.margin-bottom-small', 'Link Sunset Orange'),
+              m('a[href=#].text-2.is-disabled.block.text--southerly-sky.margin-bottom-small', 'Link Southerly Sky')
             ]);
           }
         }

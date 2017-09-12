@@ -6608,35 +6608,53 @@ a.text--blue.is-disabled:link, a.text--blue.is-disabled:visited, a.text--blue.is
     color: rgba(0, 173, 239, 0.5); }
 
 a.text--vimeo-blue:link, a.text--vimeo-blue:visited {
-  color: #0088cc;
+  color: #00adef;
   text-decoration: none; }
 
 a.text--vimeo-blue:hover, a.text--vimeo-blue:active {
   color: #0088cc;
   text-decoration: none; }
-  a.text--vimeo-blue:hover.is-hover-text--currant, a.text--vimeo-blue:active.is-hover-text--currant {
+  a.text--vimeo-blue:hover.is-hover-text--vimeo-blue, a.text--vimeo-blue:active.is-hover-text--vimeo-blue {
     color: #00adef; }
 
 a.text--vimeo-blue.is-disabled:link, a.text--vimeo-blue.is-disabled:visited, a.text--vimeo-blue.is-disabled:hover, a.text--vimeo-blue.is-disabled:active {
-  color: #00adef; }
+  color: #0088cc; }
 
 .text--sunset-orange {
-  color: #00adef; }
+  color: #ff4d4d; }
   .text--sunset-orange.text--transparent {
-    color: rgba(0, 173, 239, 0.5); }
+    color: rgba(255, 77, 77, 0.5); }
 
-a.text--vimeo-blue:link, a.text--vimeo-blue:visited {
-  color: #0088cc;
+a.text--sunset-orange:link, a.text--sunset-orange:visited {
+  color: #ff4d4d;
   text-decoration: none; }
 
-a.text--vimeo-blue:hover, a.text--vimeo-blue:active {
-  color: #0088cc;
+a.text--sunset-orange:hover, a.text--sunset-orange:active {
+  color: #d93636;
   text-decoration: none; }
-  a.text--vimeo-blue:hover.is-hover-text--currant, a.text--vimeo-blue:active.is-hover-text--currant {
-    color: #00adef; }
+  a.text--sunset-orange:hover.is-hover-text--sunset-orange, a.text--sunset-orange:active.is-hover-text--sunset-orange {
+    color: #ff4d4d; }
 
-a.text--vimeo-blue.is-disabled:link, a.text--vimeo-blue.is-disabled:visited, a.text--vimeo-blue.is-disabled:hover, a.text--vimeo-blue.is-disabled:active {
-  color: #00adef; }
+a.text--sunset-orange.is-disabled:link, a.text--sunset-orange.is-disabled:visited, a.text--sunset-orange.is-disabled:hover, a.text--sunset-orange.is-disabled:active {
+  color: #d93636; }
+
+.text--southerly-sky {
+  color: #b3bfc8; }
+  .text--southerly-sky.text--transparent {
+    color: rgba(179, 191, 200, 0.5); }
+
+a.text--southerly-sky:link, a.text--southerly-sky:visited {
+  color: #b3bfc8;
+  text-decoration: none; }
+
+a.text--southerly-sky:hover, a.text--southerly-sky:active {
+  color: #1a2e3b;
+  text-decoration: none; }
+  a.text--southerly-sky:hover.is-hover-text--southerly-sky, a.text--southerly-sky:active.is-hover-text--southerly-sky {
+    color: #b3bfc8; }
+
+a.text--southerly-sky.is-disabled:link, a.text--southerly-sky.is-disabled:visited, a.text--southerly-sky.is-disabled:hover, a.text--southerly-sky.is-disabled:active {
+  color: #b3bfc8; }
 
 /* modifiers
 ......................................*/

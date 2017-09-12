@@ -440,52 +440,82 @@ a.text--blue {
 a.text--vimeo-blue {
   &:link,
   &:visited {
-    color: $vimeo-blue-darkened;
+    color: $vimeo-blue;
     text-decoration: none;
   }
   &:hover,
   &:active {
     color: $vimeo-blue-darkened;
     text-decoration: none;
-    &.is-hover-text--currant {
+    &.is-hover-text--vimeo-blue {
       color: $vimeo-blue;
     }
   }
   &.is-disabled {
   &:link, &:visited,
   &:hover, &:active {
-      color: $vimeo-blue;
+      color: $vimeo-blue-darkened;
     }
   }
 }
 
 .text--sunset-orange {
-  color: $vimeo-blue;
+  color: $sunset-orange;
   &.text--transparent {
-    color: transparentize($vimeo-blue, .5);
+    color: transparentize($sunset-orange, .5);
   }
 }
-a.text--vimeo-blue {
+a.text--sunset-orange {
   &:link,
   &:visited {
-    color: $vimeo-blue-darkened;
+    color: $sunset-orange;
     text-decoration: none;
   }
   &:hover,
   &:active {
-    color: $vimeo-blue-darkened;
+    color: $sunset-orange-darkened;
     text-decoration: none;
-    &.is-hover-text--currant {
-      color: $vimeo-blue;
+    &.is-hover-text--sunset-orange {
+      color: $sunset-orange;
     }
   }
   &.is-disabled {
   &:link, &:visited,
   &:hover, &:active {
-      color: $vimeo-blue;
+      color: $sunset-orange-darkened;
     }
   }
 }
+
+.text--southerly-sky {
+  color: $southerly-sky;
+  &.text--transparent {
+    color: transparentize($southerly-sky, .5);
+  }
+}
+a.text--southerly-sky {
+  &:link,
+  &:visited {
+    color: $southerly-sky;
+    text-decoration: none;
+  }
+  &:hover,
+  &:active {
+    color: $astro-granite;
+    text-decoration: none;
+    &.is-hover-text--southerly-sky {
+      color: $southerly-sky;
+    }
+  }
+  &.is-disabled {
+  &:link, &:visited,
+  &:hover, &:active {
+      color: $southerly-sky;
+    }
+  }
+}
+
+
 /* modifiers
 ......................................*/
 .text--bold {
