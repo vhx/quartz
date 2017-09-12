@@ -149,27 +149,27 @@ Q.components.guide.styleguide.ui.icons_styles.container = {
               m('ul.margin-top-large.no-bullet.text-center.row', [
                 m('li.margin-bottom-medium.margin-right-medium.pull', [
                   m('h4.text--gray margin-bottom-small text--small', 'xxsmall'),
-                  m('i.icon-circle.icon--xxsmall.icon-upload')
+                  m('i.icon-circle.icon--xxsmall.icon-upload-vimeo')
                 ]),
                 m('li.margin-bottom-medium.margin-right-medium.pull', [
                   m('h4.text--gray margin-bottom-small text--small', 'xsmall'),
-                  m('i.icon-circle.icon--xsmall.icon-upload')
+                  m('i.icon-circle.icon--xsmall.icon-upload-vimeo')
                 ]),
                 m('li.margin-bottom-medium.margin-right-medium.pull', [
                   m('h4.text--gray margin-bottom-small text--small', 'small'),
-                  m('i.icon-circle.icon--small.icon-upload')
+                  m('i.icon-circle.icon--small.icon-upload-vimeo')
                 ]),
                 m('li.margin-bottom-medium.margin-right-medium.pull', [
                   m('h4.text--gray margin-bottom-small text--small', 'medium'),
-                  m('i.icon-circle.icon--medium.icon-upload')
+                  m('i.icon-circle.icon--medium.icon-upload-vimeo')
                 ]),
                 m('li.margin-bottom-medium.margin-right-medium.pull', [
                   m('h4.text--gray margin-bottom-small text--small', 'large'),
-                  m('i.icon-circle.icon--large.icon-upload')
+                  m('i.icon-circle.icon--large.icon-upload-vimeo')
                 ]),
                 m('li.margin-bottom-medium.margin-right-medium.pull', [
                   m('h4.text--gray margin-bottom-small text--small', 'xlarge'),
-                  m('i.icon-circle.icon--xlarge.icon-upload')
+                  m('i.icon-circle.icon--xlarge.icon-upload-vimeo')
                 ])
               ])
             ]);
@@ -256,4 +256,3 @@ Q.components.guide.styleguide.ui.icons_names.container = {
     ]);
   }
 };
-
