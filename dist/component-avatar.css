@@ -25,6 +25,9 @@
   Colors - Brand Palette
 ..................................... */
 /* .....................................
+  Colors - Vimeo Brand Palette
+..................................... */
+/* .....................................
   Colors - External Palette
 ..................................... */
 /* helper function for margin and padding
@@ -62,7 +65,7 @@
   .avatar.color-teal {
     background-color: #22B9B0; }
   .avatar.avatar--border .avatar-img {
-    border: 2px solid #ffffff; }
+    border: 2px solid #fff; }
   .avatar .avatar-user {
     position: absolute;
     top: 0;

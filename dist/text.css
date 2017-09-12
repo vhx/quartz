@@ -23,6 +23,9 @@
   Colors - Brand Palette
 ..................................... */
 /* .....................................
+  Colors - Vimeo Brand Palette
+..................................... */
+/* .....................................
   Colors - External Palette
 ..................................... */
 /* helper function for margin and padding
@@ -146,20 +149,20 @@ a.text--teal.is-disabled:link, a.text--teal.is-disabled:visited, a.text--teal.is
   color: #149A97; }
 
 .text--white {
-  color: #ffffff; }
+  color: #fff; }
   .text--white.text--transparent {
     color: rgba(255, 255, 255, 0.7); }
 
 a.text--white:link, a.text--white:visited {
-  color: #ffffff;
+  color: #fff;
   text-decoration: none; }
 a.text--white:hover, a.text--white:active {
   color: rgba(255, 255, 255, 0.7);
   text-decoration: none; }
   a.text--white:hover.is-hover-text--white, a.text--white:active.is-hover-text--white {
-    color: #ffffff; }
+    color: #fff; }
 a.text--white.is-disabled:link, a.text--white.is-disabled:visited, a.text--white.is-disabled:hover, a.text--white.is-disabled:active {
-  color: #ffffff; }
+  color: #fff; }
 
 .text--yellow {
   color: #FFB567; }

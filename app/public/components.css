@@ -23,6 +23,9 @@
   Colors - Brand Palette
 ..................................... */
 /* .....................................
+  Colors - Vimeo Brand Palette
+..................................... */
+/* .....................................
   Colors - External Palette
 ..................................... */
 /* helper function for margin and padding
@@ -34,7 +37,7 @@
   width: 100%;
   position: absolute;
   background-color: #fff;
-  background: #ffffff;
+  background: #fff;
   z-index: 2147483600;
   border: 1px solid #D7DDE1;
   border-top: none;
@@ -44,7 +47,7 @@
 
 .c-autosuggest--input-container {
   width: 100%;
-  background: #ffffff; }
+  background: #fff; }
   .c-autosuggest--input-container input {
     border-radius: 3px 3px 0px 0 !important; }
 
@@ -93,6 +96,9 @@
   Colors - Brand Palette
 ..................................... */
 /* .....................................
+  Colors - Vimeo Brand Palette
+..................................... */
+/* .....................................
   Colors - External Palette
 ..................................... */
 /* helper function for margin and padding
@@ -130,7 +136,7 @@
   .avatar.color-teal {
     background-color: #22B9B0; }
   .avatar.avatar--border .avatar-img {
-    border: 2px solid #ffffff; }
+    border: 2px solid #fff; }
   .avatar .avatar-user {
     position: absolute;
     top: 0;
@@ -207,6 +213,9 @@
 ..................................... */
 /* .....................................
   Colors - Brand Palette
+..................................... */
+/* .....................................
+  Colors - Vimeo Brand Palette
 ..................................... */
 /* .....................................
   Colors - External Palette
@@ -367,12 +376,12 @@
   ...................................*/ }
   .form .checkbox.alt label {
     border-radius: 20px;
-    background: #ffffff;
+    background: #fff;
     width: 70px;
     padding: 7px; }
     .form .checkbox.alt label .checkbox--contain {
       display: block;
-      background: #ffffff;
+      background: #fff;
       position: relative;
       padding: 0;
       border-radius: 20px;
@@ -563,6 +572,9 @@
   Colors - Brand Palette
 ..................................... */
 /* .....................................
+  Colors - Vimeo Brand Palette
+..................................... */
+/* .....................................
   Colors - External Palette
 ..................................... */
 /* helper function for margin and padding
@@ -643,6 +655,9 @@
 ..................................... */
 /* .....................................
   Colors - Brand Palette
+..................................... */
+/* .....................................
+  Colors - Vimeo Brand Palette
 ..................................... */
 /* .....................................
   Colors - External Palette
@@ -784,6 +799,9 @@
 ..................................... */
 /* .....................................
   Colors - Brand Palette
+..................................... */
+/* .....................................
+  Colors - Vimeo Brand Palette
 ..................................... */
 /* .....................................
   Colors - External Palette
@@ -957,6 +975,9 @@
   Colors - Brand Palette
 ..................................... */
 /* .....................................
+  Colors - Vimeo Brand Palette
+..................................... */
+/* .....................................
   Colors - External Palette
 ..................................... */
 /* helper function for margin and padding
@@ -1023,7 +1044,7 @@
 .caret--bottom-right .c-select--dropdown:before,
 .caret--bottom-left .c-select--dropdown:before,
 .caret--bottom-center .c-select--dropdown:before {
-  border-top-color: #ffffff;
+  border-top-color: #fff;
   margin-left: -10px; }
 
 .caret--top-center .c-select--dropdown:after, .caret--top-center .c-select--dropdown:before {
@@ -1050,7 +1071,7 @@
 .caret--top-right .c-select--dropdown:before,
 .caret--top-left .c-select--dropdown:before,
 .caret--top-center .c-select--dropdown:before {
-  border-bottom-color: #ffffff;
+  border-bottom-color: #fff;
   margin-left: -10px; }
 
 .c-select--input-container {
@@ -1101,7 +1122,7 @@
   transform: translateY(8px);
   transition: opacity .2s ease-out; }
   .c-item-toggle.is-selected {
-    background-color: #ffffff;
+    background-color: #fff;
     opacity: 1; }
 
 .c-select--footer .btn-teal {
@@ -1119,7 +1140,7 @@
 .c-select--footer .btn-teal.is-loading {
   background-color: #22B9B0 !important;
   border-color: #22B9B0 !important;
-  color: #ffffff; }
+  color: #fff; }
 
 .c-select--footer .btn-teal.is-loading {
   color: transparent; }

@@ -23,6 +23,9 @@
   Colors - Brand Palette
 ..................................... */
 /* .....................................
+  Colors - Vimeo Brand Palette
+..................................... */
+/* .....................................
   Colors - External Palette
 ..................................... */
 /* helper function for margin and padding
@@ -44,7 +47,7 @@
     background-color: #D7DDE1; }
   .tag.is-selected {
     background-color: #22B9B0;
-    color: #ffffff; }
+    color: #fff; }
   .tag.tag-removable-small {
     padding-left: 10px;
     padding-right: 30px;

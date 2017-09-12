@@ -25,6 +25,9 @@
   Colors - Brand Palette
 ..................................... */
 /* .....................................
+  Colors - Vimeo Brand Palette
+..................................... */
+/* .....................................
   Colors - External Palette
 ..................................... */
 /* helper function for margin and padding
@@ -46,7 +49,7 @@
 /* Black & White
 ......................................*/
 .bg-white {
-  background-color: #ffffff; }
+  background-color: #fff; }
 
 .bg-white-transparent {
   background-color: rgba(255, 255, 255, 0.7); }
@@ -123,6 +126,54 @@
 .bg-cover {
   background-size: cover;
   background-position: 50% 50%; }
+
+.bg-vimeo-blue {
+  background-color: #00adef; }
+
+.bg-foam {
+  background-color: #e5f7fd; }
+
+.bg-pistachio {
+  background-color: #7fc400; }
+
+.bg-rum-swizzle {
+  background-color: #f2f9e5; }
+
+.bg-sunset-orange {
+  background-color: #ff4d4d; }
+
+.bg-pale-pink {
+  background-color: #ffeded; }
+
+.bg-astro-granite {
+  background-color: #1a2e3b; }
+
+.bg-regent-gray {
+  background-color: #8699a6; }
+
+.bg-southerly-sky {
+  background-color: #b3bfc8; }
+
+.bg-porcelain {
+  background-color: #e3e8e9; }
+
+.bg-plaster {
+  background-color: #eef1f2; }
+
+.bg-paste {
+  background-color: #f6f7f8; }
+
+.bg-white {
+  background-color: #fff; }
+
+.bg-vimeo-blue-darkened {
+  background-color: #0088cc; }
+
+.bg-pistachio-darkened {
+  background-color: #5a9e02; }
+
+.bg-sunset-orange-darkened {
+  background-color: #ff4d4d; }
 
 /* External Brands
 ..................................... */

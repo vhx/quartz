@@ -26,6 +26,9 @@
   Colors - Brand Palette
 ..................................... */
 /* .....................................
+  Colors - Vimeo Brand Palette
+..................................... */
+/* .....................................
   Colors - External Palette
 ..................................... */
 /* helper function for margin and padding
@@ -47,7 +50,7 @@
 /* Black & White
 ......................................*/
 .bg-white {
-  background-color: #ffffff; }
+  background-color: #fff; }
 
 .bg-white-transparent {
   background-color: rgba(255, 255, 255, 0.7); }
@@ -125,6 +128,54 @@
   background-size: cover;
   background-position: 50% 50%; }
 
+.bg-vimeo-blue {
+  background-color: #00adef; }
+
+.bg-foam {
+  background-color: #e5f7fd; }
+
+.bg-pistachio {
+  background-color: #7fc400; }
+
+.bg-rum-swizzle {
+  background-color: #f2f9e5; }
+
+.bg-sunset-orange {
+  background-color: #ff4d4d; }
+
+.bg-pale-pink {
+  background-color: #ffeded; }
+
+.bg-astro-granite {
+  background-color: #1a2e3b; }
+
+.bg-regent-gray {
+  background-color: #8699a6; }
+
+.bg-southerly-sky {
+  background-color: #b3bfc8; }
+
+.bg-porcelain {
+  background-color: #e3e8e9; }
+
+.bg-plaster {
+  background-color: #eef1f2; }
+
+.bg-paste {
+  background-color: #f6f7f8; }
+
+.bg-white {
+  background-color: #fff; }
+
+.bg-vimeo-blue-darkened {
+  background-color: #0088cc; }
+
+.bg-pistachio-darkened {
+  background-color: #5a9e02; }
+
+.bg-sunset-orange-darkened {
+  background-color: #ff4d4d; }
+
 /* External Brands
 ..................................... */
 .bg-facebook-blue {
@@ -141,9 +192,6 @@
 
 .bg-roku-purple {
   background-color: #662C91; }
-
-.bg-vimeo-blue {
-  background-color: #00adef; }
 
 /* .....................................
   Fonts
@@ -168,6 +216,9 @@
 ..................................... */
 /* .....................................
   Colors - Brand Palette
+..................................... */
+/* .....................................
+  Colors - Vimeo Brand Palette
 ..................................... */
 /* .....................................
   Colors - External Palette
@@ -205,7 +256,7 @@
 /* colors
 ...................................*/
 .border--white {
-  border-color: #ffffff !important; }
+  border-color: #fff !important; }
 
 .border--white-transparent {
   border-color: rgba(255, 255, 255, 0.7) !important; }
@@ -248,7 +299,7 @@
   .border-center.border--white-transparent:before {
     background-color: rgba(255, 255, 255, 0.7); }
   .border-center.border--white:before {
-    background-color: #ffffff; }
+    background-color: #fff; }
 
 .shadow {
   box-shadow: 0 0 5px 0 rgba(0, 20, 43, 0.5); }
@@ -287,6 +338,9 @@
   Colors - Brand Palette
 ..................................... */
 /* .....................................
+  Colors - Vimeo Brand Palette
+..................................... */
+/* .....................................
   Colors - External Palette
 ..................................... */
 /* helper function for margin and padding
@@ -314,6 +368,9 @@
 ..................................... */
 /* .....................................
   Colors - Brand Palette
+..................................... */
+/* .....................................
+  Colors - Vimeo Brand Palette
 ..................................... */
 /* .....................................
   Colors - External Palette
@@ -431,6 +488,9 @@
   Colors - Brand Palette
 ..................................... */
 /* .....................................
+  Colors - Vimeo Brand Palette
+..................................... */
+/* .....................................
   Colors - External Palette
 ..................................... */
 /* helper function for margin and padding
@@ -458,6 +518,9 @@
 ..................................... */
 /* .....................................
   Colors - Brand Palette
+..................................... */
+/* .....................................
+  Colors - Vimeo Brand Palette
 ..................................... */
 /* .....................................
   Colors - External Palette
@@ -592,34 +655,34 @@ select {
 ......................................*/
 .btn-slate {
   background-color: #869AA5;
-  color: #ffffff;
+  color: #fff;
   border: 1px solid #5E7887;
   background-size: 15px 15px; }
   .btn-slate:link, .btn-slate:visited {
-    color: #ffffff;
+    color: #fff;
     border: 1px solid #5E7887; }
   .btn-slate:hover, .btn-slate.is-hover, .btn-slate:focus:hover, .btn-slate:focus.is-hover {
-    color: #ffffff;
+    color: #fff;
     cursor: pointer;
     background-color: #5E7887;
     border: 1px solid #5E7887; }
   .btn-slate:active, .btn-slate.is-active, .btn-slate:focus, .btn-slate.is-focus {
-    color: #ffffff;
+    color: #fff;
     background-color: #869AA5;
     border: 1px solid #5E7887; }
   .btn-slate.is-selected {
-    color: #ffffff;
+    color: #fff;
     cursor: pointer;
     background-color: #5E7887;
     border: 1px solid #5E7887; }
   .btn-slate[disabled], .btn-slate.is-disabled {
     opacity: .5;
     background-color: #869AA5;
-    color: #ffffff;
+    color: #fff;
     border: 1px solid #5E7887; }
     .btn-slate[disabled]:visited, .btn-slate[disabled]:hover, .btn-slate[disabled].is-hover, .btn-slate[disabled]:active, .btn-slate[disabled].is-active, .btn-slate.is-disabled:visited, .btn-slate.is-disabled:hover, .btn-slate.is-disabled.is-hover, .btn-slate.is-disabled:active, .btn-slate.is-disabled.is-active {
       background-color: #869AA5;
-      color: #ffffff;
+      color: #fff;
       border: 1px solid #5E7887; }
   .btn-slate.is-processing, .btn-slate.processing, .btn-slate.is-loading, .btn-slate.loading {
     background-position: center center !important;
@@ -638,34 +701,34 @@ select {
 ......................................*/
 .btn-teal, .btn-dropdown-teal {
   background-color: #22B9B0;
-  color: #ffffff;
+  color: #fff;
   border: 1px solid #149A97;
   background-size: 15px 15px; }
   .btn-teal:link, .btn-dropdown-teal:link, .btn-teal:visited, .btn-dropdown-teal:visited {
-    color: #ffffff;
+    color: #fff;
     border: 1px solid #149A97; }
   .btn-teal:hover, .btn-dropdown-teal:hover, .btn-teal.is-hover, .is-hover.btn-dropdown-teal, .btn-teal:focus:hover, .btn-dropdown-teal:focus:hover, .btn-teal:focus.is-hover, .btn-dropdown-teal:focus.is-hover {
-    color: #ffffff;
+    color: #fff;
     cursor: pointer;
     background-color: #149A97;
     border: 1px solid #149A97; }
   .btn-teal:active, .btn-dropdown-teal:active, .btn-teal.is-active, .is-active.btn-dropdown-teal, .btn-teal:focus, .btn-dropdown-teal:focus, .btn-teal.is-focus, .is-focus.btn-dropdown-teal {
-    color: #ffffff;
+    color: #fff;
     background-color: #22B9B0;
     border: 1px solid #149A97; }
   .btn-teal.is-selected, .is-selected.btn-dropdown-teal {
-    color: #ffffff;
+    color: #fff;
     cursor: pointer;
     background-color: #149A97;
     border: 1px solid #149A97; }
   .btn-teal[disabled], [disabled].btn-dropdown-teal, .btn-teal.is-disabled, .is-disabled.btn-dropdown-teal {
     opacity: .5;
     background-color: #22B9B0;
-    color: #ffffff;
+    color: #fff;
     border: 1px solid #149A97; }
     .btn-teal[disabled]:visited, [disabled].btn-dropdown-teal:visited, .btn-teal[disabled]:hover, [disabled].btn-dropdown-teal:hover, .btn-teal[disabled].is-hover, [disabled].is-hover.btn-dropdown-teal, .btn-teal[disabled]:active, [disabled].btn-dropdown-teal:active, .btn-teal[disabled].is-active, [disabled].is-active.btn-dropdown-teal, .btn-teal.is-disabled:visited, .is-disabled.btn-dropdown-teal:visited, .btn-teal.is-disabled:hover, .is-disabled.btn-dropdown-teal:hover, .btn-teal.is-disabled.is-hover, .is-disabled.is-hover.btn-dropdown-teal, .btn-teal.is-disabled:active, .is-disabled.btn-dropdown-teal:active, .btn-teal.is-disabled.is-active, .is-disabled.is-active.btn-dropdown-teal {
       background-color: #22B9B0;
-      color: #ffffff;
+      color: #fff;
       border: 1px solid #149A97; }
   .btn-teal.is-processing, .is-processing.btn-dropdown-teal, .btn-teal.processing, .processing.btn-dropdown-teal, .btn-teal.is-loading, .is-loading.btn-dropdown-teal, .btn-teal.loading, .loading.btn-dropdown-teal {
     background-position: center center !important;
@@ -684,34 +747,34 @@ select {
 ......................................*/
 .btn-red {
   background-color: #D3104A;
-  color: #ffffff;
+  color: #fff;
   border: 1px solid #a40c39;
   background-size: 15px 15px; }
   .btn-red:link, .btn-red:visited {
-    color: #ffffff;
+    color: #fff;
     border: 1px solid #a40c39; }
   .btn-red:hover, .btn-red.is-hover, .btn-red:focus:hover, .btn-red:focus.is-hover {
-    color: #ffffff;
+    color: #fff;
     cursor: pointer;
     background-color: #a40c39;
     border: 1px solid #a40c39; }
   .btn-red:active, .btn-red.is-active, .btn-red:focus, .btn-red.is-focus {
-    color: #ffffff;
+    color: #fff;
     background-color: #D3104A;
     border: 1px solid #a40c39; }
   .btn-red.is-selected {
-    color: #ffffff;
+    color: #fff;
     cursor: pointer;
     background-color: #a40c39;
     border: 1px solid #a40c39; }
   .btn-red[disabled], .btn-red.is-disabled {
     opacity: .5;
     background-color: #D3104A;
-    color: #ffffff;
+    color: #fff;
     border: 1px solid #a40c39; }
     .btn-red[disabled]:visited, .btn-red[disabled]:hover, .btn-red[disabled].is-hover, .btn-red[disabled]:active, .btn-red[disabled].is-active, .btn-red.is-disabled:visited, .btn-red.is-disabled:hover, .btn-red.is-disabled.is-hover, .btn-red.is-disabled:active, .btn-red.is-disabled.is-active {
       background-color: #D3104A;
-      color: #ffffff;
+      color: #fff;
       border: 1px solid #a40c39; }
   .btn-red.is-processing, .btn-red.processing, .btn-red.is-loading, .btn-red.loading {
     background-position: center center !important;
@@ -730,34 +793,34 @@ select {
 ......................................*/
 .btn-purple {
   background-color: #783479;
-  color: #ffffff;
+  color: #fff;
   border: 1px solid #783479;
   background-size: 15px 15px; }
   .btn-purple:link, .btn-purple:visited {
-    color: #ffffff;
+    color: #fff;
     border: 1px solid #783479; }
   .btn-purple:hover, .btn-purple.is-hover, .btn-purple:focus:hover, .btn-purple:focus.is-hover {
-    color: #ffffff;
+    color: #fff;
     cursor: pointer;
     background-color: #552555;
     border: 1px solid #552555; }
   .btn-purple:active, .btn-purple.is-active, .btn-purple:focus, .btn-purple.is-focus {
-    color: #ffffff;
+    color: #fff;
     background-color: #783479;
     border: 1px solid #783479; }
   .btn-purple.is-selected {
-    color: #ffffff;
+    color: #fff;
     cursor: pointer;
     background-color: #552555;
     border: 1px solid #552555; }
   .btn-purple[disabled], .btn-purple.is-disabled {
     opacity: .5;
     background-color: #783479;
-    color: #ffffff;
+    color: #fff;
     border: 1px solid #783479; }
     .btn-purple[disabled]:visited, .btn-purple[disabled]:hover, .btn-purple[disabled].is-hover, .btn-purple[disabled]:active, .btn-purple[disabled].is-active, .btn-purple.is-disabled:visited, .btn-purple.is-disabled:hover, .btn-purple.is-disabled.is-hover, .btn-purple.is-disabled:active, .btn-purple.is-disabled.is-active {
       background-color: #783479;
-      color: #ffffff;
+      color: #fff;
       border: 1px solid #783479; }
   .btn-purple.is-processing, .btn-purple.processing, .btn-purple.is-loading, .btn-purple.loading {
     background-position: center center !important;
@@ -776,34 +839,34 @@ select {
 ......................................*/
 .btn-green {
   background-color: #9DBB36;
-  color: #ffffff;
+  color: #fff;
   border: 1px solid #9DBB36;
   background-size: 15px 15px; }
   .btn-green:link, .btn-green:visited {
-    color: #ffffff;
+    color: #fff;
     border: 1px solid #9DBB36; }
   .btn-green:hover, .btn-green.is-hover, .btn-green:focus:hover, .btn-green:focus.is-hover {
-    color: #ffffff;
+    color: #fff;
     cursor: pointer;
     background-color: #7c932b;
     border: 1px solid #7c932b; }
   .btn-green:active, .btn-green.is-active, .btn-green:focus, .btn-green.is-focus {
-    color: #ffffff;
+    color: #fff;
     background-color: #9DBB36;
     border: 1px solid #9DBB36; }
   .btn-green.is-selected {
-    color: #ffffff;
+    color: #fff;
     cursor: pointer;
     background-color: #7c932b;
     border: 1px solid #7c932b; }
   .btn-green[disabled], .btn-green.is-disabled {
     opacity: .5;
     background-color: #9DBB36;
-    color: #ffffff;
+    color: #fff;
     border: 1px solid #9DBB36; }
     .btn-green[disabled]:visited, .btn-green[disabled]:hover, .btn-green[disabled].is-hover, .btn-green[disabled]:active, .btn-green[disabled].is-active, .btn-green.is-disabled:visited, .btn-green.is-disabled:hover, .btn-green.is-disabled.is-hover, .btn-green.is-disabled:active, .btn-green.is-disabled.is-active {
       background-color: #9DBB36;
-      color: #ffffff;
+      color: #fff;
       border: 1px solid #9DBB36; }
   .btn-green.is-processing, .btn-green.processing, .btn-green.is-loading, .btn-green.loading {
     background-position: center center !important;
@@ -867,7 +930,7 @@ select {
 /* button white shorthand
 ......................................*/
 .btn-white, .btn-dropdown-white {
-  background-color: #ffffff;
+  background-color: #fff;
   color: #5E7887;
   border: 1px solid #D7DDE1;
   background-size: 15px 15px; }
@@ -881,7 +944,7 @@ select {
     border: 1px solid #D7DDE1; }
   .btn-white:active, .btn-dropdown-white:active, .btn-white.is-active, .is-active.btn-dropdown-white, .btn-white:focus, .btn-dropdown-white:focus, .btn-white.is-focus, .is-focus.btn-dropdown-white {
     color: #5E7887;
-    background-color: #ffffff;
+    background-color: #fff;
     border: 1px solid #D7DDE1; }
   .btn-white.is-selected, .is-selected.btn-dropdown-white {
     color: #5E7887;
@@ -890,11 +953,11 @@ select {
     border: 1px solid #D7DDE1; }
   .btn-white[disabled], [disabled].btn-dropdown-white, .btn-white.is-disabled, .is-disabled.btn-dropdown-white {
     opacity: .5;
-    background-color: #ffffff;
+    background-color: #fff;
     color: #5E7887;
     border: 1px solid #D7DDE1; }
     .btn-white[disabled]:visited, [disabled].btn-dropdown-white:visited, .btn-white[disabled]:hover, [disabled].btn-dropdown-white:hover, .btn-white[disabled].is-hover, [disabled].is-hover.btn-dropdown-white, .btn-white[disabled]:active, [disabled].btn-dropdown-white:active, .btn-white[disabled].is-active, [disabled].is-active.btn-dropdown-white, .btn-white.is-disabled:visited, .is-disabled.btn-dropdown-white:visited, .btn-white.is-disabled:hover, .is-disabled.btn-dropdown-white:hover, .btn-white.is-disabled.is-hover, .is-disabled.is-hover.btn-dropdown-white, .btn-white.is-disabled:active, .is-disabled.btn-dropdown-white:active, .btn-white.is-disabled.is-active, .is-disabled.is-active.btn-dropdown-white {
-      background-color: #ffffff;
+      background-color: #fff;
       color: #5E7887;
       border: 1px solid #D7DDE1; }
   .btn-white.is-processing, .is-processing.btn-dropdown-white, .btn-white.processing, .processing.btn-dropdown-white, .btn-white.is-loading, .is-loading.btn-dropdown-white, .btn-white.loading, .loading.btn-dropdown-white {
@@ -914,34 +977,34 @@ select {
 ......................................*/
 .btn-yellow {
   background-color: #FFB567;
-  color: #ffffff;
+  color: #fff;
   border: 1px solid #ff9c34;
   background-size: 15px 15px; }
   .btn-yellow:link, .btn-yellow:visited {
-    color: #ffffff;
+    color: #fff;
     border: 1px solid #ff9c34; }
   .btn-yellow:hover, .btn-yellow.is-hover, .btn-yellow:focus:hover, .btn-yellow:focus.is-hover {
-    color: #ffffff;
+    color: #fff;
     cursor: pointer;
     background-color: #ff9c34;
     border: 1px solid #ff9c34; }
   .btn-yellow:active, .btn-yellow.is-active, .btn-yellow:focus, .btn-yellow.is-focus {
-    color: #ffffff;
+    color: #fff;
     background-color: #FFB567;
     border: 1px solid #ff9c34; }
   .btn-yellow.is-selected {
-    color: #ffffff;
+    color: #fff;
     cursor: pointer;
     background-color: #ff9c34;
     border: 1px solid #ff9c34; }
   .btn-yellow[disabled], .btn-yellow.is-disabled {
     opacity: .5;
     background-color: #FFB567;
-    color: #ffffff;
+    color: #fff;
     border: 1px solid #ff9c34; }
     .btn-yellow[disabled]:visited, .btn-yellow[disabled]:hover, .btn-yellow[disabled].is-hover, .btn-yellow[disabled]:active, .btn-yellow[disabled].is-active, .btn-yellow.is-disabled:visited, .btn-yellow.is-disabled:hover, .btn-yellow.is-disabled.is-hover, .btn-yellow.is-disabled:active, .btn-yellow.is-disabled.is-active {
       background-color: #FFB567;
-      color: #ffffff;
+      color: #fff;
       border: 1px solid #ff9c34; }
   .btn-yellow.is-processing, .btn-yellow.processing, .btn-yellow.is-loading, .btn-yellow.loading {
     background-position: center center !important;
@@ -960,34 +1023,34 @@ select {
 ......................................*/
 .btn-facebook {
   background-color: #3B5999;
-  color: #ffffff;
+  color: #fff;
   border: 1px solid #2d4474;
   background-size: 15px 15px; }
   .btn-facebook:link, .btn-facebook:visited {
-    color: #ffffff;
+    color: #fff;
     border: 1px solid #2d4474; }
   .btn-facebook:hover, .btn-facebook.is-hover, .btn-facebook:focus:hover, .btn-facebook:focus.is-hover {
-    color: #ffffff;
+    color: #fff;
     cursor: pointer;
     background-color: #2d4474;
     border: 1px solid #2d4474; }
   .btn-facebook:active, .btn-facebook.is-active, .btn-facebook:focus, .btn-facebook.is-focus {
-    color: #ffffff;
+    color: #fff;
     background-color: #3B5999;
     border: 1px solid #2d4474; }
   .btn-facebook.is-selected {
-    color: #ffffff;
+    color: #fff;
     cursor: pointer;
     background-color: #2d4474;
     border: 1px solid #2d4474; }
   .btn-facebook[disabled], .btn-facebook.is-disabled {
     opacity: .5;
     background-color: #3B5999;
-    color: #ffffff;
+    color: #fff;
     border: 1px solid #2d4474; }
     .btn-facebook[disabled]:visited, .btn-facebook[disabled]:hover, .btn-facebook[disabled].is-hover, .btn-facebook[disabled]:active, .btn-facebook[disabled].is-active, .btn-facebook.is-disabled:visited, .btn-facebook.is-disabled:hover, .btn-facebook.is-disabled.is-hover, .btn-facebook.is-disabled:active, .btn-facebook.is-disabled.is-active {
       background-color: #3B5999;
-      color: #ffffff;
+      color: #fff;
       border: 1px solid #2d4474; }
   .btn-facebook.is-processing, .btn-facebook.processing, .btn-facebook.is-loading, .btn-facebook.loading {
     background-position: center center !important;
@@ -1006,34 +1069,34 @@ select {
 ......................................*/
 .btn-twitter {
   background-color: #55ACEE;
-  color: #ffffff;
+  color: #fff;
   border: 1px solid #2795e9;
   background-size: 15px 15px; }
   .btn-twitter:link, .btn-twitter:visited {
-    color: #ffffff;
+    color: #fff;
     border: 1px solid #2795e9; }
   .btn-twitter:hover, .btn-twitter.is-hover, .btn-twitter:focus:hover, .btn-twitter:focus.is-hover {
-    color: #ffffff;
+    color: #fff;
     cursor: pointer;
     background-color: #2795e9;
     border: 1px solid #2795e9; }
   .btn-twitter:active, .btn-twitter.is-active, .btn-twitter:focus, .btn-twitter.is-focus {
-    color: #ffffff;
+    color: #fff;
     background-color: #55ACEE;
     border: 1px solid #2795e9; }
   .btn-twitter.is-selected {
-    color: #ffffff;
+    color: #fff;
     cursor: pointer;
     background-color: #2795e9;
     border: 1px solid #2795e9; }
   .btn-twitter[disabled], .btn-twitter.is-disabled {
     opacity: .5;
     background-color: #55ACEE;
-    color: #ffffff;
+    color: #fff;
     border: 1px solid #2795e9; }
     .btn-twitter[disabled]:visited, .btn-twitter[disabled]:hover, .btn-twitter[disabled].is-hover, .btn-twitter[disabled]:active, .btn-twitter[disabled].is-active, .btn-twitter.is-disabled:visited, .btn-twitter.is-disabled:hover, .btn-twitter.is-disabled.is-hover, .btn-twitter.is-disabled:active, .btn-twitter.is-disabled.is-active {
       background-color: #55ACEE;
-      color: #ffffff;
+      color: #fff;
       border: 1px solid #2795e9; }
   .btn-twitter.is-processing, .btn-twitter.processing, .btn-twitter.is-loading, .btn-twitter.loading {
     background-position: center center !important;
@@ -1052,34 +1115,34 @@ select {
 ......................................*/
 .btn-transparent {
   background-color: rgba(255, 255, 255, 0.5);
-  color: #ffffff;
+  color: #fff;
   border: 1px solid rgba(255, 255, 255, 0);
   background-size: 15px 15px; }
   .btn-transparent:link, .btn-transparent:visited {
-    color: #ffffff;
+    color: #fff;
     border: 1px solid rgba(255, 255, 255, 0); }
   .btn-transparent:hover, .btn-transparent.is-hover, .btn-transparent:focus:hover, .btn-transparent:focus.is-hover {
-    color: #ffffff;
+    color: #fff;
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.7);
     border: 1px solid rgba(255, 255, 255, 0); }
   .btn-transparent:active, .btn-transparent.is-active, .btn-transparent:focus, .btn-transparent.is-focus {
-    color: #ffffff;
+    color: #fff;
     background-color: rgba(255, 255, 255, 0.5);
     border: 1px solid rgba(255, 255, 255, 0); }
   .btn-transparent.is-selected {
-    color: #ffffff;
+    color: #fff;
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.7);
     border: 1px solid rgba(255, 255, 255, 0); }
   .btn-transparent[disabled], .btn-transparent.is-disabled {
     opacity: .5;
     background-color: rgba(255, 255, 255, 0.5);
-    color: #ffffff;
+    color: #fff;
     border: 1px solid rgba(255, 255, 255, 0); }
     .btn-transparent[disabled]:visited, .btn-transparent[disabled]:hover, .btn-transparent[disabled].is-hover, .btn-transparent[disabled]:active, .btn-transparent[disabled].is-active, .btn-transparent.is-disabled:visited, .btn-transparent.is-disabled:hover, .btn-transparent.is-disabled.is-hover, .btn-transparent.is-disabled:active, .btn-transparent.is-disabled.is-active {
       background-color: rgba(255, 255, 255, 0.5);
-      color: #ffffff;
+      color: #fff;
       border: 1px solid rgba(255, 255, 255, 0); }
   .btn-transparent.is-processing, .btn-transparent.processing, .btn-transparent.is-loading, .btn-transparent.loading {
     background-position: center center !important;
@@ -1098,34 +1161,34 @@ select {
 ......................................*/
 .btn-tumblr {
   background-color: #34465D;
-  color: #ffffff;
+  color: #fff;
   border: 1px solid #222d3c;
   background-size: 15px 15px; }
   .btn-tumblr:link, .btn-tumblr:visited {
-    color: #ffffff;
+    color: #fff;
     border: 1px solid #222d3c; }
   .btn-tumblr:hover, .btn-tumblr.is-hover, .btn-tumblr:focus:hover, .btn-tumblr:focus.is-hover {
-    color: #ffffff;
+    color: #fff;
     cursor: pointer;
     background-color: #222d3c;
     border: 1px solid #222d3c; }
   .btn-tumblr:active, .btn-tumblr.is-active, .btn-tumblr:focus, .btn-tumblr.is-focus {
-    color: #ffffff;
+    color: #fff;
     background-color: #34465D;
     border: 1px solid #222d3c; }
   .btn-tumblr.is-selected {
-    color: #ffffff;
+    color: #fff;
     cursor: pointer;
     background-color: #222d3c;
     border: 1px solid #222d3c; }
   .btn-tumblr[disabled], .btn-tumblr.is-disabled {
     opacity: .5;
     background-color: #34465D;
-    color: #ffffff;
+    color: #fff;
     border: 1px solid #222d3c; }
     .btn-tumblr[disabled]:visited, .btn-tumblr[disabled]:hover, .btn-tumblr[disabled].is-hover, .btn-tumblr[disabled]:active, .btn-tumblr[disabled].is-active, .btn-tumblr.is-disabled:visited, .btn-tumblr.is-disabled:hover, .btn-tumblr.is-disabled.is-hover, .btn-tumblr.is-disabled:active, .btn-tumblr.is-disabled.is-active {
       background-color: #34465D;
-      color: #ffffff;
+      color: #fff;
       border: 1px solid #222d3c; }
   .btn-tumblr.is-processing, .btn-tumblr.processing, .btn-tumblr.is-loading, .btn-tumblr.loading {
     background-position: center center !important;
@@ -1144,34 +1207,34 @@ select {
 ......................................*/
 .btn-paypal {
   background-color: #00457C;
-  color: #ffffff;
+  color: #fff;
   border: 1px solid #002949;
   background-size: 15px 15px; }
   .btn-paypal:link, .btn-paypal:visited {
-    color: #ffffff;
+    color: #fff;
     border: 1px solid #002949; }
   .btn-paypal:hover, .btn-paypal.is-hover, .btn-paypal:focus:hover, .btn-paypal:focus.is-hover {
-    color: #ffffff;
+    color: #fff;
     cursor: pointer;
     background-color: #002949;
     border: 1px solid #002949; }
   .btn-paypal:active, .btn-paypal.is-active, .btn-paypal:focus, .btn-paypal.is-focus {
-    color: #ffffff;
+    color: #fff;
     background-color: #00457C;
     border: 1px solid #002949; }
   .btn-paypal.is-selected {
-    color: #ffffff;
+    color: #fff;
     cursor: pointer;
     background-color: #002949;
     border: 1px solid #002949; }
   .btn-paypal[disabled], .btn-paypal.is-disabled {
     opacity: .5;
     background-color: #00457C;
-    color: #ffffff;
+    color: #fff;
     border: 1px solid #002949; }
     .btn-paypal[disabled]:visited, .btn-paypal[disabled]:hover, .btn-paypal[disabled].is-hover, .btn-paypal[disabled]:active, .btn-paypal[disabled].is-active, .btn-paypal.is-disabled:visited, .btn-paypal.is-disabled:hover, .btn-paypal.is-disabled.is-hover, .btn-paypal.is-disabled:active, .btn-paypal.is-disabled.is-active {
       background-color: #00457C;
-      color: #ffffff;
+      color: #fff;
       border: 1px solid #002949; }
   .btn-paypal.is-processing, .btn-paypal.processing, .btn-paypal.is-loading, .btn-paypal.loading {
     background-position: center center !important;
@@ -1190,34 +1253,34 @@ select {
 ......................................*/
 .btn-roku {
   background-color: #662C91;
-  color: #ffffff;
+  color: #fff;
   border: 1px solid #4a206a;
   background-size: 15px 15px; }
   .btn-roku:link, .btn-roku:visited {
-    color: #ffffff;
+    color: #fff;
     border: 1px solid #4a206a; }
   .btn-roku:hover, .btn-roku.is-hover, .btn-roku:focus:hover, .btn-roku:focus.is-hover {
-    color: #ffffff;
+    color: #fff;
     cursor: pointer;
     background-color: #4a206a;
     border: 1px solid #4a206a; }
   .btn-roku:active, .btn-roku.is-active, .btn-roku:focus, .btn-roku.is-focus {
-    color: #ffffff;
+    color: #fff;
     background-color: #662C91;
     border: 1px solid #4a206a; }
   .btn-roku.is-selected {
-    color: #ffffff;
+    color: #fff;
     cursor: pointer;
     background-color: #4a206a;
     border: 1px solid #4a206a; }
   .btn-roku[disabled], .btn-roku.is-disabled {
     opacity: .5;
     background-color: #662C91;
-    color: #ffffff;
+    color: #fff;
     border: 1px solid #4a206a; }
     .btn-roku[disabled]:visited, .btn-roku[disabled]:hover, .btn-roku[disabled].is-hover, .btn-roku[disabled]:active, .btn-roku[disabled].is-active, .btn-roku.is-disabled:visited, .btn-roku.is-disabled:hover, .btn-roku.is-disabled.is-hover, .btn-roku.is-disabled:active, .btn-roku.is-disabled.is-active {
       background-color: #662C91;
-      color: #ffffff;
+      color: #fff;
       border: 1px solid #4a206a; }
   .btn-roku.is-processing, .btn-roku.processing, .btn-roku.is-loading, .btn-roku.loading {
     background-position: center center !important;
@@ -1296,7 +1359,7 @@ select {
     right: 39px;
     width: 1px;
     height: 100%;
-    background: #ffffff; }
+    background: #fff; }
   .btn-dropdown.icon--center, .btn-dropdown.btn-search, .btn-search.btn-dropdown-gray, .btn-search.btn-dropdown-white, .btn-search.btn-dropdown-teal, .icon--center.btn-dropdown-gray, .icon--center.btn-dropdown-white, .icon--center.btn-dropdown-teal {
     width: 40px; }
     .btn-dropdown.icon--center.btn-dropdown--action:before, .btn-dropdown.btn-dropdown--action.btn-search:before, .btn-dropdown--action.btn-search.btn-dropdown-gray:before, .btn-dropdown--action.btn-search.btn-dropdown-white:before, .btn-dropdown--action.btn-search.btn-dropdown-teal:before, .icon--center.btn-dropdown--action.btn-dropdown-gray:before, .icon--center.btn-dropdown--action.btn-dropdown-white:before, .icon--center.btn-dropdown--action.btn-dropdown-teal:before {
@@ -1541,6 +1604,9 @@ select {
   Colors - Brand Palette
 ..................................... */
 /* .....................................
+  Colors - Vimeo Brand Palette
+..................................... */
+/* .....................................
   Colors - External Palette
 ..................................... */
 /* helper function for margin and padding
@@ -1587,6 +1653,9 @@ select {
 ..................................... */
 /* .....................................
   Colors - Brand Palette
+..................................... */
+/* .....................................
+  Colors - Vimeo Brand Palette
 ..................................... */
 /* .....................................
   Colors - External Palette
@@ -1644,11 +1713,11 @@ select {
     .arrow.arrow-bottom-left.bg-navy:before, .arrow.arrow-bottom-middle.bg-navy:before, .arrow.arrow-bottom-right.bg-navy:before {
       border-top-color: #00142B; }
   .arrow.arrow-bottom-left.bg-white, .arrow.arrow-bottom-middle.bg-white, .arrow.arrow-bottom-right.bg-white {
-    background: #ffffff; }
+    background: #fff; }
     .arrow.arrow-bottom-left.bg-white:after, .arrow.arrow-bottom-middle.bg-white:after, .arrow.arrow-bottom-right.bg-white:after {
-      border-top-color: #ffffff; }
+      border-top-color: #fff; }
     .arrow.arrow-bottom-left.bg-white:before, .arrow.arrow-bottom-middle.bg-white:before, .arrow.arrow-bottom-right.bg-white:before {
-      border-top-color: #ffffff; }
+      border-top-color: #fff; }
   .arrow.arrow-bottom-left.bg-gray-1, .arrow.arrow-bottom-middle.bg-gray-1, .arrow.arrow-bottom-right.bg-gray-1 {
     background: #F7F8F9; }
     .arrow.arrow-bottom-left.bg-gray-1:after, .arrow.arrow-bottom-middle.bg-gray-1:after, .arrow.arrow-bottom-right.bg-gray-1:after {
@@ -1701,11 +1770,11 @@ select {
     .arrow.arrow-left-top.bg-navy:before, .arrow.arrow-left-middle.bg-navy:before, .arrow.arrow-left-bottom.bg-navy:before {
       border-right-color: #00142B; }
   .arrow.arrow-left-top.bg-white, .arrow.arrow-left-middle.bg-white, .arrow.arrow-left-bottom.bg-white {
-    background: #ffffff; }
+    background: #fff; }
     .arrow.arrow-left-top.bg-white:after, .arrow.arrow-left-middle.bg-white:after, .arrow.arrow-left-bottom.bg-white:after {
-      border-right-color: #ffffff; }
+      border-right-color: #fff; }
     .arrow.arrow-left-top.bg-white:before, .arrow.arrow-left-middle.bg-white:before, .arrow.arrow-left-bottom.bg-white:before {
-      border-right-color: #ffffff; }
+      border-right-color: #fff; }
   .arrow.arrow-left-top.bg-gray-1, .arrow.arrow-left-middle.bg-gray-1, .arrow.arrow-left-bottom.bg-gray-1 {
     background: #F7F8F9; }
     .arrow.arrow-left-top.bg-gray-1:after, .arrow.arrow-left-middle.bg-gray-1:after, .arrow.arrow-left-bottom.bg-gray-1:after {
@@ -1758,11 +1827,11 @@ select {
     .arrow.arrow-right-top.bg-navy:before, .arrow.arrow-right-middle.bg-navy:before, .arrow.arrow-right-bottom.bg-navy:before {
       border-left-color: #00142B; }
   .arrow.arrow-right-top.bg-white, .arrow.arrow-right-middle.bg-white, .arrow.arrow-right-bottom.bg-white {
-    background: #ffffff; }
+    background: #fff; }
     .arrow.arrow-right-top.bg-white:after, .arrow.arrow-right-middle.bg-white:after, .arrow.arrow-right-bottom.bg-white:after {
-      border-left-color: #ffffff; }
+      border-left-color: #fff; }
     .arrow.arrow-right-top.bg-white:before, .arrow.arrow-right-middle.bg-white:before, .arrow.arrow-right-bottom.bg-white:before {
-      border-left-color: #ffffff; }
+      border-left-color: #fff; }
   .arrow.arrow-right-top.bg-gray-1, .arrow.arrow-right-middle.bg-gray-1, .arrow.arrow-right-bottom.bg-gray-1 {
     background: #F7F8F9; }
     .arrow.arrow-right-top.bg-gray-1:after, .arrow.arrow-right-middle.bg-gray-1:after, .arrow.arrow-right-bottom.bg-gray-1:after {
@@ -1815,11 +1884,11 @@ select {
     .arrow.arrow-top-left.bg-navy:before, .arrow.arrow-top-middle.bg-navy:before, .arrow.arrow-top-right.bg-navy:before {
       border-bottom-color: #00142B; }
   .arrow.arrow-top-left.bg-white, .arrow.arrow-top-middle.bg-white, .arrow.arrow-top-right.bg-white {
-    background: #ffffff; }
+    background: #fff; }
     .arrow.arrow-top-left.bg-white:after, .arrow.arrow-top-middle.bg-white:after, .arrow.arrow-top-right.bg-white:after {
-      border-bottom-color: #ffffff; }
+      border-bottom-color: #fff; }
     .arrow.arrow-top-left.bg-white:before, .arrow.arrow-top-middle.bg-white:before, .arrow.arrow-top-right.bg-white:before {
-      border-bottom-color: #ffffff; }
+      border-bottom-color: #fff; }
   .arrow.arrow-top-left.bg-gray-1, .arrow.arrow-top-middle.bg-gray-1, .arrow.arrow-top-right.bg-gray-1 {
     background: #F7F8F9; }
     .arrow.arrow-top-left.bg-gray-1:after, .arrow.arrow-top-middle.bg-gray-1:after, .arrow.arrow-top-right.bg-gray-1:after {
@@ -1876,6 +1945,9 @@ select {
 ..................................... */
 /* .....................................
   Colors - Brand Palette
+..................................... */
+/* .....................................
+  Colors - Vimeo Brand Palette
 ..................................... */
 /* .....................................
   Colors - External Palette
@@ -1985,6 +2057,9 @@ html {
   Colors - Brand Palette
 ..................................... */
 /* .....................................
+  Colors - Vimeo Brand Palette
+..................................... */
+/* .....................................
   Colors - External Palette
 ..................................... */
 /* helper function for margin and padding
@@ -2029,6 +2104,9 @@ ul, ol {
 ..................................... */
 /* .....................................
   Colors - Brand Palette
+..................................... */
+/* .....................................
+  Colors - Vimeo Brand Palette
 ..................................... */
 /* .....................................
   Colors - External Palette
@@ -2084,6 +2162,9 @@ object, embed, [data-clipboard] {
 ..................................... */
 /* .....................................
   Colors - Brand Palette
+..................................... */
+/* .....................................
+  Colors - Vimeo Brand Palette
 ..................................... */
 /* .....................................
   Colors - External Palette
@@ -2617,6 +2698,9 @@ object, embed, [data-clipboard] {
   Colors - Brand Palette
 ..................................... */
 /* .....................................
+  Colors - Vimeo Brand Palette
+..................................... */
+/* .....................................
   Colors - External Palette
 ..................................... */
 /* helper function for margin and padding
@@ -2727,6 +2811,9 @@ hr.column {
   Colors - Brand Palette
 ..................................... */
 /* .....................................
+  Colors - Vimeo Brand Palette
+..................................... */
+/* .....................................
   Colors - External Palette
 ..................................... */
 /* helper function for margin and padding
@@ -2751,7 +2838,7 @@ hr.column {
     opacity: 0; }
   .dropdown .dropdown-list {
     display: none;
-    background: #ffffff;
+    background: #fff;
     z-index: 2147483600;
     border: 1px solid #D7DDE1;
     border-radius: 5px;
@@ -2784,7 +2871,7 @@ hr.column {
       pointer-events: none; }
     .dropdown .dropdown-list:after {
       border-color: rgba(255, 255, 255, 0);
-      border-bottom-color: #ffffff;
+      border-bottom-color: #fff;
       border-width: 5px;
       margin-right: -7px; }
     .dropdown .dropdown-list:before {
@@ -2828,6 +2915,9 @@ hr.column {
 ..................................... */
 /* .....................................
   Colors - Brand Palette
+..................................... */
+/* .....................................
+  Colors - Vimeo Brand Palette
 ..................................... */
 /* .....................................
   Colors - External Palette
@@ -3180,6 +3270,9 @@ hr.column {
 ..................................... */
 /* .....................................
   Colors - Brand Palette
+..................................... */
+/* .....................................
+  Colors - Vimeo Brand Palette
 ..................................... */
 /* .....................................
   Colors - External Palette
@@ -5217,6 +5310,9 @@ th {
   Colors - Brand Palette
 ..................................... */
 /* .....................................
+  Colors - Vimeo Brand Palette
+..................................... */
+/* .....................................
   Colors - External Palette
 ..................................... */
 /* helper function for margin and padding
@@ -5315,10 +5411,10 @@ a.head--teal:hover, a.head--teal:active {
 /* header white
 ......................................*/
 .head--white {
-  color: #ffffff; }
+  color: #fff; }
 
 a.head--white:link, a.head--white:visited {
-  color: #ffffff; }
+  color: #fff; }
 
 a.head--white:hover, a.head--white:active {
   color: rgba(255, 255, 255, 0.7); }
@@ -5351,6 +5447,9 @@ a.head--white:hover, a.head--white:active {
 ..................................... */
 /* .....................................
   Colors - Brand Palette
+..................................... */
+/* .....................................
+  Colors - Vimeo Brand Palette
 ..................................... */
 /* .....................................
   Colors - External Palette
@@ -5625,6 +5724,9 @@ a.head--white:hover, a.head--white:active {
   Colors - Brand Palette
 ..................................... */
 /* .....................................
+  Colors - Vimeo Brand Palette
+..................................... */
+/* .....................................
   Colors - External Palette
 ..................................... */
 /* helper function for margin and padding
@@ -5726,6 +5828,9 @@ a.head--white:hover, a.head--white:active {
   Colors - Brand Palette
 ..................................... */
 /* .....................................
+  Colors - Vimeo Brand Palette
+..................................... */
+/* .....................................
   Colors - External Palette
 ..................................... */
 /* helper function for margin and padding
@@ -5788,6 +5893,9 @@ a.head--white:hover, a.head--white:active {
   Colors - Brand Palette
 ..................................... */
 /* .....................................
+  Colors - Vimeo Brand Palette
+..................................... */
+/* .....................................
   Colors - External Palette
 ..................................... */
 /* helper function for margin and padding
@@ -5809,7 +5917,7 @@ a.head--white:hover, a.head--white:active {
     background-color: #D7DDE1; }
   .tag.is-selected {
     background-color: #22B9B0;
-    color: #ffffff; }
+    color: #fff; }
   .tag.tag-removable-small {
     padding-left: 10px;
     padding-right: 30px;
@@ -5991,6 +6099,9 @@ a.head--white:hover, a.head--white:active {
   Colors - Brand Palette
 ..................................... */
 /* .....................................
+  Colors - Vimeo Brand Palette
+..................................... */
+/* .....................................
   Colors - External Palette
 ..................................... */
 /* helper function for margin and padding
@@ -6065,7 +6176,7 @@ a.head--white:hover, a.head--white:active {
   .table tr {
     box-sizing: border-box;
     transition: background 200ms ease-out;
-    background: #ffffff;
+    background: #fff;
     border-bottom: 1px solid #D7DDE1;
     border-left: 3px solid tranparent; }
     .table tr.is-disabled {
@@ -6194,6 +6305,9 @@ a.head--white:hover, a.head--white:active {
 ..................................... */
 /* .....................................
   Colors - Brand Palette
+..................................... */
+/* .....................................
+  Colors - Vimeo Brand Palette
 ..................................... */
 /* .....................................
   Colors - External Palette
@@ -6327,22 +6441,22 @@ a.text--teal.is-disabled:link, a.text--teal.is-disabled:visited, a.text--teal.is
   color: #149A97; }
 
 .text--white {
-  color: #ffffff; }
+  color: #fff; }
   .text--white.text--transparent {
     color: rgba(255, 255, 255, 0.7); }
 
 a.text--white:link, a.text--white:visited {
-  color: #ffffff;
+  color: #fff;
   text-decoration: none; }
 
 a.text--white:hover, a.text--white:active {
   color: rgba(255, 255, 255, 0.7);
   text-decoration: none; }
   a.text--white:hover.is-hover-text--white, a.text--white:active.is-hover-text--white {
-    color: #ffffff; }
+    color: #fff; }
 
 a.text--white.is-disabled:link, a.text--white.is-disabled:visited, a.text--white.is-disabled:hover, a.text--white.is-disabled:active {
-  color: #ffffff; }
+  color: #fff; }
 
 .text--yellow {
   color: #FFB567; }
@@ -6506,6 +6620,24 @@ a.text--vimeo-blue:hover, a.text--vimeo-blue:active {
 a.text--vimeo-blue.is-disabled:link, a.text--vimeo-blue.is-disabled:visited, a.text--vimeo-blue.is-disabled:hover, a.text--vimeo-blue.is-disabled:active {
   color: #00adef; }
 
+.text--sunset-orange {
+  color: #00adef; }
+  .text--sunset-orange.text--transparent {
+    color: rgba(0, 173, 239, 0.5); }
+
+a.text--vimeo-blue:link, a.text--vimeo-blue:visited {
+  color: #0088cc;
+  text-decoration: none; }
+
+a.text--vimeo-blue:hover, a.text--vimeo-blue:active {
+  color: #0088cc;
+  text-decoration: none; }
+  a.text--vimeo-blue:hover.is-hover-text--currant, a.text--vimeo-blue:active.is-hover-text--currant {
+    color: #00adef; }
+
+a.text--vimeo-blue.is-disabled:link, a.text--vimeo-blue.is-disabled:visited, a.text--vimeo-blue.is-disabled:hover, a.text--vimeo-blue.is-disabled:active {
+  color: #00adef; }
+
 /* modifiers
 ......................................*/
 .text--bold {
@@ -6575,6 +6707,9 @@ a.text--vimeo-blue.is-disabled:link, a.text--vimeo-blue.is-disabled:visited, a.t
 ..................................... */
 /* .....................................
   Colors - Brand Palette
+..................................... */
+/* .....................................
+  Colors - Vimeo Brand Palette
 ..................................... */
 /* .....................................
   Colors - External Palette

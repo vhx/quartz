@@ -23,6 +23,9 @@
   Colors - Brand Palette
 ..................................... */
 /* .....................................
+  Colors - Vimeo Brand Palette
+..................................... */
+/* .....................................
   Colors - External Palette
 ..................................... */
 /* helper function for margin and padding
@@ -118,10 +121,10 @@ a.head--teal:hover, a.head--teal:active {
 /* header white
 ......................................*/
 .head--white {
-  color: #ffffff; }
+  color: #fff; }
 
 a.head--white:link, a.head--white:visited {
-  color: #ffffff; }
+  color: #fff; }
 a.head--white:hover, a.head--white:active {
   color: rgba(255, 255, 255, 0.7); }
 

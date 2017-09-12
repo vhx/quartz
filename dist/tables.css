@@ -23,6 +23,9 @@
   Colors - Brand Palette
 ..................................... */
 /* .....................................
+  Colors - Vimeo Brand Palette
+..................................... */
+/* .....................................
   Colors - External Palette
 ..................................... */
 /* helper function for margin and padding
@@ -97,7 +100,7 @@
   .table tr {
     box-sizing: border-box;
     transition: background 200ms ease-out;
-    background: #ffffff;
+    background: #fff;
     border-bottom: 1px solid #D7DDE1;
     border-left: 3px solid tranparent; }
     .table tr.is-disabled {
