@@ -1,3 +1,7 @@
+### 1.4.0
+**2017-09-13**
+* Vimeo Color Palette included
+
 ### 1.3.0
 **2017-09-07**
 * Begins to add Vimeo specific styles
