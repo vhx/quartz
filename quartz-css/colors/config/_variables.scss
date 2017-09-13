@@ -47,6 +47,37 @@ $vhx-green: #9DBB36;
 $vhx-yellow: #FFB567;
 
 /* .....................................
+  Colors - Vimeo Brand Palette
+..................................... */
+//http://docs.vimeows.com/vimeo/iris/master/
+
+//Blues
+$vimeo-blue: #00adef;
+$foam: #e5f7fd;
+
+//Greens
+$pistachio: #7fc400;
+$rum-swizzle: #f2f9e5;
+
+//Reds
+$sunset-orange: #ff4d4d;
+$pale-pink: #ffeded;
+
+//GrayScale
+$astro-granite: #1a2e3b;
+$regent-gray: #8699a6;
+$southerly-sky: #b3bfc8;
+$porcelain: #e3e8e9;
+$plaster: #eef1f2;
+$paste: #f6f7f8;
+$white: #fff;
+
+//Interaction State Colors
+$vimeo-blue-darkened: #0088cc;
+$pistachio-darkened: #5a9e02;
+$sunset-orange-darkened: #d93636;
+
+/* .....................................
   Colors - External Palette
 ..................................... */
 // https://toolbelt.pixelapse.com/color/
@@ -56,5 +87,3 @@ $tumblr-blue: #34465D;
 $paypal-blue: #00457C;
 $roku-purple: #662C91;
 $vimeo-blue: #00adef;
-$vimeo-blue-darkened: #0088cc;
-$plaster: #eef1f2;

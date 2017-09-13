@@ -23,6 +23,9 @@
   Colors - Brand Palette
 ..................................... */
 /* .....................................
+  Colors - Vimeo Brand Palette
+..................................... */
+/* .....................................
   Colors - External Palette
 ..................................... */
 /* helper function for margin and padding
@@ -133,24 +136,24 @@
     border: 1px solid #9aaab4; }
 
 .form .checkbox.small {
-  min-height: 13.33333px; }
+  min-height: 13.3333333333px; }
   .form .checkbox.small label {
-    min-height: 13.33333px;
-    line-height: 13.33333px; }
+    min-height: 13.3333333333px;
+    line-height: 13.3333333333px; }
     .form .checkbox.small label .checkbox--icon {
-      width: 13.33333px;
-      height: 13.33333px; }
+      width: 13.3333333333px;
+      height: 13.3333333333px; }
       .form .checkbox.small label .checkbox--icon .checkbox-animate {
-        width: 10.33333px;
-        height: 10.33333px;
+        width: 10.3333333333px;
+        height: 10.3333333333px;
         top: 1px;
         right: 1px; }
     .form .checkbox.small label .checkbox--label {
-      width: calc(100% - 18.33333px);
-      left: 18.33333px; }
+      width: calc(100% - 18.3333333333px);
+      left: 18.3333333333px; }
     .form .checkbox.small label .checkbox--label,
     .form .checkbox.small label .checkbox--contain {
-      min-height: 13.33333px; }
+      min-height: 13.3333333333px; }
 
 .form .checkbox.medium {
   min-height: 20px; }
@@ -179,12 +182,12 @@
   ...................................*/ }
   .form .checkbox.alt label {
     border-radius: 20px;
-    background: #ffffff;
+    background: #fff;
     width: 70px;
     padding: 7px; }
     .form .checkbox.alt label .checkbox--contain {
       display: block;
-      background: #ffffff;
+      background: #fff;
       position: relative;
       padding: 0;
       border-radius: 20px;

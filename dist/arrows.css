@@ -23,6 +23,9 @@
   Colors - Brand Palette
 ..................................... */
 /* .....................................
+  Colors - Vimeo Brand Palette
+..................................... */
+/* .....................................
   Colors - External Palette
 ..................................... */
 /* helper function for margin and padding
@@ -78,11 +81,11 @@
     .arrow.arrow-bottom-left.bg-navy:before, .arrow.arrow-bottom-middle.bg-navy:before, .arrow.arrow-bottom-right.bg-navy:before {
       border-top-color: #00142B; }
   .arrow.arrow-bottom-left.bg-white, .arrow.arrow-bottom-middle.bg-white, .arrow.arrow-bottom-right.bg-white {
-    background: #ffffff; }
+    background: #fff; }
     .arrow.arrow-bottom-left.bg-white:after, .arrow.arrow-bottom-middle.bg-white:after, .arrow.arrow-bottom-right.bg-white:after {
-      border-top-color: #ffffff; }
+      border-top-color: #fff; }
     .arrow.arrow-bottom-left.bg-white:before, .arrow.arrow-bottom-middle.bg-white:before, .arrow.arrow-bottom-right.bg-white:before {
-      border-top-color: #ffffff; }
+      border-top-color: #fff; }
   .arrow.arrow-bottom-left.bg-gray-1, .arrow.arrow-bottom-middle.bg-gray-1, .arrow.arrow-bottom-right.bg-gray-1 {
     background: #F7F8F9; }
     .arrow.arrow-bottom-left.bg-gray-1:after, .arrow.arrow-bottom-middle.bg-gray-1:after, .arrow.arrow-bottom-right.bg-gray-1:after {
@@ -135,11 +138,11 @@
     .arrow.arrow-left-top.bg-navy:before, .arrow.arrow-left-middle.bg-navy:before, .arrow.arrow-left-bottom.bg-navy:before {
       border-right-color: #00142B; }
   .arrow.arrow-left-top.bg-white, .arrow.arrow-left-middle.bg-white, .arrow.arrow-left-bottom.bg-white {
-    background: #ffffff; }
+    background: #fff; }
     .arrow.arrow-left-top.bg-white:after, .arrow.arrow-left-middle.bg-white:after, .arrow.arrow-left-bottom.bg-white:after {
-      border-right-color: #ffffff; }
+      border-right-color: #fff; }
     .arrow.arrow-left-top.bg-white:before, .arrow.arrow-left-middle.bg-white:before, .arrow.arrow-left-bottom.bg-white:before {
-      border-right-color: #ffffff; }
+      border-right-color: #fff; }
   .arrow.arrow-left-top.bg-gray-1, .arrow.arrow-left-middle.bg-gray-1, .arrow.arrow-left-bottom.bg-gray-1 {
     background: #F7F8F9; }
     .arrow.arrow-left-top.bg-gray-1:after, .arrow.arrow-left-middle.bg-gray-1:after, .arrow.arrow-left-bottom.bg-gray-1:after {
@@ -192,11 +195,11 @@
     .arrow.arrow-right-top.bg-navy:before, .arrow.arrow-right-middle.bg-navy:before, .arrow.arrow-right-bottom.bg-navy:before {
       border-left-color: #00142B; }
   .arrow.arrow-right-top.bg-white, .arrow.arrow-right-middle.bg-white, .arrow.arrow-right-bottom.bg-white {
-    background: #ffffff; }
+    background: #fff; }
     .arrow.arrow-right-top.bg-white:after, .arrow.arrow-right-middle.bg-white:after, .arrow.arrow-right-bottom.bg-white:after {
-      border-left-color: #ffffff; }
+      border-left-color: #fff; }
     .arrow.arrow-right-top.bg-white:before, .arrow.arrow-right-middle.bg-white:before, .arrow.arrow-right-bottom.bg-white:before {
-      border-left-color: #ffffff; }
+      border-left-color: #fff; }
   .arrow.arrow-right-top.bg-gray-1, .arrow.arrow-right-middle.bg-gray-1, .arrow.arrow-right-bottom.bg-gray-1 {
     background: #F7F8F9; }
     .arrow.arrow-right-top.bg-gray-1:after, .arrow.arrow-right-middle.bg-gray-1:after, .arrow.arrow-right-bottom.bg-gray-1:after {
@@ -249,11 +252,11 @@
     .arrow.arrow-top-left.bg-navy:before, .arrow.arrow-top-middle.bg-navy:before, .arrow.arrow-top-right.bg-navy:before {
       border-bottom-color: #00142B; }
   .arrow.arrow-top-left.bg-white, .arrow.arrow-top-middle.bg-white, .arrow.arrow-top-right.bg-white {
-    background: #ffffff; }
+    background: #fff; }
     .arrow.arrow-top-left.bg-white:after, .arrow.arrow-top-middle.bg-white:after, .arrow.arrow-top-right.bg-white:after {
-      border-bottom-color: #ffffff; }
+      border-bottom-color: #fff; }
     .arrow.arrow-top-left.bg-white:before, .arrow.arrow-top-middle.bg-white:before, .arrow.arrow-top-right.bg-white:before {
-      border-bottom-color: #ffffff; }
+      border-bottom-color: #fff; }
   .arrow.arrow-top-left.bg-gray-1, .arrow.arrow-top-middle.bg-gray-1, .arrow.arrow-top-right.bg-gray-1 {
     background: #F7F8F9; }
     .arrow.arrow-top-left.bg-gray-1:after, .arrow.arrow-top-middle.bg-gray-1:after, .arrow.arrow-top-right.bg-gray-1:after {

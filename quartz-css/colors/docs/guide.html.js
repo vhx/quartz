@@ -34,6 +34,22 @@ Q.components.guide.styleguide.ui.colors_template = {
       { name: 'red' },
       { name: 'navy' },
       { name: 'navy-transparent', css: '.bg-grid-light' },
+      { name: 'vimeo-blue' },
+      { name: 'foam' },
+      { name: 'pistachio' },
+      { name: 'rum-swizzle' },
+      { name: 'sunset-orange' },
+      { name: 'pale-pink' },
+      { name: 'astro-granite' },
+      { name: 'regent-gray' },
+      { name: 'southerly-sky' },
+      { name: 'porcelain' },
+      { name: 'plaster' },
+      { name: 'paste' },
+      { name: 'white' },
+      { name: 'vimeo-blue-darkened'},
+      { name: 'pistachio-darkened' },
+      { name: 'sunset-orange-darkened' }
     ];
 
     // Brand - VHX

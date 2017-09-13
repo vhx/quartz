@@ -1,3 +1,7 @@
+### 1.3.2
+**2017-9-13**
+* Added vimeo color apps, window, api and key icons
+
 ### 1.3.1
 **2017-9-11**
 * Added vimeo color variables
