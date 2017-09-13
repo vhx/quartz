@@ -23,6 +23,9 @@
   Colors - Brand Palette
 ..................................... */
 /* .....................................
+  Colors - Vimeo Brand Palette
+..................................... */
+/* .....................................
   Colors - External Palette
 ..................................... */
 /* helper function for margin and padding
@@ -146,20 +149,20 @@ a.text--teal.is-disabled:link, a.text--teal.is-disabled:visited, a.text--teal.is
   color: #149A97; }
 
 .text--white {
-  color: #ffffff; }
+  color: #fff; }
   .text--white.text--transparent {
     color: rgba(255, 255, 255, 0.7); }
 
 a.text--white:link, a.text--white:visited {
-  color: #ffffff;
+  color: #fff;
   text-decoration: none; }
 a.text--white:hover, a.text--white:active {
   color: rgba(255, 255, 255, 0.7);
   text-decoration: none; }
   a.text--white:hover.is-hover-text--white, a.text--white:active.is-hover-text--white {
-    color: #ffffff; }
+    color: #fff; }
 a.text--white.is-disabled:link, a.text--white.is-disabled:visited, a.text--white.is-disabled:hover, a.text--white.is-disabled:active {
-  color: #ffffff; }
+  color: #fff; }
 
 .text--yellow {
   color: #FFB567; }
@@ -301,9 +304,41 @@ a.text--vimeo-blue:hover, a.text--vimeo-blue:active {
   color: #0088cc;
   text-decoration: none; }
   a.text--vimeo-blue:hover.is-hover-text--currant, a.text--vimeo-blue:active.is-hover-text--currant {
-    color: #00adef; }
+    color: #0088cc; }
 a.text--vimeo-blue.is-disabled:link, a.text--vimeo-blue.is-disabled:visited, a.text--vimeo-blue.is-disabled:hover, a.text--vimeo-blue.is-disabled:active {
   color: #00adef; }
+
+.text--sunset-orange {
+  color: #ff4d4d; }
+  .text--sunset-orange.text--transparent {
+    color: rgba(255, 77, 77, 0.5); }
+
+a.text--sunset-orange:link, a.text--sunset-orange:visited {
+  color: #d93636;
+  text-decoration: none; }
+a.text--sunset-orange:hover, a.text--sunset-orange:active {
+  color: #d93636;
+  text-decoration: none; }
+  a.text--sunset-orange:hover.is-hover-text--blue, a.text--sunset-orange:active.is-hover-text--blue {
+    color: #d93636; }
+a.text--sunset-orange.is-disabled:link, a.text--sunset-orange.is-disabled:visited, a.text--sunset-orange.is-disabled:hover, a.text--sunset-orange.is-disabled:active {
+  color: #ff4d4d; }
+
+.text--southerly-sky {
+  color: #b3bfc8; }
+  .text--southerly-sky.text--transparent {
+    color: rgba(179, 191, 200, 0.5); }
+
+a.text--blue:link, a.text--blue:visited {
+  color: #1a2e3b;
+  text-decoration: none; }
+a.text--blue:hover, a.text--blue:active {
+  color: #1a2e3b;
+  text-decoration: none; }
+  a.text--blue:hover.is-hover-text--blue, a.text--blue:active.is-hover-text--blue {
+    color: #1a2e3b; }
+a.text--blue.is-disabled:link, a.text--blue.is-disabled:visited, a.text--blue.is-disabled:hover, a.text--blue.is-disabled:active {
+  color: #b3bfc8; }
 
 /* modifiers
 ......................................*/

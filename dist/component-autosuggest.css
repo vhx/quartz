@@ -23,6 +23,9 @@
   Colors - Brand Palette
 ..................................... */
 /* .....................................
+  Colors - Vimeo Brand Palette
+..................................... */
+/* .....................................
   Colors - External Palette
 ..................................... */
 /* helper function for margin and padding
@@ -34,7 +37,7 @@
   width: 100%;
   position: absolute;
   background-color: #fff;
-  background: #ffffff;
+  background: #fff;
   z-index: 2147483600;
   border: 1px solid #D7DDE1;
   border-top: none;
@@ -44,7 +47,7 @@
 
 .c-autosuggest--input-container {
   width: 100%;
-  background: #ffffff; }
+  background: #fff; }
   .c-autosuggest--input-container input {
     border-radius: 3px 3px 0px 0 !important; }
 

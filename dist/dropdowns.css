@@ -23,6 +23,9 @@
   Colors - Brand Palette
 ..................................... */
 /* .....................................
+  Colors - Vimeo Brand Palette
+..................................... */
+/* .....................................
   Colors - External Palette
 ..................................... */
 /* helper function for margin and padding
@@ -47,7 +50,7 @@
     opacity: 0; }
   .dropdown .dropdown-list {
     display: none;
-    background: #ffffff;
+    background: #fff;
     z-index: 2147483600;
     border: 1px solid #D7DDE1;
     border-radius: 5px;
@@ -80,7 +83,7 @@
       pointer-events: none; }
     .dropdown .dropdown-list:after {
       border-color: rgba(255, 255, 255, 0);
-      border-bottom-color: #ffffff;
+      border-bottom-color: #fff;
       border-width: 5px;
       margin-right: -7px; }
     .dropdown .dropdown-list:before {
