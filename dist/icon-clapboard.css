@@ -1,8 +1,16 @@
-.icon-clapboard-gray {
+.icon-clapboard-navy {
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Cdefs%3E%3CclipPath%20id%3D%22a%22%3E%3Crect%20x%3D%22-63.43%22%20y%3D%2214.53%22%20width%3D%229.11%22%20height%3D%225.6%22%20fill%3D%22none%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Ctitle%3Eclapboard%3C%2Ftitle%3E%3Cpath%20d%3D%22M18.41%2C2.63H23V18.78a2.27%2C2.27%2C0%2C0%2C1-.67%2C1.62%2C2.14%2C2.14%2C0%2C0%2C1-1.59.7H2.27a2.14%2C2.14%2C0%2C0%2C1-1.59-.7A2.27%2C2.27%2C0%2C0%2C1%2C0%2C18.78V5A2.27%2C2.27%2C0%2C0%2C1%2C.67%2C3.34a2.14%2C2.14%2C0%2C0%2C1%2C1.59-.7H3.46L5.72%2C7.28H9.18L6.91%2C2.63H9.18L11.5%2C7.28H15L12.63%2C2.63H15l2.32%2C4.64h3.46Z%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+}
+.icon-clapboard-white {
   background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Cdefs%3E%3CclipPath%20id%3D%22a%22%3E%3Crect%20x%3D%22-63.43%22%20y%3D%2214.53%22%20width%3D%229.11%22%20height%3D%225.6%22%20fill%3D%22none%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Ctitle%3Eclapboard%3C%2Ftitle%3E%3Cpath%20d%3D%22M18.41%2C2.63H23V18.78a2.27%2C2.27%2C0%2C0%2C1-.67%2C1.62%2C2.14%2C2.14%2C0%2C0%2C1-1.59.7H2.27a2.14%2C2.14%2C0%2C0%2C1-1.59-.7A2.27%2C2.27%2C0%2C0%2C1%2C0%2C18.78V5A2.27%2C2.27%2C0%2C0%2C1%2C.67%2C3.34a2.14%2C2.14%2C0%2C0%2C1%2C1.59-.7H3.46L5.72%2C7.28H9.18L6.91%2C2.63H9.18L11.5%2C7.28H15L12.63%2C2.63H15l2.32%2C4.64h3.46Z%22%2F%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
 }
 .icon-clapboard-black {
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Cdefs%3E%3CclipPath%20id%3D%22a%22%3E%3Crect%20x%3D%22-63.43%22%20y%3D%2214.53%22%20width%3D%229.11%22%20height%3D%225.6%22%20fill%3D%22none%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Ctitle%3Eclapboard%3C%2Ftitle%3E%3Cpath%20d%3D%22M18.41%2C2.63H23V18.78a2.27%2C2.27%2C0%2C0%2C1-.67%2C1.62%2C2.14%2C2.14%2C0%2C0%2C1-1.59.7H2.27a2.14%2C2.14%2C0%2C0%2C1-1.59-.7A2.27%2C2.27%2C0%2C0%2C1%2C0%2C18.78V5A2.27%2C2.27%2C0%2C0%2C1%2C.67%2C3.34a2.14%2C2.14%2C0%2C0%2C1%2C1.59-.7H3.46L5.72%2C7.28H9.18L6.91%2C2.63H9.18L11.5%2C7.28H15L12.63%2C2.63H15l2.32%2C4.64h3.46Z%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+}
+.icon-clapboard-gray {
   background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Cdefs%3E%3CclipPath%20id%3D%22a%22%3E%3Crect%20x%3D%22-63.43%22%20y%3D%2214.53%22%20width%3D%229.11%22%20height%3D%225.6%22%20fill%3D%22none%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Ctitle%3Eclapboard%3C%2Ftitle%3E%3Cpath%20d%3D%22M18.41%2C2.63H23V18.78a2.27%2C2.27%2C0%2C0%2C1-.67%2C1.62%2C2.14%2C2.14%2C0%2C0%2C1-1.59.7H2.27a2.14%2C2.14%2C0%2C0%2C1-1.59-.7A2.27%2C2.27%2C0%2C0%2C1%2C0%2C18.78V5A2.27%2C2.27%2C0%2C0%2C1%2C.67%2C3.34a2.14%2C2.14%2C0%2C0%2C1%2C1.59-.7H3.46L5.72%2C7.28H9.18L6.91%2C2.63H9.18L11.5%2C7.28H15L12.63%2C2.63H15l2.32%2C4.64h3.46Z%22%2F%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
 }
@@ -15,14 +23,6 @@
   background-repeat: no-repeat;
 }
 .icon-clapboard {
-  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Cdefs%3E%3CclipPath%20id%3D%22a%22%3E%3Crect%20x%3D%22-63.43%22%20y%3D%2214.53%22%20width%3D%229.11%22%20height%3D%225.6%22%20fill%3D%22none%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Ctitle%3Eclapboard%3C%2Ftitle%3E%3Cpath%20d%3D%22M18.41%2C2.63H23V18.78a2.27%2C2.27%2C0%2C0%2C1-.67%2C1.62%2C2.14%2C2.14%2C0%2C0%2C1-1.59.7H2.27a2.14%2C2.14%2C0%2C0%2C1-1.59-.7A2.27%2C2.27%2C0%2C0%2C1%2C0%2C18.78V5A2.27%2C2.27%2C0%2C0%2C1%2C.67%2C3.34a2.14%2C2.14%2C0%2C0%2C1%2C1.59-.7H3.46L5.72%2C7.28H9.18L6.91%2C2.63H9.18L11.5%2C7.28H15L12.63%2C2.63H15l2.32%2C4.64h3.46Z%22%2F%3E%3C%2Fsvg%3E');
-  background-repeat: no-repeat;
-}
-.icon-clapboard-navy {
-  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Cdefs%3E%3CclipPath%20id%3D%22a%22%3E%3Crect%20x%3D%22-63.43%22%20y%3D%2214.53%22%20width%3D%229.11%22%20height%3D%225.6%22%20fill%3D%22none%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Ctitle%3Eclapboard%3C%2Ftitle%3E%3Cpath%20d%3D%22M18.41%2C2.63H23V18.78a2.27%2C2.27%2C0%2C0%2C1-.67%2C1.62%2C2.14%2C2.14%2C0%2C0%2C1-1.59.7H2.27a2.14%2C2.14%2C0%2C0%2C1-1.59-.7A2.27%2C2.27%2C0%2C0%2C1%2C0%2C18.78V5A2.27%2C2.27%2C0%2C0%2C1%2C.67%2C3.34a2.14%2C2.14%2C0%2C0%2C1%2C1.59-.7H3.46L5.72%2C7.28H9.18L6.91%2C2.63H9.18L11.5%2C7.28H15L12.63%2C2.63H15l2.32%2C4.64h3.46Z%22%2F%3E%3C%2Fsvg%3E');
-  background-repeat: no-repeat;
-}
-.icon-clapboard-white {
   background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Cdefs%3E%3CclipPath%20id%3D%22a%22%3E%3Crect%20x%3D%22-63.43%22%20y%3D%2214.53%22%20width%3D%229.11%22%20height%3D%225.6%22%20fill%3D%22none%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Ctitle%3Eclapboard%3C%2Ftitle%3E%3Cpath%20d%3D%22M18.41%2C2.63H23V18.78a2.27%2C2.27%2C0%2C0%2C1-.67%2C1.62%2C2.14%2C2.14%2C0%2C0%2C1-1.59.7H2.27a2.14%2C2.14%2C0%2C0%2C1-1.59-.7A2.27%2C2.27%2C0%2C0%2C1%2C0%2C18.78V5A2.27%2C2.27%2C0%2C0%2C1%2C.67%2C3.34a2.14%2C2.14%2C0%2C0%2C1%2C1.59-.7H3.46L5.72%2C7.28H9.18L6.91%2C2.63H9.18L11.5%2C7.28H15L12.63%2C2.63H15l2.32%2C4.64h3.46Z%22%2F%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
 }
