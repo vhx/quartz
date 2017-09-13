@@ -2,12 +2,20 @@
   background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-arrows-set%20copy%3C%2Ftitle%3E%3Cpolygon%20points%3D%2218%200.69%2018%2022.31%205.29%2011.5%2018%200.69%22%20fill%3D%22%23375667%22%2F%3E%3Cpolygon%20points%3D%2215%2019.8%2018%2022.31%2018%200.69%2015%203.2%2015%2019.8%22%20fill%3D%22%23375667%22%2F%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
 }
-.icon-caret-left-black {
-  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-arrows-set%20copy%3C%2Ftitle%3E%3Cpolygon%20points%3D%2218%200.69%2018%2022.31%205.29%2011.5%2018%200.69%22%20fill%3D%22%23000000%22%2F%3E%3Cpolygon%20points%3D%2215%2019.8%2018%2022.31%2018%200.69%2015%203.2%2015%2019.8%22%20fill%3D%22%23000000%22%2F%3E%3C%2Fsvg%3E');
+.icon-caret-left-teal {
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-arrows-set%20copy%3C%2Ftitle%3E%3Cpolygon%20points%3D%2218%200.69%2018%2022.31%205.29%2011.5%2018%200.69%22%20fill%3D%22%2322b8af%22%2F%3E%3Cpolygon%20points%3D%2215%2019.8%2018%2022.31%2018%200.69%2015%203.2%2015%2019.8%22%20fill%3D%22%2322b8af%22%2F%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
 }
 .icon-caret-left-white {
   background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-arrows-set%20copy%3C%2Ftitle%3E%3Cpolygon%20points%3D%2218%200.69%2018%2022.31%205.29%2011.5%2018%200.69%22%20fill%3D%22%23ffffff%22%2F%3E%3Cpolygon%20points%3D%2215%2019.8%2018%2022.31%2018%200.69%2015%203.2%2015%2019.8%22%20fill%3D%22%23ffffff%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+}
+.icon-caret-left-gray {
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-arrows-set%20copy%3C%2Ftitle%3E%3Cpolygon%20points%3D%2218%200.69%2018%2022.31%205.29%2011.5%2018%200.69%22%20fill%3D%22%239baab2%22%2F%3E%3Cpolygon%20points%3D%2215%2019.8%2018%2022.31%2018%200.69%2015%203.2%2015%2019.8%22%20fill%3D%22%239baab2%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+}
+.icon-caret-left-black {
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-arrows-set%20copy%3C%2Ftitle%3E%3Cpolygon%20points%3D%2218%200.69%2018%2022.31%205.29%2011.5%2018%200.69%22%20fill%3D%22%23000000%22%2F%3E%3Cpolygon%20points%3D%2215%2019.8%2018%2022.31%2018%200.69%2015%203.2%2015%2019.8%22%20fill%3D%22%23000000%22%2F%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
 }
 .icon-caret-left-blue {
@@ -16,13 +24,5 @@
 }
 .icon-caret-left {
   background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-arrows-set%20copy%3C%2Ftitle%3E%3Cpolygon%20points%3D%2218%200.69%2018%2022.31%205.29%2011.5%2018%200.69%22%20fill%3D%22%23375667%22%2F%3E%3Cpolygon%20points%3D%2215%2019.8%2018%2022.31%2018%200.69%2015%203.2%2015%2019.8%22%20fill%3D%22%2322b8af%22%2F%3E%3C%2Fsvg%3E');
-  background-repeat: no-repeat;
-}
-.icon-caret-left-gray {
-  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-arrows-set%20copy%3C%2Ftitle%3E%3Cpolygon%20points%3D%2218%200.69%2018%2022.31%205.29%2011.5%2018%200.69%22%20fill%3D%22%239baab2%22%2F%3E%3Cpolygon%20points%3D%2215%2019.8%2018%2022.31%2018%200.69%2015%203.2%2015%2019.8%22%20fill%3D%22%239baab2%22%2F%3E%3C%2Fsvg%3E');
-  background-repeat: no-repeat;
-}
-.icon-caret-left-teal {
-  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-arrows-set%20copy%3C%2Ftitle%3E%3Cpolygon%20points%3D%2218%200.69%2018%2022.31%205.29%2011.5%2018%200.69%22%20fill%3D%22%2322b8af%22%2F%3E%3Cpolygon%20points%3D%2215%2019.8%2018%2022.31%2018%200.69%2015%203.2%2015%2019.8%22%20fill%3D%22%2322b8af%22%2F%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
 }

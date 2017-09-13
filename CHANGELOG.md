@@ -1,3 +1,7 @@
+### 1.3.3
+**2017-9-13**
+* Added vimeo specific elipsis colors
+
 ### 1.3.2
 **2017-9-13**
 * Added vimeo color apps, window, api and key icons
