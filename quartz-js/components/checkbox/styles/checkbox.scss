@@ -142,7 +142,7 @@ $field-height: 40px;
     .checkbox--icon {
       transition: border 400ms ease-out;
       border: 1px solid $gray-6;
-      background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Cpath%20fill%3D%22%2322B8AF%22%20d%3D%22M9.291%2019.819l-3.323-3.323%2013.293-13.293%203.323%203.323z%22%2F%3E%3Cpath%20fill%3D%22%23149996%22%20d%3D%22M3.748%207.535l8.84%208.838-3.323%203.324-8.84-8.838z%22%2F%3E%3C%2Fsvg%3E'); background-repeat: no-repeat;
+      background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMyIgaGVpZ2h0PSIyMyIgdmlld0JveD0iMCAwIDIzIDIzIj48dGl0bGU+aWNvbnMtdWktc2V0IGNvcHk8L3RpdGxlPjxyZWN0IHg9IjQuNjEiIHk9IjkuMDYiIHdpZHRoPSIxOS41MiIgaGVpZ2h0PSI0Ljg5IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMy45MiAxMy41Mykgcm90YXRlKC00NSkiIGZpbGw9IiMwMGFkZWYiLz48cmVjdCB4PSIzLjg5IiB5PSI3LjI4IiB3aWR0aD0iNC44OSIgaGVpZ2h0PSIxMy4wMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTcuODkgOC41Mikgcm90YXRlKC00NS4wMSkiIGZpbGw9IiMwMDg4Y2MiLz48L3N2Zz4='); background-repeat: no-repeat;
       .checkbox-animate {
         width: 0px;
         height: 0px;
@@ -291,6 +291,7 @@ $field-height: 40px;
       top: 2px;
       left: auto;
       right: 3px;
+      //this is a gray 'X'
       background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Cpath%20d%3D%22M21.5%2018.3c.3.3.4.6.4.9%200%20.3-.1.6-.4.9l-1.3%201.4c-.3.3-.6.4-.9.4-.3%200-.6-.1-.9-.4l-6.8-6.8-6.8%206.8c-.3.3-.6.4-.9.4-.3%200-.6-.1-.9-.4l-1.4-1.3c-.3-.3-.4-.6-.4-.9%200-.3.1-.6.4-.9l6.8-6.9-6.9-6.8c-.2-.3-.3-.6-.3-.9%200-.3.1-.6.4-.9l1.4-1.4c.3-.3.6-.4.9-.4.3%200%20.6.1.9.4l6.8%206.8%206.8-6.8c.3-.3.6-.4.9-.4.3%200%20.6.1.9.4l1.3%201.4c.3.3.4.6.4.9%200%20.3-.1.7-.4.9l-6.8%206.9%206.8%206.7z%22%20fill%3D%22%23D1D9DC%22%2F%3E%3C%2Fsvg%3E'); background-repeat: no-repeat;
     }
     .checkbox--circle {
@@ -327,7 +328,7 @@ $field-height: 40px;
       top: 2px;
       left: 5px;
       right: auto;
-      background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Cg%20fill%3D%22%2322B8AF%22%3E%3Cpath%20d%3D%22M9.291%2019.819l-3.323-3.323%2013.293-13.293%203.323%203.323zM3.748%207.535l8.84%208.838-3.323%203.324-8.84-8.838z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E'); background-repeat: no-repeat;
+      background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMyIgaGVpZ2h0PSIyMyIgdmlld0JveD0iMCAwIDIzIDIzIj48dGl0bGU+aWNvbnMtdWktc2V0IGNvcHk8L3RpdGxlPjxyZWN0IHg9IjQuNjEiIHk9IjkuMDYiIHdpZHRoPSIxOS41MiIgaGVpZ2h0PSI0Ljg5IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMy45MiAxMy41Mykgcm90YXRlKC00NSkiIGZpbGw9IiMwMGFkZWYiLz48cmVjdCB4PSIzLjg5IiB5PSI3LjI4IiB3aWR0aD0iNC44OSIgaGVpZ2h0PSIxMy4wMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTcuODkgOC41Mikgcm90YXRlKC00NS4wMSkiIGZpbGw9IiMwMDg4Y2MiLz48L3N2Zz4='); background-repeat: no-repeat;
     }
     .checkbox--circle {
       left: 30px;
