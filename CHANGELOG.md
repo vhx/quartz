@@ -1,3 +1,7 @@
+### 1.3.4
+**2017-9-14**
+* Added vimeo specific checkboxes
+
 ### 1.3.3
 **2017-9-13**
 * Added vimeo specific elipsis colors
