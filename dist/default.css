@@ -1255,8 +1255,8 @@ select {
   .btn-group .btn-dropdown-vimeo-secondary-outline:nth-child(odd):hover,
   .btn-group .btn-vimeo-secondary-outline:nth-child(odd):focus,
   .btn-group .btn-dropdown-vimeo-secondary-outline:nth-child(odd):focus {
-    border-right: 1px solid #D7DDE1 !important;
-    border-left: 1px solid #D7DDE1 !important;
+    border-right: 1px solid #b3bfc8 !important;
+    border-left: 1px solid #b3bfc8 !important;
     z-index: 10000; }
 .btn-group .btn-white:nth-child(even), .btn-group .btn-dropdown-white:nth-child(even),
 .btn-group .btn-gray:nth-child(even),
@@ -1292,32 +1292,32 @@ select {
   .btn-group .btn-dropdown-vimeo-secondary-outline:nth-child(even):hover,
   .btn-group .btn-vimeo-secondary-outline:nth-child(even):focus,
   .btn-group .btn-dropdown-vimeo-secondary-outline:nth-child(even):focus {
-    border-left: 1px solid #D7DDE1 !important;
-    border-right: 1px solid #D7DDE1 !important;
+    border-left: 1px solid #b3bfc8 !important;
+    border-right: 1px solid #b3bfc8 !important;
     z-index: 10000; }
 .btn-group .btn-white:first-child, .btn-group .btn-dropdown-white:first-child,
 .btn-group .btn-gray:first-child,
 .btn-group .btn-dropdown-gray:first-child,
 .btn-group .btn-teal:first-child,
 .btn-group .btn-dropdown-teal:first-child,
-.btn-group .btn-vimeo-blue:nth-child,
-.btn-group .btn-dropdown-vimeo-blue:nth-child,
-.btn-group .btn-vimeo-secondary:nth-child,
-.btn-group .btn-dropdown-vimeo-secondary:nth-child,
-.btn-group .btn-vimeo-secondary-outline:nth-child,
-.btn-group .btn-dropdown-vimeo-secondary-outline:nth-child {
-  border-left: 1px solid #D7DDE1 !important;
+.btn-group .btn-vimeo-blue:first-child,
+.btn-group .btn-dropdown-vimeo-blue:first-child,
+.btn-group .btn-vimeo-secondary:first-child,
+.btn-group .btn-dropdown-vimeo-secondary:first-child,
+.btn-group .btn-vimeo-secondary-outline:first-child,
+.btn-group .btn-dropdown-vimeo-secondary-outline:first-child {
+  border-left: 1px solid #b3bfc8 !important;
   border-radius: 5px 0 0 5px; }
 .btn-group .btn-white:last-child, .btn-group .btn-dropdown-white:last-child,
 .btn-group .btn-gray:last-child,
 .btn-group .btn-dropdown-gray:last-child,
 .btn-group .btn-teal:last-child,
 .btn-group .btn-dropdown-teal:last-child,
-.btn-group .btn-vimeo-blue:nth-child,
-.btn-group .btn-dropdown-vimeo-blue:nth-child,
-.btn-group .btn-vimeo-secondary:nth-child,
-.btn-group .btn-dropdown-vimeo-secondary:nth-child,
-.btn-group .btn-vimeo-secondary-outline:nth-child,
-.btn-group .btn-dropdown-vimeo-secondary-outline:nth-child {
-  border-right: 1px solid #D7DDE1 !important;
+.btn-group .btn-vimeo-blue:last-child,
+.btn-group .btn-dropdown-vimeo-blue:last-child,
+.btn-group .btn-vimeo-secondary:last-child,
+.btn-group .btn-dropdown-vimeo-secondary:last-child,
+.btn-group .btn-vimeo-secondary-outline:last-child,
+.btn-group .btn-dropdown-vimeo-secondary-outline:last-child {
+  border-right: 1px solid #b3bfc8 !important;
   border-radius: 0 5px 5px 0; }

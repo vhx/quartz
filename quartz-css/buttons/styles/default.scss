@@ -732,8 +732,8 @@ select {
     border-left: 1px solid $gray-3 !important;
     &:hover,
     &:focus {
-      border-right: 1px solid $gray-3 !important;
-      border-left: 1px solid $gray-3 !important;
+      border-right: 1px solid $southerly-sky !important;
+      border-left: 1px solid $southerly-sky !important;
       z-index: 10000;
     }
   }
@@ -747,27 +747,27 @@ select {
     border-right: 1px solid transparent !important;
     &:hover,
     &:focus {
-      border-left: 1px solid $gray-3 !important;
-      border-right: 1px solid $gray-3 !important;
+      border-left: 1px solid $southerly-sky !important;
+      border-right: 1px solid $southerly-sky !important;
       z-index: 10000;
     }
   }
   .btn-white:first-child,
   .btn-gray:first-child,
   .btn-teal:first-child,
-  .btn-vimeo-blue:nth-child,
-  .btn-vimeo-secondary:nth-child,
-  .btn-vimeo-secondary-outline:nth-child {
-    border-left: 1px solid $gray-3 !important;
+  .btn-vimeo-blue:first-child,
+  .btn-vimeo-secondary:first-child,
+  .btn-vimeo-secondary-outline:first-child {
+    border-left: 1px solid $southerly-sky !important;
     border-radius: 5px 0 0 5px;
   }
   .btn-white:last-child,
   .btn-gray:last-child,
   .btn-teal:last-child,
-  .btn-vimeo-blue:nth-child,
-  .btn-vimeo-secondary:nth-child,
-  .btn-vimeo-secondary-outline:nth-child {
-    border-right: 1px solid $gray-3 !important;
+  .btn-vimeo-blue:last-child,
+  .btn-vimeo-secondary:last-child,
+  .btn-vimeo-secondary-outline:last-child {
+    border-right: 1px solid $southerly-sky !important;
     border-radius: 0 5px 5px 0;
   }
 }
