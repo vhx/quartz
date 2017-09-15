@@ -385,21 +385,6 @@ Q.components.guide.styleguide.ui.buttons.container = {
               m('button.btn-gray.icon-product-navy.icon--right.margin-right-small.margin-bottom-small', 'Icon Center'),
               m('button.btn-gray.icon-product-navy.icon--left.margin-right-small.margin-bottom-small', [
                 m('.icon-chevron-down-navy.icon-xxsmall.icon--right', 'Icon Both')
-              ]),
-               m('button.btn-vimeo-blue.icon-product-white.icon--left.margin-right-small.margin-bottom-small', 'Icon Left'),
-              m('button.btn-vimeo-blue.icon-product-white.icon--right.margin-right-small.margin-bottom-small', 'Icon Center'),
-              m('button.btn-vimeo-blue.icon-product-white.icon--left.margin-right-small.margin-bottom-small', [
-                m('.icon-chevron-down-white.icon-xxsmall.icon--right', 'Icon Both')
-              ]),
-               m('button.btn-vimeo-secondary.icon-product-gray.icon--left.margin-right-small.margin-bottom-small', 'Icon Left'),
-              m('button.btn-vimeo-secondary.icon-product-gray.icon--right.margin-right-small.margin-bottom-small', 'Icon Center'),
-              m('button.btn-vimeo-secondary.icon-product-gray.icon--left.margin-right-small.margin-bottom-small', [
-                m('.icon-chevron-down-gray.icon-xxsmall.icon--right', 'Icon Both')
-              ]),
-               m('button.btn-vimeo-secondary-outline.icon-product-gray.icon--left.margin-right-small.margin-bottom-small', 'Icon Left'),
-              m('button.btn-vimeo-secondary-outline.icon-product-gray.icon--right.margin-right-small.margin-bottom-small', 'Icon Center'),
-              m('button.btn-vimeo-secondary-outline.icon-product-gray.icon--left.margin-right-small.margin-bottom-small', [
-                m('.icon-chevron-down-gray.icon-xxsmall.icon--right', 'Icon Both')
               ])
             ]);
           }
