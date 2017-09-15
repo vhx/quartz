@@ -26,24 +26,24 @@
   background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-arrows-set%20copy%3C%2Ftitle%3E%3Cpath%20d%3D%22M11.09%2C1.22l-1%2C1a0.67%2C0.67%2C0%2C0%2C0%2C0%2C1l6.8%2C6.8H1.69a0.86%2C0.86%2C0%2C0%2C0-.8.8v1.3a0.86%2C0.86%2C0%2C0%2C0%2C.8.8h15.2l-6.8%2C6.8a0.67%2C0.67%2C0%2C0%2C0%2C0%2C1l1%2C1a0.67%2C0.67%2C0%2C0%2C0%2C1%2C0l9.8-9.8a0.67%2C0.67%2C0%2C0%2C0%2C0-1l-9.8-9.8A1.18%2C1.18%2C0%2C0%2C0%2C11.09%2C1.22Z%22%20fill%3D%22%2322b8af%22%2F%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
 }
-.icon-arrow-up-teal {
-  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-arrows-set%20copy%3C%2Ftitle%3E%3Cpath%20d%3D%22M1.22%2C11.91l1%2C1a0.67%2C0.67%2C0%2C0%2C0%2C1%2C0L10%2C6.11v15.2a0.86%2C0.86%2C0%2C0%2C0%2C.8.8h1.3a0.86%2C0.86%2C0%2C0%2C0%2C.8-0.8V6.11l6.8%2C6.8a0.67%2C0.67%2C0%2C0%2C0%2C1%2C0l1-1a0.67%2C0.67%2C0%2C0%2C0%2C0-1l-9.8-9.8a0.67%2C0.67%2C0%2C0%2C0-1%2C0l-9.8%2C9.8A1.18%2C1.18%2C0%2C0%2C0%2C1.22%2C11.91Z%22%20fill%3D%22%2322b8af%22%2F%3E%3C%2Fsvg%3E');
+.icon-caret-left-teal {
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-arrows-set%20copy%3C%2Ftitle%3E%3Cpolygon%20points%3D%2218%200.69%2018%2022.31%205.29%2011.5%2018%200.69%22%20fill%3D%22%2322b8af%22%2F%3E%3Cpolygon%20points%3D%2215%2019.8%2018%2022.31%2018%200.69%2015%203.2%2015%2019.8%22%20fill%3D%22%2322b8af%22%2F%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
 }
 .icon-caret-down-teal {
   background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-arrows-set%20copy%3C%2Ftitle%3E%3Cpolygon%20points%3D%220.69%207%2022.31%207%2011.5%2019.7%200.69%207%22%20fill%3D%22%2322b8af%22%2F%3E%3Cpolygon%20points%3D%2219.8%2010%2022.31%207%200.69%207%203.2%2010%2019.8%2010%22%20fill%3D%22%2322b8af%22%2F%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
 }
-.icon-caret-left-teal {
-  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-arrows-set%20copy%3C%2Ftitle%3E%3Cpolygon%20points%3D%2218%200.69%2018%2022.31%205.29%2011.5%2018%200.69%22%20fill%3D%22%2322b8af%22%2F%3E%3Cpolygon%20points%3D%2215%2019.8%2018%2022.31%2018%200.69%2015%203.2%2015%2019.8%22%20fill%3D%22%2322b8af%22%2F%3E%3C%2Fsvg%3E');
-  background-repeat: no-repeat;
-}
-.icon-caret-right-teal {
-  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-arrows-set%20copy%3C%2Ftitle%3E%3Cpolygon%20points%3D%225%2023.16%205%201.54%2017.7%2012.35%205%2023.16%22%20fill%3D%22%2322b8af%22%2F%3E%3Cpolygon%20points%3D%228%204.05%205%201.54%205%2023.16%208%2020.66%208%204.05%22%20fill%3D%22%2322b8af%22%2F%3E%3C%2Fsvg%3E');
+.icon-arrow-up-teal {
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-arrows-set%20copy%3C%2Ftitle%3E%3Cpath%20d%3D%22M1.22%2C11.91l1%2C1a0.67%2C0.67%2C0%2C0%2C0%2C1%2C0L10%2C6.11v15.2a0.86%2C0.86%2C0%2C0%2C0%2C.8.8h1.3a0.86%2C0.86%2C0%2C0%2C0%2C.8-0.8V6.11l6.8%2C6.8a0.67%2C0.67%2C0%2C0%2C0%2C1%2C0l1-1a0.67%2C0.67%2C0%2C0%2C0%2C0-1l-9.8-9.8a0.67%2C0.67%2C0%2C0%2C0-1%2C0l-9.8%2C9.8A1.18%2C1.18%2C0%2C0%2C0%2C1.22%2C11.91Z%22%20fill%3D%22%2322b8af%22%2F%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
 }
 .icon-caret-up-teal {
   background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-arrows-set%20copy%3C%2Ftitle%3E%3Cpolygon%20points%3D%2222.31%2017%200.69%2017%2011.5%204.29%2022.31%2017%22%20fill%3D%22%2322b8af%22%2F%3E%3Cpolygon%20points%3D%223.2%2014%200.69%2017%2022.31%2017%2019.8%2014%203.2%2014%22%20fill%3D%22%2322b8af%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+}
+.icon-caret-right-teal {
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-arrows-set%20copy%3C%2Ftitle%3E%3Cpolygon%20points%3D%225%2023.16%205%201.54%2017.7%2012.35%205%2023.16%22%20fill%3D%22%2322b8af%22%2F%3E%3Cpolygon%20points%3D%228%204.05%205%201.54%205%2023.16%208%2020.66%208%204.05%22%20fill%3D%22%2322b8af%22%2F%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
 }
 .icon-chevron-down-teal {

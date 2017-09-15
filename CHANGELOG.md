@@ -1,3 +1,7 @@
+### 1.3.5
+**2017-9-15**
+* Added vimeo $RegentGray to replace VHX gray on icons
+
 ### 1.3.4
 **2017-9-14**
 * Added vimeo specific checkboxes
