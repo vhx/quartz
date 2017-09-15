@@ -1,28 +1,28 @@
-.icon-briefcase-navy {
-  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-singletons%3C%2Ftitle%3E%3Cpath%20d%3D%22M19.49%2C22.6H5.3c-0.88%2C0-2.84.33-2.84-1v-1H20.53c0%2C0.8.13%2C2.09-1%2C2.09%22%20fill%3D%22%23375667%22%20fill-rule%3D%22evenodd%22%2F%3E%3Cpath%20d%3D%22M19.49%2C5.57H16.71a5.21%2C5.21%2C0%2C1%2C0-10.43%2C0H3.51a1%2C1%2C0%2C0%2C0-1%2C1V18.78H20.53V6.62A1%2C1%2C0%2C0%2C0%2C19.49%2C5.57Zm-11.12%2C0c0-4%2C6.25-4%2C6.25%2C0H8.37Z%22%20fill%3D%22%23375667%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E');
-  background-repeat: no-repeat;
-}
-.icon-briefcase-black {
-  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-singletons%3C%2Ftitle%3E%3Cpath%20d%3D%22M19.49%2C22.6H5.3c-0.88%2C0-2.84.33-2.84-1v-1H20.53c0%2C0.8.13%2C2.09-1%2C2.09%22%20fill%3D%22%231a2e3b%22%20fill-rule%3D%22evenodd%22%2F%3E%3Cpath%20d%3D%22M19.49%2C5.57H16.71a5.21%2C5.21%2C0%2C1%2C0-10.43%2C0H3.51a1%2C1%2C0%2C0%2C0-1%2C1V18.78H20.53V6.62A1%2C1%2C0%2C0%2C0%2C19.49%2C5.57Zm-11.12%2C0c0-4%2C6.25-4%2C6.25%2C0H8.37Z%22%20fill%3D%22%231a2e3b%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E');
-  background-repeat: no-repeat;
-}
-.icon-briefcase-blue {
-  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-singletons%3C%2Ftitle%3E%3Cpath%20d%3D%22M19.49%2C22.6H5.3c-0.88%2C0-2.84.33-2.84-1v-1H20.53c0%2C0.8.13%2C2.09-1%2C2.09%22%20fill%3D%22%2300adef%22%20fill-rule%3D%22evenodd%22%2F%3E%3Cpath%20d%3D%22M19.49%2C5.57H16.71a5.21%2C5.21%2C0%2C1%2C0-10.43%2C0H3.51a1%2C1%2C0%2C0%2C0-1%2C1V18.78H20.53V6.62A1%2C1%2C0%2C0%2C0%2C19.49%2C5.57Zm-11.12%2C0c0-4%2C6.25-4%2C6.25%2C0H8.37Z%22%20fill%3D%22%2300adef%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E');
-  background-repeat: no-repeat;
-}
 .icon-briefcase-gray {
-  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-singletons%3C%2Ftitle%3E%3Cpath%20d%3D%22M19.49%2C22.6H5.3c-0.88%2C0-2.84.33-2.84-1v-1H20.53c0%2C0.8.13%2C2.09-1%2C2.09%22%20fill%3D%22%239baab2%22%20fill-rule%3D%22evenodd%22%2F%3E%3Cpath%20d%3D%22M19.49%2C5.57H16.71a5.21%2C5.21%2C0%2C1%2C0-10.43%2C0H3.51a1%2C1%2C0%2C0%2C0-1%2C1V18.78H20.53V6.62A1%2C1%2C0%2C0%2C0%2C19.49%2C5.57Zm-11.12%2C0c0-4%2C6.25-4%2C6.25%2C0H8.37Z%22%20fill%3D%22%239baab2%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E');
-  background-repeat: no-repeat;
-}
-.icon-briefcase-white {
-  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-singletons%3C%2Ftitle%3E%3Cpath%20d%3D%22M19.49%2C22.6H5.3c-0.88%2C0-2.84.33-2.84-1v-1H20.53c0%2C0.8.13%2C2.09-1%2C2.09%22%20fill%3D%22%23ffffff%22%20fill-rule%3D%22evenodd%22%2F%3E%3Cpath%20d%3D%22M19.49%2C5.57H16.71a5.21%2C5.21%2C0%2C1%2C0-10.43%2C0H3.51a1%2C1%2C0%2C0%2C0-1%2C1V18.78H20.53V6.62A1%2C1%2C0%2C0%2C0%2C19.49%2C5.57Zm-11.12%2C0c0-4%2C6.25-4%2C6.25%2C0H8.37Z%22%20fill%3D%22%23ffffff%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-singletons%3C%2Ftitle%3E%3Cpath%20d%3D%22M19.49%2C22.6H5.3c-0.88%2C0-2.84.33-2.84-1v-1H20.53c0%2C0.8.13%2C2.09-1%2C2.09%22%20fill%3D%22%238699a6%22%20fill-rule%3D%22evenodd%22%2F%3E%3Cpath%20d%3D%22M19.49%2C5.57H16.71a5.21%2C5.21%2C0%2C1%2C0-10.43%2C0H3.51a1%2C1%2C0%2C0%2C0-1%2C1V18.78H20.53V6.62A1%2C1%2C0%2C0%2C0%2C19.49%2C5.57Zm-11.12%2C0c0-4%2C6.25-4%2C6.25%2C0H8.37Z%22%20fill%3D%22%238699a6%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
 }
 .icon-briefcase-teal {
   background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-singletons%3C%2Ftitle%3E%3Cpath%20d%3D%22M19.49%2C22.6H5.3c-0.88%2C0-2.84.33-2.84-1v-1H20.53c0%2C0.8.13%2C2.09-1%2C2.09%22%20fill%3D%22%2322b8af%22%20fill-rule%3D%22evenodd%22%2F%3E%3Cpath%20d%3D%22M19.49%2C5.57H16.71a5.21%2C5.21%2C0%2C1%2C0-10.43%2C0H3.51a1%2C1%2C0%2C0%2C0-1%2C1V18.78H20.53V6.62A1%2C1%2C0%2C0%2C0%2C19.49%2C5.57Zm-11.12%2C0c0-4%2C6.25-4%2C6.25%2C0H8.37Z%22%20fill%3D%22%2322b8af%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
 }
+.icon-briefcase-white {
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-singletons%3C%2Ftitle%3E%3Cpath%20d%3D%22M19.49%2C22.6H5.3c-0.88%2C0-2.84.33-2.84-1v-1H20.53c0%2C0.8.13%2C2.09-1%2C2.09%22%20fill%3D%22%23ffffff%22%20fill-rule%3D%22evenodd%22%2F%3E%3Cpath%20d%3D%22M19.49%2C5.57H16.71a5.21%2C5.21%2C0%2C1%2C0-10.43%2C0H3.51a1%2C1%2C0%2C0%2C0-1%2C1V18.78H20.53V6.62A1%2C1%2C0%2C0%2C0%2C19.49%2C5.57Zm-11.12%2C0c0-4%2C6.25-4%2C6.25%2C0H8.37Z%22%20fill%3D%22%23ffffff%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+}
+.icon-briefcase-black {
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-singletons%3C%2Ftitle%3E%3Cpath%20d%3D%22M19.49%2C22.6H5.3c-0.88%2C0-2.84.33-2.84-1v-1H20.53c0%2C0.8.13%2C2.09-1%2C2.09%22%20fill%3D%22%231a2e3b%22%20fill-rule%3D%22evenodd%22%2F%3E%3Cpath%20d%3D%22M19.49%2C5.57H16.71a5.21%2C5.21%2C0%2C1%2C0-10.43%2C0H3.51a1%2C1%2C0%2C0%2C0-1%2C1V18.78H20.53V6.62A1%2C1%2C0%2C0%2C0%2C19.49%2C5.57Zm-11.12%2C0c0-4%2C6.25-4%2C6.25%2C0H8.37Z%22%20fill%3D%22%231a2e3b%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+}
 .icon-briefcase {
   background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-singletons%3C%2Ftitle%3E%3Cpath%20d%3D%22M19.49%2C22.6H5.3c-0.88%2C0-2.84.33-2.84-1v-1H20.53c0%2C0.8.13%2C2.09-1%2C2.09%22%20fill%3D%22%2322b8af%22%20fill-rule%3D%22evenodd%22%2F%3E%3Cpath%20d%3D%22M19.49%2C5.57H16.71a5.21%2C5.21%2C0%2C1%2C0-10.43%2C0H3.51a1%2C1%2C0%2C0%2C0-1%2C1V18.78H20.53V6.62A1%2C1%2C0%2C0%2C0%2C19.49%2C5.57Zm-11.12%2C0c0-4%2C6.25-4%2C6.25%2C0H8.37Z%22%20fill%3D%22%23375667%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+}
+.icon-briefcase-blue {
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-singletons%3C%2Ftitle%3E%3Cpath%20d%3D%22M19.49%2C22.6H5.3c-0.88%2C0-2.84.33-2.84-1v-1H20.53c0%2C0.8.13%2C2.09-1%2C2.09%22%20fill%3D%22%2300adef%22%20fill-rule%3D%22evenodd%22%2F%3E%3Cpath%20d%3D%22M19.49%2C5.57H16.71a5.21%2C5.21%2C0%2C1%2C0-10.43%2C0H3.51a1%2C1%2C0%2C0%2C0-1%2C1V18.78H20.53V6.62A1%2C1%2C0%2C0%2C0%2C19.49%2C5.57Zm-11.12%2C0c0-4%2C6.25-4%2C6.25%2C0H8.37Z%22%20fill%3D%22%2300adef%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+}
+.icon-briefcase-navy {
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Ctitle%3Eicons-singletons%3C%2Ftitle%3E%3Cpath%20d%3D%22M19.49%2C22.6H5.3c-0.88%2C0-2.84.33-2.84-1v-1H20.53c0%2C0.8.13%2C2.09-1%2C2.09%22%20fill%3D%22%23375667%22%20fill-rule%3D%22evenodd%22%2F%3E%3Cpath%20d%3D%22M19.49%2C5.57H16.71a5.21%2C5.21%2C0%2C1%2C0-10.43%2C0H3.51a1%2C1%2C0%2C0%2C0-1%2C1V18.78H20.53V6.62A1%2C1%2C0%2C0%2C0%2C19.49%2C5.57Zm-11.12%2C0c0-4%2C6.25-4%2C6.25%2C0H8.37Z%22%20fill%3D%22%23375667%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
 }

@@ -15,7 +15,7 @@ const SVG = function(gruntDone) {
     sets: ['all', 'ui', 'social', 'payment', 'directional', 'apps'],
     colors: {
       navy: '#375667',
-      gray: '#9baab2',
+      gray: '#8699a6',
       white: '#ffffff',
       teal: '#22b8af',
       black: '#1a2e3b',
