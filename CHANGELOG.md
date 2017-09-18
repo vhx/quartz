@@ -1,3 +1,7 @@
+### 1.4.1
+**2017-9-18**
+* Added vimeo button colors to load more buttons
+
 ### 1.4.0
 **2017-9-16**
 * Added vimeo button colors, blue, white, and gray

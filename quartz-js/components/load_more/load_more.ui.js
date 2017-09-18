@@ -4,7 +4,7 @@ vhxm.components.shared.load_more.ui.container = {
   },
   view: function(ctrl, opts) {
     var self = this;
-    return m('a.btn-white' + (ctrl.state.is_loading() ? '.is-loading' : ''), {
+    return m('a..btn.btn-vimeo-secondary-outline' + (ctrl.state.is_loading() ? '.is-loading' : ''), {
       config: opts.onscroll ? ctrl.isElementInViewport : '',
       onclick: !opts.onscroll ? function(e) {
         e.preventDefault();
