@@ -1,3 +1,7 @@
+### 1.4.0
+**2017-9-16**
+* Added vimeo button colors, blue, white, and gray
+
 ### 1.3.5
 **2017-9-15**
 * Added vimeo $RegentGray to replace VHX gray on icons

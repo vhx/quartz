@@ -313,6 +313,46 @@ select {
   @extend %icon-search-navy;
 }
 
+/* button VIMEO COLORS shorthand
+......................................*/
+.btn-vimeo-blue {
+  @extend .btn;
+  @include button-colors(
+    $vimeo-blue,  // background
+    $vimeo-blue-darkened,  // background hover
+    $white,  // color
+    $white,  // color hover
+    $vimeo-blue,  // border color
+    $vimeo-blue-darkened,   // border color hover
+    ffffff  // loader
+  );
+}
+
+.btn-vimeo-secondary {
+  @extend .btn;
+  @include button-colors(
+    $porcelain,  // background
+    $southerly-sky,  // background hover
+    $astro-granite,  // color
+    $astro-granite,  // color hover
+    $porcelain,  // border color
+    $southerly-sky,   // border color hover
+    8699a6  // loader
+  );
+}
+
+.btn-vimeo-secondary-outline {
+  @extend .btn;
+  @include button-colors(
+    $white,  // background
+    $porcelain,  // background hover
+    $regent-gray,  // color
+    $astro-granite,  // color hover
+    $regent-gray,  // border color
+    $porcelain,   // border color hover
+    8699a6  // loader
+  );
+}
 /*.....................................
   BUTTON ICONS
 ......................................*/
@@ -481,6 +521,79 @@ select {
   }
 }
 
+/* VIMEO dropdown buttons
+......................................*/
+.btn-dropdown-vimeo-blue {
+  @extend .btn-dropdown;
+  @extend .btn-vimeo-blue;
+  @extend %icon-chevron-down-white;
+
+  &.btn-dropdown--action:before {
+    background: $vimeo-blue;
+  }
+  &:hover {
+    @extend %icon-chevron-down-white;
+    &.btn-dropdown--action:before {
+      background: $vimeo-blue;
+    }
+  }
+  &.is-processing {
+    span {
+      background: none;
+    }
+    &:hover {
+      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0D%0A%20%20viewBox%3D%220%200%2040%2040%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cpath%20opacity%3D%220.2%22%20fill%3D%22%23ffffff%22%20d%3D%22M20.201%2C5.169c-8.254%2C0-14.946%2C6.692-14.946%2C14.946c0%2C8.255%2C6.692%2C14.946%2C14.946%2C14.946%0D%0A%20%20s14.946-6.691%2C14.946-14.946C35.146%2C11.861%2C28.455%2C5.169%2C20.201%2C5.169z%20M20.201%2C31.749c-6.425%2C0-11.634-5.208-11.634-11.634%0D%0A%20%20c0-6.425%2C5.209-11.634%2C11.634-11.634c6.425%2C0%2C11.633%2C5.209%2C11.633%2C11.634C31.834%2C26.541%2C26.626%2C31.749%2C20.201%2C31.749z%22%2F%3E%0D%0A%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M26.013%2C10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0%0D%0A%20%20C22.32%2C8.481%2C24.301%2C9.057%2C26.013%2C10.047z%22%3E%0D%0A%20%20%3CanimateTransform%20attributeType%3D%22xml%22%0D%0A%20%20%20%20attributeName%3D%22transform%22%0D%0A%20%20%20%20type%3D%22rotate%22%0D%0A%20%20%20%20from%3D%220%2020%2020%22%0D%0A%20%20%20%20to%3D%22360%2020%2020%22%0D%0A%20%20%20%20dur%3D%220.5s%22%0D%0A%20%20%20%20repeatCount%3D%22indefinite%22%2F%3E%0D%0A%20%20%3C%2Fpath%3E%0D%0A%3C%2Fsvg%3E");
+    }
+  }
+}
+
+.btn-dropdown-vimeo-secondary {
+  @extend .btn-dropdown;
+  @extend .btn-vimeo-secondary;
+  @extend %icon-chevron-down-gray;
+
+  &.btn-dropdown--action:before {
+    background: $southerly-sky;
+  }
+  &:hover {
+    @extend %icon-chevron-down-gray;
+    &.btn-dropdown--action:before {
+      background: $southerly-sky;
+    }
+  }
+  &.is-processing {
+    span {
+      background: none;
+    }
+    &:hover {
+      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0D%0A%20%20viewBox%3D%220%200%2040%2040%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cpath%20opacity%3D%220.2%22%20fill%3D%22%23233741%22%20d%3D%22M20.201%2C5.169c-8.254%2C0-14.946%2C6.692-14.946%2C14.946c0%2C8.255%2C6.692%2C14.946%2C14.946%2C14.946%0D%0A%20%20s14.946-6.691%2C14.946-14.946C35.146%2C11.861%2C28.455%2C5.169%2C20.201%2C5.169z%20M20.201%2C31.749c-6.425%2C0-11.634-5.208-11.634-11.634%0D%0A%20%20c0-6.425%2C5.209-11.634%2C11.634-11.634c6.425%2C0%2C11.633%2C5.209%2C11.633%2C11.634C31.834%2C26.541%2C26.626%2C31.749%2C20.201%2C31.749z%22%2F%3E%0D%0A%3Cpath%20fill%3D%22%23233741%22%20d%3D%22M26.013%2C10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0%0D%0A%20%20C22.32%2C8.481%2C24.301%2C9.057%2C26.013%2C10.047z%22%3E%0D%0A%20%20%3CanimateTransform%20attributeType%3D%22xml%22%0D%0A%20%20%20%20attributeName%3D%22transform%22%0D%0A%20%20%20%20type%3D%22rotate%22%0D%0A%20%20%20%20from%3D%220%2020%2020%22%0D%0A%20%20%20%20to%3D%22360%2020%2020%22%0D%0A%20%20%20%20dur%3D%220.5s%22%0D%0A%20%20%20%20repeatCount%3D%22indefinite%22%2F%3E%0D%0A%20%20%3C%2Fpath%3E%0D%0A%3C%2Fsvg%3E");
+    }
+  }
+}
+
+.btn-dropdown-vimeo-secondary-outline {
+  @extend .btn-dropdown;
+  @extend .btn-vimeo-secondary-outline;
+  @extend %icon-chevron-down-gray;
+
+  &.btn-dropdown--action:before {
+    background: $southerly-sky;
+  }
+  &:hover {
+    @extend %icon-chevron-down-gray;
+    &.btn-dropdown--action:before {
+      background: $southerly-sky;
+    }
+  }
+  &.is-processing {
+    span {
+      background: none;
+    }
+    &:hover {
+      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0D%0A%20%20viewBox%3D%220%200%2040%2040%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cpath%20opacity%3D%220.2%22%20fill%3D%22%23233741%22%20d%3D%22M20.201%2C5.169c-8.254%2C0-14.946%2C6.692-14.946%2C14.946c0%2C8.255%2C6.692%2C14.946%2C14.946%2C14.946%0D%0A%20%20s14.946-6.691%2C14.946-14.946C35.146%2C11.861%2C28.455%2C5.169%2C20.201%2C5.169z%20M20.201%2C31.749c-6.425%2C0-11.634-5.208-11.634-11.634%0D%0A%20%20c0-6.425%2C5.209-11.634%2C11.634-11.634c6.425%2C0%2C11.633%2C5.209%2C11.633%2C11.634C31.834%2C26.541%2C26.626%2C31.749%2C20.201%2C31.749z%22%2F%3E%0D%0A%3Cpath%20fill%3D%22%23233741%22%20d%3D%22M26.013%2C10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0%0D%0A%20%20C22.32%2C8.481%2C24.301%2C9.057%2C26.013%2C10.047z%22%3E%0D%0A%20%20%3CanimateTransform%20attributeType%3D%22xml%22%0D%0A%20%20%20%20attributeName%3D%22transform%22%0D%0A%20%20%20%20type%3D%22rotate%22%0D%0A%20%20%20%20from%3D%220%2020%2020%22%0D%0A%20%20%20%20to%3D%22360%2020%2020%22%0D%0A%20%20%20%20dur%3D%220.5s%22%0D%0A%20%20%20%20repeatCount%3D%22indefinite%22%2F%3E%0D%0A%20%20%3C%2Fpath%3E%0D%0A%3C%2Fsvg%3E");
+    }
+  }
+}
 /* button sizes
 ......................................*/
 .btn--fill {
@@ -598,7 +711,10 @@ select {
   }
   .btn-white,
   .btn-gray,
-  .btn-teal {
+  .btn-teal,
+  .btn-vimeo-blue,
+  .btn-vimeo-secondary,
+  .btn-vimeo-secondary-outline {
     display: block;
     float: left;
     border-radius: 0;
@@ -608,38 +724,50 @@ select {
   }
   .btn-white:nth-child(odd),
   .btn-gray:nth-child(odd),
-  .btn-teal:nth-child(odd) {
+  .btn-teal:nth-child(odd),
+  .btn-vimeo-blue:nth-child(odd),
+  .btn-vimeo-secondary:nth-child(odd),
+  .btn-vimeo-secondary-outline:nth-child(odd) {
     border-right: 1px solid $gray-3 !important;
     border-left: 1px solid $gray-3 !important;
     &:hover,
     &:focus {
-      border-right: 1px solid $gray-3 !important;
-      border-left: 1px solid $gray-3 !important;
+      border-right: 1px solid $southerly-sky !important;
+      border-left: 1px solid $southerly-sky !important;
       z-index: 10000;
     }
   }
   .btn-white:nth-child(even),
   .btn-gray:nth-child(even),
-  .btn-teal:nth-child(even) {
+  .btn-teal:nth-child(even),
+  .btn-vimeo-blue:nth-child(even),
+  .btn-vimeo-secondary:nth-child(even),
+  .btn-vimeo-secondary-outline:nth-child(even) {
     border-left: 1px solid transparent !important;
     border-right: 1px solid transparent !important;
     &:hover,
     &:focus {
-      border-left: 1px solid $gray-3 !important;
-      border-right: 1px solid $gray-3 !important;
+      border-left: 1px solid $southerly-sky !important;
+      border-right: 1px solid $southerly-sky !important;
       z-index: 10000;
     }
   }
   .btn-white:first-child,
   .btn-gray:first-child,
-  .btn-teal:first-child {
-    border-left: 1px solid $gray-3 !important;
+  .btn-teal:first-child,
+  .btn-vimeo-blue:first-child,
+  .btn-vimeo-secondary:first-child,
+  .btn-vimeo-secondary-outline:first-child {
+    border-left: 1px solid $southerly-sky !important;
     border-radius: 5px 0 0 5px;
   }
   .btn-white:last-child,
   .btn-gray:last-child,
-  .btn-teal:last-child {
-    border-right: 1px solid $gray-3 !important;
+  .btn-teal:last-child,
+  .btn-vimeo-blue:last-child,
+  .btn-vimeo-secondary:last-child,
+  .btn-vimeo-secondary-outline:last-child {
+    border-right: 1px solid $southerly-sky !important;
     border-radius: 0 5px 5px 0;
   }
 }

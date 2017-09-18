@@ -62,11 +62,15 @@
 ..................................... */
 /* helper function for margin and padding
 ......................................*/
+.btn-dropdown-vimeo-secondary, .btn-dropdown-vimeo-secondary:hover, .btn-dropdown-vimeo-secondary-outline, .btn-dropdown-vimeo-secondary-outline:hover {
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Cpath%20fill%3D%22%239baab2%22%20d%3D%22M4.38%203.68l11.387%2011.383-4.242%204.243L.14%207.925z%22%3E%3C%2Fpath%3E%3Cpath%20fill%3D%22%239baab2%22%20d%3D%22M22.853%207.933L11.47%2019.318l-4.244-4.243L18.61%203.69z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat; }
+
 .btn-dropdown-gray:hover, .btn-dropdown-white, .btn-dropdown-white:hover {
   background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Cpath%20fill%3D%22%23375667%22%20d%3D%22M4.38%203.68l11.387%2011.383-4.242%204.243L.14%207.925z%22%3E%3C%2Fpath%3E%3Cpath%20fill%3D%22%23375667%22%20d%3D%22M22.853%207.933L11.47%2019.318l-4.244-4.243L18.61%203.69z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
   background-repeat: no-repeat; }
 
-.btn-dropdown-teal, .btn-dropdown-teal:hover {
+.btn-dropdown-teal, .btn-dropdown-teal:hover, .btn-dropdown-vimeo-blue, .btn-dropdown-vimeo-blue:hover {
   background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%220%200%2023%2023%22%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M4.38%203.68l11.387%2011.383-4.242%204.243L.14%207.925z%22%3E%3C%2Fpath%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M22.853%207.933L11.47%2019.318l-4.244-4.243L18.61%203.69z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
   background-repeat: no-repeat; }
 
@@ -97,7 +101,7 @@ select {
 
 /* base
 ......................................*/
-.btn, .btn-gray, .btn-dropdown-gray, .btn-slate, .btn-teal, .btn-dropdown-teal, .btn-red, .btn-purple, .btn-green, .btn-black, .btn-white, .btn-dropdown-white, .btn-yellow, .btn-facebook, .btn-twitter, .btn-transparent, .btn-tumblr, .btn-paypal, .btn-roku, .btn-search, .btn-dropdown {
+.btn, .btn-gray, .btn-dropdown-gray, .btn-slate, .btn-teal, .btn-dropdown-teal, .btn-red, .btn-purple, .btn-green, .btn-black, .btn-white, .btn-dropdown-white, .btn-yellow, .btn-facebook, .btn-twitter, .btn-transparent, .btn-tumblr, .btn-paypal, .btn-roku, .btn-search, .btn-vimeo-blue, .btn-dropdown-vimeo-blue, .btn-vimeo-secondary, .btn-dropdown-vimeo-secondary, .btn-vimeo-secondary-outline, .btn-dropdown-vimeo-secondary-outline, .btn-dropdown {
   transition: border 300ms cubic-bezier(0.19, 1, 0.22, 1), color 300ms cubic-bezier(0.19, 1, 0.22, 1), opacity 300ms cubic-bezier(0.19, 1, 0.22, 1), background-color 300ms cubic-bezier(0.19, 1, 0.22, 1);
   background-color: transparent;
   border: 1px solid transparent;
@@ -114,29 +118,29 @@ select {
   padding: 0 20px;
   outline: none;
   border-radius: 5px; }
-  .btn:link, .btn-gray:link, .btn-dropdown-gray:link, .btn-slate:link, .btn-teal:link, .btn-dropdown-teal:link, .btn-red:link, .btn-purple:link, .btn-green:link, .btn-black:link, .btn-white:link, .btn-dropdown-white:link, .btn-yellow:link, .btn-facebook:link, .btn-twitter:link, .btn-transparent:link, .btn-tumblr:link, .btn-paypal:link, .btn-roku:link, .btn-search:link, .btn-dropdown:link, .btn:visited, .btn-gray:visited, .btn-dropdown-gray:visited, .btn-slate:visited, .btn-teal:visited, .btn-dropdown-teal:visited, .btn-red:visited, .btn-purple:visited, .btn-green:visited, .btn-black:visited, .btn-white:visited, .btn-dropdown-white:visited, .btn-yellow:visited, .btn-facebook:visited, .btn-twitter:visited, .btn-transparent:visited, .btn-tumblr:visited, .btn-paypal:visited, .btn-roku:visited, .btn-search:visited, .btn-dropdown:visited {
+  .btn:link, .btn-gray:link, .btn-dropdown-gray:link, .btn-slate:link, .btn-teal:link, .btn-dropdown-teal:link, .btn-red:link, .btn-purple:link, .btn-green:link, .btn-black:link, .btn-white:link, .btn-dropdown-white:link, .btn-yellow:link, .btn-facebook:link, .btn-twitter:link, .btn-transparent:link, .btn-tumblr:link, .btn-paypal:link, .btn-roku:link, .btn-search:link, .btn-vimeo-blue:link, .btn-dropdown-vimeo-blue:link, .btn-vimeo-secondary:link, .btn-dropdown-vimeo-secondary:link, .btn-vimeo-secondary-outline:link, .btn-dropdown-vimeo-secondary-outline:link, .btn-dropdown:link, .btn:visited, .btn-gray:visited, .btn-dropdown-gray:visited, .btn-slate:visited, .btn-teal:visited, .btn-dropdown-teal:visited, .btn-red:visited, .btn-purple:visited, .btn-green:visited, .btn-black:visited, .btn-white:visited, .btn-dropdown-white:visited, .btn-yellow:visited, .btn-facebook:visited, .btn-twitter:visited, .btn-transparent:visited, .btn-tumblr:visited, .btn-paypal:visited, .btn-roku:visited, .btn-search:visited, .btn-vimeo-blue:visited, .btn-dropdown-vimeo-blue:visited, .btn-vimeo-secondary:visited, .btn-dropdown-vimeo-secondary:visited, .btn-vimeo-secondary-outline:visited, .btn-dropdown-vimeo-secondary-outline:visited, .btn-dropdown:visited {
     text-decoration: none;
     border: 1px solid transparent; }
-  .btn.icon--left, .icon--left.btn-gray, .icon--left.btn-dropdown-gray, .icon--left.btn-slate, .icon--left.btn-teal, .icon--left.btn-dropdown-teal, .icon--left.btn-red, .icon--left.btn-purple, .icon--left.btn-green, .icon--left.btn-black, .icon--left.btn-white, .icon--left.btn-dropdown-white, .icon--left.btn-yellow, .icon--left.btn-facebook, .icon--left.btn-twitter, .icon--left.btn-transparent, .icon--left.btn-tumblr, .icon--left.btn-paypal, .icon--left.btn-roku, .icon--left.btn-search, .icon--left.btn-dropdown {
+  .btn.icon--left, .icon--left.btn-gray, .icon--left.btn-dropdown-gray, .icon--left.btn-slate, .icon--left.btn-teal, .icon--left.btn-dropdown-teal, .icon--left.btn-red, .icon--left.btn-purple, .icon--left.btn-green, .icon--left.btn-black, .icon--left.btn-white, .icon--left.btn-dropdown-white, .icon--left.btn-yellow, .icon--left.btn-facebook, .icon--left.btn-twitter, .icon--left.btn-transparent, .icon--left.btn-tumblr, .icon--left.btn-paypal, .icon--left.btn-roku, .icon--left.btn-search, .icon--left.btn-vimeo-blue, .icon--left.btn-dropdown-vimeo-blue, .icon--left.btn-vimeo-secondary, .icon--left.btn-dropdown-vimeo-secondary, .icon--left.btn-vimeo-secondary-outline, .icon--left.btn-dropdown-vimeo-secondary-outline, .icon--left.btn-dropdown {
     background-position: left 21px center;
     padding-left: 43px; }
-    .btn.icon--left.icon--xsmall, .icon--left.icon--xsmall.btn-gray, .icon--left.icon--xsmall.btn-dropdown-gray, .icon--left.icon--xsmall.btn-slate, .icon--left.icon--xsmall.btn-teal, .icon--left.icon--xsmall.btn-dropdown-teal, .icon--left.icon--xsmall.btn-red, .icon--left.icon--xsmall.btn-purple, .icon--left.icon--xsmall.btn-green, .icon--left.icon--xsmall.btn-black, .icon--left.icon--xsmall.btn-white, .icon--left.icon--xsmall.btn-dropdown-white, .icon--left.icon--xsmall.btn-yellow, .icon--left.icon--xsmall.btn-facebook, .icon--left.icon--xsmall.btn-twitter, .icon--left.icon--xsmall.btn-transparent, .icon--left.icon--xsmall.btn-tumblr, .icon--left.icon--xsmall.btn-paypal, .icon--left.icon--xsmall.btn-roku, .icon--left.icon--xsmall.btn-search, .icon--left.icon--xsmall.btn-dropdown {
+    .btn.icon--left.icon--xsmall, .icon--left.icon--xsmall.btn-gray, .icon--left.icon--xsmall.btn-dropdown-gray, .icon--left.icon--xsmall.btn-slate, .icon--left.icon--xsmall.btn-teal, .icon--left.icon--xsmall.btn-dropdown-teal, .icon--left.icon--xsmall.btn-red, .icon--left.icon--xsmall.btn-purple, .icon--left.icon--xsmall.btn-green, .icon--left.icon--xsmall.btn-black, .icon--left.icon--xsmall.btn-white, .icon--left.icon--xsmall.btn-dropdown-white, .icon--left.icon--xsmall.btn-yellow, .icon--left.icon--xsmall.btn-facebook, .icon--left.icon--xsmall.btn-twitter, .icon--left.icon--xsmall.btn-transparent, .icon--left.icon--xsmall.btn-tumblr, .icon--left.icon--xsmall.btn-paypal, .icon--left.icon--xsmall.btn-roku, .icon--left.icon--xsmall.btn-search, .icon--left.icon--xsmall.btn-vimeo-blue, .icon--left.icon--xsmall.btn-dropdown-vimeo-blue, .icon--left.icon--xsmall.btn-vimeo-secondary, .icon--left.icon--xsmall.btn-dropdown-vimeo-secondary, .icon--left.icon--xsmall.btn-vimeo-secondary-outline, .icon--left.icon--xsmall.btn-dropdown-vimeo-secondary-outline, .icon--left.icon--xsmall.btn-dropdown {
       background-position: left 16px center;
       padding-left: 40px; }
-    .btn.icon--left.icon--xxsmall, .icon--left.icon--xxsmall.btn-gray, .icon--left.icon--xxsmall.btn-dropdown-gray, .icon--left.icon--xxsmall.btn-slate, .icon--left.icon--xxsmall.btn-teal, .icon--left.icon--xxsmall.btn-dropdown-teal, .icon--left.icon--xxsmall.btn-red, .icon--left.icon--xxsmall.btn-purple, .icon--left.icon--xxsmall.btn-green, .icon--left.icon--xxsmall.btn-black, .icon--left.icon--xxsmall.btn-white, .icon--left.icon--xxsmall.btn-dropdown-white, .icon--left.icon--xxsmall.btn-yellow, .icon--left.icon--xxsmall.btn-facebook, .icon--left.icon--xxsmall.btn-twitter, .icon--left.icon--xxsmall.btn-transparent, .icon--left.icon--xxsmall.btn-tumblr, .icon--left.icon--xxsmall.btn-paypal, .icon--left.icon--xxsmall.btn-roku, .icon--left.icon--xxsmall.btn-search, .icon--left.icon--xxsmall.btn-dropdown {
+    .btn.icon--left.icon--xxsmall, .icon--left.icon--xxsmall.btn-gray, .icon--left.icon--xxsmall.btn-dropdown-gray, .icon--left.icon--xxsmall.btn-slate, .icon--left.icon--xxsmall.btn-teal, .icon--left.icon--xxsmall.btn-dropdown-teal, .icon--left.icon--xxsmall.btn-red, .icon--left.icon--xxsmall.btn-purple, .icon--left.icon--xxsmall.btn-green, .icon--left.icon--xxsmall.btn-black, .icon--left.icon--xxsmall.btn-white, .icon--left.icon--xxsmall.btn-dropdown-white, .icon--left.icon--xxsmall.btn-yellow, .icon--left.icon--xxsmall.btn-facebook, .icon--left.icon--xxsmall.btn-twitter, .icon--left.icon--xxsmall.btn-transparent, .icon--left.icon--xxsmall.btn-tumblr, .icon--left.icon--xxsmall.btn-paypal, .icon--left.icon--xxsmall.btn-roku, .icon--left.icon--xxsmall.btn-search, .icon--left.icon--xxsmall.btn-vimeo-blue, .icon--left.icon--xxsmall.btn-dropdown-vimeo-blue, .icon--left.icon--xxsmall.btn-vimeo-secondary, .icon--left.icon--xxsmall.btn-dropdown-vimeo-secondary, .icon--left.icon--xxsmall.btn-vimeo-secondary-outline, .icon--left.icon--xxsmall.btn-dropdown-vimeo-secondary-outline, .icon--left.icon--xxsmall.btn-dropdown {
       background-position: left 18px center;
       padding-left: 37px; }
-    .btn.icon--left .icon--right, .icon--left.btn-gray .icon--right, .icon--left.btn-dropdown-gray .icon--right, .icon--left.btn-slate .icon--right, .icon--left.btn-teal .icon--right, .icon--left.btn-dropdown-teal .icon--right, .icon--left.btn-red .icon--right, .icon--left.btn-purple .icon--right, .icon--left.btn-green .icon--right, .icon--left.btn-black .icon--right, .icon--left.btn-white .icon--right, .icon--left.btn-dropdown-white .icon--right, .icon--left.btn-yellow .icon--right, .icon--left.btn-facebook .icon--right, .icon--left.btn-twitter .icon--right, .icon--left.btn-transparent .icon--right, .icon--left.btn-tumblr .icon--right, .icon--left.btn-paypal .icon--right, .icon--left.btn-roku .icon--right, .icon--left.btn-search .icon--right, .icon--left.btn-dropdown .icon--right {
+    .btn.icon--left .icon--right, .icon--left.btn-gray .icon--right, .icon--left.btn-dropdown-gray .icon--right, .icon--left.btn-slate .icon--right, .icon--left.btn-teal .icon--right, .icon--left.btn-dropdown-teal .icon--right, .icon--left.btn-red .icon--right, .icon--left.btn-purple .icon--right, .icon--left.btn-green .icon--right, .icon--left.btn-black .icon--right, .icon--left.btn-white .icon--right, .icon--left.btn-dropdown-white .icon--right, .icon--left.btn-yellow .icon--right, .icon--left.btn-facebook .icon--right, .icon--left.btn-twitter .icon--right, .icon--left.btn-transparent .icon--right, .icon--left.btn-tumblr .icon--right, .icon--left.btn-paypal .icon--right, .icon--left.btn-roku .icon--right, .icon--left.btn-search .icon--right, .icon--left.btn-vimeo-blue .icon--right, .icon--left.btn-dropdown-vimeo-blue .icon--right, .icon--left.btn-vimeo-secondary .icon--right, .icon--left.btn-dropdown-vimeo-secondary .icon--right, .icon--left.btn-vimeo-secondary-outline .icon--right, .icon--left.btn-dropdown-vimeo-secondary-outline .icon--right, .icon--left.btn-dropdown .icon--right {
       background-position: right 0px center;
       padding-right: 21px;
       background-size: 15px 15px; }
-  .btn.icon--right, .icon--right.btn-gray, .icon--right.btn-dropdown-gray, .icon--right.btn-slate, .icon--right.btn-teal, .icon--right.btn-dropdown-teal, .icon--right.btn-red, .icon--right.btn-purple, .icon--right.btn-green, .icon--right.btn-black, .icon--right.btn-white, .icon--right.btn-dropdown-white, .icon--right.btn-yellow, .icon--right.btn-facebook, .icon--right.btn-twitter, .icon--right.btn-transparent, .icon--right.btn-tumblr, .icon--right.btn-paypal, .icon--right.btn-roku, .icon--right.btn-search, .icon--right.btn-dropdown {
+  .btn.icon--right, .icon--right.btn-gray, .icon--right.btn-dropdown-gray, .icon--right.btn-slate, .icon--right.btn-teal, .icon--right.btn-dropdown-teal, .icon--right.btn-red, .icon--right.btn-purple, .icon--right.btn-green, .icon--right.btn-black, .icon--right.btn-white, .icon--right.btn-dropdown-white, .icon--right.btn-yellow, .icon--right.btn-facebook, .icon--right.btn-twitter, .icon--right.btn-transparent, .icon--right.btn-tumblr, .icon--right.btn-paypal, .icon--right.btn-roku, .icon--right.btn-search, .icon--right.btn-vimeo-blue, .icon--right.btn-dropdown-vimeo-blue, .icon--right.btn-vimeo-secondary, .icon--right.btn-dropdown-vimeo-secondary, .icon--right.btn-vimeo-secondary-outline, .icon--right.btn-dropdown-vimeo-secondary-outline, .icon--right.btn-dropdown {
     background-position: right 21px center;
     padding-right: 43px; }
-    .btn.icon--right.icon--xsmall, .icon--right.icon--xsmall.btn-gray, .icon--right.icon--xsmall.btn-dropdown-gray, .icon--right.icon--xsmall.btn-slate, .icon--right.icon--xsmall.btn-teal, .icon--right.icon--xsmall.btn-dropdown-teal, .icon--right.icon--xsmall.btn-red, .icon--right.icon--xsmall.btn-purple, .icon--right.icon--xsmall.btn-green, .icon--right.icon--xsmall.btn-black, .icon--right.icon--xsmall.btn-white, .icon--right.icon--xsmall.btn-dropdown-white, .icon--right.icon--xsmall.btn-yellow, .icon--right.icon--xsmall.btn-facebook, .icon--right.icon--xsmall.btn-twitter, .icon--right.icon--xsmall.btn-transparent, .icon--right.icon--xsmall.btn-tumblr, .icon--right.icon--xsmall.btn-paypal, .icon--right.icon--xsmall.btn-roku, .icon--right.icon--xsmall.btn-search, .icon--right.icon--xsmall.btn-dropdown {
+    .btn.icon--right.icon--xsmall, .icon--right.icon--xsmall.btn-gray, .icon--right.icon--xsmall.btn-dropdown-gray, .icon--right.icon--xsmall.btn-slate, .icon--right.icon--xsmall.btn-teal, .icon--right.icon--xsmall.btn-dropdown-teal, .icon--right.icon--xsmall.btn-red, .icon--right.icon--xsmall.btn-purple, .icon--right.icon--xsmall.btn-green, .icon--right.icon--xsmall.btn-black, .icon--right.icon--xsmall.btn-white, .icon--right.icon--xsmall.btn-dropdown-white, .icon--right.icon--xsmall.btn-yellow, .icon--right.icon--xsmall.btn-facebook, .icon--right.icon--xsmall.btn-twitter, .icon--right.icon--xsmall.btn-transparent, .icon--right.icon--xsmall.btn-tumblr, .icon--right.icon--xsmall.btn-paypal, .icon--right.icon--xsmall.btn-roku, .icon--right.icon--xsmall.btn-search, .icon--right.icon--xsmall.btn-vimeo-blue, .icon--right.icon--xsmall.btn-dropdown-vimeo-blue, .icon--right.icon--xsmall.btn-vimeo-secondary, .icon--right.icon--xsmall.btn-dropdown-vimeo-secondary, .icon--right.icon--xsmall.btn-vimeo-secondary-outline, .icon--right.icon--xsmall.btn-dropdown-vimeo-secondary-outline, .icon--right.icon--xsmall.btn-dropdown {
       background-position: right 16px center;
       padding-left: 40px; }
-    .btn.icon--right.icon--xxsmall, .icon--right.icon--xxsmall.btn-gray, .icon--right.icon--xxsmall.btn-dropdown-gray, .icon--right.icon--xxsmall.btn-slate, .icon--right.icon--xxsmall.btn-teal, .icon--right.icon--xxsmall.btn-dropdown-teal, .icon--right.icon--xxsmall.btn-red, .icon--right.icon--xxsmall.btn-purple, .icon--right.icon--xxsmall.btn-green, .icon--right.icon--xxsmall.btn-black, .icon--right.icon--xxsmall.btn-white, .icon--right.icon--xxsmall.btn-dropdown-white, .icon--right.icon--xxsmall.btn-yellow, .icon--right.icon--xxsmall.btn-facebook, .icon--right.icon--xxsmall.btn-twitter, .icon--right.icon--xxsmall.btn-transparent, .icon--right.icon--xxsmall.btn-tumblr, .icon--right.icon--xxsmall.btn-paypal, .icon--right.icon--xxsmall.btn-roku, .icon--right.icon--xxsmall.btn-search, .icon--right.icon--xxsmall.btn-dropdown {
+    .btn.icon--right.icon--xxsmall, .icon--right.icon--xxsmall.btn-gray, .icon--right.icon--xxsmall.btn-dropdown-gray, .icon--right.icon--xxsmall.btn-slate, .icon--right.icon--xxsmall.btn-teal, .icon--right.icon--xxsmall.btn-dropdown-teal, .icon--right.icon--xxsmall.btn-red, .icon--right.icon--xxsmall.btn-purple, .icon--right.icon--xxsmall.btn-green, .icon--right.icon--xxsmall.btn-black, .icon--right.icon--xxsmall.btn-white, .icon--right.icon--xxsmall.btn-dropdown-white, .icon--right.icon--xxsmall.btn-yellow, .icon--right.icon--xxsmall.btn-facebook, .icon--right.icon--xxsmall.btn-twitter, .icon--right.icon--xxsmall.btn-transparent, .icon--right.icon--xxsmall.btn-tumblr, .icon--right.icon--xxsmall.btn-paypal, .icon--right.icon--xxsmall.btn-roku, .icon--right.icon--xxsmall.btn-search, .icon--right.icon--xxsmall.btn-vimeo-blue, .icon--right.icon--xxsmall.btn-dropdown-vimeo-blue, .icon--right.icon--xxsmall.btn-vimeo-secondary, .icon--right.icon--xxsmall.btn-dropdown-vimeo-secondary, .icon--right.icon--xxsmall.btn-vimeo-secondary-outline, .icon--right.icon--xxsmall.btn-dropdown-vimeo-secondary-outline, .icon--right.icon--xxsmall.btn-dropdown {
       background-position: right 18px center;
       padding-left: 37px; }
 
@@ -832,6 +836,140 @@ select {
 
 /* button search shorthand
 ......................................*/
+/* button VIMEO COLORS shorthand
+......................................*/
+.btn-vimeo-blue, .btn-dropdown-vimeo-blue {
+  background-color: #00adef;
+  color: #fff;
+  border: 1px solid #00adef;
+  background-size: 15px 15px; }
+  .btn-vimeo-blue:link, .btn-dropdown-vimeo-blue:link, .btn-vimeo-blue:visited, .btn-dropdown-vimeo-blue:visited {
+    color: #fff;
+    border: 1px solid #00adef; }
+  .btn-vimeo-blue:hover, .btn-dropdown-vimeo-blue:hover, .btn-vimeo-blue.is-hover, .is-hover.btn-dropdown-vimeo-blue, .btn-vimeo-blue:focus:hover, .btn-dropdown-vimeo-blue:focus:hover, .btn-vimeo-blue:focus.is-hover, .btn-dropdown-vimeo-blue:focus.is-hover {
+    color: #fff;
+    cursor: pointer;
+    background-color: #0088cc;
+    border: 1px solid #0088cc; }
+  .btn-vimeo-blue:active, .btn-dropdown-vimeo-blue:active, .btn-vimeo-blue.is-active, .is-active.btn-dropdown-vimeo-blue, .btn-vimeo-blue:focus, .btn-dropdown-vimeo-blue:focus, .btn-vimeo-blue.is-focus, .is-focus.btn-dropdown-vimeo-blue {
+    color: #fff;
+    background-color: #00adef;
+    border: 1px solid #00adef; }
+  .btn-vimeo-blue.is-selected, .is-selected.btn-dropdown-vimeo-blue {
+    color: #fff;
+    cursor: pointer;
+    background-color: #0088cc;
+    border: 1px solid #0088cc; }
+  .btn-vimeo-blue[disabled], [disabled].btn-dropdown-vimeo-blue, .btn-vimeo-blue.is-disabled, .is-disabled.btn-dropdown-vimeo-blue {
+    opacity: .5;
+    background-color: #00adef;
+    color: #fff;
+    border: 1px solid #00adef; }
+    .btn-vimeo-blue[disabled]:visited, [disabled].btn-dropdown-vimeo-blue:visited, .btn-vimeo-blue[disabled]:hover, [disabled].btn-dropdown-vimeo-blue:hover, .btn-vimeo-blue[disabled].is-hover, [disabled].is-hover.btn-dropdown-vimeo-blue, .btn-vimeo-blue[disabled]:active, [disabled].btn-dropdown-vimeo-blue:active, .btn-vimeo-blue[disabled].is-active, [disabled].is-active.btn-dropdown-vimeo-blue, .btn-vimeo-blue.is-disabled:visited, .is-disabled.btn-dropdown-vimeo-blue:visited, .btn-vimeo-blue.is-disabled:hover, .is-disabled.btn-dropdown-vimeo-blue:hover, .btn-vimeo-blue.is-disabled.is-hover, .is-disabled.is-hover.btn-dropdown-vimeo-blue, .btn-vimeo-blue.is-disabled:active, .is-disabled.btn-dropdown-vimeo-blue:active, .btn-vimeo-blue.is-disabled.is-active, .is-disabled.is-active.btn-dropdown-vimeo-blue {
+      background-color: #00adef;
+      color: #fff;
+      border: 1px solid #00adef; }
+  .btn-vimeo-blue.is-processing, .is-processing.btn-dropdown-vimeo-blue, .btn-vimeo-blue.processing, .processing.btn-dropdown-vimeo-blue, .btn-vimeo-blue.is-loading, .is-loading.btn-dropdown-vimeo-blue, .btn-vimeo-blue.loading, .loading.btn-dropdown-vimeo-blue {
+    background-position: center center !important;
+    color: transparent !important;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0D%0A%20%20viewBox%3D%220%200%2040%2040%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cpath%20opacity%3D%220.2%22%20fill%3D%22%23ffffff%22%20d%3D%22M20.201%2C5.169c-8.254%2C0-14.946%2C6.692-14.946%2C14.946c0%2C8.255%2C6.692%2C14.946%2C14.946%2C14.946%0D%0A%20%20s14.946-6.691%2C14.946-14.946C35.146%2C11.861%2C28.455%2C5.169%2C20.201%2C5.169z%20M20.201%2C31.749c-6.425%2C0-11.634-5.208-11.634-11.634%0D%0A%20%20c0-6.425%2C5.209-11.634%2C11.634-11.634c6.425%2C0%2C11.633%2C5.209%2C11.633%2C11.634C31.834%2C26.541%2C26.626%2C31.749%2C20.201%2C31.749z%22%2F%3E%0D%0A%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M26.013%2C10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0%0D%0A%20%20C22.32%2C8.481%2C24.301%2C9.057%2C26.013%2C10.047z%22%3E%0D%0A%20%20%3CanimateTransform%20attributeType%3D%22xml%22%0D%0A%20%20%20%20attributeName%3D%22transform%22%0D%0A%20%20%20%20type%3D%22rotate%22%0D%0A%20%20%20%20from%3D%220%2020%2020%22%0D%0A%20%20%20%20to%3D%22360%2020%2020%22%0D%0A%20%20%20%20dur%3D%220.5s%22%0D%0A%20%20%20%20repeatCount%3D%22indefinite%22%2F%3E%0D%0A%20%20%3C%2Fpath%3E%0D%0A%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+    background-size: 23px 23px; }
+    .btn-vimeo-blue.is-processing.btn--small, .btn-vimeo-blue.is-processing.btn-search, .is-processing.btn-search.btn-dropdown-vimeo-blue, .is-processing.btn--small.btn-dropdown-vimeo-blue, .btn-vimeo-blue.processing.btn--small, .btn-vimeo-blue.processing.btn-search, .processing.btn-search.btn-dropdown-vimeo-blue, .processing.btn--small.btn-dropdown-vimeo-blue, .btn-vimeo-blue.is-loading.btn--small, .btn-vimeo-blue.is-loading.btn-search, .is-loading.btn-search.btn-dropdown-vimeo-blue, .is-loading.btn--small.btn-dropdown-vimeo-blue, .btn-vimeo-blue.loading.btn--small, .btn-vimeo-blue.loading.btn-search, .loading.btn-search.btn-dropdown-vimeo-blue, .loading.btn--small.btn-dropdown-vimeo-blue {
+      background-size: 20px 20px; }
+    .btn-vimeo-blue.is-processing.btn--medium, .is-processing.btn--medium.btn-dropdown-vimeo-blue, .btn-vimeo-blue.processing.btn--medium, .processing.btn--medium.btn-dropdown-vimeo-blue, .btn-vimeo-blue.is-loading.btn--medium, .is-loading.btn--medium.btn-dropdown-vimeo-blue, .btn-vimeo-blue.loading.btn--medium, .loading.btn--medium.btn-dropdown-vimeo-blue {
+      background-size: 23px 23px; }
+    .btn-vimeo-blue.is-processing.btn--large, .is-processing.btn--large.btn-dropdown-vimeo-blue, .btn-vimeo-blue.processing.btn--large, .processing.btn--large.btn-dropdown-vimeo-blue, .btn-vimeo-blue.is-loading.btn--large, .is-loading.btn--large.btn-dropdown-vimeo-blue, .btn-vimeo-blue.loading.btn--large, .loading.btn--large.btn-dropdown-vimeo-blue {
+      background-size: 45px 45px; }
+
+.btn-vimeo-secondary, .btn-dropdown-vimeo-secondary {
+  background-color: #e3e8e9;
+  color: #1a2e3b;
+  border: 1px solid #e3e8e9;
+  background-size: 15px 15px; }
+  .btn-vimeo-secondary:link, .btn-dropdown-vimeo-secondary:link, .btn-vimeo-secondary:visited, .btn-dropdown-vimeo-secondary:visited {
+    color: #1a2e3b;
+    border: 1px solid #e3e8e9; }
+  .btn-vimeo-secondary:hover, .btn-dropdown-vimeo-secondary:hover, .btn-vimeo-secondary.is-hover, .is-hover.btn-dropdown-vimeo-secondary, .btn-vimeo-secondary:focus:hover, .btn-dropdown-vimeo-secondary:focus:hover, .btn-vimeo-secondary:focus.is-hover, .btn-dropdown-vimeo-secondary:focus.is-hover {
+    color: #1a2e3b;
+    cursor: pointer;
+    background-color: #b3bfc8;
+    border: 1px solid #b3bfc8; }
+  .btn-vimeo-secondary:active, .btn-dropdown-vimeo-secondary:active, .btn-vimeo-secondary.is-active, .is-active.btn-dropdown-vimeo-secondary, .btn-vimeo-secondary:focus, .btn-dropdown-vimeo-secondary:focus, .btn-vimeo-secondary.is-focus, .is-focus.btn-dropdown-vimeo-secondary {
+    color: #1a2e3b;
+    background-color: #e3e8e9;
+    border: 1px solid #e3e8e9; }
+  .btn-vimeo-secondary.is-selected, .is-selected.btn-dropdown-vimeo-secondary {
+    color: #1a2e3b;
+    cursor: pointer;
+    background-color: #b3bfc8;
+    border: 1px solid #b3bfc8; }
+  .btn-vimeo-secondary[disabled], [disabled].btn-dropdown-vimeo-secondary, .btn-vimeo-secondary.is-disabled, .is-disabled.btn-dropdown-vimeo-secondary {
+    opacity: .5;
+    background-color: #e3e8e9;
+    color: #1a2e3b;
+    border: 1px solid #e3e8e9; }
+    .btn-vimeo-secondary[disabled]:visited, [disabled].btn-dropdown-vimeo-secondary:visited, .btn-vimeo-secondary[disabled]:hover, [disabled].btn-dropdown-vimeo-secondary:hover, .btn-vimeo-secondary[disabled].is-hover, [disabled].is-hover.btn-dropdown-vimeo-secondary, .btn-vimeo-secondary[disabled]:active, [disabled].btn-dropdown-vimeo-secondary:active, .btn-vimeo-secondary[disabled].is-active, [disabled].is-active.btn-dropdown-vimeo-secondary, .btn-vimeo-secondary.is-disabled:visited, .is-disabled.btn-dropdown-vimeo-secondary:visited, .btn-vimeo-secondary.is-disabled:hover, .is-disabled.btn-dropdown-vimeo-secondary:hover, .btn-vimeo-secondary.is-disabled.is-hover, .is-disabled.is-hover.btn-dropdown-vimeo-secondary, .btn-vimeo-secondary.is-disabled:active, .is-disabled.btn-dropdown-vimeo-secondary:active, .btn-vimeo-secondary.is-disabled.is-active, .is-disabled.is-active.btn-dropdown-vimeo-secondary {
+      background-color: #e3e8e9;
+      color: #1a2e3b;
+      border: 1px solid #e3e8e9; }
+  .btn-vimeo-secondary.is-processing, .is-processing.btn-dropdown-vimeo-secondary, .btn-vimeo-secondary.processing, .processing.btn-dropdown-vimeo-secondary, .btn-vimeo-secondary.is-loading, .is-loading.btn-dropdown-vimeo-secondary, .btn-vimeo-secondary.loading, .loading.btn-dropdown-vimeo-secondary {
+    background-position: center center !important;
+    color: transparent !important;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0D%0A%20%20viewBox%3D%220%200%2040%2040%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cpath%20opacity%3D%220.2%22%20fill%3D%22%238699a6%22%20d%3D%22M20.201%2C5.169c-8.254%2C0-14.946%2C6.692-14.946%2C14.946c0%2C8.255%2C6.692%2C14.946%2C14.946%2C14.946%0D%0A%20%20s14.946-6.691%2C14.946-14.946C35.146%2C11.861%2C28.455%2C5.169%2C20.201%2C5.169z%20M20.201%2C31.749c-6.425%2C0-11.634-5.208-11.634-11.634%0D%0A%20%20c0-6.425%2C5.209-11.634%2C11.634-11.634c6.425%2C0%2C11.633%2C5.209%2C11.633%2C11.634C31.834%2C26.541%2C26.626%2C31.749%2C20.201%2C31.749z%22%2F%3E%0D%0A%3Cpath%20fill%3D%22%238699a6%22%20d%3D%22M26.013%2C10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0%0D%0A%20%20C22.32%2C8.481%2C24.301%2C9.057%2C26.013%2C10.047z%22%3E%0D%0A%20%20%3CanimateTransform%20attributeType%3D%22xml%22%0D%0A%20%20%20%20attributeName%3D%22transform%22%0D%0A%20%20%20%20type%3D%22rotate%22%0D%0A%20%20%20%20from%3D%220%2020%2020%22%0D%0A%20%20%20%20to%3D%22360%2020%2020%22%0D%0A%20%20%20%20dur%3D%220.5s%22%0D%0A%20%20%20%20repeatCount%3D%22indefinite%22%2F%3E%0D%0A%20%20%3C%2Fpath%3E%0D%0A%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+    background-size: 23px 23px; }
+    .btn-vimeo-secondary.is-processing.btn--small, .btn-vimeo-secondary.is-processing.btn-search, .is-processing.btn-search.btn-dropdown-vimeo-secondary, .is-processing.btn--small.btn-dropdown-vimeo-secondary, .btn-vimeo-secondary.processing.btn--small, .btn-vimeo-secondary.processing.btn-search, .processing.btn-search.btn-dropdown-vimeo-secondary, .processing.btn--small.btn-dropdown-vimeo-secondary, .btn-vimeo-secondary.is-loading.btn--small, .btn-vimeo-secondary.is-loading.btn-search, .is-loading.btn-search.btn-dropdown-vimeo-secondary, .is-loading.btn--small.btn-dropdown-vimeo-secondary, .btn-vimeo-secondary.loading.btn--small, .btn-vimeo-secondary.loading.btn-search, .loading.btn-search.btn-dropdown-vimeo-secondary, .loading.btn--small.btn-dropdown-vimeo-secondary {
+      background-size: 20px 20px; }
+    .btn-vimeo-secondary.is-processing.btn--medium, .is-processing.btn--medium.btn-dropdown-vimeo-secondary, .btn-vimeo-secondary.processing.btn--medium, .processing.btn--medium.btn-dropdown-vimeo-secondary, .btn-vimeo-secondary.is-loading.btn--medium, .is-loading.btn--medium.btn-dropdown-vimeo-secondary, .btn-vimeo-secondary.loading.btn--medium, .loading.btn--medium.btn-dropdown-vimeo-secondary {
+      background-size: 23px 23px; }
+    .btn-vimeo-secondary.is-processing.btn--large, .is-processing.btn--large.btn-dropdown-vimeo-secondary, .btn-vimeo-secondary.processing.btn--large, .processing.btn--large.btn-dropdown-vimeo-secondary, .btn-vimeo-secondary.is-loading.btn--large, .is-loading.btn--large.btn-dropdown-vimeo-secondary, .btn-vimeo-secondary.loading.btn--large, .loading.btn--large.btn-dropdown-vimeo-secondary {
+      background-size: 45px 45px; }
+
+.btn-vimeo-secondary-outline, .btn-dropdown-vimeo-secondary-outline {
+  background-color: #fff;
+  color: #8699a6;
+  border: 1px solid #8699a6;
+  background-size: 15px 15px; }
+  .btn-vimeo-secondary-outline:link, .btn-dropdown-vimeo-secondary-outline:link, .btn-vimeo-secondary-outline:visited, .btn-dropdown-vimeo-secondary-outline:visited {
+    color: #8699a6;
+    border: 1px solid #8699a6; }
+  .btn-vimeo-secondary-outline:hover, .btn-dropdown-vimeo-secondary-outline:hover, .btn-vimeo-secondary-outline.is-hover, .is-hover.btn-dropdown-vimeo-secondary-outline, .btn-vimeo-secondary-outline:focus:hover, .btn-dropdown-vimeo-secondary-outline:focus:hover, .btn-vimeo-secondary-outline:focus.is-hover, .btn-dropdown-vimeo-secondary-outline:focus.is-hover {
+    color: #1a2e3b;
+    cursor: pointer;
+    background-color: #e3e8e9;
+    border: 1px solid #e3e8e9; }
+  .btn-vimeo-secondary-outline:active, .btn-dropdown-vimeo-secondary-outline:active, .btn-vimeo-secondary-outline.is-active, .is-active.btn-dropdown-vimeo-secondary-outline, .btn-vimeo-secondary-outline:focus, .btn-dropdown-vimeo-secondary-outline:focus, .btn-vimeo-secondary-outline.is-focus, .is-focus.btn-dropdown-vimeo-secondary-outline {
+    color: #1a2e3b;
+    background-color: #fff;
+    border: 1px solid #8699a6; }
+  .btn-vimeo-secondary-outline.is-selected, .is-selected.btn-dropdown-vimeo-secondary-outline {
+    color: #1a2e3b;
+    cursor: pointer;
+    background-color: #e3e8e9;
+    border: 1px solid #e3e8e9; }
+  .btn-vimeo-secondary-outline[disabled], [disabled].btn-dropdown-vimeo-secondary-outline, .btn-vimeo-secondary-outline.is-disabled, .is-disabled.btn-dropdown-vimeo-secondary-outline {
+    opacity: .5;
+    background-color: #fff;
+    color: #8699a6;
+    border: 1px solid #8699a6; }
+    .btn-vimeo-secondary-outline[disabled]:visited, [disabled].btn-dropdown-vimeo-secondary-outline:visited, .btn-vimeo-secondary-outline[disabled]:hover, [disabled].btn-dropdown-vimeo-secondary-outline:hover, .btn-vimeo-secondary-outline[disabled].is-hover, [disabled].is-hover.btn-dropdown-vimeo-secondary-outline, .btn-vimeo-secondary-outline[disabled]:active, [disabled].btn-dropdown-vimeo-secondary-outline:active, .btn-vimeo-secondary-outline[disabled].is-active, [disabled].is-active.btn-dropdown-vimeo-secondary-outline, .btn-vimeo-secondary-outline.is-disabled:visited, .is-disabled.btn-dropdown-vimeo-secondary-outline:visited, .btn-vimeo-secondary-outline.is-disabled:hover, .is-disabled.btn-dropdown-vimeo-secondary-outline:hover, .btn-vimeo-secondary-outline.is-disabled.is-hover, .is-disabled.is-hover.btn-dropdown-vimeo-secondary-outline, .btn-vimeo-secondary-outline.is-disabled:active, .is-disabled.btn-dropdown-vimeo-secondary-outline:active, .btn-vimeo-secondary-outline.is-disabled.is-active, .is-disabled.is-active.btn-dropdown-vimeo-secondary-outline {
+      background-color: #fff;
+      color: #8699a6;
+      border: 1px solid #8699a6; }
+  .btn-vimeo-secondary-outline.is-processing, .is-processing.btn-dropdown-vimeo-secondary-outline, .btn-vimeo-secondary-outline.processing, .processing.btn-dropdown-vimeo-secondary-outline, .btn-vimeo-secondary-outline.is-loading, .is-loading.btn-dropdown-vimeo-secondary-outline, .btn-vimeo-secondary-outline.loading, .loading.btn-dropdown-vimeo-secondary-outline {
+    background-position: center center !important;
+    color: transparent !important;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0D%0A%20%20viewBox%3D%220%200%2040%2040%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cpath%20opacity%3D%220.2%22%20fill%3D%22%238699a6%22%20d%3D%22M20.201%2C5.169c-8.254%2C0-14.946%2C6.692-14.946%2C14.946c0%2C8.255%2C6.692%2C14.946%2C14.946%2C14.946%0D%0A%20%20s14.946-6.691%2C14.946-14.946C35.146%2C11.861%2C28.455%2C5.169%2C20.201%2C5.169z%20M20.201%2C31.749c-6.425%2C0-11.634-5.208-11.634-11.634%0D%0A%20%20c0-6.425%2C5.209-11.634%2C11.634-11.634c6.425%2C0%2C11.633%2C5.209%2C11.633%2C11.634C31.834%2C26.541%2C26.626%2C31.749%2C20.201%2C31.749z%22%2F%3E%0D%0A%3Cpath%20fill%3D%22%238699a6%22%20d%3D%22M26.013%2C10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0%0D%0A%20%20C22.32%2C8.481%2C24.301%2C9.057%2C26.013%2C10.047z%22%3E%0D%0A%20%20%3CanimateTransform%20attributeType%3D%22xml%22%0D%0A%20%20%20%20attributeName%3D%22transform%22%0D%0A%20%20%20%20type%3D%22rotate%22%0D%0A%20%20%20%20from%3D%220%2020%2020%22%0D%0A%20%20%20%20to%3D%22360%2020%2020%22%0D%0A%20%20%20%20dur%3D%220.5s%22%0D%0A%20%20%20%20repeatCount%3D%22indefinite%22%2F%3E%0D%0A%20%20%3C%2Fpath%3E%0D%0A%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+    background-size: 23px 23px; }
+    .btn-vimeo-secondary-outline.is-processing.btn--small, .btn-vimeo-secondary-outline.is-processing.btn-search, .is-processing.btn-search.btn-dropdown-vimeo-secondary-outline, .is-processing.btn--small.btn-dropdown-vimeo-secondary-outline, .btn-vimeo-secondary-outline.processing.btn--small, .btn-vimeo-secondary-outline.processing.btn-search, .processing.btn-search.btn-dropdown-vimeo-secondary-outline, .processing.btn--small.btn-dropdown-vimeo-secondary-outline, .btn-vimeo-secondary-outline.is-loading.btn--small, .btn-vimeo-secondary-outline.is-loading.btn-search, .is-loading.btn-search.btn-dropdown-vimeo-secondary-outline, .is-loading.btn--small.btn-dropdown-vimeo-secondary-outline, .btn-vimeo-secondary-outline.loading.btn--small, .btn-vimeo-secondary-outline.loading.btn-search, .loading.btn-search.btn-dropdown-vimeo-secondary-outline, .loading.btn--small.btn-dropdown-vimeo-secondary-outline {
+      background-size: 20px 20px; }
+    .btn-vimeo-secondary-outline.is-processing.btn--medium, .is-processing.btn--medium.btn-dropdown-vimeo-secondary-outline, .btn-vimeo-secondary-outline.processing.btn--medium, .processing.btn--medium.btn-dropdown-vimeo-secondary-outline, .btn-vimeo-secondary-outline.is-loading.btn--medium, .is-loading.btn--medium.btn-dropdown-vimeo-secondary-outline, .btn-vimeo-secondary-outline.loading.btn--medium, .loading.btn--medium.btn-dropdown-vimeo-secondary-outline {
+      background-size: 23px 23px; }
+    .btn-vimeo-secondary-outline.is-processing.btn--large, .is-processing.btn--large.btn-dropdown-vimeo-secondary-outline, .btn-vimeo-secondary-outline.processing.btn--large, .processing.btn--large.btn-dropdown-vimeo-secondary-outline, .btn-vimeo-secondary-outline.is-loading.btn--large, .is-loading.btn--large.btn-dropdown-vimeo-secondary-outline, .btn-vimeo-secondary-outline.loading.btn--large, .loading.btn--large.btn-dropdown-vimeo-secondary-outline {
+      background-size: 45px 45px; }
+
 /*.....................................
   BUTTON ICONS
 ......................................*/
@@ -873,19 +1011,19 @@ select {
   background-position: right 30px center;
   padding-right: 62px; }
 
-.btn-dropdown, .btn-dropdown-gray, .btn-dropdown-white, .btn-dropdown-teal {
+.btn-dropdown, .btn-dropdown-gray, .btn-dropdown-white, .btn-dropdown-teal, .btn-dropdown-vimeo-blue, .btn-dropdown-vimeo-secondary, .btn-dropdown-vimeo-secondary-outline {
   background-size: 10px 10px;
   background-position: right 15px center;
   padding-right: 35px;
   text-align: left;
   position: relative; }
-  .btn-dropdown.btn--small, .btn-dropdown.btn-search, .btn-search.btn-dropdown-gray, .btn-search.btn-dropdown-white, .btn-search.btn-dropdown-teal, .btn--small.btn-dropdown-gray, .btn--small.btn-dropdown-white, .btn--small.btn-dropdown-teal {
+  .btn-dropdown.btn--small, .btn-dropdown.btn-search, .btn-search.btn-dropdown-gray, .btn-search.btn-dropdown-white, .btn-search.btn-dropdown-teal, .btn-search.btn-dropdown-vimeo-blue, .btn-search.btn-dropdown-vimeo-secondary, .btn-search.btn-dropdown-vimeo-secondary-outline, .btn--small.btn-dropdown-gray, .btn--small.btn-dropdown-white, .btn--small.btn-dropdown-teal, .btn--small.btn-dropdown-vimeo-blue, .btn--small.btn-dropdown-vimeo-secondary, .btn--small.btn-dropdown-vimeo-secondary-outline {
     background-size: 8px 8px; }
-    .btn-dropdown.btn--small.icon--center, .btn-dropdown.btn-search, .btn-search.btn-dropdown-gray, .btn-search.btn-dropdown-white, .btn-search.btn-dropdown-teal, .btn--small.icon--center.btn-dropdown-gray, .btn--small.icon--center.btn-dropdown-white, .btn--small.icon--center.btn-dropdown-teal {
+    .btn-dropdown.btn--small.icon--center, .btn-dropdown.btn-search, .btn-search.btn-dropdown-gray, .btn-search.btn-dropdown-white, .btn-search.btn-dropdown-teal, .btn-search.btn-dropdown-vimeo-blue, .btn-search.btn-dropdown-vimeo-secondary, .btn-search.btn-dropdown-vimeo-secondary-outline, .btn--small.icon--center.btn-dropdown-gray, .btn--small.icon--center.btn-dropdown-white, .btn--small.icon--center.btn-dropdown-teal, .btn--small.icon--center.btn-dropdown-vimeo-blue, .btn--small.icon--center.btn-dropdown-vimeo-secondary, .btn--small.icon--center.btn-dropdown-vimeo-secondary-outline {
       width: 30px; }
-  .btn-dropdown.btn-dropdown--action, .btn-dropdown--action.btn-dropdown-gray, .btn-dropdown--action.btn-dropdown-white, .btn-dropdown--action.btn-dropdown-teal {
+  .btn-dropdown.btn-dropdown--action, .btn-dropdown--action.btn-dropdown-gray, .btn-dropdown--action.btn-dropdown-white, .btn-dropdown--action.btn-dropdown-teal, .btn-dropdown--action.btn-dropdown-vimeo-blue, .btn-dropdown--action.btn-dropdown-vimeo-secondary, .btn-dropdown--action.btn-dropdown-vimeo-secondary-outline {
     padding-right: 60px; }
-  .btn-dropdown.btn-dropdown--action:before, .btn-dropdown--action.btn-dropdown-gray:before, .btn-dropdown--action.btn-dropdown-white:before, .btn-dropdown--action.btn-dropdown-teal:before {
+  .btn-dropdown.btn-dropdown--action:before, .btn-dropdown--action.btn-dropdown-gray:before, .btn-dropdown--action.btn-dropdown-white:before, .btn-dropdown--action.btn-dropdown-teal:before, .btn-dropdown--action.btn-dropdown-vimeo-blue:before, .btn-dropdown--action.btn-dropdown-vimeo-secondary:before, .btn-dropdown--action.btn-dropdown-vimeo-secondary-outline:before {
     content: ' ';
     position: absolute;
     top: 0;
@@ -893,9 +1031,9 @@ select {
     width: 1px;
     height: 100%;
     background: #fff; }
-  .btn-dropdown.icon--center, .btn-dropdown.btn-search, .btn-search.btn-dropdown-gray, .btn-search.btn-dropdown-white, .btn-search.btn-dropdown-teal, .icon--center.btn-dropdown-gray, .icon--center.btn-dropdown-white, .icon--center.btn-dropdown-teal {
+  .btn-dropdown.icon--center, .btn-dropdown.btn-search, .btn-search.btn-dropdown-gray, .btn-search.btn-dropdown-white, .btn-search.btn-dropdown-teal, .btn-search.btn-dropdown-vimeo-blue, .btn-search.btn-dropdown-vimeo-secondary, .btn-search.btn-dropdown-vimeo-secondary-outline, .icon--center.btn-dropdown-gray, .icon--center.btn-dropdown-white, .icon--center.btn-dropdown-teal, .icon--center.btn-dropdown-vimeo-blue, .icon--center.btn-dropdown-vimeo-secondary, .icon--center.btn-dropdown-vimeo-secondary-outline {
     width: 40px; }
-    .btn-dropdown.icon--center.btn-dropdown--action:before, .btn-dropdown.btn-dropdown--action.btn-search:before, .btn-dropdown--action.btn-search.btn-dropdown-gray:before, .btn-dropdown--action.btn-search.btn-dropdown-white:before, .btn-dropdown--action.btn-search.btn-dropdown-teal:before, .icon--center.btn-dropdown--action.btn-dropdown-gray:before, .icon--center.btn-dropdown--action.btn-dropdown-white:before, .icon--center.btn-dropdown--action.btn-dropdown-teal:before {
+    .btn-dropdown.icon--center.btn-dropdown--action:before, .btn-dropdown.btn-dropdown--action.btn-search:before, .btn-dropdown--action.btn-search.btn-dropdown-gray:before, .btn-dropdown--action.btn-search.btn-dropdown-white:before, .btn-dropdown--action.btn-search.btn-dropdown-teal:before, .btn-dropdown--action.btn-search.btn-dropdown-vimeo-blue:before, .btn-dropdown--action.btn-search.btn-dropdown-vimeo-secondary:before, .btn-dropdown--action.btn-search.btn-dropdown-vimeo-secondary-outline:before, .icon--center.btn-dropdown--action.btn-dropdown-gray:before, .icon--center.btn-dropdown--action.btn-dropdown-white:before, .icon--center.btn-dropdown--action.btn-dropdown-teal:before, .icon--center.btn-dropdown--action.btn-dropdown-vimeo-blue:before, .icon--center.btn-dropdown--action.btn-dropdown-vimeo-secondary:before, .icon--center.btn-dropdown--action.btn-dropdown-vimeo-secondary-outline:before {
       display: none;
       content: ''; }
 
@@ -930,6 +1068,35 @@ select {
   background: none; }
 .btn-dropdown-teal.is-processing:hover {
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0D%0A%20%20viewBox%3D%220%200%2040%2040%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cpath%20opacity%3D%220.2%22%20fill%3D%22%23ffffff%22%20d%3D%22M20.201%2C5.169c-8.254%2C0-14.946%2C6.692-14.946%2C14.946c0%2C8.255%2C6.692%2C14.946%2C14.946%2C14.946%0D%0A%20%20s14.946-6.691%2C14.946-14.946C35.146%2C11.861%2C28.455%2C5.169%2C20.201%2C5.169z%20M20.201%2C31.749c-6.425%2C0-11.634-5.208-11.634-11.634%0D%0A%20%20c0-6.425%2C5.209-11.634%2C11.634-11.634c6.425%2C0%2C11.633%2C5.209%2C11.633%2C11.634C31.834%2C26.541%2C26.626%2C31.749%2C20.201%2C31.749z%22%2F%3E%0D%0A%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M26.013%2C10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0%0D%0A%20%20C22.32%2C8.481%2C24.301%2C9.057%2C26.013%2C10.047z%22%3E%0D%0A%20%20%3CanimateTransform%20attributeType%3D%22xml%22%0D%0A%20%20%20%20attributeName%3D%22transform%22%0D%0A%20%20%20%20type%3D%22rotate%22%0D%0A%20%20%20%20from%3D%220%2020%2020%22%0D%0A%20%20%20%20to%3D%22360%2020%2020%22%0D%0A%20%20%20%20dur%3D%220.5s%22%0D%0A%20%20%20%20repeatCount%3D%22indefinite%22%2F%3E%0D%0A%20%20%3C%2Fpath%3E%0D%0A%3C%2Fsvg%3E"); }
+
+/* VIMEO dropdown buttons
+......................................*/
+.btn-dropdown-vimeo-blue.btn-dropdown--action:before {
+  background: #00adef; }
+.btn-dropdown-vimeo-blue:hover.btn-dropdown--action:before {
+  background: #00adef; }
+.btn-dropdown-vimeo-blue.is-processing span {
+  background: none; }
+.btn-dropdown-vimeo-blue.is-processing:hover {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0D%0A%20%20viewBox%3D%220%200%2040%2040%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cpath%20opacity%3D%220.2%22%20fill%3D%22%23ffffff%22%20d%3D%22M20.201%2C5.169c-8.254%2C0-14.946%2C6.692-14.946%2C14.946c0%2C8.255%2C6.692%2C14.946%2C14.946%2C14.946%0D%0A%20%20s14.946-6.691%2C14.946-14.946C35.146%2C11.861%2C28.455%2C5.169%2C20.201%2C5.169z%20M20.201%2C31.749c-6.425%2C0-11.634-5.208-11.634-11.634%0D%0A%20%20c0-6.425%2C5.209-11.634%2C11.634-11.634c6.425%2C0%2C11.633%2C5.209%2C11.633%2C11.634C31.834%2C26.541%2C26.626%2C31.749%2C20.201%2C31.749z%22%2F%3E%0D%0A%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M26.013%2C10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0%0D%0A%20%20C22.32%2C8.481%2C24.301%2C9.057%2C26.013%2C10.047z%22%3E%0D%0A%20%20%3CanimateTransform%20attributeType%3D%22xml%22%0D%0A%20%20%20%20attributeName%3D%22transform%22%0D%0A%20%20%20%20type%3D%22rotate%22%0D%0A%20%20%20%20from%3D%220%2020%2020%22%0D%0A%20%20%20%20to%3D%22360%2020%2020%22%0D%0A%20%20%20%20dur%3D%220.5s%22%0D%0A%20%20%20%20repeatCount%3D%22indefinite%22%2F%3E%0D%0A%20%20%3C%2Fpath%3E%0D%0A%3C%2Fsvg%3E"); }
+
+.btn-dropdown-vimeo-secondary.btn-dropdown--action:before {
+  background: #b3bfc8; }
+.btn-dropdown-vimeo-secondary:hover.btn-dropdown--action:before {
+  background: #b3bfc8; }
+.btn-dropdown-vimeo-secondary.is-processing span {
+  background: none; }
+.btn-dropdown-vimeo-secondary.is-processing:hover {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0D%0A%20%20viewBox%3D%220%200%2040%2040%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cpath%20opacity%3D%220.2%22%20fill%3D%22%23233741%22%20d%3D%22M20.201%2C5.169c-8.254%2C0-14.946%2C6.692-14.946%2C14.946c0%2C8.255%2C6.692%2C14.946%2C14.946%2C14.946%0D%0A%20%20s14.946-6.691%2C14.946-14.946C35.146%2C11.861%2C28.455%2C5.169%2C20.201%2C5.169z%20M20.201%2C31.749c-6.425%2C0-11.634-5.208-11.634-11.634%0D%0A%20%20c0-6.425%2C5.209-11.634%2C11.634-11.634c6.425%2C0%2C11.633%2C5.209%2C11.633%2C11.634C31.834%2C26.541%2C26.626%2C31.749%2C20.201%2C31.749z%22%2F%3E%0D%0A%3Cpath%20fill%3D%22%23233741%22%20d%3D%22M26.013%2C10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0%0D%0A%20%20C22.32%2C8.481%2C24.301%2C9.057%2C26.013%2C10.047z%22%3E%0D%0A%20%20%3CanimateTransform%20attributeType%3D%22xml%22%0D%0A%20%20%20%20attributeName%3D%22transform%22%0D%0A%20%20%20%20type%3D%22rotate%22%0D%0A%20%20%20%20from%3D%220%2020%2020%22%0D%0A%20%20%20%20to%3D%22360%2020%2020%22%0D%0A%20%20%20%20dur%3D%220.5s%22%0D%0A%20%20%20%20repeatCount%3D%22indefinite%22%2F%3E%0D%0A%20%20%3C%2Fpath%3E%0D%0A%3C%2Fsvg%3E"); }
+
+.btn-dropdown-vimeo-secondary-outline.btn-dropdown--action:before {
+  background: #b3bfc8; }
+.btn-dropdown-vimeo-secondary-outline:hover.btn-dropdown--action:before {
+  background: #b3bfc8; }
+.btn-dropdown-vimeo-secondary-outline.is-processing span {
+  background: none; }
+.btn-dropdown-vimeo-secondary-outline.is-processing:hover {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0D%0A%20%20viewBox%3D%220%200%2040%2040%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cpath%20opacity%3D%220.2%22%20fill%3D%22%23233741%22%20d%3D%22M20.201%2C5.169c-8.254%2C0-14.946%2C6.692-14.946%2C14.946c0%2C8.255%2C6.692%2C14.946%2C14.946%2C14.946%0D%0A%20%20s14.946-6.691%2C14.946-14.946C35.146%2C11.861%2C28.455%2C5.169%2C20.201%2C5.169z%20M20.201%2C31.749c-6.425%2C0-11.634-5.208-11.634-11.634%0D%0A%20%20c0-6.425%2C5.209-11.634%2C11.634-11.634c6.425%2C0%2C11.633%2C5.209%2C11.633%2C11.634C31.834%2C26.541%2C26.626%2C31.749%2C20.201%2C31.749z%22%2F%3E%0D%0A%3Cpath%20fill%3D%22%23233741%22%20d%3D%22M26.013%2C10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0%0D%0A%20%20C22.32%2C8.481%2C24.301%2C9.057%2C26.013%2C10.047z%22%3E%0D%0A%20%20%3CanimateTransform%20attributeType%3D%22xml%22%0D%0A%20%20%20%20attributeName%3D%22transform%22%0D%0A%20%20%20%20type%3D%22rotate%22%0D%0A%20%20%20%20from%3D%220%2020%2020%22%0D%0A%20%20%20%20to%3D%22360%2020%2020%22%0D%0A%20%20%20%20dur%3D%220.5s%22%0D%0A%20%20%20%20repeatCount%3D%22indefinite%22%2F%3E%0D%0A%20%20%3C%2Fpath%3E%0D%0A%3C%2Fsvg%3E"); }
 
 /* button sizes
 ......................................*/
@@ -1032,7 +1199,13 @@ select {
 .btn-group .btn-gray,
 .btn-group .btn-dropdown-gray,
 .btn-group .btn-teal,
-.btn-group .btn-dropdown-teal {
+.btn-group .btn-dropdown-teal,
+.btn-group .btn-vimeo-blue,
+.btn-group .btn-dropdown-vimeo-blue,
+.btn-group .btn-vimeo-secondary,
+.btn-group .btn-dropdown-vimeo-secondary,
+.btn-group .btn-vimeo-secondary-outline,
+.btn-group .btn-dropdown-vimeo-secondary-outline {
   display: block;
   float: left;
   border-radius: 0; }
@@ -1040,13 +1213,25 @@ select {
   .btn-group .btn-gray.is-selected,
   .btn-group .is-selected.btn-dropdown-gray,
   .btn-group .btn-teal.is-selected,
-  .btn-group .is-selected.btn-dropdown-teal {
+  .btn-group .is-selected.btn-dropdown-teal,
+  .btn-group .btn-vimeo-blue.is-selected,
+  .btn-group .is-selected.btn-dropdown-vimeo-blue,
+  .btn-group .btn-vimeo-secondary.is-selected,
+  .btn-group .is-selected.btn-dropdown-vimeo-secondary,
+  .btn-group .btn-vimeo-secondary-outline.is-selected,
+  .btn-group .is-selected.btn-dropdown-vimeo-secondary-outline {
     box-shadow: inset 0px 0px 7px 0px rgba(170, 170, 170, 0.4); }
 .btn-group .btn-white:nth-child(odd), .btn-group .btn-dropdown-white:nth-child(odd),
 .btn-group .btn-gray:nth-child(odd),
 .btn-group .btn-dropdown-gray:nth-child(odd),
 .btn-group .btn-teal:nth-child(odd),
-.btn-group .btn-dropdown-teal:nth-child(odd) {
+.btn-group .btn-dropdown-teal:nth-child(odd),
+.btn-group .btn-vimeo-blue:nth-child(odd),
+.btn-group .btn-dropdown-vimeo-blue:nth-child(odd),
+.btn-group .btn-vimeo-secondary:nth-child(odd),
+.btn-group .btn-dropdown-vimeo-secondary:nth-child(odd),
+.btn-group .btn-vimeo-secondary-outline:nth-child(odd),
+.btn-group .btn-dropdown-vimeo-secondary-outline:nth-child(odd) {
   border-right: 1px solid #D7DDE1 !important;
   border-left: 1px solid #D7DDE1 !important; }
   .btn-group .btn-white:nth-child(odd):hover, .btn-group .btn-dropdown-white:nth-child(odd):hover, .btn-group .btn-white:nth-child(odd):focus, .btn-group .btn-dropdown-white:nth-child(odd):focus,
@@ -1057,15 +1242,33 @@ select {
   .btn-group .btn-teal:nth-child(odd):hover,
   .btn-group .btn-dropdown-teal:nth-child(odd):hover,
   .btn-group .btn-teal:nth-child(odd):focus,
-  .btn-group .btn-dropdown-teal:nth-child(odd):focus {
-    border-right: 1px solid #D7DDE1 !important;
-    border-left: 1px solid #D7DDE1 !important;
+  .btn-group .btn-dropdown-teal:nth-child(odd):focus,
+  .btn-group .btn-vimeo-blue:nth-child(odd):hover,
+  .btn-group .btn-dropdown-vimeo-blue:nth-child(odd):hover,
+  .btn-group .btn-vimeo-blue:nth-child(odd):focus,
+  .btn-group .btn-dropdown-vimeo-blue:nth-child(odd):focus,
+  .btn-group .btn-vimeo-secondary:nth-child(odd):hover,
+  .btn-group .btn-dropdown-vimeo-secondary:nth-child(odd):hover,
+  .btn-group .btn-vimeo-secondary:nth-child(odd):focus,
+  .btn-group .btn-dropdown-vimeo-secondary:nth-child(odd):focus,
+  .btn-group .btn-vimeo-secondary-outline:nth-child(odd):hover,
+  .btn-group .btn-dropdown-vimeo-secondary-outline:nth-child(odd):hover,
+  .btn-group .btn-vimeo-secondary-outline:nth-child(odd):focus,
+  .btn-group .btn-dropdown-vimeo-secondary-outline:nth-child(odd):focus {
+    border-right: 1px solid #b3bfc8 !important;
+    border-left: 1px solid #b3bfc8 !important;
     z-index: 10000; }
 .btn-group .btn-white:nth-child(even), .btn-group .btn-dropdown-white:nth-child(even),
 .btn-group .btn-gray:nth-child(even),
 .btn-group .btn-dropdown-gray:nth-child(even),
 .btn-group .btn-teal:nth-child(even),
-.btn-group .btn-dropdown-teal:nth-child(even) {
+.btn-group .btn-dropdown-teal:nth-child(even),
+.btn-group .btn-vimeo-blue:nth-child(even),
+.btn-group .btn-dropdown-vimeo-blue:nth-child(even),
+.btn-group .btn-vimeo-secondary:nth-child(even),
+.btn-group .btn-dropdown-vimeo-secondary:nth-child(even),
+.btn-group .btn-vimeo-secondary-outline:nth-child(even),
+.btn-group .btn-dropdown-vimeo-secondary-outline:nth-child(even) {
   border-left: 1px solid transparent !important;
   border-right: 1px solid transparent !important; }
   .btn-group .btn-white:nth-child(even):hover, .btn-group .btn-dropdown-white:nth-child(even):hover, .btn-group .btn-white:nth-child(even):focus, .btn-group .btn-dropdown-white:nth-child(even):focus,
@@ -1076,21 +1279,45 @@ select {
   .btn-group .btn-teal:nth-child(even):hover,
   .btn-group .btn-dropdown-teal:nth-child(even):hover,
   .btn-group .btn-teal:nth-child(even):focus,
-  .btn-group .btn-dropdown-teal:nth-child(even):focus {
-    border-left: 1px solid #D7DDE1 !important;
-    border-right: 1px solid #D7DDE1 !important;
+  .btn-group .btn-dropdown-teal:nth-child(even):focus,
+  .btn-group .btn-vimeo-blue:nth-child(even):hover,
+  .btn-group .btn-dropdown-vimeo-blue:nth-child(even):hover,
+  .btn-group .btn-vimeo-blue:nth-child(even):focus,
+  .btn-group .btn-dropdown-vimeo-blue:nth-child(even):focus,
+  .btn-group .btn-vimeo-secondary:nth-child(even):hover,
+  .btn-group .btn-dropdown-vimeo-secondary:nth-child(even):hover,
+  .btn-group .btn-vimeo-secondary:nth-child(even):focus,
+  .btn-group .btn-dropdown-vimeo-secondary:nth-child(even):focus,
+  .btn-group .btn-vimeo-secondary-outline:nth-child(even):hover,
+  .btn-group .btn-dropdown-vimeo-secondary-outline:nth-child(even):hover,
+  .btn-group .btn-vimeo-secondary-outline:nth-child(even):focus,
+  .btn-group .btn-dropdown-vimeo-secondary-outline:nth-child(even):focus {
+    border-left: 1px solid #b3bfc8 !important;
+    border-right: 1px solid #b3bfc8 !important;
     z-index: 10000; }
 .btn-group .btn-white:first-child, .btn-group .btn-dropdown-white:first-child,
 .btn-group .btn-gray:first-child,
 .btn-group .btn-dropdown-gray:first-child,
 .btn-group .btn-teal:first-child,
-.btn-group .btn-dropdown-teal:first-child {
-  border-left: 1px solid #D7DDE1 !important;
+.btn-group .btn-dropdown-teal:first-child,
+.btn-group .btn-vimeo-blue:first-child,
+.btn-group .btn-dropdown-vimeo-blue:first-child,
+.btn-group .btn-vimeo-secondary:first-child,
+.btn-group .btn-dropdown-vimeo-secondary:first-child,
+.btn-group .btn-vimeo-secondary-outline:first-child,
+.btn-group .btn-dropdown-vimeo-secondary-outline:first-child {
+  border-left: 1px solid #b3bfc8 !important;
   border-radius: 5px 0 0 5px; }
 .btn-group .btn-white:last-child, .btn-group .btn-dropdown-white:last-child,
 .btn-group .btn-gray:last-child,
 .btn-group .btn-dropdown-gray:last-child,
 .btn-group .btn-teal:last-child,
-.btn-group .btn-dropdown-teal:last-child {
-  border-right: 1px solid #D7DDE1 !important;
+.btn-group .btn-dropdown-teal:last-child,
+.btn-group .btn-vimeo-blue:last-child,
+.btn-group .btn-dropdown-vimeo-blue:last-child,
+.btn-group .btn-vimeo-secondary:last-child,
+.btn-group .btn-dropdown-vimeo-secondary:last-child,
+.btn-group .btn-vimeo-secondary-outline:last-child,
+.btn-group .btn-dropdown-vimeo-secondary-outline:last-child {
+  border-right: 1px solid #b3bfc8 !important;
   border-radius: 0 5px 5px 0; }
