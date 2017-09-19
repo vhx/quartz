@@ -51,7 +51,9 @@ Q.components.guide.styleguide.ui.text.container = {
               m('p.text-2.text--blue.margin-bottom-small', 'Text Blue'),
               m('p.text-2.text--vimeo-blue.margin-bottom-small', 'Text Vimeo Blue'),
               m('p.text-2.text--sunset-orange.margin-bottom-small', 'Text Sunset Orange'),
-              m('p.text-2.text--southerly-sky.margin-bottom-small', 'Text Southerly Sky')
+              m('p.text-2.text--southerly-sky.margin-bottom-small', 'Text Southerly Sky'),
+              m('p.text-2.text--regent-gray.margin-bottom-small', 'Text Regent Gray'),
+              m('p.text-2.text--astro-granite.margin-bottom-small', 'Text Astro Granite')
             ]);
           }
         }
@@ -85,7 +87,9 @@ Q.components.guide.styleguide.ui.text.container = {
               m('a[href=#].text-2.block.text--blue.margin-bottom-small', 'Link Blue'),
               m('a[href=#].text-2.block.text--vimeo-blue.margin-bottom-small', 'Link Vimeo Blue'),
               m('a[href=#].text-2.block.text--sunset-orange.margin-bottom-small', 'Link Sunset Orange'),
-              m('a[href=#].text-2.block.text--southerly-sky.margin-bottom-small', 'Link Astro Granite')
+              m('a[href=#].text-2.block.text--southerly-sky.margin-bottom-small', 'Link Southerly Sky'),
+              m('a[href=#].text-2.block.text--regent-gray.margin-bottom-small', 'Link Regent Gray'),
+              m('a[href=#].text-2.block.text--astro-granite.margin-bottom-small', 'Link Astro Granite')
             ]);
           }
         }
@@ -107,7 +111,9 @@ Q.components.guide.styleguide.ui.text.container = {
               m('a[href=#].text-2.is-disabled.block.text--blue.margin-bottom-small', 'Link Blue'),
               m('a[href=#].text-2.is-disabled.block.text--vimeo-blue.margin-bottom-small', 'Link Vimeo Blue'),
               m('a[href=#].text-2.is-disabled.block.text--sunset-orange.margin-bottom-small', 'Link Sunset Orange'),
-              m('a[href=#].text-2.is-disabled.block.text--southerly-sky.margin-bottom-small', 'Link Southerly Sky')
+              m('a[href=#].text-2.is-disabled.block.text--southerly-sky.margin-bottom-small', 'Link Southerly Sky'),
+              m('a[href=#].text-2.is-disabled.block.text--regent-gray.margin-bottom-small', 'Link Regent Gray'),
+              m('a[href=#].text-2.is-disabled.block.text--astro-granite.margin-bottom-small', 'Link Astro Granite'),
             ]);
           }
         }

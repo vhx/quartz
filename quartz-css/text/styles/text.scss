@@ -493,6 +493,7 @@ a.text--sunset-orange {
     color: transparentize($southerly-sky, .5);
   }
 }
+
 a.text--southerly-sky {
   &:link,
   &:visited {
@@ -538,11 +539,38 @@ a.text--regent-gray {
   &.is-disabled {
   &:link, &:visited,
   &:hover, &:active {
-      color: $regent-gray;
+      color: $astro-granite;
     }
   }
 }
 
+.text--astro-granite {
+  color: $astro-granite;
+  &.text--transparent {
+    color: transparentize($astro-granite, .5);
+  }
+}
+a.text--astro-granite {
+  &:link,
+  &:visited {
+    color: $astro-granite;
+    text-decoration: none;
+  }
+  &:hover,
+  &:active {
+    color: $regent-gray;
+    text-decoration: none;
+    &.is-hover-text--astro-granite {
+      color: $astro-granite;
+    }
+  }
+  &.is-disabled {
+  &:link, &:visited,
+  &:hover, &:active {
+      color: $regent-gray;
+    }
+  }
+}
 
 /* modifiers
 ......................................*/
