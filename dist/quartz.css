@@ -7280,6 +7280,22 @@ a.text--regent-gray:hover, a.text--regent-gray:active {
   a.text--regent-gray:hover.is-hover-text--regent-gray, a.text--regent-gray:active.is-hover-text--regent-gray {
     color: #8699a6; }
 a.text--regent-gray.is-disabled:link, a.text--regent-gray.is-disabled:visited, a.text--regent-gray.is-disabled:hover, a.text--regent-gray.is-disabled:active {
+  color: #1a2e3b; }
+
+.text--astro-granite {
+  color: #1a2e3b; }
+  .text--astro-granite.text--transparent {
+    color: rgba(26, 46, 59, 0.5); }
+
+a.text--astro-granite:link, a.text--astro-granite:visited {
+  color: #1a2e3b;
+  text-decoration: none; }
+a.text--astro-granite:hover, a.text--astro-granite:active {
+  color: #8699a6;
+  text-decoration: none; }
+  a.text--astro-granite:hover.is-hover-text--astro-granite, a.text--astro-granite:active.is-hover-text--astro-granite {
+    color: #1a2e3b; }
+a.text--astro-granite.is-disabled:link, a.text--astro-granite.is-disabled:visited, a.text--astro-granite.is-disabled:hover, a.text--astro-granite.is-disabled:active {
   color: #8699a6; }
 
 /* modifiers
