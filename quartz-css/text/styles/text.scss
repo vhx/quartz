@@ -515,6 +515,34 @@ a.text--southerly-sky {
   }
 }
 
+.text--regent-gray {
+  color: $regent-gray;
+  &.text--transparent {
+    color: transparentize($regent-gray, .5);
+  }
+}
+a.text--regent-gray {
+  &:link,
+  &:visited {
+    color: $regent-gray;
+    text-decoration: none;
+  }
+  &:hover,
+  &:active {
+    color: $astro-granite;
+    text-decoration: none;
+    &.is-hover-text--regent-gray {
+      color: $regent-gray;
+    }
+  }
+  &.is-disabled {
+  &:link, &:visited,
+  &:hover, &:active {
+      color: $regent-gray;
+    }
+  }
+}
+
 
 /* modifiers
 ......................................*/
