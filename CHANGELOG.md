@@ -1,3 +1,7 @@
+### 1.4.2
+**2017-9-18**
+* Added vimeo grays to text
+
 ### 1.4.1
 **2017-9-18**
 * Added vimeo button colors to load more buttons
