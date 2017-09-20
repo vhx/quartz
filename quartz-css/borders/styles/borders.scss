@@ -7,21 +7,21 @@
 /* positions
 ...................................*/
 .border {
-  border: 1px solid $gray-3;
+  border: 1px solid $porcelain;
 }
 @each $position in $positions {
   .border-#{$position} {
-    border-#{$position}: 1px solid $gray-3;
+    border-#{$position}: 1px solid $porcelain;
   }
 }
 .border-vert {
-  border-top: 1px solid $gray-3;
-  border-bottom: 1px solid $gray-3;
+  border-top: 1px solid $porcelain;
+  border-bottom: 1px solid $porcelain;
 }
 
 .border-horz {
-  border-left: 1px solid $gray-3;
-  border-right: 1px solid $gray-3;
+  border-left: 1px solid $porcelain;
+  border-right: 1px solid $porcelain;
 }
 
 /* colors
@@ -33,13 +33,13 @@
   border-color: $white-transparent !important;
 }
 .border--gray {
-  border-color: $gray-3 !important;
+  border-color: $porcelain !important;
 }
 .border--gray-light {
-  border-color: $gray-2 !important;
+  border-color: $plaster !important;
 }
 .border--navy {
-  border-color: $gray-7 !important;
+  border-color: $astrogranite !important;
 }
 
 /* modifiers
@@ -63,7 +63,7 @@
     height: 1px;
     top: 50%;
     left: 0;
-    background-color: $gray-3;
+    background-color: $porcelain;
     margin-top: -2px;
     z-index: -1;
     position: absolute;
@@ -71,7 +71,7 @@
   }
 
   &.border--gray-light:before {
-    background-color: $gray-2;
+    background-color: $plaster;
   }
   &.border--white-transparent:before {
     background-color: $white-transparent;
@@ -85,10 +85,10 @@
   box-shadow: 0 0 5px 0 transparentize($navy, .5);
 }
 .shadow--black {
-  box-shadow: 0 0 5px 0 transparentize($black, .5);
+  box-shadow: 0 0 5px 0 transparentize($astrogranite, .5);
 }
 .shadow--gray {
-  box-shadow: 0 0 5px 0 transparentize($gray-3, .5);
+  box-shadow: 0 0 5px 0 transparentize($porcelain, .5);
 }
 .radius {
   border-radius: 5px;

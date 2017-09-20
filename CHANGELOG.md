@@ -1,3 +1,7 @@
+### 1.4.9
+**2017-9-18**
+* Updated border colors
+
 ### 1.4.8
 **2017-9-18**
 * Added Checkbox Colors (again?)
