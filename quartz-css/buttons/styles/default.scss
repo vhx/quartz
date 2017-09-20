@@ -353,6 +353,19 @@ select {
     8699a6  // loader
   );
 }
+
+.btn-vimeo-black {
+  @extend .btn;
+  @include button-colors(
+    transparentize($astro-granite, .5),    // background
+    transparentize($astro-granite, 0),     // background hover
+    transparentize($white, .2),    // color
+    transparentize($white, 0),     // color hover
+    transparentize($white, .6),    // border color
+    transparentize($white, 0),     // border color hover
+    ffffff      // loader
+  );
+}
 /*.....................................
   BUTTON ICONS
 ......................................*/

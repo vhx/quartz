@@ -1,3 +1,7 @@
+### 1.4.8
+**2017-9-18**
+* Added Checkbox Colors (again?)
+
 ### 1.4.7
 **2017-9-18**
 * Added Astro Granite
