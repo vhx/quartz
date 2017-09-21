@@ -1,3 +1,7 @@
+### 1.5.0
+**2017-9-20**
+* depreciated striped table colors.
+
 ### 1.4.10
 **2017-9-20**
 * Updated table border colors
