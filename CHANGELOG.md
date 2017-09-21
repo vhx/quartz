@@ -1,3 +1,7 @@
+### 1.4.10
+**2017-9-20**
+* Updated table border colors
+
 ### 1.4.9
 **2017-9-18**
 * Updated border colors

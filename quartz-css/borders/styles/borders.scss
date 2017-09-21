@@ -39,7 +39,7 @@
   border-color: $plaster !important;
 }
 .border--navy {
-  border-color: $astrogranite !important;
+  border-color: $astro-granite !important;
 }
 
 /* modifiers
@@ -85,7 +85,7 @@
   box-shadow: 0 0 5px 0 transparentize($navy, .5);
 }
 .shadow--black {
-  box-shadow: 0 0 5px 0 transparentize($astrogranite, .5);
+  box-shadow: 0 0 5px 0 transparentize($astro-granite, .5);
 }
 .shadow--gray {
   box-shadow: 0 0 5px 0 transparentize($porcelain, .5);
