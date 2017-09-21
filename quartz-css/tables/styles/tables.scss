@@ -12,7 +12,7 @@
   margin-bottom: 0;
 
   &.border-top {
-    border-bottom: 1px solid $gray-3;
+    border-bottom: 1px solid $porcelain;
   }
 
   &.table--auto {
@@ -42,7 +42,7 @@
       content: " ";
       height: 10px;
       width: 1px;
-      background: $gray-3;
+      background: $porcelain;
       position: absolute;
       bottom: 0;
       right: 0;
@@ -68,7 +68,7 @@
     background: transparent;
 
     tr {
-      border-bottom: 1px solid $gray-3;
+      border-bottom: 1px solid $porcelain;
     }
     th {
       padding: 15px 15px 15px 20px;
@@ -95,18 +95,18 @@
     box-sizing: border-box;
     transition: background 200ms ease-out;
     background: $white;
-    border-bottom: 1px solid $gray-3;
+    border-bottom: 1px solid $porcelain;
     border-left: 3px solid tranparent;
 
     &.is-disabled {
-      background: $gray-7;
+      background: $astro-granite;
     }
     &.is-sticky {
-      background-color: $teal-1;
+      background-color: $foam;
     }
     &.is-selected {
-      background-color: $teal-1;
-      border-left: 3px solid $teal-3;
+      background-color: $foam;
+      border-left: 3px solid $vimeo-blue-darkened;
 
     }
     &.is-clickable {
@@ -114,7 +114,7 @@
       &.is-hovered,
       &:hover,
       &:active {
-        background-color: $teal-1 !important;
+        background-color: $foam !important;
       }
     }
     &:nth-child(even) {
@@ -125,21 +125,21 @@
   /* row head
   ..................................*/
   .table-row-head {
-    background-color: $gray-1;
-    border-bottom: 1px solid $gray-3 !important;
+    background-color: $paste;
+    border-bottom: 1px solid $porcelain !important;
     td {
       height: auto;
       position: relative;
     }
     &:nth-child(even) {
-      background-color: $gray-1;
+      background-color: $paste;
     }
     .table-row-arrow {
       display: block;
       position: absolute;
       bottom: 0px;
       left: 30px;
-      background: $gray-3;
+      background: $porcelain;
 
       &:after,
       &:before {
@@ -155,13 +155,13 @@
 
       &:after {
         border-color: rgba(255, 255, 255, 0);
-        border-top-color: $gray-1;
+        border-top-color: $paste;
         border-width: 10px;
         margin-left: -10px;
       }
       &:before {
         border-color: rgba(255, 255, 255, 0);
-        border-top-color: $gray-3;
+        border-top-color: $porcelain;
         border-width: 11px;
         margin-left: -11px;
       }
@@ -175,7 +175,7 @@
       border: none;
     }
     tbody tr:nth-child(odd) {
-      background: $gray-1;
+      background: $paste;
     }
   }
 
