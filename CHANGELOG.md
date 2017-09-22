@@ -1,3 +1,7 @@
+### 1.5.1
+**2017-9-20**
+* depreciated navy search icon.
+
 ### 1.5.0
 **2017-9-20**
 * depreciated striped table colors.
