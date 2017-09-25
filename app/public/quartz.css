@@ -6534,7 +6534,7 @@ a.head--vimeo-blue:hover, a.head--vimeo-blue:active {
   .table.table--striped tbody tr {
     border: none; }
   .table.table--striped tbody tr:nth-child(odd) {
-    background: #f6f7f8; }
+    background: #fff; }
   .table.table--small th,
   .table.table--small td {
     padding: 10px;
