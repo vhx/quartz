@@ -1681,7 +1681,7 @@ Q.components.guide.styleguide.ui.radio.container = {
                 ]
               }),
               m.component(vhxm.components.shared.radio.ui.container, {
-                color: 'teal',
+                color: 'vimeo-blue',
                 stacked: true,
                 name: 'stacked-teal',
                 items: [
@@ -1706,7 +1706,7 @@ Q.components.guide.styleguide.ui.radio.container = {
           view: function() {
             return m('div', [
               m.component(vhxm.components.shared.radio.ui.container, {
-                color: 'teal',
+                color: 'vimeo-blue',
                 buttons: true,
                 name: 'stacked-button',
                 items: [

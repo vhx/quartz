@@ -4,7 +4,6 @@
   Admin Radio
 ......................................*/
 .form .radio-gray,
-.form .radio-teal,
 .form .radio-vimeo-blue {
   position: relative;
   display: inline-block;
@@ -139,13 +138,8 @@
 
   /* color styles
   ...................................*/
-  &.radio-teal {
-    .circle-top span { background: $teal-2 !important; }
-    .circle-bottom span { background: $teal-3 !important; }
-  }
-
   &.radio-vimeo-blue {
     .circle-top span { background: $vimeo-blue !important; }
-    .circle-bottom span { background: $vimed-blue-darkened !important; }
+    .circle-bottom span { background: $vimeo-blue-darkened !important; }
   }
 }

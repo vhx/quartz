@@ -1,0 +1,90 @@
+/*
+Error: Undefined variable: "$vimed-blue-darkened".
+        on line 940 of quartz-js/components/temp/styles/components.scss
+
+935:     .circle-bottom span { background: $teal-3 !important; }
+936:   }
+937: 
+938:   &.radio-vimeo-blue {
+939:     .circle-top span { background: $vimeo-blue !important; }
+940:     .circle-bottom span { background: $vimed-blue-darkened !important; }
+941:   }
+942: }
+943: .c-select--search {
+944:   background-position: right 8px center;
+945: }
+
+Backtrace:
+quartz-js/components/temp/styles/components.scss:940
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/script/tree/node.rb:50:in `perform'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/script/tree/list_literal.rb:63:in `block in _perform'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/script/tree/list_literal.rb:63:in `map'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/script/tree/list_literal.rb:63:in `_perform'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/script/tree/node.rb:50:in `perform'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:394:in `visit_prop'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/stack.rb:79:in `block in with_base'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/stack.rb:115:in `with_frame'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/stack.rb:79:in `with_base'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:430:in `block (2 levels) in visit_rule'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:430:in `map'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:430:in `block in visit_rule'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/stack.rb:79:in `block in with_base'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/stack.rb:115:in `with_frame'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/stack.rb:79:in `with_base'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:430:in `block (2 levels) in visit_rule'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:430:in `map'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:430:in `block in visit_rule'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/stack.rb:79:in `block in with_base'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/stack.rb:115:in `with_frame'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/stack.rb:79:in `with_base'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:430:in `block (2 levels) in visit_rule'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:430:in `map'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:430:in `block in visit_rule'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/stack.rb:79:in `block in with_base'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/stack.rb:115:in `with_frame'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/stack.rb:79:in `with_base'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/tree/root_node.rb:20:in `render'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/engine.rb:268:in `render'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/exec/sass_scss.rb:415:in `run'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/exec/base.rb:52:in `parse'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/lib/sass/exec/base.rb:19:in `parse!'
+/Users/nordgrenh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.14/bin/sass:13:in `<top (required)>'
+/Users/nordgrenh/.rbenv/versions/2.3.1/bin/sass:23:in `load'
+/Users/nordgrenh/.rbenv/versions/2.3.1/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$vimed-blue-darkened\".\A         on line 940 of quartz-js/components/temp/styles/components.scss\A \A 935:     .circle-bottom span { background: $teal-3 !important; }\A 936:   }\A 937: \A 938:   &.radio-vimeo-blue {\A 939:     .circle-top span { background: $vimeo-blue !important; }\A 940:     .circle-bottom span { background: $vimed-blue-darkened !important; }\A 941:   }\A 942: }\A 943: .c-select--search {\A 944:   background-position: right 8px center;\A 945: }"; }

@@ -1,3 +1,7 @@
+### 1.5.2
+**2017-9-27**
+* depreciated teal radio stack buttons.
+
 ### 1.5.1
 **2017-9-20**
 * depreciated navy search icon.
