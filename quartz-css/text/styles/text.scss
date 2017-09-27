@@ -24,12 +24,12 @@ a {
 
   &:link,
   &:visited {
-    color: $teal-2;
+    color: $regent-gray;
     text-decoration: none;
   }
   &:hover,
   &:active {
-    color: $teal-3;
+    color: $vimeo-blue;
     text-decoration: none;
   }
   &.is-disabled {
@@ -37,7 +37,7 @@ a {
     &:hover, &:active {
       cursor: default;
       opacity: .5;
-      color: $teal-2;
+      color: $regent-gray;
     }
   }
 }

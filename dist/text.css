@@ -50,15 +50,15 @@ body, ul, ol, dl, li, p, div, section, nav, table, h1, h2, h3, h4, h5, h6 {
 a {
   transition: color 200ms ease; }
   a:link, a:visited {
-    color: #22B9B0;
+    color: #8699a6;
     text-decoration: none; }
   a:hover, a:active {
-    color: #149A97;
+    color: #00adef;
     text-decoration: none; }
   a.is-disabled:link, a.is-disabled:visited, a.is-disabled:hover, a.is-disabled:active {
     cursor: default;
     opacity: .5;
-    color: #22B9B0; }
+    color: #8699a6; }
 
 /* sizes
 ......................................*/
