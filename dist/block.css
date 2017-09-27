@@ -75,7 +75,7 @@
 ......................................*/
 /* button block base
 ......................................*/
-.btn-block, .btn-block-teal, .btn-block-gray, .btn-block-navy {
+.btn-block, .btn-block-teal, .btn-block-gray, .btn-block-navy, .btn-block-black {
   transition: all .2s ease;
   display: flex;
   align-items: center;
@@ -90,17 +90,17 @@
   text-align: center;
   text-transform: uppercase;
   font-family: "brandon-grotesque-n1", "brandon-grotesque", "Brandon Grotesque", sans-serif; }
-  .btn-block.btn--border, .btn--border.btn-block-teal, .btn--border.btn-block-gray, .btn--border.btn-block-navy {
+  .btn-block.btn--border, .btn--border.btn-block-teal, .btn--border.btn-block-gray, .btn--border.btn-block-navy, .btn--border.btn-block-black {
     border-left: 1px solid #D7DDE1;
     border-right: 1px solid #D7DDE1; }
-    .btn-block.btn--border + .btn-block, .btn--border.btn-block-teal + .btn-block, .btn--border.btn-block-gray + .btn-block, .btn--border.btn-block-navy + .btn-block, .btn-block.btn--border + .btn-block-teal, .btn--border.btn-block-teal + .btn-block-teal, .btn--border.btn-block-gray + .btn-block-teal, .btn--border.btn-block-navy + .btn-block-teal, .btn-block.btn--border + .btn-block-gray, .btn--border.btn-block-teal + .btn-block-gray, .btn--border.btn-block-gray + .btn-block-gray, .btn--border.btn-block-navy + .btn-block-gray, .btn-block.btn--border + .btn-block-navy, .btn--border.btn-block-teal + .btn-block-navy, .btn--border.btn-block-gray + .btn-block-navy, .btn--border.btn-block-navy + .btn-block-navy {
+    .btn-block.btn--border + .btn-block, .btn--border.btn-block-teal + .btn-block, .btn--border.btn-block-gray + .btn-block, .btn--border.btn-block-navy + .btn-block, .btn--border.btn-block-black + .btn-block, .btn-block.btn--border + .btn-block-teal, .btn--border.btn-block-teal + .btn-block-teal, .btn--border.btn-block-gray + .btn-block-teal, .btn--border.btn-block-navy + .btn-block-teal, .btn--border.btn-block-black + .btn-block-teal, .btn-block.btn--border + .btn-block-gray, .btn--border.btn-block-teal + .btn-block-gray, .btn--border.btn-block-gray + .btn-block-gray, .btn--border.btn-block-navy + .btn-block-gray, .btn--border.btn-block-black + .btn-block-gray, .btn-block.btn--border + .btn-block-navy, .btn--border.btn-block-teal + .btn-block-navy, .btn--border.btn-block-gray + .btn-block-navy, .btn--border.btn-block-navy + .btn-block-navy, .btn--border.btn-block-black + .btn-block-navy, .btn-block.btn--border + .btn-block-black, .btn--border.btn-block-teal + .btn-block-black, .btn--border.btn-block-gray + .btn-block-black, .btn--border.btn-block-navy + .btn-block-black, .btn--border.btn-block-black + .btn-block-black {
       border-left: 1px solid transparent; }
-  .btn-block.is-active, .is-active.btn-block-teal, .is-active.btn-block-gray, .is-active.btn-block-navy, .btn-block:hover, .btn-block-teal:hover, .btn-block-gray:hover, .btn-block-navy:hover, .btn-block.is-hover, .is-hover.btn-block-teal, .is-hover.btn-block-gray, .is-hover.btn-block-navy {
+  .btn-block.is-active, .is-active.btn-block-teal, .is-active.btn-block-gray, .is-active.btn-block-navy, .is-active.btn-block-black, .btn-block:hover, .btn-block-teal:hover, .btn-block-gray:hover, .btn-block-navy:hover, .btn-block-black:hover, .btn-block.is-hover, .is-hover.btn-block-teal, .is-hover.btn-block-gray, .is-hover.btn-block-navy, .is-hover.btn-block-black {
     cursor: pointer;
     box-shadow: inset 0px -4px 0px #869AA5; }
-  .btn-block span, .btn-block-teal span, .btn-block-gray span, .btn-block-navy span {
+  .btn-block span, .btn-block-teal span, .btn-block-gray span, .btn-block-navy span, .btn-block-black span {
     display: block; }
-    .btn-block span:first-child, .btn-block-teal span:first-child, .btn-block-gray span:first-child, .btn-block-navy span:first-child {
+    .btn-block span:first-child, .btn-block-teal span:first-child, .btn-block-gray span:first-child, .btn-block-navy span:first-child, .btn-block-black span:first-child {
       margin-top: -7px; }
 
 /* button block teal
@@ -135,3 +135,14 @@
   .btn-block-navy:active, .btn-block-navy.is-active {
     color: #5E7887;
     box-shadow: inset 0px -4px 0px #5E7887; }
+
+/* button block navy
+......................................*/
+.btn-block-black {
+  color: #1a2e3b; }
+  .btn-block-black:link, .btn-block-black:visited {
+    color: #1a2e3b; }
+  .btn-block-black:hover, .btn-block-black.is-hover
+  .btn-block-black:active, .btn-block-black.is-active {
+    color: #1a2e3b;
+    box-shadow: inset 0px -4px 0px #1a2e3b; }
