@@ -84,9 +84,9 @@
 .btn-block-black {
   @extend .btn-block;
   @include button-block-colors(
-    $AstroGranite, // text color
-    $AstroGranite, // text color hover
-    $AstroGranite  // bottom border-color
+    $astro-granite, // text color
+    $astro-granite, // text color hover
+    $astro-granite  // bottom border-color
   );
 }
 
