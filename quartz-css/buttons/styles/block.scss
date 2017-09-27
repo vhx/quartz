@@ -79,3 +79,15 @@
   );
 }
 
+/* button block navy
+......................................*/
+.btn-block-black {
+  @extend .btn-block;
+  @include button-block-colors(
+    $astro-granite, // text color
+    $astro-granite, // text color hover
+    $astro-granite  // bottom border-color
+  );
+}
+
+
