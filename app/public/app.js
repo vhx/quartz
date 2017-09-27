@@ -1641,7 +1641,7 @@ Q.components.guide.styleguide.ui.radio.container = {
                 ]
               }),
               m.component(vhxm.components.shared.radio.ui.container, {
-                color: 'vimeo-blue',
+                color: 'teal',
                 name: 'horz-teal',
                 items: [
                   {
@@ -1681,7 +1681,7 @@ Q.components.guide.styleguide.ui.radio.container = {
                 ]
               }),
               m.component(vhxm.components.shared.radio.ui.container, {
-                color: 'vimeo-blue',
+                color: 'teal',
                 stacked: true,
                 name: 'stacked-teal',
                 items: [
@@ -1706,7 +1706,7 @@ Q.components.guide.styleguide.ui.radio.container = {
           view: function() {
             return m('div', [
               m.component(vhxm.components.shared.radio.ui.container, {
-                color: 'vimeo-blue',
+                color: 'teal',
                 buttons: true,
                 name: 'stacked-button',
                 items: [
@@ -2082,7 +2082,7 @@ Q.components.guide.styleguide.ui.text.container = {
         component: {
           view: function() {
             return m('div', [
-              m('a[href=#].text-2.is-disabled.block.margin-bottom-small', 'Link Teal (default)'),
+              m('a[href=#].text-2.is-disabled.block.margin-bottom-small', 'Link Regent Gray (default)'),
               m('a[href=#].text-2.is-disabled.block.text--gray.margin-bottom-small', 'Link Gray'),
               m('a[href=#].text-2.is-disabled.text--gray-light.inline.bg-navy.margin-bottom-small', 'Link Gray Light'),
               m('a[href=#].text-2.is-disabled.block.text--navy.margin-bottom-small', 'Link Navy'),
