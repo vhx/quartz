@@ -135,7 +135,7 @@ vhxm.components.shared.sidebar.ui.container = {
   view: function view(ctrl) {
     return m('.c-sidebar.bg-white.shadow--gray' + (vhxm.components.shared.sidebar.state.isLoaded() ? '' : '.loader-slate.loader--cover-hide.loader--large.is-loading'), {
       config: vhxm.components.shared.sidebar.state.isOpen() ? ctrl.animatorIn : ctrl.animatorOut
-    }, vhxm.components.shared.sidebar.state.isLoaded() ? [m('a.c-sidebar--close.icon-circle.icon-x-navy.icon--xsmall', {
+    }, vhxm.components.shared.sidebar.state.isLoaded() ? [m('a.c-sidebar--close.icon-circle.icon-x-black.icon--xsmall', {
       onclick: function onclick() {
         setTimeout(function () {
           vhxm.components.shared.sidebar.toggle('close');
