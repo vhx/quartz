@@ -34,7 +34,7 @@
   Admin Radio
 ......................................*/
 .form .radio-gray,
-.form .radio-teal {
+.form .radio-vimeo-blue {
   position: relative;
   display: inline-block;
   width: 100%;
@@ -55,29 +55,29 @@
   /* color styles
   ...................................*/ }
   .form .radio-gray input[type="radio"],
-  .form .radio-teal input[type="radio"] {
+  .form .radio-vimeo-blue input[type="radio"] {
     display: none; }
   .form .radio-gray li,
-  .form .radio-teal li {
+  .form .radio-vimeo-blue li {
     display: inline-block;
     margin-right: 10px; }
     .form .radio-gray li:after,
-    .form .radio-teal li:after {
+    .form .radio-vimeo-blue li:after {
       clear: both; }
     .form .radio-gray li:before, .form .radio-gray li:after,
-    .form .radio-teal li:before,
-    .form .radio-teal li:after {
+    .form .radio-vimeo-blue li:before,
+    .form .radio-vimeo-blue li:after {
       content: " ";
       display: table; }
   .form .radio-gray label,
-  .form .radio-teal label {
+  .form .radio-vimeo-blue label {
     display: block;
     height: 20px;
     line-height: 20px;
     margin: 0px;
     box-sizing: border-box; }
     .form .radio-gray label .radio--icon,
-    .form .radio-teal label .radio--icon {
+    .form .radio-vimeo-blue label .radio--icon {
       position: relative;
       display: inline-block;
       width: 20px;
@@ -91,7 +91,7 @@
       border-radius: 20px;
       transition: box-shadow .2s ease, color .2s ease; }
       .form .radio-gray label .radio--icon .circle-top,
-      .form .radio-teal label .radio--icon .circle-top {
+      .form .radio-vimeo-blue label .radio--icon .circle-top {
         opacity: 0;
         transition: opacity .2s ease;
         display: block;
@@ -101,14 +101,14 @@
         top: 4px;
         left: 4px; }
         .form .radio-gray label .radio--icon .circle-top span,
-        .form .radio-teal label .radio--icon .circle-top span {
+        .form .radio-vimeo-blue label .radio--icon .circle-top span {
           display: block;
           width: 10px;
           height: 10px;
           background: #869AA5;
           border-radius: 10px; }
       .form .radio-gray label .radio--icon .circle-bottom,
-      .form .radio-teal label .radio--icon .circle-bottom {
+      .form .radio-vimeo-blue label .radio--icon .circle-bottom {
         opacity: 0;
         transition: opacity .2s ease;
         display: block;
@@ -118,7 +118,7 @@
         bottom: 4px;
         left: 4px; }
         .form .radio-gray label .radio--icon .circle-bottom span,
-        .form .radio-teal label .radio--icon .circle-bottom span {
+        .form .radio-vimeo-blue label .radio--icon .circle-bottom span {
           position: relative;
           top: -5px;
           display: block;
@@ -127,44 +127,44 @@
           background: #5E7887;
           border-radius: 10px; }
     .form .radio-gray label .radio--label,
-    .form .radio-teal label .radio--label {
+    .form .radio-vimeo-blue label .radio--label {
       float: left;
       height: 20px; }
   .form .radio-gray input[type="radio"]:checked + label .radio--icon .circle-top, .form .radio-gray input[type="radio"]:checked + label .radio--icon .circle-bottom,
-  .form .radio-teal input[type="radio"]:checked + label .radio--icon .circle-top,
-  .form .radio-teal input[type="radio"]:checked + label .radio--icon .circle-bottom {
+  .form .radio-vimeo-blue input[type="radio"]:checked + label .radio--icon .circle-top,
+  .form .radio-vimeo-blue input[type="radio"]:checked + label .radio--icon .circle-bottom {
     opacity: 1;
     transition: opacity .2s ease; }
   .form .radio-gray.radio--stacked, .form .radio-gray.radio--buttons,
-  .form .radio-teal.radio--stacked,
-  .form .radio-teal.radio--buttons {
+  .form .radio-vimeo-blue.radio--stacked,
+  .form .radio-vimeo-blue.radio--buttons {
     display: block;
     height: auto; }
     .form .radio-gray.radio--stacked li, .form .radio-gray.radio--buttons li,
-    .form .radio-teal.radio--stacked li,
-    .form .radio-teal.radio--buttons li {
+    .form .radio-vimeo-blue.radio--stacked li,
+    .form .radio-vimeo-blue.radio--buttons li {
       display: block;
       margin-right: 0px;
       margin-bottom: 10px; }
   .form .radio-gray.radio--buttons li,
-  .form .radio-teal.radio--buttons li {
+  .form .radio-vimeo-blue.radio--buttons li {
     height: auto !important; }
     .form .radio-gray.radio--buttons li label,
-    .form .radio-teal.radio--buttons li label {
+    .form .radio-vimeo-blue.radio--buttons li label {
       padding: 10px;
       min-height: 58px; }
     .form .radio-gray.radio--buttons li .radio--label,
     .form .radio-gray.radio--buttons li label,
-    .form .radio-teal.radio--buttons li .radio--label,
-    .form .radio-teal.radio--buttons li label {
+    .form .radio-vimeo-blue.radio--buttons li .radio--label,
+    .form .radio-vimeo-blue.radio--buttons li label {
       height: auto !important; }
     .form .radio-gray.radio--buttons li .radio--icon,
-    .form .radio-teal.radio--buttons li .radio--icon {
+    .form .radio-vimeo-blue.radio--buttons li .radio--icon {
       margin-top: 8px;
       background: white; }
-  .form .radio-gray.radio-teal .circle-top span,
-  .form .radio-teal.radio-teal .circle-top span {
-    background: #22B9B0 !important; }
-  .form .radio-gray.radio-teal .circle-bottom span,
-  .form .radio-teal.radio-teal .circle-bottom span {
-    background: #149A97 !important; }
+  .form .radio-gray.radio-vimeo-blue .circle-top span,
+  .form .radio-vimeo-blue.radio-vimeo-blue .circle-top span {
+    background: #00adef !important; }
+  .form .radio-gray.radio-vimeo-blue .circle-bottom span,
+  .form .radio-vimeo-blue.radio-vimeo-blue .circle-bottom span {
+    background: #0088cc !important; }
