@@ -2,7 +2,7 @@ vhxm.components.shared.radio.ui.container = {
   controller: vhxm.components.shared.radio.controller,
   view: function(ctrl, opts) {
     return m('form.form', [
-      m('ul.radio-' + (opts.color ? opts.color : 'teal') + (opts.stacked ? '.radio--stacked' : opts.buttons ? '.radio--buttons' : ''), [
+      m('ul.radio-' + (opts.color ? opts.color : 'vimeo-blue') + (opts.stacked ? '.radio--stacked' : opts.buttons ? '.radio--buttons' : ''), [
         opts.items.map(function(item, index) {
           let is_checked = ctrl.state.isChecked() === item.value;
           return m('li', [
@@ -19,7 +19,7 @@ vhxm.components.shared.radio.ui.container = {
               value: item.value,
               checked: is_checked
             }),
-            m('label' + (opts.buttons ? '.btn-' + (is_checked ? 'teal' : 'gray') + '.btn--fill.btn-radio.margin-bottom-medium' : ''), {
+            m('label' + (opts.buttons ? '.btn-' + (is_checked ? 'vimeo-blue' : 'gray') + '.btn--fill.btn-radio.margin-bottom-medium' : ''), {
               for: opts.name + '-' + index,
             }, [
               m.component(vhxm.components.shared.radio.ui.icon),
@@ -28,7 +28,7 @@ vhxm.components.shared.radio.ui.container = {
                   marginTop: (!opts.buttons || (opts.buttons && item.label.title)) ? '0px' : '8px'
                 }
               }, opts.buttons ? [
-                m('strong.text-2' + (is_checked ? '.text--white' : '.text--navy'), item.label.title ? item.label.title : item.label),
+                m('strong.text-2' + (is_checked ? '.text--white' : '.text--black'), item.label.title ? item.label.title : item.label),
                 item.label.descriptor ? m('p.text-4' + (is_checked ? '.text--white' : ''), item.label.descriptor) : ''
               ] : item.label )
             ]),

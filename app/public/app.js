@@ -1641,7 +1641,7 @@ Q.components.guide.styleguide.ui.radio.container = {
                 ]
               }),
               m.component(vhxm.components.shared.radio.ui.container, {
-                color: 'teal',
+                color: 'vimeo-blue',
                 name: 'horz-teal',
                 items: [
                   {
