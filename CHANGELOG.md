@@ -1,3 +1,7 @@
+### 1.5.4
+**2017-9-27**
+* default text now set to Regent Gray instead of Teal.
+
 ### 1.5.3
 **2017-9-27**
 * depreciated navy close icon, sidebars.
