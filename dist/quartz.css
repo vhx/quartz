@@ -3306,7 +3306,7 @@ hr.column {
     color: #5E7887;
     font-size: 14px;
     background-color: #fff;
-    border: 1px solid #d1d9dc;
+    border: 1px solid #e3e8e9;
     margin-bottom: 0;
     box-shadow: none;
     box-sizing: border-box;
@@ -3322,7 +3322,7 @@ hr.column {
     .form input[type="password"]::-webkit-input-placeholder,
     .form input[type="number"]::-webkit-input-placeholder,
     .form textarea::-webkit-input-placeholder {
-      color: rgba(55, 86, 103, 0.5) !important;
+      color: rgba(26, 46, 59, 0.5) !important;
       font-weight: normal; }
     .form input[type="text"]:-moz-placeholder,
     .form input[type="email"]:-moz-placeholder,
@@ -3330,7 +3330,7 @@ hr.column {
     .form input[type="password"]:-moz-placeholder,
     .form input[type="number"]:-moz-placeholder,
     .form textarea:-moz-placeholder {
-      color: rgba(55, 86, 103, 0.5) !important;
+      color: rgba(26, 46, 59, 0.5) !important;
       font-weight: normal;
       opacity: 1; }
     .form input[type="text"]::-moz-placeholder,
@@ -3339,7 +3339,7 @@ hr.column {
     .form input[type="password"]::-moz-placeholder,
     .form input[type="number"]::-moz-placeholder,
     .form textarea::-moz-placeholder {
-      color: rgba(55, 86, 103, 0.5) !important;
+      color: rgba(26, 46, 59, 0.5) !important;
       font-weight: normal;
       opacity: 1; }
     .form input[type="text"]:-ms-input-placeholder,
@@ -3348,7 +3348,7 @@ hr.column {
     .form input[type="password"]:-ms-input-placeholder,
     .form input[type="number"]:-ms-input-placeholder,
     .form textarea:-ms-input-placeholder {
-      color: rgba(55, 86, 103, 0.5) !important;
+      color: rgba(26, 46, 59, 0.5) !important;
       font-weight: normal; }
     .form input[type="text"][disabled],
     .form input[type="email"][disabled],
@@ -3372,30 +3372,30 @@ hr.column {
     .form input[type="password"].is-error,
     .form input[type="number"].is-error,
     .form textarea.is-error {
-      color: #D3104A;
-      border: 1px solid #D3104A; }
+      color: #ff4d4d;
+      border: 1px solid #ff4d4d; }
       .form input[type="text"].is-error.is-selected,
       .form input[type="email"].is-error.is-selected,
       .form input[type="tel"].is-error.is-selected,
       .form input[type="password"].is-error.is-selected,
       .form input[type="number"].is-error.is-selected,
       .form textarea.is-error.is-selected {
-        border: 2px solid #cf124c;
-        background-color: #641728; }
+        border: 2px solid #ff4d4d;
+        background-color: #ff4d4d; }
       .form input[type="text"].is-error::-webkit-input-placeholder,
       .form input[type="email"].is-error::-webkit-input-placeholder,
       .form input[type="tel"].is-error::-webkit-input-placeholder,
       .form input[type="password"].is-error::-webkit-input-placeholder,
       .form input[type="number"].is-error::-webkit-input-placeholder,
       .form textarea.is-error::-webkit-input-placeholder {
-        color: #D3104A !important; }
+        color: #ff4d4d !important; }
       .form input[type="text"].is-error:-moz-placeholder,
       .form input[type="email"].is-error:-moz-placeholder,
       .form input[type="tel"].is-error:-moz-placeholder,
       .form input[type="password"].is-error:-moz-placeholder,
       .form input[type="number"].is-error:-moz-placeholder,
       .form textarea.is-error:-moz-placeholder {
-        color: #D3104A !important;
+        color: #ff4d4d !important;
         opacity: 1; }
       .form input[type="text"].is-error::-moz-placeholder,
       .form input[type="email"].is-error::-moz-placeholder,
@@ -3403,7 +3403,7 @@ hr.column {
       .form input[type="password"].is-error::-moz-placeholder,
       .form input[type="number"].is-error::-moz-placeholder,
       .form textarea.is-error::-moz-placeholder {
-        color: #D3104A !important;
+        color: #ff4d4d !important;
         opacity: 1; }
       .form input[type="text"].is-error:-ms-input-placeholder,
       .form input[type="email"].is-error:-ms-input-placeholder,
@@ -3411,7 +3411,7 @@ hr.column {
       .form input[type="password"].is-error:-ms-input-placeholder,
       .form input[type="number"].is-error:-ms-input-placeholder,
       .form textarea.is-error:-ms-input-placeholder {
-        color: #D3104A !important; }
+        color: #ff4d4d !important; }
     .form input[type="text"]:focus,
     .form input[type="email"]:focus,
     .form input[type="tel"]:focus,
@@ -3419,8 +3419,8 @@ hr.column {
     .form input[type="number"]:focus,
     .form textarea:focus {
       outline: none;
-      color: #5E7887;
-      border: 1px solid #9aaab4;
+      color: #8699a6;
+      border: 1px solid #b3bfc8;
       box-shadow: none;
       /* on focus + has error
       ...................................*/ }
@@ -3460,16 +3460,16 @@ hr.column {
       .form input[type="password"]:focus.is-error,
       .form input[type="number"]:focus.is-error,
       .form textarea:focus.is-error {
-        color: #D3104A;
-        border: 1px solid #D3104A; }
+        color: #ff4d4d;
+        border: 1px solid #ff4d4d; }
         .form input[type="text"]:focus.is-error.is-selected,
         .form input[type="email"]:focus.is-error.is-selected,
         .form input[type="tel"]:focus.is-error.is-selected,
         .form input[type="password"]:focus.is-error.is-selected,
         .form input[type="number"]:focus.is-error.is-selected,
         .form textarea:focus.is-error.is-selected {
-          border: 2px solid #cf124c;
-          background-color: #641728; }
+          border: 2px solid #ff4d4d;
+          background-color: #ff4d4d; }
         .form input[type="text"]:focus.is-error::-webkit-input-placeholder,
         .form input[type="email"]:focus.is-error::-webkit-input-placeholder,
         .form input[type="tel"]:focus.is-error::-webkit-input-placeholder,
@@ -3477,7 +3477,7 @@ hr.column {
         .form input[type="number"]:focus.is-error::-webkit-input-placeholder,
         .form textarea:focus.is-error::-webkit-input-placeholder {
           transition: all .2s ease;
-          color: #D3104A !important; }
+          color: #ff4d4d !important; }
         .form input[type="text"]:focus.is-error:-moz-placeholder,
         .form input[type="email"]:focus.is-error:-moz-placeholder,
         .form input[type="tel"]:focus.is-error:-moz-placeholder,
@@ -3485,7 +3485,7 @@ hr.column {
         .form input[type="number"]:focus.is-error:-moz-placeholder,
         .form textarea:focus.is-error:-moz-placeholder {
           transition: all .2s ease;
-          color: #D3104A !important;
+          color: #ff4d4d !important;
           opacity: 1; }
         .form input[type="text"]:focus.is-error::-moz-placeholder,
         .form input[type="email"]:focus.is-error::-moz-placeholder,
@@ -3494,7 +3494,7 @@ hr.column {
         .form input[type="number"]:focus.is-error::-moz-placeholder,
         .form textarea:focus.is-error::-moz-placeholder {
           transition: all .2s ease;
-          color: #D3104A !important;
+          color: #ff4d4d !important;
           opacity: 1; }
         .form input[type="text"]:focus.is-error:-ms-input-placeholder,
         .form input[type="email"]:focus.is-error:-ms-input-placeholder,
@@ -3503,7 +3503,7 @@ hr.column {
         .form input[type="number"]:focus.is-error:-ms-input-placeholder,
         .form textarea:focus.is-error:-ms-input-placeholder {
           transition: all .2s ease;
-          color: #D3104A !important; }
+          color: #ff4d4d !important; }
     .form input[type="text"].small,
     .form input[type="email"].small,
     .form input[type="tel"].small,
@@ -3599,7 +3599,7 @@ hr.column {
     position: absolute;
     top: 11px;
     left: 15px;
-    color: #F0F2F4; }
+    color: #eef1f2; }
 
 /* .....................................
   Fonts

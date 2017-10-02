@@ -406,7 +406,7 @@
 ......................................*/
 /* button block base
 ......................................*/
-.btn-block, .btn-block-teal, .btn-block-gray, .btn-block-navy {
+.btn-block, .btn-block-teal, .btn-block-gray, .btn-block-navy, .btn-block-black {
   transition: all .2s ease;
   display: flex;
   align-items: center;
@@ -421,17 +421,17 @@
   text-align: center;
   text-transform: uppercase;
   font-family: "brandon-grotesque-n1", "brandon-grotesque", "Brandon Grotesque", sans-serif; }
-  .btn-block.btn--border, .btn--border.btn-block-teal, .btn--border.btn-block-gray, .btn--border.btn-block-navy {
+  .btn-block.btn--border, .btn--border.btn-block-teal, .btn--border.btn-block-gray, .btn--border.btn-block-navy, .btn--border.btn-block-black {
     border-left: 1px solid #D7DDE1;
     border-right: 1px solid #D7DDE1; }
-    .btn-block.btn--border + .btn-block, .btn--border.btn-block-teal + .btn-block, .btn--border.btn-block-gray + .btn-block, .btn--border.btn-block-navy + .btn-block, .btn-block.btn--border + .btn-block-teal, .btn--border.btn-block-teal + .btn-block-teal, .btn--border.btn-block-gray + .btn-block-teal, .btn--border.btn-block-navy + .btn-block-teal, .btn-block.btn--border + .btn-block-gray, .btn--border.btn-block-teal + .btn-block-gray, .btn--border.btn-block-gray + .btn-block-gray, .btn--border.btn-block-navy + .btn-block-gray, .btn-block.btn--border + .btn-block-navy, .btn--border.btn-block-teal + .btn-block-navy, .btn--border.btn-block-gray + .btn-block-navy, .btn--border.btn-block-navy + .btn-block-navy {
+    .btn-block.btn--border + .btn-block, .btn--border.btn-block-teal + .btn-block, .btn--border.btn-block-gray + .btn-block, .btn--border.btn-block-navy + .btn-block, .btn--border.btn-block-black + .btn-block, .btn-block.btn--border + .btn-block-teal, .btn--border.btn-block-teal + .btn-block-teal, .btn--border.btn-block-gray + .btn-block-teal, .btn--border.btn-block-navy + .btn-block-teal, .btn--border.btn-block-black + .btn-block-teal, .btn-block.btn--border + .btn-block-gray, .btn--border.btn-block-teal + .btn-block-gray, .btn--border.btn-block-gray + .btn-block-gray, .btn--border.btn-block-navy + .btn-block-gray, .btn--border.btn-block-black + .btn-block-gray, .btn-block.btn--border + .btn-block-navy, .btn--border.btn-block-teal + .btn-block-navy, .btn--border.btn-block-gray + .btn-block-navy, .btn--border.btn-block-navy + .btn-block-navy, .btn--border.btn-block-black + .btn-block-navy, .btn-block.btn--border + .btn-block-black, .btn--border.btn-block-teal + .btn-block-black, .btn--border.btn-block-gray + .btn-block-black, .btn--border.btn-block-navy + .btn-block-black, .btn--border.btn-block-black + .btn-block-black {
       border-left: 1px solid transparent; }
-  .btn-block.is-active, .is-active.btn-block-teal, .is-active.btn-block-gray, .is-active.btn-block-navy, .btn-block:hover, .btn-block-teal:hover, .btn-block-gray:hover, .btn-block-navy:hover, .btn-block.is-hover, .is-hover.btn-block-teal, .is-hover.btn-block-gray, .is-hover.btn-block-navy {
+  .btn-block.is-active, .is-active.btn-block-teal, .is-active.btn-block-gray, .is-active.btn-block-navy, .is-active.btn-block-black, .btn-block:hover, .btn-block-teal:hover, .btn-block-gray:hover, .btn-block-navy:hover, .btn-block-black:hover, .btn-block.is-hover, .is-hover.btn-block-teal, .is-hover.btn-block-gray, .is-hover.btn-block-navy, .is-hover.btn-block-black {
     cursor: pointer;
     box-shadow: inset 0px -4px 0px #869AA5; }
-  .btn-block span, .btn-block-teal span, .btn-block-gray span, .btn-block-navy span {
+  .btn-block span, .btn-block-teal span, .btn-block-gray span, .btn-block-navy span, .btn-block-black span {
     display: block; }
-    .btn-block span:first-child, .btn-block-teal span:first-child, .btn-block-gray span:first-child, .btn-block-navy span:first-child {
+    .btn-block span:first-child, .btn-block-teal span:first-child, .btn-block-gray span:first-child, .btn-block-navy span:first-child, .btn-block-black span:first-child {
       margin-top: -7px; }
 
 /* button block teal
@@ -466,6 +466,17 @@
   .btn-block-navy.is-hover .btn-block-navy:active, .btn-block-navy.is-active {
     color: #5E7887;
     box-shadow: inset 0px -4px 0px #5E7887; }
+
+/* button block navy
+......................................*/
+.btn-block-black {
+  color: #1a2e3b; }
+  .btn-block-black:link, .btn-block-black:visited {
+    color: #1a2e3b; }
+  .btn-block-black:hover,
+  .btn-block-black.is-hover .btn-block-black:active, .btn-block-black.is-active {
+    color: #1a2e3b;
+    box-shadow: inset 0px -4px 0px #1a2e3b; }
 
 /* .....................................
   Fonts
@@ -3243,7 +3254,7 @@ hr.column {
     color: #5E7887;
     font-size: 14px;
     background-color: #fff;
-    border: 1px solid #d1d9dc;
+    border: 1px solid #e3e8e9;
     margin-bottom: 0;
     box-shadow: none;
     box-sizing: border-box;
@@ -3259,7 +3270,7 @@ hr.column {
     .form input[type="password"]::-webkit-input-placeholder,
     .form input[type="number"]::-webkit-input-placeholder,
     .form textarea::-webkit-input-placeholder {
-      color: rgba(55, 86, 103, 0.5) !important;
+      color: rgba(26, 46, 59, 0.5) !important;
       font-weight: normal; }
     .form input[type="text"]:-moz-placeholder,
     .form input[type="email"]:-moz-placeholder,
@@ -3267,7 +3278,7 @@ hr.column {
     .form input[type="password"]:-moz-placeholder,
     .form input[type="number"]:-moz-placeholder,
     .form textarea:-moz-placeholder {
-      color: rgba(55, 86, 103, 0.5) !important;
+      color: rgba(26, 46, 59, 0.5) !important;
       font-weight: normal;
       opacity: 1; }
     .form input[type="text"]::-moz-placeholder,
@@ -3276,7 +3287,7 @@ hr.column {
     .form input[type="password"]::-moz-placeholder,
     .form input[type="number"]::-moz-placeholder,
     .form textarea::-moz-placeholder {
-      color: rgba(55, 86, 103, 0.5) !important;
+      color: rgba(26, 46, 59, 0.5) !important;
       font-weight: normal;
       opacity: 1; }
     .form input[type="text"]:-ms-input-placeholder,
@@ -3285,7 +3296,7 @@ hr.column {
     .form input[type="password"]:-ms-input-placeholder,
     .form input[type="number"]:-ms-input-placeholder,
     .form textarea:-ms-input-placeholder {
-      color: rgba(55, 86, 103, 0.5) !important;
+      color: rgba(26, 46, 59, 0.5) !important;
       font-weight: normal; }
     .form input[type="text"][disabled],
     .form input[type="email"][disabled],
@@ -3309,30 +3320,30 @@ hr.column {
     .form input[type="password"].is-error,
     .form input[type="number"].is-error,
     .form textarea.is-error {
-      color: #D3104A;
-      border: 1px solid #D3104A; }
+      color: #ff4d4d;
+      border: 1px solid #ff4d4d; }
       .form input[type="text"].is-error.is-selected,
       .form input[type="email"].is-error.is-selected,
       .form input[type="tel"].is-error.is-selected,
       .form input[type="password"].is-error.is-selected,
       .form input[type="number"].is-error.is-selected,
       .form textarea.is-error.is-selected {
-        border: 2px solid #cf124c;
-        background-color: #641728; }
+        border: 2px solid #ff4d4d;
+        background-color: #ff4d4d; }
       .form input[type="text"].is-error::-webkit-input-placeholder,
       .form input[type="email"].is-error::-webkit-input-placeholder,
       .form input[type="tel"].is-error::-webkit-input-placeholder,
       .form input[type="password"].is-error::-webkit-input-placeholder,
       .form input[type="number"].is-error::-webkit-input-placeholder,
       .form textarea.is-error::-webkit-input-placeholder {
-        color: #D3104A !important; }
+        color: #ff4d4d !important; }
       .form input[type="text"].is-error:-moz-placeholder,
       .form input[type="email"].is-error:-moz-placeholder,
       .form input[type="tel"].is-error:-moz-placeholder,
       .form input[type="password"].is-error:-moz-placeholder,
       .form input[type="number"].is-error:-moz-placeholder,
       .form textarea.is-error:-moz-placeholder {
-        color: #D3104A !important;
+        color: #ff4d4d !important;
         opacity: 1; }
       .form input[type="text"].is-error::-moz-placeholder,
       .form input[type="email"].is-error::-moz-placeholder,
@@ -3340,7 +3351,7 @@ hr.column {
       .form input[type="password"].is-error::-moz-placeholder,
       .form input[type="number"].is-error::-moz-placeholder,
       .form textarea.is-error::-moz-placeholder {
-        color: #D3104A !important;
+        color: #ff4d4d !important;
         opacity: 1; }
       .form input[type="text"].is-error:-ms-input-placeholder,
       .form input[type="email"].is-error:-ms-input-placeholder,
@@ -3348,7 +3359,7 @@ hr.column {
       .form input[type="password"].is-error:-ms-input-placeholder,
       .form input[type="number"].is-error:-ms-input-placeholder,
       .form textarea.is-error:-ms-input-placeholder {
-        color: #D3104A !important; }
+        color: #ff4d4d !important; }
     .form input[type="text"]:focus,
     .form input[type="email"]:focus,
     .form input[type="tel"]:focus,
@@ -3356,8 +3367,8 @@ hr.column {
     .form input[type="number"]:focus,
     .form textarea:focus {
       outline: none;
-      color: #5E7887;
-      border: 1px solid #9aaab4;
+      color: #8699a6;
+      border: 1px solid #b3bfc8;
       box-shadow: none;
       /* on focus + has error
       ...................................*/ }
@@ -3397,16 +3408,16 @@ hr.column {
       .form input[type="password"]:focus.is-error,
       .form input[type="number"]:focus.is-error,
       .form textarea:focus.is-error {
-        color: #D3104A;
-        border: 1px solid #D3104A; }
+        color: #ff4d4d;
+        border: 1px solid #ff4d4d; }
         .form input[type="text"]:focus.is-error.is-selected,
         .form input[type="email"]:focus.is-error.is-selected,
         .form input[type="tel"]:focus.is-error.is-selected,
         .form input[type="password"]:focus.is-error.is-selected,
         .form input[type="number"]:focus.is-error.is-selected,
         .form textarea:focus.is-error.is-selected {
-          border: 2px solid #cf124c;
-          background-color: #641728; }
+          border: 2px solid #ff4d4d;
+          background-color: #ff4d4d; }
         .form input[type="text"]:focus.is-error::-webkit-input-placeholder,
         .form input[type="email"]:focus.is-error::-webkit-input-placeholder,
         .form input[type="tel"]:focus.is-error::-webkit-input-placeholder,
@@ -3414,7 +3425,7 @@ hr.column {
         .form input[type="number"]:focus.is-error::-webkit-input-placeholder,
         .form textarea:focus.is-error::-webkit-input-placeholder {
           transition: all .2s ease;
-          color: #D3104A !important; }
+          color: #ff4d4d !important; }
         .form input[type="text"]:focus.is-error:-moz-placeholder,
         .form input[type="email"]:focus.is-error:-moz-placeholder,
         .form input[type="tel"]:focus.is-error:-moz-placeholder,
@@ -3422,7 +3433,7 @@ hr.column {
         .form input[type="number"]:focus.is-error:-moz-placeholder,
         .form textarea:focus.is-error:-moz-placeholder {
           transition: all .2s ease;
-          color: #D3104A !important;
+          color: #ff4d4d !important;
           opacity: 1; }
         .form input[type="text"]:focus.is-error::-moz-placeholder,
         .form input[type="email"]:focus.is-error::-moz-placeholder,
@@ -3431,7 +3442,7 @@ hr.column {
         .form input[type="number"]:focus.is-error::-moz-placeholder,
         .form textarea:focus.is-error::-moz-placeholder {
           transition: all .2s ease;
-          color: #D3104A !important;
+          color: #ff4d4d !important;
           opacity: 1; }
         .form input[type="text"]:focus.is-error:-ms-input-placeholder,
         .form input[type="email"]:focus.is-error:-ms-input-placeholder,
@@ -3440,7 +3451,7 @@ hr.column {
         .form input[type="number"]:focus.is-error:-ms-input-placeholder,
         .form textarea:focus.is-error:-ms-input-placeholder {
           transition: all .2s ease;
-          color: #D3104A !important; }
+          color: #ff4d4d !important; }
     .form input[type="text"].small,
     .form input[type="email"].small,
     .form input[type="tel"].small,
@@ -3536,7 +3547,7 @@ hr.column {
     position: absolute;
     top: 11px;
     left: 15px;
-    color: #F0F2F4; }
+    color: #eef1f2; }
 
 /* .....................................
   Fonts
