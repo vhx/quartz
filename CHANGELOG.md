@@ -1,3 +1,7 @@
+### 1.5.6
+**2017-9-27**
+* added black to button blocks.
+
 ### 1.5.5
 **2017-9-27**
 * added black to button blocks.

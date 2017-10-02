@@ -45,8 +45,8 @@
 
     color: $gray-6;
     font-size: 14px;
-    background-color: #fff;
-    border: 1px solid #d1d9dc;
+    background-color: $white;
+    border: 1px solid $porcelain;
     margin-bottom: 0;
 
     box-shadow: none;
@@ -55,7 +55,7 @@
     transition: border .2s ease;
 
     @include placeholder {
-      color: rgba(55, 86, 103, .5) !important;
+      color: rgba($astro-granite, .5) !important;
       font-weight: normal;
     }
 
@@ -66,23 +66,23 @@
     &.is-transparent {
       border: 1px solid transparent;
       color: #fff !important;
-      background-color: rgba(255,255,255,0.1);
+      background-color: rgba($white,0.1);
     }
 
     /* has error
     ...................................*/
     &.is-error {
-      color: $red;
+      color: $sunset-orange;
 
-      border: 1px solid $red;
+      border: 1px solid $sunset-orange;
 
       &.is-selected {
-        border: 2px solid #cf124c;
-        background-color: #641728;
+        border: 2px solid $sunset-orange;
+        background-color: $sunset-orange;
       }
 
       @include placeholder {
-        color: $red !important;
+        color: $sunset-orange !important;
       }
     }
 
@@ -90,9 +90,9 @@
     ...................................*/
     &:focus {
       outline: none;
-      color: $gray-6;
+      color: $regent-gray;
 
-      border: 1px solid #9aaab4;
+      border: 1px solid $southerly-sky;
 
       box-shadow: none;
 
@@ -103,18 +103,18 @@
       /* on focus + has error
       ...................................*/
       &.is-error {
-        color: $red;
+        color: $sunset-orange;
 
-        border: 1px solid $red;
+        border: 1px solid $sunset-orange;
 
         &.is-selected {
-          border: 2px solid #cf124c;
-          background-color: #641728;
+          border: 2px solid $sunset-orange;
+          background-color: $sunset-orange;
         }
 
         @include placeholder {
           transition: all .2s ease;
-          color: $red !important;
+          color: $sunset-orange !important;
         }
       }
     }
@@ -180,6 +180,6 @@
     position: absolute;
     top: 11px;
     left: 15px;
-    color: $gray-2;
+    color: $plaster;
   }
 }
