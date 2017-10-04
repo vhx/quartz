@@ -366,6 +366,20 @@ select {
     ffffff      // loader
   );
 }
+
+.btn-sunset-orange {
+  @extend .btn;
+  @include button-colors (
+    #ff4d4d,  // background
+    #d93636,  // background hover
+    #FFFFFF,  // color
+    #FFFFFF,  // color hover
+    #ff4d4d,  // border color
+    #d93636,  // border color hover
+    #FFFFFF   // loader
+  );
+}
+
 /*.....................................
   BUTTON ICONS
 ......................................*/

@@ -206,7 +206,8 @@ Q.components.guide.styleguide.ui.buttons.container = {
               m('button.btn-gray.margin-right-small.margin-bottom-small', 'Gray'),
               m('button.btn-teal.margin-right-small.margin-bottom-small', 'Teal'),
               m('button.btn-white.margin-right-small.margin-bottom-small', 'White'),
-              m('button.btn-red.margin-right-small.margin-bottom-small', 'Red')
+              m('button.btn-red.margin-right-small.margin-bottom-small', 'Red'),
+              m('button.btn-sunset-orange.margin-right-small.margin-bottom-small', 'Vimeo Red')
             ]);
           }
         }
