@@ -206,7 +206,8 @@ Q.components.guide.styleguide.ui.buttons.container = {
               m('button.btn-gray.margin-right-small.margin-bottom-small', 'Gray'),
               m('button.btn-teal.margin-right-small.margin-bottom-small', 'Teal'),
               m('button.btn-white.margin-right-small.margin-bottom-small', 'White'),
-              m('button.btn-red.margin-right-small.margin-bottom-small', 'Red')
+              m('button.btn-red.margin-right-small.margin-bottom-small', 'Red'),
+              m('button.btn-vimeo-alert.margin-right-small.margin-bottom-small', 'Vimeo Red')
             ]);
           }
         }
@@ -1062,7 +1063,7 @@ Q.components.guide.styleguide.ui.forms.container = {
                     name: 'domain_name',
                     placeholder: 'Enter your domain name'
                   }),
-                  m('button.btn.btn-vimeo-blue.btn--small', 'Verify Domain')
+                  m('button.btn.btn-teal.btn--small', 'Verify Domain')
                 ])
               ]),
               m('fieldset.margin-bottom-medium', [
@@ -1086,7 +1087,7 @@ Q.components.guide.styleguide.ui.forms.container = {
                 })
               ]),
               m('.clearfix',
-                m('button.btn-vimeo-blue.right', {
+                m('button.btn-teal.right', {
                   type: 'submit'
                 }, 'Submit')
               )
