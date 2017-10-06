@@ -1,3 +1,7 @@
+### 1.5.8
+**2017-10-6**
+* added vimeo branded dropdown colors.
+
 ### 1.5.7
 **2017-10-5**
 * added vimeo blue buttons to forms.
