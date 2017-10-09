@@ -1,3 +1,7 @@
+### 1.5.9
+**2017-10-9**
+* changed base colors of c-tag--button elements.
+
 ### 1.5.8
 **2017-10-6**
 * added vimeo branded dropdown colors.
