@@ -23,7 +23,7 @@ vhxm.components.shared.select.ui.container = {
         onkeydown: ctrl.handleKeydown
       }, [
       opts.trigger ? opts.trigger :
-      m('a.c-select--trigger.truncate.btn-dropdown-' + (opts.color ? opts.color : 'gray') + '.btn--fill' + (ctrl.state.isDropdownOpen() ? '.is-active' : ''), {
+      m('a.c-select--trigger.truncate.btn-dropdown-' + (opts.color ? opts.color : 'vimeo-secondary') + '.btn--fill' + (ctrl.state.isDropdownOpen() ? '.is-active' : ''), {
         href: '#',
         onclick: ctrl.handleClick
       }, ctrl.selectedLabel()),
@@ -63,7 +63,7 @@ vhxm.components.shared.select.ui.container = {
         opts.action && ctrl.state.searchInputValue().length ?
         // show Create New Category dropdown footer action
         m('.c-select--footer.border-top', [
-          m('a.btn-teal.btn--fill' + (ctrl.state.footerLoading() ? '.is-loading' : ''), {
+          m('a.btn-vimeo-blue.btn--fill' + (ctrl.state.footerLoading() ? '.is-loading' : ''), {
             onclick: ctrl.handleAction,
             href: '#'
           }, opts.action + (ctrl.state.searchInputValue().length ? (' \'' + ctrl.state.searchInputValue() + '\'') : ''))

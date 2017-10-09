@@ -1062,7 +1062,7 @@ Q.components.guide.styleguide.ui.forms.container = {
                     name: 'domain_name',
                     placeholder: 'Enter your domain name'
                   }),
-                  m('button.btn.btn-vimeo-blue.btn--small', 'Verify Domain')
+                  m('button.btn.btn-teal.btn--small', 'Verify Domain')
                 ])
               ]),
               m('fieldset.margin-bottom-medium', [
@@ -1086,7 +1086,7 @@ Q.components.guide.styleguide.ui.forms.container = {
                 })
               ]),
               m('.clearfix',
-                m('button.btn-vimeo-blue.right', {
+                m('button.btn-teal.right', {
                   type: 'submit'
                 }, 'Submit')
               )
