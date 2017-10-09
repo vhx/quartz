@@ -366,6 +366,19 @@ select {
     ffffff      // loader
   );
 }
+
+.btn-vimeo-red {
+  @extend .btn;
+  @include button-colors(
+    #ff4d4d,  // background
+    #d93636,  // background hover
+    #ffffff,  // color
+    #ffffff,  // color hover
+    #ff4d4d,  // border color
+    #d93636,   // border color hover
+    8699a6  // loader
+  );
+}
 /*.....................................
   BUTTON ICONS
 ......................................*/
