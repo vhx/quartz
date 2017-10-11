@@ -1,3 +1,7 @@
+### 1.6.1
+**2017-10-11**
+* Updated tooltip color.
+
 ### 1.6.0
 **2017-10-9**
 * Bugfix for 1.5.9, updated colors in tags.
