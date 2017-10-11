@@ -12,8 +12,8 @@
   position: relative;
   opacity: 0;
   border-radius: 5px;
-  border: 1px solid $navy;
-  background: $navy;
+  border: 1px solid $astro-granite;
+  background: $astro-granite;
 
   &.is-active {
     opacity: 1;
@@ -78,11 +78,11 @@
   &.arrow--bottom-left,
   &.arrow--bottom-center {
     &:after {
-      border-top-color: $navy;
+      border-top-color: $astro-granite;
       margin-left: -10px;
     }
     &:before {
-      border-top-color: $navy;
+      border-top-color: $astro-granite;
       margin-left: -11px;
     }
   }
@@ -115,11 +115,11 @@
   &.arrow--left-top,
   &.arrow--left-bottom {
     &:after {
-      border-right-color: $navy;
+      border-right-color: $astro-granite;
       margin-top: -10px;
     }
     &:before {
-      border-right-color: $navy;
+      border-right-color: $astro-granite;
       margin-top: -11px;
     }
   }
@@ -152,11 +152,11 @@
   &.arrow--right-top,
   &.arrow--right-center {
     &:after {
-      border-left-color: $navy;
+      border-left-color: $astro-granite;
       margin-top: -10px;
     }
     &:before {
-      border-left-color: $navy;
+      border-left-color: $astro-granite;
       margin-top: -11px;
     }
   }
@@ -190,11 +190,11 @@
   &.arrow--top-left,
   &.arrow--top-center {
     &:after {
-      border-bottom-color: $navy;
+      border-bottom-color: $astro-granite;
       margin-left: -10px;
     }
     &:before {
-      border-bottom-color: $navy;
+      border-bottom-color: $astro-granite;
       margin-left: -11px;
     }
   }
