@@ -7143,8 +7143,8 @@ a.text--astro-granite.is-disabled:link, a.text--astro-granite.is-disabled:visite
   position: relative;
   opacity: 0;
   border-radius: 5px;
-  border: 1px solid #00142B;
-  background: #00142B;
+  border: 1px solid #1a2e3b;
+  background: #1a2e3b;
   /* arrows
   ......................................*/ }
   .tooltip.is-active {
@@ -7182,10 +7182,10 @@ a.text--astro-granite.is-disabled:link, a.text--astro-granite.is-disabled:visite
     top: 100%;
     right: 10%; }
   .tooltip.arrow--bottom-right:after, .tooltip.arrow--bottom-left:after, .tooltip.arrow--bottom-center:after {
-    border-top-color: #00142B;
+    border-top-color: #1a2e3b;
     margin-left: -10px; }
   .tooltip.arrow--bottom-right:before, .tooltip.arrow--bottom-left:before, .tooltip.arrow--bottom-center:before {
-    border-top-color: #00142B;
+    border-top-color: #1a2e3b;
     margin-left: -11px; }
   .tooltip.arrow--left-center:after, .tooltip.arrow--left-center:before {
     right: 100%;
@@ -7197,10 +7197,10 @@ a.text--astro-granite.is-disabled:link, a.text--astro-granite.is-disabled:visite
     right: 100%;
     bottom: 10%; }
   .tooltip.arrow--left-center:after, .tooltip.arrow--left-top:after, .tooltip.arrow--left-bottom:after {
-    border-right-color: #00142B;
+    border-right-color: #1a2e3b;
     margin-top: -10px; }
   .tooltip.arrow--left-center:before, .tooltip.arrow--left-top:before, .tooltip.arrow--left-bottom:before {
-    border-right-color: #00142B;
+    border-right-color: #1a2e3b;
     margin-top: -11px; }
   .tooltip.arrow--right-center:after, .tooltip.arrow--right-center:before {
     left: 100%;
@@ -7212,10 +7212,10 @@ a.text--astro-granite.is-disabled:link, a.text--astro-granite.is-disabled:visite
     left: 100%;
     bottom: 10%; }
   .tooltip.arrow--right-bottom:after, .tooltip.arrow--right-top:after, .tooltip.arrow--right-center:after {
-    border-left-color: #00142B;
+    border-left-color: #1a2e3b;
     margin-top: -10px; }
   .tooltip.arrow--right-bottom:before, .tooltip.arrow--right-top:before, .tooltip.arrow--right-center:before {
-    border-left-color: #00142B;
+    border-left-color: #1a2e3b;
     margin-top: -11px; }
   .tooltip.arrow--top-center:after, .tooltip.arrow--top-center:before {
     bottom: 100%;
@@ -7227,10 +7227,10 @@ a.text--astro-granite.is-disabled:link, a.text--astro-granite.is-disabled:visite
     bottom: 100%;
     right: 10%; }
   .tooltip.arrow--top-right:after, .tooltip.arrow--top-left:after, .tooltip.arrow--top-center:after {
-    border-bottom-color: #00142B;
+    border-bottom-color: #1a2e3b;
     margin-left: -10px; }
   .tooltip.arrow--top-right:before, .tooltip.arrow--top-left:before, .tooltip.arrow--top-center:before {
-    border-bottom-color: #00142B;
+    border-bottom-color: #1a2e3b;
     margin-left: -11px; }
 
 /* tooltip sizes
