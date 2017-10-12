@@ -1,3 +1,7 @@
+### 1.6.3
+**2017-10-12**
+* Updated text colors temporarily.
+
 ### 1.6.2
 **2017-10-12**
 * Updated dropdown border color.

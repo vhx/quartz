@@ -7,7 +7,7 @@
 /* reset
 ......................................*/
 body {
-  color: $gray-6;
+  color: $regent-gray;
 }
 body, ul, ol, dl, li, p, div, section, nav, table, h1, h2, h3, h4, h5, h6 {
   font-family: $font-helvetica;
@@ -47,134 +47,134 @@ a {
 .text-1 {
   font-size: 16px;
   line-height: 24px;
-  color: $gray-6;
+  color: $regent-gray;
 }
 .text-2 {
   font-size: 14px;
   line-height: 22px;
-  color: $gray-6;
+  color: $regent-gray;
 }
 .text-3 {
   font-size: 13px;
   line-height: 18px;
-  color: $gray-6;
+  color: $regent-gray;
 }
 .text-4 {
   font-size: 12px;
   line-height: 16px;
-  color: $gray-6;
+  color: $regent-gray;
 }
 
 /* colors
 ......................................*/
 .text--navy {
-  color: $gray-7;
+  color: $astro-granite;
   &.text--transparent {
-    color: transparentize($gray-7, .5);
+    color: transparentize($astro-granite, .5);
   }
 }
 a.text--navy {
   &:link,
   &:visited {
-    color: $gray-7;
+    color: $astro-granite;
     text-decoration: none;
   }
   &:hover,
   &:active {
-    color: $gray-5;
+    color: $regent-gray;
     text-decoration: none;
     &.is-hover-text--navy {
-      color: $gray-7;
+      color: $astro-granite;
     }
   }
   &.is-disabled {
   &:link, &:visited,
   &:hover, &:active {
-      color: $gray-7;
+      color: $astro-granite;
     }
   }
 }
 
 .text--gray {
-  color: $gray-5;
+  color: $regent-gray;
   &.text--transparent {
-    color: transparentize($gray-5, .5);
+    color: transparentize($regent-gray, .5);
   }
 }
 a.text--gray {
   &:link,
   &:visited {
-    color: $gray-5;
+    color: $regent-gray;
     text-decoration: none;
   }
   &:hover,
   &:active {
-    color: $gray-7;
+    color: $astro-granite;
     text-decoration: none;
     &.is-hover-text--gray {
-      color: $gray-5;
+      color: $regent-gray;
     }
   }
   &.is-disabled {
     &:link, &:visited,
     &:hover, &:active {
-      color: $gray-5;
+      color: $regent-gray;
     }
   }
 }
 
 .text--gray-light {
-  color: $gray-2;
+  color: $plaster;
   &.text--transparent {
-    color: transparentize($gray-2, .5);
+    color: transparentize($plaster, .5);
   }
 }
 a.text--gray-light {
   &:link,
   &:visited {
-    color: $gray-2;
+    color: $plaster;
     text-decoration: none;
   }
   &:hover,
   &:active {
-    color: $gray-4;
+    color: $southerly-sky;
     text-decoration: none;
     &.is-hover-text--gray-light {
-      color: $gray-2;
+      color: $plaster;
     }
   }
   &.is-disabled {
     &:link, &:visited,
     &:hover, &:active {
-      color: $gray-4;
+      color: $southerly-sky;
     }
   }
 }
 
 .text--teal {
-  color: $teal-2;
+  color: $vimeo-blue;
   &.text--transparent {
-    color: transparentize($teal-2, .5);
+    color: transparentize($vimeo-blue, .5);
   }
 }
 a.text--teal {
   &:link,
   &:visited {
-    color: $teal-2;
+    color: $vimeo-blue;
     text-decoration: none;
   }
   &:hover,
   &:active {
-    color: $teal-3;
+    color: $vimeo-blue;
     text-decoration: none;
     &.is-hover-text--teal {
-      color: $gray-2;
+      color: $plaster;
     }
   }
   &.is-disabled {
     &:link, &:visited,
     &:hover, &:active {
-      color: $teal-3;
+      color: $vimeo-blue;
     }
   }
 }
@@ -263,29 +263,29 @@ a.text--green {
 }
 
 .text--red {
-  color: $red;
+  color: $sunset-orange;
   &.text--transparent {
-    color: transparentize($red, .5);
+    color: transparentize($sunset-orange, .5);
   }
 }
 a.text--red {
   &:link,
   &:visited {
-    color: $red;
+    color: $sunset-orange;
     text-decoration: none;
   }
   &:hover,
   &:active {
-    color: $red;
+    color: $sunset-orange;
     text-decoration: none;
     &.is-hover-text--red {
-      color: $red;
+      color: $sunset-orange;
     }
   }
   &.is-disabled {
   &:link, &:visited,
   &:hover, &:active {
-      color: $red;
+      color: $sunset-orange;
     }
   }
 }
@@ -488,16 +488,16 @@ a.text--sunset-orange {
 }
 
 .text--southerly-sky {
-  color: $southerly-sky;
+  color: $regent-gray;
   &.text--transparent {
-    color: transparentize($southerly-sky, .5);
+    color: transparentize($regent-gray, .5);
   }
 }
 
 a.text--southerly-sky {
   &:link,
   &:visited {
-    color: $southerly-sky;
+    color: $regent-gray;
     text-decoration: none;
   }
   &:hover,
@@ -505,13 +505,13 @@ a.text--southerly-sky {
     color: $astro-granite;
     text-decoration: none;
     &.is-hover-text--southerly-sky {
-      color: $southerly-sky;
+      color: $regent-gray;
     }
   }
   &.is-disabled {
   &:link, &:visited,
   &:hover, &:active {
-      color: $southerly-sky;
+      color: $regent-gray;
     }
   }
 }
@@ -587,7 +587,7 @@ a.text--astro-granite {
   }
 }
 .text--transparent {
-  color: transparentize($gray-6, .5);
+  color: transparentize($regent-gray, .5);
 }
 .text--uppercase {
   text-transform: uppercase;
