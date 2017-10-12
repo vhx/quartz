@@ -1,3 +1,7 @@
+### 1.6.2
+**2017-10-12**
+* Updated dropdown border color.
+
 ### 1.6.1
 **2017-10-11**
 * Updated tooltip color.
