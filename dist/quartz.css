@@ -6066,7 +6066,7 @@ th {
 /* sizes
 ......................................*/
 .head, .head-1, .head-2, .head-3, .head-4, .head-5 {
-  color: #375667;
+  color: #1a2e3b;
   font-weight: 500;
   text-transform: uppercase;
   font-family: "brandon-grotesque-n1", "brandon-grotesque", "Brandon Grotesque", sans-serif; }
@@ -6106,41 +6106,41 @@ th {
 /* header navy
 ......................................*/
 .head--navy {
-  color: #375667; }
+  color: #1a2e3b; }
 
 a.head--navy:link, a.head--navy:visited,
 a.head-1:link,
 a.head-1:visited, a.head-2:link, a.head-2:visited, a.head-3:link, a.head-3:visited, a.head-4:link, a.head-4:visited, a.head-5:link, a.head-5:visited {
-  color: #375667;
+  color: #1a2e3b;
   text-decoration: none; }
 a.head--navy:visited, a.head--navy:hover,
 a.head-1:visited,
 a.head-1:hover, a.head-2:visited, a.head-2:hover, a.head-3:visited, a.head-3:hover, a.head-4:visited, a.head-4:hover, a.head-5:visited, a.head-5:hover {
-  color: #869AA5;
+  color: #8699a6;
   text-decoration: none; }
 
 /* header gray
 ......................................*/
 .head--gray {
-  color: #869AA5; }
+  color: #8699a6; }
 
 a.head--gray:link, a.head--gray:visited {
-  color: #869AA5;
+  color: #8699a6;
   text-decoration: none; }
 a.head--gray:hover, a.head--gray:active {
-  color: #5E7887;
+  color: #8699a6;
   text-decoration: none; }
 
 /* header teal
 ......................................*/
 .head--teal {
-  color: #22B9B0; }
+  color: #00adef; }
 
 a.head--teal:link, a.head--teal:visited {
-  color: #22B9B0;
+  color: #00adef;
   text-decoration: none; }
 a.head--teal:hover, a.head--teal:active {
-  color: #149A97;
+  color: #00adef;
   text-decoration: none; }
 
 /* header white

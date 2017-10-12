@@ -7,7 +7,7 @@
 /* sizes
 ......................................*/
 .head {
-  color: $gray-7;
+  color: $astro-granite;
   font-weight: 500;
   text-transform: uppercase;
   font-family: $font-brandon;
@@ -59,18 +59,18 @@
 /* header navy
 ......................................*/
 .head--navy {
-  color: $gray-7;
+  color: $astro-granite;
 }
 a.head--navy,
 a.head-1, a.head-2, a.head-3, a.head-4, a.head-5, {
   &:link,
   &:visited {
-    color: $gray-7;
+    color: $astro-granite;
     text-decoration: none;
   }
   &:visited,
   &:hover {
-    color: $gray-5;
+    color: $regent-gray;
     text-decoration: none;
   }
 }
@@ -78,17 +78,17 @@ a.head-1, a.head-2, a.head-3, a.head-4, a.head-5, {
 /* header gray
 ......................................*/
 .head--gray {
-  color: $gray-5;
+  color: $regent-gray;
 }
 a.head--gray {
   &:link,
   &:visited {
-    color: $gray-5;
+    color: $regent-gray;
     text-decoration: none;
   }
   &:hover,
   &:active {
-    color: $gray-6;
+    color: $regent-gray;
     text-decoration: none;
   }
 }
@@ -96,17 +96,17 @@ a.head--gray {
 /* header teal
 ......................................*/
 .head--teal {
-  color: $teal-2;
+  color: $vimeo-blue;
 }
 a.head--teal {
   &:link,
   &:visited {
-    color: $teal-2;
+    color: $vimeo-blue;
     text-decoration: none;
   }
   &:hover,
   &:active {
-    color: $teal-3;
+    color: $vimeo-blue;
     text-decoration: none;
   }
 }

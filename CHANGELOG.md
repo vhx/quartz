@@ -1,3 +1,7 @@
+### 1.6.4
+**2017-10-12**
+* Updated header colors temporarily.
+
 ### 1.6.3
 **2017-10-12**
 * Updated text colors temporarily.
