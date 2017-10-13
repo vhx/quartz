@@ -44,7 +44,7 @@
   left: 0;
   z-index: 2147483600;
   display: none;
-  box-shadow: 0 0 10px #D7DDE1; }
+  box-shadow: 0 0 10px #b3bfc8; }
   .c-select--dropdown.is-open {
     display: block; }
 
@@ -81,7 +81,7 @@
 .caret--bottom-right .c-select--dropdown:after,
 .caret--bottom-left .c-select--dropdown:after,
 .caret--bottom-center .c-select--dropdown:after {
-  border-top-color: #D7DDE1;
+  border-top-color: #b3bfc8;
   margin-left: -11px; }
 .caret--bottom-right .c-select--dropdown:before,
 .caret--bottom-left .c-select--dropdown:before,
@@ -106,7 +106,7 @@
 .caret--top-right .c-select--dropdown:after,
 .caret--top-left .c-select--dropdown:after,
 .caret--top-center .c-select--dropdown:after {
-  border-bottom-color: #D7DDE1;
+  border-bottom-color: #b3bfc8;
   margin-left: -11px; }
 .caret--top-right .c-select--dropdown:before,
 .caret--top-left .c-select--dropdown:before,
@@ -126,12 +126,12 @@
   max-height: 200px; }
 
 .c-select--option {
-  color: #233741;
+  color: #1a2e3b;
   line-height: 25px;
   padding-top: 7px; }
   .c-select--option.is-selected {
     cursor: pointer;
-    background-color: #F0F2F4; }
+    background-color: #eef1f2; }
 
 .c-select--item-label {
   max-width: 80%;
@@ -144,7 +144,7 @@
   transition: background-color .2s ease-out; }
   .c-media-item--container:hover, .c-media-item--container.is-selected {
     cursor: pointer;
-    background-color: rgba(34, 185, 176, 0.1); }
+    background-color: rgba(0, 173, 239, 0.1); }
     .c-media-item--container:hover .c-item-toggle, .c-media-item--container.is-selected .c-item-toggle {
       opacity: 1; }
   .c-media-item--container .c-media-item--image-container {
@@ -158,7 +158,7 @@
   height: 32px;
   border-radius: 50%;
   background-position: center;
-  background-color: #22B9B0;
+  background-color: #00adef;
   transform: translateY(8px);
   transition: opacity .2s ease-out; }
   .c-item-toggle.is-selected {
@@ -170,14 +170,14 @@
   border-top-right-radius: 0px; }
 .c-select--footer .btn-teal:link,
 .c-select--footer .btn-teal:visited {
-  background-color: white;
-  border-color: white;
-  color: #22B9B0; }
+  background-color: #fff;
+  border-color: #fff;
+  color: #00adef; }
 .c-select--footer .btn-teal:hover,
 .c-select--footer .btn-teal:active,
 .c-select--footer .btn-teal.is-loading {
-  background-color: #22B9B0 !important;
-  border-color: #22B9B0 !important;
+  background-color: #00adef !important;
+  border-color: #00adef !important;
   color: #fff; }
 .c-select--footer .btn-teal.is-loading {
   color: transparent; }

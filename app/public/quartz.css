@@ -5677,7 +5677,7 @@ th {
 /* sizes
 ......................................*/
 .head, .head-1, .head-2, .head-3, .head-4, .head-5 {
-  color: #375667;
+  color: #1a2e3b;
   font-weight: 500;
   text-transform: uppercase;
   font-family: "brandon-grotesque-n1", "brandon-grotesque", "Brandon Grotesque", sans-serif; }
@@ -5717,44 +5717,44 @@ th {
 /* header navy
 ......................................*/
 .head--navy {
-  color: #375667; }
+  color: #1a2e3b; }
 
 a.head--navy:link, a.head--navy:visited,
 a.head-1:link,
 a.head-1:visited, a.head-2:link, a.head-2:visited, a.head-3:link, a.head-3:visited, a.head-4:link, a.head-4:visited, a.head-5:link, a.head-5:visited {
-  color: #375667;
+  color: #1a2e3b;
   text-decoration: none; }
 
 a.head--navy:visited, a.head--navy:hover,
 a.head-1:visited,
 a.head-1:hover, a.head-2:visited, a.head-2:hover, a.head-3:visited, a.head-3:hover, a.head-4:visited, a.head-4:hover, a.head-5:visited, a.head-5:hover {
-  color: #869AA5;
+  color: #8699a6;
   text-decoration: none; }
 
 /* header gray
 ......................................*/
 .head--gray {
-  color: #869AA5; }
+  color: #8699a6; }
 
 a.head--gray:link, a.head--gray:visited {
-  color: #869AA5;
+  color: #8699a6;
   text-decoration: none; }
 
 a.head--gray:hover, a.head--gray:active {
-  color: #5E7887;
+  color: #8699a6;
   text-decoration: none; }
 
 /* header teal
 ......................................*/
 .head--teal {
-  color: #22B9B0; }
+  color: #00adef; }
 
 a.head--teal:link, a.head--teal:visited {
-  color: #22B9B0;
+  color: #00adef;
   text-decoration: none; }
 
 a.head--teal:hover, a.head--teal:active {
-  color: #149A97;
+  color: #00adef;
   text-decoration: none; }
 
 /* header white
@@ -6684,7 +6684,7 @@ a.head--vimeo-blue:hover, a.head--vimeo-blue:active {
 /* reset
 ......................................*/
 body {
-  color: #5E7887; }
+  color: #8699a6; }
 
 body, ul, ol, dl, li, p, div, section, nav, table, h1, h2, h3, h4, h5, h6 {
   font-family: "Helvetica", "Arial", sans-serif;
@@ -6713,96 +6713,96 @@ a {
 .text-1 {
   font-size: 16px;
   line-height: 24px;
-  color: #5E7887; }
+  color: #8699a6; }
 
 .text-2 {
   font-size: 14px;
   line-height: 22px;
-  color: #5E7887; }
+  color: #8699a6; }
 
 .text-3 {
   font-size: 13px;
   line-height: 18px;
-  color: #5E7887; }
+  color: #8699a6; }
 
 .text-4 {
   font-size: 12px;
   line-height: 16px;
-  color: #5E7887; }
+  color: #8699a6; }
 
 /* colors
 ......................................*/
 .text--navy {
-  color: #375667; }
+  color: #1a2e3b; }
   .text--navy.text--transparent {
-    color: rgba(55, 86, 103, 0.5); }
+    color: rgba(26, 46, 59, 0.5); }
 
 a.text--navy:link, a.text--navy:visited {
-  color: #375667;
+  color: #1a2e3b;
   text-decoration: none; }
 
 a.text--navy:hover, a.text--navy:active {
-  color: #869AA5;
+  color: #8699a6;
   text-decoration: none; }
   a.text--navy:hover.is-hover-text--navy, a.text--navy:active.is-hover-text--navy {
-    color: #375667; }
+    color: #1a2e3b; }
 
 a.text--navy.is-disabled:link, a.text--navy.is-disabled:visited, a.text--navy.is-disabled:hover, a.text--navy.is-disabled:active {
-  color: #375667; }
+  color: #1a2e3b; }
 
 .text--gray {
-  color: #869AA5; }
+  color: #8699a6; }
   .text--gray.text--transparent {
-    color: rgba(134, 154, 165, 0.5); }
+    color: rgba(134, 153, 166, 0.5); }
 
 a.text--gray:link, a.text--gray:visited {
-  color: #869AA5;
+  color: #8699a6;
   text-decoration: none; }
 
 a.text--gray:hover, a.text--gray:active {
-  color: #375667;
+  color: #1a2e3b;
   text-decoration: none; }
   a.text--gray:hover.is-hover-text--gray, a.text--gray:active.is-hover-text--gray {
-    color: #869AA5; }
+    color: #8699a6; }
 
 a.text--gray.is-disabled:link, a.text--gray.is-disabled:visited, a.text--gray.is-disabled:hover, a.text--gray.is-disabled:active {
-  color: #869AA5; }
+  color: #8699a6; }
 
 .text--gray-light {
-  color: #F0F2F4; }
+  color: #eef1f2; }
   .text--gray-light.text--transparent {
-    color: rgba(240, 242, 244, 0.5); }
+    color: rgba(238, 241, 242, 0.5); }
 
 a.text--gray-light:link, a.text--gray-light:visited {
-  color: #F0F2F4;
+  color: #eef1f2;
   text-decoration: none; }
 
 a.text--gray-light:hover, a.text--gray-light:active {
-  color: #AFBCC3;
+  color: #b3bfc8;
   text-decoration: none; }
   a.text--gray-light:hover.is-hover-text--gray-light, a.text--gray-light:active.is-hover-text--gray-light {
-    color: #F0F2F4; }
+    color: #eef1f2; }
 
 a.text--gray-light.is-disabled:link, a.text--gray-light.is-disabled:visited, a.text--gray-light.is-disabled:hover, a.text--gray-light.is-disabled:active {
-  color: #AFBCC3; }
+  color: #b3bfc8; }
 
 .text--teal {
-  color: #22B9B0; }
+  color: #00adef; }
   .text--teal.text--transparent {
-    color: rgba(34, 185, 176, 0.5); }
+    color: rgba(0, 173, 239, 0.5); }
 
 a.text--teal:link, a.text--teal:visited {
-  color: #22B9B0;
+  color: #00adef;
   text-decoration: none; }
 
 a.text--teal:hover, a.text--teal:active {
-  color: #149A97;
+  color: #00adef;
   text-decoration: none; }
   a.text--teal:hover.is-hover-text--teal, a.text--teal:active.is-hover-text--teal {
-    color: #F0F2F4; }
+    color: #eef1f2; }
 
 a.text--teal.is-disabled:link, a.text--teal.is-disabled:visited, a.text--teal.is-disabled:hover, a.text--teal.is-disabled:active {
-  color: #149A97; }
+  color: #00adef; }
 
 .text--white {
   color: #fff; }
@@ -6859,22 +6859,22 @@ a.text--green.is-disabled:link, a.text--green.is-disabled:visited, a.text--green
   color: #9DBB36; }
 
 .text--red {
-  color: #D3104A; }
+  color: #ff4d4d; }
   .text--red.text--transparent {
-    color: rgba(211, 16, 74, 0.5); }
+    color: rgba(255, 77, 77, 0.5); }
 
 a.text--red:link, a.text--red:visited {
-  color: #D3104A;
+  color: #ff4d4d;
   text-decoration: none; }
 
 a.text--red:hover, a.text--red:active {
-  color: #D3104A;
+  color: #ff4d4d;
   text-decoration: none; }
   a.text--red:hover.is-hover-text--red, a.text--red:active.is-hover-text--red {
-    color: #D3104A; }
+    color: #ff4d4d; }
 
 a.text--red.is-disabled:link, a.text--red.is-disabled:visited, a.text--red.is-disabled:hover, a.text--red.is-disabled:active {
-  color: #D3104A; }
+  color: #ff4d4d; }
 
 .text--orange {
   color: #D06B5E; }
@@ -7003,22 +7003,22 @@ a.text--sunset-orange.is-disabled:link, a.text--sunset-orange.is-disabled:visite
   color: #d93636; }
 
 .text--southerly-sky {
-  color: #b3bfc8; }
+  color: #8699a6; }
   .text--southerly-sky.text--transparent {
-    color: rgba(179, 191, 200, 0.5); }
+    color: rgba(134, 153, 166, 0.5); }
 
 a.text--southerly-sky:link, a.text--southerly-sky:visited {
-  color: #b3bfc8;
+  color: #8699a6;
   text-decoration: none; }
 
 a.text--southerly-sky:hover, a.text--southerly-sky:active {
   color: #1a2e3b;
   text-decoration: none; }
   a.text--southerly-sky:hover.is-hover-text--southerly-sky, a.text--southerly-sky:active.is-hover-text--southerly-sky {
-    color: #b3bfc8; }
+    color: #8699a6; }
 
 a.text--southerly-sky.is-disabled:link, a.text--southerly-sky.is-disabled:visited, a.text--southerly-sky.is-disabled:hover, a.text--southerly-sky.is-disabled:active {
-  color: #b3bfc8; }
+  color: #8699a6; }
 
 .text--regent-gray {
   color: #8699a6; }
@@ -7069,7 +7069,7 @@ a.text--astro-granite.is-disabled:link, a.text--astro-granite.is-disabled:visite
     font-style: italic; }
 
 .text--transparent {
-  color: rgba(94, 120, 135, 0.5); }
+  color: rgba(134, 153, 166, 0.5); }
 
 .text--uppercase {
   text-transform: uppercase; }

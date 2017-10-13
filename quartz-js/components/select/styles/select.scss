@@ -23,7 +23,7 @@
   left: 0;
   z-index: 2147483600;
   display: none;
-  box-shadow: 0 0 10px $gray-3;
+  box-shadow: 0 0 10px $southerly-sky;
   &.is-open {
     display: block;
   }
@@ -39,7 +39,7 @@
     pointer-events: none;
   }
   &:after {
-    border-color: rgba(255, 255, 255, 0);
+    border-color: rgba($white, 0);
     border-width: 10px;
     z-index: 0;
   }
@@ -86,7 +86,7 @@
 .caret--bottom-center {
   .c-select--dropdown {
     &:after {
-      border-top-color: $gray-3;
+      border-top-color: $southerly-sky;
       margin-left: -11px;
     }
     &:before {
@@ -134,7 +134,7 @@
 .caret--top-center {
   .c-select--dropdown {
     &:after {
-      border-bottom-color: $gray-3;
+      border-bottom-color: $southerly-sky;
       margin-left: -11px;
     }
     &:before {
@@ -158,12 +158,12 @@
   }
 }
 .c-select--option {
-  color: #233741;
+  color: $astro-granite;
   line-height: 25px;
   padding-top: 7px;
   &.is-selected {
     cursor: pointer;
-    background-color: #F0F2F4;
+    background-color: $plaster;
   }
 }
 .c-select--item-label {
@@ -180,7 +180,7 @@
   &:hover,
   &.is-selected {
     cursor: pointer;
-    background-color: transparentize($teal-2, .9);
+    background-color: transparentize($vimeo-blue, .9);
     .c-item-toggle {
       opacity: 1;
     }
@@ -200,7 +200,7 @@
   height: 32px;
   border-radius: 50%;
   background-position: center;
-  background-color: $teal-2;
+  background-color: $vimeo-blue;
   transform: translateY(8px);
   transition: opacity .2s ease-out;
   &.is-selected {
@@ -216,15 +216,15 @@
   }
   .btn-teal:link,
   .btn-teal:visited {
-    background-color: white;
-    border-color: white;
-    color: $teal-2;
+    background-color: $white;
+    border-color: $white;
+    color: $vimeo-blue;
   }
   .btn-teal:hover,
   .btn-teal:active,
   .btn-teal.is-loading, {
-    background-color: $teal-2 !important;
-    border-color: $teal-2 !important;
+    background-color: $vimeo-blue !important;
+    border-color: $vimeo-blue !important;
     color: $white;
   }
   .btn-teal.is-loading {
