@@ -1,3 +1,7 @@
+### 1.6.5
+**2017-10-13**
+* Updated select menu items to Vimeo blue.
+
 ### 1.6.4
 **2017-10-12**
 * Updated header colors temporarily.
