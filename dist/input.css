@@ -50,7 +50,7 @@
       cursor: default; }
   .form label {
     display: block;
-    color: #5E7887;
+    color: #8699a6;
     font-size: 14px;
     margin-bottom: 5px; }
   .form input[type="text"],
@@ -62,7 +62,7 @@
     height: 40px;
     width: 100%;
     padding: 6px 15px;
-    color: #5E7887;
+    color: #8699a6;
     font-size: 14px;
     background-color: #fff;
     border: 1px solid #e3e8e9;
