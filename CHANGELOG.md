@@ -1,4 +1,4 @@
-### 1.6.8
+### 1.6.8 
 **2017-10-13**
 * Updated form label text to match new Vimeo text colors.
 
