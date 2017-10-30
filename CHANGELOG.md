@@ -1,3 +1,15 @@
+### 1.6.9
+**2017-10-30**
+* Added black button to core colors.
+
+### 1.6.8
+**2017-10-30**
+* Another depreciated Form Color Issue.
+
+### 1.6.7
+**2017-10-30**
+* Depreciated Form Color Issue.
+
 ### 1.6.6
 **2017-10-30**
 * Added black button to core colors.
