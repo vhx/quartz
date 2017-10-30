@@ -354,6 +354,19 @@ select {
   );
 }
 
+.btn-vimeo-alt {
+  @extend .btn;
+  @include button-colors(
+    $vimeo-lt-black,  // background
+    $astro-granite,  // background hover
+    $white,  // color
+    $white,  // color hover
+    $vimeo-lt-black,  // border color
+    $astro-granite,   // border color hover
+    FFFFFF  // loader
+  );
+}
+
 .btn-vimeo-black {
   @extend .btn;
   @include button-colors(
