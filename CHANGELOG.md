@@ -1,3 +1,7 @@
+### 1.6.6
+**2017-10-30**
+* Added black button to core colors.
+
 ### 1.6.5
 **2017-10-13**
 * Updated select menu items to Vimeo blue.
