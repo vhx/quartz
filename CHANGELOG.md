@@ -1,3 +1,7 @@
+### 1.6.11
+**2018-02-15**
+* Fix typo
+
 ### 1.6.10
 **2018-02-15**
 * Run sidebar onClose method at the beginning of the animation to avoid delays

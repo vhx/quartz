@@ -69,7 +69,7 @@ vhxm.components.shared.sidebar.controller = function (opts) {
     }, {
       duration: 500,
       easing: [0.19, 1, 0.22, 1],
-      being: function being() {
+      begin: function begin() {
         vhxm.components.shared.sidebar.state.onClose();
       },
       complete: function complete() {
