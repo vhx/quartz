@@ -1,3 +1,7 @@
+### 1.6.10
+**2018-02-15**
+* Run sidebar onClose method at the beginning of the animation to avoid delays
+
 ### 1.6.9
 **2017-10-30**
 * Added black button to core colors.

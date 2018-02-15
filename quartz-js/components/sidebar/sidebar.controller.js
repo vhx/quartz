@@ -63,16 +63,18 @@ vhxm.components.shared.sidebar.controller = function(opts) {
 
   self.animatorOut = function(elem, isInit) {
     $(elem).velocity('stop', true);
+    vhxm.components.shared.sidebar.state.skipTransition(false);
     $(elem).velocity({
       right: '-470'
     }, {
       duration: 500,
       easing: [0.19, 1, 0.22, 1],
-      complete: function() {
+      being: function() {
         vhxm.components.shared.sidebar.state.onClose();
+      },
+      complete: function() {
         $(document).off('keyup', self.esc);
         $(document).off('click', self.documentClickHandler);
-        vhxm.components.shared.sidebar.state.skipTransition(false);
       }
     });
   };
