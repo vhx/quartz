@@ -142,7 +142,9 @@
     .new-avatar.avatar--xxlarge .avatar-img,
     .new-avatar.avatar--xxlarge .default-avatar {
       line-height: 100px; }
-  .avatar .default-avatar,
+
+.new-avatar {
+  text-align: center; }
   .new-avatar .default-avatar {
     color: #fff;
     font-weight: bold; }

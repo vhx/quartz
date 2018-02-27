@@ -1,3 +1,7 @@
+### 1.6.12
+**2018-02-27**
+* Added new default avatar look to Quartz avatars
+
 ### 1.6.11
 **2018-02-15**
 * Fix typo
