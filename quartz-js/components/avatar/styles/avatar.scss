@@ -5,7 +5,8 @@
 @mixin avatar-defaults($diameter) {
   width: $diameter;
   height: $diameter;
-  .avatar-img {
+  .avatar-img,
+  .default-avatar {
     line-height: $diameter;
   }
 }
@@ -16,8 +17,9 @@ $avatar-colors-hex: $vhx-blue, $vhx-purple, lighten($red, 50%), $vhx-orange, lig
 /*.....................................
   AVATARS
 ......................................*/
-.avatar {
-  @include avatar-defaults(35px);
+.avatar,
+.new-avatar {
+  @include avatar-defaults(36px);
   position: relative;
   display: inline-block;
   background-color: $navy-transparent;
@@ -44,6 +46,37 @@ $avatar-colors-hex: $vhx-blue, $vhx-purple, lighten($red, 50%), $vhx-orange, lig
     height: 100%;
     background-size: cover;
   }
+
+  &.avatar--xsmall {
+    @include avatar-defaults(24px);
+  }
+  &.avatar--small {
+    @include avatar-defaults(36px);
+  }
+  &.avatar--medium {
+    @include avatar-defaults(46px);
+  }
+  &.avatar--large {
+    @include avatar-defaults(60px);
+  }
+  &.avatar--xlarge {
+    @include avatar-defaults(80px);
+  }
+  &.avatar--xxlarge {
+    @include avatar-defaults(100px);
+  }
+}
+
+.new-avatar {
+  text-align: center;
+
+  .default-avatar {
+    color: $white;
+    font-weight: bold;
+  }
+}
+
+.avatar {
   &:before {
     color: red;
     content: ' ';
@@ -60,23 +93,5 @@ $avatar-colors-hex: $vhx-blue, $vhx-purple, lighten($red, 50%), $vhx-orange, lig
     background-position: 50% 50%;
     background-size: 50%;
   }
-
-  &.avatar--xsmall {
-    @include avatar-defaults(25px);
-  }
-  &.avatar--small {
-    @include avatar-defaults(35px);
-  }
-  &.avatar--medium {
-    @include avatar-defaults(45px);
-  }
-  &.avatar--large {
-    @include avatar-defaults(60px);
-  }
-  &.avatar--xlarge {
-    @include avatar-defaults(80px);
-  }
-  &.avatar--xxlarge {
-    @include avatar-defaults(100px);
-  }
 }
+

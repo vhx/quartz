@@ -240,7 +240,7 @@ vhxm.components.shared.autosuggest.ui.container = {
 };
 vhxm.components.shared.avatar.ui = {
   view: function view(ctrl, opts) {
-    return m('span.avatar.color-teal.avatar--' + (opts.size ? opts.size : 'medium'), [m('span.avatar-user.user-avatar', {
+    return m('span.new-avatar.color-teal.avatar--' + (opts.size ? opts.size : 'medium'), [m('span.default-avatar', opts.initial), m('span.avatar-user.user-avatar', {
       style: {
         backgroundImage: 'url(' + opts.image + ')'
       }
@@ -1183,16 +1183,18 @@ vhxm.components.shared.sidebar.controller = function (opts) {
 
   self.animatorOut = function (elem, isInit) {
     $(elem).velocity('stop', true);
+    vhxm.components.shared.sidebar.state.skipTransition(false);
     $(elem).velocity({
       right: '-470'
     }, {
       duration: 500,
       easing: [0.19, 1, 0.22, 1],
-      complete: function complete() {
+      begin: function begin() {
         vhxm.components.shared.sidebar.state.onClose();
+      },
+      complete: function complete() {
         $(document).off('keyup', self.esc);
         $(document).off('click', self.documentClickHandler);
-        vhxm.components.shared.sidebar.state.skipTransition(false);
       }
     });
   };
@@ -1202,7 +1204,8 @@ vhxm.components.shared.sidebar.controller = function (opts) {
       vhxm.components.shared.sidebar.toggle('close');
     }
   };
-};vhxm.components.shared.sidebar.toggle = function (state, route) {
+};
+vhxm.components.shared.sidebar.toggle = function (state, route) {
   state = state === 'open' ? true : false;
 
   var done = function done() {
