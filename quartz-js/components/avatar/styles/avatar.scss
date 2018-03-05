@@ -5,9 +5,13 @@
 @mixin avatar-defaults($diameter) {
   width: $diameter;
   height: $diameter;
-  .avatar-img,
   .default-avatar {
     line-height: $diameter;
+    font-size: round($diameter / 3);
+  }
+  .default-avatar {
+    padding-left: floor($diameter / 30);
+    padding-top: floor($diameter / 60);
   }
 }
 $avatar-colors-name: "blue", "purple", "pink", "orange", "green", "forest", "light-blue", "gray", "teal";
@@ -73,6 +77,7 @@ $avatar-colors-hex: $vhx-blue, $vhx-purple, lighten($red, 50%), $vhx-orange, lig
   .default-avatar {
     color: $white;
     font-weight: bold;
+    display: block;
   }
 }
 

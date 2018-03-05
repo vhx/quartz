@@ -120,7 +120,12 @@
   .avatar .default-avatar,
   .new-avatar .avatar-img,
   .new-avatar .default-avatar {
-    line-height: 36px; }
+    line-height: 36px;
+    font-size: 12px; }
+  .avatar .default-avatar,
+  .new-avatar .default-avatar {
+    padding-left: 1px;
+    padding-top: 0px; }
   .avatar.color-blue,
   .new-avatar.color-blue {
     background-color: #0F4E7B; }
@@ -167,7 +172,11 @@
     .avatar.avatar--xsmall .default-avatar,
     .new-avatar.avatar--xsmall .avatar-img,
     .new-avatar.avatar--xsmall .default-avatar {
-      line-height: 24px; }
+      line-height: 24px;
+      font-size: 8px; }
+    .new-avatar.avatar.avatar--xsmall .default-avatar {
+      padding-left: 0px;
+      padding-top: 0px; }
   .avatar.avatar--small,
   .new-avatar.avatar--small {
     width: 36px;
@@ -176,7 +185,11 @@
     .avatar.avatar--small .default-avatar,
     .new-avatar.avatar--small .avatar-img,
     .new-avatar.avatar--small .default-avatar {
-      line-height: 36px; }
+      line-height: 36px;
+      font-size: 12px; }
+    .new-avatar.avatar--small .default-avatar {
+      padding-left: 1px;
+      padding-top: 0px; }
   .avatar.avatar--medium,
   .new-avatar.avatar--medium {
     width: 46px;
@@ -185,7 +198,11 @@
     .avatar.avatar--medium .default-avatar,
     .new-avatar.avatar--medium .avatar-img,
     .new-avatar.avatar--medium .default-avatar {
-      line-height: 46px; }
+      line-height: 46px;
+      font-size: 15px; }
+    .new-avatar.avatar--medium .default-avatar {
+      padding-left: 1px;
+      padding-top: 0px; }
   .avatar.avatar--large,
   .new-avatar.avatar--large {
     width: 60px;
@@ -194,7 +211,11 @@
     .avatar.avatar--large .default-avatar,
     .new-avatar.avatar--large .avatar-img,
     .new-avatar.avatar--large .default-avatar {
-      line-height: 60px; }
+      line-height: 60px;
+      font-size: 20px; }
+    .new-avatar.avatar--large .default-avatar {
+      padding-left: 2px;
+      padding-top: 1px; }
   .avatar.avatar--xlarge,
   .new-avatar.avatar--xlarge {
     width: 80px;
@@ -203,7 +224,11 @@
     .avatar.avatar--xlarge .default-avatar,
     .new-avatar.avatar--xlarge .avatar-img,
     .new-avatar.avatar--xlarge .default-avatar {
-      line-height: 80px; }
+      line-height: 80px;
+      font-size: 26px; }
+    .new-avatar.avatar--xlarge .default-avatar {
+      padding-left: 2px;
+      padding-top: 1px; }
   .avatar.avatar--xxlarge,
   .new-avatar.avatar--xxlarge {
     width: 100px;
@@ -212,13 +237,17 @@
     .avatar.avatar--xxlarge .default-avatar,
     .new-avatar.avatar--xxlarge .avatar-img,
     .new-avatar.avatar--xxlarge .default-avatar {
-      line-height: 100px; }
-
+      line-height: 100px;
+      font-size: 33px; }
+    .new-avatar.avatar--xxlarge .default-avatar {
+      padding-left: 3px;
+      padding-top: 1px; }
 .new-avatar {
   text-align: center; }
   .new-avatar .default-avatar {
     color: #fff;
-    font-weight: bold; }
+    font-weight: bold;
+    display: block; }
 
 .avatar:before {
   color: red;

@@ -240,13 +240,19 @@ vhxm.components.shared.autosuggest.ui.container = {
 };
 vhxm.components.shared.avatar.ui = {
   view: function view(ctrl, opts) {
-    return m('span.new-avatar.color-teal.avatar--' + (opts.size ? opts.size : 'medium'), [m('span.default-avatar', opts.initial), m('span.avatar-user.user-avatar', {
-      style: {
-        backgroundImage: 'url(' + opts.image + ')'
-      }
-    })]);
+    return m('span.new-avatar.color-teal.avatar--' + (opts.size ? opts.size : 'medium'), [
+      m('span.avatar-user.user-avatar', [
+        m('span.default-avatar', opts.initial), 
+        m('span.avatar-user.user-avatar', {
+          style: {
+            backgroundImage: 'url(' + opts.image + ')'
+          }
+       })
+      ])
+    ]);
   }
-};vhxm.components.shared.checkbox.ui.container = {
+};
+vhxm.components.shared.checkbox.ui.container = {
   view: function view(ctrl, opts) {
     return m('fieldset.checkbox.' + (opts.size ? opts.size : 'medium') + (opts.type === 'toggle' ? '.alt' : ''), [m('input[type=checkbox]', {
       checked: opts.checked,
