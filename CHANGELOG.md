@@ -1,3 +1,7 @@
+### 1.6.13
+**2018-03-05**
+* Fixed default avatar styles that did not carry over
+
 ### 1.6.12
 **2018-02-27**
 * Added new default avatar look to Quartz avatars
