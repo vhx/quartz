@@ -1,3 +1,7 @@
+### 1.6.14
+**2018-03-06**
+* Fixed minor avatar coloring issues
+
 ### 1.6.13
 **2018-03-05**
 * Fixed default avatar styles that did not carry over
