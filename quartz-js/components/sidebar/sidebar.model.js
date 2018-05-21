@@ -1,8 +1,10 @@
 vhxm.components.shared.sidebar.toggle = function(state, route) {
-  state = state === 'open' ? true : false;
+  // state = state === 'open' ? true : false;
+  console.log('yo');
 
   let done = function() {
-    vhxm.components.shared.sidebar.state.isOpen(state);
+    console.log('whatevs', state);
+    // vhxm.components.shared.sidebar.state.isOpen(state);
     if (route) {
       return m.route(route);
     }
@@ -21,10 +23,12 @@ vhxm.components.shared.sidebar.toggle = function(state, route) {
 };
 
 vhxm.components.shared.sidebar.setTemplate = function(template) {
+  console.log('foo')
   vhxm.components.shared.sidebar.state.template(template);
 };
 
 vhxm.components.shared.sidebar.setLoadedState = function(obj) {
+  console.log('bar');
   if (!!(obj && obj.constructor && obj.call && obj.apply)) {
     vhxm.components.shared.sidebar.state.isLoaded = obj;
   } else {

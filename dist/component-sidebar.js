@@ -87,10 +87,12 @@ vhxm.components.shared.sidebar.controller = function (opts) {
 };
 
 vhxm.components.shared.sidebar.toggle = function (state, route) {
-  state = state === 'open' ? true : false;
+  // state = state === 'open' ? true : false;
+  console.log('yo');
 
   var done = function done() {
-    vhxm.components.shared.sidebar.state.isOpen(state);
+    console.log('whatevs');
+    // vhxm.components.shared.sidebar.state.isOpen(state);
     if (route) {
       return m.route(route);
     }
@@ -108,10 +110,12 @@ vhxm.components.shared.sidebar.toggle = function (state, route) {
 };
 
 vhxm.components.shared.sidebar.setTemplate = function (template) {
+  console.log('foo');
   vhxm.components.shared.sidebar.state.template(template);
 };
 
 vhxm.components.shared.sidebar.setLoadedState = function (obj) {
+  console.log('bar');
   if (!!(obj && obj.constructor && obj.call && obj.apply)) {
     vhxm.components.shared.sidebar.state.isLoaded = obj;
   } else {
@@ -136,6 +140,7 @@ vhxm.components.shared.sidebar.state = {
 vhxm.components.shared.sidebar.ui.container = {
   controller: vhxm.components.shared.sidebar.controller,
   view: function view(ctrl) {
+    console.log('ui');
     return m('.c-sidebar.bg-white.shadow--gray' + (vhxm.components.shared.sidebar.state.isLoaded() ? '' : '.loader-slate.loader--cover-hide.loader--large.is-loading'), {
       config: vhxm.components.shared.sidebar.state.isOpen() ? ctrl.animatorIn : ctrl.animatorOut
     }, vhxm.components.shared.sidebar.state.isLoaded() ? [m('a.c-sidebar--close.icon-circle.icon-x-black.icon--xsmall', {
