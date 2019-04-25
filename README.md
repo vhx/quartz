@@ -1,5 +1,3 @@
-# THIS IS SLOWLY BEING DEPRECATED IN FAVOR OF QUARTZ-REACT + ADVENTURINE
-
 # Quartz
 ![quartz](https://github.com/vhx/quartz/blob/master/app/public/quartz.screenshot.jpg)
 
