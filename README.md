@@ -13,6 +13,9 @@ Style guide &amp; elements + asset build pipeline for [VHX](http://vhx.tv).<br>
 1. Run `./setup`
 1. Done.
 
+Note: some of the NPM dependencies rely on python 2 being available in your system to successfully install.
+There's a `.python-version` file to enable auto-switching to a working python.
+
 **Starting the server**
 
 1. Run `./server`
