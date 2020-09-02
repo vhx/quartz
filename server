@@ -1,5 +1,5 @@
-touch ~/.pow/quartz && echo 3001 > ~/.pow/quartz
-echo "Server booting up: http://quartz.dev"
+touch ~/.puma-dev/quartz && echo 3001 > ~/.puma-dev/quartz
+echo "Server booting up: http://quartz.local"
 mkdir -p ./logs
 nohup npm run dev > logs/output.log &
 nohup node build/watch.js > logs/output.log &

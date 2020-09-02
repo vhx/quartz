@@ -1,2 +1,2 @@
-echo 3001 > ~/.pow/quartz
+echo 3001 > ~/.puma-dev/quartz
 npm install
