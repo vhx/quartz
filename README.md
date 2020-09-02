@@ -19,7 +19,7 @@ There's a `.python-version` file to enable auto-switching to a working python.
 **Starting the server**
 
 1. Run `./server`
-1. Go to: http://quartz.dev
+1. Go to: http://quartz.local
 
 ## Build and Release
 

@@ -31,9 +31,6 @@ app.get('*', function(request, response) {
 
     response.send(handlebars.compile(source)({
       index: request.url === '/',
-      config: {
-        typekit_id: process.env.TYPEKIT_ID
-      }
     }));
   });
 });
