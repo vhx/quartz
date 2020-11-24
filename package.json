@@ -39,7 +39,7 @@
     "grunt-remove": "^0.1.0",
     "grunt-sass": "^1.0.0",
     "grunt-sass-globbing": "^1.4.0",
-    "highlight.js": "^9.4.0",
+    "highlight.js": "^10.1.2",
     "mithril": "0.2.0",
     "mustache": "^2.2.1",
     "node-sass": "4.5.3",
